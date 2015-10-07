@@ -1,0 +1,183 @@
+---
+layout: default
+title: Resolution
+---
+
+<script>
+// vim: ts=3
+
+document.addEventListener("DOMContentLoaded", function() {
+	var boxes = document.querySelectorAll(".imagelink");
+	var matches;
+	var content;
+	var newcontent;
+	var link;
+	for (var i=0; i<boxes.length; i++) {
+		content = boxes[i].outerHTML;
+		matches = content.match(/>([^<]*)</);
+		if (!matches) {
+			continue;
+		}
+		var link = matches[1];
+		content = content.replace(/>[^<]*</, "><");
+		newcontent  = '<a target="_blank" href="/images/resolution/';
+		newcontent += link + '.png">'
+		newcontent += content;
+		newcontent += '</a>';
+		boxes[i].outerHTML = newcontent;
+	}
+});
+
+</script>
+
+<h1> Resolution Tests</h1>
+
+
+<style>
+
+table.image-table td {
+	text-align: center;
+	padding: 10px 40px;
+}
+
+div {
+	margin: 0;
+}
+
+.dpi150 {
+	width: 15px;
+	height: 15px;
+}
+
+.dpi300 {
+	width: 30px;
+	height: 30px;
+}
+
+.dpi600 {
+	width: 45px;
+	height: 45px;
+}
+
+.dpi1200 {
+	width: 60px;
+	height: 60px;
+}
+
+.bit24 {
+  background: -webkit-linear-gradient(left top, red , green, blue);
+  background: -o-linear-gradient(bottom right, red, green, blue);
+  background: -moz-linear-gradient(bottom right, red, green, blue);
+  background: linear-gradient(to bottom right, red , green, blue);
+}
+
+.bit8 {
+  background: -webkit-linear-gradient(left top, black, white);
+  background: -o-linear-gradient(bottom right, black, white);
+  background: -moz-linear-gradient(bottom right, black, white);
+  background: linear-gradient(to bottom right, black, white);
+}
+
+.bit2t20 {
+  display: inline-block;
+  background: -webkit-linear-gradient(left top, black 0%, black 33%, white 33%, white 100%);
+  background: -o-linear-gradient(bottom right, black 0%, black 33%, white 33%, white 100%);
+  background: -moz-linear-gradient(bottom right, black 0%, black 33%, white 33%, white 100%);
+  background: linear-gradient(to bottom right, black 0%, black 33%, white 33%, white 100%);
+  border: 1px solid #000;
+}
+
+.bit2t40 {
+  display: inline-block;
+  background: -webkit-linear-gradient(left top, black 0%, black 50%, white 50%, white 100%);
+  background: -o-linear-gradient(bottom right, black 0%, black 50%, white 50%, white 100%);
+  background: -moz-linear-gradient(bottom right, black 0%, black 50%, white 50%, white 100%);
+  background: linear-gradient(to bottom right, black 0%, black 50%, white 50%, white 100%);
+  border: 1px solid #000;
+}
+
+.bit2t60 {
+  display: inline-block;
+  background: -webkit-linear-gradient(left top, black 0%, black 66%, white 66%, white 100%);
+  background: -o-linear-gradient(bottom right, black 0%, black 66%, white 66%, white 100%);
+  background: -moz-linear-gradient(bottom right, black 0%, black 66%, white 66%, white 100%);
+  background: linear-gradient(to bottom right, black 0%, black 66%, white 66%, white 100%);
+  border: 1px solid #000;
+}
+
+</style>
+
+
+
+
+<table class="image-table">
+
+<tr><td></td>
+    <td>24 bit</td>
+    <td>8 bit</td>
+    <td>2 bit</td>
+</tr>
+
+<tr>
+    <td>150 dpi</td>
+    <td> <div class="imagelink dpi150 bit24">150dpi-24bit</div> </td>
+    <td> <div class="imagelink dpi150 bit8">150dpi-8bit</div> </td>
+    <td> <div class="imagelink dpi150 bit2t20">150dpi-2bit-20t</div>&nbsp
+         <div class="imagelink dpi150 bit2t40">150dpi-2bit-40t</div>&nbsp
+         <div class="imagelink dpi150 bit2t60">150dpi-2bit-60t</div> </td>
+</tr>
+
+<tr>
+    <td>300 dpi</td>
+    <td> <div class="imagelink dpi300 bit24">300dpi-24bit</div> </td>
+    <td> <div class="imagelink dpi300 bit8">300dpi-8bit</div> </td>
+    <td> <div class="imagelink dpi300 bit2t20">300dpi-2bit-20t</div>&nbsp;
+         <div class="imagelink dpi300 bit2t40">300dpi-2bit-40t</div>&nbsp;
+         <div class="imagelink dpi300 bit2t60">300dpi-2bit-60t</div> </td>
+</tr>
+
+<tr>
+    <td>600 dpi</td>
+    <td> <div class="imagelink dpi600 bit24">600dpi-24bit</div> </td>
+    <td> <div class="imagelink dpi600 bit8">600dpi-8bit</div> </td>
+    <td> <div class="imagelink dpi600 bit2t20">600dpi-2bit-20t</div>&nbsp;
+         <div class="imagelink dpi600 bit2t40">600dpi-2bit-40t</div>&nbsp;
+         <div class="imagelink dpi600 bit2t60">600dpi-2bit-60t</div> </td>
+</tr>
+
+<tr>
+    <td>1200 dpi</td>
+    <td> </td>
+    <td> </td>
+    <td> <div class="imagelink dpi1200 bit2t20">1200dpi-2bit-20t</div>&nbsp;
+         <div class="imagelink dpi1200 bit2t40">1200dpi-2bit-40t</div>&nbsp;
+         <div class="imagelink dpi1200 bit2t60">1200dpi-2bit-60t</div> </td>
+</tr>
+
+</table>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+histogram-blue.png
+histogram-color.png
+histogram-green.png
+histogram-red.png
+
+

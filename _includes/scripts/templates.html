@@ -1,0 +1,316 @@
+<script>
+//
+// Programmer:    Craig Stuart Sapp <craig@ccrma.stanford.edu>
+// Creation Date: Fri Sep 18 21:15:35 PDT 2015
+// Last Modified: Sun Sep 20 17:23:01 PDT 2015
+// Filename:      scripts/templates.js
+// Syntax:        JavaScript 1.8.5/ECMAScript 5.1
+// vim:           ts=3 hlsearch
+//
+// Description:   Handlebars templates and helper functions.
+//
+
+var renderLinkEntry     = null;
+var renderSearchForm    = null;
+var renderCategoryEntry = null;
+var renderImage         = null;
+
+document.addEventListener('DOMContentLoaded', function() {
+
+	renderLinkEntry = Handlebars.compile(
+		document.querySelector('#link-entry-template').innerHTML);
+	renderSearchForm = Handlebars.compile(
+		document.querySelector('#search-form-template').innerHTML);
+	renderCategoryEntry = Handlebars.compile(
+		document.querySelector('#category-entry-template').innerHTML);
+	renderAllLinks = Handlebars.compile(
+		document.querySelector('#all-links-template').innerHTML);
+	renderImage = Handlebars.compile(
+		document.querySelector('#image-template').innerHTML);
+
+});
+
+</script>
+
+
+
+<!--
+//////////////////////////////
+//
+// all-links-template -- Display the entire list of link entries, 
+//    organized by category.
+//
+-->
+
+{% raw %}
+<script id="all-links-template" type="text/x-handlebars-template">
+
+{{#each category}}
+	<details class="category">
+		{{#if preface}}
+			<div class="preface">
+				{{{preface}}}
+			</div>
+		{{/if}}
+		{{> categoryEntry}}
+		<span class="category-contents">
+			{{#each links}}
+				{{> linkEntry}}
+			{{/each}}
+		</span>
+	</details>
+{{/each}}
+<div class="introduction credits">
+{{{credits}}}
+</div>
+
+</script>
+{% endraw %}
+
+
+
+<!--
+//////////////////////////////
+//
+// link-entry-template -- Template for displaying a link entry in
+//    the closed state (but Firefox will always open <details>).
+// Input object parameters:
+//    .title = title of the link
+//    .text = text description of the link
+//
+-->
+
+{% raw %}
+<script id="link-entry-template" type="text/x-handlebars-template">
+
+{{#ifCond type "heading"}}
+	<div onclick="toggleHeadingEntries(event);"
+			class="segment-heading level{{level}}">
+		{{{title}}}
+	</div>
+{{else}}
+	<details class="link-entry level{{level}}">
+		<summary>{{{title}}}</summary>
+		<div class="link-text">
+			{{{text}}}
+		</div>
+	</details>
+{{/ifCond}}
+
+</script>
+{% endraw %}
+
+
+
+<!--
+//////////////////////////////
+//
+// category-entry-template -- Template for displaying a category of
+//    links.
+// Input object parameters:
+//    .title  = title of the category.
+//    .number = the sequence number for the category.
+//
+// You have to provide the enclosing <details> element.
+//
+-->
+
+{% raw %}
+<script id="category-entry-template" type="text/x-handlebars-template">
+
+	<summary class="category category{{number}}">
+		{{{heading}}}
+		<div class="no-print" style="float:right; display:inline;">
+			<table><tr><td style="padding:0;">
+				<span style="color: #909ca1; font-size:80%; display:inline; position:relative; top:-2px;" 
+						class="category-link-count">
+				</span>
+			</td><td>
+				<div style="display:inline" class="btn-group" 
+						role="group" aria-label="...">
+
+  					<button type="button" class="btn btn-default btn-small btn-open"
+							onclick="openCategoryLinks(event);">
+						<span class="category-open" style="position:relative; 
+								top:-5px">
+							open
+						</span>
+					</button>
+
+  					<button type="button" class="btn btn-default btn-small btn-brief"
+							onclick="openCategoryLinks(event); closeEventLinks(event);">
+						<span class="category-brief" style="position:relative; 
+								top:-5px">
+							brief
+						</span>
+					</button>
+
+  					<button type="button" class="btn btn-default btn-small btn-close"
+							onclick="closeCategoryLinks(event);">
+						<span class="category-close" style="position:relative; 
+								top:-5px">
+							close
+						</span>
+					</button>
+			</div>
+			</td></tr></table>
+		</div>
+	</summary>
+
+</script>
+{% endraw %}
+
+
+
+<!--
+//////////////////////////////
+//
+// search-form-template -- Template for the search form at the top
+//    of the page.
+//
+-->
+
+{% raw %}
+<script id="search-form-template" type="text/x-handlebars-template">
+
+<form class="form-inline no-print" style="margin-bottom:30px;">
+	<div class="form-group">
+		<input id="search-text" onkeypress="suppressEnter(event);"
+			style="width:30em;" onkeyup="doSearch(event);"
+			type="text" width="15" class="form-control" placeholder="Search">
+	</div>
+	<div style="position:relative; top:-6px" class="form-group">
+		<div style="margin-left:10px;" class="checkbox">
+			<label onclick="doSearch(event);">
+				<input id="search-scope" onkeypress="suppressEnter(event)";
+						type="checkbox" value="">
+				<span style="color:#909ca1; margin-left:3px; position:relative; top:2px;">
+					Titles only
+				</span>
+			</label>
+		</div>
+	</div>
+
+	<div style="float:right; display:inline;">
+		<table style="padding-top:0px; margin-bottom:1px;" class="search-navigator"><tr><td>
+			<div style="color: #909ca1; padding-right:10px; display:inline;" 
+					id="link-count">
+			</div>
+		</td><td style="padding:2px;">
+			<div style="display:inline" class="btn-group" 
+					role="group" aria-label="...">
+
+  				<button type="button" class="btn btn-default btn-open"
+						onclick="openAllLinks();">
+					open
+				</button>
+
+  				<button type="button" class="btn btn-default btn-clear"
+						onclick="clearSearch();">
+					clear
+				</button>
+
+  				<button type="button" class="btn btn-default btn-close"
+						onclick="closeAllLinks();">
+					close
+				</button>
+
+		</div>
+		</td></tr></table>
+	</div>
+
+</form>
+
+</script>
+{% endraw %}
+
+
+
+<!--
+//////////////////////////////
+//
+// image-template -- Template for diplay images with captions.
+//
+-->
+
+{% raw %}
+<script id="image-template" type="text/x-handlebars-template">
+
+<div class="thumb {{placement}}">
+	<div class="thumbinner"
+		{{#if width}}
+			style="width:{{width}}px;"
+		{{/if}}
+				>
+		{{{image url}}}
+		<div class="thumbcaption">
+			{{{caption}}}
+		</div>
+	</div>
+</div>
+
+</script>
+{% endraw %}
+
+
+
+<script>
+
+///////////////////////////////////////////////////////////////////////////
+//
+// Helper functions for handlebars-js.
+//
+
+
+Handlebars.registerPartial('categoryEntry', 
+	document.querySelector('#category-entry-template').innerHTML);
+
+
+Handlebars.registerPartial('linkEntry', 
+	document.querySelector('#link-entry-template').innerHTML);
+
+
+Handlebars.registerHelper('ifCond', function(v1, v2, options) {
+  if(v1 === v2) {
+    return options.fn(this);
+  }
+  return options.inverse(this);
+});
+
+
+
+//////////////////////////////
+//
+// handlebars helper image -- process an image to be displayed.
+//
+
+Handlebars.registerHelper('image', function(url) {
+	url = url.replace(/^src="/, '');
+	url = url.replace(/"$/, '');
+	var filename = '';
+	var matches;
+	if (matches = url.match(/\/([^\/]+)?$/)) {
+		filename = matches[1];
+		filename = filename.replace(/\.png$/, '.jpg');
+		filename = filename.replace(/\.PNG$/, '.jpg');
+	}
+	var newurl = '/images/wiki/' + filename;
+	return '<a target="_new" href="' + url + '"><img src="' + newurl + '\"></a>';
+
+/*
+	if (sessionStorage[url]) {
+		output += '<img src="' + sessionStorage[url] + '">';
+	} else{
+		loadImageData(url);
+		output += '<div class="' + url + '"></div>';
+	}
+	return output;
+*/
+
+});
+
+
+</script>
+
+
+

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	{% include layout/head.html %}
+	<!-- vim: set ts=3 nowrap : -->
+	<body>
+		<div id="container">
+			<div class="inner">
+				{% include layout/header.html %}
+				<section id="main-content" class="main-content">
+					{{ content }}
+				</section>
+				{% include layout/footer.html %}
+			</div>
+		</div>
+	</body>
+</html>

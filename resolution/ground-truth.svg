@@ -1,0 +1,103 @@
+<html>
+<head></head>
+<body>
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	x="0px"
+	y="0px"
+	width="48.366mm" 
+	height="47.202mm" 
+	style="border: 1px solid #000;"
+	viewBox="0 0 48.366 47.202" 
+	enable-background="new 0 0 48.366 47.202" 
+	xml:space="preserve">
+<g fill="#C00">
+	<circle cx="38.486" cy="2.643" r="0.830"/>
+	<circle cx="39.798" cy="2.643" r="0.830"/>
+	<circle cx="11.138" cy="8.104" r="0.830"/>
+	<circle cx="12.366" cy="8.104" r="0.830"/>
+	<circle cx="13.509" cy="8.104" r="0.830"/>
+	<circle cx="14.694" cy="8.104" r="0.830"/>
+	<circle cx="15.922" cy="8.104" r="0.830"/>
+	<circle cx="17.107" cy="8.104" r="0.830"/>
+	<circle cx="18.377" cy="8.104" r="0.830"/>
+	<circle cx="9.911" cy="8.104" r="0.830"/>
+	<circle cx="25.320" cy="8.147" r="0.830"/>
+	<circle cx="26.505" cy="8.147" r="0.830"/>
+	<circle cx="27.860" cy="8.147" r="0.830"/>
+	<circle cx="29.088" cy="8.147" r="0.830"/>
+	<circle cx="30.231" cy="8.189" r="0.830"/>
+	<circle cx="3.899" cy="10.898" r="0.830"/>
+	<circle cx="5.169" cy="10.898" r="0.830"/>
+	<circle cx="3.857" cy="22.159" r="0.830"/>
+	<circle cx="5.085" cy="22.159" r="0.830"/>
+	<circle cx="15.837" cy="22.201" r="0.830"/>
+	<circle cx="17.065" cy="22.201" r="0.830"/>
+	<circle cx="29.045" cy="22.244" r="0.830"/>
+	<circle cx="45.174" cy="22.286" r="0.830"/>
+	<circle cx="44.116" cy="22.328" r="0.830"/>
+	<circle cx="11.096" cy="30.583" r="0.830"/>
+	<circle cx="21.722" cy="30.583" r="0.830"/>
+	<circle cx="22.907" cy="30.583" r="0.830"/>
+	<circle cx="9.826" cy="30.583" r="0.830"/>
+	<circle cx="33.575" cy="30.668" r="0.830"/>
+	<circle cx="34.803" cy="30.668" r="0.830"/>
+	<circle cx="38.316" cy="36.214" r="0.830"/>
+	<circle cx="39.586" cy="36.214" r="0.830"/>
+	<circle cx="12.197" cy="41.759" r="0.830"/>
+	<circle cx="13.467" cy="41.759" r="0.830"/>
+	<circle cx="14.652" cy="41.759" r="0.830"/>
+	<circle cx="15.795" cy="41.759" r="0.830"/>
+	<circle cx="16.980" cy="41.759" r="0.830"/>
+	<circle cx="18.250" cy="41.759" r="0.830"/>
+	<circle cx="28.918" cy="41.844" r="0.830"/>
+	<circle cx="30.104" cy="41.844" r="0.830"/>
+</g>
+
+<g fill="white" text-anchor="middle" alignment-baseline="hanging" font-size="0.3mm">
+	<text x="38.486" y="2.643">1</text>
+	<text x="39.798" y="2.643">2</text>
+	<text x="11.138" y="8.104">3</text>
+	<text x="12.366" y="8.104">4</text>
+	<text x="13.509" y="8.104">5</text>
+	<text x="14.694" y="8.104">6</text>
+	<text x="15.922" y="8.104">7</text>
+	<text x="17.107" y="8.104">8</text>
+	<text x="18.377" y="8.104">9</text>
+	<text x="9.911" y="8.104">10</text>
+	<text x="25.320" y="8.147">11</text>
+	<text x="26.505" y="8.147">12</text>
+	<text x="27.860" y="8.147">13</text>
+	<text x="29.088" y="8.147">14</text>
+	<text x="30.231" y="8.189">15</text>
+	<text x="3.899" y="10.898">16</text>
+	<text x="5.169" y="10.898">17</text>
+	<text x="3.857" y="22.159">18</text>
+	<text x="5.085" y="22.159">19</text>
+	<text x="15.837" y="22.201">20</text>
+	<text x="17.065" y="22.201">21</text>
+	<text x="29.045" y="22.244">22</text>
+	<text x="45.174" y="22.286">23</text>
+	<text x="44.116" y="22.328">24</text>
+	<text x="11.096" y="30.583">25</text>
+	<text x="21.722" y="30.583">26</text>
+	<text x="22.907" y="30.583">27</text>
+	<text x="9.826" y="30.583">28</text>
+	<text x="33.575" y="30.668">29</text>
+	<text x="34.803" y="30.668">30</text>
+	<text x="38.316" y="36.214">31</text>
+	<text x="39.586" y="36.214">32</text>
+	<text x="12.197" y="41.759">33</text>
+	<text x="13.467" y="41.759">34</text>
+	<text x="14.652" y="41.759">35</text>
+	<text x="15.795" y="41.759">36</text>
+	<text x="16.980" y="41.759">37</text>
+	<text x="18.250" y="41.759">38</text>
+	<text x="28.918" y="41.844">39</text>
+	<text x="30.104" y="41.844">40</text>
+</g>
+
+</svg>
+
+</body>
+</html>

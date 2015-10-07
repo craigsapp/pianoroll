@@ -1,0 +1,43 @@
+<head>
+	<!-- vim: set ts=3 : -->
+	<meta charset='UTF-8'>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="description" content="{{ site.description }}">
+	<link rel="SHORTCUT ICON" href="/images/favicon.png"/>
+	<link rel="canonical" 
+		href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<!-- meta http-equiv="X-UA-Compatible" content="IE=edge" -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/styles/stylesheet.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.2/handlebars.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.1/jquery.qtip.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.1/imagesloaded.pkg.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.1/jquery.qtip.css"/>
+	<script src="/scripts/main.js"></script>
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<title>
+		{% if page.title %}
+			{{ page.title }}
+		{% else %}
+			{{ site.title }}
+		{% endif %}
+	</title>
+
+	<!-- Custom CSS -->
+
+	<!-- JavaScript -->
+	<script src="/scripts/external-links.js"></script>
+	{% if page.javascript %}
+		{% for file in page.javascript %}
+			{% include {{file}} %}
+		{% endfor %}
+	{% endif %}
+
+	{% include layout/google-analytics.html %}
+</head>
