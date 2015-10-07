@@ -32,8 +32,38 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <h1> Resolution Tests</h1>
 
+<img style="margin-left:50px; float:right;" src="/images/resolution/150dpi-24bit.png">
+
+This page explores the effects of scanning at various resolutions
+and bit-depths on the localization accuracy of punch holes in a sample
+region of an original piano roll.  The test roll is a Duo-Art 5696 (Nov.
+1915): <i>Samson and Delilah Improvisation</i> by Camille Saint-Saëns and
+performed by the composer.  The sample region, shown on the right,
+starts 71 inches into the roll from the first note.  This section was chosen
+since it had a range of punch lengths from 1 to 8 holes. The region represents
+14 separate notes using 40 individual punches.
+
+
 
 <style>
+
+table.image-table {
+	margin:50px;
+	padding:0px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	width: auto;
+	display: inline-block;
+}
+
+table.image-table tr {
+	width: 100%;
+}
+
+table.image-table tr:nth-child(1),
+table.image-table td:nth-child(1) {
+	background-color: #eee;
+}
 
 table.image-table td {
 	text-align: center;
@@ -42,6 +72,8 @@ table.image-table td {
 
 div.imagelink {
 	margin: 0;
+	padding: 0;
+	display: inline-block;
 }
 
 .dpi150 {
@@ -108,6 +140,16 @@ div.imagelink {
 </style>
 
 
+<h2> Test scans </h2>
+
+Click on the icons in the following table to view the sample piano roll region
+at different scanning resolutions and bit-depths.  An Epson GT-1500 flat-bed 
+scanner was used to scan the roll.  However, each resolution level has a
+slightly different offset, so the color and greyscale images in the table
+are down-sampled versions of the 600 dpi color scan, and the 150 and 300 dpi
+2-color images are down-samples of the 600 dpi scans.  The 1200 dpi
+2-color images are directly from the scanner; however, the native resolution
+of the scanner is 600 &times; 1200 dpi, so one axis is interpolated.
 
 
 <table class="image-table">
@@ -115,47 +157,66 @@ div.imagelink {
 <tr><td></td>
     <td>24 bit</td>
     <td>8 bit</td>
-    <td>2 bit</td>
+    <td>1 bit</td>
 </tr>
 
 <tr>
     <td>150 dpi</td>
     <td> <div class="imagelink dpi150 bit24">150dpi-24bit</div> </td>
     <td> <div class="imagelink dpi150 bit8">150dpi-8bit</div> </td>
-    <td> <div class="imagelink dpi150 bit2t20">150dpi-2bit-20t</div>&nbsp
-         <div class="imagelink dpi150 bit2t40">150dpi-2bit-40t</div>&nbsp
-         <div class="imagelink dpi150 bit2t60">150dpi-2bit-60t</div> </td>
+    <td> <div class="imagelink dpi150 bit2t20">150dpi-1bit-20t</div>&nbsp
+         <div class="imagelink dpi150 bit2t40">150dpi-1bit-40t</div>&nbsp
+         <div class="imagelink dpi150 bit2t60">150dpi-1bit-60t</div> </td>
 </tr>
 
 <tr>
     <td>300 dpi</td>
     <td> <div class="imagelink dpi300 bit24">300dpi-24bit</div> </td>
     <td> <div class="imagelink dpi300 bit8">300dpi-8bit</div> </td>
-    <td> <div class="imagelink dpi300 bit2t20">300dpi-2bit-20t</div>&nbsp;
-         <div class="imagelink dpi300 bit2t40">300dpi-2bit-40t</div>&nbsp;
-         <div class="imagelink dpi300 bit2t60">300dpi-2bit-60t</div> </td>
+    <td> <div class="imagelink dpi300 bit2t20">300dpi-1bit-20t</div>&nbsp;
+         <div class="imagelink dpi300 bit2t40">300dpi-1bit-40t</div>&nbsp;
+         <div class="imagelink dpi300 bit2t60">300dpi-1bit-60t</div> </td>
 </tr>
 
 <tr>
     <td>600 dpi</td>
     <td> <div class="imagelink dpi600 bit24">600dpi-24bit</div> </td>
     <td> <div class="imagelink dpi600 bit8">600dpi-8bit</div> </td>
-    <td> <div class="imagelink dpi600 bit2t20">600dpi-2bit-20t</div>&nbsp;
-         <div class="imagelink dpi600 bit2t40">600dpi-2bit-40t</div>&nbsp;
-         <div class="imagelink dpi600 bit2t60">600dpi-2bit-60t</div> </td>
+    <td> <div class="imagelink dpi600 bit2t20">600dpi-1bit-20t</div>&nbsp;
+         <div class="imagelink dpi600 bit2t40">600dpi-1bit-40t</div>&nbsp;
+         <div class="imagelink dpi600 bit2t60">600dpi-1bit-60t</div> </td>
 </tr>
 
 <tr>
     <td>1200 dpi</td>
     <td> </td>
     <td> </td>
-    <td> <div class="imagelink dpi1200 bit2t20">1200dpi-2bit-20t</div>&nbsp;
-         <div class="imagelink dpi1200 bit2t40">1200dpi-2bit-40t</div>&nbsp;
-         <div class="imagelink dpi1200 bit2t60">1200dpi-2bit-60t</div> </td>
+    <td> <div class="imagelink dpi1200 bit2t20">1200dpi-1bit-20t</div>&nbsp;
+         <div class="imagelink dpi1200 bit2t40">1200dpi-1bit-40t</div>&nbsp;
+         <div class="imagelink dpi1200 bit2t60">1200dpi-1bit-60t</div> </td>
 </tr>
 
 </table>
 
+
+<p>
+For 2-color images, the roll was scanned at three threshold values of 20, 
+40 and 60.  The lower threshold values generate smaller diameters for the
+holes.  The usable threshold range for the sample roll was from 20 to 70.
+Less than 20 will start to drop out holes, and thresholding above 70
+will cause significant regions of the paper to be given the same color
+as the holes.
+</p>
+
+<p>
+The following figure shows histograms for the pixel colors in the scan.
+Two peaks can be seen: a small one on the left which represents the color
+of the holes, and the larger peak to the right is the color of the paper.
+For this test, a black background was used behind the paper to color the
+holes (also the lid of the scanner can be removed to generate a black
+background, although flattening the paper is more difficult in that case).
+
+</p>
 
 <style>
 table.color-hist {
@@ -183,12 +244,15 @@ table.color-hist td {
 
 <h2> Ground truth </h2>
 
-Below is a hand-made vector graphics version of the 1200 dpi 2-bit
-scan (threshold at 40) which can be overlay the above images.  Each
-of the 40 punches are numbered.  The radius of hole #22 was measured
-to be 0.830 mm, which is a diameter of 9.8 pixels at 150 dpi, 19.6
-pixels at 300 dpi, 39.2 pixels at 600 dpi, and 78.4 pixels at 1200
-dpi.  
+The figure below is an interactive overlay of manually aligned
+circles over the hole punches in the 600 dpi 24-bit scan.  Select
+various scan resolutions and bit depths to overlay the hand-annotation
+with the other images to see how lower-resolution images may affect
+hole identification (diameter and positioning).  Also, adjust the
+overlay opacity and image zoom with the slides on the right.  Note
+that zoomed images are interpolated by the web browser, and may be
+done with different methods in different browsers.
+
 <br> <br>
 
 <table><tr><td>
@@ -197,7 +261,7 @@ dpi.
 <select id="depth" class="form-control">
    <option>24</option>
    <option>8</option>
-   <option>2</option>
+   <option>1</option>
    <option>none</option>
 </select>
 </td><td>
@@ -223,6 +287,7 @@ dpi.
 
 <span style="font-size:16px;">Zoom:</span>
 <input 
+	style="display:none;"
 	type="text" 
 	id="foo2" 
 	class="span2" 
@@ -238,6 +303,7 @@ dpi.
 
 <span style="font-size:16px;">Overlay opacity:</span>
 <input 
+	style="display:none;"
 	type="text" 
 	id="foo" 
 	class="span2" 
@@ -257,7 +323,7 @@ dpi.
 $(window).load(function(){
 	$('#foo').slider()
   		.on('slide', function(ev){
-     		$('#bar').val(ev.value);
+     		// $('#bar').val(ev.value);
 			var overlay = document.querySelector("#overlay");
 			overlay.style.opacity = ev.value;
   		});
@@ -266,7 +332,7 @@ $(window).load(function(){
 $(window).load(function(){
 	$('#foo2').slider()
   		.on('slide', function(ev){
-     		$('#bar').val(ev.value);
+     		// $('#bar2').val(ev.value);
 			var gt = document.querySelector("#ground-truth");
 			gt.style['background-size'] = ev.value + 'px';
 			var overlay = document.querySelector("#overlay");
@@ -305,10 +371,10 @@ function changeBackground() {
    console.log("displaying");
 
 	if (dpi.value == "1200") {
-		depth.value = "2";
+		depth.value = "1";
 	}
 
-	if (depth.value == "2") {
+	if (depth.value == "1") {
 		if (!threshold.value) {
 			threshold.value = "40";
 		}
@@ -343,21 +409,45 @@ function changeBackground() {
 }
 
 </style>
-<div style="overflow: scroll; width:800px; height:781px;" id="ground-truth">{% include resolution/ground-truth.svg %}</div>
+<div style="margin-bottom: 40px; overflow: scroll; width:800px; height:781px;" id="ground-truth">{% include resolution/ground-truth.svg %}</div>
 
+<p>
+Each of the 40 punches are numbered.  The diameter of hole #22 was
+measured to be 1.692 mm, which is a diameter of 10.0 pixels at 150
+dpi, 20.0 pixels at 300 dpi, 40.0 pixels at 600 dpi, and 79.9 pixels
+at 1200 dpi.  At 10-feet per minute, the diameter of a hole is
+33.3 milliseconds.
+</p>
 
-<h3> Coordinates of punches </h3>
+<p>
+The separation between overlapping holes #20 and #21 is 1.196 mm. 
+This is 7.1 pixels at 150 dpi, 14.1 pixels at 300 dpi, 28.3 pixels at 600 dpi,
+and 56.5 pixels at 1200 dpi.  The duration of this distance is 23.5 
+milliseconds.
+</p>
+
+<p>
+Pixel durations (assuming 10 feet per minute): 3.33 ms at 150 dpi,
+1.67 ms at 300 dpi, 0.833 ms at 600 dpi, and 0.417 ms at 1200 dpi.
+As a comparison, Standard MIDI note timing resolutions are 1 millsecond.
+</p>
+
+<h3> Physical coordinates of punches </h3>
 
 <style>
 table.coord * {
-	font-size:97%;
+	font-size:95%;
 }
+
+table.coord td {
+	padding: 4px 8px;
+}
+
 
 table.coord td:nth-child(1) {
 	background-color: #d00;
 	text-align: center;
 	color: #fff;
-	font-weight: 
 }
 
 table.coord td:nth-child(2) {
@@ -367,7 +457,7 @@ table.coord td:nth-child(2) {
 
 table.coord td:nth-child(3) {
 	margin-left:0;
-	padding-left:3px;
+	padding-left:2px;
 }
 
 table.coord td:nth-child(2):before { content: '('; }
@@ -381,77 +471,10 @@ table.meta-coord > tbody > tr > td {
 The following table gives the coordinates of the centers of each punch 
 in the example image, based on the hand-aligned SVG image.  The units are
 in millimeters with the origin at the top left corner of the image.
-For example, the first point is 38.486 mm from the left margin, and 2.943 mm
+For example, the first point is 38.428 mm from the left margin, and 2.651 mm
 from the top margin.
 
 <br><br>
 
-<table class="meta-coord" padding=0 cellspacing=0>
-<tr><td>
-<table class="coord">
-<tr><td>1</td>	<td>38.486</td>	<td>2.943</td></tr>
-<tr><td>2</td>	<td>39.798</td>	<td>2.943</td></tr>
-<tr><td>3</td>	<td>&nbsp;&nbsp;9.911</td>	<td>8.404</td></tr>
-<tr><td>4</td>	<td>11.138</td>	<td>8.404</td></tr>
-<tr><td>5</td>	<td>12.366</td>	<td>8.404</td></tr>
-<tr><td>6</td>	<td>13.509</td>	<td>8.404</td></tr>
-<tr><td>7</td>	<td>14.694</td>	<td>8.404</td></tr>
-<tr><td>8</td>	<td>15.922</td>	<td>8.404</td></tr>
-<tr><td>9</td>	<td>17.107</td>	<td>8.404</td></tr>
-<tr><td>10</td>	<td>18.377</td>	<td>8.404</td></tr>
-</table>
-
-</td><td>
-<table class="coord">
-<tr><td>11</td>	<td>25.320</td>	<td>&nbsp;&nbsp;8.447</td></tr>
-<tr><td>12</td>	<td>26.505</td>	<td>&nbsp;&nbsp;8.447</td></tr>
-<tr><td>13</td>	<td>27.860</td>	<td>&nbsp;&nbsp;8.447</td></tr>
-<tr><td>14</td>	<td>29.088</td>	<td>&nbsp;&nbsp;8.447</td></tr>
-<tr><td>15</td>	<td>30.231</td>	<td>&nbsp;&nbsp;8.489</td></tr>
-<tr><td>16</td>	<td>&nbsp;&nbsp;3.899</td>	<td>11.198</td></tr>
-<tr><td>17</td>	<td>&nbsp;&nbsp;5.169</td>	<td>11.198</td></tr>
-<tr><td>18</td>	<td>&nbsp;&nbsp;3.857</td>	<td>22.459</td></tr>
-<tr><td>19</td>	<td>&nbsp;&nbsp;5.085</td>	<td>22.459</td></tr>
-<tr><td>20</td>	<td>15.837</td>	<td>22.501</td></tr>
-</table>
-
-</td><td>
-<table class="coord">
-<tr><td>21</td>	<td>17.065</td>	<td>22.501</td></tr>
-<tr><td>22</td>	<td>29.045</td>	<td>22.544</td></tr>
-<tr><td>23</td>	<td>44.116</td>	<td>22.628</td></tr>
-<tr><td>24</td>	<td>45.174</td>	<td>22.586</td></tr>
-<tr><td>25</td>	<td>&nbsp;&nbsp;9.826</td>	<td>30.883</td></tr>
-<tr><td>26</td>	<td>11.096</td>	<td>30.883</td></tr>
-<tr><td>27</td>	<td>21.722</td>	<td>30.883</td></tr>
-<tr><td>28</td>	<td>22.907</td>	<td>30.883</td></tr>
-<tr><td>29</td>	<td>33.575</td>	<td>30.968</td></tr>
-<tr><td>30</td>	<td>34.803</td>	<td>30.968</td></tr>
-</table>
-
-</td><td>
-<table class="coord">
-<tr><td>31</td>	<td>38.316</td>	<td>36.514</td></tr>
-<tr><td>32</td>	<td>39.586</td>	<td>36.514</td></tr>
-<tr><td>33</td>	<td>12.197</td>	<td>42.059</td></tr>
-<tr><td>34</td>	<td>13.467</td>	<td>42.059</td></tr>
-<tr><td>35</td>	<td>14.652</td>	<td>42.059</td></tr>
-<tr><td>36</td>	<td>15.795</td>	<td>42.059</td></tr>
-<tr><td>37</td>	<td>16.980</td>	<td>42.059</td></tr>
-<tr><td>38</td>	<td>18.250</td>	<td>42.059</td></tr>
-<tr><td>39</td>	<td>28.918</td>	<td>42.144</td></tr>
-<tr><td>40</td>	<td>30.104</td>	<td>42.144</td></tr>
-</table>
-
-</td></tr>
-</table>
-
-
-
-
-
-
-
-
-
+{% include resolution/coordinates.html %}
 
