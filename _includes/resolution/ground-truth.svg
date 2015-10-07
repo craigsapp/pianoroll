@@ -1,0 +1,111 @@
+<svg 
+	version="1.1" 
+	id="overlay" 
+	xmlns="http://www.w3.org/2000/svg" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	opacity="0.7"
+	x="0px" 
+	y="0px"
+	width="48.345mm" 
+	height="47.202mm" 
+	style="width:800px; height:781px;"
+	viewBox="0 0 48.345 47.202"
+	enable-background="new 0 0 48.345 47.202"
+	xml:space="preserve">
+
+<g fill="#D00">
+	<circle	cx="38.428"	cy="2.651"	r="0.846"/>
+	<circle	cx="39.712"	cy="2.651"	r="0.846"/>
+	<circle	cx="9.853"	cy="8.120"	r="0.846"/>
+	<circle	cx="11.060"	cy="8.120"	r="0.846"/>
+	<circle	cx="12.284"	cy="8.120"	r="0.846"/>
+	<circle	cx="13.474"	cy="8.120"	r="0.846"/>
+	<circle	cx="15.872"	cy="8.120"	r="0.846"/>
+	<circle	cx="17.008"	cy="8.120"	r="0.846"/>
+	<circle	cx="14.648"	cy="8.147"	r="0.846"/>
+	<circle	cx="18.298"	cy="8.147"	r="0.846"/>
+	<circle	cx="25.232"	cy="8.169"	r="0.846"/>
+	<circle	cx="26.456"	cy="8.169"	r="0.846"/>
+	<circle	cx="27.784"	cy="8.169"	r="0.846"/>
+	<circle	cx="28.983"	cy="8.169"	r="0.846"/>
+	<circle	cx="30.157"	cy="8.169"	r="0.846"/>
+	<circle	cx="3.867"	cy="10.914"	r="0.846"/>
+	<circle	cx="5.085"	cy="10.914"	r="0.846"/>
+	<circle	cx="3.795"	cy="22.187"	r="0.846"/>
+	<circle	cx="5.008"	cy="22.187"	r="0.846"/>
+	<circle	cx="15.795"	cy="22.231"	r="0.846"/>
+	<circle	cx="16.991"	cy="22.231"	r="0.846"/>
+	<circle	cx="28.975"	cy="22.247"	r="0.846"/>
+	<circle	cx="44.061"	cy="22.346"	r="0.846"/>
+	<circle	cx="45.125"	cy="22.308"	r="0.846"/>
+	<circle	cx="9.811"	cy="30.576"	r="0.846"/>
+	<circle	cx="10.997"	cy="30.576"	r="0.846"/>
+	<circle	cx="21.649"	cy="30.598"	r="0.846"/>
+	<circle	cx="22.884"	cy="30.598"	r="0.846"/>
+	<circle	cx="33.561"	cy="30.642"	r="0.846"/>
+	<circle	cx="34.785"	cy="30.642"	r="0.846"/>
+	<circle	cx="38.249"	cy="36.250"	r="0.846"/>
+	<circle	cx="39.511"	cy="36.250"	r="0.846"/>
+	<circle	cx="12.132"	cy="41.791"	r="0.846"/>
+	<circle	cx="13.378"	cy="41.791"	r="0.846"/>
+	<circle	cx="14.536"	cy="41.791"	r="0.846"/>
+	<circle	cx="15.688"	cy="41.791"	r="0.846"/>
+	<circle	cx="16.900"	cy="41.758"	r="0.846"/>
+	<circle	cx="18.190"	cy="41.791"	r="0.846"/>
+	<circle	cx="28.853"	cy="41.849"	r="0.846"/>
+	<circle	cx="30.052"	cy="41.849"	r="0.846"/>
+</g>
+
+<g 
+	transform="translate(0,0.3)"
+	fill="#fff6d0" 
+	text-anchor="middle" 
+	font-size="0.25mm">
+
+	<text	x="38.428"	y="2.651">1</text>
+	<text	x="39.712"	y="2.651">2</text>
+	<text	x="9.853"	y="8.120">3</text>
+	<text	x="11.060"	y="8.120">4</text>
+	<text	x="12.284"	y="8.120">5</text>
+	<text	x="13.474"	y="8.120">6</text>
+	<text	x="15.872"	y="8.120">7</text>
+	<text	x="17.008"	y="8.120">8</text>
+	<text	x="14.648"	y="8.147">9</text>
+	<text	x="18.298"	y="8.147">10</text>
+	<text	x="25.232"	y="8.169">11</text>
+	<text	x="26.456"	y="8.169">12</text>
+	<text	x="27.784"	y="8.169">13</text>
+	<text	x="28.983"	y="8.169">14</text>
+	<text	x="30.157"	y="8.169">15</text>
+	<text	x="3.867"	y="10.914">16</text>
+	<text	x="5.085"	y="10.914">17</text>
+	<text	x="3.795"	y="22.187">18</text>
+	<text	x="5.008"	y="22.187">19</text>
+	<text	x="15.795"	y="22.231">20</text>
+	<text	x="16.991"	y="22.231">21</text>
+	<text	x="28.975"	y="22.247">22</text>
+	<text	x="44.061"	y="22.346">23</text>
+	<text	x="45.125"	y="22.308">24</text>
+	<text	x="9.811"	y="30.576">25</text>
+	<text	x="10.997"	y="30.576">26</text>
+	<text	x="21.649"	y="30.598">27</text>
+	<text	x="22.884"	y="30.598">28</text>
+	<text	x="33.561"	y="30.642">29</text>
+	<text	x="34.785"	y="30.642">30</text>
+	<text	x="38.249"	y="36.250">31</text>
+	<text	x="39.511"	y="36.250">32</text>
+	<text	x="12.132"	y="41.791">33</text>
+	<text	x="13.378"	y="41.791">34</text>
+	<text	x="14.536"	y="41.791">35</text>
+	<text	x="15.688"	y="41.791">36</text>
+	<text	x="16.900"	y="41.758">37</text>
+	<text	x="18.190"	y="41.791">38</text>
+	<text	x="28.853"	y="41.849">39</text>
+	<text	x="30.052"	y="41.849">40</text>
+</g>
+
+
+</svg>
+
+
+

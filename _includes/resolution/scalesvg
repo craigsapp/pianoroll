@@ -1,0 +1,46 @@
+#!/usr/bin/perl
+#
+# Programmer:    Craig Stuart Sapp <craig.stanford.edu>
+# Creation Date: Tue Oct  6 16:37:21 PDT 2015
+# Last Modified: Tue Oct  6 16:37:21 PDT 2015
+# Filename:      /Users/craig/git-cloud/piano-roll/resolution/scalesvg
+# Syntax:        perl 5
+# vim:           ts=3
+#
+# Description:
+#
+
+use strict;
+
+my $factor = 25.4 / 600.0 * 8.333333333;
+
+# <circle fill="#F00" cx="122.10938" cy="257.43799" r="19.60938"/>
+
+my $cx;
+my $cy;
+my $r;
+while (my $line = <>) {
+	if ($line !~ /<circle/) {
+		print $line;
+		next;
+	}
+	$line =~ s/cx="([^"]+)"/XXX/;
+	$cx = $1;
+	$line =~ s/cy="([^"]+)"/YYY/;
+	$cy = $1;
+	$line =~ s/r="([^"]+)"/ZZZ/;
+	$r = $1;
+	$cx *= $factor;
+	$cy *= $factor;
+	$r  *= $factor;
+	$cx = sprintf '%.3f', int(1000.0 * $cx + 0.5)/1000.0;
+	$cy = sprintf '%.3f', int(1000.0 * $cy + 0.5)/1000.0;
+	$r  = sprintf '%.3f', int(1000.0 * $r  + 0.5)/1000.0;
+	$line =~ s/XXX/cx="$cx"/;
+	$line =~ s/YYY/cy="$cy"/;
+	$line =~ s/ZZZ/r="$r"/;
+	print $line;
+}
+
+
+

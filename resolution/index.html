@@ -156,28 +156,302 @@ div.imagelink {
 
 </table>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-histogram-blue.png
-histogram-color.png
-histogram-green.png
-histogram-red.png
+
+<style>
+table.color-hist {
+	width:800;
+}
+table.color-hist td {
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width:220px;
+	height:350px;
+}
+</style>
+
+<table class="color-hist">
+<tr>
+<td style="background-image: url('/images/resolution/histogram-color.png');"></td>
+<td style="background-image: url('/images/resolution/histogram-red.png');"></td>
+<td style="background-image: url('/images/resolution/histogram-green.png');"></td>
+<td style="background-image: url('/images/resolution/histogram-blue.png');"></td>
+</tr>
+</table>
+
+
+
+
+<h2> Ground truth </h2>
+
+Below is a hand-made vector graphics version of the 1200 dpi 2-bit
+scan (threshold at 40) which can be overlay the above images.  Each
+of the 40 punches are numbered.  The radius of hole #22 was measured
+to be 0.830 mm, which is a diameter of 9.8 pixels at 150 dpi, 19.6
+pixels at 300 dpi, 39.2 pixels at 600 dpi, and 78.4 pixels at 1200
+dpi.  
+<br> <br>
+
+<table><tr><td>
+
+<label>Bit Depth</label>
+<select id="depth" class="form-control">
+   <option>24</option>
+   <option>8</option>
+   <option>2</option>
+   <option>none</option>
+</select>
+</td><td>
+
+<label>DPI</label>
+<select id="dpi" class="form-control">
+   <option>600</option>
+   <option>300</option>
+   <option>150</option>
+   <option>none</option>
+   <option>1200</option>
+</select>
+</td><td>
+
+<label>Threshold</label>
+<select id="threshold" class="form-control">
+   <option>N/A</option>
+   <option>20</option>
+   <option>40</option>
+   <option>60</option>
+</select>
+</td><td>
+
+<span style="font-size:16px;">Zoom:</span>
+<input 
+	type="text" 
+	id="foo2" 
+	class="span2" 
+	value="" 
+	data-slider-min="500" 
+	data-slider-max="8000" 
+	data-slider-step="10" 
+	data-slider-value="800" 
+	data-slider-orientation="horizontal" 
+	data-slider-selection="after"
+	data-slider-tooltip="hide">
+</td><td>
+
+<span style="font-size:16px;">Overlay opacity:</span>
+<input 
+	type="text" 
+	id="foo" 
+	class="span2" 
+	value="" 
+	data-slider-min="0" 
+	data-slider-max="1" 
+	data-slider-step="0.1" 
+	data-slider-value="0.7" 
+	data-slider-orientation="horizontal" 
+	data-slider-selection="after"
+	data-slider-tooltip="hide">
+
+</td></tr></table>
+
+<script>
+
+$(window).load(function(){
+	$('#foo').slider()
+  		.on('slide', function(ev){
+     		$('#bar').val(ev.value);
+			var overlay = document.querySelector("#overlay");
+			overlay.style.opacity = ev.value;
+  		});
+	}); 
+
+$(window).load(function(){
+	$('#foo2').slider()
+  		.on('slide', function(ev){
+     		$('#bar').val(ev.value);
+			var gt = document.querySelector("#ground-truth");
+			gt.style['background-size'] = ev.value + 'px';
+			var overlay = document.querySelector("#overlay");
+			overlay.style['width'] = ev.value + 'px';
+			overlay.style['height'] = (ev.value * 0.97635727) + 'px';
+  		});
+	}); 
+
+</script>
+</script>
+
+<script>
+
+$('#dpi').change(changeBackground);
+$('#threshold').change(changeBackground);
+$('#depth').change(changeBackground);
+
+function changeBackground() {
+	var dpi       = document.querySelector("#dpi");
+	var depth     = document.querySelector("#depth");
+	var threshold = document.querySelector("#threshold");
+	var gt        = document.querySelector("#ground-truth");
+
+	if (!dpi.value) {
+		gt.style['background-image'] = 'none';
+      console.log("NO DPI", dpi.value, "DEPTH", depth.value);
+		return;
+	}
+
+	if (!depth.value) {
+		gt.style['background-image'] = 'none';
+      console.log("NO DEPTH", depth.value, "DPI", dpi.value);
+		return;
+	}
+
+   console.log("displaying");
+
+	if (dpi.value == "1200") {
+		depth.value = "2";
+	}
+
+	if (depth.value == "2") {
+		if (!threshold.value) {
+			threshold.value = "40";
+		}
+		if (threshold.value == 'N/A') {
+			threshold.value = "40";
+		}
+	} else {
+		threshold.value = "N/A";
+	}
+
+	var image = '/images/resolution/';
+	image += dpi.value + 'dpi';
+	image += '-' + depth.value + 'bit';
+	if ((threshold.value !== 'N/A') && (threshold.value !== "")) {
+		image += '-' + threshold.value + 't';
+	}
+	image += '.png';
+	gt.style['background-image'] = 'url("' + image + '")';
+	console.log("image", image);
+
+}
+
+</script>
+
+<style>
+#ground-truth {
+	background-size: 800px;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	background-attachment: local;
+	background-image: url('/images/resolution/600dpi-24bit.png');
+}
+
+</style>
+<div style="overflow: scroll; width:800px; height:781px;" id="ground-truth">{% include resolution/ground-truth.svg %}</div>
+
+
+<h3> Coordinates of punches </h3>
+
+<style>
+table.coord * {
+	font-size:97%;
+}
+
+table.coord td:nth-child(1) {
+	background-color: #d00;
+	text-align: center;
+	color: #fff;
+	font-weight: 
+}
+
+table.coord td:nth-child(2) {
+	margin-right:0;
+	padding-right:0;
+}
+
+table.coord td:nth-child(3) {
+	margin-left:0;
+	padding-left:3px;
+}
+
+table.coord td:nth-child(2):before { content: '('; }
+table.coord td:nth-child(2):after { content: ','; }
+table.coord td:nth-child(3):after { content: ')'; }
+
+table.meta-coord > tbody > tr > td {
+}
+</style>
+
+The following table gives the coordinates of the centers of each punch 
+in the example image, based on the hand-aligned SVG image.  The units are
+in millimeters with the origin at the top left corner of the image.
+For example, the first point is 38.486 mm from the left margin, and 2.943 mm
+from the top margin.
+
+<br><br>
+
+<table class="meta-coord" padding=0 cellspacing=0>
+<tr><td>
+<table class="coord">
+<tr><td>1</td>	<td>38.486</td>	<td>2.943</td></tr>
+<tr><td>2</td>	<td>39.798</td>	<td>2.943</td></tr>
+<tr><td>3</td>	<td>&nbsp;&nbsp;9.911</td>	<td>8.404</td></tr>
+<tr><td>4</td>	<td>11.138</td>	<td>8.404</td></tr>
+<tr><td>5</td>	<td>12.366</td>	<td>8.404</td></tr>
+<tr><td>6</td>	<td>13.509</td>	<td>8.404</td></tr>
+<tr><td>7</td>	<td>14.694</td>	<td>8.404</td></tr>
+<tr><td>8</td>	<td>15.922</td>	<td>8.404</td></tr>
+<tr><td>9</td>	<td>17.107</td>	<td>8.404</td></tr>
+<tr><td>10</td>	<td>18.377</td>	<td>8.404</td></tr>
+</table>
+
+</td><td>
+<table class="coord">
+<tr><td>11</td>	<td>25.320</td>	<td>&nbsp;&nbsp;8.447</td></tr>
+<tr><td>12</td>	<td>26.505</td>	<td>&nbsp;&nbsp;8.447</td></tr>
+<tr><td>13</td>	<td>27.860</td>	<td>&nbsp;&nbsp;8.447</td></tr>
+<tr><td>14</td>	<td>29.088</td>	<td>&nbsp;&nbsp;8.447</td></tr>
+<tr><td>15</td>	<td>30.231</td>	<td>&nbsp;&nbsp;8.489</td></tr>
+<tr><td>16</td>	<td>&nbsp;&nbsp;3.899</td>	<td>11.198</td></tr>
+<tr><td>17</td>	<td>&nbsp;&nbsp;5.169</td>	<td>11.198</td></tr>
+<tr><td>18</td>	<td>&nbsp;&nbsp;3.857</td>	<td>22.459</td></tr>
+<tr><td>19</td>	<td>&nbsp;&nbsp;5.085</td>	<td>22.459</td></tr>
+<tr><td>20</td>	<td>15.837</td>	<td>22.501</td></tr>
+</table>
+
+</td><td>
+<table class="coord">
+<tr><td>21</td>	<td>17.065</td>	<td>22.501</td></tr>
+<tr><td>22</td>	<td>29.045</td>	<td>22.544</td></tr>
+<tr><td>23</td>	<td>44.116</td>	<td>22.628</td></tr>
+<tr><td>24</td>	<td>45.174</td>	<td>22.586</td></tr>
+<tr><td>25</td>	<td>&nbsp;&nbsp;9.826</td>	<td>30.883</td></tr>
+<tr><td>26</td>	<td>11.096</td>	<td>30.883</td></tr>
+<tr><td>27</td>	<td>21.722</td>	<td>30.883</td></tr>
+<tr><td>28</td>	<td>22.907</td>	<td>30.883</td></tr>
+<tr><td>29</td>	<td>33.575</td>	<td>30.968</td></tr>
+<tr><td>30</td>	<td>34.803</td>	<td>30.968</td></tr>
+</table>
+
+</td><td>
+<table class="coord">
+<tr><td>31</td>	<td>38.316</td>	<td>36.514</td></tr>
+<tr><td>32</td>	<td>39.586</td>	<td>36.514</td></tr>
+<tr><td>33</td>	<td>12.197</td>	<td>42.059</td></tr>
+<tr><td>34</td>	<td>13.467</td>	<td>42.059</td></tr>
+<tr><td>35</td>	<td>14.652</td>	<td>42.059</td></tr>
+<tr><td>36</td>	<td>15.795</td>	<td>42.059</td></tr>
+<tr><td>37</td>	<td>16.980</td>	<td>42.059</td></tr>
+<tr><td>38</td>	<td>18.250</td>	<td>42.059</td></tr>
+<tr><td>39</td>	<td>28.918</td>	<td>42.144</td></tr>
+<tr><td>40</td>	<td>30.104</td>	<td>42.144</td></tr>
+</table>
+
+</td></tr>
+</table>
+
+
+
+
+
+
+
+
 
 
