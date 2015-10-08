@@ -1,0 +1,45 @@
+I've been waiting for your email. There's an important point I want
+to make about roll reading and roll scanning. Scanning produces a
+MIDI file of the roll data, which is the type of file used for
+producing recut rolls with a MIDI controlled perforator. A roll
+reader (as in my system) produces MIDI files for playing on a
+reproducing piano, either pneumatic (with MIDI valve interface) or
+Disklavier and the like. When comparing the two types of files,
+it's important to appreciate the differences. I can give further
+info if you need.
+
+Attached are four MIDI files per roll and a text file per roll that
+explains certain aspects of the rolls and what I found. The four
+MIDI files per roll are simply two files duplicated. That is, I
+recorded each roll twice (as you requested). The -e.mid files are
+eroll MIDI files, or the files straight from the roll reader. The
+.mid files have been processed using Windplay software to produce
+MIDI files for playing on a Disklavier.
+
+Hope this is all useful to you, but I suspect comparing these files
+with a scanned MIDI file may prove a bit tricky. Things to look for
+in scanned files include:
+
+1) chain perforations becoming repeating notes
+2) missing notes
+3) repeating notes turned into long chained notes
+3) extra notes
+4) shortened notes
+5) delayed notes
+6) tempo change (this is a bigger topic than simply two words)
+
+And more...
+
+Keep in touch, as I am most interested in what you find about roll
+scanning. I became interested in scanning some years ago, and was
+given the parts to make a roll scanner. However I am not convinced
+it is the way to go in regard to producing files for playing on a
+piano. I spent quite a bit of time before I came to that conclusion.
+It is, however definitely the way to go for producing recut rolls.
+
+I also believe it is important that Stanford scan the rolls
+photographically, to produce images of the rolls. This then allows
+researchers to examine the virtual roll with greater ease than
+examining the actual roll. It also captures all the artwork on
+Audiographic rolls. I think Anthony's scanner does this.
+

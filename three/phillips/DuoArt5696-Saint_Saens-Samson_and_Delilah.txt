@@ -1,0 +1,19 @@
+Samson and Delilah roll Duo-Art 5696
+
+While a perfect looking roll, it has three errors. I have noted
+this on the roll (in pencil) as Note 1 and 2. In the MIDI file, at
+bar 63, note E4 is broken. This is incorrect and is due to the way
+the roll has been punched. Similarly, at bar 66, notes A4 and B4
+are broken, due to the same problem. I have inserted flags at these
+two points in the MIDI file titled Samson et Delilah, St-Saens,
+5696, for CS-1.mid. These are viewable in Cakewalk.
+
+This problem did not occur with the Condon roll which also had a
+different tempo marking of 80. Yours is marked 90.
+
+This illustrates the variables with rolls! I have encountered similar
+issues many times. Surprisingly, the roll with a tempo of 80 has a
+playing time of 5:00, where your roll marked tempo 90 has a longer
+playing time of 5:13. I suspect your roll is an early cut, and a
+new master was produced for later production rolls.
+ 

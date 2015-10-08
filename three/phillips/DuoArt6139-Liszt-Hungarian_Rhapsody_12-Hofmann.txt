@@ -1,0 +1,45 @@
+Franz Liszt, Hungarian Rhapsody 12, Hofmann Duo-Art 6139
+
+Roll has bass side edge damage about 7 minutes in, and slight treble
+edge damage at 5:27 and 4:24 in. Roll paper dry, rather stiff, some
+surface irregularities.
+
+At bar 69.1.5 in MIDI file, note Db5 is broken by a small amount.
+A prior recording of this roll from a collection (not Condon
+collection) also has this note broken, but with a wider gap. (An
+indication of differences between roll cuts.) See note 1 (in pencil)
+on roll, about 2:45 in.
+
+Sustain pedal perforation broken at start, not so in prior recording.
+As described below, this is removed in the edited files. (Hungarian
+Rhapsody 12, Hofmann 6139 CS-1 edited e.mid and Hungarian Rhapsody
+12, Hofmann 6139 CS-2 edited e.mid)
+
+Soft pedal (note F9 in eroll file, or top most note) has numerous
+breaks between bars 56 to 61. Also on prior recording. This would
+not affect playing on an original instrument, due to the slow speed
+of operation of the pedal. Also breaks occur at points in the playing
+that prevent the effect being noticeable. I would normally edit
+this to create a single on-off command for the entire length to
+avoid unnecessary noise and movement of the side shift of a grand
+piano.
+
+Difficult roll to reproduce on an original instrument due to rapid
+repeats.
+
+Original MIDI files as recorded are provided, along with edited
+MIDI files that were used to create the emulated files. Edits to
+these two files were done when emulation software reported 5 notes
+(3 notes) as being too close together. (CS-1 and CS-2 respectively)
+Edits were:
+
+<ol>
+<li> at bar 2, lengthen sustain pedal note (F#1, or bottom most note) to correct punching error.
+<li> at bar 5, shorten length of three notes to permit repetition.
+<li> at bar 27, shorten length of seven notes to permit repetition.
+<li> at bar 69.3, shorten Db5 note to permit its repetition.
+</ol>
+
+The above issues are due to the punching quality of the roll, and
+show the need to post edit a MIDI file to obtain proper playing.
+These edits were not needed on the roll I had previously recorded.
