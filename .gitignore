@@ -1,1 +1,4 @@
 _site
+lib
+obj
+bin
