@@ -1,0 +1,143 @@
+## PianoRoll programs makefile.
+##
+## Programmer:    Craig Stuart Sapp <craig@ccrma.stanford.edu>
+## Creation Date: Wed Oct 21 15:15:08 PDT 2015
+## Last Modified: Wed Oct 21 15:15:10 PDT 2015
+## Filename:      pianoroll/Makefile.programs
+##
+## To run this makefile, type (without quotes) "make -f Makefile.programs"
+## (or "gmake -f Makefile.programs" on FreeBSD computers), although it
+## is intended to be used the file "Makefile" which runs this makefile
+## with the command "make programs".  Note that you have to first
+## create the library file with the makefile "Makefile.library".
+##
+## Without arguments, this makefile will compile all programs.
+## If you give a program name as an argument, it will compile
+## just that program. E.g.: "make -f Makefile.programs blank" or used
+## in conjunction with "Makefile", type "make blank", which will
+## compile the "blank" program and place it in the ./bin directory.
+##
+
+ARCH =
+
+# Set the environmental variable $MACOSX_DEPLOYMENT_TARGET to
+# "10.4" in Apple OS X to compile for OS X 10.4 and later (for example,
+# you can compile for OS X 10.4 computers even if you are using a 10.6
+# computer).
+ENV =
+
+# if OSTYPE is not defined, then this if statement will be run:
+ifeq ($(shell uname),Darwin)
+   OSTYPE = OSXPC
+   # Use the following to compile for a particular version of OS X:
+   # ENV = MACOSX_DEPLOYMENT_TARGET=10.6
+   # Use the following to compile for 32-bit architecture on 64-bit comps:
+   #ARCH = -m32 -arch i386
+else
+   OSTYPE = LINUX
+   # use the following to compile for 32-bit architecture on 64-bit comps:
+   # (you will need 32-bit libraries in order to do this)
+   # ARCH = -m32
+endif
+
+# Cygwin (and MinGW?) adds the string ".exe" to the end of compiled programs.
+# so select EXTEN = .exe when compiling in cygwin
+EXTEN     =
+ifeq ($(shell uname),CYGWIN_NT-5.1)
+   EXTEN   = .exe
+endif
+
+
+###########################################################################
+#                                                                         #
+# Beginning of user-modifiable configuration variables                    #
+#                                                                         #
+
+SRCDIR    = src-programs
+INCDIR    = include
+OBJDIR    = obj
+LIBDIR    = lib
+LIBFILE   = pianoroll
+TARGDIR   = bin
+# LANG=C: Nuts to the GCC error beautification committee.
+COMPILER  = LANG=C $(ENV) g++ $(ARCH)
+
+# MinGW compiling setup (used to compile for Microsoft Windows but actual
+# compiling can be done in Linux). You have to install MinGW and these
+# variables will probably have to be changed to the correct paths:
+#COMPILER  = /opt/xmingw/bin/i386-mingw32msvc-g++
+#OBJDIR    = obj-win
+#TARGDIR   = bin-win
+#LIBDIR    = lib-win
+#POSTFLAGS = -Wl,--export-all-symbols -Wl,--enable-auto-import \
+#            -Wl,--no-whole-archive -lmingw32 -L$(LIBDIR) -l$(LIBFILE)
+
+
+PREFLAGS  = -O3 -Wall -I$(INCDIR) -I$(INCDIR)/lodepng $(DEFINES)
+
+# Options class uses C++11 standard, so need to compile all code using C++11:
+PREFLAGS += -std=c++11
+
+# Add -static flag to compile without dynamics libraries for better portability:
+# (-static flag doesn't work well with gethostbyname() used in Humdrum parser)
+#PREFLAGS += -static
+
+POSTFLAGS ?= -L$(LIBDIR) -l$(LIBFILE)
+
+
+# setting up the directory paths to search for program source code
+vpath %.cpp   $(SRCDIR)
+
+# generating a list of the programs to compile with "make all"
+PROGS1=$(notdir $(patsubst %.cpp,%,$(wildcard $(SRCDIR)/*.cpp)))
+PROGS=$(PROGS1)
+
+# Targets which don't actually refer to files
+.PHONY : bin src-programs src-library include obj bin-win obj-win
+
+
+###########################################################################
+#                                                                         #
+#                                                                         #
+
+examples: all
+all: bin $(addprefix $(TARGDIR)/,$(PROGS))
+	@echo Finished compiling all programs.
+
+info:
+	@echo "Programs to compile: $(PROGS)" | fmt
+
+bin:
+ifeq ($(wildcard $(TARGDIR)),)
+	-mkdir -p $(TARGDIR)
+endif
+
+
+
+###########################################################################
+#
+# Defining explicit rules for program sourcefile dependencies:
+#
+
+$(TARGDIR)/% : $(notdir %.cpp)
+ifeq ($(wildcard $(TARGDIR)),)
+	@mkdir -p $(TARGDIR)
+endif
+	@echo [CC] $@
+	@$(COMPILER) $(PREFLAGS) -o $@ $< $(POSTFLAGS) \
+	&& strip $@$(EXTEN)
+
+% : $(notdir %.cpp)
+ifeq ($(wildcard $(TARGDIR)),)
+	@mkdir -p $(TARGDIR)
+endif
+	@echo [CC] $@
+	@$(COMPILER) $(PREFLAGS) -o $(TARGDIR)/$@ $< $(POSTFLAGS) \
+	&& strip $(TARGDIR)/$@$(EXTEN)
+
+#                                                                         #
+#                                                                         #
+###########################################################################
+
+
+

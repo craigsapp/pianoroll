@@ -1,2 +1,9 @@
-_site
 _includes
+bin
+obj
+lib
+*.a
+*.o
+_site
+resolution
+formats

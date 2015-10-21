@@ -1,0 +1,156 @@
+##
+## Programmer:    Craig Stuart Sapp <craig@ccrma.stanford.edu>
+## Creation Date: Wed Oct 21 15:01:11 PDT 2015
+## Last Modified: Wed Oct 21 15:07:50 PDT 2015
+## Filename:      pianoroll/Makefile.library
+##
+## Description:   This Makefile creates the PianoRoll library
+##                lib/libpianoroll.a for linux, using gcc.
+##
+## To run this makefile, type (without quotes) "make -f Makefile.library",
+## (or "gmake -f Makefile.library" on FreeBSD computers). Although it is 
+## intended to be used the file "Makefile" which runs this makefile with 
+## the command "make library".  After the library file is created, you 
+## can compile specific programs with the Makefile.programs file.
+##
+
+# Set the environmental variable $MACOSX_DEPLOYMENT_TARGET to
+# "10.6" in Apple OS X to compile for OS X 10.6 and later (for example,
+# you can compile for OS X 10.6 computers even if you are using a 10.9
+# computer).
+ENV = 
+
+ifeq ($(shell uname),Darwin)
+   # Use the following to compile for a particular version of OS X:
+   # ENV = MACOSX_DEPLOYMENT_TARGET=10.6
+   # Use the following to compile for 32-bit architecture on 64-bit comps:
+   #ARCH = -m32 -arch i386
+else 
+   # use the following to compile for 32-bit architecture on 64-bit comps:
+   # (you will need 32-bit libraries in order to do this)
+   # ARCH = -m32 
+endif
+
+
+###########################################################################
+#                                                                         #
+# Beginning of user-modifiable configuration variables                    #
+#                                                                         #
+
+OBJDIR    = obj
+SRCDIR    = src-library
+INCDIR    = include
+LIBDIR    = lib
+LIBFILE   = libpianoroll.a
+# LANG=C: Nuts to the GCC error beautification committee.
+COMPILER  = LANG=C $(ENV) g++ $(ARCH) 
+AR        = ar
+RANLIB    = ranlib
+
+# MinGW compiling setup (used to compile for Microsoft Windows but actual
+# compiling can be done in Linux). You have to install MinGW and these
+# variables will probably have to be changed to the correct paths:
+#COMPILER = /opt/xmingw/bin/i386-mingw32msvc-g++
+#AR       = /opt/xmingw/bin/i386-mingw32msvc-ar
+#RANLIB   = /opt/xmingw/bin/i386-mingw32msvc-ranlib
+#OBJDIR   = obj-win
+#LIBDIR   = lib-win
+
+DEFINES   = $(addprefix -D,$(OSTYPE))
+
+PREFLAGS  = -c -g -Wall -O3 $(DEFINES) -I$(INCDIR) -I$(INCDIR)/lodepng
+
+# Options class uses C++11 standard, so need to compile all code using C++11:
+PREFLAGS += -std=c++11
+
+# Add -static flag to compile without dynamics libraries for better portability:
+# (-static flag doesn't work well with gethostbyname() used in Humdrum parser)
+POSTFLAGS = 
+# POSTFLAGS += -static
+
+#                                                                         #
+# End of user-modifiable variables.                                       #
+#                                                                         #
+###########################################################################
+
+
+# setting up the directory paths to search for dependency files
+vpath %.h   $(INCDIR):$(SRCDIR):$(INCDIR)/lodepng
+vpath %.cpp $(SRCDIR):$(INCDIR):$(SRCDIR)/lodepng
+vpath %.o   $(OBJDIR)
+
+# generating a list of the object files
+OBJS = $(notdir $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/*.cpp)))
+OBJS += $(notdir $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/lodepng/*.cpp)))
+
+# targets which don't actually refer to files
+.PHONY : all clean makedirs external
+
+
+###########################################################################
+#                                                                         #
+# Hardware Configurations:                                                #
+#                                                                         #
+
+all: makedirs external library
+
+library: $(OBJS)
+   ifeq ($(shell uname),Darwin)
+	@echo "Creating pianoroll library file for OS X (Intel)..."
+	-rm -f $(LIBDIR)/$(LIBFILE)
+	$(AR) r $(LIBDIR)/$(LIBFILE) $(OBJDIR)/*.o 
+   else
+	@echo "Creating pianoroll library file for linux ..."
+	-rm -f $(LIBDIR)/$(LIBFILE)
+	$(AR) r $(LIBDIR)/$(LIBFILE) $(OBJDIR)/*.o 
+	$(RANLIB) $(LIBDIR)/$(LIBFILE)
+   endif
+
+clean:
+	@echo Erasing object files:
+	-rm -f $(OBJDIR)/*.o
+	@echo Erasing obj directory:
+	-rmdir $(OBJDIR)
+
+super-clean: clean
+	-rm -rf bin
+	-rm -rf lib
+
+makedirs: 
+	-mkdir $(OBJDIR)
+	-mkdir $(LIBDIR)
+
+
+###########################################################################
+#                                                                         #
+# defining an explicit rule for object file dependencies                  #
+#                                                                         #
+
+
+%.o : %.cpp
+	@echo [CC] $@
+	@$(COMPILER) $(PREFLAGS) -o $(OBJDIR)/$(notdir $@) $(POSTFLAGS) $<
+
+#                                                                         #
+###########################################################################
+
+
+
+###########################################################################
+#                                                                         #
+# Dependencies -- generated with the following command in                 #
+#      the src directory (in bash shell):                                 #
+#                                                                         #
+#   for i in *.cpp                                                        #
+#   do                                                                    #
+#      cc -I../include -MM $i | sed 's/\.\.\/include\///g'                #
+#      echo ""                                                            #
+#   done                                                                  #
+#                                                                         #
+# Or in a csh-type shell (such as tcsh):                                  #
+#                                                                         #
+#   foreach i (*.cpp)                                                     #
+#      cc -I../include -MM $i | sed 's/\.\.\/include\///g'                #
+#      echo ""                                                            #
+#   end                                                                   #
+
