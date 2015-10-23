@@ -1,32 +1,43 @@
 @@BEGIN:	ROLL
-@MANUFACTURER:	Welte/Purple Seal
-@ROLLTYPE:	Licensee
+@ROLL:		008
+@LABEL:		Welte Mignon/Purple Seal
+@RECUTTER:
 @LOCATION:	New York
-@SIZE:		T-98
-@RECUT:		
-@PUBLISHER_NUM:	M 478
-@COMPSER:	Stradal
+@CATALOG:	M 478
+@MECHANISM:	WM Licensee
+@HOLES:		98
+@SPACING:	9
+@EXPRESSION:	yes
+@COMPOSER:	August Stradal
 @PERFORMER:	Alice Ripper
+@EXPRESSIONIST:	
 @WORK:		Bravure Study (no. 2)
 @SEARCHWORKS:	https://searchworks.stanford.edu/view/10763683
-@NOTE:		Has medallions at start of roll.
+@CALLNUM:	Condon Roll 182
 @BARCODE:	36105225781538
+@NOTE:		Has medallions at start of roll.
+
+@ISSUE_DATE:	1913
+@REISSUE_DATE:	1920
+
 
 @@BEGIN:	SAMPLE
-@@NUMBER:	01
-@@DESCRIPTION:  Medallions at start of roll.
+@NUMBER:	01
+@DESCRIPTION:	Medallions at start of roll.
 @@END:		SAMPLE
 
 @@BEGIN:	SAMPLE
-@@NUMBER:	02
-@@DESCRIPTION:  Production signature on back of leader.
+@NUMBER:	02
+@DESCRIPTION:	Production signature on back of leader.
 @@END:		SAMPLE
 
 @@BEGIN:	SAMPLE
-@@NUMBER:	03
-@@DESCRIPTION:  Start of roll.  Note parallel solid and dotted expression line at start of left side.
+@NUMBER:	03
+@DESCRIPTION:	Start of roll.  Note parallel solid and dotted 
+		expression line at start of left side.
 @@END:		SAMPLE
-
 
 @@END:		ROLL
+
+
 

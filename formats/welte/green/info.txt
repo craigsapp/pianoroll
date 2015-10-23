@@ -1,23 +1,31 @@
 @@BEGIN:	ROLL
-@EXAMPLE:	004
-@MANUFACTURER:	Welte
-@ROLLTYPE:	Green
+@ROLL:		004
+@LABEL:		Welte-Mignon
+@RECUTTER:
 @LOCATION:	Germany
-@SIZE:		T-98
-@RECUT:		
-@PUBLISHER_NUM:	367
-@COMPSER:	Chopin
-@PERFORMER:	Carreno
+@CATALOG:	367
+@MECHANISM:	WM Green
+@HOLES:		98
+@SPACING:	9
+@EXPRESSION:	yes
+@COMPOSER:	Chopin
+@PERFORMER:	Teresa Carreño
+@PERFORMER_DATES: 1853–1917
+@EXPRESSIONIST:	
 @WORK:		Ballade g-Moll, op. 23
 @SEARCHWORKS:	https://searchworks.stanford.edu/view/10763721
-@NOTE:		
+@CALLNUM:	Condon Roll 108
 @BARCODE:	36105225781090
+@NOTE:		
+
+@RECORD_DATE:	2 Apr. 1905
 
 @@BEGIN:	SAMPLE
-@@NUMBER:	01
-@@DESCRIPTION:  About 20 feet into the roll.
+@NUMBER:	01
+@DESCRIPTION:	About 20 feet into the roll.
 @@END:		SAMPLE
 
-
 @@END:		ROLL
+
+
 

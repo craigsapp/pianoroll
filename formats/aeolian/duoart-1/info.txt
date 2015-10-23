@@ -1,27 +1,32 @@
 @@BEGIN:	ROLL
-@MANUFACTURER:	Aeolian
-@ROLLTYPE:	Duo-Art
+@ROLL:		010
+@LABEL:		Aeolian Duo-Art
+@RECUTTER:
 @LOCATION:	
-@SIZE:		
-@RECUT:		
-@PUBLISHER_NUM:	6986-4
-@COMPSER:	Schuett
+@CATALOG:	6986-4
+@MECHANISM:	Duo-Art
+@HOLES:		
+@SPACING:	9
+@EXPRESSION:	yes
+@COMPOSER:	Schuett
 @PERFORMER:	Harold Bauer
-@WORK:		A la bien aimee
+@EXPRESSIONIST:	
+@WORK:		A la bien aimée
 @SEARCHWORKS:	
-@NOTE:		
 @BARCODE:	
+@NOTE:		Good condition
 
 @@BEGIN:	SAMPLE
-@@NUMBER:	01
-@@DESCRIPTION:  Start of roll. Snake bites on right side.  Green melody line.
+@NUMBER:	01
+@DESCRIPTION:  Start of roll. Snake bites on both sides.  Green melody line.
 @@END:		SAMPLE
 
 @@BEGIN:	SAMPLE
-@@NUMBER:	01
-@@DESCRIPTION:  A little further on roll. Green melody line.
+@NUMBER:	02
+@DESCRIPTION:  A little further on roll. Green melody line.
 @@END:		SAMPLE
-
 
 @@END:		ROLL
+
+
 

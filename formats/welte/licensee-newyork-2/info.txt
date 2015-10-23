@@ -1,29 +1,34 @@
 @@BEGIN:	ROLL
-@EXAMPLE:	006
-@MANUFACTURER:	Welte
-@ROLLTYPE:	Licensee
+@ROLL:		006
+@LABEL:		De Luxe
+@RECUTTER:
 @LOCATION:	New York
-@SIZE:		T-98
-@RECUT:		NO
-@PUBLISHER_NUM:	Y-75254
-@COMPSER:	Walter Hirsch and Fred Rose
+@CATALOG:	Y-75254
+@MECHANISM:	WM Licensee
+@HOLES:		98
+@SPACING:	9
+@EXPRESSION:	yes
+@COMPOSER:	Walter Hirsch and Fred Rose
 @PERFORMER:	Holbrook King
+@EXPRESSIONIST:	Howard Lutter
 @WORK:		'Deed I do
 @SEARCHWORKS:	
-@NOTE:		Circa 1926. De Luxe Reproducing Roll Corporation. 
-		"Assisted by Howard Lutter". Lyrics printed on roll. Two tempo markings.
 @BARCODE:	
+@NOTE:		circa 1926. "Assisted by Howard Lutter". 
+		Lyrics printed on roll. Two tempo markings.
 
 @@BEGIN:	SAMPLE
-@@NUMBER:	01
-@@DESCRIPTION:  Beginning of roll.
+@NUMBER:	01
+@DESCRIPTION:	Beginning of roll.
 @@END:		SAMPLE
 
 @@BEGIN:	SAMPLE
-@@NUMBER:	02
-@@DESCRIPTION:  A few feet into the roll showing wide pitch range, and lyrics on the left side.
+@NUMBER:	02
+@DESCRIPTION:	A few feet into the roll showing wide pitch range, 
+		and lyrics on the left side.
 @@END:		SAMPLE
-
 
 @@END:		ROLL
+
+
 

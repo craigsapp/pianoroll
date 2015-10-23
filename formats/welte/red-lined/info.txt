@@ -1,27 +1,36 @@
 @@BEGIN:	ROLL
-@EXAMPLE:	002
-@MANUFACTURER:	Welte
-@ROLLTYPE:	Red
+@ROLL:		002
+@LABEL:		Welte Mignon
+@RECUTTER:	
 @LOCATION:	Germany
-@SIZE:		T-100
-@RECUT:		NO
-@PUBLISHER_NUM:	1396
-@COMPSER:	P. Linke
+@CATALOG:	1396
+@ISSUE_DATE:	1908
+@MECHANISM:	WM Red 
+@HOLES:		100
+@SPACING:	8
+@EXPRESSION:	yes
+@COMPOSER:	Paul Lincke
 @PERFORMER:	N. Orlando
+@EXPRESSIONIST:	
 @WORK:		Luna-Walzer
 @SEARCHWORKS:	https://searchworks.stanford.edu/view/11048274
+@BARCODE:	36105225784573	
+@CALLNUM:	Condon Roll 424
 @NOTE:		Lined paper. Very early print (ca. 1907). "Zum Tanz gespielt"
-@BARCODE:	36105225784573
 
 @@BEGIN:	SAMPLE
-@@NUMBER:	01
-@@DESCRIPTION:  Start of the roll.  Two manual corrections on left side of roll.
-		Shows asynchronous hole cutting.
+@NUMBER:	01
+@DESCRIPTION:	Start of the roll.  Two manual corrections on left side of roll.
+		Shows asynchronous hole cutting.  Lined paper, with slots aligned to lines.
 @@END:		SAMPLE
 
 @@BEGIN:	SAMPLE
-@@NUMBER:	02
-@@DESCRIPTION:  About 10 feet in, showing editing: removing accidental note, shortening notes in a chord.
+@NUMBER:	02
+@DESCRIPTION:	About 10 feet in, showing editing: removing 
+		accidental note, shortening notes in a chord.
 @@END:		SAMPLE
 
 @@END:		ROLL
+
+
+

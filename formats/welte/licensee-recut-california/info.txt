@@ -1,39 +1,46 @@
 @@BEGIN:	ROLL
-@SAMPLENUM:	001
-@MANUFACTURER:	Welte
-@ROLLTYPE:	Licensee
-@LOCATION:	California
-@SIZE:		T-98
-@RECUT:		YES
-@PUBLISHER_NUM:	C-7295
-@PUBLISHER_NUM:	C-7296
-@COMPSER:	Alfredo Casella.
-@PERFORMER:	Alfredo Casella.
+@ROLL:		001
+@LABEL:		Welte Mignon
+@RECUTTER: Harold L. Powell (California)
+@LOCATION:	New York
+@CATALOG:	C-7295, C-7296
+@MECHANISM:	WM Licensee
+@HOLES:		98
+@SPACING:	9
+@EXPRESSION:	yes
+@COMPOSER:	Alfredo Casella
+@PERFORMER:	Alfredo Casella
+@EXPRESSIONIST:	
 @WORK:		Children's pieces = (Pezzi infantili). Nos. I & II complete
 @SEARCHWORKS:	https://searchworks.stanford.edu/view/11416450
-@NOTE:		Licensee lock and cancel tests for expression mechanism followed by Welte 98er tests.
 @BARCODE:	36105225772099
+@NOTE:		Licensee lock and cancel tests for expression 
+		mechanism followed by Welte 98er tests.
 
 @@BEGIN:	SAMPLE
-@@NUMBER:	01
-@@DESCRIPTION:  Start of roll, expression callibration cuts by Dennis Condon.
+@NUMBER:	01
+@DESCRIPTION:	Start of roll, expression callibration cuts by Dennis Condon.
 @@END:		SAMPLE
 
 @@BEGIN:	SAMPLE
-@@NUMBER:	02
-@@DESCRIPTION:  Start of roll, second image, expression callibration cuts by Dennis Condon.
+@NUMBER:	02
+@DESCRIPTION:  Start of roll, second image, expression callibration 
+		cuts by Denis Condon.
 @@END:		SAMPLE
 
 @@BEGIN:	SAMPLE
-@@NUMBER:	03
-@@DESCRIPTION:  Start of roll, third image, expression callibration cuts by Dennis Condon,
-		Followed by start of music.
+@NUMBER:	03
+@DESCRIPTION:	Start of roll, third image, expression callibration cuts 
+		by Denis Condon, followed by start of music.
 @@END:		SAMPLE
 
 @@BEGIN:	SAMPLE
-@@NUMBER:	04
-@@DESCRIPTION:  Several feet into the roll showing active expressions with arpeggios and accompaniment.
+@NUMBER:	04
+@DESCRIPTION:	Several feet into the roll showing active 
+		expressions with arpeggios and accompaniment.
 @@END:		SAMPLE
-
 
 @@END:		ROLL
+
+
+

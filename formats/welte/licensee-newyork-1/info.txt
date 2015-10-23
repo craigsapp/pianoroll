@@ -1,29 +1,40 @@
 @@BEGIN:	ROLL
-@EXAMPLE:	003
-@MANUFACTURER:	Welte
-@ROLLTYPE:	Licensee
-@LOCATION:	New York
-@SIZE:		T-98
-@RECUT:		NO
-@PUBLISHER_NUM:	F800
-@COMPSER:	Saint-Saëns
+@ROLL:		003
+@LABEL:		Welte Mignon
+@RECUTTER:
+@LOCATION:	Poughkeepsie, New York
+@CATALOG:	F800
+@MECHANISM:	WM Licensee 
+@HOLES:		98
+@SPACING:	9
+@EXPRESSION:	yes
+@COMPOSER:	Saint-Saëns
 @PERFORMER:	Saint-Saëns
+@PERFORMER_DATES: 1835–1921
+@EXPRESSIONIST:	
 @WORK:		Rhapsodie d'Auvergne
 @SEARCHWORKS:	https://searchworks.stanford.edu/view/10779815
-@NOTE:		Conjoined with test perforation on leader. Comments by Denis Condon near perforations. 
+@CALLNUM:	Condon Roll 239
+@RE
+@ISSUE_DATE:	1908
+@REISSUE_DATE:	1916
+@RECORD_DATE:	13 Dec. 1905
 @BARCODE:	36105225782460
+@NOTE:		Conjoined with test perforation on leader. 
+		Comments by Denis Condon near perforations. 
 
 @@BEGIN:	SAMPLE
-@@NUMBER:	01
-@@DESCRIPTION:  Test perforations spliced to start of roll (using green paper).
+@NUMBER:	01
+@DESCRIPTION:  Test perforations spliced to start of roll (using green paper).
 @@END:		SAMPLE
 
 @@BEGIN:	SAMPLE
-@@NUMBER:	02
-@@DESCRIPTION:  About two feet into music, example of a paper rip and repair with tape.
+@NUMBER:	02
+@DESCRIPTION:  About two feet into music, example of a paper rip and 
+		repair with tape.
 @@END:		SAMPLE
-
 
 @@END:		ROLL
+
 
 

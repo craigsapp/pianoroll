@@ -1,33 +1,23 @@
 <script>
 //
 // Programmer:    Craig Stuart Sapp <craig@ccrma.stanford.edu>
-// Creation Date: Fri Sep 18 21:15:35 PDT 2015
-// Last Modified: Sun Sep 20 17:23:01 PDT 2015
-// Filename:      scripts/templates.js
+// Creation Date: Thu Oct 22 19:41:48 PDT 2015
+// Last Modified: Thu Oct 22 19:41:51 PDT 2015
+// Filename:      scripts/templates.html
 // Syntax:        JavaScript 1.8.5/ECMAScript 5.1
 // vim:           ts=3 hlsearch
 //
 // Description:   Handlebars templates and helper functions.
 //
 
-var renderLinkEntry     = null;
-var renderSearchForm    = null;
-var renderCategoryEntry = null;
-var renderImage         = null;
+var renderContent     = null;
+var renderSample     = null;
 
 document.addEventListener('DOMContentLoaded', function() {
-
-	renderLinkEntry = Handlebars.compile(
-		document.querySelector('#link-entry-template').innerHTML);
-	renderSearchForm = Handlebars.compile(
-		document.querySelector('#search-form-template').innerHTML);
-	renderCategoryEntry = Handlebars.compile(
-		document.querySelector('#category-entry-template').innerHTML);
-	renderAllLinks = Handlebars.compile(
-		document.querySelector('#all-links-template').innerHTML);
-	renderImage = Handlebars.compile(
-		document.querySelector('#image-template').innerHTML);
-
+	renderContent = Handlebars.compile(
+		document.querySelector('#content-template').innerHTML);
+	renderSample = Handlebars.compile(
+		document.querySelector('#sample-template').innerHTML);
 });
 
 </script>
@@ -37,221 +27,143 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--
 //////////////////////////////
 //
-// all-links-template -- Display the entire list of link entries, 
-//    organized by category.
+// content-template -- Display the content.
 //
 -->
 
 {% raw %}
-<script id="all-links-template" type="text/x-handlebars-template">
+<script id="content-template" type="text/x-handlebars-template">
 
-{{#each category}}
-	<details class="category">
-		{{#if preface}}
-			<div class="preface">
-				{{{preface}}}
-			</div>
+<style>
+
+body {
+	counter-reset: sample;
+}
+
+h3:before {
+	counter-increment: sample;
+	content: counter(sample) ". ";
+}
+
+dl.roll-info {
+   border: none;
+}
+
+dl.roll-info  dt {
+   float: left;
+   clear: left;
+   width: 135px;
+	margin-top: 0;
+	margin-bottom: 0.45rem;
+   text-align: right;
+   font-weight: bold;
+   color: #997715;
+   margin-right: 0.5em;
+	padding-right: 0.5em;
+}
+
+dl.roll-info  dt:after {
+   content: ":";
+}
+
+dl.roll-info  dd {
+	margin-bottom: 0.45rem;
+   padding-left: 135px;
+	display: block;
+}
+
+</style>
+
+<img style="float:right; width:300px;" src="label-300dpi.jpg">
+
+<dl class="roll-info">
+
+{{#if LABEL}}
+	<dt>Label</dt>
+	<dd>
+		{{{LABEL}}}
+		{{#if CATALOG}}
+			{{{CATALOG}}}
 		{{/if}}
-		{{> categoryEntry}}
-		<span class="category-contents">
-			{{#each links}}
-				{{> linkEntry}}
-			{{/each}}
-		</span>
-	</details>
-{{/each}}
-<div class="introduction credits">
-{{{credits}}}
-</div>
+	</dd>
+{{/if}}
 
-</script>
-{% endraw %}
+{{#if RECUTTER}}
+	<dt>Recutter</dt>
+	<dd>
+		{{{RECUTTER}}}
+	</dd>
+{{/if}}
 
+{{#if LOCATION}}
+	<dt>Location</dt>
+	<dd>
+		{{{LOCATION}}}
+	</dd>
+{{/if}}
 
-
-<!--
-//////////////////////////////
-//
-// link-entry-template -- Template for displaying a link entry in
-//    the closed state (but Firefox will always open <details>).
-// Input object parameters:
-//    .title = title of the link
-//    .text = text description of the link
-//
--->
-
-{% raw %}
-<script id="link-entry-template" type="text/x-handlebars-template">
-
-{{#ifCond type "heading"}}
-	<div onclick="toggleHeadingEntries(event);"
-			class="segment-heading level{{level}}">
-		{{{title}}}
-	</div>
-{{else}}
-	<details class="link-entry level{{level}}">
-		<summary>{{{title}}}</summary>
-		<div class="link-text">
-			{{{text}}}
-		</div>
-	</details>
-{{/ifCond}}
-
-</script>
-{% endraw %}
-
-
-
-<!--
-//////////////////////////////
-//
-// category-entry-template -- Template for displaying a category of
-//    links.
-// Input object parameters:
-//    .title  = title of the category.
-//    .number = the sequence number for the category.
-//
-// You have to provide the enclosing <details> element.
-//
--->
-
-{% raw %}
-<script id="category-entry-template" type="text/x-handlebars-template">
-
-	<summary class="category category{{number}}">
-		{{{heading}}}
-		<div class="no-print" style="float:right; display:inline;">
-			<table><tr><td style="padding:0;">
-				<span style="color: #909ca1; font-size:80%; display:inline; position:relative; top:-2px;" 
-						class="category-link-count">
-				</span>
-			</td><td>
-				<div style="display:inline" class="btn-group" 
-						role="group" aria-label="...">
-
-  					<button type="button" class="btn btn-default btn-small btn-open"
-							onclick="openCategoryLinks(event);">
-						<span class="category-open" style="position:relative; 
-								top:-5px">
-							open
-						</span>
-					</button>
-
-  					<button type="button" class="btn btn-default btn-small btn-brief"
-							onclick="openCategoryLinks(event); closeEventLinks(event);">
-						<span class="category-brief" style="position:relative; 
-								top:-5px">
-							brief
-						</span>
-					</button>
-
-  					<button type="button" class="btn btn-default btn-small btn-close"
-							onclick="closeCategoryLinks(event);">
-						<span class="category-close" style="position:relative; 
-								top:-5px">
-							close
-						</span>
-					</button>
-			</div>
-			</td></tr></table>
-		</div>
-	</summary>
-
-</script>
-{% endraw %}
-
-
-
-<!--
-//////////////////////////////
-//
-// search-form-template -- Template for the search form at the top
-//    of the page.
-//
--->
-
-{% raw %}
-<script id="search-form-template" type="text/x-handlebars-template">
-
-<form class="form-inline no-print" style="margin-bottom:30px;">
-	<div class="form-group">
-		<input id="search-text" onkeypress="suppressEnter(event);"
-			style="width:30em;" onkeyup="doSearch(event);"
-			type="text" width="15" class="form-control" placeholder="Search">
-	</div>
-	<div style="position:relative; top:-6px" class="form-group">
-		<div style="margin-left:10px;" class="checkbox">
-			<label onclick="doSearch(event);">
-				<input id="search-scope" onkeypress="suppressEnter(event)";
-						type="checkbox" value="">
-				<span style="color:#909ca1; margin-left:3px; position:relative; top:2px;">
-					Titles only
-				</span>
-			</label>
-		</div>
-	</div>
-
-	<div style="float:right; display:inline;">
-		<table style="padding-top:0px; margin-bottom:1px;" class="search-navigator"><tr><td>
-			<div style="color: #909ca1; padding-right:10px; display:inline;" 
-					id="link-count">
-			</div>
-		</td><td style="padding:2px;">
-			<div style="display:inline" class="btn-group" 
-					role="group" aria-label="...">
-
-  				<button type="button" class="btn btn-default btn-open"
-						onclick="openAllLinks();">
-					open
-				</button>
-
-  				<button type="button" class="btn btn-default btn-clear"
-						onclick="clearSearch();">
-					clear
-				</button>
-
-  				<button type="button" class="btn btn-default btn-close"
-						onclick="closeAllLinks();">
-					close
-				</button>
-
-		</div>
-		</td></tr></table>
-	</div>
-
-</form>
-
-</script>
-{% endraw %}
-
-
-
-<!--
-//////////////////////////////
-//
-// image-template -- Template for diplay images with captions.
-//
--->
-
-{% raw %}
-<script id="image-template" type="text/x-handlebars-template">
-
-<div class="thumb {{placement}}">
-	<div class="thumbinner"
-		{{#if width}}
-			style="width:{{width}}px;"
+{{#if WORK}}
+	<dt>Work</dt>
+	<dd>
+		{{#if COMPOSER}}
+			<span class="composer">{{{COMPOSER}}}</span>:
 		{{/if}}
-				>
-		{{{image url}}}
-		<div class="thumbcaption">
-			{{{caption}}}
-		</div>
-	</div>
-</div>
+		{{{WORK}}}
+	</dd>
+{{/if}}
+
+{{#if PERFORMER}}
+	<dt>Performer</dt>
+	<dd>
+		<span class="performer">{{{PERFORMER}}}</span>{{#if PERFORMER_DATES}}<small> ({{{PERFORMER_DATES}}})</small>{{/if}}{{#if EXPRESSIONIST}}, with {{{EXPRESSIONIST}}}{{/if}}{{#if RECORD_DATE}}, <span class="record-date">{{{RECORD_DATE}}}</span>
+		{{/if}}
+	</dd>
+{{/if}}
+
+{{#if ISSUE_DATE}}
+	<dt>Issue&nbsp;Date:</dt>
+	<dd>
+		{{{ISSUE_DATE}}}{{#if REISSUE_DATE}}, reissued {{{REISSUE_DATE}}}{{/if}}
+	</dd>
+{{/if}}
+
+{{#if SEARCHWORKS}}
+	<dt>Searchworks</dt>
+	<dd>
+		{{{searchworks SEARCHWORKS CALLNUM}}}
+	</dd>
+{{/if}}
+
+{{#if NOTE}}
+	<dt>Note</dt>
+	<dd>
+		{{{NOTE}}}
+	</dd>
+{{/if}}
+
+{{#if MECHANISM}}
+	<dt>Format</dt>
+	<dd>
+		{{{mechanism MECHANISM}}}
+	</dd>
+{{/if}}
+
+{{#if HOLES}}
+	<dt>Rows</dt>
+	<dd>
+		{{{HOLES}}}{{#if SPACING}}; {{SPACING}} per inch{{/if}}
+	</dd>
+{{/if}}
+
+</dl>
+
+<h2 style="display:inline-block; width:100%;">Sample scans:</h2>
+
+{{samples SAMPLE}}
+
 
 </script>
 {% endraw %}
-
 
 
 <script>
@@ -261,56 +173,166 @@ document.addEventListener('DOMContentLoaded', function() {
 // Helper functions for handlebars-js.
 //
 
+Handlebars.registerHelper('searchworks', function(url, callnum) {
+	var matches;
+	var text = callnum;
+	if (!callnum) {
+		text = "searchworks";
+		if (matches = url.match(/\/(\d+)/)) {
+			text = matches[1];
+		}
+	}
+	var output = '<a target="_new" href="' + url + '">' + text + '</a>';
+	return new Handlebars.SafeString(output);
+});
 
-Handlebars.registerPartial('categoryEntry', 
-	document.querySelector('#category-entry-template').innerHTML);
 
 
-Handlebars.registerPartial('linkEntry', 
-	document.querySelector('#link-entry-template').innerHTML);
+Handlebars.registerHelper('mechanism', function(mechanism) {
+	var output = mechanism;
+	output = output.replace(/\bWM\b/g, "Welte-Mignon");
+	return new Handlebars.SafeString(output);
+});
 
 
-Handlebars.registerHelper('ifCond', function(v1, v2, options) {
-  if(v1 === v2) {
-    return options.fn(this);
-  }
-  return options.inverse(this);
+
+Handlebars.registerHelper('samples', function(samples) {
+	var output = '';
+	if (Array.isArray(samples)) {
+		for (var i=0; i<samples.length; i++) {	
+			output += getSampleHtml(samples[i], i+1);
+		}
+	} else {
+		output += getSampleHtml(samples, 1);
+	}
+
+	return new Handlebars.SafeString(output);
 });
 
 
 
 //////////////////////////////
 //
-// handlebars helper image -- process an image to be displayed.
+// getSampleHtml --
 //
 
-Handlebars.registerHelper('image', function(url) {
-	url = url.replace(/^src="/, '');
-	url = url.replace(/"$/, '');
-	var filename = '';
-	var matches;
-	if (matches = url.match(/\/([^\/]+)?$/)) {
-		filename = matches[1];
-		filename = filename.replace(/\.png$/, '.jpg');
-		filename = filename.replace(/\.PNG$/, '.jpg');
-	}
-	var newurl = '/images/wiki/' + filename;
-	return '<a target="_new" href="' + url + '"><img src="' + newurl + '\"></a>';
-
-/*
-	if (sessionStorage[url]) {
-		output += '<img src="' + sessionStorage[url] + '">';
-	} else{
-		loadImageData(url);
-		output += '<div class="' + url + '"></div>';
-	}
+function getSampleHtml(sample, number) {
+   var output = renderSample(sample);
 	return output;
-*/
-
-});
-
+}
 
 </script>
+
+
+
+<!--
+//////////////////////////////
+//
+// sample-template -- Display the sample.
+//
+-->
+
+{% raw %}
+<script id="sample-template" type="text/x-handlebars-template">
+
+<details open>
+<summary>
+<h3 style="display:inline;"> {{{DESCRIPTION}}} </h3>
+</summary>
+
+<table><tr><td>
+
+<!--
+
+<label>Bit Depth</label>
+<select id="depth" class="form-control">
+   <option>24</option>
+   <option>8</option>
+   <option>1</option>
+   <option>none</option>
+</select>
+</td><td>
+
+<label>DPI</label>
+<select id="dpi" class="form-control">
+   <option>600</option>
+   <option>300</option>
+   <option>150</option>
+   <option>none</option>
+   <option>1200</option>
+</select>
+</td><td>
+
+<label>Threshold</label>
+<select id="threshold" class="form-control">
+   <option>N/A</option>
+   <option>20</option>
+   <option>40</option>
+   <option>60</option>
+</select>
+</td><td>
+-->
+
+<span style="font-size:16px;">Zoom:&nbsp;&nbsp;</span>
+<input
+	style="display:none;"
+	type="text"
+	id="zoom{{NUMBER}}"
+	class="span2"
+	value=""
+	data-slider-min="800"
+	data-slider-max="12000"
+	data-slider-step="10"
+	data-slider-value="800"
+	data-slider-orientation="horizontal"
+	data-slider-selection="after"
+	data-slider-tooltip="hide">
+</td><td>
+
+<!--
+<span style="font-size:16px;">Overlay opacity:</span>
+<input
+	style="display:none;"
+	type="text"
+	id="foo"
+	class="span2"
+	value=""
+	data-slider-min="0"
+	data-slider-max="1"
+	data-slider-step="0.1"
+	data-slider-value="0.7"
+	data-slider-orientation="horizontal"
+	data-slider-selection="after"
+	data-slider-tooltip="hide">
+-->
+
+</td></tr></table>
+
+<style>
+.sample-scan {
+	overflow: scroll;
+	width:800px;
+	height:800px;
+	margin-bottom:40px;
+	background-size: 800px;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	background-attachment: local;
+	background-image: url('/images/resolution/600dpi-24bit.png');
+}
+</style>
+
+<!--
+<div id="sample-scan-{{NUMBER}}" style="background-image: url('sample-{{NUMBER}}-600dpi.jpg');" class="sample-scan">
+-->
+<div id="sample-scan-{{NUMBER}}" style="background-image: none;" class="sample-scan">
+	<img id="overlay{{NUMBER}}" src="sample-{{NUMBER}}-600dpi.jpg" style="max-width:12000px; width:800px;">
+</div>
+
+</details>
+
+</script>
+{% endraw %}
 
 
 

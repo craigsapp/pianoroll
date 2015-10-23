@@ -1,21 +1,28 @@
 @@BEGIN:	ROLL
-@MANUFACTURER:	Aeolian
-@ROLLTYPE:	Duo-Art
+@ROLL:		012
+@LABEL:		Aeolian Duo-Art
+@RECUTTER:
 @LOCATION:	
-@SIZE:		
-@RECUT:		
-@PUBLISHER_NUM:	
-@COMPSER:	Beethoven
+@CATALOG:	272
+@MECHANISM:	Duo-Art
+@HOLES:		
+@SPACING:	9
+@EXPRESSION:	yes
+@COMPOSER:	Beethoven
 @PERFORMER:	William Murdoch
-@WORK:		Sonata F Major, op. 10, no. 2, Third movement-Finale
+@EXPRESSIONIST:	
+@WORK:		Sonata F Major, op. 10, no. 2, Third movement–Finale
 @SEARCHWORKS:	
-@NOTE:		badly punched original roll, on a waxy paper, late production or reprint from Aeolian
 @BARCODE:	
+@NOTE:		badly punched original roll, on a waxy paper, 
+		late production or reprint from Aeolian
 
 @@BEGIN:	SAMPLE
-@@NUMBER:	01
-@@DESCRIPTION:  A few feet into the roll.
+@NUMBER:	01
+@DESCRIPTION:	A few feet into the roll.
 @@END:		SAMPLE
 
 @@END:		ROLL
+
+
 

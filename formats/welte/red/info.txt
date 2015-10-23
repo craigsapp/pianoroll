@@ -1,39 +1,44 @@
 @@BEGIN:	ROLL
-@EXAMPLE:	005
-@MANUFACTURER:	Welte
-@ROLLTYPE:	Red
+@ROLL:		005
+@LABEL:		Welte-Mignon
+@RECUTTER:	
 @LOCATION:	New York
-@SIZE:		T-100
-@RECUT:		NO
-@PUBLISHER_NUM:	2738
-@COMPSER:	Debussy
+@CATALOG:	2738
+@ISSUE_DATE:	1913
+@MECHANISM:	WM Red 
+@HOLES:		100
+@SPACING:	8
+@EXPRESSION:	yes
+@COMPOSER:	Debussy
 @PERFORMER:	Debussy
-@WORK:		Preludes
+@EXPRESSIONIST:	
+@WORK:		3 Préludes
 @SEARCHWORKS:	https://searchworks.stanford.edu/view/11347972
-@NOTE:		New York oil cloth leader. Perforation date on underside of leader join. 
+@CALLNUM:	Condon Roll 664
 @BARCODE:	36105225786743
+@NOTE:		New York oil cloth leader. Perforation date on underside of leader join. 
 
 @@BEGIN:	SAMPLE
-@@NUMBER:	01
-@@DESCRIPTION:  Care instructions.
+@NUMBER:	01
+@DESCRIPTION:  Care instructions.
 @@END:		SAMPLE
 
 @@BEGIN:	SAMPLE
-@@NUMBER:	02
-@@DESCRIPTION:  License.
+@NUMBER:	02
+@DESCRIPTION:  License.
 @@END:		SAMPLE
 
 @@BEGIN:	SAMPLE
-@@NUMBER:	03
-@@DESCRIPTION:  Preparer's autograph at leader edge (back of roll).
+@NUMBER:	03
+@DESCRIPTION:  Preparer's autograph at leader edge (back of roll).
 @@END:		SAMPLE
 
 @@BEGIN:	SAMPLE
-@@NUMBER:	04
-@@DESCRIPTION:  Damaged left edge to roll.
+@NUMBER:	04
+@DESCRIPTION:  Damaged left edge to roll.
 @@END:		SAMPLE
-
 
 @@END:		ROLL
+
 
 
