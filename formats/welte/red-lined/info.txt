@@ -1,0 +1,27 @@
+@@BEGIN:	ROLL
+@EXAMPLE:	002
+@MANUFACTURER:	Welte
+@ROLLTYPE:	Red
+@LOCATION:	Germany
+@SIZE:		T-100
+@RECUT:		NO
+@PUBLISHER_NUM:	1396
+@COMPSER:	P. Linke
+@PERFORMER:	N. Orlando
+@WORK:		Luna-Walzer
+@SEARCHWORKS:	https://searchworks.stanford.edu/view/11048274
+@NOTE:		Lined paper. Very early print (ca. 1907). "Zum Tanz gespielt"
+@BARCODE:	36105225784573
+
+@@BEGIN:	SAMPLE
+@@NUMBER:	01
+@@DESCRIPTION:  Start of the roll.  Two manual corrections on left side of roll.
+		Shows asynchronous hole cutting.
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@@NUMBER:	02
+@@DESCRIPTION:  About 10 feet in, showing editing: removing accidental note, shortening notes in a chord.
+@@END:		SAMPLE
+
+@@END:		ROLL

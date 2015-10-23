@@ -1,0 +1,26 @@
+@@BEGIN:	ROLL
+@MANUFACTURER:	Aeolian
+@ROLLTYPE:	Duo-Art
+@LOCATION:	
+@SIZE:		
+@RECUT:		NO
+@PUBLISHER_NUM:	6475
+@COMPSER:	Grieg
+@PERFORMER:	Grainger
+@WORK:		Concerto op. 16, A minor First movement
+@SEARCHWORKS:	
+@NOTE:		Orchestral notes taped over by DFC, 1978, bar lines Rob Mitchell. Roll played many times, still ok, but take care.
+@BARCODE:	
+
+@@BEGIN:	SAMPLE
+@@NUMBER:	01
+@@DESCRIPTION:  Start of roll.  Orchestral part edited out.
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@@NUMBER:	02
+@@DESCRIPTION:  A few feet into the roll.  Black marker lines on right of roll.
+@@END:		SAMPLE
+
+@@END:		ROLL
+

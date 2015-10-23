@@ -2,3 +2,5 @@ _site
 lib
 obj
 bin
+*-600dpi.png
+formats/welte/ref

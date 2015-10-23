@@ -1,0 +1,32 @@
+@@BEGIN:	ROLL
+@MANUFACTURER:	Aeolian
+@ROLLTYPE:	Pianola
+@LOCATION:	Great Britain
+@SIZE:		
+@RECUT:		
+@PUBLISHER_NUM:	D906
+@COMPSER:	Goossens
+@PERFORMER:	
+@WORK:		Good morning; Promenade; The hurdy-gurdy man
+@SEARCHWORKS:	
+@NOTE:		Audiographic Pianola roll. Denis has added some expression coding to this roll
+@BARCODE:	
+
+@@BEGIN:	SAMPLE
+@@NUMBER:	01
+@@DESCRIPTION:  Text at start of audiographic roll.
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@@NUMBER:	02
+@@DESCRIPTION:  Start of music.  Hand cut expressions on left edge.
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@@NUMBER:	03
+@@DESCRIPTION:  Start of second work on roll. Hand cut expressions on left edge.
+@@END:		SAMPLE
+
+
+@@END:		ROLL
+

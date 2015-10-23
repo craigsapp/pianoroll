@@ -1,0 +1,16 @@
+#!/usr/bin/perl
+# vim: ts=3
+# Description: Convert original label 600 dpi scans into 300 dpi JPG images.
+#
+
+my @files = @ARGV;
+my $base;
+
+foreach $file (@files) {
+	next if $file !~ /\.png$/;
+	$base = $file;
+	$base =~ s/-600dpi\.png$//;
+	print "Creating $base.jpg\n";
+	`convert  -resize 50% $file  -quality 50%  $base-300dpi.jpg`;
+}
+

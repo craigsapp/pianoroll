@@ -1,0 +1,32 @@
+@@BEGIN:	ROLL
+@MANUFACTURER:	Welte/Purple Seal
+@ROLLTYPE:	Licensee
+@LOCATION:	New York
+@SIZE:		T-98
+@RECUT:		
+@PUBLISHER_NUM:	M 478
+@COMPSER:	Stradal
+@PERFORMER:	Alice Ripper
+@WORK:		Bravure Study (no. 2)
+@SEARCHWORKS:	https://searchworks.stanford.edu/view/10763683
+@NOTE:		Has medallions at start of roll.
+@BARCODE:	36105225781538
+
+@@BEGIN:	SAMPLE
+@@NUMBER:	01
+@@DESCRIPTION:  Medallions at start of roll.
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@@NUMBER:	02
+@@DESCRIPTION:  Production signature on back of leader.
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@@NUMBER:	03
+@@DESCRIPTION:  Start of roll.  Note parallel solid and dotted expression line at start of left side.
+@@END:		SAMPLE
+
+
+@@END:		ROLL
+

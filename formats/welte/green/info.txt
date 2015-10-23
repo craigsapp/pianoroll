@@ -1,0 +1,23 @@
+@@BEGIN:	ROLL
+@EXAMPLE:	004
+@MANUFACTURER:	Welte
+@ROLLTYPE:	Green
+@LOCATION:	Germany
+@SIZE:		T-98
+@RECUT:		
+@PUBLISHER_NUM:	367
+@COMPSER:	Chopin
+@PERFORMER:	Carreno
+@WORK:		Ballade g-Moll, op. 23
+@SEARCHWORKS:	https://searchworks.stanford.edu/view/10763721
+@NOTE:		
+@BARCODE:	36105225781090
+
+@@BEGIN:	SAMPLE
+@@NUMBER:	01
+@@DESCRIPTION:  About 20 feet into the roll.
+@@END:		SAMPLE
+
+
+@@END:		ROLL
+
