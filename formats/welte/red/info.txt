@@ -35,7 +35,7 @@
 
 @@BEGIN:	SAMPLE
 @NUMBER:	04
-@DESCRIPTION:  Damaged left edge to roll.
+@DESCRIPTION:  Damaged left edge of roll.
 @@END:		SAMPLE
 
 @@END:		ROLL
