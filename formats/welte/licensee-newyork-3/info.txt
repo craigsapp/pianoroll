@@ -18,12 +18,12 @@
 
 @@BEGIN:	SAMPLE
 @NUMBER:	01
-@DESCRIPTION:  Insect damage at leader.
+@DESCRIPTION:	Insect damage at leader.
 @@END:		SAMPLE
 
 @@BEGIN:	SAMPLE
-@NUMBER:	01
-@DESCRIPTION:  Near start of roll.  Irregular hole spacing in first melody note.
+@NUMBER:	02
+@DESCRIPTION:	Near start of roll.  Irregular hole spacing in first melody note.
 @@END:		SAMPLE
 
 @@END:		ROLL
