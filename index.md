@@ -8,6 +8,6 @@ title: Piano Roll
 <ol>
 <li> <a href="resolution">Resolution tests</a>
 <li> <a href="formats">Sample piano roll formats</a>
-<li> <a href="links">links</a>
+<li> <a href="links">Links</a>
 </ol>
 
