@@ -20,6 +20,7 @@
 @URL2:		https://en.wikipedia.org/wiki/Music_roll
 @URL3:		https://en.wikipedia.org/wiki/Player_piano
 @URL4:		https://en.wikipedia.org/wiki/Welte-Mignon
+@URL5:		https://en.wikipedia.org/wiki/American_Piano_Company
 @DESCRIPTION:	Wikipedia articles related to piano rolls.
 @CREATION-DATE:	Fri Oct 23 16:21:01 PDT 2015
 @EDIT-DATE:	Fri Oct 23 16:21:04 PDT 2015
@@ -67,7 +68,7 @@
 		Disklavier.
 @CREATION-DATE:	Fri Oct 23 16:46:33 PDT 2015
 @EDIT-DATE:	Fri Oct 23 16:46:36 PDT 2015
-@CATEGORY:	YouTube
+@CATEGORY:	Video/YouTube
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
 @CATEGORY2:	
@@ -82,7 +83,22 @@
 @DESCRIPTION:	Welte Mignon licensee roll #7666 playing on a 1930 Stein grand piano.
 @CREATION-DATE:	Fri Oct 23 16:55:51 PDT 2015
 @EDIT-DATE:	Fri Oct 23 16:55:53 PDT 2015
-@CATEGORY:	YouTube
+@CATEGORY:	Video/YouTube
+@SUBCATEGORY:	
+@SUBSUBCATEGORY: 
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+@@BEGIN: LINK
+@TITLE:		Feuerich Welte Mignon player
+@URL:		https://www.youtube.com/watch?v=PePcVWs8Y-I
+@URL:		https://www.youtube.com/watch?v=J0j0nS6USIM
+@DESCRIPTION:	Welte Mignon red roll (Black Key Waltz) and
+		Saint-Säens Danse Macabre (second link).
+@CREATION-DATE:	Fri Oct 23 19:30:48 PDT 2015
+@EDIT-DATE:	Fri Oct 23 19:30:51 PDT 2015
+@CATEGORY:	Video/YouTube
 @SUBCATEGORY:	
 @SUBSUBCATEGORY: 
 @CATEGORY2:	
@@ -125,13 +141,6 @@
 @CATEGORY2:	
 @SUBCATEGORY2:	
 @@END:		LINK
-
-
-
-
-
-
-
 
 
 

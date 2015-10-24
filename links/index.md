@@ -26,4 +26,4 @@ function loadLinks() {
 
 <h1> Links </h1>
 
-<div class="slink" title="links.aton">div</div>
+<div class="slink" title="links.aton"></div>
