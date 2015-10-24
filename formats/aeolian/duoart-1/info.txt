@@ -8,18 +8,25 @@
 @HOLES:		
 @SPACING:	9
 @EXPRESSION:	yes
-@COMPOSER:	Schuett
+@COMPOSER:	Eduard Schütt
 @PERFORMER:	Harold Bauer
 @EXPRESSIONIST:	
-@WORK:		A la bien aimée
+@WORK:		No. 2 A la bien-aimée (waltz), from Papilions d'Amour, op. 59
 @SEARCHWORKS:	
 @BARCODE:	
 @NOTE:		Good condition
 
+@COMMENTARY:
+		<a href=http://imslp.org/wiki/Papillons_d'Amour,_Op.59_(Sch%C3%BCtt,_Eduard)>Score</a> (Papillons d'Amour, op. 59, no. 2).
+
 @@BEGIN:	SAMPLE
 @NUMBER:	01
 @DESCRIPTION:	Start of roll. Snake bites on both sides.  Green melody line.
-@COMMENTARY:	The first note is A3.
+@COMMENTARY:	The first note is A3.  Notated version of the music (up to 
+		the first beat of the last measure):
+		<center>
+		<img src="waltz-line-1.png">
+		</center>
 @COMMENTARY_POST: 
 		Here is a symbolic interpretation of the sample
 		section of the roll:
