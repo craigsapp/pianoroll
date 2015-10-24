@@ -18,6 +18,24 @@
 @BARCODE:	36105225781090
 @NOTE:		
 
+@COMMENTARY:
+		Row assignments (from left to right in the following sample images):
+		<ul>
+		<li> Row "0": Track control on the left (two superimposed holes)
+		<li> Row 1: Bass sforzando piano and return (with long perforation)
+		<li> Row 2: Bass mezzo forte
+		<li> Row 3: Sustain pedal (right pedal)
+		<li> Row 4: Bass crescendo
+		<li> Row 5: Bass sforzando forte
+		<li> Row 6–93 88 pitches from A0 to C8
+		<li> Row 94: Treble sforzando forte
+		<li> Row 95: Treble crescendo
+		<li> Row 96: Soft pedal (left pedal)
+		<li> Row 97: Treble mezzo forte
+		<li> Row 98: Treble sforzando piano
+		<li> Row "99": Track control on the right (two superimposed holes)
+		</ul>
+
 @RECORD_DATE:	2 Apr. 1905
 
 @@BEGIN:	SAMPLE

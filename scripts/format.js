@@ -74,7 +74,6 @@ function setupZoom(info) {
          			var gt = document.querySelector('#sample-scan-' + number);
          			gt.style['background-size'] = ev.value + 'px';
 						var overlay = document.querySelector('#overlay' + number);
-console.log("OVERLAY", overlay);
 						overlay.style['width'] = ev.value + 'px';
       			});
 			})(number);
@@ -88,7 +87,6 @@ console.log("OVERLAY", overlay);
          		gt.style['background-size'] = ev.value + 'px';
 					var overlay = document.querySelector('#overlay' + number);
 					overlay.style['width'] = ev.value + 'px';
-console.log("OVERLAY", overlay);
       		});
 		})(number);
 	}

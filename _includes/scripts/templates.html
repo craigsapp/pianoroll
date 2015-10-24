@@ -40,9 +40,17 @@ body {
 	counter-reset: sample;
 }
 
-h3:before {
+h4:before {
 	counter-increment: sample;
 	content: counter(sample) ". ";
+}
+
+.sample summary {
+	margin-bottom: 0.5rem;
+	margin-bottom: 1.5rem;
+	padding-left: 20px;
+	text-indent: -20px;
+
 }
 
 dl.roll-info {
@@ -157,6 +165,12 @@ dl.roll-info  dd {
 
 </dl>
 
+<p>
+{{#if COMMENTARY}}
+	{{{COMMENTARY}}}
+{{/if}}
+</p>
+
 <h2 style="display:inline-block; width:100%;">Sample scans:</h2>
 
 {{samples SAMPLE}}
@@ -235,10 +249,16 @@ function getSampleHtml(sample, number) {
 {% raw %}
 <script id="sample-template" type="text/x-handlebars-template">
 
-<details open>
+<details class="sample" open>
 <summary>
-<h3 style="display:inline;"> {{{DESCRIPTION}}} </h3>
+<h4 style="display:inline;"> {{{DESCRIPTION}}} </h4>
 </summary>
+
+{{#if COMMENTARY}}
+<p>
+{{{COMMENTARY}}}
+</p>
+{{/if}}
 
 <table><tr><td>
 

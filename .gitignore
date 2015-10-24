@@ -3,5 +3,6 @@ _site
 lib
 obj
 bin
+*.bak
 *-600dpi.png
 formats/welte/ref

@@ -8,6 +8,7 @@
 @MECHANISM:	WM Red 
 @HOLES:		100
 @SPACING:	8
+@WIDTH:		
 @EXPRESSION:	yes
 @RECORDING:	https://www.youtube.com/watch?v=ncCO2sagdwM
 @RECORDING2:	https://www.youtube.com/watch?v=SQE5cTsHxXw
@@ -20,10 +21,83 @@
 @CALLNUM:	Condon Roll 424
 @NOTE:		Lined paper. Very early print (ca. 1907). "Zum Tanz gespielt"
 
+@COMMENTARY:    This roll has 102 inked lines printed lengthwise along the
+		roll.  The outer pair of lines are not associated with
+		tracker holes (probably since they are too close
+		to the borders of the paper.)  Red rolls have 100
+		possible slots, and each slot is positioned on the center
+		of each printed line.  The images below are oriented
+		upside-down with respect to red-roll placement, so
+		the high pitches are on the left.  (Red rolls are
+		red upwards, while most other roll types are red
+		downwards, hence the reversal in the scans, since all
+		are scanned in the same orientation).
+		<br><br>
+
+		Here is the assignment of the 100 hole rows for Welte T-100
+		red rolls.
+		The first hole is the second line on the right (skipping 
+		the border line) and then progresses to hole 100 which 
+		is the penultimate line on the left (or in the opposite
+		directions when the roll is oriented for performance).
+		<table><tr valign="top"><td>
+		<ul>
+		<li> Row 1: Bass mezzo-forte off
+		<li> Row 2: Bass mezzo-forte on
+		<li> Row 3: Bass crescendo piano
+		<li> Row 4: Bass crescendo forte
+		<li> Row 5: Bass sforzando piano 
+		<li> Row 6: Bass sforzando forte
+		<li> Row 7: Soft pedal (left pedal) off
+		<li> Row 8: Soft pedal (left pedal) on
+		<li> Row 9: Large resistance (less suction)
+		<li> Row 10: Small resistance (more suction)
+		</ul>
+		</td><td>
+		<ul>
+		<li> Row 11–90: 80 notes from C1 to G7
+		<li> Row 91: Return (end of roll marker)
+		<li> Row 92: Unused
+		<li> Row 93: Sustain pedal (right pedal) on
+		<li> Row 94: Sustain pedal (right pedal) off
+		<li> Row 95: Treble sforzando forte
+		<li> Row 96: Treble sforzando piano
+		<li> Row 97: Treble crescendo forte
+		<li> Row 98: Treble crescendo piano
+		<li> Row 99: Treble mezzo-forte on
+		<li> Row 100: Treble mezzo-forte off
+		</ul>
+		</td></tr></table>
+		<a target="_new" href="http://www.mmdigest.com/Archives/Digests/199712/1997.12.08.12.html">Welte red T-100 notes</a>:
+		Some red rolls may have holes at positions 0 and 101, but their
+		purpose is unknown and are not intended to be read on standard
+		T-100 tracker bars.  The roll width is 12.902 inches (327.71 mm)
+		and the hole spacing is 0.12526 inches (3.1816 mm) or approximately
+		0.125 (8 holes to the international inch which is 25.4 mm).
+		
+
 @@BEGIN:	SAMPLE
 @NUMBER:	01
 @DESCRIPTION:	Start of the roll.  Two manual corrections on left side of roll.
 		Shows asynchronous hole cutting.  Lined paper, with slots aligned to lines.
+@COMMENTARY:	The lowest hole on the left is in Row 99 which turns on 
+		treble mezzo forte expression.  The next hole up is in row 97
+		for treble crescendo forte.  The first expression hole on the right
+		is in row 2 for bass mezzo-forte on, followed by a hole in row 4
+		for bass crescendo forte.
+		The treble expression on the left of the image has two edits
+		where holes in row 91 (return) are taped over and 
+		new holes are added in row 93 (sustain pedal on).
+		<br><br>
+		The first note in the music which has a duration of 5 holes is
+		in row 37 which represents pitch D3.  This agrees with
+		this <a target="_new" href="https://www.youtube.com/watch?v=ncCO2sagdwM">YouTube video</a> 
+		performance of the composition, and also agrees with 
+		the <a target="_new" href="http://imslp.org/wiki/Frau_Luna_(Lincke,_Paul)">printed score</a> 
+		(Act I, page 2, measure 6, LH).
+		Note that the left and right hands are notated on the same beat
+		in the score, but the LH note comes noticeably before the
+		RH melody note in the roll (as well as 2nd and 3rd measure downbeats).
 @@END:		SAMPLE
 
 @@BEGIN:	SAMPLE

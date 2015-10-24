@@ -21,6 +21,8 @@
 @URL3:		https://en.wikipedia.org/wiki/Player_piano
 @URL4:		https://en.wikipedia.org/wiki/Welte-Mignon
 @URL5:		https://en.wikipedia.org/wiki/American_Piano_Company
+@URL6:		https://en.wikipedia.org/wiki/Aeolian_Company
+@URL7:		https://en.wikipedia.org/wiki/Duo-Art
 @DESCRIPTION:	Wikipedia articles related to piano rolls.
 @CREATION-DATE:	Fri Oct 23 16:21:01 PDT 2015
 @EDIT-DATE:	Fri Oct 23 16:21:04 PDT 2015
@@ -33,33 +35,7 @@
 
 
 
-@ Technical information @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
-@@BEGIN:	LINK
-@TITLE:		Typology of piano rolls.
-@URL:		http://www.en.faszinationpianola.de/notenrollen/typologie-der-notenrollen
-@DESCRIPTION:	An overview of the different types of piano rolls and formats.
-		Resources:
-		<ol style="margin-top:0; padding-top:0; margin-left:50px;">
-		<li> <a href=http://www.en.faszinationpianola.de/images/14_notenrollen_formate.gif>Summary 
-			of roll widths and pitch ranges</a>
-		</ol>
-@CREATION-DATE:	Fri Oct 23 16:16:08 PDT 2015
-@EDIT-DATE:	Fri Oct 23 16:16:13 PDT 2015
-@CATEGORY:	Technical information
-@SUBCATEGORY:	
-@SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
-@@BEGIN:	IMAGE
-@URL:		http://www.en.faszinationpianola.de/images/12_notenrollen_aufgeznr.gif
-@POSITION:	right
-@CAPTION:	Comparative performance analysis.
-@@END:		IMAGE
-@@END:   LINK
-
-
-@ YouTube @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@ Video @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 @@BEGIN: LINK
 @TITLE:		Red Welte Rolls played in real time on a Disklavier
@@ -68,8 +44,8 @@
 		Disklavier.
 @CREATION-DATE:	Fri Oct 23 16:46:33 PDT 2015
 @EDIT-DATE:	Fri Oct 23 16:46:36 PDT 2015
-@CATEGORY:	Video/YouTube
-@SUBCATEGORY:	
+@CATEGORY:	Video
+@SUBCATEGORY:	YouTube
 @SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
@@ -83,8 +59,8 @@
 @DESCRIPTION:	Welte Mignon licensee roll #7666 playing on a 1930 Stein grand piano.
 @CREATION-DATE:	Fri Oct 23 16:55:51 PDT 2015
 @EDIT-DATE:	Fri Oct 23 16:55:53 PDT 2015
-@CATEGORY:	Video/YouTube
-@SUBCATEGORY:	
+@CATEGORY:	Video
+@SUBCATEGORY:	YouTube
 @SUBSUBCATEGORY: 
 @CATEGORY2:	
 @SUBCATEGORY2:	
@@ -98,8 +74,38 @@
 		Saint-Säens Danse Macabre (second link).
 @CREATION-DATE:	Fri Oct 23 19:30:48 PDT 2015
 @EDIT-DATE:	Fri Oct 23 19:30:51 PDT 2015
-@CATEGORY:	Video/YouTube
-@SUBCATEGORY:	
+@CATEGORY:	Video
+@SUBCATEGORY:	YouTube
+@SUBSUBCATEGORY: 
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+@@BEGIN: LINK
+@TITLE:		Steinway Welte green grand piano
+@URL:		https://www.youtube.com/watch?v=_Sh5xNI7HRA
+@DESCRIPTION:	Welte green roll played on a grand piano.  Notice that
+		roll is read downwards (unlike red rolls which are red
+		upwards).
+@CREATION-DATE:	Fri Oct 23 23:42:20 PDT 2015
+@EDIT-DATE:	Fri Oct 23 23:42:23 PDT 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	YouTube
+@SUBSUBCATEGORY: 
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+@@BEGIN: LINK
+@TITLE:		Anthony Robinson's roll scanner
+@URL:		https://docs.google.com/file/d/0B5bSScCHUhOLOEJ3SG1WNDBSS3M/edit?pli=1
+@DESCRIPTION:	Ampico roll scanned in less than a minute.
+		See <a href="http://www.semitone440.co.uk/scanner">description</a> of
+		scanner.
+@CREATION-DATE:	Fri Oct 23 21:41:37 PDT 2015
+@EDIT-DATE:	Fri Oct 23 21:41:41 PDT 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Scanner
 @SUBSUBCATEGORY: 
 @CATEGORY2:	
 @SUBCATEGORY2:	
@@ -119,6 +125,38 @@
 @CREATION-DATE:	Fri Oct 23 16:16:23 PDT 2015
 @EDIT-DATE:	Fri Oct 23 16:16:26 PDT 2015
 @CATEGORY:	Books
+@SUBCATEGORY:	Welte
+@SUBSUBCATEGORY: 
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN: LINK
+@TITLE:		The Pianola Journal
+@URL:		http://www.pianola.org/journal/journal.cfm
+@DESCRIPTION:	Articles about the Pianola, 1987–2014.
+@CREATION-DATE:	Fri Oct 23 16:16:23 PDT 2015
+@EDIT-DATE:	Fri Oct 23 16:16:26 PDT 2015
+@CATEGORY:	Books
+@SUBCATEGORY:	Pianola
+@SUBSUBCATEGORY: 
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@ Papers @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@BEGIN: LINK
+@TITLE:		The importance of roll scans, Peter Phillips
+@URL:		http://www.iammp.org/design/files/The_importance_of_roll_scans.pdf
+@DESCRIPTION:	
+@CREATION-DATE:	Fri Oct 23 16:16:23 PDT 2015
+@EDIT-DATE:	Fri Oct 23 16:16:26 PDT 2015
+@CATEGORY:	Papers
 @SUBCATEGORY:	
 @SUBSUBCATEGORY: 
 @CATEGORY2:	
@@ -127,7 +165,7 @@
 
 
 
-@ MIDI transcriptions @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@ Transcriptions @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 @@BEGIN: LINK
 @TITLE:		Pianola.co.nz
@@ -135,13 +173,80 @@
 @DESCRIPTION:	2,044 MIDI transcriptions of piano rolls.
 @CREATION-DATE:	Fri Oct 23 17:10:52 PDT 2015
 @EDIT-DATE:	Fri Oct 23 17:10:54 PDT 2015
-@CATEGORY:	MIDI transcriptions
+@CATEGORY:	Transcriptions
+@SUBCATEGORY:	MIDI
+@SUBSUBCATEGORY: 
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@ Digitization @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@BEGIN: LINK
+@TITLE:		Anthony Ronbinson's Roll Scanner
+@URL:		http://www.semitone440.co.uk/scanner
+@DESCRIPTION:	150 dpi scanner based on CCD camera and rotary encoder.
+		<ul>
+		<li> <a href="https://www.dropbox.com/sh/jr1jhd0nnse86b2/AACZF6qXi_Gk_q1WFNUCazova?lst=">Four sample roll scans and TIFF viewer (MS Windows)</a>
+		</ul>
+@CREATION-DATE:	Fri Oct 23 21:44:35 PDT 2015
+@EDIT-DATE:	Fri Oct 23 21:44:37 PDT 2015
+@CATEGORY:	Digitization
 @SUBCATEGORY:	
 @SUBSUBCATEGORY: 
 @CATEGORY2:	
 @SUBCATEGORY2:	
 @@END:		LINK
 
+
+
+
+@ Technical information @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@BEGIN:	LINK
+@TITLE:		Typology of piano rolls.
+@URL:		http://www.en.faszinationpianola.de/notenrollen/typologie-der-notenrollen
+@DESCRIPTION:	An overview of the different types of piano rolls and formats.
+		Resources:
+		<ol style="margin-top:0; padding-top:0; margin-left:50px;">
+		<li> <a href="http://www.en.faszinationpianola.de/images/14_notenrollen_formate.gif">
+			Summary of roll widths and pitch ranges</a>
+		<li> <a href="http://www.en.faszinationpianola.de/pianola-geschichte--typen/skala-eines-pianolas/index.html">
+			Tracker bars</a>
+		</ol>
+@CREATION-DATE:	Fri Oct 23 16:16:08 PDT 2015
+@EDIT-DATE:	Fri Oct 23 16:16:13 PDT 2015
+@CATEGORY:	Technical information
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@BEGIN:	IMAGE
+@URL:		http://www.en.faszinationpianola.de/images/12_notenrollen_aufgeznr.gif
+@POSITION:	right
+@CAPTION:	Comparative performance analysis.
+@@END:		IMAGE
+@@END:		LINK
+
+
+
+@ Software  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@BEGIN:	LINK
+@TITLE:		Anthony Robinson's software
+@URL:		http://semitone440.co.uk/rolls/utils
+@DESCRIPTION:	Software for manipulating CIS roll scan image files as well as some 
+		MIDI tools.
+@CREATION-DATE:	Fri Oct 23 21:53:05 PDT 2015
+@EDIT-DATE:	Fri Oct 23 21:53:08 PDT 2015
+@CATEGORY:	Software
+@SUBCATEGORY:	CIS
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
 
 
 
