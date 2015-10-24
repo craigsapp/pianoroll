@@ -597,3 +597,30 @@ dl.qtip-search dd {
 
 }
 
+
+table.pr-table {
+	margin-left:50px;
+	padding:0px;
+	border: 1px solid #dfd0c0;
+	border-radius: 4px;
+	width: auto;
+	display: inline-block;
+}
+table.pr-table tr {
+	width: 100%;
+}
+table.pr-table tr:nth-child(1),
+table.pr-table td:nth-child(1) {
+	/* background-color: #dfd0c0; */
+}
+table.pr-table td {
+	text-align: center;
+	padding: 4px 60px;
+}
+table.pr-table th {
+	background-color: #dfd0c0;
+	text-align: center;
+	border: 0;
+}
+
+

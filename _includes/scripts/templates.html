@@ -255,9 +255,9 @@ function getSampleHtml(sample, number) {
 </summary>
 
 {{#if COMMENTARY}}
-<p>
-{{{COMMENTARY}}}
-</p>
+	<p>
+	{{{COMMENTARY}}}
+	</p>
 {{/if}}
 
 <table><tr><td>
@@ -348,6 +348,12 @@ function getSampleHtml(sample, number) {
 <div id="sample-scan-{{NUMBER}}" style="background-image: none;" class="sample-scan">
 	<img id="overlay{{NUMBER}}" src="sample-{{NUMBER}}-600dpi.jpg" style="max-width:12000px; width:800px;">
 </div>
+
+{{#if COMMENTARY_POST}}
+	<p>
+	{{{COMMENTARY_POST}}}
+	</p>
+{{/if}}
 
 </details>
 

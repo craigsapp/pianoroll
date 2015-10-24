@@ -18,7 +18,16 @@
 
 @@BEGIN:	SAMPLE
 @NUMBER:	01
-@DESCRIPTION:  Start of roll. Snake bites on both sides.  Green melody line.
+@DESCRIPTION:	Start of roll. Snake bites on both sides.  Green melody line.
+@COMMENTARY:	The first note is A3.
+@COMMENTARY_POST: 
+		Here is a symbolic interpretation of the sample
+		section of the roll:
+		<center>
+		<img src="bauer-opening.png">
+		</center>
+		White lines mark the
+		start times of notes.  Notes are colored by pitch class.
 @@END:		SAMPLE
 
 @@BEGIN:	SAMPLE
