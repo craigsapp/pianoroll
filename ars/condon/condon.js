@@ -10,6 +10,8 @@
 //
 
 // event keyCodes.  See: http://www.javascripter.net/faq/keycodes.htm
+var BackspaceKey =   8;
+var DeleteKey    =  46;
 var EnterKey     =  13;
 var BKey         =  98;
 var CKey         =  99;
