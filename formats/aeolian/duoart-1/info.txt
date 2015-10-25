@@ -39,7 +39,11 @@
 
 @@BEGIN:	SAMPLE
 @NUMBER:	02
-@DESCRIPTION:  A little further on roll. Green melody line.
+@DESCRIPTION:	A little further on roll. Green melody line.
+@COMMENTARY:	The width of the roll in this image was measured to be
+		11.287 inches (286.681 mm).  The theoretical width is
+		11-1/4 inches. In the Duo-Art sample 2, the width
+		was measured to be 11.292 inches (286.808 mm).
 @@END:		SAMPLE
 
 @@END:		ROLL

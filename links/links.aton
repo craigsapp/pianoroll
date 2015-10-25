@@ -1,20 +1,20 @@
 
 @ History and general information @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-@@BEGIN: LINK
+@@BEGIN:	LINK
 @TITLE:		Submission form
 @URL:		https://docs.google.com/forms/d/1ytEu0BXSK9cfVn2Gnhjg2jP5zB_Hask0LyN63R3jxK8/viewform
 @DESCRIPTION:	Submit your favorite links to this page.
 @CREATION-DATE:	Fri Oct 23 17:35:06 PDT 2015
 @EDIT-DATE:	Fri Oct 23 17:35:10 PDT 2015
 @CATEGORY:	History and general information
-@SUBCATEGORY:    
-@SUBSUBCATEGORY: 
-@CATEGORY2:      
-@SUBCATEGORY2:   
-@@END:   LINK
+@SUBCATEGORY:
+@SUBSUBCATEGORY:
+@CATEGORY2:
+@SUBCATEGORY2:
+@@END:		LINK
 
-@@BEGIN: LINK
+@@BEGIN:	LINK
 @TITLE:		Wikipedia
 @URL:		https://en.wikipedia.org/wiki/Piano_roll
 @URL2:		https://en.wikipedia.org/wiki/Music_roll
@@ -27,17 +27,17 @@
 @CREATION-DATE:	Fri Oct 23 16:21:01 PDT 2015
 @EDIT-DATE:	Fri Oct 23 16:21:04 PDT 2015
 @CATEGORY:	History and general information
-@SUBCATEGORY:    
-@SUBSUBCATEGORY: 
-@CATEGORY2:      
-@SUBCATEGORY2:   
-@@END:   LINK
+@SUBCATEGORY:
+@SUBSUBCATEGORY:
+@CATEGORY2:
+@SUBCATEGORY2:
+@@END:		LINK
 
 
 
 @ Video @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-@@BEGIN: LINK
+@@BEGIN:	LINK
 @TITLE:		Red Welte Rolls played in real time on a Disklavier
 @URL:		https://www.youtube.com/watch?v=cmHo2FgycUE
 @DESCRIPTION:	Peter Phillips playing a Welte red roll with live playback on a
@@ -53,7 +53,7 @@
 
 
 
-@@BEGIN: LINK
+@@BEGIN:	LINK
 @TITLE:		Welte Mignon Licensee: Marguerite Volavy, The Nightingale
 @URL:		https://www.youtube.com/watch?v=jKb1W0JH4wE
 @DESCRIPTION:	Welte Mignon licensee roll #7666 playing on a 1930 Stein grand piano.
@@ -61,12 +61,12 @@
 @EDIT-DATE:	Fri Oct 23 16:55:53 PDT 2015
 @CATEGORY:	Video
 @SUBCATEGORY:	YouTube
-@SUBSUBCATEGORY: 
+@SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
 @@END:		LINK
 
-@@BEGIN: LINK
+@@BEGIN:	LINK
 @TITLE:		Feuerich Welte Mignon player
 @URL:		https://www.youtube.com/watch?v=PePcVWs8Y-I
 @URL:		https://www.youtube.com/watch?v=J0j0nS6USIM
@@ -76,12 +76,12 @@
 @EDIT-DATE:	Fri Oct 23 19:30:51 PDT 2015
 @CATEGORY:	Video
 @SUBCATEGORY:	YouTube
-@SUBSUBCATEGORY: 
+@SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
 @@END:		LINK
 
-@@BEGIN: LINK
+@@BEGIN:	LINK
 @TITLE:		Steinway Welte green grand piano
 @URL:		https://www.youtube.com/watch?v=_Sh5xNI7HRA
 @DESCRIPTION:	Welte green roll played on a grand piano.  Notice that
@@ -91,12 +91,32 @@
 @EDIT-DATE:	Fri Oct 23 23:42:23 PDT 2015
 @CATEGORY:	Video
 @SUBCATEGORY:	YouTube
-@SUBSUBCATEGORY: 
+@SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
 @@END:		LINK
 
-@@BEGIN: LINK
+
+
+@@BEGIN:	LINK
+@TITLE:		Duo-Art roll performance.
+@URL:		https://www.youtube.com/watch?v=ED10GCc98ho
+@DESCRIPTION:	Duo-Art roll, "Baby Face" by Benny David and Harry Akst.
+		(Duo-Art #713263) played on a
+		1934 Stroud baby grand piano.
+		Good detail of the roll on trackbar as it plays.
+@CREATION-DATE:	Sat Oct 24 17:00:10 PDT 2015
+@EDIT-DATE:	Sat Oct 24 17:00:13 PDT 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	YouTube
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
 @TITLE:		Anthony Robinson's roll scanner
 @URL:		https://docs.google.com/file/d/0B5bSScCHUhOLOEJ3SG1WNDBSS3M/edit?pli=1
 @DESCRIPTION:	Ampico roll scanned in less than a minute.
@@ -106,7 +126,7 @@
 @EDIT-DATE:	Fri Oct 23 21:41:41 PDT 2015
 @CATEGORY:	Video
 @SUBCATEGORY:	Scanner
-@SUBSUBCATEGORY: 
+@SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
 @@END:		LINK
@@ -115,25 +135,25 @@
 
 @ Books @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-@@BEGIN: LINK
+@@BEGIN:	LINK
 @TITLE:		The Welte-Mignon: Its music and musicians
 @URL:		https://searchworks.stanford.edu/view/2944024
 @DESCRIPTION:	By Charles David Smith and Richard James Howe. Vestal Press, 1994. 975pp.
 		Complete catalogue of Welte-Mignon reproducing piano recordings,
-		1905-1932; historical overview of companies and individuals; 
+		1905-1932; historical overview of companies and individuals;
 		biographical essays on the recording artists and composers.
 @CREATION-DATE:	Fri Oct 23 16:16:23 PDT 2015
 @EDIT-DATE:	Fri Oct 23 16:16:26 PDT 2015
 @CATEGORY:	Books
 @SUBCATEGORY:	Welte
-@SUBSUBCATEGORY: 
+@SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
 @@END:		LINK
 
 
 
-@@BEGIN: LINK
+@@BEGIN:	LINK
 @TITLE:		The Pianola Journal
 @URL:		http://www.pianola.org/journal/journal.cfm
 @DESCRIPTION:	Articles about the Pianola, 1987–2014.
@@ -141,7 +161,7 @@
 @EDIT-DATE:	Fri Oct 23 16:16:26 PDT 2015
 @CATEGORY:	Books
 @SUBCATEGORY:	Pianola
-@SUBSUBCATEGORY: 
+@SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
 @@END:		LINK
@@ -150,7 +170,7 @@
 
 @ Papers @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-@@BEGIN: LINK
+@@BEGIN:	LINK
 @TITLE:		The importance of roll scans, Peter Phillips
 @URL:		http://www.iammp.org/design/files/The_importance_of_roll_scans.pdf
 @DESCRIPTION:	
@@ -158,7 +178,7 @@
 @EDIT-DATE:	Fri Oct 23 16:16:26 PDT 2015
 @CATEGORY:	Papers
 @SUBCATEGORY:	
-@SUBSUBCATEGORY: 
+@SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
 @@END:		LINK
@@ -167,15 +187,114 @@
 
 @ Transcriptions @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-@@BEGIN: LINK
+@@BEGIN:	LINK
+@TITLE:		IAMMP Roll Archives
+@URL:		http://www.iammp.org/rolldatabase.php
+@DESCRIPTION:	11020 scanned rolls in database (not all public).
+@CREATION-DATE:	Sat Oct 24 20:35:56 PDT 2015
+@EDIT-DATE:	Sat Oct 24 20:36:01 PDT 2015
+@CATEGORY:	Transcriptions
+@SUBCATEGORY:	MIDI
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+@@BEGIN:	LINK
+@TITLE:		Archive of Player Piano Music Rolls in MIDI format
+@URL:		http://members.shaw.ca/smythe/archive.htm
+@DESCRIPTION:	6225 titles organized by label.
+@CREATION-DATE:	Sat Oct 24 21:56:43 PDT 2015
+@EDIT-DATE:	Sat Oct 24 21:56:46 PDT 2015
+@CATEGORY:	Transcriptions
+@SUBCATEGORY:	MIDI
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+@@BEGIN:	LINK
+@TITLE:		Warren Trachtman Roll Transcriptions
+@URL:		http://www.trachtman.org/rollscans/RollListing.php
+@DESCRIPTION:	2370 public transcriptions (8270 total).
+@CREATION-DATE:	Sat Oct 24 19:51:46 PDT 2015
+@EDIT-DATE:	Sat Oct 24 19:51:57 PDT 2015
+@CATEGORY:	Transcriptions
+@SUBCATEGORY:	MIDI
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+@@BEGIN:	LINK
 @TITLE:		Pianola.co.nz
 @URL:		http://www.pianola.co.nz
-@DESCRIPTION:	2,044 MIDI transcriptions of piano rolls.
+@DESCRIPTION:	2,044 MIDI transcriptions of piano rolls collected
+		by Robert Perry.
 @CREATION-DATE:	Fri Oct 23 17:10:52 PDT 2015
 @EDIT-DATE:	Fri Oct 23 17:10:54 PDT 2015
 @CATEGORY:	Transcriptions
 @SUBCATEGORY:	MIDI
-@SUBSUBCATEGORY: 
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+@@BEGIN:	LINK
+@TITLE:		Karaoke files from Piano Rolls
+@URL:		http://www.stibbons.com/karaoke.html
+@DESCRIPTION:	114 MIDI file transcriptions, favorite oldies.
+@CREATION-DATE:	Sat Oct 24 21:25:45 PDT 2015
+@EDIT-DATE:	Sat Oct 24 21:25:48 PDT 2015
+@CATEGORY:	Transcriptions
+@SUBCATEGORY:	MIDI
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+@@BEGIN:	LINK
+@TITLE:		A selection of files processed by Anthony Robinson
+@URL:		http://www.stibbons.com/midi2.html
+@DESCRIPTION:	21 MIDI file transcriptions.
+@CREATION-DATE:	Sat Oct 24 21:25:45 PDT 2015
+@EDIT-DATE:	Sat Oct 24 21:25:48 PDT 2015
+@CATEGORY:	Transcriptions
+@SUBCATEGORY:	MIDI
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@ Organ rolls @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@BEGIN:	LINK
+@TITLE:		Sample Aeolian pipe organ music roll (116 note)
+@URL:		http://members.socket.net/~rtaylor/roll_instructions.html
+@DESCRIPTION:	Sample image from the start of a 116 note Aeolian organ roll
+		as well as a description of the roll.
+@CREATION-DATE:	Sat Oct 24 16:56:49 PDT 2015
+@EDIT-DATE:	Sat Oct 24 16:56:52 PDT 2015
+@CATEGORY:	Organ rolls
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Aeolian Pipe Organ tracker bar diagram.
+@URL:		http://www.mmdigest.com/Tech/Scales/aeo116a.gif
+@DESCRIPTION:	Shows dimensions and two rows of holes.
+@CREATION-DATE:	Sat Oct 24 17:09:11 PDT 2015
+@EDIT-DATE:	Sat Oct 24 17:09:14 PDT 2015
+@CATEGORY:	Organ rolls
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
 @@END:		LINK
@@ -184,7 +303,7 @@
 
 @ Digitization @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-@@BEGIN: LINK
+@@BEGIN:	LINK
 @TITLE:		Anthony Ronbinson's Roll Scanner
 @URL:		http://www.semitone440.co.uk/scanner
 @DESCRIPTION:	150 dpi scanner based on CCD camera and rotary encoder.
@@ -195,16 +314,48 @@
 @EDIT-DATE:	Fri Oct 23 21:44:37 PDT 2015
 @CATEGORY:	Digitization
 @SUBCATEGORY:	
-@SUBSUBCATEGORY: 
+@SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
 @@END:		LINK
 
 
+
+@@BEGIN:	LINK
+@TITLE:		Perfect roll copying with the Mk3 BT roll scanner, Julian Dyer, July 2003
+@URL:		http://www.pianorolls.co.uk/rollcopying.htm
+@DESCRIPTION:	Scanning rolls for duplication.
+@CREATION-DATE:	Sat Oct 24 17:11:58 PDT 2015
+@EDIT-DATE:	Sat Oct 24 17:12:00 PDT 2015
+@CATEGORY:	Digitization
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		IAMMP Design Files
+@URL:		http://www.iammp.org/designfiles.php
+@DESCRIPTION:	Documentation and resources for roll scanning design.
+@CREATION-DATE:	Sat Oct 24 20:40:18 PDT 2015
+@EDIT-DATE:	Sat Oct 24 20:40:22 PDT 2015
+@CATEGORY:	Digitization
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
 @ Library collections @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-@@BEGIN: LINK
-@TITLE:		Denis Condon collection of reproducing pianos and rolls, Stanford University
+@@BEGIN:	LINK
+@TITLE:		Denis Condon collection of reproducing pianos and rolls,
+		Stanford University
 @URL:		http://library.stanford.edu/blogs/stanford-libraries-blog/2014/09/introducing-denis-condon-collection-reproducing-pianos-and
 @DESCRIPTION:	Over 7500 rolls and ten players.  Acquired 2014.  Primarily
 		Welte Mignon, Duo-Art and Ampico reproducing rolls.
@@ -212,12 +363,12 @@
 @EDIT-DATE:	Sat Oct 24 14:45:10 PDT 2015
 @CATEGORY:	Library collections
 @SUBCATEGORY:	
-@SUBSUBCATEGORY: 
+@SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
 @@END:		LINK
 
-@@BEGIN: LINK
+@@BEGIN:	LINK
 @TITLE:		Joe M. Morris Piano Roll Collection, University of North Texas
 @URL:		http://findingaids.library.unt.edu/?p=collections/findingaid&id=274#.Viv7bRNVhBc
 @DESCRIPTION:	5431 rolls. Acquired Oct. 2013.  Western art music, American
@@ -227,7 +378,7 @@
 @EDIT-DATE:	Sat Oct 24 14:45:10 PDT 2015
 @CATEGORY:	Library collections
 @SUBCATEGORY:	
-@SUBSUBCATEGORY: 
+@SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
 @@END:		LINK
@@ -262,12 +413,44 @@
 
 
 
+@@BEGIN:	LINK
+@TITLE:		Scales and Tracker Bars, compiled by Robbie Rhodes
+@URL:		http://www.mmdigest.com/Gallery/Tech/Scales/index.html
+@DESCRIPTION:	Technical information about tracker bars for player
+		pianos with pictures and diagrams.
+@CREATION-DATE:	Sat Oct 24 16:50:48 PDT 2015
+@EDIT-DATE:	Sat Oct 24 16:50:51 PDT 2015
+@CATEGORY:	Technical information
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Pages from the Duo-Art Service Manual about Upright Models
+@URL:		http://www.musicrolls.com/duo-art
+@URL:		http://www.musicrolls.com/duo-art/half_d-a/half_duo-art.pdf
+@DESCRIPTION:	Technical information about Duo-Art upright pianos.
+@CREATION-DATE:	Sat Oct 24 17:06:16 PDT 2015
+@EDIT-DATE:	Sat Oct 24 17:06:19 PDT 2015
+@CATEGORY:	Technical information
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
 @ Software  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 @@BEGIN:	LINK
 @TITLE:		Anthony Robinson's software
 @URL:		http://semitone440.co.uk/rolls/utils
-@DESCRIPTION:	Software for manipulating CIS roll scan image files as well as some 
+@DESCRIPTION:	Software for manipulating CIS roll scan image files as well as some
 		MIDI tools.
 @CREATION-DATE:	Fri Oct 23 21:53:05 PDT 2015
 @EDIT-DATE:	Fri Oct 23 21:53:08 PDT 2015
@@ -277,6 +460,77 @@
 @CATEGORY2:	
 @SUBCATEGORY2:	
 @@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Warren Trachtman CIS to MIDI Converter Software
+@URL:		http://www.trachtman.org/rollscans/mysoftware.htm
+@DESCRIPTION:	Zip file includes template for roll types.
+@CREATION-DATE:	Sat Oct 24 19:54:50 PDT 2015
+@EDIT-DATE:	Sat Oct 24 19:54:55 PDT 2015
+@CATEGORY:	Software
+@SUBCATEGORY:	CIS
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@ Groups  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@BEGIN:	LINK
+@TITLE:		International Association of Mechanical Music Preservationists
+@URL:		http://www.iammp.org
+@DESCRIPTION:	
+@CREATION-DATE:	Sat Oct 24 20:34:44 PDT 2015
+@EDIT-DATE:	Sat Oct 24 20:34:50 PDT 2015
+@CATEGORY:	Groups
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@ People  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@BEGIN:	LINK
+@TITLE:		Richard Stibbons
+@URL:		http://www.stibbons.com/mechmusic.html
+@DESCRIPTION:	Early developer of roll scanning.  Retired BBC engineer.
+@CREATION-DATE:	Sat Oct 24 21:23:54 PDT 2015
+@EDIT-DATE:	Sat Oct 24 21:23:58 PDT 2015
+@CATEGORY:	People
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@BEGIN:	IMAGE
+@URL:		http://www.stibbons.com/images/rollscanner.jpg
+@POSITION:	right
+@CAPTION:	Stibbons roll scanner.
+@@END:		IMAGE
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Terry Smythe
+@URL:		http://members.shaw.ca/smythe/rebirth.htm
+@DESCRIPTION:	Winnipeg, Manitoba, Canada.
+@CREATION-DATE:	Sat Oct 24 21:54:02 PDT 2015
+@EDIT-DATE:	Sat Oct 24 21:54:05 PDT 2015
+@CATEGORY:	People
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
 
 
 

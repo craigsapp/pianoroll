@@ -1,0 +1,122 @@
+---
+layout: default
+breadcrumbs: [
+	['/','home'],
+	['/file-types','file types']
+]
+title: CIS file format
+---
+
+<h1> CIS file format </h1>
+
+<p>
+CIS stands for <a href="https://en.wikipedia.org/wiki/Contact_image_sensor">Contact 
+Image Sensor</a>. CIS files are 1-bit image files using <a href="https://en.wikipedia.org/wiki/Run-length_encoding">run-length
+encoding</a> for data compression.
+</p>
+
+<h2> Structure of CIS files </h2>
+
+<style>
+table.pr-table td { padding: 4px 4px; }
+table.pr-table td:nth-last-child(1) { font-size: 90%; padding-left:20px; line-height: 1.25; text-align: left; }
+</style>
+
+<table class="pr-table">
+
+<tr>
+	<th> Byte offset </th>
+	<th> Byte size </th>
+	<th> Data type </th>
+	<th> Field </th>
+	<th> Description </th>
+</tr>
+
+<tr>
+	<td> 0 </td>
+	<td> 40 </td>
+	<td> char </td>
+	<td> description </td>
+	<td width=100%>
+		ASCII characters describing roll.
+		Unused trailing bytes filled with spaces (0x20).
+		Nul (0x00) might be used to terminate string.
+	</td>
+</tr>
+
+<tr>
+	<td> 40 </td>
+	<td> 2 </td>
+	<td> LE ushort</td>
+	<td> scanner width </td>
+	<td width=100%>
+		Number of bytes in one scan line.
+	</td>
+</tr>
+
+<tr>
+	<td> 42 </td>
+	<td> 2 </td>
+	<td> </td>
+	<td> reserved </td>
+	<td width=100%>
+		Unused field.
+	</td>
+</tr>
+
+<tr>
+	<td> 44 </td>
+	<td> 2 </td>
+	<td> LE ushort </td>
+	<td> tempo </td>
+	<td width=100%>
+		Tempo of the roll (beats per minute format).  
+		Default value is 90 if value is 0.
+	</td>
+</tr>
+
+<tr>
+	<td> 46 </td>
+	<td> 2 </td>
+	<td> LE ushort </td>
+	<td> LPI </td>
+	<td width=100%>
+		Lines per inch along the vertical axis (length of roll).
+		The default for this value is 182.
+	</td>
+</tr>
+
+<tr>
+	<td> 48 </td>
+	<td> 4 </td>
+	<td> LE ulong </td>
+	<td> line count </td>
+	<td width=100%>
+		Number of scan lines in the file.
+	</td>
+</tr>
+
+<tr>
+	<td> 52 </td>
+	<td> </td>
+	<td> </td>
+	<td> data </td>
+	<td width=100%>
+		Compressed version of the scanned data
+	</td>
+</tr>
+
+</table>
+
+
+<h2> Structure of CIS files data segment </h2>
+
+
+<h2> References </h2>
+
+<ul>
+<li> <a href="http://www.trachtman.org/rollscans/CIS_File_Format.doc">CIS File Format (Preliminary)</a> by Pete Knobloch, 24 Oct. 2015.
+</ul>
+
+
+
