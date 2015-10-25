@@ -104,6 +104,10 @@
 @NUMBER:	02
 @DESCRIPTION:	About 10 feet in, showing editing: removing 
 		accidental note, shortening notes in a chord.
+@COMMENTARY:	The spacing between lines was measured to be 0.1256 inches (3.190 mm)
+		and the paper 12.936 in (328.579 mm) based on measureing 7611 pixels
+		between the outer two lines on the paper (and presuming that 600 dpi
+		scanning resolution is exact).
 @@END:		SAMPLE
 
 @@END:		ROLL

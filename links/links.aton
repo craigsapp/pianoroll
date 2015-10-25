@@ -66,6 +66,8 @@
 @SUBCATEGORY2:	
 @@END:		LINK
 
+
+
 @@BEGIN:	LINK
 @TITLE:		Feuerich Welte Mignon player
 @URL:		https://www.youtube.com/watch?v=PePcVWs8Y-I
@@ -142,6 +144,21 @@
 		scanner.
 @CREATION-DATE:	Fri Oct 23 21:41:37 PDT 2015
 @EDIT-DATE:	Fri Oct 23 21:41:41 PDT 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Scanner
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		PianoDisc and Disklavier innards
+@URL:		https://www.youtube.com/watch?v=cACZqIlGx_Y
+@DESCRIPTION:	Comparison between PianoDisc and Disklavier pieces.
+@CREATION-DATE:	Sun Oct 25 12:01:06 PDT 2015
+@EDIT-DATE:	Sun Oct 25 12:01:08 PDT 2015
 @CATEGORY:	Video
 @SUBCATEGORY:	Scanner
 @SUBSUBCATEGORY:
@@ -455,6 +472,25 @@
 @DESCRIPTION:	Technical information about Duo-Art upright pianos.
 @CREATION-DATE:	Sat Oct 24 17:06:16 PDT 2015
 @EDIT-DATE:	Sat Oct 24 17:06:19 PDT 2015
+@CATEGORY:	Technical information
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		The Buffalo Convention Piano Roll Specifications, Matthew Caulfield (2008)
+@URL:		http://www.mmdigest.com/Gallery/Tech/1908Buffalo.html
+@URL2:		http://www.mmdigest.com/Gallery/Tech/MTR-1908-12-08-v47-n24-p31.pdf
+@URL3:		http://www.mmdigest.com/Gallery/Tech/MTR-1908-12-26-v47-n26-p27.pdf
+@DESCRIPTION:	The Buffalo convention standardized the layout of piano rolls in America
+		after 1908 into two formats: for 88-keys (9 holes/inch) and 65-keys 
+		(6 holes/inch).
+@CREATION-DATE:	Sun Oct 25 11:45:27 PDT 2015
+@EDIT-DATE:	Sun Oct 25 11:45:29 PDT 2015
 @CATEGORY:	Technical information
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
