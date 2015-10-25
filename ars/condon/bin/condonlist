@@ -1,0 +1,101 @@
+#!/usr/bin/env node
+//
+// Programmer:    Craig Stuart Sapp <craig@ccrma.stanford.edu>
+// Creation Date: Sat Oct 24 23:21:36 PDT 2015
+// Last Modified: Sat Oct 24 23:53:03 PDT 2015
+// Filename:      condonlist
+// Syntax:        JavaScript 1.8.5/ECMAScript 5.1; node.js
+// vim:           ts=3: ft=javascript
+//
+// Description:   Extract list of Condon Roll call numbers from Searchworks.
+//
+// Usage:         ./condonlist > list.txt
+//
+// First-time installation:
+//		npm install jsdom -g
+//		npm install w3c-xmlhttprequest -g
+//
+//
+// Condon Roll 1	https://searchworks.stanford.edu/view/10760282
+// Current last Condon Roll:
+// Condon Roll 1338	https://searchworks.stanford.edu/view/11461877
+//
+
+'use strict';
+
+var file = 'https://searchworks.stanford.edu/browse?start=10760282&view=gallery&page=';
+
+var XMLHttpRequest = require('w3c-xmlhttprequest').XMLHttpRequest;
+var jsdom          = require('jsdom');
+var dom            = jsdom.defaultLevel;
+
+getPage(0);
+
+
+
+//////////////////////////////
+//
+// getPage -- Get an gallery page from Searchworks.  If the page has
+//    "CONDON ROLL" call numbers on it, then progress to the next page,
+//    stopping when a page does not have "CONDON ROLL" call numbers.
+//
+
+function getPage(number) {
+	var request = new XMLHttpRequest();
+	request.open('GET', file + number);
+	request.addEventListener('load', function() {
+   	if (request.status == 200) {
+      	try {
+         	var count = getCondonEntries(request.responseText);
+				if (count > 0) {
+					getPage(number + 1);
+				}
+      	} catch(err) {
+         	console.log('Error parsing search results: %s', err);
+         	console.log('data:', request.responseText);
+      	}
+   	} else {
+      	console.log('Error retrieving search result:', queryUrl);
+      	console.log('Returned data',request.responseText);
+   	}
+	});
+	request.send();
+}
+
+
+
+//////////////////////////////
+//
+// getCondonEntries -- Extract "CONDON ROLL" call numbers from page.
+//
+
+function getCondonEntries(content) {
+	var document = jsdom.jsdom(content);
+	var x = document.querySelectorAll('div.caption');
+	var matches;
+	var y, z;
+	var condon;
+	var url;
+	var entry;
+	var counter = 0;
+	for (var i=0; i<x.length; i++) {
+		y = x[i].querySelector('div.callnumber-bar');
+		if (!y) { continue; }
+		condon = '';
+		if (matches = y.innerHTML.match(/(CONDON ROLL \d+)/)) {
+			condon = matches[1];
+		} else {
+			continue;
+		}
+		z = x[i].querySelector('h3 a');
+		if (!z) { continue; }
+		url = 'https://searchworks.stanford.edu' + z.href;
+		entry = condon + '\t' + url;
+		console.log(entry);
+		counter++;
+	};
+	return counter;
+}
+
+
+

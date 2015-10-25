@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>01810cjm a2200469Ii 4500</leader>
+  <controlfield tag="001">a11416477</controlfield>
+  <controlfield tag="003">SIRSI</controlfield>
+  <controlfield tag="005">20151011003002.0</controlfield>
+  <controlfield tag="007">sq zmnznnmznnb</controlfield>
+  <controlfield tag="008">151007r19uu1926iludfnn           n zxx d</controlfield>
+  <datafield ind1="0" ind2="2" tag="028">
+    <subfield code="a">Y-7373</subfield>
+    <subfield code="b">De Luxe</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="040">
+    <subfield code="a">STF</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">STF</subfield>
+    <subfield code="d">STF</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="049">
+    <subfield code="a">STFA</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="100">
+    <subfield code="a">Silver, Abner,</subfield>
+    <subfield code="d">1899-1966,</subfield>
+    <subfield code="e">composer.</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="0" tag="240">
+    <subfield code="a">Oh, my bundle of love</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="0" tag="245">
+    <subfield code="a">My bundle of love /</subfield>
+    <subfield code="c">Silver.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="1" tag="264">
+    <subfield code="a">Lake Bluff, IL :</subfield>
+    <subfield code="b">Mike and Fred Schwimmer,</subfield>
+    <subfield code="c">[between 1970 and 1999?]</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="300">
+    <subfield code="a">1 audio roll ;</subfield>
+    <subfield code="c">12 1/4 in. x 2 3/4 in.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="336">
+    <subfield code="a">performed music</subfield>
+    <subfield code="2">rdacontent</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="337">
+    <subfield code="a">audio</subfield>
+    <subfield code="2">rdamedia</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="338">
+    <subfield code="a">audio roll</subfield>
+    <subfield code="2">rdacarrier</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="344">
+    <subfield code="a">analog</subfield>
+    <subfield code="b">mechanical</subfield>
+    <subfield code="c">tempo 90</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="1" tag="382">
+    <subfield code="a">piano</subfield>
+    <subfield code="n">1</subfield>
+    <subfield code="s">1</subfield>
+    <subfield code="2">lcmpt</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Title from roll.</subfield>
+  </datafield>
+  <datafield ind1="0" ind2=" " tag="511">
+    <subfield code="a">Ralph Reichenthal, piano.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Welte-Mignon licensee roll.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Recut. Originally released as a De Luxe roll, number X-7373, issued in 1926.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Foxtrots.</subfield>
+    <subfield code=" ">^A1019455</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Piano music.</subfield>
+    <subfield code=" ">^A1049172</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Player piano rolls.</subfield>
+    <subfield code=" ">^A1050086</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Foxtrots (Music)</subfield>
+    <subfield code="2">lcgft</subfield>
+    <subfield code=" ">^A3344858</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Reproducing piano rolls.</subfield>
+    <subfield code="2">local</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Recut piano rolls.</subfield>
+    <subfield code="2">local</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="a">Reichenthal, Ralph,</subfield>
+    <subfield code="d">1901-1942,</subfield>
+    <subfield code="e">instrumentalist.</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1="2" ind2=" " tag="710">
+    <subfield code="a">Mike and Fred Schwimmer,</subfield>
+    <subfield code="e">publisher.</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="916">
+    <subfield code="a">DATE CATALOGED</subfield>
+    <subfield code="b">20151007</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="994">
+    <subfield code="a">C0</subfield>
+    <subfield code="b">STF</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="590">
+    <subfield code="a">Archive of Recorded Sound copy 1: Comments by Denis Condon on roll leader.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="4" tag="690">
+    <subfield code="a">Denis Condon Collection of Reproducing Pianos and Rolls.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="035">
+    <subfield code="a">(OCoLC-M)922976329</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="596">
+    <subfield code="a">5</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="999">
+    <subfield code="a">CONDON ROLL 1207</subfield>
+    <subfield code="w">ALPHANUM</subfield>
+    <subfield code="c">1</subfield>
+    <subfield code="i">36105225772156</subfield>
+    <subfield code="l">RECORDINGS</subfield>
+    <subfield code="m">ARS</subfield>
+    <subfield code="r">N</subfield>
+    <subfield code="s">Y</subfield>
+    <subfield code="t">NH-RCORDNG</subfield>
+    <subfield code="u">10/7/2015</subfield>
+  </datafield>
+</record>

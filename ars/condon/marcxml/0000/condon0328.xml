@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>03213cjm a2200613Ii 4500</leader>
+  <controlfield tag="001">a10789849</controlfield>
+  <controlfield tag="003">SIRSI</controlfield>
+  <controlfield tag="005">20150921003001.0</controlfield>
+  <controlfield tag="007">sq zmnznnmznnb</controlfield>
+  <controlfield tag="008">150413r19911906txuopnn           n zxx d</controlfield>
+  <datafield ind1=" " ind2=" " tag="040">
+    <subfield code="a">STF</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">STF</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="2" tag="028">
+    <subfield code="a">1181</subfield>
+    <subfield code="b">Welte-Mignon</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="2" tag="028">
+    <subfield code="a">3023</subfield>
+    <subfield code="b">Welte-Mignon</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="2" tag="028">
+    <subfield code="a">3022</subfield>
+    <subfield code="b">Welte-Mignon</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="035">
+    <subfield code="a">(OCoLC)NEW</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="049">
+    <subfield code="a">STFA</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="4" tag="245">
+    <subfield code="a">Das Rheingold, excerpts ;</subfield>
+    <subfield code="b">Die Walkurie, excerpts ; Tristan and Isolde, paraphrase /</subfield>
+    <subfield code="c">R. Wagner.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="1" tag="264">
+    <subfield code="a">Austin, Texas :</subfield>
+    <subfield code="b">the Gryphon Company,</subfield>
+    <subfield code="c">[1991]</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="4" tag="264">
+    <subfield code="c">&#xA9;1991</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="300">
+    <subfield code="a">1 audio roll ;</subfield>
+    <subfield code="c">12 2/8 in. x 2 6/8 in.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="336">
+    <subfield code="a">performed music</subfield>
+    <subfield code="2">rdacontent</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="337">
+    <subfield code="a">audio</subfield>
+    <subfield code="2">rdamedia</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="338">
+    <subfield code="a">audio roll</subfield>
+    <subfield code="2">rdacarrier</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="344">
+    <subfield code="a">analog</subfield>
+    <subfield code="b">mechanical</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="1" tag="382">
+    <subfield code="a">piano</subfield>
+    <subfield code="n">1</subfield>
+    <subfield code="s">1</subfield>
+    <subfield code="2">lcmpt</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Title from roll.</subfield>
+  </datafield>
+  <datafield ind1="0" ind2=" " tag="511">
+    <subfield code="a">Das Rheingold, excerpts: A. de Greef, piano.</subfield>
+  </datafield>
+  <datafield ind1="0" ind2=" " tag="511">
+    <subfield code="a">Die Walk&#xFC;re, excerpts, and Tristan and Isolde, paraphrase: C. Rybner, piano.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Welte-Mignon licensee roll.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Manufacturer tempo marking: 65.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Compiled recut. Originally published individually: Freiburg im Breisgau, Germany : Welte-Mignon, 1906 and 1913.</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="0" tag="505">
+    <subfield code="t">Das Rheingold, excerpts /</subfield>
+    <subfield code="r">Richard Wagner ; transcribed by Louis Brassin--</subfield>
+    <subfield code="t">Die Walkurie, excerpts /</subfield>
+    <subfield code="r">Richard Wagner ; transcribed by Cornelius Rybner --</subfield>
+    <subfield code="t">Tristan and Isolde, paraphrase /</subfield>
+    <subfield code="r">Richard Wagner ; transcribed by Cornelius Rybner.</subfield>
+  </datafield>
+  <datafield ind1="4" ind2=" " tag="510">
+    <subfield code="a">Smith, Charles Davis &amp; Richard J. Howe. The Welte-Mignon, 1994,</subfield>
+    <subfield code="c">pages 189 and 223.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="590">
+    <subfield code="a">Archive of Recorded Sound copy 1: Comments by Denis Condon on roll leader: "No. 3-- try 75."</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Operas</subfield>
+    <subfield code="v">Excerpts, Arranged.</subfield>
+    <subfield code=" ">^A1045280</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Piano music, Arranged.</subfield>
+    <subfield code=" ">^A1049181</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Player piano rolls.</subfield>
+    <subfield code=" ">^A1050086</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Operas.</subfield>
+    <subfield code="2">lcgft</subfield>
+    <subfield code=" ">^A3299848</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Arrangements (Music)</subfield>
+    <subfield code="2">lcgft</subfield>
+    <subfield code=" ">^A3344913</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Recut piano rolls.</subfield>
+    <subfield code="2">local</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Reproducing piano rolls.</subfield>
+    <subfield code="2">local</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="4" tag="690">
+    <subfield code="a">Denis Condon Collection of Reproducing Pianos and Rolls.</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="a">Rybner, Cornelius,</subfield>
+    <subfield code="d">1855-1929,</subfield>
+    <subfield code="e">arranger of music,</subfield>
+    <subfield code="e">instrumentalist.</subfield>
+    <subfield code=" ">^A3229296</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="a">Greef, Arthur de,</subfield>
+    <subfield code="d">1862-1940,</subfield>
+    <subfield code="e">instrumentalist.</subfield>
+    <subfield code=" ">^A60716</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="2" tag="700">
+    <subfield code="i">Container of (work):</subfield>
+    <subfield code="a">Brassin, Louis,</subfield>
+    <subfield code="d">1840-1884.</subfield>
+    <subfield code="t">Aus Richard Wagner's Der Ring des Nibelungen.</subfield>
+    <subfield code="p">Walhall.</subfield>
+    <subfield code=" ">^A2012325</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="i">Based on (work):</subfield>
+    <subfield code="a">Wagner, Richard,</subfield>
+    <subfield code="d">1813-1883.</subfield>
+    <subfield code="t">Ring des Nibelungen.</subfield>
+    <subfield code="p">Rheingold.</subfield>
+    <subfield code="p">Einzug der G&#xF6;tter in Walhall.</subfield>
+    <subfield code=" ">^A2042580</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="2" tag="700">
+    <subfield code="i">Container of (work):</subfield>
+    <subfield code="a">Wagner, Richard,</subfield>
+    <subfield code="d">1813-1883.</subfield>
+    <subfield code="t">Ring des Nibelungen.</subfield>
+    <subfield code="p">Walk&#xFC;re.</subfield>
+    <subfield code="p">Feuerzauber;</subfield>
+    <subfield code="o">arranged.</subfield>
+    <subfield code=" ">^A1517425</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="i">Container of (work) :</subfield>
+    <subfield code="a">Rybner, Cornelius,</subfield>
+    <subfield code="d">1855-1929.</subfield>
+    <subfield code="t">Konzertparaphrase &#xFC;ber Themen aus Wagner's Tristan und Isolde.</subfield>
+    <subfield code=" ">^A3229296</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="2" tag="700">
+    <subfield code="i">Paraphrase based on (work):</subfield>
+    <subfield code="a">Wagner, Richard,</subfield>
+    <subfield code="d">1813-1883.</subfield>
+    <subfield code="t">Tristan und Isolde.</subfield>
+    <subfield code=" ">^A374948</subfield>
+  </datafield>
+  <datafield ind1="2" ind2=" " tag="710">
+    <subfield code="a">Gryphon Company,</subfield>
+    <subfield code="e">compiler,</subfield>
+    <subfield code="e">roll cutter,</subfield>
+    <subfield code="e">publisher.</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="916">
+    <subfield code="a">DATE CATALOGED</subfield>
+    <subfield code="b">NEVER</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="994">
+    <subfield code="a">C0</subfield>
+    <subfield code="b">STF</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="596">
+    <subfield code="a">31</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="999">
+    <subfield code="a">CONDON ROLL 328</subfield>
+    <subfield code="w">ALPHANUM</subfield>
+    <subfield code="c">1</subfield>
+    <subfield code="i">36105225783302</subfield>
+    <subfield code="l">PAGE-AS</subfield>
+    <subfield code="m">SAL3</subfield>
+    <subfield code="r">N</subfield>
+    <subfield code="s">Y</subfield>
+    <subfield code="t">NH-INHOUSE</subfield>
+    <subfield code="u">4/14/2015</subfield>
+  </datafield>
+</record>

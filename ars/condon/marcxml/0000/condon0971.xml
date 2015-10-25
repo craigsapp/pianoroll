@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>01667cjm a2200433Ii 4500</leader>
+  <controlfield tag="001">a11402916</controlfield>
+  <controlfield tag="003">SIRSI</controlfield>
+  <controlfield tag="005">20151004003002.0</controlfield>
+  <controlfield tag="007">sq zmnznnmznnb</controlfield>
+  <controlfield tag="008">150914s1923    nyuzznn           n zxx d</controlfield>
+  <datafield ind1="0" ind2="2" tag="028">
+    <subfield code="a">B-6321</subfield>
+    <subfield code="b">De Luxe</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="040">
+    <subfield code="a">STF</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">STF</subfield>
+    <subfield code="d">UtOrBLW</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="049">
+    <subfield code="a">STFA</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="100">
+    <subfield code="a">Sinding, Christian,</subfield>
+    <subfield code="d">1856-1941,</subfield>
+    <subfield code="e">composer.</subfield>
+    <subfield code=" ">^A2985325</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="0" tag="240">
+    <subfield code="a">St&#xFC;cke,</subfield>
+    <subfield code="m">piano,</subfield>
+    <subfield code="n">op. 32.</subfield>
+    <subfield code="p">Fr&#xFC;hlingsrauschen</subfield>
+    <subfield code=" ">^A2985325</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="0" tag="245">
+    <subfield code="a">Fr&#xFC;hlingsrauschen /</subfield>
+    <subfield code="c">Sinding.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="1" tag="264">
+    <subfield code="a">N.Y. :</subfield>
+    <subfield code="b">De Luxe Reproducing Roll Corporation,</subfield>
+    <subfield code="c">[1923]</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="300">
+    <subfield code="a">1 audio roll ;</subfield>
+    <subfield code="c">12 1/4 in. x 2 3/4 in.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="336">
+    <subfield code="a">performed music</subfield>
+    <subfield code="2">rdacontent</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="337">
+    <subfield code="a">audio</subfield>
+    <subfield code="2">rdamedia</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="338">
+    <subfield code="a">audio roll</subfield>
+    <subfield code="2">rdacarrier</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="344">
+    <subfield code="a">analog</subfield>
+    <subfield code="b">mechanical</subfield>
+    <subfield code="c">tempo 100</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="1" tag="382">
+    <subfield code="a">piano</subfield>
+    <subfield code="n">1</subfield>
+    <subfield code="s">1</subfield>
+    <subfield code="2">lcmpt</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Title from roll.</subfield>
+  </datafield>
+  <datafield ind1="0" ind2=" " tag="511">
+    <subfield code="a">Austin Conradi, piano.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Welte-Mignon licensee roll.</subfield>
+  </datafield>
+  <datafield ind1="4" ind2=" " tag="510">
+    <subfield code="a">Smith, Charles Davis &amp; Richard J. Howe. The Welte-Mignon, 1994,</subfield>
+    <subfield code="c">page 270.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Piano music.</subfield>
+    <subfield code=" ">^A1049172</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Player piano rolls.</subfield>
+    <subfield code=" ">^A1050086</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Reproducing piano rolls.</subfield>
+    <subfield code="2">local</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="a">Conradi, Austin,</subfield>
+    <subfield code="e">instrumentalist.</subfield>
+    <subfield code=" ">^A1870977</subfield>
+  </datafield>
+  <datafield ind1="2" ind2=" " tag="710">
+    <subfield code="a">De Luxe Reproducing Roll Corporation,</subfield>
+    <subfield code="e">publisher.</subfield>
+    <subfield code=" ">^A3282154</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="916">
+    <subfield code="a">DATE CATALOGED</subfield>
+    <subfield code="b">20150914</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="994">
+    <subfield code="a">C0</subfield>
+    <subfield code="b">STF</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="590">
+    <subfield code="a">Archive of Recorded Sound copy 1: Comments by Denis Condon on roll leader.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="4" tag="690">
+    <subfield code="a">Denis Condon Collection of Reproducing Pianos and Rolls.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="035">
+    <subfield code="a">(OCoLC-M)921149840</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="596">
+    <subfield code="a">5</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="999">
+    <subfield code="a">CONDON ROLL 971</subfield>
+    <subfield code="w">ALPHANUM</subfield>
+    <subfield code="c">1</subfield>
+    <subfield code="i">36105225789929</subfield>
+    <subfield code="l">RECORDINGS</subfield>
+    <subfield code="m">ARS</subfield>
+    <subfield code="r">N</subfield>
+    <subfield code="s">Y</subfield>
+    <subfield code="t">NH-RCORDNG</subfield>
+    <subfield code="u">9/14/2015</subfield>
+  </datafield>
+</record>

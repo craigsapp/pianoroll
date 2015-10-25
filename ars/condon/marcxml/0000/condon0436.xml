@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>02378cjm a2200517Ii 4500</leader>
+  <controlfield tag="001">a11048320</controlfield>
+  <controlfield tag="003">SIRSI</controlfield>
+  <controlfield tag="005">20150921003001.0</controlfield>
+  <controlfield tag="007">sq zmnznnmznnb</controlfield>
+  <controlfield tag="008">150514r19231909nyuopnn           n zxx d</controlfield>
+  <datafield ind1="0" ind2="2" tag="028">
+    <subfield code="a">C-1461</subfield>
+    <subfield code="b">Welte-Mignon</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="040">
+    <subfield code="a">STF</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">STF</subfield>
+    <subfield code="d">UtOrBLW</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="049">
+    <subfield code="a">STFA</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="100">
+    <subfield code="a">Gluck, Christoph Willibald,</subfield>
+    <subfield code="c">Ritter von,</subfield>
+    <subfield code="d">1714-1787,</subfield>
+    <subfield code="e">composer.</subfield>
+    <subfield code=" ">^A1513351</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="0" tag="240">
+    <subfield code="a">Orph&#xE9;e et Eurydice.</subfield>
+    <subfield code="p">Ballet des ombres heureuses.</subfield>
+    <subfield code="p">M&#xEA;me mouvement;</subfield>
+    <subfield code="o">arranged</subfield>
+    <subfield code=" ">^A1513351</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="0" tag="245">
+    <subfield code="a">Melody /</subfield>
+    <subfield code="c">Gluck-Sgambati.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="1" tag="264">
+    <subfield code="a">N.Y. :</subfield>
+    <subfield code="b">Paling's Reproducing Records :</subfield>
+    <subfield code="b">De Luxe Reproducing Roll Corp.,</subfield>
+    <subfield code="c">[1923]</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="300">
+    <subfield code="a">1 audio roll ;</subfield>
+    <subfield code="c">12 1/4 in. x 2 3/4 in.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="336">
+    <subfield code="a">performed music</subfield>
+    <subfield code="2">rdacontent</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="337">
+    <subfield code="a">audio</subfield>
+    <subfield code="2">rdamedia</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="338">
+    <subfield code="a">audio roll</subfield>
+    <subfield code="2">rdacarrier</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="344">
+    <subfield code="a">analog</subfield>
+    <subfield code="b">mechanical</subfield>
+    <subfield code="c">tempo 70</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="1" tag="382">
+    <subfield code="a">piano</subfield>
+    <subfield code="n">1</subfield>
+    <subfield code="s">1</subfield>
+    <subfield code="2">lcmpt</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Title from roll.</subfield>
+  </datafield>
+  <datafield ind1="0" ind2=" " tag="511">
+    <subfield code="a">Fannie Bloomfield Zeisler, piano.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Welte-Mignon licensee roll (T-98).</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Originally released as a Welte-Mignon red roll, number 1461, issued in 1909.</subfield>
+  </datafield>
+  <datafield ind1="4" ind2=" " tag="510">
+    <subfield code="a">Smith, Charles Davis &amp; Richard J. Howe. The Welte-Mignon, 1994,</subfield>
+    <subfield code="c">page 195.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Operas</subfield>
+    <subfield code="v">Excerpts, Arranged.</subfield>
+    <subfield code=" ">^A1045280</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Piano music, Arranged.</subfield>
+    <subfield code=" ">^A1049181</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Player piano rolls.</subfield>
+    <subfield code=" ">^A1050086</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Operas.</subfield>
+    <subfield code="2">lcgft</subfield>
+    <subfield code=" ">^A3299848</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Excerpts.</subfield>
+    <subfield code="2">lcgft</subfield>
+    <subfield code=" ">^A3344823</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Arrangements (Music)</subfield>
+    <subfield code="2">lcgft</subfield>
+    <subfield code=" ">^A3344913</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Reproducing piano rolls.</subfield>
+    <subfield code="2">local</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="a">Bloomfield-Zeisler, Fannie,</subfield>
+    <subfield code="d">1863-1927,</subfield>
+    <subfield code="e">instrumentalist.</subfield>
+    <subfield code=" ">^A1783477</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="a">Sgambati, Giovanni,</subfield>
+    <subfield code="d">1841-1914,</subfield>
+    <subfield code="e">arranger of music.</subfield>
+    <subfield code=" ">^A297456</subfield>
+  </datafield>
+  <datafield ind1="2" ind2=" " tag="710">
+    <subfield code="a">De Luxe Reproducing Roll Corporation,</subfield>
+    <subfield code="e">publisher.</subfield>
+    <subfield code=" ">^A3282154</subfield>
+  </datafield>
+  <datafield ind1="2" ind2=" " tag="710">
+    <subfield code="a">Paling's Reproducing Records,</subfield>
+    <subfield code="e">publisher.</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="916">
+    <subfield code="a">DATE CATALOGED</subfield>
+    <subfield code="b">20150514</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="994">
+    <subfield code="a">C0</subfield>
+    <subfield code="b">STF</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="590">
+    <subfield code="a">Archive of Recorded Sound copy 1: Comments by Denis Condon on roll leader: "This beautiful well judged playing needs a speed of about 100 to make it hang together -- compare with Rachmaninoff on the Ampico. 3.7.1986."</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="4" tag="690">
+    <subfield code="a">Denis Condon Collection of Reproducing Pianos and Rolls.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="596">
+    <subfield code="a">31</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="035">
+    <subfield code="a">(OCoLC-M)908959081</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="999">
+    <subfield code="a">CONDON ROLL 436</subfield>
+    <subfield code="w">ALPHANUM</subfield>
+    <subfield code="c">1</subfield>
+    <subfield code="i">36105225784698</subfield>
+    <subfield code="l">PAGE-AS</subfield>
+    <subfield code="m">SAL3</subfield>
+    <subfield code="r">N</subfield>
+    <subfield code="s">Y</subfield>
+    <subfield code="t">NH-INHOUSE</subfield>
+    <subfield code="u">5/14/2015</subfield>
+  </datafield>
+</record>

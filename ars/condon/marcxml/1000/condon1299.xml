@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>02156cjm a2200481Ii 4500</leader>
+  <controlfield tag="001">a11461694</controlfield>
+  <controlfield tag="003">SIRSI</controlfield>
+  <controlfield tag="005">20151024003002.0</controlfield>
+  <controlfield tag="007">sq zmnznnmznnb</controlfield>
+  <controlfield tag="008">151023r19uu1913nyuprnn           n zxx d</controlfield>
+  <datafield ind1=" " ind2=" " tag="040">
+    <subfield code="a">STF</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">STF</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="2" tag="028">
+    <subfield code="a">2738</subfield>
+    <subfield code="b">Welte-Mignon</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="035">
+    <subfield code="a">(OCoLC)926132025</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="049">
+    <subfield code="a">STFA</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="100">
+    <subfield code="a">Debussy, Claude,</subfield>
+    <subfield code="d">1862-1918,</subfield>
+    <subfield code="e">composer,</subfield>
+    <subfield code="e">instrumentalist.</subfield>
+    <subfield code=" ">^A628373</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="0" tag="240">
+    <subfield code="a">Preludes,</subfield>
+    <subfield code="m">piano,</subfield>
+    <subfield code="n">book 1.</subfield>
+    <subfield code="k">Selections</subfield>
+    <subfield code=" ">^A628373</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="0" tag="245">
+    <subfield code="a">Pr&#xE9;ludes.</subfield>
+    <subfield code="p">Danseuses de Delphes ; La cath&#xE9;drale engloutie ; La danse de Puck /</subfield>
+    <subfield code="c">Debussy.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="1" tag="264">
+    <subfield code="a">[New York] :</subfield>
+    <subfield code="b">Welte-Mignon,</subfield>
+    <subfield code="c">[between 1913 and 1920]</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="300">
+    <subfield code="a">1 audio roll ;</subfield>
+    <subfield code="c">14 1/2 in. x 2 1/2 in.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="336">
+    <subfield code="a">performed music</subfield>
+    <subfield code="2">rdacontent</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="337">
+    <subfield code="a">audio</subfield>
+    <subfield code="2">rdamedia</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="338">
+    <subfield code="a">audio roll</subfield>
+    <subfield code="2">rdacarrier</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="344">
+    <subfield code="a">analog</subfield>
+    <subfield code="b">mechanical</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="1" tag="382">
+    <subfield code="a">piano</subfield>
+    <subfield code="n">1</subfield>
+    <subfield code="s">1</subfield>
+    <subfield code="2">lcmpt</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Title from roll.</subfield>
+  </datafield>
+  <datafield ind1="0" ind2=" " tag="511">
+    <subfield code="a">Cl. Debussy, piano.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Welte-Mignon red roll.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Originally released as a Welte-Mignon red roll, number 2738, issued in 1913.</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="0" tag="505">
+    <subfield code="t">Danseuses de Delphes --</subfield>
+    <subfield code="t">La cath&#xE9;drale engloutie --</subfield>
+    <subfield code="t">La danse de Puck.</subfield>
+  </datafield>
+  <datafield ind1="4" ind2=" " tag="510">
+    <subfield code="a">Dangel, Gerhard &amp; Hans-W. Schmitz. Welte-Mignon Klavierrollen, 2006,</subfield>
+    <subfield code="c">page 130.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Piano music.</subfield>
+    <subfield code=" ">^A1049172</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Player piano rolls.</subfield>
+    <subfield code=" ">^A1050086</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Preludes (Music)</subfield>
+    <subfield code="2">lcgft</subfield>
+    <subfield code=" ">^A3344887</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Reproducing piano rolls.</subfield>
+    <subfield code="2">local</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="4" tag="690">
+    <subfield code="a">Denis Condon Collection of Reproducing Pianos and Rolls.</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="2" tag="700">
+    <subfield code="i">Container of (work):</subfield>
+    <subfield code="a">Debussy, Claude,</subfield>
+    <subfield code="d">1862-1918.</subfield>
+    <subfield code="t">Preludes,</subfield>
+    <subfield code="m">piano,</subfield>
+    <subfield code="n">book 1.</subfield>
+    <subfield code="p">Danseuses de Delphes.</subfield>
+    <subfield code=" ">^A377698</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="2" tag="700">
+    <subfield code="i">Container of (work):</subfield>
+    <subfield code="a">Debussy, Claude,</subfield>
+    <subfield code="d">1862-1918.</subfield>
+    <subfield code="t">Preludes,</subfield>
+    <subfield code="m">piano,</subfield>
+    <subfield code="n">book 1.</subfield>
+    <subfield code="p">Cath&#xE9;drale engloutie.</subfield>
+    <subfield code=" ">^A628454</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="2" tag="700">
+    <subfield code="i">Container of (work):</subfield>
+    <subfield code="a">Debussy, Claude,</subfield>
+    <subfield code="d">1862-1918.</subfield>
+    <subfield code="t">Preludes,</subfield>
+    <subfield code="m">piano,</subfield>
+    <subfield code="n">book 1.</subfield>
+    <subfield code="p">Danse de Puck.</subfield>
+    <subfield code=" ">^A832715</subfield>
+  </datafield>
+  <datafield ind1="2" ind2=" " tag="710">
+    <subfield code="a">Welte-Mignon Corporation,</subfield>
+    <subfield code="e">publisher.</subfield>
+    <subfield code=" ">^A627793</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="916">
+    <subfield code="a">DATE CATALOGED</subfield>
+    <subfield code="b">20151023</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="994">
+    <subfield code="a">C0</subfield>
+    <subfield code="b">STF</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="596">
+    <subfield code="a">5</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="999">
+    <subfield code="a">CONDON ROLL 1299</subfield>
+    <subfield code="w">ALPHANUM</subfield>
+    <subfield code="c">1</subfield>
+    <subfield code="i">36105225786743</subfield>
+    <subfield code="l">RECORDINGS</subfield>
+    <subfield code="m">ARS</subfield>
+    <subfield code="r">N</subfield>
+    <subfield code="s">Y</subfield>
+    <subfield code="t">NH-RCORDNG</subfield>
+    <subfield code="u">10/23/2015</subfield>
+  </datafield>
+</record>

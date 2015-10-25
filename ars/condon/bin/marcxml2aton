@@ -1,0 +1,132 @@
+#!/usr/bin/perl
+#
+# Programmer:    Craig Stuart Sapp <craig.stanford.edu>
+# Creation Date: Sun Oct 25 01:28:45 PDT 2015
+# Last Modified: Sun Oct 25 01:28:45 PDT 2015
+# Filename:      /Users/craig/git-cloud/pianoroll/ars/condon/marcxml2aton
+# Syntax:        perl 5
+# vim:           ts=3
+#
+# Description:   Convert MarcXML files to ATON format.
+#
+
+use strict;
+my $cn;
+my $callnum;
+my $searchworks;
+my $sw;
+my $line;
+
+while ($line = <>) {
+	chomp $line;
+	next if $line =~ /^\s*$/;
+	my @data = split(/\t/, $line);
+	next if @data != 2;
+	$callnum = $data[0];
+	$searchworks = $data[1];
+	$cn = "";
+	if ($callnum =~ /(\d+)/) {
+		$cn = $1;
+	}
+	$sw = "";
+	if ($searchworks =~ /(\d+)/) {
+		$sw = $1;
+	}
+   my ($performer, $composer, $title) = getParameters($cn);
+
+print <<"EOT"
+\@\@BEGIN:	CONDON
+\@CALLNUM:	$cn
+\@SEARCHWORKS:	$sw
+\@TITLE:		$title
+\@COMPOSER:	$composer
+\@PERFORMER:	$performer
+\@\@END:		CONDON
+
+
+
+EOT
+
+}
+
+
+
+##############################
+##
+## getParameters --
+##
+
+sub getParameters {
+	my ($number) = @_;
+	my $n = $number;
+	my $line;
+	$n = "0$n" if $number < 1000;
+	$n = "0$n" if $number < 100;
+	$n = "0$n" if $number < 10;
+	my $first = substr($n, 0, 1);
+	my $file = "marcxml/${first}000/condon$n.xml";
+	open (FILE, $file) or die "Cannot read $file\n";
+	my @contents = <FILE>;
+	close FILE;
+
+	my $i;
+
+	## PERFORMER:
+   ## <datafield ind1="0" ind2=" " tag="511">
+   ## 	<subfield code="a">Eugenie Adam-Benard, piano.</subfield>
+   ## </datafield>
+
+	my $performer = "";
+	for ($i=0; $i<@contents; $i++) {
+		$line = $contents[$i];
+		next if $line !~ /<datafield.*tag="511"/;
+		$line = $contents[++$i];
+		while (($i < @contents) && ($line !~ /<\/datafield>/)) {
+			if ($line =~ /<subfield code="a">(.*)<\/subfield>/) {
+				$performer = $1;
+				last;
+			}
+			$line = $contents[++$i];
+		}
+		last;
+	}
+	$performer =~ s/\, piano.*//;
+	$performer =~ s/\.$//;
+	$performer =~ s/\,\s*$//;
+
+
+	##  <datafield ind1="1" ind2="0" tag="245">
+	##    <subfield code="a">Mazurka op. 67, no. 4 /</subfield>
+	##    <subfield code="c">Chopin.</subfield>
+	##  </datafield>
+
+	my $title = "";
+	my $subtitle = "";
+	my $composer = "";
+	for ($i=0; $i<@contents; $i++) {
+		$line = $contents[$i];
+		next if $line !~ /<datafield.*tag="245"/;
+		$line = $contents[++$i];
+		while (($i < @contents) && ($line !~ /<\/datafield>/)) {
+			if ($line =~ /<subfield code="a">(.*)<\/subfield>/) {
+				$title = $1;
+			} elsif ($line =~ /<subfield code="c">(.*)<\/subfield>/) {
+				$composer = $1;
+			} elsif ($line =~ /<subfield code="b">(.*)<\/subfield>/) {
+				$subtitle = $1;
+			}
+			$line = $contents[++$i];
+		}
+		last;
+	}
+   $title .= " $subtitle";
+	$title =~ s/\.\s*$//;
+	$title =~ s/\s+$//;
+	$title =~ s/\/\s*$//;
+	$composer =~ s/\.\s*$//;
+
+	return ($performer, $composer, $title);
+}
+
+
+

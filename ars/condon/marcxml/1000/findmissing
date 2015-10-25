@@ -1,0 +1,19 @@
+#!/usr/bin/perl
+#
+# Programmer:    Craig Stuart Sapp <craig.stanford.edu>
+# Creation Date: Sun Oct 25 01:01:26 PDT 2015
+# Last Modified: Sun Oct 25 01:01:26 PDT 2015
+# Filename:      ars/condon/marcxml/1000/findmissing
+# Syntax:        perl 5
+#
+# Description:   List missing call numbers.
+#
+
+for ($i=1000; $i<1339; $i++) {
+   $ii = $i;
+   $ii = "0$ii" if $i < 1000;
+   $ii = "0$ii" if $i < 100;
+   $ii = "0$ii" if $i < 10;
+   print "CONDON ROLL $i\n" if !-r "condon$ii.xml";
+}
+

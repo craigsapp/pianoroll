@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>02068cjm a2200481Ii 4500</leader>
+  <controlfield tag="001">a11346996</controlfield>
+  <controlfield tag="003">SIRSI</controlfield>
+  <controlfield tag="005">20150921003001.0</controlfield>
+  <controlfield tag="007">sq zmnznnmznnb</controlfield>
+  <controlfield tag="008">150715r19231913nyuhynn           n zxx d</controlfield>
+  <datafield ind1="0" ind2="2" tag="028">
+    <subfield code="a">B2676</subfield>
+    <subfield code="b">De Luxe Reproducing Roll Corp.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="040">
+    <subfield code="a">STF</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">STF</subfield>
+    <subfield code="d">UtOrBLW</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="049">
+    <subfield code="a">STFA</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="0" tag="245">
+    <subfield code="a">Hymns.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="1" tag="264">
+    <subfield code="a">N.Y. :</subfield>
+    <subfield code="b">De Luxe Reproducing Roll Corp. :</subfield>
+    <subfield code="b">Paling's Reproducing Records,</subfield>
+    <subfield code="c">[1923]</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="300">
+    <subfield code="a">1 audio roll ;</subfield>
+    <subfield code="c">12 1/4 in. x 2 3/4 in.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="336">
+    <subfield code="a">performed music</subfield>
+    <subfield code="2">rdacontent</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="337">
+    <subfield code="a">audio</subfield>
+    <subfield code="2">rdamedia</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="338">
+    <subfield code="a">audio roll</subfield>
+    <subfield code="2">rdacarrier</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="344">
+    <subfield code="a">analog</subfield>
+    <subfield code="b">mechanical</subfield>
+    <subfield code="c">tempo 75</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="1" tag="382">
+    <subfield code="a">piano</subfield>
+    <subfield code="n">1</subfield>
+    <subfield code="s">1</subfield>
+    <subfield code="2">lcmpt</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Title from roll.</subfield>
+  </datafield>
+  <datafield ind1="0" ind2=" " tag="511">
+    <subfield code="a">Eugenie Adam, piano.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Welte-Mignon licensee roll (T-98).</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="0" tag="505">
+    <subfield code="t">Ten thousand times, ten thousand --</subfield>
+    <subfield code="t">The day, thou gavest, Lord, is ended --</subfield>
+    <subfield code="t">There is a green hill far away.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Originally released as a Welte-Mignon red roll, number  2676, issued in 1913.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Hymns.</subfield>
+    <subfield code=" ">^A1026634</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Piano music.</subfield>
+    <subfield code=" ">^A1049172</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Player piano rolls.</subfield>
+    <subfield code=" ">^A1050086</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Hymns.</subfield>
+    <subfield code="2">lcgft</subfield>
+    <subfield code=" ">^A3344865</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Reproducing piano rolls.</subfield>
+    <subfield code="2">local</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="a">Adam, Eugenie,</subfield>
+    <subfield code="e">instrumentalist.</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="2" tag="700">
+    <subfield code="i">Container of (work):</subfield>
+    <subfield code="a">Dykes, John Bacchus,</subfield>
+    <subfield code="d">1823-1876.</subfield>
+    <subfield code="t">Ten thousand times ten thousand.</subfield>
+    <subfield code=" ">^A1679812</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="2" tag="700">
+    <subfield code="i">Container of (work):</subfield>
+    <subfield code="a">Scholefield, Clement Cotterill,</subfield>
+    <subfield code="d">1839-1904.</subfield>
+    <subfield code="t">St. Clement.</subfield>
+    <subfield code=" ">^A1676875</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="2" tag="700">
+    <subfield code="i">Container of (work):</subfield>
+    <subfield code="a">Gower, John H.,</subfield>
+    <subfield code="d">1855-1922.</subfield>
+    <subfield code="t">There is a green hill far away.</subfield>
+    <subfield code=" ">^A3327668</subfield>
+  </datafield>
+  <datafield ind1="2" ind2=" " tag="710">
+    <subfield code="a">De Luxe Reproducing Roll Corporation,</subfield>
+    <subfield code="e">publisher.</subfield>
+    <subfield code=" ">^A3282154</subfield>
+  </datafield>
+  <datafield ind1="2" ind2=" " tag="710">
+    <subfield code="a">Paling's Reproducing Records,</subfield>
+    <subfield code="e">publisher.</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="916">
+    <subfield code="a">DATE CATALOGED</subfield>
+    <subfield code="b">20150720</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="994">
+    <subfield code="a">C0</subfield>
+    <subfield code="b">STF</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="035">
+    <subfield code="a">(OCoLC)913836763</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="4" tag="690">
+    <subfield code="a">Denis Condon Collection of Reproducing Pianos and Rolls.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="596">
+    <subfield code="a">31</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="999">
+    <subfield code="a">CONDON ROLL 653</subfield>
+    <subfield code="w">ALPHANUM</subfield>
+    <subfield code="c">1</subfield>
+    <subfield code="i">36105225786768</subfield>
+    <subfield code="l">PAGE-AS</subfield>
+    <subfield code="m">SAL3</subfield>
+    <subfield code="r">N</subfield>
+    <subfield code="s">Y</subfield>
+    <subfield code="t">NH-INHOUSE</subfield>
+    <subfield code="u">7/21/2015</subfield>
+  </datafield>
+</record>

@@ -1,0 +1,44 @@
+---
+layout: default
+breadcrumbs: [
+	['/','home'],
+	['/ars','ARS']
+]
+title: ARS
+---
+
+<script src="condon.js"></script>
+
+<script>
+// vim: ts=3
+
+document.addEventListener("DOMContentLoaded", function() {
+	loadIndex('condon.aton');
+});
+
+
+</script>
+	
+
+
+<h1> Browse/Search Condon collection </h1>
+
+
+<form class="form-inline no-print">
+	<input id="search-text" 
+		class="form-control"
+		style="height:34px; width:20rem;"
+		type="text"
+		onkeypress="suppressEnter(event);"
+		style="width:30em;"
+		onkeyup="doSearch(event);"
+		placeholder="Search">
+	<span style="float:right; margin-right:4px;" id="counter"></span>
+</form>
+
+<div id="content"></div>
+
+
+
+
+

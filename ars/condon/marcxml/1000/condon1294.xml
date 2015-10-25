@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>02561cjm a2200565Ii 4500</leader>
+  <controlfield tag="001">a11455671</controlfield>
+  <controlfield tag="003">SIRSI</controlfield>
+  <controlfield tag="005">20151024230002.0</controlfield>
+  <controlfield tag="007">sq zmnznnmznnb</controlfield>
+  <controlfield tag="008">151016r19uu192ucaudfnn           n zxx d</controlfield>
+  <datafield ind1="0" ind2="2" tag="028">
+    <subfield code="a">70162</subfield>
+    <subfield code="b">De Luxe</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="2" tag="028">
+    <subfield code="a">75342</subfield>
+    <subfield code="b">De Luxe</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="2" tag="028">
+    <subfield code="a">75407</subfield>
+    <subfield code="b">De Luxe</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="040">
+    <subfield code="a">STF</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">STF</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="049">
+    <subfield code="a">STFA</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="0" tag="245">
+    <subfield code="a">Alabamy bound /</subfield>
+    <subfield code="c">Henderson. Sunshine / Berlin. There's a rainbow 'round my shoulder / Jolson, Rose, Dreyer.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="1" tag="264">
+    <subfield code="a">North Hollywood, California :</subfield>
+    <subfield code="b">Klavier Music Rolls,</subfield>
+    <subfield code="c">[between 1971 and 1987?]</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="300">
+    <subfield code="a">1 audio roll ;</subfield>
+    <subfield code="c">12 1/4 in. x 2 3/4 in.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="336">
+    <subfield code="a">performed music</subfield>
+    <subfield code="2">rdacontent</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="337">
+    <subfield code="a">audio</subfield>
+    <subfield code="2">rdamedia</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="338">
+    <subfield code="a">audio roll</subfield>
+    <subfield code="2">rdacarrier</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="344">
+    <subfield code="a">analog</subfield>
+    <subfield code="b">mechanical</subfield>
+    <subfield code="c">tempo 80</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="1" tag="382">
+    <subfield code="a">piano</subfield>
+    <subfield code="n">1</subfield>
+    <subfield code="s">1</subfield>
+    <subfield code="2">lcmpt</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Title from roll.</subfield>
+  </datafield>
+  <datafield ind1="0" ind2=" " tag="511">
+    <subfield code="a">Vee Lawnhurst (1st work); Johnny Johnson (2nd work); Jack Ward (3rd work), piano.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Welte-Mignon licensee roll.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Recut. Originally released individually as a De Luxe roll, number Y-7016, issued in 1925.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Recut. Originally released individually as a De Luxe roll, number Y-75342, issued in 1928.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Recut. Originally released individually as a De Luxe roll, number Y-75407, issued in 1928.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Foxtrots.</subfield>
+    <subfield code=" ">^A1019455</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Piano music.</subfield>
+    <subfield code=" ">^A1049172</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Player piano rolls.</subfield>
+    <subfield code=" ">^A1050086</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Foxtrots (Music)</subfield>
+    <subfield code="2">lcgft</subfield>
+    <subfield code=" ">^A3344858</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Reproducing piano rolls.</subfield>
+    <subfield code="2">local</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Recut piano rolls.</subfield>
+    <subfield code="2">local</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="a">Lawnhurst, Vee,</subfield>
+    <subfield code="e">instrumentalist.</subfield>
+    <subfield code=" ">^A1371035</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="a">Ward, Jack,</subfield>
+    <subfield code="d">1898-1973,</subfield>
+    <subfield code="e">instrumentalist.</subfield>
+    <subfield code=" ">^A2077221</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="a">Johnson, Johnny,</subfield>
+    <subfield code="d">approximately 1902-</subfield>
+    <subfield code="e">instrumentalist.</subfield>
+    <subfield code=" ">^A2012039</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="2" tag="700">
+    <subfield code="i">Container of (work):</subfield>
+    <subfield code="a">Henderson, Ray,</subfield>
+    <subfield code="d">1896-1970.</subfield>
+    <subfield code="t">Alabamy bound;</subfield>
+    <subfield code="o">arranged.</subfield>
+    <subfield code=" ">^A169516</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="2" tag="700">
+    <subfield code="i">Container of (work):</subfield>
+    <subfield code="a">Berlin, Irving,</subfield>
+    <subfield code="d">1888-1989.</subfield>
+    <subfield code="t">Sunshine;</subfield>
+    <subfield code="o">arranged.</subfield>
+    <subfield code=" ">^A18938</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="2" tag="700">
+    <subfield code="i">Container of (work):</subfield>
+    <subfield code="a">Dreyer, Dave,</subfield>
+    <subfield code="d">1894-1967.</subfield>
+    <subfield code="t">There's a rainbow 'round my shoulder;</subfield>
+    <subfield code="o">arranged.</subfield>
+    <subfield code=" ">^A1902058</subfield>
+  </datafield>
+  <datafield ind1="2" ind2=" " tag="710">
+    <subfield code="a">Klavier Music Rolls,</subfield>
+    <subfield code="e">publisher.</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="2" tag="740">
+    <subfield code="a">Sunshine.</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="2" tag="740">
+    <subfield code="a">There's a rainbow 'round my shoulder.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="916">
+    <subfield code="a">DATE CATALOGED</subfield>
+    <subfield code="b">20151016</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="994">
+    <subfield code="a">C0</subfield>
+    <subfield code="b">STF</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="4" tag="690">
+    <subfield code="a">Denis Condon Collection of Reproducing Pianos and Rolls.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="035">
+    <subfield code="a">(OCoLC-M)925375251</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="596">
+    <subfield code="a">5</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="999">
+    <subfield code="a">CONDON ROLL 1294</subfield>
+    <subfield code="w">ALPHANUM</subfield>
+    <subfield code="c">1</subfield>
+    <subfield code="i">36105225773071</subfield>
+    <subfield code="l">RECORDINGS</subfield>
+    <subfield code="m">ARS</subfield>
+    <subfield code="r">N</subfield>
+    <subfield code="s">Y</subfield>
+    <subfield code="t">NH-RCORDNG</subfield>
+    <subfield code="u">10/16/2015</subfield>
+  </datafield>
+</record>

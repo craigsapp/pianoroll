@@ -1,0 +1,50 @@
+#!/usr/bin/perl
+#
+# Programmer:    Craig Stuart Sapp <craig.stanford.edu>
+# Creation Date: Sun Oct 25 00:09:07 PDT 2015
+# Last Modified: Sun Oct 25 00:26:05 PDT 2015
+# Filename:      /Users/craig/git-cloud/pianoroll/ars/condon/getmarcxml
+# Syntax:        perl 5
+# vim:           ts=3
+#
+# Description:   Get MARCXML data files for Searchworks entries.
+#
+
+use strict;
+
+my $searchworks;
+while ($searchworks = <>) {
+	chomp ($searchworks);
+	getSearchworksXML($searchworks);
+}
+
+
+##############################
+##
+## getSearchworksXML -- Download the searchworks MARC XML file for 
+##    a given CONDON ROLL call number.  Doesn't deal well with > 9999 
+##    catalog entries.
+##
+
+sub getSearchworksXML {
+	my ($line) = @_;
+	my @data = split(/\t+/, $line);
+	return if $line =~ /^\s*$/;
+	$line =~ /(\d+)/;
+	my $number = $1;
+	my $n = $number;
+	$n = "0$n" if $number < 1000;
+	$n = "0$n" if $number < 100;
+	$n = "0$n" if $number < 10;
+	my $filename = "condon$n.xml";
+	my $first = substr($n, 0, 1);
+	my $fullname = "marcxml/${first}000/$filename";
+	if (!-r $fullname) {
+		print "Getting $fullname\n";
+		`wget $data[1].marcxml -O - | xmllint --format - > $fullname\n`;
+	}
+	
+}
+
+
+

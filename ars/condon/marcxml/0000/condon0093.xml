@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>02887cjm a2200625Ii 4500</leader>
+  <controlfield tag="001">a10763545</controlfield>
+  <controlfield tag="003">SIRSI</controlfield>
+  <controlfield tag="005">20150522003001.0</controlfield>
+  <controlfield tag="007">sq zmnznnmznnb</controlfield>
+  <controlfield tag="008">150305r199119uutxuzznn           n zxx d</controlfield>
+  <datafield ind1=" " ind2=" " tag="040">
+    <subfield code="a">STF</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">STF</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="2" tag="028">
+    <subfield code="a">328-965</subfield>
+    <subfield code="b">Gryphon Company</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="2" tag="028">
+    <subfield code="a">328</subfield>
+    <subfield code="b">Welte-Mignon</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="2" tag="028">
+    <subfield code="a">965</subfield>
+    <subfield code="b">Welte-Mignon</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="0" tag="033">
+    <subfield code="3">The damnation of Faust</subfield>
+    <subfield code="a">19051204</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="035">
+    <subfield code="a">(OCoLC)904413995</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="049">
+    <subfield code="a">STFA</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="0" tag="245">
+    <subfield code="a">Berceuse op. 57 /</subfield>
+    <subfield code="c">F. Chopin. The damnation of Faust / Berlioz-Liszt.</subfield>
+  </datafield>
+  <datafield ind1="3" ind2="0" tag="246">
+    <subfield code="a">Damnation of Faust</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="1" tag="264">
+    <subfield code="a">Austin, Texas :</subfield>
+    <subfield code="b">The Gryphon Company,</subfield>
+    <subfield code="c">[1991]</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="4" tag="264">
+    <subfield code="c">&#xA9;1991</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="300">
+    <subfield code="a">1 audio roll ;</subfield>
+    <subfield code="c">12 2/8 in. x 2 7/8 in.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="336">
+    <subfield code="a">performed music</subfield>
+    <subfield code="2">rdacontent</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="337">
+    <subfield code="a">audio</subfield>
+    <subfield code="2">rdamedia</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="338">
+    <subfield code="a">audio roll</subfield>
+    <subfield code="2">rdacarrier</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="344">
+    <subfield code="a">analog</subfield>
+    <subfield code="b">mechanical</subfield>
+    <subfield code="c">tempo 75</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="1" tag="382">
+    <subfield code="a">piano</subfield>
+    <subfield code="n">1</subfield>
+    <subfield code="s">1</subfield>
+    <subfield code="2">lcmpt</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Title from roll.</subfield>
+  </datafield>
+  <datafield ind1="0" ind2=" " tag="511">
+    <subfield code="a">First work: A. Reisenauer, piano. Second work: W. Landowska, piano.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="518">
+    <subfield code="3">The damnation of Faust</subfield>
+    <subfield code="o">Recorded</subfield>
+    <subfield code="d">1905 December 4.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Welte-Mignon Purple Seal Record roll.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Compiled reprint of Welte-Mignon rolls 328 and 965.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Originally released as separate red rolls by Welte-Mignon red roll; number 328, issued in 1905; number 965, issued in 1912.</subfield>
+  </datafield>
+  <datafield ind1="4" ind2=" " tag="510">
+    <subfield code="a">Smith, Charles Davis &amp; Richard J. Howe. The Welte-Mignon, 1994,</subfield>
+    <subfield code="c">pages 174 and 186.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="590">
+    <subfield code="a">Archive of Recorded Sound copy 1: Comments by Denis Condon on the roll leader: "Incorrect! Reverse pianists."</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Operas</subfield>
+    <subfield code="v">Excerpts, Arranged.</subfield>
+    <subfield code=" ">^A1045280</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Lullabies.</subfield>
+    <subfield code=" ">^A1035799</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Piano music, Arranged.</subfield>
+    <subfield code=" ">^A1049181</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Player piano rolls.</subfield>
+    <subfield code=" ">^A1050086</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Operas.</subfield>
+    <subfield code="2">lcgft</subfield>
+    <subfield code=" ">^A3299848</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Recut piano rolls.</subfield>
+    <subfield code="2">local</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Reproducing piano rolls.</subfield>
+    <subfield code="2">local</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="4" tag="690">
+    <subfield code="a">Denis Condon Collection of Reproducing Pianos and Rolls.</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="i">Container of (work) :</subfield>
+    <subfield code="a">Chopin, Fr&#xE9;d&#xE9;ric,</subfield>
+    <subfield code="d">1810-1849.</subfield>
+    <subfield code="t">Berceuse,</subfield>
+    <subfield code="m">piano,</subfield>
+    <subfield code="n">op. 57,</subfield>
+    <subfield code="r">D&#x266D; major.</subfield>
+    <subfield code=" ">^A889574</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="i">Container of (work) :</subfield>
+    <subfield code="a">Berlioz, Hector,</subfield>
+    <subfield code="d">1803-1869.</subfield>
+    <subfield code="t">Damnation de Faust.</subfield>
+    <subfield code="p">Ballet des sylphes;</subfield>
+    <subfield code="o">arranged.</subfield>
+    <subfield code=" ">^A1297873</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="a">Liszt, Franz,</subfield>
+    <subfield code="d">1811-1886,</subfield>
+    <subfield code="e">arranger of music.</subfield>
+    <subfield code=" ">^A115732</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="a">Reisenauer, Alfred,</subfield>
+    <subfield code="d">1863-1907,</subfield>
+    <subfield code="e">instrumentalist.</subfield>
+    <subfield code=" ">^A2030218</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="a">Landowska, Wanda,</subfield>
+    <subfield code="e">instrumentalist.</subfield>
+    <subfield code=" ">^A369146</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="a">Gryphon Company,</subfield>
+    <subfield code="e">compiler,</subfield>
+    <subfield code="e">publisher.</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="994">
+    <subfield code="a">C0</subfield>
+    <subfield code="b">STF</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="035">
+    <subfield code="a">(OCoLC)904413995</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="590">
+    <subfield code="a">Archive of Recorded Sound copy 1: Comments by Denis Condon on the roll leader: "Incorrect! Reverse pianists."</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="4" tag="690">
+    <subfield code="a">Denis Condon Collection of Reproducing Pianos and Rolls.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="596">
+    <subfield code="a">31</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="999">
+    <subfield code="a">CONDON ROLL 93</subfield>
+    <subfield code="w">ALPHANUM</subfield>
+    <subfield code="c">1</subfield>
+    <subfield code="i">36105225780944</subfield>
+    <subfield code="l">PAGE-AS</subfield>
+    <subfield code="m">SAL3</subfield>
+    <subfield code="r">N</subfield>
+    <subfield code="s">Y</subfield>
+    <subfield code="t">NH-INHOUSE</subfield>
+    <subfield code="u">3/19/2015</subfield>
+  </datafield>
+</record>

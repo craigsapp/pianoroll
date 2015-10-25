@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<record xmlns="http://www.loc.gov/MARC21/slim">
+  <leader>03299cjm a2200649Ii 4500</leader>
+  <controlfield tag="001">a11391997</controlfield>
+  <controlfield tag="003">SIRSI</controlfield>
+  <controlfield tag="005">20151004003002.0</controlfield>
+  <controlfield tag="007">sq zmnznnmznnb</controlfield>
+  <controlfield tag="008">150831r19uu192ucaudfnn           n zxx d</controlfield>
+  <datafield ind1="0" ind2="2" tag="028">
+    <subfield code="a">6012</subfield>
+    <subfield code="b">Welte-Mignon</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="2" tag="028">
+    <subfield code="a">75276</subfield>
+    <subfield code="b">Welte-Mignon</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="2" tag="028">
+    <subfield code="a">7260</subfield>
+    <subfield code="b">Welte-Mignon</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="2" tag="028">
+    <subfield code="a">75220</subfield>
+    <subfield code="b">Welte-Mignon</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="040">
+    <subfield code="a">STF</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">STF</subfield>
+    <subfield code="d">STF</subfield>
+    <subfield code="d">UtOrBLW</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="049">
+    <subfield code="a">STFA</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="0" tag="245">
+    <subfield code="a">Foxtrot medley.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="1" tag="264">
+    <subfield code="a">North Hollywood, California :</subfield>
+    <subfield code="b">[Klavier Music Rolls],</subfield>
+    <subfield code="c">[between 1971 and 1987]</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="300">
+    <subfield code="a">1 audio roll ;</subfield>
+    <subfield code="c">12 1/4 in. x 2 3/4 in.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="336">
+    <subfield code="a">performed music</subfield>
+    <subfield code="2">rdacontent</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="337">
+    <subfield code="a">audio</subfield>
+    <subfield code="2">rdamedia</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="338">
+    <subfield code="a">audio roll</subfield>
+    <subfield code="2">rdacarrier</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="344">
+    <subfield code="a">analog</subfield>
+    <subfield code="b">mechanical</subfield>
+    <subfield code="c">tempo 90</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="1" tag="382">
+    <subfield code="a">piano</subfield>
+    <subfield code="n">1</subfield>
+    <subfield code="s">1</subfield>
+    <subfield code="2">lcmpt</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="1" tag="382">
+    <subfield code="a">piano</subfield>
+    <subfield code="n">1</subfield>
+    <subfield code="s">2</subfield>
+    <subfield code="2">lcmpt</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Title from roll.</subfield>
+  </datafield>
+  <datafield ind1="0" ind2=" " tag="511">
+    <subfield code="a">J. Milton Delcamp (1st work); Julian Rodney (2nd work); Johnny Johnson (3rd work); Lawnhurst &amp; Lutter (4th work), piano.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">Welte-Mignon licensee roll.</subfield>
+  </datafield>
+  <datafield ind1="0" ind2="0" tag="505">
+    <subfield code="t">The Japanese sandman /</subfield>
+    <subfield code="r">Whiting --</subfield>
+    <subfield code="t">Me and my shadow /</subfield>
+    <subfield code="r">Jolson &amp; Dreyer --</subfield>
+    <subfield code="t">Sleepy time gal /</subfield>
+    <subfield code="r">Lorezen-Whiting --</subfield>
+    <subfield code="t">I know that you know /</subfield>
+    <subfield code="r">Vincent Youmans.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">1st work: Recut. Originally released by Republic Player Roll, number 48318, issued in 1920.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">2nd work: Recut. Originally released by De Luxe Reproducing Roll Corporation, number Y-75276, issued in 1927.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">3rd work: Recut. Originally released by De Luxe Reproducing Roll Corporation, number Y-7260, issued in 1926.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="500">
+    <subfield code="a">4th work: Recut. Originally released by De Luxe Reproducing Roll Corporation, number Y-75220, issued in 1927.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Foxtrots.</subfield>
+    <subfield code=" ">^A1019455</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Piano music.</subfield>
+    <subfield code=" ">^A1049172</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="0" tag="650">
+    <subfield code="a">Player piano rolls.</subfield>
+    <subfield code=" ">^A1050086</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Foxtrots (Music)</subfield>
+    <subfield code="2">lcgft</subfield>
+    <subfield code=" ">^A3344858</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Recut piano rolls.</subfield>
+    <subfield code="2">local</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="7" tag="655">
+    <subfield code="a">Reproducing piano rolls.</subfield>
+    <subfield code="2">local</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="a">Delcamp, J. Milton,</subfield>
+    <subfield code="d">1892-1931,</subfield>
+    <subfield code="e">instrumentalist.</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="a">Rodney, Julian,</subfield>
+    <subfield code="d">,</subfield>
+    <subfield code="e">instrumentalist.</subfield>
+    <subfield code=" ">UNAUTHORIZED</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="a">Johnson, Johnny,</subfield>
+    <subfield code="d">approximately 1902-</subfield>
+    <subfield code="e">instrumentalist.</subfield>
+    <subfield code=" ">^A2012039</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="a">Lawnhurst, Vee,</subfield>
+    <subfield code="e">instrumentalist.</subfield>
+    <subfield code=" ">^A1371035</subfield>
+  </datafield>
+  <datafield ind1="1" ind2=" " tag="700">
+    <subfield code="a">Lutter, Howard,</subfield>
+    <subfield code="e">instrumentalist.</subfield>
+    <subfield code=" ">^A3341029</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="2" tag="700">
+    <subfield code="i">Container of (work):</subfield>
+    <subfield code="a">Whiting, Richard A.,</subfield>
+    <subfield code="d">1891-1938.</subfield>
+    <subfield code="t">Japanese sandman.</subfield>
+    <subfield code=" ">^A508973</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="2" tag="700">
+    <subfield code="i">Container of (work):</subfield>
+    <subfield code="a">Jolson, Al,</subfield>
+    <subfield code="d">1886-1950.</subfield>
+    <subfield code="t">Me and my shadow.</subfield>
+    <subfield code=" ">^A35365</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="2" tag="700">
+    <subfield code="i">Container of (work):</subfield>
+    <subfield code="a">Dreyer, Dave,</subfield>
+    <subfield code="d">1894-1967.</subfield>
+    <subfield code="t">Me and my shadow.</subfield>
+    <subfield code=" ">^A1902058</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="2" tag="700">
+    <subfield code="i">Container of (work):</subfield>
+    <subfield code="a">Lorenzo, Ange,</subfield>
+    <subfield code="d">1894-1971.</subfield>
+    <subfield code="t">Sleepy time girl.</subfield>
+    <subfield code=" ">^A1972361</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="2" tag="700">
+    <subfield code="i">Container of (work):</subfield>
+    <subfield code="a">Youmans, Vincent,</subfield>
+    <subfield code="d">1898-1946.</subfield>
+    <subfield code="t">Oh, please.</subfield>
+    <subfield code="p">I know, that you know.</subfield>
+    <subfield code=" ">^A2553242</subfield>
+  </datafield>
+  <datafield ind1="1" ind2="2" tag="700">
+    <subfield code="i">Container of (work):</subfield>
+    <subfield code="a">Whiting, Richard A.,</subfield>
+    <subfield code="d">1891-1938.</subfield>
+    <subfield code="t">Sleepy time girl.</subfield>
+    <subfield code=" ">^A508973</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="916">
+    <subfield code="a">DATE CATALOGED</subfield>
+    <subfield code="b">20150831</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="994">
+    <subfield code="a">C0</subfield>
+    <subfield code="b">STF</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="590">
+    <subfield code="a">Archive of Recorded Sound copy 1: Comments by Denis Condon on roll leader.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2="4" tag="690">
+    <subfield code="a">Denis Condon Collection of Reproducing Pianos and Rolls.</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="035">
+    <subfield code="a">(OCoLC-M)919453635</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="596">
+    <subfield code="a">5</subfield>
+  </datafield>
+  <datafield ind1=" " ind2=" " tag="999">
+    <subfield code="a">CONDON ROLL 917</subfield>
+    <subfield code="w">ALPHANUM</subfield>
+    <subfield code="c">1</subfield>
+    <subfield code="i">36105225789499</subfield>
+    <subfield code="l">RECORDINGS</subfield>
+    <subfield code="m">ARS</subfield>
+    <subfield code="r">N</subfield>
+    <subfield code="s">Y</subfield>
+    <subfield code="t">NH-RCORDNG</subfield>
+    <subfield code="u">8/31/2015</subfield>
+  </datafield>
+</record>
