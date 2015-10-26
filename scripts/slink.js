@@ -162,7 +162,7 @@ SLINK.prototype.linksToHtml = function () {
 	var categories = this.getCategoryList();
 	for (var property in categories) {
 		if (categories.hasOwnProperty(property)) {
-
+			output += '<a name="' + property.replace(/\s+/g, '_') + '"> </a>';
 			output += '<details open class="link-category">'
 			output += '<summary>';
 			output += property;
