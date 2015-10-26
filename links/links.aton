@@ -431,7 +431,7 @@
 
 
 
-@ Database @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@ Databases @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 @@BEGIN:	LINK
 @TITLE:		Welte Mignon catalog database
@@ -439,7 +439,7 @@
 @DESCRIPTION:	Searchable database of Welte Mignon catalog numbers.
 @CREATION-DATE:	Sun Oct 25 23:32:25 PDT 2015
 @EDIT-DATE:	Sun Oct 25 23:32:29 PDT 2015
-@CATEGORY:	Database
+@CATEGORY:	Databases
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
 @CATEGORY2:	
