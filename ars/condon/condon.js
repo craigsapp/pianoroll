@@ -37,6 +37,7 @@ function displayEntries(entries, element) {
 	if (!element) {
 		return;
 	}
+	DISPLAY = entries;
 
 	var output = '';
 	output += '<style>';
@@ -50,10 +51,10 @@ function displayEntries(entries, element) {
 	output += '</style>';
 	output += '<table class="pr-table">';
 	output += '<tr>';
-	output += '<th>call#</th>';
-	output += '<th>title</th>';
-	output += '<th>composer</th>';
-	output += '<th>performer</th>';
+	output += '<th style="cursor:pointer;" onclick="sortByCallnum();">call#</th>';
+	output += '<th style="cursor:pointer;" onclick="sortByTitle();">title</th>';
+	output += '<th style="cursor:pointer;" onclick="sortByComposer();">composer</th>';
+	output += '<th style="cursor:pointer;" onclick="sortByPerformer();">performer</th>';
 	output += '</tr>';
 
 	var shortperf;
@@ -285,6 +286,139 @@ function getEntryMatches(searchstring) {
 	}
 	return output;
 }
+
+
+
+//////////////////////////////
+//
+// sortByPerformer --
+//
+
+function sortByPerformer() {
+	ENTRIES.sort(performerCompare);
+	displayEntries(ENTRIES)
+}
+
+
+//////////////////////////////
+//
+// performerCompare
+//
+
+function performerCompare(a, b) {
+	var A = a.PERFORMER;
+	var B = b.PERFORMER;
+	if (A.length == 0) {
+		return +1;
+	}
+	if (A < B) {
+		return -1;
+	} else if (A > B) {
+		return +1;
+	} else {
+		return callnumCompare(a, b);
+	}
+}
+
+
+
+//////////////////////////////
+//
+// sortByCallnum --
+//
+
+function sortByCallnum() {
+	ENTRIES.sort(callnumCompare);
+	displayEntries(ENTRIES)
+}
+
+
+
+//////////////////////////////
+//
+// callnumCompare --
+//
+
+function callnumCompare(a, b) {
+	a = parseInt(a.CALLNUM);
+	b = parseInt(b.CALLNUM);
+	if (a < b) {
+		return -1;
+	} else if (a > b) {
+		return +1;
+	} else {
+		return 0;
+	}
+}
+
+
+
+//////////////////////////////
+//
+// sortByTitle --
+//
+
+function sortByTitle() {
+	ENTRIES.sort(titleCompare);
+	displayEntries(ENTRIES)
+}
+
+
+
+//////////////////////////////
+//
+// titleCompare --
+//
+
+function titleCompare(a, b) {
+	a = a.TITLE;
+	b = b.TITLE;
+	if (a < b) {
+		return -1;
+	} else if (a > b) {
+		return +1;
+	} else {
+		return 0;
+	}
+}
+
+
+
+//////////////////////////////
+//
+// sortByComposer --
+//
+
+function sortByComposer() {
+	ENTRIES.sort(composerCompare);
+	displayEntries(ENTRIES)
+}
+
+
+
+//////////////////////////////
+//
+// composerCompare --
+//
+
+function composerCompare(a, b) {
+	a = a.COMPOSER;
+	b = b.COMPOSER;
+	if (a.length == 0) {
+		return +1;
+	}
+	if (a < b) {
+		return -1;
+	} else if (a > b) {
+		return +1;
+	} else {
+		return 0;
+	}
+}
+
+
+
+
 
 
 
