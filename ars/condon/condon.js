@@ -56,7 +56,9 @@ function displayEntries(entries, element) {
 	output += '<th>performer</th>';
 	output += '</tr>';
 
+	var shortperf;
 	for (var i=0; i<entries.length; i++) {
+		shortperf = entries[i].PERFORMER.replace(/,.*/, "");
 		output += '<tr>';
 		output += '<td>' + '<a href="https://searchworks.stanford.edu/view/';
 		output += entries[i].SEARCHWORKS	+ '" target="_new">';
@@ -65,7 +67,8 @@ function displayEntries(entries, element) {
 		output += '</td>';
 		output += '<td>' + entries[i].TITLE			+ '</td>';
 		output += '<td>' + entries[i].COMPOSER		+ '</td>';
-		output += '<td>' + entries[i].PERFORMER	+ '</td>';
+		output += '<td><span title="' + entries[i].PERFORMER + '">';
+		output += shortperf  + '</span></td>';
 		output += '</tr>';
 	}
 	output += '</table>';
