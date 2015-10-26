@@ -2,7 +2,7 @@
 #
 # Programmer:    Craig Stuart Sapp <craig.stanford.edu>
 # Creation Date: Sun Oct 25 01:28:45 PDT 2015
-# Last Modified: Sun Oct 25 01:28:45 PDT 2015
+# Last Modified: Mon Oct 26 00:32:13 PDT 2015
 # Filename:      /Users/craig/git-cloud/pianoroll/ars/condon/marcxml2aton
 # Syntax:        perl 5
 # vim:           ts=3
@@ -75,24 +75,73 @@ sub getParameters {
    ## <datafield ind1="0" ind2=" " tag="511">
    ## 	<subfield code="a">Eugenie Adam-Benard, piano.</subfield>
    ## </datafield>
+   ##
+   ## Or use 700 for normalized name:
+   ##
+   ## <datafield ind1="1" ind2=" " tag="700">
+   ##  <subfield code="a">Adam-Benard, Eugenie,</subfield>
+   ##  <subfield code="e">instrumentalist.</subfield>
+   ##  <subfield code=" ">UNAUTHORIZED</subfield>
+   ## </datafield>
+   ##
+   ## If no 700$a|700$e==instrumentalist, then try 100$a|100$e==instrumentalist:
+   ##
+   ## <datafield ind1="1" ind2=" " tag="100">
+   ##  <subfield code="a">Gr&#xFC;nfeld, Alfred,</subfield>
+   ##  <subfield code="e">composer,</subfield>
+   ##  <subfield code="e">instrumentalist.</subfield>
+   ##  <subfield code=" ">UNAUTHORIZED</subfield>
+   ## </datafield>  
+
 
 	my $performer = "";
+   my $tperf = "";
 	for ($i=0; $i<@contents; $i++) {
 		$line = $contents[$i];
-		next if $line !~ /<datafield.*tag="511"/;
+		# next if $line !~ /<datafield.*tag="511"/;
+		next if $line !~ /<datafield.*tag="700"/;
 		$line = $contents[++$i];
 		while (($i < @contents) && ($line !~ /<\/datafield>/)) {
 			if ($line =~ /<subfield code="a">(.*)<\/subfield>/) {
-				$performer = $1;
+				$tperf = $1;
+			} elsif ($line =~ /<subfield code="e">.*instrument.*<\/subfield>/) {
+				$performer = $tperf;
 				last;
 			}
 			$line = $contents[++$i];
 		}
-		last;
+		if ($performer !~ /^\s*$/) {
+			last;
+		}
 	}
 	$performer =~ s/\, piano.*//;
 	$performer =~ s/\.$//;
 	$performer =~ s/\,\s*$//;
+
+   # Check the 100 field if 700 was empty (this is the case when the
+	# composer is also the performer):
+	if ($performer =~ /^\s*$/) {
+		for ($i=0; $i<@contents; $i++) {
+			$line = $contents[$i];
+			next if $line !~ /<datafield.*tag="100"/;
+			$line = $contents[++$i];
+			while (($i < @contents) && ($line !~ /<\/datafield>/)) {
+				if ($line =~ /<subfield code="a">(.*)<\/subfield>/) {
+					$tperf = $1;
+				} elsif ($line =~ /<subfield code="e">.*instrument.*<\/subfield>/) {
+					$performer = $tperf;
+					last;
+				}
+				$line = $contents[++$i];
+			}
+			if ($performer !~ /^\s*$/) {
+				last;
+			}
+		}
+		$performer =~ s/\, piano.*//;
+		$performer =~ s/\.$//;
+		$performer =~ s/\,\s*$//;
+	}
 
 
 	##  <datafield ind1="1" ind2="0" tag="245">
