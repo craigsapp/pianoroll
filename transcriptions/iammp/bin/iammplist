@@ -109,7 +109,7 @@ function processRow(row) {
 	console.log("@@BEGIN:\t\tIAMMP");
 
    // (0) Roll type
-	text  = "@ROLL_TYPE:\t\t";
+	text  = "@LABEL:\t\t\t";
 	text += cells[0].innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
 	console.log(text);
 

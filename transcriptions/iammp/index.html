@@ -1,0 +1,64 @@
+---
+layout: default
+breadcrumbs: [
+	['/','home'],
+	['/ars','transcriptions']
+]
+title: IAMMP transcription collection
+---
+
+<style>
+.main-content {
+	margin: 10px 10px;
+}
+</style>
+
+
+<style>
+	table.pr-table { max-width: 800px; width: 800px; display: table !important;}
+	table.pr-table tr { width: 100%; }
+	table.pr-table { margin: 0; }
+	table.pr-table td { padding-left: 2px; }
+	table.pr-table td:nth-child(1) { text-align: left; padding-left:5px;}
+	table.pr-table td:nth-child(3) { text-align: left; }
+	table.pr-table td { font-size: 11pt; }
+	table.pr-table td { max-width: 200px !important; }
+	table.pr-table tr:nth-child(odd) { background-color: #fdfbf6; }
+</style>
+
+
+
+<script src="iammp.js"></script>
+
+<script>
+// vim: ts=3
+
+document.addEventListener("DOMContentLoaded", function() {
+	loadIndex('iammp.aton');
+	document.querySelector('#search-text').focus();
+});
+
+
+</script>
+	
+
+
+<h1> Browse/Search IAMMP roll archive </h1>
+
+
+<form class="form-inline no-print">
+	<input id="search-text" 
+		class="form-control"
+		style="height:34px; width:20rem;"
+		type="text"
+		onkeypress="suppressEnter(event);"
+		style="width:30em;"
+		onkeyup="doSearch(event);"
+		placeholder="Search">
+	<span style="float:right; margin-right:4px;" id="counter"></span>
+</form>
+
+<div id="content"></div>
+
+
+
