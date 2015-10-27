@@ -16,6 +16,16 @@ my $callnum;
 my $searchworks;
 my $sw;
 my $line;
+my $fullcall;
+
+my %youtube = getYouTube("condon.youtube");
+
+my @performers;
+my @composers;
+my @titles;
+my $catalog;
+my $label;
+my $reissue;
 
 while ($line = <>) {
 	chomp $line;
@@ -32,15 +42,42 @@ while ($line = <>) {
 	if ($searchworks =~ /(\d+)/) {
 		$sw = $1;
 	}
-   my ($performer, $composer, $title) = getParameters($cn);
+	@performers = getPerformers($cn);
+	@composers  = getComposers($cn);
+	@titles     = getTitles($cn);
+	$fullcall = "CONDON ROLL $cn";
+	($label, $catalog, $reissue) = getLabel($cn);
 
-print <<"EOT"
+print <<"EOT";
 \@\@BEGIN:	CONDON
 \@CALLNUM:	$cn
 \@SEARCHWORKS:	$sw
-\@TITLE:		$title
-\@COMPOSER:	$composer
-\@PERFORMER:	$performer
+\@LABEL:		$label
+\@CATALOG:	$catalog
+EOT
+
+if ($reissue !~ /^\s*$/) {
+	print "\@REISSUE:	$reissue\n";
+}
+
+foreach my $title (@titles) {
+	print "\@TITLE:		$title\n";
+}
+
+foreach my $composer (@composers) {
+	print "\@COMPOSER:	$composer\n";
+}
+
+foreach my $performer (@performers) {
+	print "\@PERFORMER:	$performer\n";
+}
+
+if ($youtube{$fullcall} !~ /^\s*$/) {
+	print "\@YOUTUBE:	$youtube{$fullcall}\n";
+}
+
+
+print <<"EOT";
 \@\@END:		CONDON
 
 
@@ -53,10 +90,40 @@ EOT
 
 ##############################
 ##
-## getParameters --
+## cleanDate --
 ##
 
-sub getParameters {
+sub cleanDate {
+   my ($date) = @_;
+	$date =~ s/,\s*$//;
+	$date =~ s/\.\s*$//;
+	$date =~ s/approximately /<i>c<\/i>/;
+	return $date;
+}
+
+
+
+##############################
+##
+## cleanPerson --
+##
+
+sub cleanPerson {
+	my ($person) = @_;
+	$person =~ s/\, piano.*//;
+	$person =~ s/\.$//;
+	$person =~ s/\,\s*$//;
+	return $person;
+}
+
+
+
+##############################
+##
+## getPerformers --
+##
+
+sub getPerformers {
 	my ($number) = @_;
 	my $n = $number;
 	my $line;
@@ -94,55 +161,218 @@ sub getParameters {
    ## </datafield>  
 
 
-	my $performer = "";
+	my @performers;
+	my @perfdates;
    my $tperf = "";
+   my $tdate = "";
+   my $realperf = "";
+
+   # Check the 100 field (this is the case when the composer is also the performer):
+	for ($i=0; $i<@contents; $i++) {
+		$line = $contents[$i];
+		next if $line !~ /<datafield.*tag="100"/;
+		$line = $contents[++$i];
+		$tdate = "";
+		$tperf = "";
+		$realperf = "";
+		while (($i < @contents) && ($line !~ /<\/datafield>/)) {
+			if ($line =~ /<subfield code="a">(.*)<\/subfield>/) {
+				$tperf = $1;
+			} elsif ($line =~ /<subfield code="d">(.*)<\/subfield>/) {
+				$tdate = $1;
+			} elsif ($line =~ /<subfield code="e">.*instrument.*<\/subfield>/) {
+				$realperf = $tperf;
+				last;
+			}
+			$line = $contents[++$i];
+		}
+		if ($realperf !~ /^\s*$/) {
+			$performers[@performers] = cleanPerson($realperf);
+			$perfdates[@perfdates] = cleanDate($tdate);
+			$tdate = "";
+			$realperf = "";
+		}
+	}
+
+
+   # check for 700 code performers:
 	for ($i=0; $i<@contents; $i++) {
 		$line = $contents[$i];
 		# next if $line !~ /<datafield.*tag="511"/;
 		next if $line !~ /<datafield.*tag="700"/;
 		$line = $contents[++$i];
+		$tdate = "";
+		$tperf = "";
+		$realperf = "";
 		while (($i < @contents) && ($line !~ /<\/datafield>/)) {
 			if ($line =~ /<subfield code="a">(.*)<\/subfield>/) {
 				$tperf = $1;
+			} elsif ($line =~ /<subfield code="d">(.*)<\/subfield>/) {
+				$tdate = $1;
 			} elsif ($line =~ /<subfield code="e">.*instrument.*<\/subfield>/) {
-				$performer = $tperf;
+				$realperf = $tperf;
 				last;
 			}
 			$line = $contents[++$i];
 		}
-		if ($performer !~ /^\s*$/) {
-			last;
+		if ($realperf !~ /^\s*$/) {
+			$performers[@performers] = cleanPerson($realperf);
+			$perfdates[@perfdates] = cleanDate($tdate);
+			$tdate = "";
+			$realperf = "";
 		}
 	}
-	$performer =~ s/\, piano.*//;
-	$performer =~ s/\.$//;
-	$performer =~ s/\,\s*$//;
 
-   # Check the 100 field if 700 was empty (this is the case when the
-	# composer is also the performer):
-	if ($performer =~ /^\s*$/) {
-		for ($i=0; $i<@contents; $i++) {
-			$line = $contents[$i];
-			next if $line !~ /<datafield.*tag="100"/;
-			$line = $contents[++$i];
-			while (($i < @contents) && ($line !~ /<\/datafield>/)) {
-				if ($line =~ /<subfield code="a">(.*)<\/subfield>/) {
-					$tperf = $1;
-				} elsif ($line =~ /<subfield code="e">.*instrument.*<\/subfield>/) {
-					$performer = $tperf;
-					last;
-				}
-				$line = $contents[++$i];
-			}
-			if ($performer !~ /^\s*$/) {
+	my @output;
+	for (my $i=0; $i<@performers; $i++) {
+		if ($perfdates[$i] !~ /^\s*$/) {
+			$output[$i] = "$performers[$i] :: $perfdates[$i]";
+		} else {
+			$output[$i] = "$performers[$i]";
+		}
+	}
+	return @output;
+}
+
+
+
+##############################
+##
+## getComposers --
+##
+
+sub getComposers {
+	my ($number) = @_;
+	my $n = $number;
+	my $line;
+	$n = "0$n" if $number < 1000;
+	$n = "0$n" if $number < 100;
+	$n = "0$n" if $number < 10;
+	my $first = substr($n, 0, 1);
+	my $file = "marcxml/${first}000/condon$n.xml";
+	open (FILE, $file) or die "Cannot read $file\n";
+	my @contents = <FILE>;
+	close FILE;
+
+	my $i;
+
+	## PERFORMER:
+   ## <datafield ind1="0" ind2=" " tag="511">
+   ## 	<subfield code="a">Eugenie Adam-Benard, piano.</subfield>
+   ## </datafield>
+   ##
+   ## Or use 700 for normalized name:
+   ##
+   ## <datafield ind1="1" ind2=" " tag="700">
+   ##  <subfield code="a">Adam-Benard, Eugenie,</subfield>
+   ##  <subfield code="e">instrumentalist.</subfield>
+   ##  <subfield code=" ">UNAUTHORIZED</subfield>
+   ## </datafield>
+   ##
+   ## If no 700$a|700$e==instrumentalist, then try 100$a|100$e==instrumentalist:
+   ##
+   ## <datafield ind1="1" ind2=" " tag="100">
+   ##  <subfield code="a">Gr&#xFC;nfeld, Alfred,</subfield>
+   ##  <subfield code="e">composer,</subfield>
+   ##  <subfield code="e">instrumentalist.</subfield>
+   ##  <subfield code=" ">UNAUTHORIZED</subfield>
+   ## </datafield>  
+
+
+	my @performers;
+	my @perfdates;
+   my $tperf = "";
+   my $tdate = "";
+   my $realperf = "";
+
+   # Check the 100 field (this is the case when the composer is also the performer):
+	for ($i=0; $i<@contents; $i++) {
+		$line = $contents[$i];
+		next if $line !~ /<datafield.*tag="100"/;
+		$line = $contents[++$i];
+		$tdate = "";
+		$tperf = "";
+		$realperf = "";
+		while (($i < @contents) && ($line !~ /<\/datafield>/)) {
+			if ($line =~ /<subfield code="a">(.*)<\/subfield>/) {
+				$tperf = $1;
+			} elsif ($line =~ /<subfield code="d">(.*)<\/subfield>/) {
+				$tdate = $1;
+			} elsif ($line =~ /<subfield code="e">.*composer.*<\/subfield>/) {
+				$realperf = $tperf;
 				last;
 			}
+			$line = $contents[++$i];
 		}
-		$performer =~ s/\, piano.*//;
-		$performer =~ s/\.$//;
-		$performer =~ s/\,\s*$//;
+		if ($realperf !~ /^\s*$/) {
+			$performers[@performers] = cleanPerson($realperf);
+			$perfdates[@perfdates] = cleanDate($tdate);
+			$tdate = "";
+			$realperf = "";
+		}
 	}
 
+
+   # check for 700 code performers:
+	for ($i=0; $i<@contents; $i++) {
+		$line = $contents[$i];
+		# next if $line !~ /<datafield.*tag="511"/;
+		next if $line !~ /<datafield.*tag="700"/;
+		$line = $contents[++$i];
+		$tdate = "";
+		$tperf = "";
+		$realperf = "";
+		while (($i < @contents) && ($line !~ /<\/datafield>/)) {
+			if ($line =~ /<subfield code="a">(.*)<\/subfield>/) {
+				$tperf = $1;
+			} elsif ($line =~ /<subfield code="d">(.*)<\/subfield>/) {
+				$tdate = $1;
+			} elsif ($line =~ /<subfield code="e">.*composer.*<\/subfield>/) {
+				$realperf = $tperf;
+				last;
+			}
+			$line = $contents[++$i];
+		}
+		if ($realperf !~ /^\s*$/) {
+			$performers[@performers] = cleanPerson($realperf);
+			$perfdates[@perfdates] = cleanDate($tdate);
+			$tdate = "";
+			$realperf = "";
+		}
+	}
+
+	my @output;
+	for (my $i=0; $i<@performers; $i++) {
+		if ($perfdates[$i] !~ /^\s*$/) {
+			$output[$i] = "$performers[$i] :: $perfdates[$i]";
+		} else {
+			$output[$i] = "$performers[$i]";
+		}
+	}
+	return @output;
+}
+
+
+
+
+##############################
+##
+## getTitles --
+##
+
+sub getTitles {
+	my ($number) = @_;
+	my $n = $number;
+	my $line;
+	$n = "0$n" if $number < 1000;
+	$n = "0$n" if $number < 100;
+	$n = "0$n" if $number < 10;
+	my $first = substr($n, 0, 1);
+	my $file = "marcxml/${first}000/condon$n.xml";
+	open (FILE, $file) or die "Cannot read $file\n";
+	my @contents = <FILE>;
+	close FILE;
+	my $i;
 
 	##  <datafield ind1="1" ind2="0" tag="245">
 	##    <subfield code="a">Mazurka op. 67, no. 4 /</subfield>
@@ -174,7 +404,109 @@ sub getParameters {
 	$title =~ s/\/\s*$//;
 	$composer =~ s/\.\s*$//;
 
-	return ($performer, $composer, $title);
+	my @output;
+	$output[@output] = $title;
+
+	return @output;
+}
+
+
+
+##############################
+##
+## getYouTube --
+##
+
+sub getYouTube {
+	my ($file) = @_;
+	my %output;
+	open (YFILE, $file) or return "";
+	my $line;
+	my @data;
+	while ($line = <YFILE>) {
+		chomp $line;
+		next if $line =~ /^\s*$/;
+		@data = split(/\t+/, $line);
+		next if @data != 2;
+		$output{$data[0]} = $data[1];
+	}
+
+	return %output;
+}
+
+
+
+
+##############################
+##
+## getLabel --
+##
+
+sub getLabel {
+	my ($number) = @_;
+	my $n = $number;
+	my $line;
+	$n = "0$n" if $number < 1000;
+	$n = "0$n" if $number < 100;
+	$n = "0$n" if $number < 10;
+	my $first = substr($n, 0, 1);
+	my $file = "marcxml/${first}000/condon$n.xml";
+	open (FILE, $file) or die "Cannot read $file\n";
+	my @contents = <FILE>;
+	close FILE;
+	my $i;
+
+  	# <datafield ind1="0" ind2="2" tag="028">
+   #   <subfield code="a">57</subfield>
+   #   <subfield code="b">Welte-Mignon</subfield>
+  	# </datafield>
+
+	my $label = "";
+	my $catalog = "";
+	for ($i=0; $i<@contents; $i++) {
+		$line = $contents[$i];
+		next if $line !~ /<datafield.*tag="028"/;
+		$line = $contents[++$i];
+		while (($i < @contents) && ($line !~ /<\/datafield>/)) {
+			if ($line =~ /<subfield code="a">(.*)<\/subfield>/) {
+				$catalog = $1;
+			} elsif ($line =~ /<subfield code="b">(.*)<\/subfield>/) {
+				$label = $1;
+			}
+			$line = $contents[++$i];
+		}
+		last;
+	}
+
+   my $reissue = "";
+	for ($i=0; $i<@contents; $i++) {
+		if ($contents[$i] =~ /originally released/i) {
+			$reissue = "yes";
+			last;
+		}
+	}
+
+	$label   =~ s/;\s*$//;
+	$catalog =~ s/;\s*$//;
+	$label   =~ s/\.\s*$//;
+	$catalog =~ s/\.\s*$//;
+	$label   =~ s/,\s*$//;
+	$catalog =~ s/,\s*$//;
+	$label =~ s/De Luxe.*/De Luxe/;
+	$label =~ s/\\$//;
+	if ($label == "Welte Mignon") {
+		$label = "Welte-Mignon";
+	}
+	$label =~ s/  / /g;
+
+#  16 @LABEL:		Paling's Reproducing Records
+#   1 @LABEL:		Play-Rite Music Rolls
+#   1 @LABEL:		Harold L. Powell Associates
+#   1 @LABEL:		Gryphon Company
+#   1 @LABEL:		Automatic Music Roll
+#   1 @LABEL:		Allan's Reproducing Records
+
+	return ($label, $catalog, $reissue);
 }
 
 

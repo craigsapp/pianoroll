@@ -1,0 +1,175 @@
+#!/usr/bin/env node
+//
+// Programmer:    Craig Stuart Sapp <craig@ccrma.stanford.edu>
+// Creation Date: Mon Oct 26 21:33:51 PDT 2015
+// Last Modified: Mon Oct 26 21:33:54 PDT 2015
+// Filename:      iammplist
+// Syntax:        JavaScript 1.8.5/ECMAScript 5.1; node.js
+// vim:           ts=3: ft=javascript
+//
+// Description:   Extract list of Roll from IAMMP catalog.
+//
+// Usage:         ./iammplist > list.txt
+//
+// First-time installation:
+//		npm install jsdom -g
+//		npm install w3c-xmlhttprequest -g
+//
+// 111 pages. 11020 records.
+//
+
+'use strict';
+
+var file = 'http://www.pianorollmusic.com/rolldatabase.php?sortby=catalog&showpage='
+
+var XMLHttpRequest = require('w3c-xmlhttprequest').XMLHttpRequest;
+var jsdom          = require('jsdom');
+var dom            = jsdom.defaultLevel;
+
+getPage(1);
+
+
+//////////////////////////////
+//
+// getPage -- Get an gallery page from Searchworks.  If the page has
+//    "CONDON ROLL" call numbers on it, then progress to the next page,
+//    stopping when a page does not have "CONDON ROLL" call numbers.
+//
+
+function getPage(number) {
+	var request = new XMLHttpRequest();
+	request.open('GET', file + number);
+	request.addEventListener('load', function() {
+   	if (request.status == 200) {
+      	try {
+         	var count = getEntries(request.responseText);
+				if (count > 0) {
+					getPage(number + 1);
+				}
+      	} catch(err) {
+         	console.log('Error parsing search results: %s', err);
+         	console.log('data:', request.responseText);
+      	}
+   	} else {
+      	console.log('Error retrieving search result:', queryUrl);
+      	console.log('Returned data',request.responseText);
+   	}
+	});
+	request.send();
+}
+
+
+
+//////////////////////////////
+//
+// getEntries -- Extract "CONDON ROLL" call numbers from page.
+//
+
+function getEntries(content) {
+	var document = jsdom.jsdom(content);
+	var table = document.querySelector('table[bgcolor="#CCCCCC"]');
+	var rows = table.querySelectorAll('tr');
+	var counter = rows.length;
+	// skip the first row since it is a header.
+	for (var i=1; i<rows.length; i++) {
+		processRow(rows[i]);
+	}
+	return counter;
+}
+
+
+
+//////////////////////////////
+//
+// processRow -- Extract data from a table row.
+//
+// Cell types:
+//    0 = roll format
+// 	1 = catalog number
+//		2 = roll date
+//		3 = MIDI file link (if public domain)
+//    4 = roll title (with redundant MIDI link if public domain)
+//    5 = composer
+//    6 = performer
+//    7 = date added to IAMMP database
+//		8 = who scanned the roll
+//		9 = print image available
+//
+
+function processRow(row) {
+	var cells = [];
+	var td;
+	for (var i=1; i<=10; i++) {
+		td = row.querySelector('td:nth-child(' + i + ')');
+		// console.log(i, td.innerHTML);
+		cells.push(td);
+	}
+
+	var text = "";
+	console.log("@@BEGIN:\t\tIAMMP");
+
+   // (0) Roll type
+	text  = "@ROLL_TYPE:\t\t";
+	text += cells[0].innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
+	console.log(text);
+
+   // (1) Catalog number
+	text  = "@ROLL_CATALOG:\t\t";
+	text += cells[1].innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
+	console.log(text);
+
+   // (2) Roll date
+	text  = "@ROLL_DATE:\t\t";
+	text += cells[2].innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
+	console.log(text);
+
+   // (3) MIDI file link
+	text  = "@MIDI_FILE:\t\t";
+	var midifile = cells[3].querySelector('a');
+	if (midifile) {
+		text += midifile.href;
+	}
+	console.log(text);
+
+   // (4) Roll title
+	text  = "@TITLE:\t\t\t";
+	var midifile = cells[4].querySelector('a');
+	if (midifile) {
+		text += midifile.innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
+	} else {
+		text += cells[4].innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
+	}
+	console.log(text);
+
+   // (5) Composer
+	text  = "@COMPOSER:\t\t";
+	text += cells[5].innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
+	console.log(text);
+
+   // (6) Performer
+	text  = "@PERFORMER:\t\t";
+	text += cells[6].innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
+	console.log(text);
+
+   // (7) Date added
+	text  = "@DATE_ADDED:\t\t";
+	text += cells[7].innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
+	console.log(text);
+
+   // (8) Scanner
+	text  = "@SCANNER:\t\t";
+	text += cells[8].innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
+	console.log(text);
+
+   // (9) Scan available
+	text  = "@SCAN_AVAILABLE:\t";
+	text += cells[9].innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
+	console.log(text);
+
+	console.log("@@END:\t\t\tIAMMP");
+	console.log("");
+	console.log("");
+	console.log("");
+}
+
+

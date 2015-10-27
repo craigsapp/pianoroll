@@ -1,0 +1,51 @@
+#!/usr/bin/perl
+#
+# Programmer:    Craig Stuart Sapp <craig.stanford.edu>
+# Creation Date: Mon Oct 26 22:44:29 PDT 2015
+# Last Modified: Mon Oct 26 22:44:29 PDT 2015
+# Filename:      /Users/craig/git-cloud/pianoroll/iammp/getmidifiles
+# Syntax:        perl 5
+# vim:           ts=3
+#
+# Description:   Download MIDI files from IAMMP archive 
+# 			(public-domain files only).
+#
+# Structure:
+#     http://www.pianorollmusic.com/mjose/midifiles/PDfiles/HungarianRhapsodyNo13_AMP51607_eRollMIDIWexp.mid
+#
+
+use strict;
+
+while (my $line = <>) {
+	chomp $line;
+	next if $line =~ /^\s*$/;
+
+   $line =~ s/\(/%28/g;
+   $line =~ s/\)/%29/g;
+   $line =~ s/ /%20/g;
+   $line =~ s/"/%22/g;
+   $line =~ s/'/%27/g;
+   $line =~ s/&/%26/g;
+   $line =~ s/!/%21/g;
+   $line =~ s/#/%23/g;
+
+	if ($line !~ /([^\/]+)\/midifiles\/PDfiles\/(.*)$/) {
+		print "ERROR in $line\n";
+	} 
+
+	my $user = $1;
+	my $file = $2;
+
+	my $target = "midifiles/$user/$file";
+	`mkdir -p midifiles/$user`;
+	next if -r $target;
+	print "Getting $target ...\n";
+	my $url = $line;
+
+	`wget '$line' -O '$target' 2> /dev/null`;
+	sleep(5);
+}
+
+
+
+

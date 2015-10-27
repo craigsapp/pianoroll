@@ -24,20 +24,24 @@ var XKey         = 120;
 var EscKey       =  27;
 
 var ENTRIES = [];
+var SEARCHNUM = 1;
+
+
 
 //////////////////////////////
 //
 // displayEntries --
 //
 
-function displayEntries(entries, element) {
-	if (!element) {
-		element = document.querySelector('#content');
-	}
+function displayEntries(entries, counter) {
+	var element = document.querySelector('#content');
 	if (!element) {
 		return;
 	}
 	DISPLAY = entries;
+	if (counter && (counter != SEARCHNUM)) {
+		return;
+	}
 
 	var output = '';
 	output += '<style>';
@@ -45,7 +49,9 @@ function displayEntries(entries, element) {
 	output += '	table.pr-table tr { width: 100%; }';
 	output += '	table.pr-table { margin: 0; }';
 	output += '	table.pr-table td { padding: 2px 4px; }';
-	output += '	table.pr-table td:nth-child(2) { text-align: left; }';
+	output += '	table.pr-table td:nth-child(2) { width:40%; text-align: left; }';
+	output += '	table.pr-table td:nth-child(3) { padding:0; }';
+	output += '	table.pr-table th:nth-child(3) { padding:0; }';
 	output += '	table.pr-table td { font-size: 11pt; }';
 	output += '	table.pr-table tr:nth-child(odd) { background-color: #fdfbf6; }';
 	output += '</style>';
@@ -53,30 +59,222 @@ function displayEntries(entries, element) {
 	output += '<tr>';
 	output += '<th style="cursor:pointer;" onclick="sortByCallnum();">call#</th>';
 	output += '<th style="cursor:pointer;" onclick="sortByTitle();">title</th>';
+	output += '<th></th>';
 	output += '<th style="cursor:pointer;" onclick="sortByComposer();">composer</th>';
 	output += '<th style="cursor:pointer;" onclick="sortByPerformer();">performer</th>';
 	output += '</tr>';
+	var splitperf;
+	var longperf;
 
-	var shortperf;
+	var perfcontent;
+	var compcontent;
 	for (var i=0; i<entries.length; i++) {
-		shortperf = entries[i].PERFORMER.replace(/,.*/, "");
+		perfcontent = getPerformerContent(entries[i]);
+		compcontent = getComposerContent(entries[i]);
 		output += '<tr>';
 		output += '<td>' + '<a href="https://searchworks.stanford.edu/view/';
 		output += entries[i].SEARCHWORKS	+ '" target="_new">';
 		output += entries[i].CALLNUM;
 		output += '</a>';
 		output += '</td>';
-		output += '<td>' + entries[i].TITLE			+ '</td>';
-		output += '<td>' + entries[i].COMPOSER		+ '</td>';
-		output += '<td><span title="' + entries[i].PERFORMER + '">';
-		output += shortperf  + '</span></td>';
+		output += '<td>' + entries[i].TITLE		+ '</td>';
+		output += '<td>';
+		if (entries[i].YOUTUBE) {
+			output += '<span class="youtube"><a href="https://www.youtube.com/watch?v=';
+			output += entries[i].YOUTUBE;
+			output += '" target="_new"><img style="min-width:20px;" src="/images/youtube-thumbnail.png"></a></span>';
+		}
+		output += '</td>';
+		output += '<td>' + compcontent			+ '</td>';
+		output += '<td>' + perfcontent 		 	+ '</td>';
 		output += '</tr>';
 	}
 	output += '</table>';
 
 	element.innerHTML = output;
 	setCount(entries.length);
+
+   // These are needed because filling qtips are slow
+	// for > 2000 qtips, so only fill them in 1 second after
+	// searching, and the calling code will cancel them
+	// if someone types a new search before the two seconds
+	// is over.
+	setTimeout(qtipPerformer, 2000, counter);
+	setTimeout(qtipComposer, 2000, counter);
 }
+
+
+
+//////////////////////////////
+//
+// qtipPerformer --
+// 
+
+function qtipComposer(counter) {
+	if (!counter || (counter == SEARCHNUM)) {
+		$('span.composer').qtip(
+			{
+				show: { delay: 0 },
+				position: {
+					my: 'top left',
+					at: 'bottom right'
+				},
+				style: { classes: 'qtip-youtube' }
+			}
+		);
+	}
+}
+
+
+
+//////////////////////////////
+//
+// qtipPerformer --
+// 
+
+function qtipPerformer(counter) {
+	if (!counter || (counter == SEARCHNUM)) {
+		$('span.performer').qtip(
+			{
+				show: { delay: 0 },
+				position: {
+					my: 'top right',
+					at: 'bottom left'
+				},
+				style: { classes: 'qtip-youtube' }
+			}
+		);
+	}
+}
+
+
+
+//////////////////////////////
+//
+// getPerformerContent --
+//
+
+function getPerformerContent(entry) {
+	if (entry.PERFORMER_CONTENT) {
+		return entry.PERFORMER_CONTENT;
+	}
+	var output = "";
+	if (Array.isArray(entry.PERFORMER)) {
+		for (var i=0; i<entry.PERFORMER.length; i++) {
+			output += getPerformerMarkup(entry.PERFORMER[i]);
+			if (i < entry.PERFORMER.length-1) {
+				output += ', ';
+			}
+		}
+	} else {
+		output += getPerformerMarkup(entry.PERFORMER);
+	}
+
+	entry.PERFORMER_CONTENT = output;
+	return output;
+}
+
+
+
+//////////////////////////////
+//
+// getComposerContent --
+//
+
+function getComposerContent(entry) {
+	if (entry.COMPOSER_CONTENT) {
+		return entry.COMPOSER_CONTENT;
+	}
+	var output = "";
+	if (Array.isArray(entry.COMPOSER)) {
+		for (var i=0; i<entry.COMPOSER.length; i++) {
+			output += getComposerMarkup(entry.COMPOSER[i]);
+			if (i < entry.COMPOSER.length-1) {
+				output += ', ';
+			}
+		}
+	} else {
+		output += getComposerMarkup(entry.COMPOSER);
+	}
+
+	entry.COMPOSER_CONTENT = output;
+	return output;
+}
+
+
+
+///////////////////////////////
+//
+// getPerformerMarkup --
+//
+
+function getPerformerMarkup (entry) {
+	var dates     = "";
+	var person    = "";
+	var lastname  = "";
+	var firstname = "";
+	if (entry.match(/::/)) {
+		var two = entry.split(/\s*::\s*/);
+		person = two[0];
+		dates = two[1];
+	} else {
+		person = entry;
+	}
+	lastname = person;
+	firstname = "";
+	if (person.match(/, /)) {
+		two = person.split(/\s*,\s*/);
+		lastname = two[0];
+		firstname = two[1];
+	}
+	var output = '';
+	output += '<span class="performer" title="' + firstname + ' ' + lastname;
+	if (dates) {
+		output += ' (' + dates.replace(/-/g, '&ndash;')  + ')';
+	}
+	output += '">';
+	output += lastname.replace(/\s/g, '&nbsp;');
+	output += '</span>';
+	return output;
+}
+
+
+
+///////////////////////////////
+//
+// getComposerMarkup --
+//
+
+function getComposerMarkup (entry) {
+	var dates     = "";
+	var person    = "";
+	var lastname  = "";
+	var firstname = "";
+	if (entry.match(/::/)) {
+		var two = entry.split(/\s*::\s*/);
+		person = two[0];
+		dates = two[1];
+	} else {
+		person = entry;
+	}
+	lastname = person;
+	firstname = "";
+	if (person.match(/, /)) {
+		two = person.split(/\s*,\s*/);
+		lastname = two[0];
+		firstname = two[1];
+	}
+	var output = '';
+	output += '<span class="composer" title="' + firstname + ' ' + lastname;
+	if (dates) {
+		output += ' (' + dates.replace(/-/g, '&ndash;')  + ')';
+	}
+	output += '">';
+	output += lastname.replace(/\s/g, '&nbsp;');
+	output += '</span>';
+	return output;
+}
+
 
 
 //////////////////////////////
@@ -124,7 +322,8 @@ function loadIndex(file) {
 					search.value = myhash;
 					doSearch();
 				} else {
-					displayEntries(ENTRIES);
+					var counter = ++SEARCHNUM;
+					displayEntries(ENTRIES, counter);
 				}
          } catch(err) {
             console.log('Error parsing search results: %s', err);
@@ -148,6 +347,15 @@ function loadIndex(file) {
 function addSearchFields(entries) {
 	for (var i=0; i<entries.length; i++) {
 		entries[i].search = JSON.stringify(entries[i]);
+		if (!entries[i].PERFORMER) {
+			entries[i].PERFORMER = "";
+		}
+		if (!entries[i].COMPOSER) {
+			entries[i].COMPOSER = "";
+		}
+		if (!entries[i].TITLE) {
+			entries[i].TITLE = "";
+		}
 	}
 }
 
@@ -162,6 +370,12 @@ function addSearchFields(entries) {
 //
 
 function doSearch(event) {
+	var currSearch = ++SEARCHNUM;
+	var element = document.querySelector('#search-text');
+	if (element) {
+		element.innerHTML = '';
+	}
+
 	if (event) {
 		if (event.keyCode == EnterKey) {
 			suppressEnter(event);
@@ -179,7 +393,9 @@ function doSearch(event) {
 		clearSearch();
 	} else {
    	var matches = getEntryMatches(searchstring);
-		displayEntries(matches);
+		if (currSearch == SEARCHNUM) {
+			displayEntries(matches, currSearch);
+		}
 	}
 }
 
@@ -194,7 +410,8 @@ function clearSearch() {
 	var element = document.querySelector('#search-text');
 	if (element) {
 		element.value = '';
-		displayEntries(ENTRIES);
+		var counter = ++SEARCHNUM;
+		displayEntries(ENTRIES, counter);
 	}
 }
 
@@ -296,7 +513,8 @@ function getEntryMatches(searchstring) {
 
 function sortByPerformer() {
 	ENTRIES.sort(performerCompare);
-	displayEntries(ENTRIES)
+	var counter = ++SEARCHNUM;
+	displayEntries(ENTRIES, counter);
 }
 
 
@@ -329,7 +547,8 @@ function performerCompare(a, b) {
 
 function sortByCallnum() {
 	ENTRIES.sort(callnumCompare);
-	displayEntries(ENTRIES)
+	var counter = ++SEARCHNUM;
+	displayEntries(ENTRIES, counter);
 }
 
 
@@ -360,7 +579,8 @@ function callnumCompare(a, b) {
 
 function sortByTitle() {
 	ENTRIES.sort(titleCompare);
-	displayEntries(ENTRIES)
+	var counter = ++SEARCHNUM;
+	displayEntries(ENTRIES, counter);
 }
 
 
@@ -391,7 +611,8 @@ function titleCompare(a, b) {
 
 function sortByComposer() {
 	ENTRIES.sort(composerCompare);
-	displayEntries(ENTRIES)
+	var counter = ++SEARCHNUM;
+	displayEntries(ENTRIES, counter);
 }
 
 
@@ -415,10 +636,6 @@ function composerCompare(a, b) {
 		return 0;
 	}
 }
-
-
-
-
 
 
 

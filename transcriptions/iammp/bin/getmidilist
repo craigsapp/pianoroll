@@ -1,0 +1,23 @@
+#!/usr/bin/perl
+#
+# Programmer:    Craig Stuart Sapp <craig.stanford.edu>
+# Creation Date: Mon Oct 26 22:31:56 PDT 2015
+# Last Modified: Mon Oct 26 22:36:20 PDT 2015
+# Filename:      pianoroll/iammp/getmidilist
+# Syntax:        perl 5
+# vim:           ts=3
+#
+# Description:   Extract list of MIDI file links from main ATON file.
+#
+
+use strict;
+
+while (my $line = <>) {
+	next if $line !~ /^\@MIDI_FILE:\s*(.*)\s*$/;
+	my $file = $1;
+	next if $file =~ /^\s*$/;
+	print "$file\n";
+}
+
+
+
