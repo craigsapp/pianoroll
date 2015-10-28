@@ -291,8 +291,9 @@ function setCount(count, element) {
 function initializePage() {
 	addSearchFields(ENTRIES);
 	var myhash = location.hash;
-	myhash = myhash.replace(/^#/, "");
-	myhash = myhash.replace(/%20/g, " ");
+	myhash = myhash.replace(/^#/, "")
+	               .replace(/%20/g, " ")
+	               .replace(/_/g, " ");
 	if (myhash) {
 		var search = document.querySelector('#search-text');
 		search.value = myhash;
