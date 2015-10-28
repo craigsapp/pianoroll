@@ -24,7 +24,32 @@ var XKey         = 120;
 var EscKey       =  27;
 
 var ENTRIES = [];
+var ROWS = [];
+var ROWINDEX = 0;
+var MAXCYCLE = 1000;
+var TABLE = null;
 var SEARCHNUM = 1;
+
+
+//////////////////////////////
+//
+// displayRows --
+//
+
+function displayRows() {
+	if (!TABLE) {
+		return;
+	}
+	var counter = 0;
+	while (ROWINDEX < ROWS.length) {
+		TABLE.appendChild(ROWS[ROWINDEX++]);
+		if (++counter > MAXCYCLE) {
+			return;
+		}
+	}
+	// document.body.style.cursor = 'auto';
+}
+
 
 
 //////////////////////////////
@@ -33,7 +58,6 @@ var SEARCHNUM = 1;
 //
 
 function addHeaderRow(parent) {
-console.log("ADDING HEADER ROW");
 	var tr = document.createElement('TR');
 	var output = '';
 	output += '<th style="cursor:pointer;" onclick="sortByCatalog();">catalog</th>';
@@ -67,6 +91,12 @@ function prepareNewTable() {
 	var tbody = document.createElement('TBODY');
 	table.appendChild(tbody);
 	addHeaderRow(tbody);
+
+	TABLE = tbody;
+	ROWS = [];
+	ROWINDEX = 0;
+	// document.body.style.cursor = 'wait';
+
 	return tbody;
 }
 
@@ -80,12 +110,19 @@ function prepareNewTable() {
 function displayAllEntries(entries, counter) {
 	DISPLAY = entries;
 	var parent = prepareNewTable();
+	var public = document.querySelector("#public").checked;
+	var mcount = 0;
 	for (var i=0; i<entries.length; i++) {
+		if (public && !entries[i].MIDIFILE) {
+			continue;
+		}
 		displayEntry(parent, entries[i]);
+		mcount++;
 		if (counter != SEARCHNUM) {
 			return;
 		}
 	}
+	setCount(mcount);
 }
 
 
@@ -114,35 +151,36 @@ function displayEntry(parent, entry) {
 
 	var output = '';
 
-	/// Manufacturer #############################################################
+	/// Manufacturer ########################################################
 	output += '<td>';
 	output += entry.LABEL;
 	output += ' ';
-	output += entry.ROLL_CATALOG;
+	output += entry.CATALOG;
 	output += '</td>';
 
-	/// Date #####################################################################
+	/// Date ###############################################################
 	output += '<td>';
-	output += entry.ROLL_DATE;
+	output += entry.DATE;
 	output += '</td>';
 
-	/// Title ####################################################################
+	/// Title ##############################################################
 	output += '<td>' + titlecontent		+ '</td>';
 
-	/// Composer #################################################################
+	/// Composer ###########################################################
 	output += '<td>' + compcontent			+ '</td>';
 
-	/// Performer ################################################################
+	/// Performer ##########################################################
 	output += '<td>' + perfcontent 		 	+ '</td>';
 
-	/// Transcriber ##############################################################
+	/// Transcriber ########################################################
 	output += '<td>' + transcontent 		 	+ '</td>';
 
-	/// CIS ######################################################################
+	/// CIS ################################################################
 	output += '<td>' + ciscontent 		 	+ '</td>';
 
 	tr.innerHTML = output;
-	parent.appendChild(tr);
+	// parent.appendChild(tr);
+	ROWS.push(tr);
 }
 
 
@@ -186,7 +224,7 @@ function getTranscriberContent(entry) {
 //
 
 function getCisContent(entry) {
-	if (entry.SCAN_AVAILABLE.match(/Gr[ae]yscale-1/i)) {
+	if (entry.SCAN.match(/Gr[ae]yscale-1/i)) {
 		return "Y";
 	} else {
 		return "";
@@ -201,11 +239,11 @@ function getCisContent(entry) {
 //
 
 function getTitleContent(entry) {
-	if (!entry.MIDI_FILE) {
+	if (!entry.MIDIFILE) {
 		return entry.TITLE;
 	}
 	var output = "";
-	var mf = entry.MIDI_FILE;
+	var mf = entry.MIDIFILE;
 	mf = mf.replace(/\(/g, "%28")
 	       .replace(/\)/g, "%29")
 	       .replace(/ /g, "%20")
@@ -224,7 +262,7 @@ function getTitleContent(entry) {
 
 //////////////////////////////
 //
-// setCounter --
+// setCount --
 //
 
 function setCount(count, element) {
@@ -244,12 +282,40 @@ function setCount(count, element) {
 }
 
 
+
+//////////////////////////////
+//
+// initializePage --
+//
+
+function initializePage() {
+	addSearchFields(ENTRIES);
+	var myhash = location.hash;
+	myhash = myhash.replace(/^#/, "");
+	myhash = myhash.replace(/%20/g, " ");
+	if (myhash) {
+		var search = document.querySelector('#search-text');
+		search.value = myhash;
+		doSearch();
+	} else {
+		var counter = ++SEARCHNUM;
+		displayAllEntries(ENTRIES, counter);
+	}
+}
+
+
+
 //////////////////////////////
 //
 // loadIndex --
 //
 
 function loadIndex(file) {
+	if (localStorage.iammp) {
+		ENTRIES = JSON.parse(localStorage.iammp);
+		initializePage();
+		return;
+	}
    var request = new XMLHttpRequest();
    request.open('GET', file);
    request.addEventListener('load', function() {
@@ -258,18 +324,8 @@ function loadIndex(file) {
 				var aton = new ATON();
 				aton.setOnlyChildRoot();
             ENTRIES = aton.parse(request.responseText);
-				addSearchFields(ENTRIES);
-				var myhash = location.hash;
-				myhash = myhash.replace(/^#/, "");
-				myhash = myhash.replace(/%20/g, " ");
-				if (myhash) {
-					var search = document.querySelector('#search-text');
-					search.value = myhash;
-					doSearch();
-				} else {
-					var counter = ++SEARCHNUM;
-					displayAllEntries(ENTRIES, counter);
-				}
+				localStorage.iammp = JSON.stringify(ENTRIES);
+				initializePage();
          } catch(err) {
             console.log('Error parsing search results: %s', err);
             console.log('ATON data:', request.responseText);
@@ -316,7 +372,7 @@ function addSearchFields(entries) {
 
 function doSearch(event) {
 	var counter = ++SEARCHNUM;
-	setTimeout(doRealSearch, 1000, counter);
+	setTimeout(doRealSearch, 400, counter);
 }
 
 
@@ -331,11 +387,6 @@ function doRealSearch(counter) {
 		return;
 	}
 
-	var element = document.querySelector('#search-text');
-	if (element) {
-		element.innerHTML = '';
-	}
-
 	if (event) {
 		if (event.keyCode == EnterKey) {
 			suppressEnter(event);
@@ -346,13 +397,15 @@ function doRealSearch(counter) {
 		}
 	}
 
+	var element = prepareNewTable();
+
 	var search = document.querySelector('#search-text');
 	var searchstring = search.value;
 
-	if (searchstring.match(/^\s*$/)) {
+	if (searchstring.match(/^\s*$/) && !public) {
 		clearSearch();
 	} else {
-   	var matches = getEntryMatches(searchstring);
+   	var matches = getEntryMatches(searchstring, element);
 		setCount(matches);
 	}
 }
@@ -365,6 +418,7 @@ function doRealSearch(counter) {
 //
 
 function clearSearch() {
+	setCount(ENTRIES.length);
 	var element = document.querySelector('#search-text');
 	if (element) {
 		element.value = '';
@@ -386,7 +440,6 @@ function suppressEnter(event) {
 	if (event.keyCode == EnterKey) {
 		event.stopPropagation();
 		event.preventDefault();
-		doRealSearch(++SEARCHNUM);
 		return;
 	}
 }
@@ -400,14 +453,16 @@ function suppressEnter(event) {
 //     match to the given query string. 
 //
 
-function getEntryMatches(searchstring) {
-	var output = [];
+function getEntryMatches(searchstring, parent) {
+	var counter = 0;
 	searchstring = searchstring.replace(/^\s+/, '');
 	searchstring = searchstring.replace(/\s+$/, '');
 	searchstring = searchstring.replace(/\s+/g, ' ');
 	searchstring = searchstring.replace(/ not /g, ' -');
 	searchstring = searchstring.replace(/ or /g, ' |');
 	var queries = searchstring.split(' ');
+
+	var public = document.querySelector("#public").checked;
 	
 	var entries = ENTRIES;
 	var result = false;
@@ -425,6 +480,9 @@ function getEntryMatches(searchstring) {
 	var k;
 	var m;
 	for (j=0; j<entries.length; j++) {
+		if (public && !entries[j].MIDIFILE) {
+			continue;
+		}
 		results = [];
 		for (k=0; k<queries.length; k++) {
 			// full entry search
@@ -457,11 +515,11 @@ function getEntryMatches(searchstring) {
 			result = result && results[k];
 		}
 		if (result) {
-			output.push(entries[j]);
-			displayEntry(rtable, entries[j]);
+			counter++;
+			displayEntry(parent, entries[j]);
 		}
 	}
-	return output;
+	return counter;
 }
 
 
@@ -545,8 +603,8 @@ function performerCompare(a, b) {
 //
 
 function dateCompare(a, b) {
-	var A = a.ROLL_DATE.replace(/[^0-9]/g, '');
-	var B = b.ROLL_DATE.replace(/[^0-9]/g, '');;
+	var A = a.DATE.replace(/[^0-9]/g, '');
+	var B = b.DATE.replace(/[^0-9]/g, '');;
 
 	if (A.length == 0) {
 		return +1;
@@ -568,8 +626,8 @@ function dateCompare(a, b) {
 //
 
 function cisCompare(a, b) {
-	var A = a.SCAN_AVAILABLE;
-	var B = b.SCAN_AVAILABLE;
+	var A = a.SCAN;
+	var B = b.SCAN;
 
 	if (A.match(/Gr[ae]yscale-1/)) {
 		A = "Y";
@@ -602,8 +660,8 @@ function cisCompare(a, b) {
 //
 
 function transcriberCompare(a, b) {
-	var A = a.TRANSCRIBER.replace(/^.* /, '');
-	var B = b.TRANSCRIBER.replace(/^.* /, '');
+	var A = a.SCANNER.replace(/^.* /, '');
+	var B = b.SCANNER.replace(/^.* /, '');
 	if (A.length == 0) {
 		return +1;
 	}
@@ -637,8 +695,8 @@ function sortByCatalog() {
 //
 
 function catalogCompare(a, b) {
-	a = parseInt(a.ROLL_CATALOG);
-	b = parseInt(b.ROLL_CATALOG);
+	a = parseInt(a.CATALOG);
+	b = parseInt(b.CATALOG);
 	if (a < b) {
 		return -1;
 	} else if (a > b) {

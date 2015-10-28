@@ -114,17 +114,17 @@ function processRow(row) {
 	console.log(text);
 
    // (1) Catalog number
-	text  = "@ROLL_CATALOG:\t\t";
+	text  = "@CATALOG:\t\t";
 	text += cells[1].innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
 	console.log(text);
 
    // (2) Roll date
-	text  = "@ROLL_DATE:\t\t";
+	text  = "@DATE:\t\t\t";
 	text += cells[2].innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
 	console.log(text);
 
    // (3) MIDI file link
-	text  = "@MIDI_FILE:\t\t";
+	text  = "@MIDIFILE:\t\t";
 	var midifile = cells[3].querySelector('a');
 	if (midifile) {
 		text += midifile.href;
@@ -162,7 +162,7 @@ function processRow(row) {
 	console.log(text);
 
    // (9) Scan available
-	text  = "@SCAN_AVAILABLE:\t";
+	text  = "@SCAN:\t\t\t";
 	text += cells[9].innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
 	console.log(text);
 

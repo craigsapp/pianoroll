@@ -2,7 +2,7 @@
 layout: default
 breadcrumbs: [
 	['/','home'],
-	['/ars','transcriptions']
+	['/transcriptions','transcriptions']
 ]
 title: IAMMP transcription collection
 ---
@@ -16,13 +16,14 @@ title: IAMMP transcription collection
 
 <style>
 	table.pr-table { max-width: 800px; width: 800px; display: table !important;}
-	table.pr-table tr { width: 100%; }
 	table.pr-table { margin: 0; }
-	table.pr-table td { padding-left: 2px; }
-	table.pr-table td:nth-child(1) { text-align: left; padding-left:5px;}
-	table.pr-table td:nth-child(3) { text-align: left; }
+	table.pr-table tr { width: 100%; }
+	table.pr-table td { padding: 0px; }
 	table.pr-table td { font-size: 11pt; }
 	table.pr-table td { max-width: 200px !important; }
+	table.pr-table td:nth-child(1) { text-align: left; padding-left:5px;}
+	table.pr-table td:nth-child(3) { text-align: left; }
+	table.pr-table td:nth-child(7) { text-align: center; }
 	table.pr-table tr:nth-child(odd) { background-color: #fdfbf6; }
 </style>
 
@@ -34,8 +35,9 @@ title: IAMMP transcription collection
 // vim: ts=3
 
 document.addEventListener("DOMContentLoaded", function() {
-	loadIndex('iammp.aton');
 	document.querySelector('#search-text').focus();
+	setInterval(function() {displayRows(); }, 100);
+	loadIndex('iammp.aton');
 });
 
 
@@ -45,6 +47,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <h1> Browse/Search IAMMP roll archive </h1>
 
+<p style="position:relative; top:-20px;"> This search interface is a mirror of the one at
+the <a href="http://www.iammp.org/rolldatabase.php">IAMMP</a>
+website.  Click on the "Public MIDI files only" check box 
+to search only entries which link to MIDI files on the IAMMP website.
+Use the words <b>not</b> or <b>or</b> to refine searches, such as
+<a target="_new" href="#mazurka%20not%20chopin">mazurka not chopin</a> to search for 
+mazurkas not by Chopin, or <a target="_new" href="#welte%20or%20deluxe">welte or deluxe</a>
+to include both Welte and DeLuxe rolls.
 
 <form class="form-inline no-print">
 	<input id="search-text" 
@@ -55,7 +65,14 @@ document.addEventListener("DOMContentLoaded", function() {
 		style="width:30em;"
 		onkeyup="doSearch(event);"
 		placeholder="Search">
-	<span style="float:right; margin-right:4px;" id="counter"></span>
+
+	<span style="float:none" class="form-group>
+		<span style="margin-left:10px;" class="checkbox">
+			<input onchange="doSearch();" id="public" type="checkbox">
+			<span style="position:relative; top:2px;">Public MIDI files only</span>
+		</span>
+	</span>
+	<span style="float:right; margin-right:14px;" id="counter"></span>
 </form>
 
 <div id="content"></div>
