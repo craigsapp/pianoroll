@@ -270,7 +270,7 @@ function getComposerMarkup (entry) {
 		output += ' (' + dates.replace(/-/g, '&ndash;')  + ')';
 	}
 	output += '">';
-	output += lastname.replace(/\s/g, '&nbsp;');
+	output += lastname.replace(/\s/g, '&nbsp;').replace('-Bartholdy', '');;
 	output += '</span>';
 	return output;
 }
