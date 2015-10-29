@@ -16,6 +16,8 @@ all:
 	@echo "make marcxml == download all cataloged condon rolls MARC XML entries"
 	@echo "make aton == create ATON database of Condon collection"
 
+update: condon markxml aton
+
 condon:
 	bin/condonlist > condon.list
 
