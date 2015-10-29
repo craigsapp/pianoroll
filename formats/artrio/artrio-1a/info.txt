@@ -17,7 +17,7 @@
 @NOTE:		
 
 @COMMENTARY:    Artrio tester roll continued on
-		<a href=../artrio-1b>Next page</a>.
+		<a href=../artrio-1b>next page</a>.
 
 @@BEGIN:	SAMPLE
 @NUMBER:	01
