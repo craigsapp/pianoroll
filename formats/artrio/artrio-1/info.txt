@@ -1,0 +1,55 @@
+@@BEGIN:	ROLL
+@ROLL:		018
+@LABEL:		Artrio-Angelus
+@RECUTTER:
+@LOCATION:	
+@CATALOG:	
+@MECHANISM:	Artrio
+@HOLES:		
+@SPACING:	
+@EXPRESSION:	yes
+@COMPOSER:	
+@PERFORMER:	
+@EXPRESSIONIST:	
+@WORK:		Artrio tester
+@SEARCHWORKS:	
+@BARCODE:	
+@NOTE:		
+
+@COMMENTARY:
+
+@@BEGIN:	SAMPLE
+@NUMBER:	02
+@DESCRIPTION:	Leader with textual description.
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@NUMBER:	02
+@DESCRIPTION:	Start of roll, showing all expression holes open, then
+		chromatic notes up from the bottom of the keyboard. 10 notes,
+		in V morse code pattern.
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@NUMBER:	03
+@DESCRIPTION:	Start of loudness testing. Bottom register (42 notes)
+		Then top register (42 notes).
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@NUMBER:	03
+@DESCRIPTION:	Middle of loudness testing showing shift to upper register.
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@END:		ROLL
+
+
+
