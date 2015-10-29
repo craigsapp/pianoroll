@@ -19,7 +19,7 @@
 @COMMENTARY:
 
 @@BEGIN:	SAMPLE
-@NUMBER:	02
+@NUMBER:	01
 @DESCRIPTION:	Leader with textual description.
 @COMMENTARY:	
 @COMMENTARY_POST: 
@@ -43,8 +43,29 @@
 @@END:		SAMPLE
 
 @@BEGIN:	SAMPLE
-@NUMBER:	03
+@NUMBER:	04
 @DESCRIPTION:	Middle of loudness testing showing shift to upper register.
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@NUMBER:	05
+@DESCRIPTION:	Start of soft scale test.
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@NUMBER:	06
+@DESCRIPTION:	Start of moderate loudness scale test.
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@NUMBER:	07
+@DESCRIPTION:	Bass chord test.
 @COMMENTARY:	
 @COMMENTARY_POST: 
 @@END:		SAMPLE
