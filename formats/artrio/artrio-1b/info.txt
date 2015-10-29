@@ -21,7 +21,7 @@
 
 @@BEGIN:	SAMPLE
 @NUMBER:	06
-@DESCRIPTION:	Start of moderate loudness scale test.
+@DESCRIPTION:	Start of Melodant (accentuation) holes.
 @COMMENTARY:	
 @COMMENTARY_POST: 
 @@END:		SAMPLE
