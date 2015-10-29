@@ -14,13 +14,20 @@
 @WORK:		Pete Wendling Patriotic Medley: Over There, Let's All Be Americans Now, I May Be Gone For a Long Long Time, Send Me Away With a Smile, Good-Bye Broadway, Hello France!
 @SEARCHWORKS:	
 @BARCODE:	
-@NOTE:		QRS Autograph hand played $1.00
+@NOTE:		QRS Autograph hand played $1.00. Square holes.
 
 @COMMENTARY:
 
 @@BEGIN:	SAMPLE
 @NUMBER:	01
 @DESCRIPTION:	Start of roll. 
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@NUMBER:	02
+@DESCRIPTION:	One foot into roll.  Shows sustain pedal marks on left side.
 @COMMENTARY:	
 @COMMENTARY_POST: 
 @@END:		SAMPLE

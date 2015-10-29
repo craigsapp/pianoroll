@@ -1,0 +1,38 @@
+@@BEGIN:	ROLL
+@ROLL:		017
+@LABEL:		Ampico
+@RECUTTER:
+@LOCATION:	
+@CATALOG:	68283-H
+@MECHANISM:	Ampico B
+@HOLES:		
+@SPACING:	
+@EXPRESSION:	yes
+@COMPOSER:	Paderewski
+@PERFORMER:	Sergei Rachmanioff
+@EXPRESSIONIST:	
+@WORK:		Menuet, Op. 14, No. 1, G major
+@SEARCHWORKS:	
+@BARCODE:	
+@NOTE:		Start of purely Ampico B format; $2.00
+
+@COMMENTARY:
+
+@@BEGIN:	SAMPLE
+@NUMBER:	01
+@DESCRIPTION:	Leader with printed information about the piece.
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@NUMBER:	02
+@DESCRIPTION:	Start of the roll.
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@END:		ROLL
+
+
+
