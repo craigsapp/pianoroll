@@ -1,20 +1,20 @@
 @@BEGIN:	ROLL
-@ROLL:		010
+@ROLL:		015
 @LABEL:		Hupfeld
 @RECUTTER:
 @LOCATION:	
-@CATALOG:	T 59289
+@CATALOG:	T 59099
 @MECHANISM:	Triphonola
 @HOLES:		
 @SPACING:	
 @EXPRESSION:	yes
-@COMPOSER:	Jara Benes
-@PERFORMER:	Jara Benes
+@COMPOSER:	Friedrich von Flotow
+@PERFORMER:	Alfred Simon, Hans Klinger
 @EXPRESSIONIST:	
-@WORK:		Tutankhamen-Shimmy
+@WORK:		Martha overture
 @SEARCHWORKS:	
 @BARCODE:	
-@NOTE:		
+@NOTE:		Piano 4 hands. Animatic-T
 
 @COMMENTARY:
 
@@ -27,7 +27,7 @@
 
 @@BEGIN:	SAMPLE
 @NUMBER:	02
-@DESCRIPTION:	A few feet in.
+@DESCRIPTION:	Repeated chords a few feet into the roll.
 @COMMENTARY:	
 @COMMENTARY_POST: 
 @@END:		SAMPLE
