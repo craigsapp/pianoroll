@@ -494,7 +494,7 @@ sub getLabel {
 	$catalog =~ s/,\s*$//;
 	$label =~ s/De Luxe.*/De Luxe/;
 	$label =~ s/\\$//;
-	if ($label == "Welte Mignon") {
+	if ($label eq "Welte Mignon") {
 		$label = "Welte-Mignon";
 	}
 	$label =~ s/  / /g;

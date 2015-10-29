@@ -49,15 +49,16 @@ function displayEntries(entries, counter) {
 	output += '	table.pr-table tr { width: 100%; }';
 	output += '	table.pr-table { margin: 0; }';
 	output += '	table.pr-table td { padding: 2px 4px; }';
-	output += '	table.pr-table td:nth-child(2) { width:40%; text-align: left; }';
-	output += '	table.pr-table td:nth-child(3) { padding:0; }';
-	output += '	table.pr-table th:nth-child(3) { padding:0; }';
+	output += '	table.pr-table td:nth-child(3) { width:40%; text-align: left; }';
+	output += '	table.pr-table td:nth-child(4) { padding:0; }';
+	output += '	table.pr-table th:nth-child(4) { padding:0; }';
 	output += '	table.pr-table td { font-size: 11pt; }';
 	output += '	table.pr-table tr:nth-child(odd) { background-color: #fdfbf6; }';
 	output += '</style>';
 	output += '<table class="pr-table">';
 	output += '<tr>';
 	output += '<th style="cursor:pointer;" onclick="sortByCallnum();">call#</th>';
+	output += '<th style="cursor:pointer;" onclick="sortByLabel();">catalog</th>';
 	output += '<th style="cursor:pointer;" onclick="sortByTitle();">title</th>';
 	output += '<th></th>';
 	output += '<th style="cursor:pointer;" onclick="sortByComposer();">composer</th>';
@@ -66,18 +67,25 @@ function displayEntries(entries, counter) {
 	var splitperf;
 	var longperf;
 
+	var labelcontent;
 	var perfcontent;
 	var compcontent;
 	for (var i=0; i<entries.length; i++) {
 		perfcontent = getPerformerContent(entries[i]);
 		compcontent = getComposerContent(entries[i]);
+		labelcontent = getLabelContent(entries[i]);
 		output += '<tr>';
+
 		output += '<td>' + '<a href="https://searchworks.stanford.edu/view/';
 		output += entries[i].SEARCHWORKS	+ '" target="_new">';
 		output += entries[i].CALLNUM;
 		output += '</a>';
 		output += '</td>';
+
+		output += '<td>' + labelcontent		+ '</td>';
+
 		output += '<td>' + entries[i].TITLE		+ '</td>';
+
 		output += '<td>';
 		if (entries[i].YOUTUBE) {
 			output += '<span class="youtube"><a href="https://www.youtube.com/watch?v=';
@@ -85,8 +93,11 @@ function displayEntries(entries, counter) {
 			output += '" target="_new"><img style="min-width:20px;" src="/images/youtube-thumbnail.png"></a></span>';
 		}
 		output += '</td>';
+
 		output += '<td>' + compcontent			+ '</td>';
+
 		output += '<td>' + perfcontent 		 	+ '</td>';
+
 		output += '</tr>';
 	}
 	output += '</table>';
@@ -101,13 +112,37 @@ function displayEntries(entries, counter) {
 	// is over.
 	setTimeout(qtipPerformer, 2000, counter);
 	setTimeout(qtipComposer, 2000, counter);
+	setTimeout(qtipLabel, 1000, counter);
+}
+
+
+
+
+//////////////////////////////
+//
+// qtipLabel --
+// 
+
+function qtipLabel(counter) {
+	if (!counter || (counter == SEARCHNUM)) {
+		$('span.catalog').qtip(
+			{
+				show: { delay: 0 },
+				position: {
+					my: 'top left',
+					at: 'bottom right'
+				},
+				style: { classes: 'qtip-youtube' }
+			}
+		);
+	}
 }
 
 
 
 //////////////////////////////
 //
-// qtipPerformer --
+// qtipComposer --
 // 
 
 function qtipComposer(counter) {
@@ -198,6 +233,49 @@ function getComposerContent(entry) {
 	}
 
 	entry.COMPOSER_CONTENT = output;
+	return output;
+}
+
+
+
+//////////////////////////////
+//
+// getLabelContent --
+//
+
+function getLabelContent(entry) {
+	if (entry.LABEL_CONTENT) {
+		return entry.LABEL_CONTENT;
+	}
+
+	//      1 Allan's Reproducing Records
+	//      1 Automatic Music Roll
+	//    473 De Luxe
+	//      1 Gryphon Company
+	//      1 Harold L. Powell Associates
+	//     16 Paling's Reproducing Records
+	//      1 Play-Rite Music Rolls
+	//    809 Welte-Mignon
+
+	var company = entry.LABEL;
+	var shortcompany = company
+			.replace(/Allan.*/, 'Allan')
+			.replace(/Automatic.*/, 'Auto.')
+			.replace(/De Luxe/, 'DL')
+			.replace(/Gryphon.*/, 'Gry')
+			.replace(/Harold.*/, 'Pwl')
+			.replace(/Paling.*/, 'Pal')
+			.replace(/Play-Rite.*/, 'PR')
+			.replace(/Welte-Mignon.*/, 'WM');
+
+	var catalog = entry.CATALOG;
+
+	var output = "";
+	output = '<nobr><span class="catalog" ';
+	output += 'title="' + company + ' ' + catalog + '">';
+	output += shortcompany + ' ' + catalog;
+	output += '</span></nobr>';
+	entry.LABEL_CONTENT = output;
 	return output;
 }
 
