@@ -44,20 +44,20 @@ function getPage(number) {
 	var request = new XMLHttpRequest();
 	request.open('GET', file + number);
 	request.addEventListener('load', function() {
-   	if (request.status == 200) {
-      	try {
-         	var count = getCondonEntries(request.responseText);
+		if (request.status == 200) {
+			try {
+				var count = getCondonEntries(request.responseText);
 				if (count > 0) {
 					getPage(number + 1);
 				}
-      	} catch(err) {
-         	console.log('Error parsing search results: %s', err);
-         	console.log('data:', request.responseText);
-      	}
-   	} else {
-      	console.log('Error retrieving search result:', queryUrl);
-      	console.log('Returned data',request.responseText);
-   	}
+			} catch(err) {
+				console.log('Error parsing search results: %s', err);
+				console.log('data:', request.responseText);
+			}
+		} else {
+			console.log('Error retrieving search result:', queryUrl);
+			console.log('Returned data',request.responseText);
+		}
 	});
 	request.send();
 }
