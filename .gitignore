@@ -6,3 +6,4 @@ bin
 *.bak
 *-600dpi.png
 formats/welte/ref
+*.zip
