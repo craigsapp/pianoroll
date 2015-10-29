@@ -16,7 +16,8 @@
 @BARCODE:	
 @NOTE:		
 
-@COMMENTARY:
+@COMMENTARY:    Artrio tester roll continued on
+		<a href=../artrio-1b>Next page</a>.
 
 @@BEGIN:	SAMPLE
 @NUMBER:	01
@@ -52,20 +53,6 @@
 @@BEGIN:	SAMPLE
 @NUMBER:	05
 @DESCRIPTION:	Start of soft scale test.
-@COMMENTARY:	
-@COMMENTARY_POST: 
-@@END:		SAMPLE
-
-@@BEGIN:	SAMPLE
-@NUMBER:	06
-@DESCRIPTION:	Start of moderate loudness scale test.
-@COMMENTARY:	
-@COMMENTARY_POST: 
-@@END:		SAMPLE
-
-@@BEGIN:	SAMPLE
-@NUMBER:	07
-@DESCRIPTION:	Bass chord test.
 @COMMENTARY:	
 @COMMENTARY_POST: 
 @@END:		SAMPLE

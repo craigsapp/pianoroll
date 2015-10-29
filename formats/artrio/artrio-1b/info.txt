@@ -1,0 +1,39 @@
+@@BEGIN:	ROLL
+@ROLL:		018
+@LABEL:		Artrio-Angelus
+@RECUTTER:
+@LOCATION:	
+@CATALOG:	
+@MECHANISM:	Artrio
+@HOLES:		
+@SPACING:	
+@EXPRESSION:	yes
+@COMPOSER:	
+@PERFORMER:	
+@EXPRESSIONIST:	
+@WORK:		Artrio tester
+@SEARCHWORKS:	
+@BARCODE:	
+@NOTE:		
+
+@COMMENTARY:    Artrio tester roll continued from
+		<a href=../artrio-1a>Previous page</a>.
+
+@@BEGIN:	SAMPLE
+@NUMBER:	06
+@DESCRIPTION:	Start of moderate loudness scale test.
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@NUMBER:	07
+@DESCRIPTION:	Bass chord test.
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@END:		ROLL
+
+
+
