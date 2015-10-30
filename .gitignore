@@ -7,3 +7,7 @@ bin
 *-600dpi.png
 formats/welte/ref
 *.zip
+formats/ampico/info.txt
+formats/hupfeld/info.txt
+formats/qrs/info.txt
+
