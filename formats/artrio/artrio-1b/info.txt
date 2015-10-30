@@ -30,6 +30,13 @@
 @NUMBER:	07
 @DESCRIPTION:	Bass chord test.
 @COMMENTARY:	
+	Text for this test:
+	6. 1, 2, 3 and 4 note test for the bass section of the piano.
+	The single note will speak quite clearly, the chords of two
+	notes a little softer, the chords of three still
+	softer and the chords of four should just [barely]
+	speak.  This test is to check up the previous work, as
+	shown by the tests Nos. 4 and 5.
 @COMMENTARY_POST: 
 @@END:		SAMPLE
 
