@@ -1,0 +1,418 @@
+#!/usr/bin/env node
+//
+// Programmer:    Craig Stuart Sapp <craig@ccrma.stanford.edu>
+// Creation Date: Sun Nov  1 20:07:41 PST 2015
+// Last Modified: Sun Nov  1 20:07:43 PST 2015
+// Filename:      pianolalist
+// Syntax:        JavaScript 1.8.5/ECMAScript 5.1; node.js
+// vim:           ts=3: ft=javascript
+//
+// Description:   Extract list of Rolls from pianola.co.nz catalog.
+//
+// Usage:         ./pianolalist all.json > list.aton
+//
+// First-time installation:
+//		npm install jsdom -g
+//		npm install w3c-xmlhttprequest -g
+//		npm install posix-argv-parser -g
+//
+// 2044 records.
+//
+
+'use strict';
+
+var file = 'http://www.pianorollmusic.com/rolldatabase.php?sortby=catalog&showpage='
+
+var XMLHttpRequest = require('w3c-xmlhttprequest').XMLHttpRequest;
+var jsdom          = require('jsdom');
+var dom            = jsdom.defaultLevel;
+var pap            = require('posix-argv-parser');
+var fs             = require('fs');
+
+
+
+//////////////////////////////
+//
+// Process command-line arguments, then read data from files or standard
+//  input if no files.
+//
+
+(function processCommandLineArguments() {
+	var args = pap.create();
+	var v    = pap.validators;
+
+	args.createOption(['-p', '--pretty'], {
+		signature: 'Pretty-print JSON output'
+	});
+
+	args.createOption(['-i', '--indent'], {
+		signature: 'Indenting string for JSON pretty printer',
+		hasValue: true,
+		defaultValue: '   '
+	});
+
+	args.createOperand('files', {
+		signature: 'Input files',
+		greedy: true,
+		validators: [v.file()]
+	});
+
+	args.parse(process.argv.slice(2), function (errors, options) {
+		if (errors) {
+			console.log(errors[0]);
+			process.exit(1);
+		}
+		var myoptions = {
+			files   : options.files.value,
+		};
+		runCommand(myoptions);
+	});
+})();
+
+
+
+//////////////////////////////
+//
+// runCommand -- Do all of the work after command-line arguments 
+//    have been parsed.
+//
+
+function runCommand(options) {
+   if (options.files.length) {
+      processFileList(options.files, options);
+   } else {
+      processStandardInput(options);
+   }
+}
+
+
+
+//////////////////////////////
+//
+// processStandardInput -- read text data from standard input.  
+//
+
+function processStandardInput(options) {
+   var inputChunks = [];  // Temporary storage of incoming data packets.
+   process.stdin.setEncoding('utf8');  // Be careful if not using utf-8 
+													// encoding in the file.
+
+   process.stdin.on('data', function (chunk) {
+      inputChunks.push(chunk);
+   });
+
+   process.stdin.on('end', function () {
+      var outputData = inputChunks.join('');
+      processFileContents(outputData, options);
+   });
+}
+
+
+
+//////////////////////////////
+//
+// processFileList -- loop through the input file list, converting them
+//   one at a time.
+//
+
+function processFileList(filelist, options) {
+   for (var i=0; i<filelist.length; i++) {
+      processFile(filelist[i], options);
+   }
+}
+
+
+
+//////////////////////////////
+//
+// processFile -- process a single file from the comman-line arguments.
+//    This implementation reads all of the file into memory before
+//    processing.  Eventually the ATON parse will be adjusted so that
+//    standard input or a file can be processed line-by-line without 
+//    storing completely in memory before starting to parse it.
+//
+
+function processFile(filename, options) {
+   try {
+      var data = fs.readFileSync(filename, 'utf8');
+   } catch (error) {
+      console.error('ERROR:', error.message);
+      process.exit(1);
+   }
+   processFileContents(data, options);
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////
+
+
+//////////////////////////////
+//
+// processFileContents --
+//
+
+function processFileContents(data, options) {
+	var obj = JSON.parse(data);
+	var list = [];
+	for (var i=0; i<obj.aaData.length; i++) {
+		list.push(obj.aaData[i]);
+	};
+	extractData(list);
+}
+
+
+
+//////////////////////////////
+//
+// extractData --
+//
+
+function extractData(list) {
+	var document = jsdom.jsdom("<html><body></body>");
+	var entry;
+
+	for (var i=0; i<list.length; i++) {
+		entry = document.createElement("SPAN");
+		entry.className = "entry";
+		entry.innerHTML = list[i];
+		document.body.appendChild(entry);
+	}
+
+	var entries = document.querySelectorAll("span.entry");
+	for (var i=0; i<list.length; i++) {
+		extractEntry(entries[i]);
+	}
+}
+
+
+//////////////////////////////
+//
+// extractEntry --
+//
+
+function extractEntry(entry) {
+	var h3 = entry.querySelector('h3');
+	var links = h3.querySelectorAll('a');
+
+	var title = links[1].innerHTML
+		.replace(/[ -]+$/, '');
+	var midifile = links[1].href
+		.replace('http://www.pianola.co.nz/public/midi/', '')
+		.replace(/\(/g, '%28')
+		.replace(/\)/g, '%29')
+		.replace(/ /g, '%20')
+		.replace(/"/g, '%22')
+		.replace(/'/g, '%27')
+		.replace(/&/g, '%26')
+		.replace(/!/g, '%21')
+		.replace(/#/g, '%23');
+
+	var results = entry.querySelectorAll('span.searchResults');
+
+	// Fields in results:
+	// <b>Pianist : </b>Burt Franklin
+	// <b>Composer : </b>John Philip Sousa
+	// <b>Composition Date : </b>1897
+	// <b>Roll Brand : </b>Imperial Hand Played
+	// <b>Roll Number : </b>510510
+	// <b>Roll Date : </b>1917-09
+	// <b>Song Type : </b>March, Ragtime
+	// <b>Notes : </b>
+	// <b>Date Added : </b>2015-09-15
+
+	var keynames = {
+		'Pianist'           : 'PIANIST:\t\t',
+		'Composer'          : 'COMPOSER:\t\t',
+		'Composition Date'  : 'CDATE:\t\t\t',
+		'Roll Brand'        : 'BRAND:\t\t\t',
+		'Roll Number'       : 'NUMBER:\t\t',
+		'Roll Date'         : 'RDATE:\t\t\t',
+		'Song Type'         : 'GENRE:\t\t\t',
+		'Notes'             : 'NOTES:\t\t\t',
+		'Date Added'        : 'ADDE:\t\t\t'
+	};
+
+	console.log("@@BEGIN:\t\tENTRY");
+	console.log("@TITLE:\t\t\t" + title);
+	console.log("@MIDIFILE:\t\t" + midifile);
+
+	for (var i=0; i<results.length; i++) {
+		var key = keynames[results[i].querySelector('b').innerHTML
+						.replace(/[ :]+$/, '')];
+		var value = results[i].innerHTML
+						.replace(/.*<\/b>/, '');
+		console.log("@" + key + value);
+	}
+
+	console.log("@@END:\t\t\tENTRY");
+	console.log("");
+	console.log("");
+	console.log("");
+
+
+
+	// @@BEGIN:		ENTRY
+	// @TITLE:			Twist and Twirl Rag - One-Step
+	// @MIDIFILE:		TwistandTwirlRag%281916%29_AeolianMetro-ArtRoll-202754_TheComposer%28LesC.Copeland%29.mid
+	// @PIANIST		:	The Composer (Les C. Copeland)
+	// @COMPOSER	:	Les C. Copeland
+	// @CDATE		:	1916
+	// @Brand		:	Aeolian Metro-Art Roll
+	// @Number		:	202754
+	// @RDATE		:	1916-07
+	// @GENRE		:	Ragtime, Onestep
+	// @NOTES		:	One of my favourites!
+	// @ADDED		:	2015-09-09
+	// @@END:			ENTRY
+
+}
+
+
+
+
+
+//////////////////////////////
+//
+// getPage -- Get a gallery page from Searchworks.  If the page has
+//    "CONDON ROLL" call numbers on it, then progress to the next page,
+//    stopping when a page does not have "CONDON ROLL" call numbers.
+//
+
+function getPage(number) {
+	var request = new XMLHttpRequest();
+	request.open('GET', file + number);
+	request.addEventListener('load', function() {
+   	if (request.status == 200) {
+      	try {
+         	var count = getEntries(request.responseText);
+				if (count > 0) {
+					getPage(number + 1);
+				}
+      	} catch(err) {
+         	console.log('Error parsing search results: %s', err);
+         	console.log('data:', request.responseText);
+      	}
+   	} else {
+      	console.log('Error retrieving search result:', queryUrl);
+      	console.log('Returned data',request.responseText);
+   	}
+	});
+	request.send();
+}
+
+
+
+//////////////////////////////
+//
+// getEntries -- Extract "CONDON ROLL" call numbers from page.
+//
+
+function getEntries(content) {
+	var document = jsdom.jsdom(content);
+	var table = document.querySelector('table[bgcolor="#CCCCCC"]');
+	var rows = table.querySelectorAll('tr');
+	var counter = rows.length;
+	// skip the first row since it is a header.
+	for (var i=1; i<rows.length; i++) {
+		processRow(rows[i]);
+	}
+	return counter;
+}
+
+
+
+//////////////////////////////
+//
+// processRow -- Extract data from a table row.
+//
+// Cell types:
+//    0 = roll format
+// 	1 = catalog number
+//		2 = roll date
+//		3 = MIDI file link (if public domain)
+//    4 = roll title (with redundant MIDI link if public domain)
+//    5 = composer
+//    6 = performer
+//    7 = date added to IAMMP database
+//		8 = who scanned the roll
+//		9 = print image available
+//
+
+function processRow(row) {
+	var cells = [];
+	var td;
+	for (var i=1; i<=10; i++) {
+		td = row.querySelector('td:nth-child(' + i + ')');
+		// console.log(i, td.innerHTML);
+		cells.push(td);
+	}
+
+	var text = "";
+	console.log("@@BEGIN:\t\tIAMMP");
+
+   // (0) Roll type
+	text  = "@LABEL:\t\t\t";
+	text += cells[0].innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
+	console.log(text);
+
+   // (1) Catalog number
+	text  = "@CATALOG:\t\t";
+	text += cells[1].innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
+	console.log(text);
+
+   // (2) Roll date
+	text  = "@DATE:\t\t\t";
+	text += cells[2].innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
+	console.log(text);
+
+   // (3) MIDI file link
+	text  = "@MIDIFILE:\t\t";
+	var midifile = cells[3].querySelector('a');
+	if (midifile) {
+		text += midifile.href;
+	}
+	console.log(text);
+
+   // (4) Roll title
+	text  = "@TITLE:\t\t\t";
+	var midifile = cells[4].querySelector('a');
+	if (midifile) {
+		text += midifile.innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
+	} else {
+		text += cells[4].innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
+	}
+	console.log(text);
+
+   // (5) Composer
+	text  = "@COMPOSER:\t\t";
+	text += cells[5].innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
+	console.log(text);
+
+   // (6) Performer
+	text  = "@PERFORMER:\t\t";
+	text += cells[6].innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
+	console.log(text);
+
+   // (7) Date added
+	text  = "@DATE_ADDED:\t\t";
+	text += cells[7].innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
+	console.log(text);
+
+   // (8) Scanner
+	text  = "@SCANNER:\t\t";
+	text += cells[8].innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
+	console.log(text);
+
+   // (9) Scan available
+	text  = "@SCAN:\t\t\t";
+	text += cells[9].innerHTML.replace(/^\s+/, '').replace(/\s+$/, '');
+	console.log(text);
+
+	console.log("@@END:\t\t\tIAMMP");
+	console.log("");
+	console.log("");
+	console.log("");
+}
+
+

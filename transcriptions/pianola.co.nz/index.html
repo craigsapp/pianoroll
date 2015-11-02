@@ -1,0 +1,74 @@
+---
+layout: default
+breadcrumbs: [
+	['/','home'],
+	['/transcriptions','transcriptions']
+]
+title: Pianola.co.nz transcription collection
+---
+
+<style>
+.main-content {
+	margin: 10px 10px;
+}
+</style>
+
+
+<style>
+	table.pr-table { max-width: 800px; width: 800px; display: table !important;}
+	table.pr-table { margin: 0; }
+	table.pr-table tr { width: 100%; }
+	table.pr-table td { padding: 0px; }
+	table.pr-table td { font-size: 11pt; }
+	table.pr-table td { max-width: 200px !important; }
+	table.pr-table td:nth-child(1) { text-align: left; padding-left:5px;}
+	table.pr-table td:nth-child(3) { text-align: left; }
+	table.pr-table td:nth-child(7) { text-align: center; }
+	table.pr-table tr:nth-child(odd) { background-color: #fdfbf6; }
+</style>
+
+
+
+<script src="pianola.js"></script>
+
+<script>
+// vim: ts=3
+
+document.addEventListener("DOMContentLoaded", function() {
+	document.querySelector('#search-text').focus();
+	setInterval(function() {displayRows(); }, 100);
+	loadIndex('pianola.aton');
+});
+
+
+</script>
+	
+
+
+<h1> Browse/Search Pianola.co.nz roll archive </h1>
+
+<p style="position:relative; top:-20px;"> This search interface is a mirror of the one at
+the <a href="http://pianola.co.nz/index.pnp/wmidi">pianola.co.nz</a>
+website.  
+Use the words <b>not</b> or <b>or</b> to refine searches, such as
+<a target="_new" href="#mazurka%20not%20chopin">mazurka not chopin</a> to search for 
+mazurkas not by Chopin, or <a target="_new" href="#welte%20or%20deluxe">welte or deluxe</a>
+to include both Welte and DeLuxe rolls.
+
+<form class="form-inline no-print">
+	<input id="search-text" 
+		class="form-control"
+		style="height:34px; width:20rem;"
+		type="text"
+		onkeypress="suppressEnter(event);"
+		style="width:30em;"
+		onkeyup="doSearch(event);"
+		placeholder="Search">
+
+	<span style="float:right; margin-right:14px;" id="counter"></span>
+</form>
+
+<div id="content"></div>
+
+
+
