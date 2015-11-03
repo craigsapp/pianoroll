@@ -17,12 +17,16 @@
 @NOTE:		
 
 @COMMENTARY:    Artrio tester roll continued from
-		<a href=../artrio-1a>previous page</a>.
+		<a href=../artrio-1b>previous page</a>,
+		<a href=../artrio-1d>next page</c>.
 
 @@BEGIN:	SAMPLE
 @NUMBER:	11
 @DESCRIPTION:	11. Treble crescendo test, first part.
 @COMMENTARY:	
+		Text in sample:
+		<br><br>
+		20. This is a gradual crescendo in the treble from P. to FFF.
 @COMMENTARY_POST: 
 @@END:		SAMPLE
 
@@ -35,14 +39,17 @@
 
 @@BEGIN:	SAMPLE
 @NUMBER:	13
-@DESCRIPTION:	13. Another treble crescendo test, first part.
+@DESCRIPTION:	13. Another treble crescendo test using Melodant, first part.
 @COMMENTARY:	
+		Text in sample:
+		<br><br>
+		This is a gradual crescendo in the bass from P. to FFF.
 @COMMENTARY_POST: 
 @@END:		SAMPLE
 
 @@BEGIN:	SAMPLE
 @NUMBER:	14
-@DESCRIPTION:	14. Another treble crescendo test, second part.
+@DESCRIPTION:	14. Another treble crescendo test using Melodant, second part.
 @COMMENTARY:	
 @COMMENTARY_POST: 
 @@END:		SAMPLE
@@ -51,6 +58,15 @@
 @NUMBER:	15
 @DESCRIPTION:	15. Another dynamics test.
 @COMMENTARY:	
+		Text in sample:
+		<br><br>
+		23. This is to test the accompaniment control valves in both bass and
+		treble sections with the center control valves H, J, K, M & N open in their
+		respective order.  The tone of center controls H, J, K, &M should all
+		be the same (The dynamic force of these chords in this test should be
+		a little less than the chords struck with the Melodant.  Test No. 
+		19) Center Control valve, N, should be considerably stronger by reason
+		of it being the high pressure valve.
 @COMMENTARY_POST: 
 @@END:		SAMPLE
 

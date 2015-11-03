@@ -17,12 +17,16 @@
 @NOTE:		
 
 @COMMENTARY:    Artrio tester roll continued from
-		<a href=../artrio-1a>previous page</a>.
+		<a href=../artrio-1d>previous page</a>.
 
 @@BEGIN:	SAMPLE
 @NUMBER:	21
 @DESCRIPTION:	Liszt Etude, sample 3 with melody in bass.
 @COMMENTARY:	
+		Text in sample:
+		<br><br>
+		29. The Melody is heard in the bass section quite distinctly.
+
 @COMMENTARY_POST: 
 @@END:		SAMPLE
 
@@ -30,6 +34,10 @@
 @NUMBER:	22
 @DESCRIPTION:	Liszt Etude, sample 4, loud section.
 @COMMENTARY:	
+		Text in sample:
+		<br><br>
+		30. The instrument should play this section very loudly with crescendo and
+		diminuendo following.
 @COMMENTARY_POST: 
 @@END:		SAMPLE
 
@@ -37,6 +45,11 @@
 @NUMBER:	23
 @DESCRIPTION:	Liszt Etude, sample 5, octave melody.
 @COMMENTARY:	
+		Text in sample:
+		<br><br>
+		31. The Melody in octaves should stand out very clearly above the 
+		running accompaniment.  This passage is FF.
+		
 @COMMENTARY_POST: 
 @@END:		SAMPLE
 
@@ -44,13 +57,35 @@
 @NUMBER:	24
 @DESCRIPTION:	Godowsky staccato test.
 @COMMENTARY:	
+		
 @COMMENTARY_POST: 
 @@END:		SAMPLE
+		Text in sample:
+		<br><br>
+		32. A portion of Poldini's "Concert Etude," played by Godowsky, for the
+		purpose of playing a staccato composition to see that all notes are
+		speaking correctly.
 
 @@BEGIN:	SAMPLE
 @NUMBER:	25
 @DESCRIPTION:	Godowsky tremendous crescendo.
 @COMMENTARY:	
+		Text in sample:
+		<br><br>
+		33. This should be a tremendous crescendo.
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@NUMBER:	26
+@DESCRIPTION:	Return command.
+@COMMENTARY:	
+		Text in sample:
+		<br><br>
+		36. This is a double marginal perforation in the bass section,
+		operating both the leaker valve, closing it, and operating the 
+		re-roll pneumatic.
+
 @COMMENTARY_POST: 
 @@END:		SAMPLE
 

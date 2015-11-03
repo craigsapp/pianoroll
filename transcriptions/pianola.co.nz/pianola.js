@@ -146,8 +146,25 @@ function displayEntry(parent, entry) {
 		xbrand = entry.XBRAND;
 	} else {
 		xbrand = entry.BRAND
-				.replace('Hand Played', '<span class="abbr" title="Hand Played">HP</span>')
-				.replace('Word Roll', '<span class="abbr" title="Word Roll">WR</span>')
+				.replace(/Hand[ -]+Played/, '<span class="abbr" title="Hand Played">HP</span>')
+				.replace('Word Roll', '<span class="abbr" title="WordZRoll">WR</span>')
+				.replace('With Words', '<span class="abbr" title="WordZRoll">WR</span>')
+				.replace('With Song Words', '<span class="abbr" title="WordZRoll">WR</span>')
+				.replace('Melody Roll', '<span class="abbr" title="WordZRoll">WR</span>')
+				.replace(/Song[ -]Roll/, '<span class="abbr" title="WordZRoll">WR</span>')
+				.replace('Popular Roll', '<span class="abbr" title="PopularZRoll">PR</span>')
+				.replace('Singing Roll', '<span class="abbr" title="WordZRoll">WR</span>')
+				.replace('Singing Record', '<span class="abbr" title="WordZRoll">WR</span>')
+				.replace('88 Note', '88-note')
+				.replace('Eighty-Eight Note', '88-note')
+				.replace('Recording', '')
+				.replace('Record', '')
+				.replace('Music Roll', '')
+				.replace('Reproducing', '')
+				.replace('Guaranteed', '')
+				.replace(/Player Roll\b/, '')
+				.replace(/\bRoll\b/, '')
+				.replace(/WordZRoll/, 'Word Roll')
 				;
 	}
 
@@ -238,6 +255,7 @@ function getTitleContent(entry) {
 	if (!entry.MIDIFILE) {
 		return entry.TITLE;
 	}
+	var prefix = "http://www.pianola.co.nz/public/midi/";
 	var output = "";
 	var mf = entry.MIDIFILE;
 	mf = mf.replace(/\(/g, "%28")
@@ -248,7 +266,7 @@ function getTitleContent(entry) {
 	       .replace(/&/g, "%26")
 	       .replace(/!/g, "%21")
 	       .replace(/#/g, "%23");
-	output += '<a href="' + mf + '">';
+	output += '<a href="' + prefix + mf + '">';
 	output += entry.TITLE;
 	output += '</a>';
 	return output;

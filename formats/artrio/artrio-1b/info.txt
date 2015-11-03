@@ -17,12 +17,20 @@
 @NOTE:		
 
 @COMMENTARY:    Artrio tester roll continued from
-		<a href=../artrio-1a>previous page</a>.
+		<a href=../artrio-1a>previous page</a>,
+		<a href=../artrio-1c>next page</c>.
 
 @@BEGIN:	SAMPLE
 @NUMBER:	06
 @DESCRIPTION:	Start of Melodant (accentuation) holes.
 @COMMENTARY:	
+	Text for this sample:
+	<br><br>
+	The same notes being played with the Melodant perforations operating.
+	These notes should be played slightly louder than the preceding.  However,
+	the increase of dynamics should be very slight and just noticeable.  If the
+	degree of change between four and five is not satisfactory, the spring on
+	the center control should be tightened or loosened as required.
 @COMMENTARY_POST: 
 @@END:		SAMPLE
 
@@ -30,7 +38,8 @@
 @NUMBER:	07
 @DESCRIPTION:	Bass chord test.
 @COMMENTARY:	
-	Text for this test:
+	Text for this sample:
+	<br><br>
 	6. 1, 2, 3 and 4 note test for the bass section of the piano.
 	The single note will speak quite clearly, the chords of two
 	notes a little softer, the chords of three still
@@ -44,6 +53,19 @@
 @NUMBER:	08
 @DESCRIPTION:	8. Melodant chord test
 @COMMENTARY:	
+	Text for this sample:
+	<br><br>
+	8. Bass and treble chords striking alternately to ascertain whether or
+	not the bass and treble are properly balanced.  If the bass and treble does
+	not balance correctly, the adjustment can be made by changing the position
+	of either the bass or treble control springs as tests may show necessary.
+	<br><br>
+	9. Bass and treble balance test with one-dot Melodant.  This one-dot Melodant
+	should raise the tone just a very little.  If it is too strong, the spring
+	on the center control should be let out.
+	<br><br>
+	10. The same test with the double dot Melodant.  This should raise the tone
+	just a shade stringer than with the single dot perforation.
 @COMMENTARY_POST: 
 @@END:		SAMPLE
 
@@ -51,6 +73,17 @@
 @NUMBER:	09
 @DESCRIPTION:	9. Melodant chord test 2
 @COMMENTARY:	
+	Text for this sample:
+	<br><br>
+	11. The same test as No. 10, but with the soft pedal perforations which will either
+	move the keys in a Grand piano or operate the hammer rail in an Upright piano.
+	With this perforation the tone should be slightly software than as shown in No. 10 test.
+	<br><br>
+	12. The same as No. 11 except that the Melodant perforation is off.  This
+	should produce the very softest possible effects.
+	<br><br>
+	13. Bass and treble chords struck simultaneously without any marginal
+	perforations.  These notes should just barely speak.
 @COMMENTARY_POST: 
 @@END:		SAMPLE
 
@@ -58,6 +91,13 @@
 @NUMBER:	10
 @DESCRIPTION:	10. Loudness tests.
 @COMMENTARY:	
+	Text for this sample:
+	<br><br>
+	19. Three chords struck with treble Melodant and center controls H, J, K, M
+	open respectively.  All four of these controls should have the same dynamic
+	force (a slightly step above the three chords struck with Melodant only
+	in test No. 18.).
+		
 @COMMENTARY_POST: 
 @@END:		SAMPLE
 

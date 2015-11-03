@@ -17,7 +17,8 @@
 @NOTE:		
 
 @COMMENTARY:    Artrio tester roll continued from
-		<a href=../artrio-1a>previous page</a>.
+		<a href=../artrio-1c>previous page</a>,
+		<a href=../artrio-1e>next page</c>.
 
 @@BEGIN:	SAMPLE
 @NUMBER:	16
@@ -30,6 +31,15 @@
 @NUMBER:	17
 @DESCRIPTION:	Rachmaninoff repeated note test.
 @COMMENTARY:	
+		Text in sample:
+		<br><br>
+		24. A portion of Rachmaninoff's Prelude in C minor, played by Buhlig.
+		This test is made to ascertain whether or not quickly repeated notes
+		will play on light pressure.  If these repeated notes do not just
+		barely speak, you have made an error in setting the dynamics in the 
+		first test, and it will be necessary for you to slightly
+		increase the tone values at the very start.
+		
 @COMMENTARY_POST: 
 @@END:		SAMPLE
 
@@ -44,6 +54,9 @@
 @NUMBER:	19
 @DESCRIPTION:	Liszt Etude sample 1
 @COMMENTARY:	
+		Text in sample:
+		<br><br>
+		25. A portion of Liszt's "Etude in D flat," played by Mme. Mero.
 @COMMENTARY_POST: 
 @@END:		SAMPLE
 
@@ -51,6 +64,10 @@
 @NUMBER:	20
 @DESCRIPTION:	Liszt Etude sample 2
 @COMMENTARY:	
+		Text in sample:
+		<br><br>
+		26. The melody in the treble standing out clearly above the 
+		accompaniment.
 @COMMENTARY_POST: 
 @@END:		SAMPLE
 

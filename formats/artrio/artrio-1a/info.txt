@@ -18,11 +18,35 @@
 
 @COMMENTARY:    Artrio tester roll continued on
 		<a href=../artrio-1b>next page</a>.
+	
+		<br><br>
+		<a target="_new" href="http://www.pianola.org/reproducing/reproducing_artrio.cfm">
+		Information about the 
+		Artrio-Angelus company</a>.
 
 @@BEGIN:	SAMPLE
 @NUMBER:	01
 @DESCRIPTION:	Leader with textual description.
 @COMMENTARY:	
+		Text in sample:
+		<br><br>
+		NOTICE: This music sheet and record is covered by and
+		made under United States Letters Patent dated December 6th, 1900;
+		October 31, 1905; and <a target="_new" href="https://www.google.com/patents/US1016862"https://www.google.com/patents/US1016862>February 6th, 1912</a>; and is sold by THE 
+		WILCOX & WHITE COMPANY on condition and with the license restrictions
+		that the use of the said sheet or record for the purpose
+		of reproducing or aiding in the reproductions, directly or
+		indirectly, of duplicate or substantially duplicate sheets or
+		or records, is expressly prohibited.  This license is good
+		only so long as this notice appears heron unaltered and undefaced,
+		and the acceptance of this sheet or record is
+		an acceptance of these terms.
+		<br><br>
+		DIRECTIONS FOR PLAYING ARTRIO MUSIC ROLLS:
+		To faithfully reproduce this interpretation it is necessary to
+		have the MELODANT lever in its extreme RIGHT hand position and
+		the SUSTAINING PEDAL lever in its extreme LEFT hand position.
+		<br>SET THE TEMPO AS INDICATED ON THE MUSIC ROLL.
 @COMMENTARY_POST: 
 @@END:		SAMPLE
 
@@ -32,6 +56,20 @@
 		chromatic notes up from the bottom of the keyboard. 10 notes,
 		in V morse code pattern.
 @COMMENTARY:	
+		Text in sample:
+		<br><br>
+		The printed instructions preceding each test, explain just what
+		each test is made for and what results should be obtained.
+		<br><br>
+		1. All marginal perforations, except re-roll, sustaining pedal
+		and key shift, both bass and treble opened so that you may be
+		able to ascertain whether or not the air passages are free
+		and that the vents or bleeds are open.
+		<br><br>
+		2. The Chromatic scale repeat test.   Operate tempo at 50.
+		Each note should play very softly and repeated quickly.  If you 
+		wish to try repetition faster, set tempo at 80 and hold crescendo
+		lever about half way open.
 @COMMENTARY_POST: 
 @@END:		SAMPLE
 
@@ -40,13 +78,21 @@
 @DESCRIPTION:	Start of loudness testing. Bottom register (42 notes)
 		Then top register (42 notes).
 @COMMENTARY:	
+		Text in sample:
+		<br><br>
+		3. The Chromatic scale played on high pressure.  This is to make
+		sure that all tubes are free, that the vents or bleeds are the
+		proper size and that the valve mechanism, etc. are operating 
+		correctly.
 @COMMENTARY_POST: 
 @@END:		SAMPLE
 
 @@BEGIN:	SAMPLE
 @NUMBER:	04
-@DESCRIPTION:	Middle of loudness testing showing shift to upper register.
+@DESCRIPTION:	Middle of chromatic loudness testing showing shift to upper register.
 @COMMENTARY:	
+		There are 42 notes in the bass register and 42 notes in the treble
+		register.
 @COMMENTARY_POST: 
 @@END:		SAMPLE
 
@@ -54,6 +100,13 @@
 @NUMBER:	05
 @DESCRIPTION:	Start of soft scale test.
 @COMMENTARY:	
+		Text in sample:
+		<br><br>
+		4. First test for setting the dynamics.  Tempo 70.  The runs should play
+		very softly, but every note should speak clearly.  To obtain proper
+		results, adjust springs on bass and treble chokers as required.
+		If strengthening the bass or treble choker springs does not
+		increase the tone, the spring on the center control should be stiffened.
 @COMMENTARY_POST: 
 @@END:		SAMPLE
 
