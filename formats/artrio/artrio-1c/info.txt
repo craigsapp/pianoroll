@@ -1,0 +1,60 @@
+@@BEGIN:	ROLL
+@ROLL:		018
+@LABEL:		Artrio-Angelus
+@RECUTTER:
+@LOCATION:	
+@CATALOG:	
+@MECHANISM:	Artrio
+@HOLES:		
+@SPACING:	
+@EXPRESSION:	yes
+@COMPOSER:	
+@PERFORMER:	
+@EXPRESSIONIST:	
+@WORK:		Artrio tester
+@SEARCHWORKS:	
+@BARCODE:	
+@NOTE:		
+
+@COMMENTARY:    Artrio tester roll continued from
+		<a href=../artrio-1a>previous page</a>.
+
+@@BEGIN:	SAMPLE
+@NUMBER:	11
+@DESCRIPTION:	11. Treble crescendo test, first part.
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@NUMBER:	12
+@DESCRIPTION:	12. Treble crescendo test, second part.
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@NUMBER:	13
+@DESCRIPTION:	13. Another treble crescendo test, first part.
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@NUMBER:	14
+@DESCRIPTION:	14. Another treble crescendo test, second part.
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@NUMBER:	15
+@DESCRIPTION:	15. Another dynamics test.
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@END:		ROLL
+
+
+

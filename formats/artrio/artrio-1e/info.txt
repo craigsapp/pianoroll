@@ -1,0 +1,60 @@
+@@BEGIN:	ROLL
+@ROLL:		018
+@LABEL:		Artrio-Angelus
+@RECUTTER:
+@LOCATION:	
+@CATALOG:	
+@MECHANISM:	Artrio
+@HOLES:		
+@SPACING:	
+@EXPRESSION:	yes
+@COMPOSER:	
+@PERFORMER:	
+@EXPRESSIONIST:	
+@WORK:		Artrio tester
+@SEARCHWORKS:	
+@BARCODE:	
+@NOTE:		
+
+@COMMENTARY:    Artrio tester roll continued from
+		<a href=../artrio-1a>previous page</a>.
+
+@@BEGIN:	SAMPLE
+@NUMBER:	21
+@DESCRIPTION:	Liszt Etude, sample 3 with melody in bass.
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@NUMBER:	22
+@DESCRIPTION:	Liszt Etude, sample 4, loud section.
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@NUMBER:	23
+@DESCRIPTION:	Liszt Etude, sample 5, octave melody.
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@NUMBER:	24
+@DESCRIPTION:	Godowsky staccato test.
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@NUMBER:	25
+@DESCRIPTION:	Godowsky tremendous crescendo.
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@END:		ROLL
+
+
+

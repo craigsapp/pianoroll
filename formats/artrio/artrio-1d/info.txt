@@ -1,0 +1,60 @@
+@@BEGIN:	ROLL
+@ROLL:		018
+@LABEL:		Artrio-Angelus
+@RECUTTER:
+@LOCATION:	
+@CATALOG:	
+@MECHANISM:	Artrio
+@HOLES:		
+@SPACING:	
+@EXPRESSION:	yes
+@COMPOSER:	
+@PERFORMER:	
+@EXPRESSIONIST:	
+@WORK:		Artrio tester
+@SEARCHWORKS:	
+@BARCODE:	
+@NOTE:		
+
+@COMMENTARY:    Artrio tester roll continued from
+		<a href=../artrio-1a>previous page</a>.
+
+@@BEGIN:	SAMPLE
+@NUMBER:	16
+@DESCRIPTION:	Continuation of test in sample 15.
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@NUMBER:	17
+@DESCRIPTION:	Rachmaninoff repeated note test.
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@NUMBER:	18
+@DESCRIPTION:	Rachmaninoff part 2
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@NUMBER:	19
+@DESCRIPTION:	Liszt Etude sample 1
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@BEGIN:	SAMPLE
+@NUMBER:	20
+@DESCRIPTION:	Liszt Etude sample 2
+@COMMENTARY:	
+@COMMENTARY_POST: 
+@@END:		SAMPLE
+
+@@END:		ROLL
+
+
+
