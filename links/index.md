@@ -4,8 +4,12 @@ breadcrumbs: [['/','home']]
 title: Links
 ---
 
+<script src="slink.js"></script>
+<link rel="stylesheet" href="slink.css">
+
 <script>
 // vim: ts=3
+
 
 
 document.addEventListener("DOMContentLoaded", function() {

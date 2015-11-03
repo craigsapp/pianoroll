@@ -14,5 +14,7 @@ details.link-category > summary {
 	outline: none;
 }
 
-
+.url-note {
+	color: #ddd;
+}
 

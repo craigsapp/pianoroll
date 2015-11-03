@@ -19,12 +19,12 @@
 @@BEGIN:	LINK
 @TITLE:		Wikipedia
 @URL:		https://en.wikipedia.org/wiki/Piano_roll
-@URL2:		https://en.wikipedia.org/wiki/Music_roll
-@URL3:		https://en.wikipedia.org/wiki/Player_piano
-@URL4:		https://en.wikipedia.org/wiki/Welte-Mignon
-@URL5:		https://en.wikipedia.org/wiki/American_Piano_Company
-@URL6:		https://en.wikipedia.org/wiki/Aeolian_Company
-@URL7:		https://en.wikipedia.org/wiki/Duo-Art
+@URL:		https://en.wikipedia.org/wiki/Music_roll
+@URL:		https://en.wikipedia.org/wiki/Player_piano
+@URL:		https://en.wikipedia.org/wiki/Welte-Mignon
+@URL:		https://en.wikipedia.org/wiki/American_Piano_Company
+@URL:		https://en.wikipedia.org/wiki/Aeolian_Company
+@URL:		https://en.wikipedia.org/wiki/Duo-Art
 @DESCRIPTION:	Wikipedia articles related to piano rolls.
 @CREATION-DATE:	Fri Oct 23 16:21:01 PDT 2015
 @EDIT-DATE:	Fri Oct 23 16:21:04 PDT 2015
@@ -261,6 +261,8 @@
 @SUBCATEGORY2:	
 @@END:		LINK
 
+
+
 @@BEGIN:	LINK
 @TITLE:		Rex Lawson playing a Pianola
 @URL:		https://www.youtube.com/watch?v=D5aNuSmL5Ek
@@ -276,11 +278,27 @@
 
 
 
+@@BEGIN:	LINK
+@TITLE:		Opening an 88-note Upright Player Piano, John A. Tuttle
+@URL:		https://www.youtube.com/watch?v=dOFpGcDfg7U#t=10
+@DESCRIPTION:	Shows how to place a roll on a player piano.
+@CREATION-DATE:	Mon Nov  2 23:05:45 PST 2015
+@EDIT-DATE:	Mon Nov  2 23:05:47 PST 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	How-to
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
 @ Books @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 @@BEGIN:	LINK
 @TITLE:		The Welte-Mignon: Its music and musicians
 @URL:		https://searchworks.stanford.edu/view/2944024
+@URL:		https://books.google.com/books?id=akE5AQAAIAAJ
 @DESCRIPTION:	By Charles David Smith and Richard James Howe. Vestal Press, 1994. 975pp.
 		Complete catalogue of Welte-Mignon reproducing piano recordings,
 		1905-1932; historical overview of companies and individuals;
@@ -311,6 +329,23 @@
 
 
 
+@@BEGIN:	LINK
+@TITLE:		Player Piano: Servicing and Rebuilding, Arthur A. Reblitz
+@URL:		https://books.google.com/books?id=g4Hy3XjEx6kC
+@DESCRIPTION:	Chapter 7: Reproducing Pianos and Expression Pianos:
+		Ampico, Stoddard-Ampico, Ampico A, Ampico B, Duo-Art, Welte
+		Mignon, Art Apollo, Hupfeld Phonoliszt, Recordo, Thermodist.
+@CREATION-DATE:	Mon Nov  2 20:27:35 PST 2015
+@EDIT-DATE:	Mon Nov  2 20:27:38 PST 2015
+@CATEGORY:	Books
+@SUBCATEGORY:	Pianola
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
 @ Papers @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 @@BEGIN:	LINK
@@ -319,6 +354,26 @@
 @DESCRIPTION:	
 @CREATION-DATE:	Fri Oct 23 16:16:23 PDT 2015
 @EDIT-DATE:	Fri Oct 23 16:16:26 PDT 2015
+@CATEGORY:	Papers
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		The Editing and Arrangement of Conlon Nancarrow's Studies for Disklavier and Synthesizers, by Robert Willey, 2012
+@URL:		http://conlonnancarrow.org/symposium/papers/willey/willey.htm
+@DESCRIPTION:	An overview of these methods is presented, along with a description work now underway to edit data scanned from the rolls, and to arrange it for the Yamaha Disklavier and synthesizers.
+		Figure 3: <a target="_new" href="http://conlonnancarrow.org/symposium/papers/willey/figures/TrackerBarLg.jpg">Photograph of tracker bar for Ampico</a> [A] piano
+		which description of expresison holes.
+		Figure 4: Dynamic levels for expression tracks, MIDI veolcity
+		mappings, figures 29 and 30.
+		Figure 5: function of additional expression tracks.
+@CREATION-DATE:	Mon Nov  2 20:19:14 PST 2015
+@EDIT-DATE:	Mon Nov  2 20:19:17 PST 2015
 @CATEGORY:	Papers
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
@@ -455,9 +510,9 @@
 @@BEGIN:	LINK
 @TITLE:		Anthony Ronbinson's Roll Scanner
 @URL:		http://www.semitone440.co.uk/scanner
+@URL:		https://www.dropbox.com/sh/jr1jhd0nnse86b2/AACZF6qXi_Gk_q1WFNUCazova Four sample roll scans and TIFF viewer (MS Windows)
 @DESCRIPTION:	150 dpi scanner based on CCD camera and rotary encoder.
 		<ul>
-		<li> <a href="https://www.dropbox.com/sh/jr1jhd0nnse86b2/AACZF6qXi_Gk_q1WFNUCazova?lst=">Four sample roll scans and TIFF viewer (MS Windows)</a>
 		</ul>
 @CREATION-DATE:	Fri Oct 23 21:44:35 PDT 2015
 @EDIT-DATE:	Fri Oct 23 21:44:37 PDT 2015
@@ -506,7 +561,9 @@
 @TITLE:		Denis Condon collection of reproducing pianos and rolls,
 		Stanford University
 @URL:		http://library.stanford.edu/blogs/stanford-libraries-blog/2014/09/introducing-denis-condon-collection-reproducing-pianos-and
-@URL2:		https://searchworks.stanford.edu/view/11400855
+@URL:		https://searchworks.stanford.edu/view/11400855
+@URL:		https://www.youtube.com/watch?time_continue=18&v=TxPEmNvUNcs (time lapse packing of the collection for trip from Australia to California)
+@URL:		https://www.youtube.com/watch?v=RaA0NtqZ8cU (moving player pianos)
 @DESCRIPTION:	Over 7500 rolls and ten players.  Acquired 2014.  Primarily
 		Welte Mignon, Duo-Art and Ampico reproducing rolls.
 @CREATION-DATE:	Sat Oct 24 14:45:07 PDT 2015
@@ -540,8 +597,8 @@
 @@BEGIN:	LINK
 @TITLE:		Richard Simonton Collection of Welte system-recorded piano rolls.
 @URL:		http://www.oac.cdlib.org/findaid/ark:/13030/c8988b41
-@URL2:		http://www.oac.cdlib.org/findaid/ark:/13030/c8988b41/admin
-@URL3:		http://www.oac.cdlib.org/findaid/ark:/13030/c8988b41/entire_text
+@URL:		http://www.oac.cdlib.org/findaid/ark:/13030/c8988b41/admin
+@URL:		http://www.oac.cdlib.org/findaid/ark:/13030/c8988b41/entire_text
 @DESCRIPTION:	University of Southern California, Special Collections, 
 		Collection no. 0176 boxes of Welte rolls, 
 		including master rolls.
@@ -652,8 +709,8 @@
 @@BEGIN:	LINK
 @TITLE:		The Buffalo Convention Piano Roll Specifications, Matthew Caulfield (2008)
 @URL:		http://www.mmdigest.com/Gallery/Tech/1908Buffalo.html
-@URL2:		http://www.mmdigest.com/Gallery/Tech/MTR-1908-12-08-v47-n24-p31.pdf
-@URL3:		http://www.mmdigest.com/Gallery/Tech/MTR-1908-12-26-v47-n26-p27.pdf
+@URL:		http://www.mmdigest.com/Gallery/Tech/MTR-1908-12-08-v47-n24-p31.pdf
+@URL:		http://www.mmdigest.com/Gallery/Tech/MTR-1908-12-26-v47-n26-p27.pdf
 @DESCRIPTION:	The Buffalo convention standardized the layout of piano rolls in America
 		after 1908 into two formats: for 88-keys (9 holes/inch) and 65-keys 
 		(6 holes/inch).
@@ -738,6 +795,35 @@
 
 
 
+@@BEGIN:	LINK
+@TITLE:		PLAYER PIANO ROLL TYPES
+@URL:		http://website.lineone.net/~agr/rollscan.html
+@URL:		http://website.lineone.net/~agr/rollscan2.html
+@URL:		http://website.lineone.net/~agr/rollscan3.html
+@DESCRIPTION:	A random assortment of different player piano rolls:
+		Charles & Baker 65-note roll, Angelus Melodant Artistyle 65-note roll,
+		Universal 65-note roll, Thermodist 88-note roll, 
+		Autograph-Metrostyle, Temporized, Full-Scale Uni-Record,
+		Temponome 88-note Artist Played roll, Philag 88-note
+		Artists Roll, Hupfeld Animatic 88-note roll,
+		Echo Dance Roll,
+		Empeco, Duo-Art, Artrio Angelus, Welte Mignon Green,
+		The World's Music Pianola Roll, Triphonloa (Hupfeld),
+		Kastonome, Aeolian Grand, Aeolian Solo Orchestrelle 
+		& Aeolian Organ (10-1/8" rolls, 12 holes per inch, 58
+		and 65 note rolls), Dalian Piano roll, Ampico
+		Mel-O-Dee Song Roll (Aeolian).
+@CREATION-DATE:	Mon Nov  2 20:06:18 PST 2015
+@EDIT-DATE:	Mon Nov  2 20:06:23 PST 2015
+@CATEGORY:	Technical information
+@SUBCATEGORY:	piano roll
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
 
 @ Software  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
@@ -789,8 +875,8 @@
 @@BEGIN:	LINK
 @TITLE:		Unroll
 @URL:		http://zulko.github.io/unroll
-@URL2:		https://github.com/Zulko/-sheet-music--Gerhswin-Limehouse-Nights
-@URL3:		https://www.youtube.com/watch?v=wMsEbYCh7yY	
+@URL:		https://github.com/Zulko/-sheet-music--Gerhswin-Limehouse-Nights
+@URL:		https://www.youtube.com/watch?v=wMsEbYCh7yY	
 @DESCRIPTION:	Software that reads videos of piano rolls and 
 		converts to MIDI files.
 @CREATION-DATE:	Sat Oct 31 01:16:58 PDT 2015
@@ -802,17 +888,93 @@
 @SUBCATEGORY2:	
 @@END:		LINK
 
+
+
 @@BEGIN:	LINK
 @TITLE:		Online Sequencer
 @URL:		http://onlinesequencer.net
-@URL2:		http://onlinesequencer.net/import2/b85f5b610e2380688459773714039d15?title=Deluxe-Y6386_ChoPiano%25281922%2529_eRollMIDIWexp.mid
-@URL3:		https://www.youtube.com/watch?v=QSKqgRL0YMQ
+@URL:		http://onlinesequencer.net/import2/b85f5b610e2380688459773714039d15?title=Deluxe-Y6386_ChoPiano%25281922%2529_eRollMIDIWexp.mid
+@URL:		https://www.youtube.com/watch?v=QSKqgRL0YMQ
 @DESCRIPTION:	Load MIDI files (such as piano roll transcriptions)
 		and play in a web browser.
 @CREATION-DATE:	Sat Oct 31 16:23:51 PDT 2015
 @EDIT-DATE:	Sat Oct 31 16:23:54 PDT 2015
 @CATEGORY:	Software
 @SUBCATEGORY:	Online
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Music Animation Machine player
+@URL:		http://www.musanim.com/player
+@DESCRIPTION:	Loads MIDI files and displays as horizontal
+		piano roll while playing.
+@CREATION-DATE:	Tue Nov  3 00:00:38 PST 2015
+@EDIT-DATE:	Tue Nov  3 00:00:42 PST 2015
+@CATEGORY:	Software
+@SUBCATEGORY:	MIDI
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@ Websites  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@BEGIN:	LINK
+@TITLE:		John Tuttle's Player-Care
+@URL:		http://www.player-care.com
+@DESCRIPTION:	Lists of repair technicians in the United States;
+		supplies, manuals, books.
+@CREATION-DATE:	Mon Nov  2 23:03:10 PST 2015
+@EDIT-DATE:	Mon Nov  2 23:03:13 PST 2015
+@CATEGORY:	Websites
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Stanford Reactions to the Record Symposium 2015: The Player Piano Project
+@URL:		http://web.stanford.edu/dept/music/Events/StanfordMusicSymposium/2015/schedule.html
+@URL:		http://events.stanford.edu/events/495/49503
+@URL:		https://library.stanford.edu/projects/player-piano-project/video
+@URL:		http://www.smdailyjournal.com/articles/arts/2015-04-24/stanford-symphony-takes-on-piano-robot/1776425142177.html
+@DESCRIPTION:	Schedule for symposium.  List of speakers.
+@CREATION-DATE:	Mon Nov  2 23:10:14 PST 2015
+@EDIT-DATE:	Mon Nov  2 23:10:16 PST 2015
+@CATEGORY:	Websites
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Stanford Player Piano Project
+@URL:		http://library.stanford.edu/projects/player-piano-project
+@DESCRIPTION:   The Player Piano Project promotes study and research
+		into all aspects relating to the player piano and
+		organ, especially as they relate to historically
+		informed performance practice of the late nineteenth
+		and early twentieth centuries.  The Project seeks
+		to bring together researchers, musicians, and others
+		interested in contributing to knowledge of the player 
+		piano and organ.
+@CREATION-DATE:	Mon Nov  2 23:12:43 PST 2015
+@EDIT-DATE:	Mon Nov  2 23:12:48 PST 2015
+@CATEGORY:	Websites
+@SUBCATEGORY:	
 @SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
@@ -838,7 +1000,7 @@
 @@BEGIN:	LINK
 @TITLE:		The Pianola Institute
 @URL:		http://www.pianola.org/
-@URL2:		http://www.pianola.org/history/history.cfm
+@URL:		http://www.pianola.org/history/history.cfm
 @DESCRIPTION:	Detailed information about Pianolas.  Publishers
 		of the Pianola Journal.
 @CREATION-DATE:	Sat Oct 31 16:14:55 PDT 2015
@@ -881,6 +1043,41 @@
 @DESCRIPTION:	Winnipeg, Manitoba, Canada.
 @CREATION-DATE:	Sat Oct 24 21:54:02 PDT 2015
 @EDIT-DATE:	Sat Oct 24 21:54:05 PDT 2015
+@CATEGORY:	People
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Joshua G. Rapier
+@URL:		http://www.reproducingpianos.com
+@URL:		http://www.reproducingpianos.com/Recordings.htm (recordings on restored pianos)
+@DESCRIPTION:	Specializing in all Reproducing Pianos including: 
+		Ampico, Duo-Art, Welte-Mignon & Artrio-Angelus. 
+		Southern California.
+@CREATION-DATE:	Mon Nov  2 23:00:21 PST 2015
+@EDIT-DATE:	Mon Nov  2 23:00:24 PST 2015
+@CATEGORY:	People
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Rex Lawson
+@URL:		https://www.youtube.com/watch?time_continue=21&v=c9r13Phxw7U
+@DESCRIPTION:	Rex performing Rachmaninoff's Prelude in E-flat major, 
+		Op. 23, No. 6 on a pianola, Stanford University,
+		18 April 2015.
+@CREATION-DATE:	Mon Nov  2 23:21:15 PST 2015
+@EDIT-DATE:	Mon Nov  2 23:21:18 PST 2015
 @CATEGORY:	People
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
