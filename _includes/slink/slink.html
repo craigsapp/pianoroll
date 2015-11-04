@@ -11,15 +11,95 @@
 //                Formatted for use with Jekyll and liquid templates
 //
 
-var LINKS = null;
-var LINKS = new SLINK;
+
 
 SLINK.renderSearchForm = function() { return "Error"; };
+SLINK.renderSubmitButton = function() { return "Error"; };
+SLINK.submitFormUrl = 'https://docs.google.com/forms/d/' + 
+		'1ytEu0BXSK9cfVn2Gnhjg2jP5zB_Hask0LyN63R3jxK8/viewform';
+
+var LINKS = new SLINK;
 
 document.addEventListener('DOMContentLoaded', function() {
 	SLINK.renderSearchForm = Handlebars.compile(
 		document.querySelector('#slink-search-template').innerHTML);
+	SLINK.renderSubmitButton = Handlebars.compile(
+		document.querySelector('#slink-submit-template').innerHTML);
+	addSubmitButton();
 });
+
+
+
+//////////////////////////////
+//
+// addSubmitButton --
+//
+
+function addSubmitButton() {
+	var h1 = document.querySelector("h1");
+	if (!h1) {
+		returnl;
+	}
+	var output = h1.innerHTML;
+	output += SLINK.renderSubmitButton();
+	h1.innerHTML = output;
+}
+
+
+
+//////////////////////////////
+//
+// goToSubmitForm --
+//
+
+function goToSubmitForm() {
+	if (SLINK.submitFormUrl) {
+		var a = document.createElement('A');
+		a.href = SLINK.submitFormUrl;
+		a.target = '_new';
+		a.style.display = 'none';
+		document.body.appendChild(a);
+		a.click();
+		// document.location.href = SLINK.submitFormUrl;
+	}
+}
+
+
+</script>
+
+
+{% raw %}
+<!--
+///////////////////////////////////////////////////////////////////////////
+//
+// Handlebars templates
+//
+
+//////////////////////////////
+//
+// slink-search-template -- Display the search form for a list of links.
+//
+-->
+
+<script id="slink-entry-template" type="text/x-handlebars-template">
+
+{{#each this}}
+	<details class="link-entry" open>
+		<summary class="link-entry">
+			{{{TITLE}}}
+		</summary>
+		{{#if URL}}{{{url URL}}}{{/if}}
+		{{#if URL2}}{{{url URL2}}}{{/if}}
+		{{#if URL3}}{{{url URL3}}}{{/if}}
+		{{#if URL4}}{{{url URL4}}}{{/if}}
+		{{#if URL5}}{{{url URL5}}}{{/if}}
+		{{#if URL6}}{{{url URL6}}}{{/if}}
+		{{#if URL7}}{{{url URL7}}}{{/if}}
+		{{#if URL8}}{{{url URL8}}}{{/if}}
+		{{#if URL9}}{{{url URL9}}}{{/if}}
+		<p>{{{DESCRIPTION}}}</p>
+	</details>
+{{/each}}
 
 </script>
 
@@ -32,15 +112,17 @@ document.addEventListener('DOMContentLoaded', function() {
 //
 -->
 
-
-{% raw %}
 <script id="slink-search-template" type="text/x-handlebars-template">
 
 <form class="form-inline no-print" style="margin-bottom:30px;">
 	<div class="form-group">
-		<input id="search-text" onkeypress="suppressEnter(event);" 
-			style="width:30em;" onkeyup="LINKS.doSearch(event);" 
-			type="text" width="15" class="form-control" placeholder="Search">
+		<input id="search-text"
+			class="form-control" 
+			type="text" 
+			placeholder="Search"
+			onkeypress="suppressEnter(event);" 
+			onkeyup="LINKS.doSearch(event);" 
+		>
 	</div>
 	<div style="position:relative; top:-2px" class="form-group">
 		<div style="margin-left:10px;" class="checkbox">
@@ -53,34 +135,52 @@ document.addEventListener('DOMContentLoaded', function() {
 			</label>
 		</div>
 	</div>
-
 	<div style="float:right; display:inline;">
 		<table style="padding-top:0px; margin-bottom:1px;" 
 				class="search-navigator"><tbody><tr><td>
 			<div style="color: #909ca1; padding-right:10px; display:inline;" 
 				id="link-count"></div>
 		</td><td style="padding:2px;">
-			<div style="display:inline" class="btn-group" role="group" aria-label="...">
-
-  				<button type="button" class="btn btn-default btn-open" onclick="openAllLinks();">
+			<div style="display:inline" 
+					class="btn-group" role="group" aria-label="...">
+  				<button type="button" class="btn btn-default btn-open" 
+						onclick="openAllLinks();">
 					open
 				</button>
-
-  				<button type="button" class="btn btn-default btn-clear" onclick="clearSearch();">
+  				<button type="button" class="btn btn-default btn-clear" 
+						onclick="clearSearch();">
 					clear
 				</button>
-
-  				<button type="button" class="btn btn-default btn-close" onclick="closeAllLinks();">
+  				<button type="button" class="btn btn-default btn-close" 
+						onclick="closeAllLinks();">
 					close
 				</button>
-
 		</div>
 		</td></tr></tbody></table>
 	</div>
-
 </form>
 
 </script>
+
+
+
+<!--
+//////////////////////////////
+//
+// slink-submit-template -- Display a submit button for the links.
+//
+-->
+
+<script id="slink-submit-template" type="text/x-handlebars-template">
+
+<span class="submit-button" onclick="goToSubmitForm();">
+	Submit an entry
+</span>
+
+</script>
+
+
 {% endraw %}
+
 
 

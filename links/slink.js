@@ -41,6 +41,8 @@ var EscKey       =  27;
 
 
 
+
+
 //////////////////////////////
 //
 // SLINK constructor -- The slink object is used to manage
@@ -51,6 +53,11 @@ function SLINK() {
 	this.flatList = [];
 	this.categoryList = {};
 	this.entryTemplate = "";
+	this.renderSearchForm = function() { return "Error"; };
+	this.renderSubmitButton = function() { return "Error"; };
+	this.submitFormUrl = 'https://docs.google.com/forms/d/' + 
+			'1ytEu0BXSK9cfVn2Gnhjg2jP5zB_Hask0LyN63R3jxK8/viewform';
+
 
 	this.defaultEntryTemplate =									  '\n' +
 		'{{#each this}}													\n' +
