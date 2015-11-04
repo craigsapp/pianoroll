@@ -434,60 +434,8 @@ div.tleft {
 }
 
 
-/* Bootstrap button styling */
-/*
-	
-.btn {
-	padding: 14px 24px;
-	border: 0 none;
-	font-weight: 700;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-}
-	
-.btn:focus, .btn:active:focus, .btn.active:focus {
-	outline: 0 none;
-}
-	
-.btn-primary {
-	background: #0099cc;
-	color: #ffffff;
-}
-	
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-	background: #33a6cc;
-}
-	
-.btn-primary:active, .btn-primary.active {
-	background: #007299;
-	box-shadow: none;
-}
-
-*/
-
-.btn-open  { min-height:1.3rem; background-color: #f6fff6; }
-.btn-close { min-height:1.3rem; background-color: #fff6f6; }
-.btn-clear { min-height:1.3rem; background-color: #f0f0ff; }
-.btn-brief { min-height:1.3rem; background-color: #f0f0ff; }
-
-.btn-default.btn-open:hover  { background-color: #c6efc6 !important; }
-.btn-default.btn-close:hover { background-color: #f8b6b6 !important; }
-.btn-default.btn-clear:hover { background-color: #c0c0ff !important; }
-.btn-default.btn-brief:hover { background-color: #c0c0ff !important; }
-
 table.search-navigator td {
 	padding: 0;
-}
-
-
-.btn-small {
-	font-size:70%;
-	height: 20px;
-	padding: 4px 4px;
-}
-
-.btn:focus {
-	outline: none;
 }
 
 

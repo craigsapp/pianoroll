@@ -1,0 +1,86 @@
+<script>
+//
+// Programmer:    Craig Stuart Sapp <craig@ccrma.stanford.edu>
+// Creation Date: Tue Nov  3 15:37:48 PST 2015
+// Last Modified: Tue Nov  3 15:37:51 PST 2015
+// Filename:      templates.js
+// Syntax:        JavaScript 1.8.5/ECMAScript 5.1
+// vim:           ts=3 hlsearch
+//
+// Description:   Handlebars templates and helper functions for slink.
+//                Formatted for use with Jekyll and liquid templates
+//
+
+var LINKS = null;
+var LINKS = new SLINK;
+
+SLINK.renderSearchForm = function() { return "Error"; };
+
+document.addEventListener('DOMContentLoaded', function() {
+	SLINK.renderSearchForm = Handlebars.compile(
+		document.querySelector('#slink-search-template').innerHTML);
+});
+
+</script>
+
+
+
+<!--
+//////////////////////////////
+//
+// slink-search-template -- Display the search form for a list of links.
+//
+-->
+
+
+{% raw %}
+<script id="slink-search-template" type="text/x-handlebars-template">
+
+<form class="form-inline no-print" style="margin-bottom:30px;">
+	<div class="form-group">
+		<input id="search-text" onkeypress="suppressEnter(event);" 
+			style="width:30em;" onkeyup="LINKS.doSearch(event);" 
+			type="text" width="15" class="form-control" placeholder="Search">
+	</div>
+	<div style="position:relative; top:-2px" class="form-group">
+		<div style="margin-left:10px;" class="checkbox">
+			<label onclick="LINKS.doSearch(event);">
+				<input id="search-scope" onkeypress="suppressEnter(event)" ;="" 
+					type="checkbox" value="">
+				<span style="color:#909ca1; margin-left:3px; position:relative; top:0px;">
+					Titles only
+				</span>
+			</label>
+		</div>
+	</div>
+
+	<div style="float:right; display:inline;">
+		<table style="padding-top:0px; margin-bottom:1px;" 
+				class="search-navigator"><tbody><tr><td>
+			<div style="color: #909ca1; padding-right:10px; display:inline;" 
+				id="link-count"></div>
+		</td><td style="padding:2px;">
+			<div style="display:inline" class="btn-group" role="group" aria-label="...">
+
+  				<button type="button" class="btn btn-default btn-open" onclick="openAllLinks();">
+					open
+				</button>
+
+  				<button type="button" class="btn btn-default btn-clear" onclick="clearSearch();">
+					clear
+				</button>
+
+  				<button type="button" class="btn btn-default btn-close" onclick="closeAllLinks();">
+					close
+				</button>
+
+		</div>
+		</td></tr></tbody></table>
+	</div>
+
+</form>
+
+</script>
+{% endraw %}
+
+

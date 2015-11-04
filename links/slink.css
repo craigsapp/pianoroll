@@ -2,7 +2,7 @@
 
 details.link-entry > summary {
 	cursor: pointer;
-	font-size: 1.5rem;
+	font-size: 1.0rem;
 	color: #d77942;
 	outline: none;
 }
@@ -10,7 +10,7 @@ details.link-entry > summary {
 details.link-category > summary {
 	cursor: pointer;
 	color: #42a779;
-	font-size: 2rem;
+	font-size: 1.20rem;
 	outline: none;
 }
 
@@ -18,3 +18,43 @@ details.link-category > summary {
 	color: #ddd;
 }
 
+
+body {
+	counter-reset: category;
+}
+
+summary.category:before {
+	counter-increment: category;
+	content: counter(category) ". ";
+	display: inline-block;
+	margin: 0.5rem;
+	width: 2.0rem;
+	text-align: right;
+}
+
+
+/***** Bootstrap styling overlay *****/
+
+.btn-open  { min-height:1.3rem; background-color: #f6fff6; }
+.btn-close { min-height:1.3rem; background-color: #fff6f6; }
+.btn-clear { min-height:1.3rem; background-color: #f0f0ff; }
+.btn-brief { min-height:1.3rem; background-color: #f0f0ff; }
+
+.btn-default.btn-open:hover  { background-color: #c6efc6 !important; }
+.btn-default.btn-close:hover { background-color: #f8b6b6 !important; }
+.btn-default.btn-clear:hover { background-color: #c0c0ff !important; }
+.btn-default.btn-brief:hover { background-color: #c0c0ff !important; }
+
+.btn {
+	background-image: none;
+}
+
+.btn-small {
+	font-size:70%;
+	height: 20px;
+	padding: 4px 4px;
+}
+
+.btn:focus {
+	outline: none;
+}
