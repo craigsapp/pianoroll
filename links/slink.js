@@ -26,7 +26,7 @@
 // @CATEGORY2:      secondary category
 // @SUBCATEGORY2:   secondary sub-category
 // @END:   LINK
-//	
+//
 //
 
 'use strict';
@@ -49,7 +49,7 @@ var EscKey       =  27;
 //
 // SLINK constructor -- The slink object is used to manage
 //   list of categorized links.
-// 
+//
 
 function SLINK() {
 	this.flatList = [];
@@ -165,7 +165,7 @@ SLINK.prototype.linksToHtml = function () {
 
 //////////////////////////////
 //
-// SLINK.loadAtonLinks -- 
+// SLINK.loadAtonLinks --
 //
 
 SLINK.prototype.loadAtonLinks = function (element) {
@@ -245,7 +245,7 @@ SLINK.prototype.getSearchInterface = function () {
 
 //////////////////////////////
 //
-// SLINK.prototype.loadSearchInterface -- Given an element or null, 
+// SLINK.prototype.loadSearchInterface -- Given an element or null,
 //		fill in the appropriate element with a search form.
 //
 
@@ -463,7 +463,7 @@ function suppressEnter(event) {
 
 //////////////////////////////
 //
-// doSearch -- Perform a search on the link entries and 
+// doSearch -- Perform a search on the link entries and
 //   update the list of links with the search results.
 //
 // #search-text   = ID of search query field.
@@ -531,7 +531,7 @@ function openCategoryDetails() {
 
 /////////////////////////////
 //
-// getLinkMatches -- Return a list of the link entries which 
+// getLinkMatches -- Return a list of the link entries which
 //     match to the given query string.  The scope is "true" if
 //     only titles should be searched; otherwise, both title and
 //     the main entry text for the link will be searched.
@@ -545,8 +545,7 @@ SLINK.prototype.getLinkMatches = function(searchstring, scope)  {
 	searchstring = searchstring.replace(/ not /g, ' -');
 	searchstring = searchstring.replace(/ or /g, ' |');
 	var queries = searchstring.split(' ');
-console.log("GOT HERE AAA");
-	
+
 	var categories = this.getCategories();
 	var links;
 	var result = false;
@@ -666,13 +665,12 @@ SLINK.prototype.getCategory = function (index) {
 
 //////////////////////////////
 //
-// SLINK.prototype.displayAllLinks -- Show a complete list of all links.  
+// SLINK.prototype.displayAllLinks -- Show a complete list of all links.
 //  The contents of the LINKS object is expected to be complete.
 //
 
 SLINK.prototype.displayAllLinks = function () {
-console.log("GOT HERE IN displayAllLinks");
-	
+
 	var slinks = document.querySelectorAll('[class^="slink"]');
 	for (var i=0; i<slinks.length; i++) {
 		if (!slinks[i].title) {
@@ -774,7 +772,7 @@ SLINK.prototype.showMatchCounts = function (object) {
 //////////////////////////////
 //
 // getLinkCount -- Return the total number of link entries in
-//   the LINKS data structure.  This function will ignore the 
+//   the LINKS data structure.  This function will ignore the
 //   entries which are section headings.
 //
 
@@ -796,7 +794,7 @@ SLINK.prototype.getLinkCount = function (object) {
 
 function addLinkCategory(heading, templ, object) {
 	if (typeof object === 'undefined') {
-		object = LINKS;	
+		object = LINKS;
 	}
 	var entry = {
 		heading: heading,
@@ -808,6 +806,94 @@ function addLinkCategory(heading, templ, object) {
 	object.category.push(entry);
 }
 
+
+
+//////////////////////////////
+//
+// openCategoryLinks --
+//
+
+function openCategoryLinks(event) {
+
+	// don't let the click directly affect the category details click toggle:
+	event.stopPropagation();
+	event.preventDefault();
+	var element = event.target;
+	while (element.parentNode) {
+		if (element.nodeName === 'DETAILS') {
+			break;
+		}
+		element = element.parentNode;
+	}
+	if (element.nodeName !== 'DETAILS') {
+		return;
+	}
+	element.open = 'open';
+
+	var details = element.querySelectorAll('details.link-entry');
+	for (var i=0; i<details.length; i++) {
+		details[i].open = true;
+	}
+}
+
+
+
+//////////////////////////////
+//
+// closeCategoryLinks --
+//
+
+function closeCategoryLinks(index) {
+	// don't let the click directly affect the category details click toggle:
+	event.stopPropagation();
+	event.preventDefault();
+	var element = event.target;
+	while (element.parentNode) {
+		if (element.nodeName === 'DETAILS') {
+			break;
+		}
+		element = element.parentNode;
+	}
+	if (element.nodeName !== 'DETAILS') {
+		return;
+	}
+	if (element.open) {
+		element.removeAttribute('open');
+	}
+
+	var details = element.querySelectorAll('details.link-entry');
+	for (var i=0; i<details.length; i++) {
+		details[i].open = false;
+	}
+}
+
+
+
+//////////////////////////////
+//
+// closeEventLinks -- Minimize individual link entries (but
+//    does not affect category level (or subcategory levles).
+//
+
+function closeEventLinks(event) {
+	// don't let the click directly affect the category details click toggle:
+	event.stopPropagation();
+	event.preventDefault();
+	var element = event.target;
+	while (element.parentNode) {
+		if (element.nodeName === 'DETAILS') {
+			break;
+		}
+		element = element.parentNode;
+	}
+	if (element.nodeName !== 'DETAILS') {
+		return;
+	}
+	var details = element.querySelectorAll('details.link-entry');
+	for (var i=0; i<details.length; i++) {
+		details[i].open = false;
+	}
+}
 
 
 
