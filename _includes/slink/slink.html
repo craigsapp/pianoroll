@@ -18,9 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Fill in templates:
 	SLINK.prototype.searchTemplate = document.querySelector(
 			'#slink-search-template').innerHTML;
-	SLINK.prototype.submitTemplate = document.querySelector(
-			'#slink-submit-template').innerHTML;
-	SLINK.prototype.defaultEntryTemplate = document.querySelector(
+	SLINK.prototype.entryTemplate = document.querySelector(
 			'#slink-entry-template').innerHTML;
 	SLINK.prototype.catButtonsTemplate = document.querySelector(
 			'#slink-catbuttons-template').innerHTML;
@@ -30,10 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Fill in rendering functions:
 	SLINK.prototype.renderSearchForm = 
 			Handlebars.compile(SLINK.prototype.searchTemplate);
-	SLINK.prototype.renderSubmitButton = 
-			Handlebars.compile(SLINK.prototype.submitTemplate);
 	SLINK.prototype.renderLinkList = 
-			Handlebars.compile(SLINK.prototype.defaultEntryTemplate);
+			Handlebars.compile(SLINK.prototype.entryTemplate);
 	SLINK.prototype.renderCatButtons = 
 			Handlebars.compile(SLINK.prototype.catButtonsTemplate);
 	SLINK.prototype.renderCategoryList = 
@@ -45,11 +41,10 @@ document.addEventListener('DOMContentLoaded', function() {
 	setTimeout(showBriefListings, 100);
 
 	Handlebars.registerPartial('entryList', 
-			SLINK.prototype.defaultEntryTemplate);
+			SLINK.prototype.entryTemplate);
 	Handlebars.registerPartial('catButtons', 
 			SLINK.prototype.catButtonsTemplate);
 
-	addSubmitButton();
 });
 
 
@@ -69,41 +64,6 @@ function loadLinks(object) {
 			continue;
 		}
 		object.loadAtonLinks(slinks[i]);
-	}
-}
-
-
-//////////////////////////////
-//
-// addSubmitButton --
-//
-
-function addSubmitButton() {
-	var h1 = document.querySelector("h1");
-	if (!h1) {
-		returnl;
-	}
-	var output = h1.innerHTML;
-	output += SLINK.prototype.renderSubmitButton();
-	h1.innerHTML = output;
-}
-
-
-
-//////////////////////////////
-//
-// goToSubmitForm --
-//
-
-function goToSubmitForm() {
-	if (SLINK.submitFormUrl) {
-		var a = document.createElement('A');
-		a.href = SLINK.submitFormUrl;
-		a.target = '_new';
-		a.style.display = 'none';
-		document.body.appendChild(a);
-		a.click();
-		// document.location.href = SLINK.submitFormUrl;
 	}
 }
 
@@ -304,21 +264,6 @@ Handlebars.registerHelper('anchor', function(link) {
 </script>
 
 
-
-<!--
-//////////////////////////////
-//
-// slink-submit-template -- Display a submit button for the links.
-//
--->
-
-<script id="slink-submit-template" type="text/x-handlebars-template">
-
-<span class="submit-button" onclick="goToSubmitForm();">
-	Submit an entry
-</span>
-
-</script>
 
 {% endraw %}
 

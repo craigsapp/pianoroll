@@ -55,10 +55,6 @@ function SLINK() {
 	this.flatList = [];
 	this.categoryList = {};
 
-   // Other options:
-	this.submitFormUrl = 'https://docs.google.com/forms/d/' + 
-			'1ytEu0BXSK9cfVn2Gnhjg2jP5zB_Hask0LyN63R3jxK8/viewform';
-
 	return this;
 }
 
@@ -70,19 +66,17 @@ function SLINK() {
 //
 
 // Templates loaded later, defined in slink.html:
-SLINK.prototype.entryTemplate = '';
+SLINK.prototype.entryTemplate        = '';
 SLINK.prototype.defaultEntryTemplate = '';
-SLINK.prototype.searchTemplate = '';
-SLINK.prototype.submitTemplate = '';
-SLINK.prototype.catButtonsTemplate = '';
-SLINK.prototype.categoryTemplate = '';
+SLINK.prototype.searchTemplate       = '';
+SLINK.prototype.catButtonsTemplate   = '';
+SLINK.prototype.categoryTemplate     = '';
 
 // Template rendering functions, defined laster in slink.html:
 SLINK.prototype.renderSearchForm   = function() { return 'Error1'; };
-SLINK.prototype.renderSubmitButton = function() { return 'Error2'; };
-SLINK.prototype.renderLinkList     = function() { return 'Error3'; };
-SLINK.prototype.renderCatButtons   = function() { return 'Error4'; };
-SLINK.prototype.renderCategoryList = function() { return 'Error5'; };
+SLINK.prototype.renderLinkList     = function() { return 'Error2'; };
+SLINK.prototype.renderCatButtons   = function() { return 'Error3'; };
+SLINK.prototype.renderCategoryList = function() { return 'Error4'; };
 
 
 

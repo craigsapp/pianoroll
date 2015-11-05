@@ -6,8 +6,10 @@ title: Links
 
 <script src="slink.js"></script>
 <link rel="stylesheet" href="slink.css">
+<link rel="stylesheet" href="slink-extra.css">
 
 {% include slink/slink.html %}
+{% include slink/slink-extra.html %}
 
 
 
