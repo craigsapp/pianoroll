@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	LINKS = new SLINK;
 	LINKS.loadSearchInterface();
 	loadLinks(LINKS);
+	setTimeout(showBriefListings, 100);
 
 	Handlebars.registerPartial('entryList', 
 			SLINK.prototype.defaultEntryTemplate);
@@ -50,7 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	addSubmitButton();
 });
-
 
 
 //////////////////////////////
@@ -70,11 +70,7 @@ function loadLinks(object) {
 		}
 		object.loadAtonLinks(slinks[i]);
 	}
-console.log("GOT HERE AAA");
-	showBriefListings();
-console.log("GOT HERE BBB");
 }
-
 
 
 //////////////////////////////

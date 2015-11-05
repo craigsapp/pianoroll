@@ -419,11 +419,14 @@ function closeAllLinks() {
 
 function clearSearch() {
 	var element = document.querySelector('#search-text');
+	var count = 0;
 	if (element) {
 		element.value = '';
-		displayAllLinks(LINKS);
+		count = LINKS.displayAllLinks();
 	}
-	showBriefListings();
+	if (count > 1) {
+		showBriefListings();
+	}
 }
 
 
@@ -435,12 +438,13 @@ function clearSearch() {
 
 function showBriefListings() {
    // show a brief list of all links.
+	var i;
 	var details = document.querySelectorAll('details.link-entry');
-	for (var i=0; i<details.length; i++) {
+	for (i=0; i<details.length; i++) {
 		details[i].open = false;
 	}
 	var categories = document.querySelectorAll('details.link-category');
-	for (var i=0; i<categories.length; i++) {
+	for (i=0; i<categories.length; i++) {
 		categories[i].open = true;
 	}
 }
@@ -496,7 +500,7 @@ SLINK.prototype.doSearch = function (event) {
 		clearSearch();
 	} else {
    	var matches = LINKS.getLinkMatches(searchstring, scope);
-		this.displaySearchResults(matches);
+		matches.displaySearchResults();
 	}
 }
 
@@ -509,10 +513,9 @@ SLINK.prototype.doSearch = function (event) {
 //   so show the category when a new one appears in the list.
 //
 
-SLINK.prototype.displaySearchResults = function (links) {
-	var tempLINKS = buildSearchCategories(links);
-	displayAllLinks(tempLINKS);
-	var count = this.showMatchCounts(tempLINKS);
+SLINK.prototype.displaySearchResults = function () {
+	this.displayAllLinks();
+	this.showMatchCounts();
 	openCategoryDetails();
 }
 
@@ -541,13 +544,14 @@ function openCategoryDetails() {
 //
 
 SLINK.prototype.getLinkMatches = function(searchstring, scope)  {
-	var output = [];
+	var output = new SLINK;
 	searchstring = searchstring.replace(/^\s+/, '');
 	searchstring = searchstring.replace(/\s+$/, '');
 	searchstring = searchstring.replace(/\s+/g, ' ');
 	searchstring = searchstring.replace(/ not /g, ' -');
 	searchstring = searchstring.replace(/ or /g, ' |');
 	var queries = searchstring.split(' ');
+console.log("GOT HERE AAA");
 	
 	var categories = this.getCategories();
 	var links;
@@ -565,71 +569,70 @@ SLINK.prototype.getLinkMatches = function(searchstring, scope)  {
 	var j;
 	var k;
 	var m;
-	for (i=0; i<categories.length; i++) {
-		links = this.categoryList[categories[i]];
-		for (j=0; j<links.length; j++) {
-			if (!links[j].raw) {
-				links[j].raw = JSON.stringify(links[j]);
-			}
-			if (!links[j].search) {
-				// make this the accented character removed version:
-				links[j].search = JSON.stringify(links[j]);
-			}
-			if (!links[j].title) {
-				links[j].title = links[j].TITLE;
-			}
-			if (!links[j].titlesearch) {
-				links[j].titlesearch = links[j].TITLE;
-			}
-			results = [];
-			for (k=0; k<queries.length; k++) {
-				if (scope) {
-					// title only search
-					if (links[j].title.match(re[k])) {
-						results.push(true);
-					} else if (links[j].titlesearch.match(re[k])) {
-						results.push(true);
-					} else {
-						results.push(false);
-					}
+	links = this.flatList;
+	for (j=0; j<links.length; j++) {
+		if (!links[j].raw) {
+			links[j].raw = JSON.stringify(links[j]);
+		}
+		if (!links[j].search) {
+			// make this the accented character removed version:
+			links[j].search = JSON.stringify(links[j]);
+		}
+		if (!links[j].title) {
+			links[j].title = links[j].TITLE;
+		}
+		if (!links[j].titlesearch) {
+			links[j].titlesearch = links[j].TITLE;
+		}
+		results = [];
+		for (k=0; k<queries.length; k++) {
+			if (scope) {
+				// title only search
+				if (links[j].title.match(re[k])) {
+					results.push(true);
+				} else if (links[j].titlesearch.match(re[k])) {
+					results.push(true);
 				} else {
-					// full entry search
-					if (links[j].raw.match(re[k])) {
-						results.push(true);
-					} else if (links[j].search.match(re[k])) {
-						results.push(true);
-					} else {
-						results.push(false);
-					}
+					results.push(false);
 				}
-				if (queries[k].match(/^\|?-/)) {
-					results[k] = !results[k];
+			} else {
+				// full entry search
+				if (links[j].raw.match(re[k])) {
+					results.push(true);
+				} else if (links[j].search.match(re[k])) {
+					results.push(true);
+				} else {
+					results.push(false);
 				}
 			}
-			// Do AND search: all words must match,
-			// but also keeping track of OR states.
-			var result = results[0];
-			for (k=0; k<results.length; k++) {
-				if ((k+1 < results.length) && queries[k+1].match(/^\|/)) {
-					var oresult = results[k];
-					for (m=k+1; m<results.length; m++) {
-						if (queries[m].match(/^\|/)) {
-							oresult |= results[m];
-						} else {
-							break;
-						}
-					}
-					k += m - 1;
-					result = result || oresult;
-					continue;
-				}
-				result = result && results[k];
-			}
-			if (result) {
-				output.push(links[j]);
+			if (queries[k].match(/^\|?-/)) {
+				results[k] = !results[k];
 			}
 		}
+		// Do AND search: all words must match,
+		// but also keeping track of OR states.
+		var result = results[0];
+		for (k=0; k<results.length; k++) {
+			if ((k+1 < results.length) && queries[k+1].match(/^\|/)) {
+				var oresult = results[k];
+				for (m=k+1; m<results.length; m++) {
+					if (queries[m].match(/^\|/)) {
+						oresult |= results[m];
+					} else {
+						break;
+					}
+				}
+				k += m - 1;
+				result = result || oresult;
+				continue;
+			}
+			result = result && results[k];
+		}
+		if (result) {
+			output.addLinkEntry(links[j]);
+		}
 	}
+console.log("LINK MATCHES=", output.flatList.length);
 	return output;
 };
 
@@ -640,13 +643,13 @@ SLINK.prototype.getLinkMatches = function(searchstring, scope)  {
 // getCategories -- Return an array of all link categories.
 //
 
-SLINK.prototype.getCategories = function (object) {
-	if (typeof object === 'undefined') {
-		object = this.categoryList;
-	}
+SLINK.prototype.getCategories = function () {
 	var output = [];
-	for (var property in object) {
-		if (object.hasOwnProperty(property)) {
+	if (!this.categoryList) {
+		return output;
+	}
+	for (var property in this.categoryList) {
+		if (this.categoryList.hasOwnProperty(property)) {
 			output.push(property);
 		}
 	}
@@ -661,22 +664,30 @@ SLINK.prototype.getCategories = function (object) {
 //
 
 SLINK.prototype.getCategory = function (index) {
-	if (typeof object === 'undefined') {
-		object = this;
-	}
 	var cats = this.getCategories();
-	return this.getCategories(object)[index];
+	return cats[index];
 }
 
 
 
 //////////////////////////////
 //
-// displayAllLinks -- Show a complete list of all links.  The contents
-//  of the LINKS object is expected to be complete.
+// SLINK.prototype.displayAllLinks -- Show a complete list of all links.  
+//  The contents of the LINKS object is expected to be complete.
 //
 
-function displayAllLinks(object) {
+SLINK.prototype.displayAllLinks = function () {
+console.log("GOT HERE IN displayAllLinks");
+	
+	var slinks = document.querySelectorAll('[class^="slink"]');
+	for (var i=0; i<slinks.length; i++) {
+		if (!slinks[i].title) {
+			continue;
+		}
+		slinks[i].innerHTML = this.linksToHtml();
+	}
+
+/*
 	var count = 0;
 	var element = document.querySelector('#categories');
 	if (element) {
@@ -684,10 +695,12 @@ function displayAllLinks(object) {
 		element.innerHTML = html;
 		count = showMatchCounts(object);
 	}
+*/
+	var count = this.getLinkCount();
 	if (count == 1) {
 		openAllLinks();
 	} else if (count > 1) {
-		closeAllLinks();
+		showBriefListings();
 	}
 }
 
@@ -739,7 +752,7 @@ SLINK.prototype.showMatchCounts = function (object) {
 		if (count == 1) {
 			// if there is only one match, the display the link
 			// link expanded by default.
-			document.querySelector('details.category').open = true;
+			// document.querySelector('details.category').open = true;
 		}
 		linkcount.innerHTML = count;
 	}
@@ -753,10 +766,9 @@ SLINK.prototype.showMatchCounts = function (object) {
 	var counter;
 	for (var i=0; i<slots.length; i++) {
 		counter = 0;
-		for (var j=0; j<cat[i].links.length; j++) {
-			if (cat[i].links[j].type === 'link') {
-				counter++;
-			}
+		var list = this.categoryList[cat[i]];
+		if (list) {
+			counter += list.length;
 		}
 		slots[i].innerHTML = counter;
 	}
