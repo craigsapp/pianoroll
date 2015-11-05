@@ -23,7 +23,14 @@ details.link-category > summary {
 
 body {
 	counter-reset: category;
+}
+
+details.link-category {
 	line-height: 2.0;
+}
+
+details.link-entry {
+	line-height: 1.5;
 }
 
 summary.category:before {
