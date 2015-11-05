@@ -11,22 +11,69 @@
 //                Formatted for use with Jekyll and liquid templates
 //
 
-
-
-SLINK.renderSearchForm = function() { return "Error"; };
-SLINK.renderSubmitButton = function() { return "Error"; };
-SLINK.submitFormUrl = 'https://docs.google.com/forms/d/' + 
-		'1ytEu0BXSK9cfVn2Gnhjg2jP5zB_Hask0LyN63R3jxK8/viewform';
-
-var LINKS = new SLINK;
+var LINKS = null;
 
 document.addEventListener('DOMContentLoaded', function() {
-	SLINK.renderSearchForm = Handlebars.compile(
-		document.querySelector('#slink-search-template').innerHTML);
-	SLINK.renderSubmitButton = Handlebars.compile(
-		document.querySelector('#slink-submit-template').innerHTML);
+
+	// Fill in templates:
+	SLINK.prototype.searchTemplate = document.querySelector(
+			'#slink-search-template').innerHTML;
+	SLINK.prototype.submitTemplate = document.querySelector(
+			'#slink-submit-template').innerHTML;
+	SLINK.prototype.defaultEntryTemplate = document.querySelector(
+			'#slink-entry-template').innerHTML;
+	SLINK.prototype.catButtonsTemplate = document.querySelector(
+			'#slink-catbuttons-template').innerHTML;
+	SLINK.prototype.categoryTemplate = document.querySelector(
+			'#slink-list-template').innerHTML;
+
+	// Fill in rendering functions:
+	SLINK.prototype.renderSearchForm = 
+			Handlebars.compile(SLINK.prototype.searchTemplate);
+	SLINK.prototype.renderSubmitButton = 
+			Handlebars.compile(SLINK.prototype.submitTemplate);
+	SLINK.prototype.renderLinkList = 
+			Handlebars.compile(SLINK.prototype.defaultEntryTemplate);
+	SLINK.prototype.renderCatButtons = 
+			Handlebars.compile(SLINK.prototype.catButtonsTemplate);
+	SLINK.prototype.renderCategoryList = 
+			Handlebars.compile(SLINK.prototype.categoryTemplate);
+
+	LINKS = new SLINK;
+	LINKS.loadSearchInterface();
+	loadLinks(LINKS);
+
+	Handlebars.registerPartial('entryList', 
+			SLINK.prototype.defaultEntryTemplate);
+	Handlebars.registerPartial('catButtons', 
+			SLINK.prototype.catButtonsTemplate);
+
 	addSubmitButton();
 });
+
+
+
+//////////////////////////////
+//
+// loadLinks -- Display list of links on page.
+//
+
+function loadLinks(object) {
+	if (!object) {
+		object = LINKS;
+	}
+	
+	var slinks = document.querySelectorAll('[class^="slink"]');
+	for (var i=0; i<slinks.length; i++) {
+		if (!slinks[i].title) {
+			continue;
+		}
+		object.loadAtonLinks(slinks[i]);
+	}
+console.log("GOT HERE AAA");
+	showBriefListings();
+console.log("GOT HERE BBB");
+}
 
 
 
@@ -41,7 +88,7 @@ function addSubmitButton() {
 		returnl;
 	}
 	var output = h1.innerHTML;
-	output += SLINK.renderSubmitButton();
+	output += SLINK.prototype.renderSubmitButton();
 	h1.innerHTML = output;
 }
 
@@ -65,19 +112,68 @@ function goToSubmitForm() {
 }
 
 
-</script>
 
-
-{% raw %}
-<!--
 ///////////////////////////////////////////////////////////////////////////
 //
-// Handlebars templates
+// Handlebar helper functions --
 //
+
 
 //////////////////////////////
 //
-// slink-search-template -- Display the search form for a list of links.
+// anchor helper -- Create a hyperlink anchor, replacing spaces
+//    with underscores.
+//
+
+Handlebars.registerHelper('anchor', function(link) {
+	if (link) {
+		return '<a name="' + link.replace(/\s+/g, '_') + '"> </a>';
+	} else {
+		return '';
+	}
+});
+
+
+</script>
+
+
+
+<!--
+{% raw %}
+///////////////////////////////////////////////////////////////////////////
+//
+// Handlebars templates --
+//
+-->
+
+
+<!--
+//////////////////////////////
+//
+// slink-list-template -- Display the full list of categories.
+//
+-->
+
+<script id="slink-list-template" type="text/x-handlebars-template">
+
+{{#each this}}
+	{{{anchor @key}}}
+	<details open class="link-category">
+		<summary class="category">
+			{{@key}} {{> catButtons count=this.length}} 
+		</summary>
+		{{> entryList}}
+	</details>
+{{/each}}
+
+</script>
+
+
+
+<!--
+//////////////////////////////
+//
+// slink-entry-template -- Display the search form for a list of links.
 //
 -->
 
@@ -103,6 +199,55 @@ function goToSubmitForm() {
 
 </script>
 
+
+<!--
+//////////////////////////////
+//
+// slink-catbuttons-template -- Display button controls for 
+//     a category entry.
+//
+-->
+
+<script id="slink-catbuttons-template" type="text/x-handlebars-template">
+
+<div class="no-print" style="float:right; display:inline-block;">
+	<table><tr><td style="padding:0;">
+		<span style="color: #909ca1; font-size:80%; display:inline; position:relative; top:-2px;" 
+				class="category-link-count">
+			{{count}}
+		</span>
+	</td><td>
+		<div style="display:inline" class="btn-group" 
+				role="group" aria-label="...">
+
+					<button type="button" class="btn btn-default btn-small btn-open"
+					onclick="openCategoryLinks(event);">
+				<span class="category-open" style="position:relative; 
+						top:-5px">
+					open
+				</span>
+			</button>
+
+					<button type="button" class="btn btn-default btn-small btn-brief"
+					onclick="openCategoryLinks(event); closeEventLinks(event);">
+				<span class="category-brief" style="position:relative; 
+						top:-5px">
+					brief
+				</span>
+			</button>
+
+					<button type="button" class="btn btn-default btn-small btn-close"
+					onclick="closeCategoryLinks(event);">
+				<span class="category-close" style="position:relative; 
+						top:-5px">
+					close
+				</span>
+			</button>
+	</div>
+	</td></tr></table>
+</div>
+
+</script>
 
 
 <!--
@@ -179,8 +324,5 @@ function goToSubmitForm() {
 
 </script>
 
-
 {% endraw %}
-
-
 

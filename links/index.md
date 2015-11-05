@@ -9,29 +9,8 @@ title: Links
 
 {% include slink/slink.html %}
 
-<script>
-// vim: ts=3
 
 
-document.addEventListener("DOMContentLoaded", function() {
-	SLINK.loadSearchInterface();
-	loadLinks();
-});
-
-
-
-function loadLinks() {
-	var slinks = document.querySelectorAll('[class^="slink"]');
-	for (var i=0; i<slinks.length; i++) {
-		if (!slinks[i].title) {
-			continue;
-		}
-		LINKS.loadAtonLinks(slinks[i]);
-	}
-}
-
-
-</script>
 
 
 

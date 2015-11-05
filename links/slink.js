@@ -1,18 +1,22 @@
 //
 // Programmer:    Craig Stuart Sapp <craig@ccrma.stanford.edu>
 // Creation Date: Wed Oct 21 09:28:12 PDT 2015
-// Last Modified: Wed Oct 21 09:28:22 PDT 2015
+// Last Modified: Wed Nov  4 14:16:30 PST 2015
 // Filename:      slink.js
 // Syntax:        JavaScript 1.8.5/ECMAScript 5.1
 // vim:           ts=3
 //
-// Description:   Searchable hyper-links class.
+// Description:   Searchable links class.
 //
 // Example entry:
 //
 // @BEGIN: LINK
 // @TITLE:          Title for the link entry
-// @URL:            URL for the link entry
+// @URL:            URL for the link entry.  A space will terminate the link, and
+//                  a parenthetical comment about the link may follow.
+//                  More that one @URL entry can be given, as well as
+//                  @URL2-@URL9 which function equally to allow multiple links
+//                  listed for the entry.
 // @DESCRIPTION:    Short description for the entry
 // @CREATION-DATE:  Date added to the list
 // @EDIT-DATE:      Date last changed
@@ -41,8 +45,6 @@ var EscKey       =  27;
 
 
 
-
-
 //////////////////////////////
 //
 // SLINK constructor -- The slink object is used to manage
@@ -52,36 +54,35 @@ var EscKey       =  27;
 function SLINK() {
 	this.flatList = [];
 	this.categoryList = {};
-	this.entryTemplate = "";
-	this.renderSearchForm = function() { return "Error"; };
-	this.renderSubmitButton = function() { return "Error"; };
+
+   // Other options:
 	this.submitFormUrl = 'https://docs.google.com/forms/d/' + 
 			'1ytEu0BXSK9cfVn2Gnhjg2jP5zB_Hask0LyN63R3jxK8/viewform';
-
-
-	this.defaultEntryTemplate =									  '\n' +
-		'{{#each this}}													\n' +
-		'	<details class="link-entry" open>						\n' +
-		'		<summary class="link-entry">							\n' +
-		'			{{{TITLE}}}												\n' +
-		'		</summary>													\n' +
-		'		{{#if URL}}{{{url URL}}}{{/if}}						\n' +
-		'		{{#if URL2}}{{{url URL2}}}{{/if}}					\n' +
-		'		{{#if URL3}}{{{url URL3}}}{{/if}}					\n' +
-		'		{{#if URL4}}{{{url URL4}}}{{/if}}					\n' +
-		'		{{#if URL5}}{{{url URL5}}}{{/if}}					\n' +
-		'		{{#if URL6}}{{{url URL6}}}{{/if}}					\n' +
-		'		{{#if URL7}}{{{url URL7}}}{{/if}}					\n' +
-		'		{{#if URL8}}{{{url URL8}}}{{/if}}					\n' +
-		'		{{#if URL9}}{{{url URL9}}}{{/if}}					\n' +
-		'		<p>{{{DESCRIPTION}}}</p>								\n' +
-		'	</details>														\n' +
-		'{{/each}}															\n';
 
 	return this;
 }
 
 
+//////////////////////////////
+//
+// SLINK prototypes -- Fill in dummy contents for now.  Real
+//     definitions are in slink.html.
+//
+
+// Templates loaded later, defined in slink.html:
+SLINK.prototype.entryTemplate = '';
+SLINK.prototype.defaultEntryTemplate = '';
+SLINK.prototype.searchTemplate = '';
+SLINK.prototype.submitTemplate = '';
+SLINK.prototype.catButtonsTemplate = '';
+SLINK.prototype.categoryTemplate = '';
+
+// Template rendering functions, defined laster in slink.html:
+SLINK.prototype.renderSearchForm   = function() { return 'Error1'; };
+SLINK.prototype.renderSubmitButton = function() { return 'Error2'; };
+SLINK.prototype.renderLinkList     = function() { return 'Error3'; };
+SLINK.prototype.renderCatButtons   = function() { return 'Error4'; };
+SLINK.prototype.renderCategoryList = function() { return 'Error5'; };
 
 
 
@@ -92,21 +93,17 @@ function SLINK() {
 //
 
 SLINK.prototype.addLinkEntry = function (entry) {
-
    if (Array.isArray(entry)) {
 		for (var i=0; i<entry.length; i++) {
 			this.addLinkEntry(entry[i]);
 		}
 		return;
 	}
-
 	if (!entry) {
 		return;
 	}
 
-
 	this.flatList.push(entry);
-
 
 	if (entry.CATEGORY) {
 		if (this.categoryList[entry.CATEGORY]) {
@@ -154,29 +151,14 @@ SLINK.prototype.getLinkCount = function () {
 
 //////////////////////////////
 //
-// SLINK.prototype.linksToHtml --
+// SLINK.prototype.linksToHtml -- Convert the list of links
+//    into HTML content, displayed by category.
 //
 
 SLINK.prototype.linksToHtml = function () {
-	this.addLinkEntry();
-
-	var output = "";
-
-	var renderLinkList = Handlebars.compile(this.defaultEntryTemplate);
+	var output = '';
 	var categories = this.getCategoryList();
-	for (var property in categories) {
-		if (categories.hasOwnProperty(property)) {
-			output += '<a name="' + property.replace(/\s+/g, '_') + '"> </a>';
-			output += '<details open class="link-category">'
-			output += '<summary class="category">';
-			output += property;
-			output += '</summary>';
-			output += renderLinkList(categories[property]);
-			output += '</details>';
-		}
-	}
-	// var  = this.getFlatList();
-	// var html = renderLinkList(listing);
+	output += this.renderCategoryList(this.categoryList);
 	var linkcount = document.querySelector('#link-count');
 	var count = this.getLinkCount();
 	if (linkcount) {
@@ -261,19 +243,19 @@ SLINK.prototype.getCategoryList = function () {
 //   search interface.
 //
 
-SLINK.getSearchInterface = function () {
-	return SLINK.renderSearchForm();
+SLINK.prototype.getSearchInterface = function () {
+	return SLINK.prototype.renderSearchForm();
 };
 
 
 
 //////////////////////////////
 //
-// SLINK.loadSearchInterface -- Given an element or null, fill in the 
-//    appropriate element with a search form.
+// SLINK.prototype.loadSearchInterface -- Given an element or null, 
+//		fill in the appropriate element with a search form.
 //
 
-SLINK.loadSearchInterface = function(element) {
+SLINK.prototype.loadSearchInterface = function(element) {
 	if (!element) {
 		element = document.querySelector('.slink-search');
 	}
@@ -282,7 +264,7 @@ SLINK.loadSearchInterface = function(element) {
 		console.log(document.body);
 		return false;
 	}
-	element.innerHTML = SLINK.getSearchInterface();
+	element.innerHTML = SLINK.prototype.getSearchInterface();
 	element.querySelector('#search-text').focus();
 	return true;
 };
@@ -457,7 +439,7 @@ function showBriefListings() {
 	for (var i=0; i<details.length; i++) {
 		details[i].open = false;
 	}
-	var categories = document.querySelectorAll('details.category');
+	var categories = document.querySelectorAll('details.link-category');
 	for (var i=0; i<categories.length; i++) {
 		categories[i].open = true;
 	}
@@ -794,7 +776,6 @@ SLINK.prototype.getLinkCount = function (object) {
 	if (typeof object === 'undefined') {
 		object = this;
 	}
-console.log(this.flatList.length);
 	return this.flatList.length;
 }
 
@@ -811,7 +792,6 @@ function addLinkCategory(heading, templ, object) {
 	if (typeof object === 'undefined') {
 		object = LINKS;	
 	}
-console.log("ADDING HEADING", heading);
 	var entry = {
 		heading: heading,
 		templ: templ,

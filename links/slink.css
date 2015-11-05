@@ -23,14 +23,15 @@ details.link-category > summary {
 
 body {
 	counter-reset: category;
+	line-height: 2.0;
 }
 
 summary.category:before {
 	counter-increment: category;
 	content: counter(category) ". ";
 	display: inline-block;
-	margin: 0.5rem;
 	width: 2.0rem;
+	padding-right: 10px;
 	text-align: right;
 }
 
