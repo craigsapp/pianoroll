@@ -1,0 +1,70 @@
+/* 
+ * Programmer:    Craig Stuart Sapp <craig@ccrma.stanford.edu>
+ * Creation Date: Wed Nov  4 20:52:03 PST 2015
+ * Last Modified: Wed Nov  4 20:52:06 PST 2015
+ * Filename:      slink-extra.css
+ * Syntax:        CSS 3
+ * vim:           ts=3
+ *
+ * Description:   Extra CSS styles for local stylings of SLINK.
+ *
+ */
+
+/***** Submit button stying **********************************************/
+
+.submit-button {
+	float: right;
+	position: relative;
+	top: -7px;
+	right: -7px;
+	background-color:#806c58;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #caa97b;
+	display:inline-block;
+	cursor:pointer;
+	color:#f9f9f9;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:2px 5px 6px #806c58;
+
+	-moz-box-shadow:inset 0px 1px 0px 0px #806c58;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #806c58;
+	box-shadow:inset 0px 1px 0px 0px #806c58;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, 
+		#806c58), color-stop(1, #caa97b));
+	background:-moz-linear-gradient(top, #806c58 5%, #caa97b 100%);
+	background:-webkit-linear-gradient(top, #806c58 5%, #caa97b 100%);
+	background:-o-linear-gradient(top, #806c58 5%, #caa97b 100%);
+	background:-ms-linear-gradient(top, #806c58 5%, #caa97b 100%);
+	background:linear-gradient(to bottom, #806c58 5%, #caa97b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#806c58', 
+		endColorstr='#caa97b',GradientType=0);
+}
+
+
+.submit-button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, 
+		color-stop(0.05, #806c58), color-stop(1, #caa97b));
+	background:-moz-linear-gradient(top, #806c58 5%, #caa97b 100%);
+	background:-webkit-linear-gradient(top, #806c58 5%, #caa97b 100%);
+	background:-o-linear-gradient(top, #806c58 5%, #caa97b 100%);
+	background:-ms-linear-gradient(top, #806c58 5%, #caa97b 100%);
+	background:linear-gradient(to bottom, #806c58 5%, #caa97b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#806c58', 
+		endColorstr='#caa97b',GradientType=0);
+	background-color:#806c58;
+}
+
+
+.submit-button:active {
+	position:relative;
+	top:1px;
+}
+
+
+

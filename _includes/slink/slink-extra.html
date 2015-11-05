@@ -1,0 +1,100 @@
+<script>
+//
+// Programmer:    Craig Stuart Sapp <craig@ccrma.stanford.edu>
+// Creation Date: Tue Nov  3 15:37:48 PST 2015
+// Last Modified: Tue Nov  3 15:37:51 PST 2015
+// Filename:      templates.js
+// Syntax:        JavaScript 1.8.5/ECMAScript 5.1
+// vim:           ts=3 hlsearch
+//
+// Description:   Local setup for SLINK.
+//
+
+
+document.addEventListener("DOMContentLoaded", function () {
+	SLINK.prototype.renderSubmitButton = function() { return 'ErrorX1'; };
+	SLINK.prototype.submitTemplate = '';
+	SLINK.prototype.submitFormUrl = 'https://docs.google.com/forms/d/' + 
+			'1ytEu0BXSK9cfVn2Gnhjg2jP5zB_Hask0LyN63R3jxK8/viewform';
+
+	setTimeout(initializeExtras, 100);
+});
+
+
+//////////////////////////////
+//
+// initalizeExtras -- Initialize SLINK extra components.
+//
+
+function initializeExtras() {
+	SLINK.prototype.submitTemplate = document.querySelector(
+		'#slink-submit-template').innerHTML;
+	SLINK.prototype.renderSubmitButton = 
+			Handlebars.compile(SLINK.prototype.submitTemplate);
+	addSubmitButton();
+}
+
+
+
+//////////////////////////////
+//
+// addSubmitButton -- Add a submit button for users to suggest
+//     links for the Links page.
+//
+
+function addSubmitButton() {
+	var h1 = document.querySelector("h1");
+	if (!h1) {
+		returnl;
+	}
+	var output = h1.innerHTML;
+	output += SLINK.prototype.renderSubmitButton();
+	h1.innerHTML = output;
+}
+
+
+
+//////////////////////////////
+//
+// goToSubmitForm -- When the submit button is pressed, the
+//    form is opened in another tab.
+//
+
+function goToSubmitForm() {
+	if (SLINK.submitFormUrl) {
+		var a = document.createElement('A');
+		a.href = SLINK.submitFormUrl;
+		a.target = '_new';
+		a.style.display = 'none';
+		document.body.appendChild(a);
+		a.click();
+		// document.location.href = SLINK.submitFormUrl;
+	}
+}
+
+
+</script>
+
+
+
+<!--
+{% raw %}
+//////////////////////////////
+//
+// slink-submit-template -- Display a submit button for the links.
+//
+-->
+
+<script id="slink-submit-template" type="text/x-handlebars-template">
+
+<span class="submit-button" onclick="goToSubmitForm();">
+	Submit an entry
+</span>
+
+</script>
+
+
+<!--
+{% endraw %}
+-->
+
