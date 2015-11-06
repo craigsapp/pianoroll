@@ -12,8 +12,8 @@
 //
 // @BEGIN: LINK
 // @TITLE:          Title for the link entry
-// @URL:            URL for the link entry.  A space will terminate the link, and
-//                  a parenthetical comment about the link may follow.
+// @URL:            URL for the link entry.  A space will terminate the link,
+//                  and a parenthetical comment about the link may follow.
 //                  More that one @URL entry can be given, as well as
 //                  @URL2-@URL9 which function equally to allow multiple links
 //                  listed for the entry.
@@ -71,12 +71,14 @@ SLINK.prototype.defaultEntryTemplate = '';
 SLINK.prototype.searchTemplate       = '';
 SLINK.prototype.catButtonsTemplate   = '';
 SLINK.prototype.categoryTemplate     = '';
+SLINK.prototype.subcategoryTemplate     = '';
 
 // Template rendering functions, defined laster in slink.html:
-SLINK.prototype.renderSearchForm   = function() { return 'Error1'; };
-SLINK.prototype.renderLinkList     = function() { return 'Error2'; };
-SLINK.prototype.renderCatButtons   = function() { return 'Error3'; };
-SLINK.prototype.renderCategoryList = function() { return 'Error4'; };
+SLINK.prototype.renderSearchForm      = function() { return 'Error1'; };
+SLINK.prototype.renderLinkList        = function() { return 'Error2'; };
+SLINK.prototype.renderCatButtons      = function() { return 'Error3'; };
+SLINK.prototype.renderCategoryList    = function() { return 'Error4'; };
+SLINK.prototype.renderSubcategoryList = function() { return 'Error5'; };
 
 
 
@@ -99,13 +101,11 @@ SLINK.prototype.addLinkEntry = function (entry) {
 
 	this.flatList.push(entry);
 
-	if (entry.CATEGORY) {
-		if (this.categoryList[entry.CATEGORY]) {
-			this.categoryList[entry.CATEGORY].push(entry);
-		} else {
-			this.categoryList[entry.CATEGORY] = [];
-			this.categoryList[entry.CATEGORY].push(entry);
-		}
+	if (this.categoryList[entry.CATEGORY]) {
+		this.categoryList[entry.CATEGORY].push(entry);
+	} else {
+		this.categoryList[entry.CATEGORY] = [];
+		this.categoryList[entry.CATEGORY].push(entry);
 	}
 
 	if (entry.category2) {
@@ -151,7 +151,6 @@ SLINK.prototype.getLinkCount = function () {
 
 SLINK.prototype.linksToHtml = function () {
 	var output = '';
-	var categories = this.getCategoryList();
 	output += this.renderCategoryList(this.categoryList);
 	var linkcount = document.querySelector('#link-count');
 	var count = this.getLinkCount();

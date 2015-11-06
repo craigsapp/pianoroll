@@ -46,6 +46,39 @@ details.link-category > summary:before {
 	text-align: right;
 }
 
+details.link-subcategory > summary {
+	padding-left: 40px;
+	cursor: pointer;
+	font-size: 1.0rem;
+	background: #fffcf6;
+	border-radius: 25px;
+	color: #d77942;
+	outline: none;
+	font-style: italic;
+}
+
+details.link-subcategory > summary {
+	padding-left: 40px;
+	cursor: pointer;
+	font-size: 1.0rem;
+	background: #ffffff;
+	color: #d77942;
+	outline: none;
+	font-style: italic;
+}
+
+details.link-subcategory[open] > summary {
+	padding-left: 40px;
+	cursor: pointer;
+	font-size: 1.0rem;
+	background: #fffcf6;
+	border-radius: 25px;
+	color: #d77942;
+	outline: none;
+	font-style: italic;
+	width: 75%;
+}
+
 .url-note {
 	/* The url-note class is used to color a note following
     * a url in a @URL entry.  If there are multiple URLs, the

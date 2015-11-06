@@ -2,7 +2,7 @@
 //
 // Programmer:    Craig Stuart Sapp <craig@ccrma.stanford.edu>
 // Creation Date: Tue Nov  3 15:37:48 PST 2015
-// Last Modified: Tue Nov  3 15:37:51 PST 2015
+// Last Modified: Thu Nov  5 23:48:59 PST 2015
 // Filename:      templates.js
 // Syntax:        JavaScript 1.8.5/ECMAScript 5.1
 // vim:           ts=3 hlsearch
@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			'#slink-catbuttons-template').innerHTML;
 	SLINK.prototype.categoryTemplate = document.querySelector(
 			'#slink-list-template').innerHTML;
+	SLINK.prototype.subcategoryTemplate = document.querySelector(
+			'#slink-sublist-template').innerHTML;
 
 	// Fill in rendering functions:
 	SLINK.prototype.renderSearchForm = 
@@ -34,6 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			Handlebars.compile(SLINK.prototype.catButtonsTemplate);
 	SLINK.prototype.renderCategoryList = 
 			Handlebars.compile(SLINK.prototype.categoryTemplate);
+	SLINK.prototype.renderSubcategoryList = 
+			Handlebars.compile(SLINK.prototype.subcategoryTemplate);
 
 	LINKS = new SLINK;
 	LINKS.loadSearchInterface();
@@ -45,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			SLINK.prototype.catButtonsTemplate);
 
 });
+
 
 
 //////////////////////////////
@@ -89,6 +94,31 @@ Handlebars.registerHelper('anchor', function(link) {
 });
 
 
+Handlebars.registerHelper('subCategoriesList', function(catlist) {
+	if (!catlist) {
+		return '';
+	}
+	if (catlist.length == 0) {
+		return '';
+	}
+
+	var i;
+	var sublist = new SLINK;
+	for (i=0; i<catlist.length; i++) {
+		var copy = JSON.parse(JSON.stringify(catlist[i]));
+		copy.CATEGORY = copy.SUBCATEGORY;
+		sublist.addLinkEntry(copy);
+	}
+
+	var count = sublist.getCategories().length;
+	if ((count == 1) || (sublist.flatList.length < 10)) {
+		sublist.categoryList = {"": sublist.flatList};
+	}
+	var output = sublist.renderSubcategoryList(sublist.categoryList);
+	return new Handlebars.SafeString(output);
+});
+
+
 </script>
 
 
@@ -116,6 +146,28 @@ Handlebars.registerHelper('anchor', function(link) {
 	<details open class="link-category">
 		<summary class="category">
 			{{@key}} {{> catButtons count=this.length}} 
+		</summary>
+		{{subCategoriesList this}}
+	</details>
+{{/each}}
+
+</script>
+
+
+
+<!--
+//////////////////////////////
+//
+// slink-sublist-template -- Display the full list of categories.
+//
+-->
+
+<script id="slink-sublist-template" type="text/x-handlebars-template">
+{{#each this}}
+	{{{anchor @key}}}
+	<details open class="link-subcategory">
+		<summary class="subcategory">
+			{{@key}}
 		</summary>
 		{{> entryList}}
 	</details>
