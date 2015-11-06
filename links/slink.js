@@ -188,6 +188,7 @@ SLINK.prototype.loadAtonLinks = function (element) {
             var parsed = aton.parse(request.responseText);
 				that.addLinkEntry(parsed);
 				element.innerHTML = that.linksToHtml();
+				showBriefListings();
          } catch(err) {
             console.log('Error parsing search results: %s', err);
             console.log('ATON data:', request.responseText);

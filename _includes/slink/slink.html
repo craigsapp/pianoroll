@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	LINKS = new SLINK;
 	LINKS.loadSearchInterface();
 	loadLinks(LINKS);
-	setTimeout(showBriefListings, 100);
 
 	Handlebars.registerPartial('entryList', 
 			SLINK.prototype.entryTemplate);
