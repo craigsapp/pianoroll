@@ -61,9 +61,9 @@ function addSubmitButton() {
 //
 
 function goToSubmitForm() {
-	if (SLINK.submitFormUrl) {
+	if (SLINK.prototype.submitFormUrl) {
 		var a = document.createElement('A');
-		a.href = SLINK.submitFormUrl;
+		a.href = SLINK.prototype.submitFormUrl;
 		a.target = '_new';
 		a.style.display = 'none';
 		document.body.appendChild(a);

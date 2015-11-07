@@ -28,27 +28,67 @@ document.addEventListener('DOMContentLoaded', function() {
 			'#slink-sublist-template').innerHTML;
 
 	// Fill in rendering functions:
-	SLINK.prototype.renderSearchForm = 
+	SLINK.prototype.renderSearchForm =
 			Handlebars.compile(SLINK.prototype.searchTemplate);
-	SLINK.prototype.renderLinkList = 
+	SLINK.prototype.renderLinkList =
 			Handlebars.compile(SLINK.prototype.entryTemplate);
-	SLINK.prototype.renderCatButtons = 
+	SLINK.prototype.renderCatButtons =
 			Handlebars.compile(SLINK.prototype.catButtonsTemplate);
-	SLINK.prototype.renderCategoryList = 
+	SLINK.prototype.renderCategoryList =
 			Handlebars.compile(SLINK.prototype.categoryTemplate);
-	SLINK.prototype.renderSubcategoryList = 
+	SLINK.prototype.renderSubcategoryList =
 			Handlebars.compile(SLINK.prototype.subcategoryTemplate);
 
 	LINKS = new SLINK;
 	LINKS.loadSearchInterface();
 	loadLinks(LINKS);
 
-	Handlebars.registerPartial('entryList', 
+	Handlebars.registerPartial('entryList',
 			SLINK.prototype.entryTemplate);
-	Handlebars.registerPartial('catButtons', 
+	Handlebars.registerPartial('catButtons',
 			SLINK.prototype.catButtonsTemplate);
 
+	var mc = document.querySelector('#main-content');
+	mc.addEventListener("click", handleShiftClick);
+
 });
+
+
+
+
+//////////////////////////////
+//
+// handleShiftClick --
+//
+
+function handleShiftClick(event) {
+	if (!event.altKey) {
+		return;
+	}
+	if (!event.path) {
+		return;
+	}
+	var i;
+	for (i=0; i<event.path.length; i++) {
+		if ((event.path[i].tagName == 'SUMMARY') &&
+			 (event.path[i].className.match(/\blink-entry\b/))) {
+			var parent = event.path[i].parentNode;
+			if (parent.nodeName != 'DETAILS') {
+				break;
+			}
+			event.stopPropagation();
+			event.preventDefault();
+			var link = parent.querySelector("a");
+			var a = document.createElement('A');
+			a.href = link;
+			a.target = '_new';
+			a.style.display = 'none';
+			document.body.appendChild(a);
+			a.click();
+			break;
+		}
+	}
+}
 
 
 
@@ -61,7 +101,7 @@ function loadLinks(object) {
 	if (!object) {
 		object = LINKS;
 	}
-	
+
 	var slinks = document.querySelectorAll('[class^="slink"]');
 	for (var i=0; i<slinks.length; i++) {
 		if (!slinks[i].title) {
@@ -145,7 +185,7 @@ Handlebars.registerHelper('subCategoriesList', function(catlist) {
 	{{{anchor @key}}}
 	<details open class="link-category">
 		<summary class="category">
-			{{@key}} {{> catButtons count=this.length}} 
+			{{@key}} {{> catButtons count=this.length}}
 		</summary>
 		{{subCategoriesList this}}
 	</details>
@@ -188,7 +228,7 @@ Handlebars.registerHelper('subCategoriesList', function(catlist) {
 
 {{#each this}}
 	<details class="link-entry" open>
-		<summary class="link-entry">
+		<summary title="click: view description, alt-click: open link" class="link-entry">
 			{{{TITLE}}}
 		</summary>
 		{{#if URL}}{{{url URL}}}{{/if}}
@@ -210,7 +250,7 @@ Handlebars.registerHelper('subCategoriesList', function(catlist) {
 <!--
 //////////////////////////////
 //
-// slink-catbuttons-template -- Display button controls for 
+// slink-catbuttons-template -- Display button controls for
 //     a category entry.
 //
 -->
@@ -219,17 +259,17 @@ Handlebars.registerHelper('subCategoriesList', function(catlist) {
 
 <div class="no-print" style="float:right; display:inline-block;">
 	<table><tr><td style="padding:0;">
-		<span style="color: #909ca1; font-size:80%; display:inline; position:relative; top:-2px;" 
+		<span style="color: #909ca1; font-size:80%; display:inline; position:relative; top:-2px;"
 				class="category-link-count">
 			{{count}}
 		</span>
 	</td><td>
-		<div style="display:inline" class="btn-group" 
+		<div style="display:inline" class="btn-group"
 				role="group" aria-label="...">
 
 					<button type="button" class="btn btn-default btn-small btn-open"
 					onclick="openCategoryLinks(event);">
-				<span class="category-open" style="position:relative; 
+				<span class="category-open" style="position:relative;
 						top:-5px">
 					open
 				</span>
@@ -237,7 +277,7 @@ Handlebars.registerHelper('subCategoriesList', function(catlist) {
 
 					<button type="button" class="btn btn-default btn-small btn-brief"
 					onclick="openCategoryLinks(event); closeEventLinks(event);">
-				<span class="category-brief" style="position:relative; 
+				<span class="category-brief" style="position:relative;
 						top:-5px">
 					brief
 				</span>
@@ -245,7 +285,7 @@ Handlebars.registerHelper('subCategoriesList', function(catlist) {
 
 					<button type="button" class="btn btn-default btn-small btn-close"
 					onclick="closeCategoryLinks(event);">
-				<span class="category-close" style="position:relative; 
+				<span class="category-close" style="position:relative;
 						top:-5px">
 					close
 				</span>
@@ -269,17 +309,17 @@ Handlebars.registerHelper('subCategoriesList', function(catlist) {
 <form class="form-inline no-print" style="margin-bottom:30px;">
 	<div class="form-group">
 		<input id="search-text"
-			class="form-control" 
-			type="text" 
+			class="form-control"
+			type="text"
 			placeholder="Search"
-			onkeypress="suppressEnter(event);" 
-			onkeyup="LINKS.doSearch(event);" 
+			onkeypress="suppressEnter(event);"
+			onkeyup="LINKS.doSearch(event);"
 		>
 	</div>
 	<div style="position:relative; top:-2px" class="form-group">
 		<div style="margin-left:10px;" class="checkbox">
 			<label onclick="LINKS.doSearch(event);">
-				<input id="search-scope" onkeypress="suppressEnter(event)" ;="" 
+				<input id="search-scope" onkeypress="suppressEnter(event)" ;=""
 					type="checkbox" value="">
 				<span style="color:#909ca1; margin-left:3px; position:relative; top:0px;">
 					Titles only
@@ -288,22 +328,22 @@ Handlebars.registerHelper('subCategoriesList', function(catlist) {
 		</div>
 	</div>
 	<div style="float:right; display:inline;">
-		<table style="padding-top:0px; margin-bottom:1px;" 
+		<table style="padding-top:0px; margin-bottom:1px;"
 				class="search-navigator"><tbody><tr><td>
-			<div style="color: #909ca1; padding-right:10px; display:inline;" 
+			<div style="color: #909ca1; padding-right:10px; display:inline;"
 				id="link-count"></div>
 		</td><td style="padding:2px;">
-			<div style="display:inline" 
+			<div style="display:inline"
 					class="btn-group" role="group" aria-label="...">
-  				<button type="button" class="btn btn-default btn-open" 
+  				<button type="button" class="btn btn-default btn-open"
 						onclick="openAllLinks();">
 					open
 				</button>
-  				<button type="button" class="btn btn-default btn-clear" 
+  				<button type="button" class="btn btn-default btn-clear"
 						onclick="clearSearch();">
 					clear
 				</button>
-  				<button type="button" class="btn btn-default btn-close" 
+  				<button type="button" class="btn btn-default btn-close"
 						onclick="closeAllLinks();">
 					close
 				</button>

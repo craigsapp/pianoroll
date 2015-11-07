@@ -24,15 +24,50 @@
 
 @ Video @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
+
+
 @@BEGIN:	LINK
-@TITLE:		Red Welte Rolls played in real time on a Disklavier
+@TITLE:		Anthony Robinson's roll scanner
+@URL:		https://docs.google.com/file/d/0B5bSScCHUhOLOEJ3SG1WNDBSS3M/edit?pli=1
+@DESCRIPTION:	Ampico roll scanned in less than a minute.
+		See <a href="http://www.semitone440.co.uk/scanner">description</a> of
+		scanner.
+@CREATION-DATE:	Fri Oct 23 21:41:37 PDT 2015
+@EDIT-DATE:	Fri Oct 23 21:41:41 PDT 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Roll reading
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Peter Phillips roll reader short documentary
+@URL:		https://www.youtube.com/watch?v=cmHo2FgycUE
+@DESCRIPTION:	Reading a Duo-Art roll on a digital vacuum
+		piano-roll reader.
+@CREATION-DATE:	Fri Nov  6 11:34:40 PST 2015
+@EDIT-DATE:	Fri Nov  6 11:34:43 PST 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Roll reading
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Red Welte roll played in real time on a Disklavier
 @URL:		https://www.youtube.com/watch?v=cmHo2FgycUE
 @DESCRIPTION:	Peter Phillips playing a Welte red roll with live playback on a
 		Disklavier.
 @CREATION-DATE:	Fri Oct 23 16:46:33 PDT 2015
 @EDIT-DATE:	Fri Oct 23 16:46:36 PDT 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	YouTube
+@SUBCATEGORY:	Roll reading
 @SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
@@ -41,13 +76,20 @@
 
 
 @@BEGIN:	LINK
-@TITLE:		Welte Mignon Licensee: Marguerite Volavy, The Nightingale
-@URL:		https://www.youtube.com/watch?v=jKb1W0JH4wE
-@DESCRIPTION:	Welte Mignon licensee roll #7666 playing on a 1930 Stein grand piano.
-@CREATION-DATE:	Fri Oct 23 16:55:51 PDT 2015
-@EDIT-DATE:	Fri Oct 23 16:55:53 PDT 2015
+@TITLE:		Peter Phillips' new roll reader
+@URL:		https://www.youtube.com/watch?v=MmkU0KHCUyM
+@DESCRIPTION:   This is a short film which shows Peter Phillips
+		introducing in more detail the roll reader that he invented. 
+		It is used to read piano rolls (88 note, Ampico A & B, Welte,
+		and Duo Art) into a computer to turn them into MIDI
+		files that solenoid pianos (like the Yamaha Disklavier)
+		and e-valve reproducing pianos (such as the Ampico
+		you'll see towards the end of the video) can
+		interpret.
+@CREATION-DATE:	Fri Nov  6 12:22:53 PST 2015
+@EDIT-DATE:	Fri Nov  6 12:22:56 PST 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	YouTube
+@SUBCATEGORY:	Roll reading
 @SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
@@ -56,15 +98,54 @@
 
 
 @@BEGIN:	LINK
-@TITLE:		Feuerich Welte Mignon player
+@TITLE:		Peter Phillip Mark II roll reader
+@URL:		https://www.youtube.com/watch?v=MmkU0KHCUyM
+@DESCRIPTION:   First started in April 2006, we are pleased to show the 
+		inaugural performance of the Phillips Roll Reader Mark II 
+		recording its first rolls. Peter is assisted by Glenn who 
+		not only recorded the rolls, but is able to edit them in 
+		tempo during the recording process in which we convert the 
+		piano rolls to midi files.
+@CREATION-DATE:	Fri Nov  6 16:15:04 PST 2015
+@EDIT-DATE:	Fri Nov  6 16:15:07 PST 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Roll reading
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Piano roll scanning from YouTube video.
+@URL:		https://www.youtube.com/watch?v=YmN3VlsG8c4
+@DESCRIPTION:	Using a webcam to read a piano roll from a
+		YouTube video, then playing back with
+		software synthesis.
+@CREATION-DATE:	Fri Nov  6 11:42:18 PST 2015
+@EDIT-DATE:	Fri Nov  6 11:42:21 PST 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Roll reading
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Feuerich Welte Mignon red roll player
 @URL:		https://www.youtube.com/watch?v=PePcVWs8Y-I
 @URL:		https://www.youtube.com/watch?v=J0j0nS6USIM
 @DESCRIPTION:	Welte Mignon red roll (Black Key Waltz) and
-		Saint-Säens Danse Macabre (second link).
+		Saint-Säens Danse Macabre (second link).  Note that the roll
+		progresses upwards, unlike most all other roll players, which
+		pull the paper downwards.
 @CREATION-DATE:	Fri Oct 23 19:30:48 PDT 2015
 @EDIT-DATE:	Fri Oct 23 19:30:51 PDT 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	YouTube
+@SUBCATEGORY:	Analog roll performance
 @SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
@@ -81,7 +162,22 @@
 @CREATION-DATE:	Fri Oct 23 23:42:20 PDT 2015
 @EDIT-DATE:	Fri Oct 23 23:42:23 PDT 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	YouTube
+@SUBCATEGORY:	Analog roll performance
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Welte Mignon licensee: Marguerite Volavy, The Nightingale
+@URL:		https://www.youtube.com/watch?v=jKb1W0JH4wE
+@DESCRIPTION:	Welte Mignon licensee roll #7666 playing on a 1930 Stein grand piano.
+@CREATION-DATE:	Fri Oct 23 16:55:51 PDT 2015
+@EDIT-DATE:	Fri Oct 23 16:55:53 PDT 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Analog roll performance
 @SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
@@ -97,7 +193,7 @@
 @CREATION-DATE:	Sun Oct 25 03:38:03 PDT 2015
 @EDIT-DATE:	Sun Oct 25 03:38:08 PDT 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	YouTube
+@SUBCATEGORY:	Analog roll performance
 @SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
@@ -106,15 +202,15 @@
 
 
 @@BEGIN:	LINK
-@TITLE:		Welte-Mingon 
+@TITLE:		Welte Mignon licensee roll: Paderewski
 @URL:		https://www.youtube.com/watch?v=Q6zxN80lRY4
 @DESCRIPTION:	Played by Ignaz Jan Paderewski #C1216 released 1923.
-		Good demosntration of lock and cancel expression controls,
+		Good demonstration of lock and cancel expression controls,
 		such as sustain pedal on/off.
 @CREATION-DATE:	Wed Oct 28 23:57:38 PDT 2015
 @EDIT-DATE:	Wed Oct 28 23:57:41 PDT 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	YouTube
+@SUBCATEGORY:	Analog roll performance
 @SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
@@ -123,19 +219,21 @@
 
 
 @@BEGIN:	LINK
-@TITLE:		Duo-Art roll performance.
+@TITLE:		Duo-Art roll performance on Stroud baby grand piano
 @URL:		https://www.youtube.com/watch?v=ED10GCc98ho
 @DESCRIPTION:	Duo-Art roll, "Baby Face" by Benny David and Harry Akst.
 		(Duo-Art #713263) played on a
-		1934 Stroud baby grand piano.
+		1934 Stroud baby grand piano by Ralph Addison 
+		(pseudonym of Frank Milne).
 		Good detail of the roll on trackbar as it plays.
 		Shows lyrics.  Good detail of expression (continuous
 		expression rather than lock & cancel used on Welte-Mignon
 		rolls).
 @CREATION-DATE:	Sat Oct 24 17:00:10 PDT 2015
-@EDIT-DATE:	Thu Oct 29 00:01:12 PDT 2015
+@EDIT-DATE:	
+Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	YouTube
+@SUBCATEGORY:	Analog roll performance
 @SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
@@ -156,7 +254,7 @@
 @CREATION-DATE:	Mon Oct 26 21:10:12 PDT 2015
 @EDIT-DATE:	Mon Oct 26 21:10:14 PDT 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	YouTube
+@SUBCATEGORY:	Analog roll performance
 @SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
@@ -177,7 +275,7 @@
 @CREATION-DATE:	Mon Oct 26 20:38:30 PDT 2015
 @EDIT-DATE:	Mon Oct 26 20:38:33 PDT 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	YouTube
+@SUBCATEGORY:	Roll manufacture
 @SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
@@ -194,7 +292,7 @@
 @CREATION-DATE:	Mon Oct 26 20:38:30 PDT 2015
 @EDIT-DATE:	Mon Oct 26 20:38:33 PDT 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	YouTube
+@SUBCATEGORY:	Roll manufacture
 @SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
@@ -209,24 +307,7 @@
 @CREATION-DATE:	Sat Oct 31 01:09:31 PDT 2015
 @EDIT-DATE:	Sat Oct 31 01:09:35 PDT 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	YouTube
-@SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
-@@END:		LINK
-
-
-
-@@BEGIN:	LINK
-@TITLE:		Anthony Robinson's roll scanner
-@URL:		https://docs.google.com/file/d/0B5bSScCHUhOLOEJ3SG1WNDBSS3M/edit?pli=1
-@DESCRIPTION:	Ampico roll scanned in less than a minute.
-		See <a href="http://www.semitone440.co.uk/scanner">description</a> of
-		scanner.
-@CREATION-DATE:	Fri Oct 23 21:41:37 PDT 2015
-@EDIT-DATE:	Fri Oct 23 21:41:41 PDT 2015
-@CATEGORY:	Video
-@SUBCATEGORY:	Scanner
+@SUBCATEGORY:	Roll manufacture
 @SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
@@ -240,7 +321,7 @@
 @DESCRIPTION:	Comparison between PianoDisc and Disklavier pieces.
 @CREATION-DATE:	Sun Oct 25 12:01:06 PDT 2015
 @EDIT-DATE:	Sun Oct 25 12:01:08 PDT 2015
-@CATEGORY:	Video
+@CATEGORY:	Digital player pianos
 @SUBCATEGORY:	Scanner
 @SUBSUBCATEGORY:
 @CATEGORY2:	
@@ -265,13 +346,14 @@
 
 
 @@BEGIN:	LINK
-@TITLE:		Opening an 88-note Upright Player Piano, John A. Tuttle
-@URL:		https://www.youtube.com/watch?v=dOFpGcDfg7U#t=10
-@DESCRIPTION:	Shows how to place a roll on a player piano.
-@CREATION-DATE:	Mon Nov  2 23:05:45 PST 2015
-@EDIT-DATE:	Mon Nov  2 23:05:47 PST 2015
+@TITLE:		65-note Melographic roll
+@URL:		https://www.youtube.com/watch?v=gQd6yYg0h1g
+@DESCRIPTION:	Roll #173, Dixie played by D.D. Emmet, The Chase & Baker Co.
+		Buffalo, N.Y., U.S.A.
+@CREATION-DATE:	Fri Nov  6 12:43:47 PST 2015
+@EDIT-DATE:	Fri Nov  6 12:43:49 PST 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	How-to
+@SUBCATEGORY:	Pianola
 @SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
@@ -288,6 +370,85 @@
 @EDIT-DATE:	Thu Nov  5 01:30:04 PST 2015
 @CATEGORY:	Video
 @SUBCATEGORY:	Animation
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+@@BEGIN:	LINK
+@TITLE:		Ray's CIS piano-roll scanner
+@URL:		https://www.youtube.com/watch?v=bv5mfmxuRsw
+@DESCRIPTION:	Tour of a self-built CIS line scanner for piano roll reading.
+@CREATION-DATE:	Fri Nov  6 12:17:31 PST 2015
+@EDIT-DATE:	Fri Nov  6 12:17:33 PST 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Roll reading
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+@@BEGIN:	LINK
+@TITLE:		Flatbed piano roll scanner
+@URL:		https://www.youtube.com/watch?v=wfS5tdyqasA
+@DESCRIPTION:	Using a consumer-grade scanner to scan piano
+		rolls automatically.
+@CREATION-DATE:	Fri Nov  6 12:17:31 PST 2015
+@EDIT-DATE:	Fri Nov  6 12:17:33 PST 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Roll reading
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Infrared LED piano-roll scanner prototype
+@URL:		https://www.youtube.com/watch?v=2_8oTeH3v7M
+@DESCRIPTION:	This prototype board reads a standard 65-note piano scroll 
+		and sends out MIDI data in realtime. A bank of 65 infra-red 
+		emitters and detectors are used to read the scroll.
+@CREATION-DATE:	Fri Nov  6 16:23:35 PST 2015
+@EDIT-DATE:	Fri Nov  6 16:23:40 PST 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Roll reading
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		How the Ampico A expression system works
+@URL:		https://www.youtube.com/watch?v=f6MVdDk3gBg
+@DESCRIPTION:	By Craig Brougher for player-care.com.
+		rolls automatically. A very detailed explanation of how the 
+		Ampico A Expression mechanism works in conjunction with the 
+		Crescendo device, the Amplifier pneumatic, and the Equalizer 
+		pneumatic to change the vacuum level in the stack.
+@CREATION-DATE:	Fri Nov  6 12:24:37 PST 2015
+@EDIT-DATE:	Fri Nov  6 12:24:40 PST 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Player piano technical information
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+@@BEGIN:	LINK
+@TITLE:		Opening an 88-note Upright Player Piano, John A. Tuttle
+@URL:		https://www.youtube.com/watch?v=dOFpGcDfg7U#t=10
+@DESCRIPTION:	Shows how to place a roll on a player piano.
+@CREATION-DATE:	Mon Nov  2 23:05:45 PST 2015
+@EDIT-DATE:	Mon Nov  2 23:05:47 PST 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Player piano technical information
 @SUBSUBCATEGORY:
 @CATEGORY2:	
 @SUBCATEGORY2:	
@@ -1581,6 +1742,42 @@ obert Schmitzue Nov  3 23:04:33 PST 2015
 @SUBSUBCATEGORY:
 @@END:		LINK
 
+
+
+@@BEGIN:	LINK
+@TITLE:		Understanding line scan applications
+@URL:		https://www.youtube.com/watch?v=KCCz8dyNivI
+@DESCRIPTION:	Lecture on line scanning versus area/frame scanning
+		and applications of line scanning by Fernando Serra,
+		Teledyne Dalsa. At 
+		<a target="_blank" href="https://www.youtube.com/watch?v=KCCz8dyNivI&t=300">6:00</a>
+		Line scan acquisition interfaces: GigE, CameraLink, HSLink.
+		At
+		<a target="_blank" href="https://www.youtube.com/watch?v=KCCz8dyNivI&t=760">9:40</a> discussion of line scan camera synchronization, and programmable encoders.
+		
+@CREATION-DATE:	Fri Nov  6 11:53:43 PST 2015
+@EDIT-DATE:	Fri Nov  6 11:53:45 PST 2015
+@CATEGORY:	Line scan cameras
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
+
+
+@@BEGIN:	LINK
+@TITLE:		Piranha 4 Series line scan cameras
+@URL:		https://www.youtube.com/watch?v=sMyBJs1wdjM
+@DESCRIPTION:	Technical specs for Piranha 4 line scan cameras.
+		and applications of line scanning.
+@CREATION-DATE:	Fri Nov  6 11:53:43 PST 2015
+@EDIT-DATE:	Fri Nov  6 11:53:45 PST 2015
+@CATEGORY:	Line scan cameras
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@CATEGORY2:	
+@SUBCATEGORY2:	
+@@END:		LINK
 
 
 
