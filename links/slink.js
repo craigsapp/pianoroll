@@ -272,7 +272,7 @@ SLINK.prototype.loadSearchInterface = function(element) {
 
 //////////////////////////////
 //
-// Handlebars helper url --
+// url helper --
 //
 
 Handlebars.registerHelper('url', function(url) {
@@ -291,7 +291,7 @@ Handlebars.registerHelper('url', function(url) {
 
 //////////////////////////////
 //
-// getUrlText --
+// getUrlText helper --
 //
 
 function getUrlText(url) {
@@ -324,10 +324,166 @@ function getUrlText(url) {
 
 
 
+//////////////////////////////
+//
+// anchor helper -- Create a hyperlink anchor, replacing spaces
+//    with underscores.
+//
+
+Handlebars.registerHelper('anchor', function(link) {
+	if (link) {
+		return '<a name="' + link.replace(/\s+/g, '_') + '"> </a>';
+	} else {
+		return '';
+	}
+});
+
+
+
+//////////////////////////////
+//
+// subCategoriesList helper --
+//
+
+Handlebars.registerHelper('subCategoriesList', function(catlist) {
+	if (!catlist) {
+		return '';
+	}
+	if (catlist.length == 0) {
+		return '';
+	}
+
+	var i;
+	var sublist = new SLINK;
+	for (i=0; i<catlist.length; i++) {
+		var copy = JSON.parse(JSON.stringify(catlist[i]));
+		copy.CATEGORY = copy.SUBCATEGORY;
+		sublist.addLinkEntry(copy);
+	}
+
+	var count = sublist.getCategories().length;
+	if ((count == 1) || (sublist.flatList.length < 10)) {
+		sublist.categoryList = {"": sublist.flatList};
+	}
+	var output = sublist.renderSubcategoryList(sublist.categoryList);
+	return new Handlebars.SafeString(output);
+});
+
+
 ///////////////////////////////////////////////////////////////////////////
 //
 // User interface --
 //
+
+var LINKS = null;
+
+
+//////////////////////////////
+//
+// DOMContentLoaded event listener -- What to do once the page has
+//   been loaded (add the links to the page).
+//
+
+document.addEventListener('DOMContentLoaded', function() {
+
+	// Fill in templates:
+	SLINK.prototype.searchTemplate = document.querySelector(
+			'#slink-search-template').innerHTML;
+	SLINK.prototype.entryTemplate = document.querySelector(
+			'#slink-entry-template').innerHTML;
+	SLINK.prototype.catButtonsTemplate = document.querySelector(
+			'#slink-catbuttons-template').innerHTML;
+	SLINK.prototype.categoryTemplate = document.querySelector(
+			'#slink-list-template').innerHTML;
+	SLINK.prototype.subcategoryTemplate = document.querySelector(
+			'#slink-sublist-template').innerHTML;
+
+	// Fill in rendering functions:
+	SLINK.prototype.renderSearchForm =
+			Handlebars.compile(SLINK.prototype.searchTemplate);
+	SLINK.prototype.renderLinkList =
+			Handlebars.compile(SLINK.prototype.entryTemplate);
+	SLINK.prototype.renderCatButtons =
+			Handlebars.compile(SLINK.prototype.catButtonsTemplate);
+	SLINK.prototype.renderCategoryList =
+			Handlebars.compile(SLINK.prototype.categoryTemplate);
+	SLINK.prototype.renderSubcategoryList =
+			Handlebars.compile(SLINK.prototype.subcategoryTemplate);
+
+	LINKS = new SLINK;
+	LINKS.loadSearchInterface();
+	loadLinks(LINKS);
+
+	Handlebars.registerPartial('entryList',
+			SLINK.prototype.entryTemplate);
+	Handlebars.registerPartial('catButtons',
+			SLINK.prototype.catButtonsTemplate);
+
+	var mc = document.querySelector('#main-content');
+	mc.addEventListener("click", handleShiftClick);
+
+});
+
+//////////////////////////////
+//
+// loadLinks -- Display list of links on page (when the links
+//   file is in the ATON format).
+//
+
+function loadLinks(object) {
+	if (!object) {
+		object = LINKS;
+	}
+
+	var slinks = document.querySelectorAll('[class^="slink"]');
+	for (var i=0; i<slinks.length; i++) {
+		if (!slinks[i].title) {
+			continue;
+		}
+		object.loadAtonLinks(slinks[i]);
+	}
+}
+
+
+
+//////////////////////////////
+//
+// handleAltClick -- When alt-click is done on a collapsed link
+//    entry, the entry will not expand, but rather the first
+//    URL link in the entry will be opened in anoother browser
+//    tab.  This allows quick access to the linked pages while
+//    viewing the link list in brief display mode.
+//
+
+function handleShiftClick(event) {
+	if (!event.altKey) {
+		return;
+	}
+	if (!event.path) {
+		return;
+	}
+	var i;
+	for (i=0; i<event.path.length; i++) {
+		if ((event.path[i].tagName == 'SUMMARY') &&
+			 (event.path[i].className.match(/\blink-entry\b/))) {
+			var parent = event.path[i].parentNode;
+			if (parent.nodeName != 'DETAILS') {
+				break;
+			}
+			event.stopPropagation();
+			event.preventDefault();
+			var link = parent.querySelector("a");
+			var a = document.createElement('A');
+			a.href = link;
+			a.target = '_new';
+			a.style.display = 'none';
+			document.body.appendChild(a);
+			a.click();
+			break;
+		}
+	}
+}
+
 
 
 //////////////////////////////
@@ -830,7 +986,7 @@ function openCategoryLinks(event) {
 	}
 	element.open = 'open';
 
-	var details = element.querySelectorAll('details.link-entry');
+	var details = element.querySelectorAll('details');
 	for (var i=0; i<details.length; i++) {
 		details[i].open = true;
 	}

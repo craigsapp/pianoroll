@@ -7,168 +7,14 @@
 // Syntax:        JavaScript 1.8.5/ECMAScript 5.1
 // vim:           ts=3 hlsearch
 //
-// Description:   Handlebars templates and helper functions for slink.
-//                Formatted for use with Jekyll and liquid templates
+// Description:   Handlebars templates for use with slink.
 //
-
-var LINKS = null;
-
-document.addEventListener('DOMContentLoaded', function() {
-
-	// Fill in templates:
-	SLINK.prototype.searchTemplate = document.querySelector(
-			'#slink-search-template').innerHTML;
-	SLINK.prototype.entryTemplate = document.querySelector(
-			'#slink-entry-template').innerHTML;
-	SLINK.prototype.catButtonsTemplate = document.querySelector(
-			'#slink-catbuttons-template').innerHTML;
-	SLINK.prototype.categoryTemplate = document.querySelector(
-			'#slink-list-template').innerHTML;
-	SLINK.prototype.subcategoryTemplate = document.querySelector(
-			'#slink-sublist-template').innerHTML;
-
-	// Fill in rendering functions:
-	SLINK.prototype.renderSearchForm =
-			Handlebars.compile(SLINK.prototype.searchTemplate);
-	SLINK.prototype.renderLinkList =
-			Handlebars.compile(SLINK.prototype.entryTemplate);
-	SLINK.prototype.renderCatButtons =
-			Handlebars.compile(SLINK.prototype.catButtonsTemplate);
-	SLINK.prototype.renderCategoryList =
-			Handlebars.compile(SLINK.prototype.categoryTemplate);
-	SLINK.prototype.renderSubcategoryList =
-			Handlebars.compile(SLINK.prototype.subcategoryTemplate);
-
-	LINKS = new SLINK;
-	LINKS.loadSearchInterface();
-	loadLinks(LINKS);
-
-	Handlebars.registerPartial('entryList',
-			SLINK.prototype.entryTemplate);
-	Handlebars.registerPartial('catButtons',
-			SLINK.prototype.catButtonsTemplate);
-
-	var mc = document.querySelector('#main-content');
-	mc.addEventListener("click", handleShiftClick);
-
-});
-
-
-
-
-//////////////////////////////
-//
-// handleShiftClick --
-//
-
-function handleShiftClick(event) {
-	if (!event.altKey) {
-		return;
-	}
-	if (!event.path) {
-		return;
-	}
-	var i;
-	for (i=0; i<event.path.length; i++) {
-		if ((event.path[i].tagName == 'SUMMARY') &&
-			 (event.path[i].className.match(/\blink-entry\b/))) {
-			var parent = event.path[i].parentNode;
-			if (parent.nodeName != 'DETAILS') {
-				break;
-			}
-			event.stopPropagation();
-			event.preventDefault();
-			var link = parent.querySelector("a");
-			var a = document.createElement('A');
-			a.href = link;
-			a.target = '_new';
-			a.style.display = 'none';
-			document.body.appendChild(a);
-			a.click();
-			break;
-		}
-	}
-}
-
-
-
-//////////////////////////////
-//
-// loadLinks -- Display list of links on page.
-//
-
-function loadLinks(object) {
-	if (!object) {
-		object = LINKS;
-	}
-
-	var slinks = document.querySelectorAll('[class^="slink"]');
-	for (var i=0; i<slinks.length; i++) {
-		if (!slinks[i].title) {
-			continue;
-		}
-		object.loadAtonLinks(slinks[i]);
-	}
-}
-
-
-
-///////////////////////////////////////////////////////////////////////////
-//
-// Handlebar helper functions --
-//
-
-
-//////////////////////////////
-//
-// anchor helper -- Create a hyperlink anchor, replacing spaces
-//    with underscores.
-//
-
-Handlebars.registerHelper('anchor', function(link) {
-	if (link) {
-		return '<a name="' + link.replace(/\s+/g, '_') + '"> </a>';
-	} else {
-		return '';
-	}
-});
-
-
-Handlebars.registerHelper('subCategoriesList', function(catlist) {
-	if (!catlist) {
-		return '';
-	}
-	if (catlist.length == 0) {
-		return '';
-	}
-
-	var i;
-	var sublist = new SLINK;
-	for (i=0; i<catlist.length; i++) {
-		var copy = JSON.parse(JSON.stringify(catlist[i]));
-		copy.CATEGORY = copy.SUBCATEGORY;
-		sublist.addLinkEntry(copy);
-	}
-
-	var count = sublist.getCategories().length;
-	if ((count == 1) || (sublist.flatList.length < 10)) {
-		sublist.categoryList = {"": sublist.flatList};
-	}
-	var output = sublist.renderSubcategoryList(sublist.categoryList);
-	return new Handlebars.SafeString(output);
-});
-
-
 </script>
 
-
-
 <!--
+The following line is needed to prevent the Jekyll system from
+expanding template codes which are mean for Handlebars instead.
 {% raw %}
-///////////////////////////////////////////////////////////////////////////
-//
-// Handlebars templates --
-//
 -->
 
 
@@ -204,13 +50,17 @@ Handlebars.registerHelper('subCategoriesList', function(catlist) {
 
 <script id="slink-sublist-template" type="text/x-handlebars-template">
 {{#each this}}
-	{{{anchor @key}}}
-	<details open class="link-subcategory">
-		<summary class="subcategory">
-			{{@key}}
-		</summary>
-		{{> entryList}}
-	</details>
+	{{#if @key}}
+		{{{anchor @key}}}
+		<details open class="link-subcategory">
+			<summary class="subcategory">
+				{{@key}}
+			</summary>
+	{{/if}}
+	{{> entryList}}
+	{{#if @key}}
+		</details>
+	{{/if}}
 {{/each}}
 
 </script>
@@ -228,7 +78,8 @@ Handlebars.registerHelper('subCategoriesList', function(catlist) {
 
 {{#each this}}
 	<details class="link-entry" open>
-		<summary title="click: view description, alt-click: open link" class="link-entry">
+		<summary title="click: view description, alt-click: open link" 
+				class="link-entry">
 			{{{TITLE}}}
 		</summary>
 		{{#if URL}}{{{url URL}}}{{/if}}
@@ -275,7 +126,7 @@ Handlebars.registerHelper('subCategoriesList', function(catlist) {
 				</span>
 			</button>
 
-					<button type="button" class="btn btn-default btn-small btn-brief"
+			<button type="button" class="btn btn-default btn-small btn-brief"
 					onclick="openCategoryLinks(event); closeEventLinks(event);">
 				<span class="category-brief" style="position:relative;
 						top:-5px">
@@ -283,7 +134,7 @@ Handlebars.registerHelper('subCategoriesList', function(catlist) {
 				</span>
 			</button>
 
-					<button type="button" class="btn btn-default btn-small btn-close"
+			<button type="button" class="btn btn-default btn-small btn-close"
 					onclick="closeCategoryLinks(event);">
 				<span class="category-close" style="position:relative;
 						top:-5px">
@@ -295,6 +146,7 @@ Handlebars.registerHelper('subCategoriesList', function(catlist) {
 </div>
 
 </script>
+
 
 
 <!--
@@ -356,5 +208,11 @@ Handlebars.registerHelper('subCategoriesList', function(catlist) {
 
 
 
+<!--
+The following line is needed to prevent the Jekyll system from
+expanding template codes which are mean for Handlebars instead.
 {% endraw %}
+-->
+
+
 

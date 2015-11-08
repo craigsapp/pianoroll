@@ -16,18 +16,14 @@
 @CATEGORY:	History and general information
 @SUBCATEGORY:
 @SUBSUBCATEGORY:
-@CATEGORY2:
-@SUBCATEGORY2:
 @@END:		LINK
 
 
 
 @ Video @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-
-
 @@BEGIN:	LINK
-@TITLE:		Anthony Robinson's roll scanner
+@TITLE:		Anthony Robinson's line-scan camera roll scanner
 @URL:		https://docs.google.com/file/d/0B5bSScCHUhOLOEJ3SG1WNDBSS3M/edit?pli=1
 @DESCRIPTION:	Ampico roll scanned in less than a minute.
 		See <a href="http://www.semitone440.co.uk/scanner">description</a> of
@@ -35,50 +31,19 @@
 @CREATION-DATE:	Fri Oct 23 21:41:37 PDT 2015
 @EDIT-DATE:	Fri Oct 23 21:41:41 PDT 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	Roll reading
+@SUBCATEGORY:	Roll reading for transcription
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
 
 @@BEGIN:	LINK
-@TITLE:		Peter Phillips roll reader short documentary
-@URL:		https://www.youtube.com/watch?v=cmHo2FgycUE
-@DESCRIPTION:	Reading a Duo-Art roll on a digital vacuum
-		piano-roll reader.
-@CREATION-DATE:	Fri Nov  6 11:34:40 PST 2015
-@EDIT-DATE:	Fri Nov  6 11:34:43 PST 2015
-@CATEGORY:	Video
-@SUBCATEGORY:	Roll reading
-@SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
-@@END:		LINK
-
-
-
-@@BEGIN:	LINK
-@TITLE:		Red Welte roll played in real time on a Disklavier
-@URL:		https://www.youtube.com/watch?v=cmHo2FgycUE
-@DESCRIPTION:	Peter Phillips playing a Welte red roll with live playback on a
-		Disklavier.
-@CREATION-DATE:	Fri Oct 23 16:46:33 PDT 2015
-@EDIT-DATE:	Fri Oct 23 16:46:36 PDT 2015
-@CATEGORY:	Video
-@SUBCATEGORY:	Roll reading
-@SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
-@@END:		LINK
-
-
-
-@@BEGIN:	LINK
-@TITLE:		Peter Phillips' new roll reader
-@URL:		https://www.youtube.com/watch?v=MmkU0KHCUyM
-@DESCRIPTION:   This is a short film which shows Peter Phillips
+@TITLE:		Peter Phillips's vacuum roll reader
+@URL:		https://www.youtube.com/watch?v=MmkU0KHCUyM (A)
+@URL2:		https://www.youtube.com/watch?v=zbddzabMvJI (B)
+@URL3:		https://www.youtube.com/watch?v=uUv7soKmDbM (C)
+@DESCRIPTION:   <b>(A)</b>
+		 This is a short film which shows Peter Phillips
 		introducing in more detail the roll reader that he invented. 
 		It is used to read piano rolls (88 note, Ampico A & B, Welte,
 		and Duo Art) into a computer to turn them into MIDI
@@ -86,69 +51,55 @@
 		and e-valve reproducing pianos (such as the Ampico
 		you'll see towards the end of the video) can
 		interpret.
-@CREATION-DATE:	Fri Nov  6 12:22:53 PST 2015
-@EDIT-DATE:	Fri Nov  6 12:22:56 PST 2015
-@CATEGORY:	Video
-@SUBCATEGORY:	Roll reading
-@SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
-@@END:		LINK
-
-
-
-@@BEGIN:	LINK
-@TITLE:		Peter Phillip Mark II roll reader
-@URL:		https://www.youtube.com/watch?v=MmkU0KHCUyM
-@DESCRIPTION:   First started in April 2006, we are pleased to show the 
+		<br>
+		<b>(B)</b>
+		 First started in April 2006, we are pleased to show the 
 		inaugural performance of the Phillips Roll Reader Mark II 
 		recording its first rolls. Peter is assisted by Glenn who 
 		not only recorded the rolls, but is able to edit them in 
 		tempo during the recording process in which we convert the 
 		piano rolls to midi files.
-@CREATION-DATE:	Fri Nov  6 16:15:04 PST 2015
-@EDIT-DATE:	Fri Nov  6 16:15:07 PST 2015
+		<br>
+		<b>(C)</b>
+		Reading a Duo-Art roll on a digital vacuum
+		piano-roll reader.
+@CREATION-DATE:	Fri Oct 23 21:41:37 PDT 2015
+@EDIT-DATE:	Fri Oct 23 21:41:41 PDT 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	Roll reading
+@SUBCATEGORY:	Roll reading for transcription
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
-@@END:		LINK
-
-
-
-@@BEGIN:	LINK
-@TITLE:		Piano roll scanning from YouTube video.
-@URL:		https://www.youtube.com/watch?v=YmN3VlsG8c4
-@DESCRIPTION:	Using a webcam to read a piano roll from a
-		YouTube video, then playing back with
-		software synthesis.
-@CREATION-DATE:	Fri Nov  6 11:42:18 PST 2015
-@EDIT-DATE:	Fri Nov  6 11:42:21 PST 2015
-@CATEGORY:	Video
-@SUBCATEGORY:	Roll reading
-@SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
 
 @@BEGIN:	LINK
 @TITLE:		Feuerich Welte Mignon red roll player
-@URL:		https://www.youtube.com/watch?v=PePcVWs8Y-I
-@URL:		https://www.youtube.com/watch?v=J0j0nS6USIM
-@DESCRIPTION:	Welte Mignon red roll (Black Key Waltz) and
-		Saint-Säens Danse Macabre (second link).  Note that the roll
+@URL:		https://www.youtube.com/watch?v=PePcVWs8Y-I (Black Key Waltz)
+@URL:		https://www.youtube.com/watch?v=J0j0nS6USIM (Saint-Säens Danse Macabre)
+@DESCRIPTION:	Welte Mignon red roll performances.  Note that the roll 
 		progresses upwards, unlike most all other roll players, which
 		pull the paper downwards.
 @CREATION-DATE:	Fri Oct 23 19:30:48 PDT 2015
 @EDIT-DATE:	Fri Oct 23 19:30:51 PDT 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	Analog roll performance
+@SUBCATEGORY:	Reproducing roll performances
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Welte-Mignon red-roll push-up player (Vorsetzer)
+@URL:		https://www.youtube.com/watch?v=NIa7Nt4VigA
+@DESCRIPTION:	The playback mechanism in a push-up player is separate
+		from the piano. This allows different rolls to be played
+		with the same piano.  Compare to a digital equivalent:
+		<a target="_new" href="https://www.youtube.com/watch?v=DaksUcVOukI&t=100">QRS Playola</a>.
+@CREATION-DATE:	Sat Nov  7 15:00:08 PST 2015
+@EDIT-DATE:	Sat Nov  7 15:00:11 PST 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Reproducing roll performances
+@SUBSUBCATEGORY:
 @@END:		LINK
 
 
@@ -162,10 +113,8 @@
 @CREATION-DATE:	Fri Oct 23 23:42:20 PDT 2015
 @EDIT-DATE:	Fri Oct 23 23:42:23 PDT 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	Analog roll performance
+@SUBCATEGORY:	Reproducing roll performances
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -177,10 +126,8 @@
 @CREATION-DATE:	Fri Oct 23 16:55:51 PDT 2015
 @EDIT-DATE:	Fri Oct 23 16:55:53 PDT 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	Analog roll performance
+@SUBCATEGORY:	Reproducing roll performances
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -193,10 +140,8 @@
 @CREATION-DATE:	Sun Oct 25 03:38:03 PDT 2015
 @EDIT-DATE:	Sun Oct 25 03:38:08 PDT 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	Analog roll performance
+@SUBCATEGORY:	Reproducing roll performances
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -210,10 +155,8 @@
 @CREATION-DATE:	Wed Oct 28 23:57:38 PDT 2015
 @EDIT-DATE:	Wed Oct 28 23:57:41 PDT 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	Analog roll performance
+@SUBCATEGORY:	Reproducing roll performances
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -233,10 +176,8 @@
 @EDIT-DATE:	
 Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	Analog roll performance
+@SUBCATEGORY:	Reproducing roll performances
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -254,10 +195,63 @@ Fri Nov  6 13:58:11 PST 2015
 @CREATION-DATE:	Mon Oct 26 21:10:12 PDT 2015
 @EDIT-DATE:	Mon Oct 26 21:10:14 PDT 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	Analog roll performance
+@SUBCATEGORY:	Reproducing roll performances
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Rex Lawson playing a Pianola (Stravinsky)
+@URL:		https://www.youtube.com/watch?v=D5aNuSmL5Ek
+@DESCRIPTION:	Playing the Dance of Petrushka by Stravinsky.
+@CREATION-DATE:	Sat Oct 31 16:11:57 PDT 2015
+@EDIT-DATE:	Sat Oct 31 16:11:59 PDT 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Rolls without dynamic encodings
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Red Welte roll played in real time on a Disklavier
+@URL:		https://www.youtube.com/watch?v=cmHo2FgycUE
+@DESCRIPTION:	Peter Phillips playing a Welte red roll with live playback on a
+		Disklavier.
+@CREATION-DATE:	Fri Oct 23 16:46:33 PDT 2015
+@EDIT-DATE:	Fri Oct 23 16:46:36 PDT 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Digital performances
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		CGI animation of a player piano performance
+@URL:		https://www.youtube.com/watch?gl=GB&hl=en-GB&v=lVXmtckavDQ
+@DESCRIPTION:	Butterflies in the Rain.  Music by Sherman Myers, Arranged by
+		Frank Milne.
+@CREATION-DATE:	Thu Nov  5 01:30:00 PST 2015
+@EDIT-DATE:	Thu Nov  5 01:30:04 PST 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Digital performances
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Three-dimensional piano roll display.
+@URL:		https://www.youtube.com/watch?v=RKRJe23Zths
+@DESCRIPTION:	Stars and Stripes by Sousa visualized by
+		Stephen Malinowsky.
+@CREATION-DATE:	Thu Nov  5 01:30:00 PST 2015
+@EDIT-DATE:	Thu Nov  5 01:30:04 PST 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Digital performances
+@SUBSUBCATEGORY:
 @@END:		LINK
 
 
@@ -277,25 +271,19 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Video
 @SUBCATEGORY:	Roll manufacture
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
 
 @@BEGIN:	LINK
-@TITLE:		Player Piano Rolls &mdash; How its Made
-@URL:		https://www.youtube.com/watch?v=uL9NudhhSQE
-@DESCRIPTION:	How its Made episode on player piano rolls.
-		Demonstration of a recording piano.  Demonstrates printing of lyrics.
-		QRS factory.
-@CREATION-DATE:	Mon Oct 26 20:38:30 PDT 2015
-@EDIT-DATE:	Mon Oct 26 20:38:33 PDT 2015
+@TITLE:		Vintage QRS factory tour intro video
+@URL:		https://www.youtube.com/watch?v=H0IwxUBFK3k
+@DESCRIPTION:	
+@CREATION-DATE:	Fri Nov  6 21:06:03 PST 2015
+@EDIT-DATE:	Fri Nov  6 21:06:06 PST 2015
 @CATEGORY:	Video
 @SUBCATEGORY:	Roll manufacture
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -309,38 +297,38 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Video
 @SUBCATEGORY:	Roll manufacture
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
 
 @@BEGIN:	LINK
-@TITLE:		PianoDisc and Disklavier innards
-@URL:		https://www.youtube.com/watch?v=cACZqIlGx_Y
-@DESCRIPTION:	Comparison between PianoDisc and Disklavier pieces.
-@CREATION-DATE:	Sun Oct 25 12:01:06 PDT 2015
-@EDIT-DATE:	Sun Oct 25 12:01:08 PDT 2015
-@CATEGORY:	Digital player pianos
-@SUBCATEGORY:	Scanner
-@SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
-@@END:		LINK
-
-
-
-@@BEGIN:	LINK
-@TITLE:		Rex Lawson playing a Pianola
-@URL:		https://www.youtube.com/watch?v=D5aNuSmL5Ek
-@DESCRIPTION:	Playing Stravinsky.
-@CREATION-DATE:	Sat Oct 31 16:11:57 PDT 2015
-@EDIT-DATE:	Sat Oct 31 16:11:59 PDT 2015
+@TITLE:		Klavarscribo real-time transcription
+@URL:		https://www.youtube.com/watch?v=5mTRUF6q5-I&t=425
+@DESCRIPTION:	Music notation similar to piano rolls being recorded
+		directly from a piano performance.
+@CREATION-DATE:	Sat Nov  7 17:18:34 PST 2015
+@EDIT-DATE:	Sat Nov  7 17:18:40 PST 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	Pianola
+@SUBCATEGORY:	Roll manufacture
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Damaged roll being played
+@URL:		https://www.youtube.com/watch?v=yTZKLcy0Y9Q
+@DESCRIPTION:	L'Affinite (Valse Lente) Composed in 1907 by 
+		"Charles S. Roberts" (pen name of Karl Kraushaar). 
+		This old roll is American Piano Control catalog number 3905.
+		Roll has several large holes which will play clusters of notes.
+		Interesting printed expressions instructions for the
+		pianolist in the right margin.
+@CREATION-DATE:	Fri Nov  6 20:04:03 PST 2015
+@EDIT-DATE:	Fri Nov  6 20:04:05 PST 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Rolls without dynamic encodings
+@SUBSUBCATEGORY:
 @@END:		LINK
 
 
@@ -353,41 +341,26 @@ Fri Nov  6 13:58:11 PST 2015
 @CREATION-DATE:	Fri Nov  6 12:43:47 PST 2015
 @EDIT-DATE:	Fri Nov  6 12:43:49 PST 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	Pianola
+@SUBCATEGORY:	Rolls without dynamic encodings
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
-
-
-@@BEGIN:	LINK
-@TITLE:		CGI animation of a piano
-@URL:		https://www.youtube.com/watch?gl=GB&hl=en-GB&v=lVXmtckavDQ
-@DESCRIPTION:	Butterflies in the Rain.  Music by Sherman Myers, Arranged by
-		Frank Milne.
-@CREATION-DATE:	Thu Nov  5 01:30:00 PST 2015
-@EDIT-DATE:	Thu Nov  5 01:30:04 PST 2015
-@CATEGORY:	Video
-@SUBCATEGORY:	Animation
-@SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
-@@END:		LINK
 
 
 @@BEGIN:	LINK
 @TITLE:		Ray's CIS piano-roll scanner
 @URL:		https://www.youtube.com/watch?v=bv5mfmxuRsw
 @DESCRIPTION:	Tour of a self-built CIS line scanner for piano roll reading.
+		<a href="https://www.youtube.com/watch?v=bv5mfmxuRsw&t=68">Between 
+		1915 and 1925, 85% of pianos built in the U.S.
+		were player pianos.</a>
 @CREATION-DATE:	Fri Nov  6 12:17:31 PST 2015
 @EDIT-DATE:	Fri Nov  6 12:17:33 PST 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	Roll reading
+@SUBCATEGORY:	Roll reading for transcription
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
+
 
 
 @@BEGIN:	LINK
@@ -398,10 +371,8 @@ Fri Nov  6 13:58:11 PST 2015
 @CREATION-DATE:	Fri Nov  6 12:17:31 PST 2015
 @EDIT-DATE:	Fri Nov  6 12:17:33 PST 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	Roll reading
+@SUBCATEGORY:	Roll reading for transcription
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -415,10 +386,23 @@ Fri Nov  6 13:58:11 PST 2015
 @CREATION-DATE:	Fri Nov  6 16:23:35 PST 2015
 @EDIT-DATE:	Fri Nov  6 16:23:40 PST 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	Roll reading
+@SUBCATEGORY:	Roll reading for transcription
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Piano roll scanning from YouTube video.
+@URL:		https://www.youtube.com/watch?v=YmN3VlsG8c4
+@DESCRIPTION:	Using a webcam to read a piano roll from a
+		YouTube video, then playing back with
+		software synthesis.
+@CREATION-DATE:	Fri Nov  6 11:42:18 PST 2015
+@EDIT-DATE:	Fri Nov  6 11:42:21 PST 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Roll reading for transcription
+@SUBSUBCATEGORY:
 @@END:		LINK
 
 
@@ -434,11 +418,10 @@ Fri Nov  6 13:58:11 PST 2015
 @CREATION-DATE:	Fri Nov  6 12:24:37 PST 2015
 @EDIT-DATE:	Fri Nov  6 12:24:40 PST 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	Player piano technical information
+@SUBCATEGORY:	Analog player pianos
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
+
 
 
 @@BEGIN:	LINK
@@ -448,10 +431,34 @@ Fri Nov  6 13:58:11 PST 2015
 @CREATION-DATE:	Mon Nov  2 23:05:45 PST 2015
 @EDIT-DATE:	Mon Nov  2 23:05:47 PST 2015
 @CATEGORY:	Video
-@SUBCATEGORY:	Player piano technical information
+@SUBCATEGORY:	Analog player pianos
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		PianoDisc and Disklavier innards
+@URL:		https://www.youtube.com/watch?v=cACZqIlGx_Y
+@DESCRIPTION:	Comparison between PianoDisc and Disklavier pieces.
+@CREATION-DATE:	Sun Oct 25 12:01:06 PDT 2015
+@EDIT-DATE:	Sun Oct 25 12:01:08 PDT 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Digital player pianos
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+@@BEGIN:	LINK
+@TITLE:		The QRS Playola portable player piano system
+@URL:		http://www.qrsmusic.com/Playola.asp
+@URL:		https://www.youtube.com/watch?v=DaksUcVOukI
+@DESCRIPTION:	
+@CREATION-DATE:	Fri Nov  6 21:05:17 PST 2015
+@EDIT-DATE:	Fri Nov  6 21:05:20 PST 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Digital player pianos
+@SUBSUBCATEGORY:
 @@END:		LINK
 
 
@@ -471,8 +478,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Books
 @SUBCATEGORY:	Welte
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -486,8 +491,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Books
 @SUBCATEGORY:	Pianola
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -503,8 +506,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Books
 @SUBCATEGORY:	Pianola
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -520,8 +521,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Papers
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -540,8 +539,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Papers
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -557,9 +554,9 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Transcriptions
 @SUBCATEGORY:	MIDI
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
+
+
 
 @@BEGIN:	LINK
 @TITLE:		Archive of Player Piano Music Rolls in MIDI format
@@ -570,9 +567,9 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Transcriptions
 @SUBCATEGORY:	MIDI
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
+
+
 
 @@BEGIN:	LINK
 @TITLE:		Warren Trachtman Roll Transcriptions
@@ -583,8 +580,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Transcriptions
 @SUBCATEGORY:	MIDI
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -599,8 +594,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Transcriptions
 @SUBCATEGORY:	MIDI
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -614,8 +607,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Transcriptions
 @SUBCATEGORY:	MIDI
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -629,8 +620,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Transcriptions
 @SUBCATEGORY:	MIDI
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -645,8 +634,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Transcriptions
 @SUBCATEGORY:	MIDI
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -663,8 +650,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Organ rolls
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -678,8 +663,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Organ rolls
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -698,8 +681,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Digitization
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -713,8 +694,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Digitization
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -728,8 +707,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Digitization
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -750,8 +727,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Library collections
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -767,8 +742,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Library collections
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -786,8 +759,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Library collections
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -807,8 +778,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Library collections
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -824,8 +793,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Databases
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -839,8 +806,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Databases
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -863,8 +828,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Technical information
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@BEGIN:	IMAGE
 @URL:		http://www.en.faszinationpianola.de/images/12_notenrollen_aufgeznr.gif
 @POSITION:	right
@@ -884,8 +847,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Technical information
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -900,8 +861,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Technical information
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -919,9 +878,9 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Technical information
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
+
+
 
 @@BEGIN:	LINK
 @TITLE:		The Duo-Art recording process
@@ -935,8 +894,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Technical information
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -951,8 +908,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Technical information
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -973,8 +928,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Technical information
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -989,8 +942,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Technical information
 @SUBCATEGORY:	PianoDisc
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -1018,8 +969,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Technical information
 @SUBCATEGORY:	piano roll
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -1037,8 +986,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Software
 @SUBCATEGORY:	CIS
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -1052,8 +999,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Software
 @SUBCATEGORY:	CIS
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -1068,9 +1013,9 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Software
 @SUBCATEGORY:	Playback
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
+
+
 
 @@BEGIN:	LINK
 @TITLE:		Unroll
@@ -1084,8 +1029,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Software
 @SUBCATEGORY:	Transcription
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -1102,8 +1045,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Software
 @SUBCATEGORY:	Online
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -1118,8 +1059,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Software
 @SUBCATEGORY:	MIDI
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -1136,8 +1075,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Websites
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -1154,8 +1091,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Websites
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -1176,13 +1111,75 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Websites
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
 
+@ Museums @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@BEGIN:	LINK
+@TITLE:		Museum Speelklok, Utrecht, Netherlands
+@URL:		https://www.museumspeelklok.nl
+@URL:		https://en.wikipedia.org/wiki/Museum_Speelklok
+@DESCRIPTION:	Large number of orchestrions.
+		The museum's restoration workshops are a leader
+		in their field, and are known for their excellent standards.
+@CREATION-DATE:	Fri Nov  6 20:21:35 PST 2015
+@EDIT-DATE:	Fri Nov  6 20:21:38 PST 2015
+@CATEGORY:	Museums
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Pianola Museum in Amsterdam, Netherlands
+@URL:		http://www.pianola.nl
+@DESCRIPTION:	
+@CREATION-DATE:	Fri Nov  6 20:20:15 PST 2015
+@EDIT-DATE:	Fri Nov  6 20:20:18 PST 2015
+@CATEGORY:	Museums
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Museé Méchanique, San Franscisco, California
+@URL:		http://museemecaniquesf.com
+@URL:		https://www.youtube.com/watch?v=Y8tXiSgboGU&t=30
+@URL:		https://www.youtube.com/watch?v=OA6HziOC5B4
+@DESCRIPTION:	Penny arcade with numerous player pianos and other
+		mechanical music devices playable by the public.
+@CREATION-DATE:	Fri Nov  6 20:26:45 PST 2015
+@EDIT-DATE:	Fri Nov  6 20:26:47 PST 2015
+@CATEGORY:	Museums
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
+
 @ Groups  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@BEGIN:	LINK
+@TITLE:		Automatic Musical Instrument Collectors' Association
+@URL:		http://www.amica.org
+@URL:		http://www.amica.org/Live/Publications
+@URL:		http://www.amica.org/Live/Organization/Chapters/index.htm#founding
+@DESCRIPTION:	An educational non-profit organization with worldwide 
+		appreciation of historic automatic musical instruments.
+@CREATION-DATE:	Fri Nov  6 23:06:03 PST 2015
+@EDIT-DATE:	Fri Nov  6 23:06:05 PST 2015
+@CATEGORY:	Groups
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
 
 @@BEGIN:	LINK
 @TITLE:		International Association of Mechanical Music Preservationists
@@ -1193,9 +1190,9 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Groups
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
+
+
 
 @@BEGIN:	LINK
 @TITLE:		The Pianola Institute
@@ -1208,8 +1205,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	Groups
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -1226,8 +1221,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	People
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@BEGIN:	IMAGE
 @URL:		http://www.stibbons.com/images/rollscanner.jpg
 @POSITION:	right
@@ -1246,8 +1239,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	People
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -1264,8 +1255,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	People
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -1281,8 +1270,6 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	People
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
 
 
@@ -1297,13 +1284,62 @@ Fri Nov  6 13:58:11 PST 2015
 @CATEGORY:	People
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Gerald Stonehill
+@URL:		http://www.telegraph.co.uk/news/obituaries/culture-obituaries/music-obituaries/8366907/Gerald-Stonehill.html
+@URL:		http://www.christies.com/Lotfinder/lot_details.aspx?intObjectID=4714903&SN=4108&LN=0123
+@URL:		http://www.mmdigest.com/Archives/Digests/200606/2006.06.03.01.html
+@DESCRIPTION:	Gerald Stonehill, who has died aged 85, was the world’s 
+		leading authority on the Duo-Art piano, an 
+		electrically-operated pneumatic instrument which 
+		uses a roll of perforated paper to reproduce every 
+		aspect of the recording pianist’s performance; he amassed 
+		the world’s largest collection of Duo-Art rolls and 
+		staged public performances of the pieces at concert halls 
+		in London.
+@CREATION-DATE: Fri Nov  6 22:55:06 PST 2015
+@EDIT-DATE:	Fri Nov  6 22:55:09 PST 2015
+@CATEGORY:	People
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Albert Petrak
+@URL:		http://www.mmdigest.com/Archives/Digests/201401/2014.01.26.02.html
+@URL:		http://www.mmdigest.com/Archives/Authors/Aut1435.html
+@DESCRIPTION:	Founder of the Reproducing Piano Roll Foundattion.  Involved
+		with IPAM
+@CREATION-DATE: Fri Nov  6 22:55:06 PST 2015
+@EDIT-DATE:	Fri Nov  6 22:55:09 PST 2015
+@CATEGORY:	People
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
 @@END:		LINK
 
 
 
 @ Pianists @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+@@BEGIN:	LINK
+@TITLE:		List of piano roll artist pseudonyms
+@URL:		http://www.mmdigest.com/Gallery/MMMedia/pseudonyms.html
+@DESCRIPTION:	Compiled by Steve Rattle and Peter Phillips, 2005.
+@CREATION-DATE:	Tue Nov  3 23:04:29 PST 2015
+@EDIT-DATE:	Tue Nov  3 23:04:33 PST 2015
+@CATEGORY:	Pianists
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
 
 @@BEGIN:	LINK
 @TITLE:		Clarence Adler (1886-1969)
@@ -1317,6 +1353,21 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBSUBCATEGORY:
 @@END:		LINK
 
+
+
+@@BEGIN:	LINK
+@TITLE:		Eugen d'Albert (1864-1932)
+@URL:		https://en.wikipedia.org/wiki/Eugen_d%27Albert
+@DESCRIPTION:	Scottish-born German pianist and composer.
+@CREATION-DATE:	Sat Nov  7 15:25:44 PST 2015
+@EDIT-DATE:	Sat Nov  7 15:25:47 PST 2015
+@CATEGORY:	Pianists
+@SUBCATEGORY:	Classical
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
 @@BEGIN:	LINK
 @TITLE:		Wilhelm Backhaus/Bachaus (1885-1969)
 @URL:		https://en.wikipedia.org/wiki/Wilhelm_Backhaus
@@ -1327,6 +1378,8 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBCATEGORY:	Classical
 @SUBSUBCATEGORY:
 @@END:		LINK
+
+
 
 @@BEGIN:	LINK
 @TITLE:		Harold Bauer (1873-1951)
@@ -1340,6 +1393,8 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBSUBCATEGORY:
 @@END:		LINK
 
+
+
 @@BEGIN:	LINK
 @TITLE:		Alexander Brailowsky (1896-1976)
 @URL:		https://en.wikipedia.org/wiki/Alexander_Brailowsky
@@ -1351,6 +1406,8 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBCATEGORY:	Classical
 @SUBSUBCATEGORY:
 @@END:		LINK
+
+
 
 @@BEGIN:	LINK
 @TITLE:		Ferruccio Busoni (1866-1924)
@@ -1364,6 +1421,8 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBSUBCATEGORY:
 @@END:		LINK
 
+
+
 @@BEGIN:	LINK
 @TITLE:		Teresa Carreño (1853-1917)
 @URL:		https://en.wikipedia.org/wiki/Teresa_Carre%C3%B1o
@@ -1374,6 +1433,8 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBCATEGORY:	Classical
 @SUBSUBCATEGORY:
 @@END:		LINK
+
+
 
 @@BEGIN:	LINK
 @TITLE:		Alfred Cortot (1877-1962)
@@ -1387,6 +1448,8 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBSUBCATEGORY:
 @@END:		LINK
 
+
+
 @@BEGIN:	LINK
 @TITLE:		Erno Dohnányi (1877-1960)
 @URL:		https://en.wikipedia.org/wiki/Ern%C5%91_Dohn%C3%A1nyi
@@ -1397,6 +1460,35 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBCATEGORY:	Classical
 @SUBSUBCATEGORY:
 @@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Rudolph Ganz (1877-1972)
+@URL:		https://en.wikipedia.org/wiki/Rudolph_Ganz
+@DESCRIPTION:	Swiss-born American pianist, conductor, composer and music
+		educator.
+@CREATION-DATE:	Sat Nov  7 15:35:42 PST 2015
+@EDIT-DATE:	Sat Nov  7 15:35:45 PST 2015
+@CATEGORY:	Pianists
+@SUBCATEGORY:	Classical
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Walter Gieseking (1875-1956)
+@URL:		https://en.wikipedia.org/wiki/Walter_Gieseking
+@DESCRIPTION:	French-born German pianist and composer.
+@CREATION-DATE:	Sat Nov  7 15:37:13 PST 2015
+@EDIT-DATE:	Sat Nov  7 15:37:19 PST 2015
+@CATEGORY:	Pianists
+@SUBCATEGORY:	Classical
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
 
 @@BEGIN:	LINK
 @TITLE:		Leopold Godowsky (1870-1938)
@@ -1409,8 +1501,23 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBSUBCATEGORY:
 @@END:		LINK
 
+
+
 @@BEGIN:	LINK
-@TITLE:		Vincent D'indy (1851-1931)
+@TITLE:		Josef Hofmann (1876-1957)
+@URL:		https://en.wikipedia.org/wiki/Josef_Hofmann
+@DESCRIPTION:	Polish-American pianist, composer, music teacher and inventor.
+@CREATION-DATE:	Sat Nov  7 15:27:58 PST 2015
+@EDIT-DATE:	Sat Nov  7 15:28:01 PST 2015
+@CATEGORY:	Pianists
+@SUBCATEGORY:	Classical
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Vincent D'Indy (1851-1931)
 @URL:		https://en.wikipedia.org/wiki/Vincent_d%27Indy
 @DESCRIPTION:	French composer and teacher.
 @CREATION-DATE:	Tue Nov  3 23:04:29 PST 2015
@@ -1419,6 +1526,22 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBCATEGORY:	Classical
 @SUBSUBCATEGORY:
 @@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Frederic Lamond (1868-1948)
+@URL:		https://en.wikipedia.org/wiki/Frederic_Lamond_(pianist)
+@DESCRIPTION:	Scottish pianist and composer.  Penultimate surviving
+		pupil of Franz Liszt.
+@CREATION-DATE:	Sat Nov  7 15:39:52 PST 2015
+@EDIT-DATE:	Sat Nov  7 15:39:55 PST 2015
+@CATEGORY:	Pianists
+@SUBCATEGORY:	Classical
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
 
 @@BEGIN:	LINK
 @TITLE:		Mischa Levitzki (1898-1941)
@@ -1430,6 +1553,8 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBCATEGORY:	Classical
 @SUBSUBCATEGORY:
 @@END:		LINK
+
+
 
 @@BEGIN:	LINK
 @TITLE:		Josef Lhévinne (1874-1944)
@@ -1445,6 +1570,8 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBSUBCATEGORY:
 @@END:		LINK
 
+
+
 @@BEGIN:	LINK
 @TITLE:		Arthur Loesser (1894-1969)
 @URL:		https://en.wikipedia.org/wiki/Arthur_Loesser
@@ -1456,6 +1583,21 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBSUBCATEGORY:
 @@END:		LINK
 
+
+
+@@BEGIN:	LINK
+@TITLE:		Yolanda Mero (1887-1963)
+@URL:		https://en.wikipedia.org/wiki/Yolanda_Mero
+@DESCRIPTION:	Hungarian-American pianist and philanthropist.
+@CREATION-DATE:	Sat Nov  7 15:33:16 PST 2015
+@EDIT-DATE:	Sat Nov  7 15:33:20 PST 2015
+@CATEGORY:	Pianists
+@SUBCATEGORY:	Classical
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
 @@BEGIN:	LINK
 @TITLE:		Benno Moiseiwitsch (1890-1963)
 @URL:		https://en.wikipedia.org/wiki/Benno_Moiseiwitsch
@@ -1466,6 +1608,8 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBCATEGORY:	Classical
 @SUBSUBCATEGORY:
 @@END:		LINK
+
+
 
 @@BEGIN:	LINK
 @TITLE:		Mieczyslaw Münz (1900-1976)
@@ -1480,6 +1624,8 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBSUBCATEGORY:
 @@END:		LINK
 
+
+
 @@BEGIN:	LINK
 @TITLE:		Elly Ney (1882-1968)
 @URL:		https://en.wikipedia.org/wiki/Elly_Ney
@@ -1492,6 +1638,8 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBSUBCATEGORY:
 @@END:		LINK
 
+
+
 @@BEGIN:	LINK
 @TITLE:		Erwin Nyiregyhazi (1903-1987)
 @URL:		https://en.wikipedia.org/wiki/Ervin_Nyiregyh%C3%A1zi
@@ -1502,6 +1650,8 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBCATEGORY:	Classical
 @SUBSUBCATEGORY:
 @@END:		LINK
+
+
 
 @@BEGIN:	LINK
 @TITLE:		Leo Ornstein (1893-2002)
@@ -1514,6 +1664,21 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBSUBCATEGORY:
 @@END:		LINK
 
+
+
+@@BEGIN:	LINK
+@TITLE:		Vladimir de Pachmann (1848-1933)
+@URL:		https://en.wikipedia.org/wiki/Vladimir_de_Pachmann
+@DESCRIPTION:	Russian-German pianist.
+@CREATION-DATE:	Sat Nov  7 15:23:56 PST 2015
+@EDIT-DATE:	Sat Nov  7 15:23:59 PST 2015
+@CATEGORY:	Pianists
+@SUBCATEGORY:	Classical
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
 @@BEGIN:	LINK
 @TITLE:		Sergei Rachmaninoff (1873-1943)
 @URL:		https://en.wikipedia.org/wiki/Sergei_Rachmaninoff
@@ -1524,6 +1689,8 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBCATEGORY:	Classical
 @SUBSUBCATEGORY:
 @@END:		LINK
+
+
 
 @@BEGIN:	LINK
 @TITLE:		Arthur Rubinstein (1887-1982)
@@ -1536,6 +1703,21 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBSUBCATEGORY:
 @@END:		LINK
 
+
+
+@@BEGIN:	LINK
+@TITLE:		Olga Samaroff (1880-1948)
+@URL:		https://en.wikipedia.org/wiki/Olga_Samaroff
+@DESCRIPTION:	American pianist, music critic and teacher.
+@CREATION-DATE:	Sat Nov  7 15:31:45 PST 2015
+@EDIT-DATE:	Sat Nov  7 15:31:48 PST 2015
+@CATEGORY:	Pianists
+@SUBCATEGORY:	Classical
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
 @@BEGIN:	LINK
 @TITLE:		E. Robert Schmitz (1889-1949)
 @URL:		https://en.wikipedia.org/wiki/E._Robert_Schmitz
@@ -1547,6 +1729,8 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBSUBCATEGORY:
 @@END:		LINK
 
+
+
 @@BEGIN:	LINK
 @TITLE:		Artur Schnabel (1882-1951)
 @URL:		https://en.wikipedia.org/wiki/Artur_Schnabel
@@ -1557,6 +1741,20 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBCATEGORY:	Classical
 @SUBSUBCATEGORY:
 @@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Fannie Bloomfield Zeisler (1863-1927)
+@URL:		https://en.wikipedia.org/wiki/Fannie_Bloomfield_Zeisler
+@DESCRIPTION:	Austrian-born U.S. pianist.  Pupil of Theodor Leschitizky.
+@CREATION-DATE:	Sat Nov  7 15:19:46 PST 2015
+@EDIT-DATE:	Sat Nov  7 15:19:49 PST 2015
+@CATEGORY:	Pianists
+@SUBCATEGORY:	Classical
+@SUBSUBCATEGORY:
+@@END:		LINK
+
 
 
 @@BEGIN:	LINK
@@ -1573,6 +1771,8 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBSUBCATEGORY:
 @@END:		LINK
 
+
+
 @@BEGIN:	LINK
 @TITLE:		Eubie Blake (1887-1983)
 @URL:		https://en.wikipedia.org/wiki/Eubie_Blake
@@ -1584,6 +1784,8 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBCATEGORY:	Popular
 @SUBSUBCATEGORY:
 @@END:		LINK
+
+
 
 @@BEGIN:	LINK
 @TITLE:		Adam Carroll (1897-1974)
@@ -1598,6 +1800,8 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBSUBCATEGORY:
 @@END:		LINK
 
+
+
 @@BEGIN:	LINK
 @TITLE:		Zez Confrey (1895-1971)
 @URL:		https://en.wikipedia.org/wiki/Zez_Confrey
@@ -1609,6 +1813,8 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBCATEGORY:	Popular
 @SUBSUBCATEGORY:
 @@END:		LINK
+
+
 
 @@BEGIN:	LINK
 @TITLE:		Rudolf Friml (1879-1972)
@@ -1622,6 +1828,8 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBSUBCATEGORY:
 @@END:		LINK
 
+
+
 @@BEGIN:	LINK
 @TITLE:		George Gershwin (1898-1937)
 @URL:		https://en.wikipedia.org/wiki/George_Gershwin
@@ -1632,6 +1840,8 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBCATEGORY:	Popular
 @SUBSUBCATEGORY:
 @@END:		LINK
+
+
 
 @@BEGIN:	LINK
 @TITLE:		Ferde Grofé (1892-1972)
@@ -1644,6 +1854,22 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBSUBCATEGORY:
 @@END:		LINK
 
+
+
+@@BEGIN:	LINK
+@TITLE:		Howard Lutter (1889-1959)
+@URL:		https://en.wikipedia.org/wiki/Howard_Lutter
+@DESCRIPTION:	American musician and composer.  Studied piano
+		with Rafael Joseffy.  Worked for Artempo and Welte.
+@CREATION-DATE:	Sat Nov  7 15:22:17 PST 2015
+@EDIT-DATE:	Sat Nov  7 15:22:20 PST 2015
+@CATEGORY:	Pianists
+@SUBCATEGORY:	Popular
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
 @@BEGIN:	LINK
 @TITLE:		Vincent Lopez (1895-1975)
 @URL:		https://en.wikipedia.org/wiki/Vincent_Lopez
@@ -1654,6 +1880,8 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBCATEGORY:	Popular
 @SUBSUBCATEGORY:
 @@END:		LINK
+
+
 
 @@BEGIN:	LINK
 @TITLE:		Frank C. Milne (1888-1959)
@@ -1670,6 +1898,8 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBSUBCATEGORY:
 @@END:		LINK
 
+
+
 @@BEGIN:	LINK
 @TITLE:		Phil Ohman (1896-1954)
 @URL:		https://en.wikipedia.org/wiki/Phil_Ohman
@@ -1681,6 +1911,8 @@ Fri Nov  6 13:58:11 PST 2015
 @SUBSUBCATEGORY:
 @@END:		LINK
 
+
+
 @@BEGIN:	LINK
 @TITLE:		Ralph Rainger (1901-1942)
 @URL:		https://en.wikipedia.org/wiki/Ralph_Rainger
@@ -1691,6 +1923,8 @@ obert Schmitzue Nov  3 23:04:33 PST 2015
 @SUBCATEGORY:	Popular
 @SUBSUBCATEGORY:
 @@END:		LINK
+
+
 
 @@BEGIN:	LINK
 @TITLE:		Richard Rodgers (1902-1979)
@@ -1707,6 +1941,8 @@ obert Schmitzue Nov  3 23:04:33 PST 2015
 @SUBSUBCATEGORY:
 @@END:		LINK
 
+
+
 @@BEGIN:	LINK
 @TITLE:		Lee Sims (1898-1966)
 @URL:		https://en.wikipedia.org/wiki/Lee_Sims
@@ -1719,22 +1955,12 @@ obert Schmitzue Nov  3 23:04:33 PST 2015
 @SUBSUBCATEGORY:
 @@END:		LINK
 
+
+
 @@BEGIN:	LINK
 @TITLE:		Vincent Youmans (1898-1946)
 @URL:		https://en.wikipedia.org/wiki/Vincent_Youmans
 @DESCRIPTION:	American Broadway composer and Broadway producer.
-@CREATION-DATE:	Tue Nov  3 23:04:29 PST 2015
-@EDIT-DATE:	Tue Nov  3 23:04:33 PST 2015
-@CATEGORY:	Pianists
-@SUBCATEGORY:	Popular
-@SUBSUBCATEGORY:
-@@END:		LINK
-
-
-@@BEGIN:	LINK
-@TITLE:		List of piano roll artist pseudonyms
-@URL:		http://www.mmdigest.com/Gallery/MMMedia/pseudonyms.html
-@DESCRIPTION:	Compiled by Steve Rattle and Peter Phillips, 2005.
 @CREATION-DATE:	Tue Nov  3 23:04:29 PST 2015
 @EDIT-DATE:	Tue Nov  3 23:04:33 PST 2015
 @CATEGORY:	Pianists
@@ -1754,15 +1980,13 @@ obert Schmitzue Nov  3 23:04:33 PST 2015
 		Line scan acquisition interfaces: GigE, CameraLink, HSLink.
 		At
 		<a target="_blank" href="https://www.youtube.com/watch?v=KCCz8dyNivI&t=760">9:40</a> discussion of line scan camera synchronization, and programmable encoders.
-		
 @CREATION-DATE:	Fri Nov  6 11:53:43 PST 2015
 @EDIT-DATE:	Fri Nov  6 11:53:45 PST 2015
 @CATEGORY:	Line scan cameras
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
 @@END:		LINK
+
 
 
 @@BEGIN:	LINK
@@ -1775,8 +1999,20 @@ obert Schmitzue Nov  3 23:04:33 PST 2015
 @CATEGORY:	Line scan cameras
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
-@CATEGORY2:	
-@SUBCATEGORY2:	
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Line scan camera demonstration
+@URL:		https://www.youtube.com/watch?v=T94CY1qDBPo
+@DESCRIPTION:	Line scan camera acquiring data and displaying on a
+		screen in real time.
+@CREATION-DATE:	Sat Nov  7 15:14:32 PST 2015
+@EDIT-DATE:	Sat Nov  7 15:14:34 PST 2015
+@CATEGORY:	Line scan cameras
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
 @@END:		LINK
 
 

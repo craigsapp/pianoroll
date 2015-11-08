@@ -12,11 +12,7 @@ title: Links
 {% include slink/slink-extra.html %}
 
 
-
-
-
-
-<h1> Links </h1>
+<h1> Piano-roll links </h1>
 
 <div class="slink-search"></div>
 <div id="#categories" class="slink" title="links.aton"></div>
