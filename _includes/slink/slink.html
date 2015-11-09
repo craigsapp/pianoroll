@@ -31,7 +31,11 @@ expanding template codes which are mean for Handlebars instead.
 	{{{anchor @key}}}
 	<details open class="link-category">
 		<summary class="category">
-			{{@key}} {{> catButtons count=this.length}}
+			{{#if this.longname}}
+				{{this.longname}} {{> catButtons count=this.links.length}}
+			{{else}}
+				{{@key}} {{> catButtons count=this.links.length}}
+			{{/if}}
 		</summary>
 		{{subCategoriesList this}}
 	</details>
@@ -56,10 +60,10 @@ expanding template codes which are mean for Handlebars instead.
 			<summary class="subcategory">
 				{{@key}}
 			</summary>
-	{{/if}}
-	{{> entryList}}
-	{{#if @key}}
+			{{> entryList this.links}}
 		</details>
+	{{else}}
+			{{> entryList this.links}}
 	{{/if}}
 {{/each}}
 
@@ -70,11 +74,12 @@ expanding template codes which are mean for Handlebars instead.
 <!--
 //////////////////////////////
 //
-// slink-entry-template -- Display the search form for a list of links.
+// slink-flat-template -- Display the search form for a list of links.
+//    which are not sub-categorized.
 //
 -->
 
-<script id="slink-entry-template" type="text/x-handlebars-template">
+<script id="slink-flat-template" type="text/x-handlebars-template">
 
 {{#each this}}
 	<details class="link-entry" open>
@@ -96,6 +101,7 @@ expanding template codes which are mean for Handlebars instead.
 {{/each}}
 
 </script>
+
 
 
 <!--

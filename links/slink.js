@@ -1,12 +1,12 @@
 //
 // Programmer:    Craig Stuart Sapp <craig@ccrma.stanford.edu>
 // Creation Date: Wed Oct 21 09:28:12 PDT 2015
-// Last Modified: Wed Nov  4 14:16:30 PST 2015
+// Last Modified: Sun Nov  8 18:53:28 PST 2015
 // Filename:      slink.js
 // Syntax:        JavaScript 1.8.5/ECMAScript 5.1
 // vim:           ts=3
 //
-// Description:   Searchable links class.
+// Description:   Searchable links object.
 //
 // Example entry:
 //
@@ -52,9 +52,9 @@ var EscKey       =  27;
 //
 
 function SLINK() {
-	this.flatList = [];
-	this.categoryList = {};
-
+	this.categoryOrder = [];
+	this.flatList      = [];
+	this.categoryList  = {};
 	return this;
 }
 
@@ -75,16 +75,16 @@ SLINK.prototype.subcategoryTemplate     = '';
 
 // Template rendering functions, defined laster in slink.html:
 SLINK.prototype.renderSearchForm      = function() { return 'Error1'; };
-SLINK.prototype.renderLinkList        = function() { return 'Error2'; };
-SLINK.prototype.renderCatButtons      = function() { return 'Error3'; };
-SLINK.prototype.renderCategoryList    = function() { return 'Error4'; };
-SLINK.prototype.renderSubcategoryList = function() { return 'Error5'; };
+SLINK.prototype.renderCatButtons      = function() { return 'Error2'; };
+SLINK.prototype.renderCategoryList    = function() { return 'Error3'; };
+SLINK.prototype.renderSubcategoryList = function() { return 'Error4'; };
+SLINK.prototype.renderFlatList        = function() { return 'Error5'; };
 
 
 
 //////////////////////////////
 //
-// SLINK.addLinkEntry -- Add a link to the list (both flat and
+// SLINK.prototype.addLinkEntry -- Add a link to the list (both flat and
 //    by category.
 //
 
@@ -102,17 +102,17 @@ SLINK.prototype.addLinkEntry = function (entry) {
 	this.flatList.push(entry);
 
 	if (this.categoryList[entry.CATEGORY]) {
-		this.categoryList[entry.CATEGORY].push(entry);
+		this.categoryList[entry.CATEGORY].links.push(entry);
 	} else {
-		this.categoryList[entry.CATEGORY] = [];
-		this.categoryList[entry.CATEGORY].push(entry);
+		this.addLinkCategory(entry.CATEGORY);
+		this.categoryList[entry.CATEGORY].links.push(entry);
 	}
 
 	if (entry.category2) {
 		if (this.categoryList[entry.CATEGORY2]) {
 			this.categoryList[entry.CATEGORY2].push(entry);
 		} else {
-			this.categoryList[entry.CATEGORY2] = [];
+			this.addLinkCategory(entry.CATEGORY2);
 			this.categoryList[entry.CATEGORY2].push(entry);
 		}
 	}
@@ -121,12 +121,45 @@ SLINK.prototype.addLinkEntry = function (entry) {
 		if (this.categoryList[entry.CATEGORY3]) {
 			this.categoryList[entry.CATEGORY3].push(entry);
 		} else {
-			this.categoryList[entry.CATEGORY3] = [];
+			this.addLinkCategory(entry.CATEGORY3);
 			this.categoryList[entry.CATEGORY3].push(entry);
 		}
 	}
 
+}
 
+
+
+//////////////////////////////
+//
+// SLINK.readData -- Add list of links to object.
+//
+
+SLINK.prototype.readData = function (data) {
+	// .ORDER == order to display categories.	
+	// .ORDER.CATEGORY[].SHORT == abbreviated category title
+	// .ORDER.CATEGORY[].LONG  == abbreviated category title
+	// .LINK  == array of links.
+
+	if (data.ORDER) {
+		this.categoryList  = {};
+		this.categoryOrder = [];
+		this.flatList      = [];
+
+		if (data.ORDER.CATEGORY) {
+			for (var i=0; i<data.ORDER.CATEGORY.length; i++) {
+				this.categoryOrder.push({
+					longname:  data.ORDER.CATEGORY[i].LONG,
+					shortname: data.ORDER.CATEGORY[i].SHORT
+				});
+				this.addLinkCategory(data.ORDER.CATEGORY[i].SHORT,
+				                     data.ORDER.CATEGORY[i].LONG);
+			}
+		}
+
+	}
+
+	this.addLinkEntry(data.LINK);
 }
 
 
@@ -164,7 +197,7 @@ SLINK.prototype.linksToHtml = function () {
 
 //////////////////////////////
 //
-// SLINK.loadAtonLinks --
+// SLINK.prototype.loadAtonLinks --
 //
 
 SLINK.prototype.loadAtonLinks = function (element) {
@@ -172,6 +205,7 @@ SLINK.prototype.loadAtonLinks = function (element) {
 		return;
 	}
 	var file = element.title;
+	element.title = '';
 	if (!file) {
 		return;
 	}
@@ -183,9 +217,8 @@ SLINK.prototype.loadAtonLinks = function (element) {
       if (request.status == 200) {
          try {
 				var aton = new ATON();
-				aton.setOnlyChildRoot();
             var parsed = aton.parse(request.responseText);
-				that.addLinkEntry(parsed);
+				that.readData(parsed);
 				element.innerHTML = that.linksToHtml();
 				showBriefListings();
          } catch(err) {
@@ -355,19 +388,24 @@ Handlebars.registerHelper('subCategoriesList', function(catlist) {
 
 	var i;
 	var sublist = new SLINK;
-	for (i=0; i<catlist.length; i++) {
-		var copy = JSON.parse(JSON.stringify(catlist[i]));
+
+	for (i=0; i<catlist.links.length; i++) {
+		var copy = JSON.parse(JSON.stringify(catlist.links[i]));
 		copy.CATEGORY = copy.SUBCATEGORY;
+		sublist.addLinkCategory(copy.CATEGORY);
 		sublist.addLinkEntry(copy);
 	}
 
 	var count = sublist.getCategories().length;
+	var output;
 	if ((count == 1) || (sublist.flatList.length < 10)) {
-		sublist.categoryList = {"": sublist.flatList};
+		output = sublist.renderFlatList(sublist.flatList);
+	} else {
+		output = sublist.renderSubcategoryList(sublist.categoryList);
 	}
-	var output = sublist.renderSubcategoryList(sublist.categoryList);
 	return new Handlebars.SafeString(output);
 });
+
 
 
 ///////////////////////////////////////////////////////////////////////////
@@ -390,7 +428,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	SLINK.prototype.searchTemplate = document.querySelector(
 			'#slink-search-template').innerHTML;
 	SLINK.prototype.entryTemplate = document.querySelector(
-			'#slink-entry-template').innerHTML;
+			'#slink-flat-template').innerHTML;
 	SLINK.prototype.catButtonsTemplate = document.querySelector(
 			'#slink-catbuttons-template').innerHTML;
 	SLINK.prototype.categoryTemplate = document.querySelector(
@@ -401,18 +439,18 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Fill in rendering functions:
 	SLINK.prototype.renderSearchForm =
 			Handlebars.compile(SLINK.prototype.searchTemplate);
-	SLINK.prototype.renderLinkList =
-			Handlebars.compile(SLINK.prototype.entryTemplate);
 	SLINK.prototype.renderCatButtons =
 			Handlebars.compile(SLINK.prototype.catButtonsTemplate);
 	SLINK.prototype.renderCategoryList =
 			Handlebars.compile(SLINK.prototype.categoryTemplate);
 	SLINK.prototype.renderSubcategoryList =
 			Handlebars.compile(SLINK.prototype.subcategoryTemplate);
+	SLINK.prototype.renderFlatList =
+			Handlebars.compile(SLINK.prototype.entryTemplate);
 
 	LINKS = new SLINK;
 	LINKS.loadSearchInterface();
-	loadLinks(LINKS);
+	LINKS.loadLinks();
 
 	Handlebars.registerPartial('entryList',
 			SLINK.prototype.entryTemplate);
@@ -424,23 +462,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+
+
 //////////////////////////////
 //
 // loadLinks -- Display list of links on page (when the links
 //   file is in the ATON format).
 //
 
-function loadLinks(object) {
-	if (!object) {
-		object = LINKS;
-	}
-
+SLINK.prototype.loadLinks = function () {
 	var slinks = document.querySelectorAll('[class^="slink"]');
 	for (var i=0; i<slinks.length; i++) {
 		if (!slinks[i].title) {
 			continue;
 		}
-		object.loadAtonLinks(slinks[i]);
+		this.loadAtonLinks(slinks[i]);
 	}
 }
 
@@ -554,7 +590,7 @@ function openAllLinks() {
 //
 
 function closeAllLinks() {
-	var details = document.querySelectorAll('details');
+	var details = document.querySelectorAll('details.link-category');
 	for (var i=0; i<details.length; i++) {
 		details[i].open = false;
 	}
@@ -781,7 +817,6 @@ SLINK.prototype.getLinkMatches = function(searchstring, scope)  {
 			output.addLinkEntry(links[j]);
 		}
 	}
-console.log("LINK MATCHES=", output.flatList.length);
 	return output;
 };
 
@@ -835,15 +870,6 @@ SLINK.prototype.displayAllLinks = function () {
 		slinks[i].innerHTML = this.linksToHtml();
 	}
 
-/*
-	var count = 0;
-	var element = document.querySelector('#categories');
-	if (element) {
-		var html = renderAllLinks(object);
-		element.innerHTML = html;
-		count = showMatchCounts(object);
-	}
-*/
 	var count = this.getLinkCount();
 	if (count == 1) {
 		openAllLinks();
@@ -863,15 +889,15 @@ SLINK.prototype.displayAllLinks = function () {
 
 function buildSearchCategories(inlinks) {
 	var tempLINKS = {
-   	category: []
+   	linkCategory: []
 	}
-	var cat = tempLINKS.category;
+	var cat = tempLINKS.linkCategory;
 	var lastheading = '';
 	var heading = '';
 	for (var i=0; i<inlinks.length; i++) {
 		heading = inlinks[i].heading;
 		if (heading !== lastheading) {
-			addLinkCategory(heading, 'dummy', tempLINKS);
+			tempLINKS.addLinkCategory(heading);
 			cat[cat.length - 1].heading = heading;
 		}
 		lastheading = heading;
@@ -948,18 +974,50 @@ SLINK.prototype.getLinkCount = function (object) {
 //    assign new category to input object.
 //
 
-function addLinkCategory(heading, templ, object) {
-	if (typeof object === 'undefined') {
-		object = LINKS;
+SLINK.prototype.addLinkCategory = function (short, long) {
+	if (!long) {
+		long = this.getLongCategoryName(short);
 	}
+	if (!long) {
+		long = short;
+	}
+	if (this.categoryList[long]) {
+		// don't add the same category twice.
+		return;
+	}
+   var cat = this.getCategories();
 	var entry = {
-		heading: heading,
-		templ: templ,
-		index: object.category.length,
-		preface: '',
-		links: []
+		longname:  long,
+		shortname: short,
+		index:     cat.length,
+		preface:   '',
+		links:     []
 	};
-	object.category.push(entry);
+	this.categoryList[short] = entry;
+}
+
+
+
+//////////////////////////////
+//
+// getLongCategoryName -- Give a short name, get the long name.
+//
+
+SLINK.prototype.getLongCategoryName = function (shortname) {
+	for (var i=0; i<this.categoryOrder.length; i++) {
+		if (this.categoryOrder[i].shortname == shortname) {
+			return this.categoryOrder[i].longname;
+		}
+	}
+	
+	for (var property in this.categoryList) {
+		if (this.categoryList.hasOwnProperty(property)) {
+			if (property.shortname == shortname) {
+				return property.longname;
+			}
+		}
+	}
+	return null;
 }
 
 
