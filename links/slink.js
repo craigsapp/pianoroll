@@ -205,7 +205,7 @@ SLINK.prototype.loadAtonLinks = function (element) {
 		return;
 	}
 	var file = element.title;
-	element.title = '';
+	element.title = ' ';
 	if (!file) {
 		return;
 	}
@@ -731,6 +731,7 @@ function openCategoryDetails() {
 
 SLINK.prototype.getLinkMatches = function(searchstring, scope)  {
 	var output = new SLINK;
+   output.categoryOrder = this.categoryOrder;
 	searchstring = searchstring.replace(/^\s+/, '');
 	searchstring = searchstring.replace(/\s+$/, '');
 	searchstring = searchstring.replace(/\s+/g, ' ');
@@ -940,7 +941,7 @@ SLINK.prototype.showMatchCounts = function (object) {
 	var counter;
 	for (var i=0; i<slots.length; i++) {
 		counter = 0;
-		var list = this.categoryList[cat[i]];
+		var list = this.categoryList[cat[i]].links;
 		if (list) {
 			counter += list.length;
 		}

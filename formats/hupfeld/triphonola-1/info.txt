@@ -21,14 +21,22 @@
 @@BEGIN:	SAMPLE
 @NUMBER:	01
 @DESCRIPTION:	Start of roll. 
-@COMMENTARY:	
+@COMMENTARY:	The red line shows the boundary between 
+		bass and treble expression.  The dotted black line
+		represents manual expression performance (tempo?)
 @COMMENTARY_POST: 
 @@END:		SAMPLE
 
 @@BEGIN:	SAMPLE
 @NUMBER:	02
 @DESCRIPTION:	A few feet in.
-@COMMENTARY:	
+@COMMENTARY:	Notice that the note durations are slightly
+		different.  For example the hole on the red line
+		alternate between being attached to each other
+		and separated by a gap, typically smaller than
+		the diameter of the holes.  The high sustained
+		notes contain a sequence of evenly spaced
+		holes.
 @COMMENTARY_POST: 
 @@END:		SAMPLE
 
