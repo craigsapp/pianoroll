@@ -1188,6 +1188,37 @@ Fri Nov  6 13:58:11 PST 2015
 
 
 
+@@BEGIN:	LINK
+@TITLE:		The Pleyela, Pleyel-Pleyla and Auto-Pleyela
+@URL:		http://www.pianola.org/factsheets/pleyela.cfm
+@URL:		http://www.pianola.org/images/factsheet_graphics/pleyela/pleyelavalve.gif (good diagram of vacuum system mechanics)
+@URL		http://www.pianola.org/images/factsheet_graphics/pleyela/pleyeladoubletop.jpg (Della-Pleyela double grand)
+@URL:		http://www.pianola.org/images/factsheet_graphics/pleyela/stencilperforator.jpg (manual roll perforation)
+@URL:		http://www.pianola.org/images/factsheet_graphics/pleyela/dynamiccopying.jpg (working with playela master rolls)
+@DESCRIOPTION:	History of the Pleyela.  Also discusses the Dea-Playela
+		and the Della-Playela.
+@CREATION-DATE:	Tue Nov 10 10:33:22 PST 2015
+@EDIT-DATE:	Tue Nov 10 10:33:25 PST 2015
+@CATEGORY:	Technical
+@SUBCATEGORY:	Player piano
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+@@BEGIN:	LINK
+@TITLE:		Pleyel instruction manual
+@URL:		http://www.pianola.org/pdfs/pleyela_fr_1923.pdf
+@DESCRIOPTION:	Instruction manual in French.  How to insert rolls.
+		Figure 4 (page 4; PDF page 8) has instrction for 
+		mapping dynamics to expression line.
+@CREATION-DATE:	Tue Nov 10 10:58:21 PST 2015
+@EDIT-DATE:	Tue Nov 10 10:58:24 PST 2015
+@CATEGORY:	Technical
+@SUBCATEGORY:	Manual
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
 
 @ Software  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
@@ -1478,12 +1509,17 @@ Fri Nov  6 13:58:11 PST 2015
 
 @@BEGIN:	LINK
 @TITLE:		Rex Lawson
-@URL:		https://www.youtube.com/watch?time_continue=21&v=c9r13Phxw7U
-@DESCRIPTION:	Rex performing Rachmaninoff's Prelude in E-flat major, 
+@URL:		https://www.youtube.com/watch?time_continue=21&v=c9r13Phxw7U (A)
+@URL:		http://www.pianolist.org/music/beethoven5_3.mp3 (B)
+@DESCRIPTION:	(A) Rex performing Rachmaninoff's Prelude in E-flat major, 
 		Op. 23, No. 6 on a pianola, Stanford University,
 		18 April 2015.
-@CREATION-DATE:	Mon Nov  2 23:21:15 PST 2015
-@EDIT-DATE:	Mon Nov  2 23:21:18 PST 2015
+		<br>
+		(B) Rex performing Beethovne Scherzo from 5th symphony,
+		November 2008, London.  Played on a Steck grand Pianola
+		Piano.  Pleyela arrangement by Jacques Larmanjat.
+@CREATION-DATE:	Tue Nov 10 10:56:01 PST 2015
+@EDIT-DATE:	Tue Nov 10 10:56:03 PST 2015
 @CATEGORY:	People
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
@@ -2317,5 +2353,87 @@ obert Schmitzue Nov  3 23:04:33 PST 2015
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
 @@END:		LINK
+
+
+@ Photographs @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+@@BEGIN:	LINK
+@TITLE:		Working with Pleyela Master Rolls, Paris, 1907
+@URL:		http://www.pianola.org/images/factsheet_graphics/pleyela/dynamiccopying.jpg
+@URL:		http://www.pianola.org/factsheets/pleyela.cfm (source article)
+@DESCRIPTION:	
+@CREATION-DATE:	Tue Nov 10 10:40:22 PST 2015
+@EDIT-DATE:	Tue Nov 10 10:40:25 PST 2015
+@CATEGORY:	Photographs
+@SUBCATEGORY:	Master rolls
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Correcting a Pleyela Music Roll, Paris, 1920s
+@URL:		http://www.pianola.org/images/factsheet_graphics/pleyela/rollcorrection.jpg
+@URL:		http://www.pianola.org/factsheets/pleyela.cfm (source article)
+@DESCRIPTION:	Comparing a piano roll to a printed score.
+@CREATION-DATE:	Tue Nov 10 10:40:22 PST 2015
+@EDIT-DATE:	Tue Nov 10 10:40:25 PST 2015
+@CATEGORY:	Photographs
+@SUBCATEGORY:	Master rolls
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+@@BEGIN:	LINK
+@TITLE:		Unfinished Pleyela master roll
+@URL:		http://www.pianola.org/images/factsheet_graphics/pleyela/chopinvalse.jpg
+@URL:		http://www.pianola.org/factsheets/pleyela.cfm (source article)
+@DESCRIPTION:	Chopin, Valse in Ab, Op. 69, No. 1, Paris, 1920s.  Shows
+		A synchronization track in the middle of the 
+		master rolls, between E4 and F4.
+@CREATION-DATE:	Tue Nov 10 10:53:01 PST 2015
+@EDIT-DATE:	Tue Nov 10 10:53:03 PST 2015
+@CATEGORY:	Photographs
+@SUBCATEGORY:	Master rolls
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Pleyela Recording Machine, Paris, 1920s
+@URL:		http://www.pianola.org/images/factsheet_graphics/pleyela/markingmachine.jpg
+@URL:		http://www.pianola.org/images/factsheet_graphics/pleyela/markinghead.jpg (detai at top of recorder).
+@URL:		http://www.pianola.org/factsheets/pleyela.cfm (source article)
+@DESCRIPTION:	Comes from a book published in 1930. In 1880s at least two
+		patents related to this technology.  Marked lines on the paper
+		for notes.
+@CREATION-DATE:	Tue Nov 10 10:40:22 PST 2015
+@EDIT-DATE:	Tue Nov 10 10:40:25 PST 2015
+@CATEGORY:	Photographs
+@SUBCATEGORY:	Recording
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+@@BEGIN:	LINK
+@TITLE:		Comète perforations
+@URL:		http://www.pianola.org/images/factsheet_graphics/pleyela/8278mozart.jpg
+@URL:		http://www.pianola.org/factsheets/pleyela.cfm (source article)
+@DESCRIPTION:	Opening of Pleyela Roll 8278, Mozart Sonata in C, K330, 2nd mvmt.
+		Played by Mlle. M. Girod, showing Comète.  Trade Mark and
+		Chained Performations, Paris, 1920s.
+@CREATION-DATE:	Tue Nov 10 10:51:02 PST 2015
+@EDIT-DATE:	Tue Nov 10 10:51:06 PST 2015
+@CATEGORY:	Photographs
+@SUBCATEGORY:	Rolls
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
+
+
 
 
