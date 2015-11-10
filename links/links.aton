@@ -621,11 +621,40 @@ Fri Nov  6 13:58:11 PST 2015
 @ Papers @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 @@BEGIN:	LINK
+@TITLE:		Computational Modeling of Reproducing-Piano Rolls
+@URL:		http://www.mitpressjournals.org/doi/pdf/10.1162/COMJ_a_00040
+@DESCRIPTION:	
+@CREATION-DATE:	Mon Nov  9 19:35:41 PST 2015
+@EDIT-DATE:	Mon Nov  9 19:35:43 PST 2015
+@CATEGORY:	Papers
+@SUBCATEGORY:	Ampico A piano roll digitization.
+		Computer Music Journal;
+		Volume 35 Issue 1 (Spring 2011)
+		Pages 58-75.
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
 @TITLE:		The importance of roll scans, Peter Phillips
 @URL:		http://www.iammp.org/design/files/The_importance_of_roll_scans.pdf
 @DESCRIPTION:	
 @CREATION-DATE:	Fri Oct 23 16:16:23 PDT 2015
 @EDIT-DATE:	Fri Oct 23 16:16:26 PDT 2015
+@CATEGORY:	Papers
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		About the PA eroll files
+@URL:		http://www.petersmidi.com/About_the_erolls.pdf
+@DESCRIPTION:	By Peter Phillips.
+@CREATION-DATE:	Mon Nov  9 19:19:31 PST 2015
+@EDIT-DATE:	Mon Nov  9 19:19:33 PST 2015
 @CATEGORY:	Papers
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
@@ -1116,6 +1145,42 @@ Fri Nov  6 13:58:11 PST 2015
 		Mel-O-Dee Song Roll (Aeolian).
 @CREATION-DATE:	Mon Nov  2 20:06:18 PST 2015
 @EDIT-DATE:	Mon Nov  2 20:06:23 PST 2015
+@CATEGORY:	Technical
+@SUBCATEGORY:	piano roll
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Ampico A's & B's and PowerRoll
+@URL:		http://www.mmdigest.com/Archives/Digests/199810/1998.10.26.05.html
+@DESCRIPTION:   "Ampico B intensities react quicker than the
+		Ampico A intensities." "The folks at Ampico dealt
+		with this by very slightly off-setting the intensity
+		& cancel holes in the trackerbar down below (or
+		past) the line of note holes.  The expression
+		perforations on a moving A or B roll would then
+		arrived a fraction latter at the intensity and
+		cancel ports on the B trackerbar than on the A
+		trackerbar.  This would compensate for the difference
+		in reaction times between the A and B systems.
+@CREATION-DATE:	Mon Nov  9 19:43:18 PST 2015
+@EDIT-DATE:	Mon Nov  9 19:43:22 PST 2015
+@CATEGORY:	Technical
+@SUBCATEGORY:	piano roll
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Power Roll MIDI playback device
+@URL:		http://www.waterex.com.au/player/poweroll.html
+@DESCRIOPTION:	Electronic to Analog converter for playing player pianos
+		from digital instruments.
+@CREATION-DATE:	Mon Nov  9 19:57:23 PST 2015
+@EDIT-DATE:	Mon Nov  9 19:57:25 PST 2015
 @CATEGORY:	Technical
 @SUBCATEGORY:	piano roll
 @SUBSUBCATEGORY:
