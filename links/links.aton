@@ -337,6 +337,18 @@ Fri Nov  6 13:58:11 PST 2015
 @@END:		LINK
 
 
+@@BEGIN:	LINK
+@TITLE:		Bouncing ball keyboard
+@URL:		https://www.youtube.com/watch?v=1BVHK8Yh8Bc
+@DESCRIPTION:	Joplin Maple Leaf Rag played by green bouncing balls.
+@CREATION-DATE:	Sun Nov 15 18:20:13 PST 2015
+@EDIT-DATE:	Sun Nov 15 18:20:16 PST 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Digital performances
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
 
 @@BEGIN:	LINK
 @TITLE:		Three-dimensional piano roll display.
@@ -571,6 +583,32 @@ Fri Nov  6 13:58:11 PST 2015
 
 
 
+@@BEGIN:	LINK
+@TITLE:		Piano orchestrion using pinned cylinder
+@URL:		https://www.youtube.com/watch?v=RYtlH98zV6o
+@DESCRIPTION:	Barcelona by Evans. Association des amis des instruments et de
+		la musique mecanique.
+@CREATION-DATE:	Sun Nov 15 18:01:14 PST 2015
+@EDIT-DATE:	Sun Nov 15 18:01:16 PST 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Before piano rolls
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+@@BEGIN:	LINK
+@TITLE:		Music box with perforated metal disk
+@URL:		https://www.youtube.com/watch?v=dHX-7MyZwME&t=90
+@DESCRIPTION:	28 cm in diameter.
+@CREATION-DATE:	Sun Nov 15 18:06:32 PST 2015
+@EDIT-DATE:	Sun Nov 15 18:06:35 PST 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Before piano rolls
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
 @ Books @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 @@BEGIN:	LINK
@@ -797,6 +835,20 @@ Fri Nov  6 13:58:11 PST 2015
 @DESCRIPTION:	Shows dimensions and two rows of holes.
 @CREATION-DATE:	Sat Oct 24 17:09:11 PDT 2015
 @EDIT-DATE:	Sat Oct 24 17:09:14 PDT 2015
+@CATEGORY:	Organ rolls
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+@@BEGIN:	LINK
+@TITLE:		Aeolian Pipe Organ roll 51684 performance
+@URL:		https://www.youtube.com/watch?v=ayP_IfQxZ-g
+@DESCRIPTION:	Playing Rachmaninoff Prelude in C# minor.  Shows double
+		tracker bar, and use of both manuals near the end
+		with the offset times for the holes for the two manuals.
+@CREATION-DATE:	Sun Nov 15 18:09:18 PST 2015
+@EDIT-DATE:	Sun Nov 15 18:09:20 PST 2015
 @CATEGORY:	Organ rolls
 @SUBCATEGORY:	
 @SUBSUBCATEGORY:
@@ -1177,7 +1229,7 @@ Fri Nov  6 13:58:11 PST 2015
 @@BEGIN:	LINK
 @TITLE:		Power Roll MIDI playback device
 @URL:		http://www.waterex.com.au/player/poweroll.html
-@DESCRIOPTION:	Electronic to Analog converter for playing player pianos
+@DESCRIPTION:	Electronic to Analog converter for playing player pianos
 		from digital instruments.
 @CREATION-DATE:	Mon Nov  9 19:57:23 PST 2015
 @EDIT-DATE:	Mon Nov  9 19:57:25 PST 2015
@@ -1195,7 +1247,7 @@ Fri Nov  6 13:58:11 PST 2015
 @URL		http://www.pianola.org/images/factsheet_graphics/pleyela/pleyeladoubletop.jpg (Della-Pleyela double grand)
 @URL:		http://www.pianola.org/images/factsheet_graphics/pleyela/stencilperforator.jpg (manual roll perforation)
 @URL:		http://www.pianola.org/images/factsheet_graphics/pleyela/dynamiccopying.jpg (working with playela master rolls)
-@DESCRIOPTION:	History of the Pleyela.  Also discusses the Dea-Playela
+@DESCRIPTION:	History of the Pleyela.  Also discusses the Dea-Playela
 		and the Della-Playela.
 @CREATION-DATE:	Tue Nov 10 10:33:22 PST 2015
 @EDIT-DATE:	Tue Nov 10 10:33:25 PST 2015
@@ -1207,13 +1259,26 @@ Fri Nov  6 13:58:11 PST 2015
 @@BEGIN:	LINK
 @TITLE:		Pleyel instruction manual
 @URL:		http://www.pianola.org/pdfs/pleyela_fr_1923.pdf
-@DESCRIOPTION:	Instruction manual in French.  How to insert rolls.
+@DESCRIPTION:	Instruction manual in French.  How to insert rolls.
 		Figure 4 (page 4; PDF page 8) has instrction for 
 		mapping dynamics to expression line.
 @CREATION-DATE:	Tue Nov 10 10:58:21 PST 2015
 @EDIT-DATE:	Tue Nov 10 10:58:24 PST 2015
 @CATEGORY:	Technical
 @SUBCATEGORY:	Manual
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Leabarjan Music Roll perforator
+@URL:		http://www.wiscasset.net/artcraft/master.htm
+@DESCRIPTION:	Punching Scott Joplin's The Chrysanthemum.
+@CREATION-DATE:	Wed Nov 11 00:28:43 PST 2015
+@EDIT-DATE:	Wed Nov 11 00:28:45 PST 2015
+@CATEGORY:	Technical
+@SUBCATEGORY:	Master roll
 @SUBSUBCATEGORY:
 @@END:		LINK
 
