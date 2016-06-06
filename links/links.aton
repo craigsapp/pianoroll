@@ -608,6 +608,18 @@ Fri Nov  6 13:58:11 PST 2015
 @@END:		LINK
 
 
+@@BEGIN:	LINK
+@TITLE:		Pianola Roll Digitizer. UAB Barcelona.
+@URL:		https://www.youtube.com/watch?time_continue=6&v=vmTryKCM_e8
+@DESCRIPTION:	Digitizing piano rolls in Barcelona.
+@CREATION-DATE:	Sun Nov 15 18:06:32 PST 2015
+@EDIT-DATE:	Sun Nov 15 18:06:35 PST 2015
+@CATEGORY:	Video
+@SUBCATEGORY:	Before piano rolls
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
 
 @ Books @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
@@ -937,6 +949,51 @@ Fri Nov  6 13:58:11 PST 2015
 @EDIT-DATE:	Sat Nov  7 21:01:28 PST 2015
 @CATEGORY:	Digitization
 @SUBCATEGORY:	Roll reading for transcription
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Deutches Museum
+@URL:		http://www.deutsches-museum.de/en/exhibitions/musical-instruments/projects/notenrollen
+                http://www.deutsches-museum.de/en/exhibitions/natural-sciences/musical-instruments/projekte/projects/notenrollen/
+@DESCRIPTION:   Project to digitize the 3,000+ piano rolls housed
+		at the Deutches Museum, Munich, Germany. The museum
+		appear to be working with a digitization vendor.
+		They are using a camera based scanning system and
+		aiming to put the images online. They also want to
+		create MIDI versions of the rolls.  Not much
+		additional information can be found on the website.
+		The project has not been contacted.  Using the
+		scanner from Städtische Museen Freiburg, Augustinermuseum / BUA.
+@CREATION-DATE:	Mon Jun  6 15:15:15 PDT 2016
+@EDIT-DATE:	Mon Jun  6 15:15:17 PDT 2016
+@CATEGORY:	Digitization
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+
+
+@@BEGIN:	LINK
+@TITLE:		Städtische Museen Freiburg, Augustinermuseum / BUA
+@URL:		http://www.hkb-interpretation.ch/personen.html
+@URL:		https://drive.google.com/folderview?id=0B8II7vv-vY6IcWxhbTNVYlo3aWc&usp=sharing	Images of final scanner
+@URL:		http://www.bme.master.unibe.ch/content/faculty__staff/lecturers_a_f/daniel_debrunner/index_eng.html scanner designed and build by Daniel Debrunner
+@URL:		http://www.hkb-interpretation.ch/index.php?id=321 Der virtuelle Welte-Flügel
+@URL:		http://www.hkb-interpretation.ch/index.php?id=316 Zurück vor die Orgelbewegung
+@URL:		http://www.hkb-interpretation.ch/index.php?id=116 Recording the Soul of Piano Playing
+@URL:		http://www.hkb-interpretation.ch/index.php?id=23 Wie von Geisterhand (1)
+@URL:		http://www.hkb-interpretation.ch/index.php?id=125 Wie von Geisterhand (2)
+@DESCRIPTION:   A roll scanner was developed to capture Welte rolls
+		as part of an ongoing series of research projects
+		at the Bern University of the Arts under the wider
+		Research Area Interpretation series
+@CREATION-DATE:	Mon Jun  6 15:15:15 PDT 2016
+@EDIT-DATE:	Mon Jun  6 15:15:17 PDT 2016
+@CATEGORY:	Digitization
+@SUBCATEGORY:	
 @SUBSUBCATEGORY:
 @@END:		LINK
 

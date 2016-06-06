@@ -342,7 +342,7 @@ function getUrlText(url) {
 	if (link.length > 90) {
 		output += ' style="font-size:80%;" ';
 	}
-	output += 'href="';
+	output += 'target="_new" href="';
 	output += link;
 	output += '">';
 	output += link;
