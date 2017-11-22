@@ -17,6 +17,11 @@
 @@END:		CATEGORY
 
 @@BEGIN:	CATEGORY
+@SHORT:		Expression
+@LONG:		Expression controls
+@@END:		CATEGORY
+
+@@BEGIN:	CATEGORY
 @SHORT:		Library
 @LONG:		Library collections
 @@END:		CATEGORY
@@ -2550,6 +2555,39 @@ obert Schmitzue Nov  3 23:04:33 PST 2015
 @EDIT-DATE:	Tue Nov 10 10:51:06 PST 2015
 @CATEGORY:	Photographs
 @SUBCATEGORY:	Rolls
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+@@BEGIN:	LINK
+@TITLE:		A Demonstration of How the Ampico A and Ampico B Expression Systems Work
+@URL:		https://www.youtube.com/watch?v=elGdG95vwb0
+@DESCRIPTION:	Detailed analysis of Ampico expression controls.
+		This is a practical demonstration and overview of how the Ampico A
+		and Ampico B pneumatic reproducing player piano expression systems
+		work.  The demonstration instruments are 1926 Mason & Hamlin and
+		1929 Knabe instruments, recently restored at Historic Pianos.  Please
+		see www.historicpianos.com for more information.
+@CREATION-DATE:	Wed Nov 22 06:56:04 PST 2017
+@EDIT-DATE:	Wed Nov 22 06:56:07 PST 2017
+@CATEGORY:	Expression
+@SUBCATEGORY:	
+@SUBSUBCATEGORY:
+@@END:		LINK
+
+@@BEGIN:	LINK
+@TITLE:		A Demonstration of How the Aeolian Duo-Art Expression System Works
+@URL:		https://www.youtube.com/watch?v=w-XrDw04P2M
+@DESCRIPTION:	Detailed analysis of Duo-Art expression controls.
+		This video is a practical demonstration and overview of how the
+		Aeolian Duo-Art pneumatic reproducing player piano works, including
+		how the system plays expressively by controlling the loudness of
+		notes played with perforations on the roll.  The demonstration
+		instrument is a 1922 Steinway model OR, 6'6" piano restored at
+		Historic Pianos in 2015.
+@CREATION-DATE:	Wed Nov 22 06:59:25 PST 2017
+@EDIT-DATE:	Wed Nov 22 06:59:28 PST 2017
+@CATEGORY:	Expression
+@SUBCATEGORY:	
 @SUBSUBCATEGORY:
 @@END:		LINK
 
