@@ -416,23 +416,6 @@ document.addEventListener("DOMContentLoaded", function() {
 				</tr>
 				{{/if}}
 
-				{{#if this.SUL_UPC}}
-				<tr>
-					<td>
-						SUL UPC
-					</td>
-					<td>
-						{{#if this.SEARCHWORKS}}
-							<a target="_blank" href="{{this.SEARCHWORKS}}">
-								{{{this.SUL_UPC}}}
-							</a>
-						{{else}}
-							{{{this.SUL_UPC}}}
-						{{/if}}
-					</td>
-				</tr>
-				{{/if}}
-
 				{{#if this.SUL_CALLNUMBER}}
 				<tr>
 					<td>
@@ -445,6 +428,23 @@ document.addEventListener("DOMContentLoaded", function() {
 							</a>
 						{{else}}
 							{{{this.SUL_CALLNUMBER}}}
+						{{/if}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SUL_UPC}}
+				<tr>
+					<td>
+						SUL UPC
+					</td>
+					<td>
+						{{#if this.SEARCHWORKS}}
+							<a target="_blank" href="{{this.SEARCHWORKS}}">
+								{{{this.SUL_UPC}}}
+							</a>
+						{{else}}
+							{{{this.SUL_UPC}}}
 						{{/if}}
 					</td>
 				</tr>
