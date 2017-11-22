@@ -8,11 +8,13 @@ vim: ts=3
 <h1> Complete Roll Scans</h1>
 
 <p> 
-Here is a list of entire piano-roll scans in full color at 300
-dpi resolution.  Click on the roll thumbnail to view a reduced
-100-dpi JPEG version of the roll (about 10-15 MB in size), or click
-on the link for the TIFF image for the complete 300-dpi full-color
-image (large files about 1-2 GB each).  
+Below is a list of scans of entire piano rolls in full color at 300
+dpi resolution as well as several derivative image formats.
+The 100-dpi JPEG versions of the rolls are 10-15 MB in size and
+suitable for viewing in a web-browser (click on the image and wait for the full 
+resolution version to be displayed).  Full-color uncompressed TIFFs are
+about 1 GB or larger.  The individual compressed color channel files are about 
+250 MB each, and the 2-color thresholded 300 DPI PNG images are under 1 MB each.
 </p>
 
 <p> 
@@ -22,14 +24,21 @@ files are in "visual" orientation, which means that time progresses
 upwards on most rolls except for Red Welte rolls. In other words,
 the triangular leader of the roll indicating the start of the roll
 is placed at the bottom of the image, and bass notes are on the
-left side of the image.  TIFF images are oriented in "notes"
+left side of the image.  TIFF and PNG images are oriented in "notes"
 orientation, where the leader is at the top of the image, and bass
 notes are on the left side of the image.
 </p>
 
+<p>
+The green channel of the TIFF images are scanned at 300 DPI, while the
+red and blue channels are scanned at 150 DPI and then interpolated to
+300 DPI by the camera firmware, so in theory the green channel contains
+the highest resolution image of the rolls.
+</p>
+
 
 <h2> Test Rolls </h2>
-These scans are various test rolls, either hand-made or produced
+These are scans of various test rolls, either hand-made or produced
 by piano-roll companies, used to calibrate player-piano playback
 mechanisms.
 
@@ -140,12 +149,12 @@ mechanisms.
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 303.36
 @NOTES:	Leader has the following text, dated 1-7-1967:
-	This is test number eleven from a Welte-Midnon 98er test roll.  
+	<i>This is test number eleven from a Welte-Midnon 98er test roll.  
 	It is the second half (and the last part) of the original roll.  
 	It may be used as a repitition [sic] test for all player-pianos
 	taking rolls 11-1/4" wide at a scale of nine ports to the inch 
 	according to the Buffalo Convention of 1911.  The re-roll port at
-	the end will operate Welte 98ers and Aeolian players.
+	the end will operate Welte 98ers and Aeolian players.</i>
 @PHYSICAL_NOTES: Left flange rim is 25% missing. Notice the numerous
 		tears on both edges of the roll.  In this case they are not
 		a problem since they do not cover or remove any note holes.
@@ -168,7 +177,7 @@ mechanisms.
 @WDPI: 303.36
 @NOTES:	 Contains a one-page list of the tests on the roll.
 @PHYSICAL_NOTES: 
-@SCAN_NOTES:
+@SCAN_NOTES: Light band on right edge of paper is due to sunlight.
 @SUL_UPC: 3 6105 225 773 709
 @SCAN_DATE: 2017/11/21
 @@END: ROLL
@@ -184,14 +193,17 @@ mechanisms.
 @FILEBASE: duoart-testroll-no3
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 303.36
-@NOTES:	Inside top of box is the text: TO INSURE PERFECT TRACKING OF MUSIC ROLLS.
+@NOTES:	Inside top of box is the text: 
+	<i>
+	TO INSURE PERFECT TRACKING OF MUSIC ROLLS.
 	See that music roll is loosely wound on spool, then hold in the 
 	hand with the slotted end down.  Let roll drop lightly two or three times
 	into the palm of the other hand, thus throwing the entire music sheet against
 	the right flange of spool.  Tighten roll in the usual manner and it is 
 	ready to play.
+	</i>
 @PHYSICAL_NOTES: 
-@SCAN_NOTES:
+@SCAN_NOTES: Light band of color on right side of roll is due to sunlight.
 @SUL_UPC:
 @SCAN_DATE: 2017/11/21
 @@END: ROLL
@@ -271,14 +283,34 @@ document.addEventListener("DOMContentLoaded", function() {
 {% raw %}
 <script id="roll-template" type="application/x-handlebars">
 
-<table>
+<table class="main">
+
 	{{#each this}}
 		<tr><td>
 			<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.jpg">
-				<img src="{{this.BASEURL}}/{{this.FILEBASE}}-thumbnail.jpg">
+				<img style="width:900px;" src="{{this.BASEURL}}/{{this.FILEBASE}}-thumbnail.jpg">
 			</a>
 			<br>
 			<table class="roll-entry">
+
+				<tr>
+					<td>
+						Images
+					</td>
+					<td>
+						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.jpg">100-dpi JPEG</a>
+						<br>
+						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.tiff">300-dpi uncompressed full-color TIFF</a> (large)
+						<br>
+						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}-0.tiff">300-dpi LZW compressed red-channel TIFF</a> (largish)
+						<br>
+						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}-1.tiff">300-dpi LZW compressed green-channel TIFF</a> (largish)
+						<br>
+						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}-2.tiff">300-dpi LZW compressed blue-channel TIFF</a> (largish)
+						<br>
+						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.png">300-dpi thresholded PNG</a> (large image, but small file size)
+					</td>
+				</tr>
 
 				<tr>
 					<td>
@@ -403,6 +435,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				{{/if}}
 
 			</table>
+
 		</td></tr>
 	{{/each}}
 </table>
@@ -414,13 +447,37 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <style>
 
-table.roll-entry {
-	margin-left: 30px;
+table.main {
+	display: block;
+	width:1000px;
+	border-collapse: collapse;
 }
 
-table.roll-entry tr, table.roll-entry td {
+table.roll-entry {
+	display: block;
+	margin-left: 30px;
+	border-collapse: collapse;
+}
+
+div#test-rolls, table.roll-entry, table.roll-entry tbody, table.roll-entry tr, table.roll-entry td {
+	overflow: hidden;
+}
+
+table.roll-entry tr {
 	margin: 0;
 	padding: 0;
+	border-collapse: collapse;
+}
+
+table.roll-entry {
+	margin-bottom: 50px;
+	border-collapse: collapse;
+}
+
+table.roll-entry td {
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
 }
 
 table.roll-entry td:first-child {
@@ -431,13 +488,19 @@ table.roll-entry td:first-child {
 
 table.roll-entry td:nth-child(2) {
 	vertical-align: top;
-	width: 780px;
+	width: 550px;
 }
 
 table.roll-entry td:first-child::after {
 	content: ":";
 	display: inline-block;
+}
+
+table * {
+	overflow: hidden;	
+}
 
 </style>
 
 
+<div style="height:400px;"></div>
