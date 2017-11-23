@@ -1,0 +1,90 @@
+
+@@START: ROLL
+@TITLE: Sonata, D Major (Complete)
+@COMPOSER: Haydn
+@PERFORMER: Helen Norfleet
+@CATALOG: Ampico 65543-H
+@PRICE: 2.00
+@TYPE:	Original
+@FORMAT: Ampico A
+@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/ampico-rolls
+@FILEBASE: ampico-65543H-Haydn-SonataDmaj-Norfleet-1925
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@NOTES:	Also found at <a target="_blank" href="https://findingaids.library.unt.edu/?p=collections/findingaid&id=274&q=mary&rootcontentid=71537#.WhZ0xrQ-cUE">UNT</a>.
+Copyright 1925.
+@PHYSICAL_NOTES: Contains section near end of roll that needs 
+repair in order to scan properly.
+@SCAN_NOTES: Damaged region, not suitable for note extraction (in bad region)
+@SUL_UPC:
+@SCAN_DATE: 2017/11/16
+@@END: ROLL
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@ 
+@@ The following rolls are located in another list (do not edit here)
+@@ 
+
+@@@ TEST ROLLS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+@@START: ROLL
+@TITLE: Inspector's Ampico Test Roll
+@CATALOG: Ampico 61391-H
+@PRICE: 2.00
+@TYPE:	Original
+@FORMAT: Ampico A
+@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
+@FILEBASE: ampico61391H-inspectors-test-roll
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@NOTES: This roll goes with the 1923 
+<a target="_blank" href="Ampico_A_1923_Inspectors_Manual.pdf">Inspector's Reference Book</a>.
+	<a target="_blank" href="https://stacks.stanford.edu/file/druid:dc917qr2688/33-02.pdf">The AMICA Bulletin March/April 1996, 33/2</a>, Keystone ad on page 116 mentions this roll as being the 
+	"Inspector's test roll for the Model 'A'".
+@PHYSICAL_NOTES:
+@SCAN_NOTES:
+@SUL_UPC: 
+@SCAN_DATE: 2017/11/21
+@@END: ROLL
+
+
+@@START: ROLL
+@TITLE: Ampico Test Roll: Note Compensation ONLY, 1929 Service Manual
+@CATALOG:
+@PRICE: 
+@TYPE:	Original
+@FORMAT:	Ampico B
+@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
+@FILEBASE: ampico-testroll-note-compensation-only-1929-service-manual
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@NOTES:	Contains <a target="_blank" href="ampico-testroll-note-compensation-only-1929-service-manual-appendix.jpg">a one-page instruction sheet</a> in box.  Box has Stanford Library sticky-note with number "70601", which is probably the
+Ampico catalog number.
+	<a target="_blank" href="https://stacks.stanford.edu/file/druid:dc917qr2688/33-02.pdf">The AMICA Bulletin March/April 1996, 33/2</a>
+	Keystone ad on page 116: mentions Ampico roll #70601 as being a "Note Compensation roll for adjusting
+	the Model "B" pneumatics".
+@PHYSICAL_NOTES:
+@SCAN_NOTES:
+@SUL_UPC: 
+@SCAN_DATE: 2017/11/21
+@@END: ROLL
+
+@@START: ROLL
+@TITLE: Ampico Test Roll for use with Service Manual 1929
+@CATALOG: Ampico 70403-H
+@PRICE: 2.00
+@TYPE:	Original
+@FORMAT: Ampico B
+@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
+@FILEBASE: ampico70403H-testroll-for-use-with-service-manual-1929
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@NOTES:	For the Ampico Model "B".
+@PHYSICAL_NOTES: 
+@SCAN_NOTES: 
+@SUL_UPC:
+@SCAN_DATE: 2017/11/21
+@@END: ROLL
+
+

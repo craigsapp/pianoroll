@@ -1,0 +1,65 @@
+
+@@START: ROLL
+@TITLE: <a target="_blank" href="http://imslp.org/wiki/La_plus_que_lente_(Debussy%2C_Claude)">La plus que lente, Valse</a>
+@COMPOSER:  Claude Debussy
+@PERFORMER: Claude Debussy
+@CATALOG: Welte-Mignon 2736
+@PRICE: 
+@TYPE:	Recut
+@FORMAT: Red Welte
+@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/redwelte-rolls
+@FILEBASE: RedRoll2736-LaPlusQueLente-Debussy-Debussy
+@LDPI: 300.32 &pm; 0.19
+@WDPI: 251.48
+@NOTES:	 Recut by Musikwerkstadt Monschau.
+@PHYSICAL_NOTES: 
+@SUL_UPC:
+@SCAN_DATE: 2017/11/22
+@@END: ROLL
+
+@@ ALSO:
+@@ Catalog: Welte-Mignon No. 2733
+@@ Title: Children's Corner
+@@ Composer: Debussy
+@@ Performer: Debussy
+@@ UPC: 3 6105 225 785 612
+@@ SEARCHWORKS: https://searchworks.stanford.edu/view/11064893
+@@ CALLNUMBER: CONDON ROLL 584
+@@ 144.8 feet long
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@ 
+@@ The following rolls are located in another list (do not edit here)
+@@ 
+
+@@@ TEST ROLLS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@START: ROLL
+@TITLE: Test Roll
+@COMPOSER:
+@PERFORMER:
+@CATALOG: 
+@PRICE: 
+@TYPE: Original
+@FORMAT: Red Welte
+@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/redwelte-rolls
+@FILEBASE: welte-test-roll
+@LDPI: 300.32 &pm; 0.19
+@WDPI: 251.48
+@NOTES:	
+@PHYSICAL_NOTES:  Not on red paper.  Contains lines for each hole row.
+Leader was added later (so may be a partial test roll).  The note on the
+leader says <i>Welte-Mignon modified test-roll.  This roll cannot be used to
+adjust the Mignon expression mechanism.</i>
+Note names are written in German on next to the holes for each pitch.
+@SCAN_NOTES: 
+@SUL_UPC: 3 6105 225 773 782
+@SEARCHWORKS: https://searchworks.stanford.edu/view/11467900
+@SUL_CALLNUMBER: CONDON ROLL 1367
+@SCAN_DATE: 
+@@END: ROLL
+
+
+
