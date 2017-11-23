@@ -1,0 +1,212 @@
+<!-- TEMPLATE ------------------------------------------------------------- -->
+
+{% raw %}
+<script id="roll-template" type="application/x-handlebars">
+
+<table class="main">
+
+	{{#each this}}
+	{{#if this.TITLE}}
+		<tr><td>
+			<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.jpg">
+				<img style="width:900px;" src="{{this.BASEURL}}/{{this.FILEBASE}}-thumbnail.jpg">
+			</a>
+			<br>
+			<table class="roll-entry">
+
+				<tr>
+					<td>
+						Images
+					</td>
+					<td>
+						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.jpg">100-dpi JPEG</a>
+						<br>
+						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.tiff">300-dpi uncompressed full-color TIFF</a> (large)
+						<br>
+						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}-0.tiff">300-dpi LZW compressed red-channel TIFF</a> (largish)
+						<br>
+						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}-1.tiff">300-dpi LZW compressed green-channel TIFF</a> (largish)
+						<br>
+						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}-2.tiff">300-dpi LZW compressed blue-channel TIFF</a> (largish)
+						<br>
+						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.png">300-dpi thresholded PNG</a> (large image, but small file size)
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						Title
+					</td>
+					<td>
+						{{{this.TITLE}}}
+					</td>
+				</tr>
+
+				{{#if this.COMPOSER}}
+				<tr>
+					<td>
+						Composer
+					</td>
+					<td>
+						{{{this.COMPOSER}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.PERFORMER}}
+				<tr>
+					<td>
+						Performer
+					</td>
+					<td>
+						{{{this.PERFORMER}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.CATALOG}}
+				<tr>
+					<td>
+						Catalog #
+					</td>
+					<td>
+						{{{this.CATALOG}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.FORMAT}}
+				<tr>
+					<td>
+						Format
+					</td>
+					<td>
+						{{{this.FORMAT}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.TYPE}}
+				<tr>
+					<td>
+						Type
+					</td>
+					<td>
+						{{{this.TYPE}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.NOTES}}
+				<tr>
+					<td>
+						Comments
+					</td>
+					<td>
+						{{{this.NOTES}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.PHYSICAL_NOTES}}
+				<tr>
+					<td>
+						Physical Notes
+					</td>
+					<td>
+						{{{this.PHYSICAL_NOTES}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCAN_NOTES}}
+				<tr>
+					<td>
+						Scan Notes
+					</td>
+					<td>
+						{{{this.SCAN_NOTES}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.PRICE}}
+				<tr>
+					<td>
+						Original Price
+					</td>
+					<td>
+						{{{this.PRICE}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SUL_CALLNUMBER}}
+				<tr>
+					<td>
+						SUL CALL #
+					</td>
+					<td>
+						{{#if this.SEARCHWORKS}}
+							<a target="_blank" href="{{this.SEARCHWORKS}}">
+								{{{this.SUL_CALLNUMBER}}}
+							</a>
+						{{else}}
+							{{{this.SUL_CALLNUMBER}}}
+						{{/if}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SUL_UPC}}
+				<tr>
+					<td>
+						SUL UPC
+					</td>
+					<td>
+						{{#if this.SEARCHWORKS}}
+							<a target="_blank" href="{{this.SEARCHWORKS}}.refworks_marc_txt">
+								{{{this.SUL_UPC}}}
+							</a>
+						{{else}}
+							{{{this.SUL_UPC}}}
+						{{/if}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.WDPI}}
+				<tr>
+					<td>
+						DPI
+					</td>
+					<td>
+						<i>width</i>: {{{this.WDPI}}} pixels/inch <br/>
+						{{#if this.LDPI}}
+							<i>length</i>: {{{this.LDPI}}} pixels/inch
+						{{/if}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCAN_DATE}}
+				<tr>
+					<td>
+						Scan Date
+					</td>
+					<td>
+						{{{this.SCAN_DATE}}}
+					</td>
+				</tr>
+				{{/if}}
+
+			</table>
+
+		</td></tr>
+	{{/if}}
+	{{/each}}
+</table>
+
+</script>
+{% endraw %}
+

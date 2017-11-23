@@ -1,0 +1,44 @@
+
+
+@@START: ROLL
+@TITLE: My Coloring Book
+@CATALOG: QRS Word Roll 9914
+@PRICE: 
+@TYPE:	Original
+@FORMAT: QRS
+@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/calibration-rolls
+@FILEBASE: lower-calibration-1-slow
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@NOTES:	There are 13 marks along the length of the roll, numbered 0 through 12.
+	These are one foot apart, and should be 3600 pixels apart if the DPI is 300
+	(the lower camera setting target DPI).
+@PHYSICAL_NOTES:
+@SCAN_NOTES: Scanned in the lower camera position.  Bright vertical line on
+	right side of image is due to the sun hitting the roll. Darker region
+	near the end is when a cloud passed in front of the sun.
+@SUL_UPC:
+@SCAN_DATE: 2017/11/16
+@@END: ROLL
+
+@@START: ROLL
+@TITLE: My Coloring Book
+@CATALOG: QRS Word Roll 9914
+@PRICE: 
+@TYPE:	Original
+@FORMAT: QRS
+@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/calibration-rolls
+@FILEBASE: upper-calibration-1-slow
+@LDPI: 300.32 &pm; 0.19
+@WDPI: 251.48
+@NOTES: There are 13 marks along the length of the roll, numbered
+	0 through 12.  These are one foot apart, and should be 3600 pixels apart
+	if the DPI is 300 (the lower camera setting target DPI).
+@PHYSICAL_NOTES:
+@SCAN_NOTES: Scanned in the upper camera position.  Scanned in the evening,
+	so darker.
+@SUL_UPC:
+@SCAN_DATE: 2017/11/16
+@@END: ROLL
+
+
