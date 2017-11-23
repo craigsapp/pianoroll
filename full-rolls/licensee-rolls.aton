@@ -13,7 +13,8 @@
 @WDPI: 301.39
 @NOTES:	
 @PHYSICAL_NOTES: 
-@SCAN_NOTES: JPEG image is reduced to 60 DPI due to the length of the roll.
+@SCAN_NOTES: 
+@JPG_DPI: 60
 @SUL_UPC:
 @SCAN_DATE: 2017/11/16
 @@END: ROLL

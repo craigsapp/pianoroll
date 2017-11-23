@@ -48,17 +48,6 @@ vim: ts=3:nowrap
 				</tr>
 				{{/if}}
 
-				{{#if this.CATALOG}}
-				<tr>
-					<td>
-						Catalog #
-					</td>
-					<td>
-						{{{this.CATALOG}}}
-					</td>
-				</tr>
-				{{/if}}
-
 				{{#if this.FORMAT}}
 				<tr>
 					<td>
@@ -77,6 +66,17 @@ vim: ts=3:nowrap
 					</td>
 					<td>
 						{{{this.TYPE}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.CATALOG}}
+				<tr>
+					<td>
+						Catalog #
+					</td>
+					<td>
+						{{{this.CATALOG}}}
 					</td>
 				</tr>
 				{{/if}}
