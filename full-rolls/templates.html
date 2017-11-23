@@ -1,4 +1,7 @@
 <!-- TEMPLATE ------------------------------------------------------------- -->
+{% comment %}
+vim: ts=3:nowrap
+{% endcomment %}
 
 {% raw %}
 <script id="roll-template" type="application/x-handlebars">
@@ -186,7 +189,8 @@
 						Images
 					</td>
 					<td>
-						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.jpg">100-dpi JPEG</a>
+						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.jpg">
+						{{#if this.JPG_DPI}}{{{this.JPG_DPI}}}{{else}}100{{/if}}-dpi JPEG</a>
 						<br>
 						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.tiff">300-dpi uncompressed full-color TIFF</a> (large)
 						<br>

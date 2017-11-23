@@ -52,7 +52,8 @@ Cortot and interpreted by Percy A. Scholes.
 @PHYSICAL_NOTES: Probably <i>ex libris</i> with due dates "2 JAN 1972" 
 and "4 JUN 1972</i> stamped underneath the box top.
 End of the roll contains photographs of people associated with Duo-Art.
-@SCAN_NOTES: JPEG image is reduced to 60 DPI due to the length of the roll.
+@SCAN_NOTES: 
+@JPG_DPI: 60
 @SUL_UPC:
 @SCAN_DATE: 2017/11/22
 @@END: ROLL
