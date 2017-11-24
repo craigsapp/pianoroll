@@ -11,6 +11,11 @@ vim: ts=3:nowrap
 	{{#each this}}
 	{{#if this.TITLE}}
 		<tr><td>
+
+				{{#if this.ANCHOR}}
+						<a name="{{{this.ANCHOR}}}"></a>
+				{{/if}}
+
 			<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.jpg">
 				<img style="width:900px;" src="{{this.BASEURL}}/{{this.FILEBASE}}-thumbnail.jpg">
 			</a>

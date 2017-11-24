@@ -16,6 +16,17 @@
 @SCAN_NOTES: Frame duplication error at start of scan.
 @SUL_UPC:
 @SCAN_DATE: 2017/11/21
+@DUPCOUNT: 7
+@DUPLICATE:
+	<ul> 
+	<li> &bullet; 3 repeated frames at rows 0, 30 and 60.
+	<li> &bullet; 2 repeated frames at rows 120, 150.
+	<li> &bullet; 6 repeated frames at rows 180, 210, 240, 270, 300 and 330.
+	<li> &bullet; 5 repeated frames at rows 360 and 390, 420, 450 and 480.
+	<li> &bullet; 2 repeated frames at rows 510 and 540.
+	<li> &bullet; 2 repeated frames at rows 570 and 600.
+	<li> &bullet; 2 repeated frames at rows 810 and 840.
+	</ul>
 @@END: ROLL
 
 
@@ -152,7 +163,7 @@ Ampico catalog number.
 @WDPI: 301.39
 @NOTES:	For the Ampico Model "B".
 @PHYSICAL_NOTES: 
-@SCAN_NOTES: 
+@SCAN_NOTES: File may be corrupted.
 @SUL_UPC:
 @SCAN_DATE: 2017/11/21
 @@END: ROLL
@@ -202,7 +213,8 @@ Ampico catalog number.
 @WDPI: 301.39
 @NOTES:	 Contains a <a target="_blank" href="weltemignon-deluxe-test-roll-appendix.jpg">one-page list of the tests on the roll</a>.
 @PHYSICAL_NOTES: 
-@SCAN_NOTES: Light band on right edge of paper is due to sunlight.
+@SCAN_NOTES: Light band on right edge of paper is due to sunlight.  Caopy the image from the scanning computer again
+since there is a strange behavior in the strip count in the file.
 @SUL_UPC: 3 6105 225 773 709
 @SEARCHWORKS: https://searchworks.stanford.edu/view/11467427
 @SUL_CALLNUMBER: CONDON ROLL 935
