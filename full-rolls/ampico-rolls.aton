@@ -21,8 +21,8 @@ repair in order to scan properly.
 @DUPCOUNT: 2
 @DUPLICATE:
 	<ul> 
-	<li> &bullet; At rows 186900 and 186930
-	<li> &bullet; At rows 262170 and 262200
+	<li> &bullet; 2 repeated frames at rows 186900 and 186930
+	<li> &bullet; 2 repeated frames at rows 262170 and 262200
 	</ul>
 @@END: ROLL
 

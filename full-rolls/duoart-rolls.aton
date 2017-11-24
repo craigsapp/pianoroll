@@ -17,6 +17,16 @@
 @JPG_DPI: 60
 @SUL_UPC:
 @SCAN_DATE: 2017/11/22
+@DUPCOUNT: 6
+@DUPLICATE:
+	<ul> 
+	<li> &bullet; Duplicate frames at rows 30, 60 and 90.
+	<li> &bullet; Duplicate frames at rows 150 and 180.
+	<li> &bullet; Duplicate frames at rows 210, 240 and 270.
+	<li> &bullet; Duplicate frames at rows 810, 840 and 870.
+	<li> &bullet; Duplicate frames at rows 23370 and 23400.
+	<li> &bullet; Duplicate frames at rows 61230 and 61260.
+	</ul>
 @@END: ROLL
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
