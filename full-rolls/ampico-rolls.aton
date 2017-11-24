@@ -18,6 +18,12 @@ repair in order to scan properly.
 @SCAN_NOTES: Damaged region, not suitable for note extraction (in bad region)
 @SUL_UPC:
 @SCAN_DATE: 2017/11/16
+@DUPCOUNT: 2
+@DUPLICATE:
+	<ul> 
+	<li> &bullet; At rows 186900 and 186930
+	<li> &bullet; At rows 262170 and 262200
+	</ul>
 @@END: ROLL
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

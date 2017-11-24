@@ -204,6 +204,18 @@ vim: ts=3:nowrap
 					</td>
 				</tr>
 
+				{{#if this.DUPCOUNT}}
+				<tr>
+					<td>
+						Duplication Errors:
+					</td>
+					<td>
+						{{{this.DUPCOUNT}}} Frame repeats in scan:
+						{{{this.DUPLICATE}}}
+					</td>
+				</tr>
+				{{/if}}
+
 			</table>
 
 		</td></tr>
