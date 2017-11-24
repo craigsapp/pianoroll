@@ -6,7 +6,7 @@
 @CATALOG: 3414
 @PRICE: 
 @TYPE:	Original
-@FORMAT: Green
+@FORMAT: green Welte
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/greenwelte-rolls
 @FILEBASE: weltegreen3414-Reger-op134-part2-frieda_Kwast-Hadapp
 @LDPI: 300.25 &pm; 0.21
@@ -41,7 +41,7 @@
 @CATALOG: 
 @PRICE: 
 @TYPE:	Original
-@FORMAT: Green
+@FORMAT: green Welte
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
 @FILEBASE: green-welte-repetition-rest-roll
 @LDPI: 300.25 &pm; 0.21

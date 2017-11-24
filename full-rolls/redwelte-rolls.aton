@@ -6,13 +6,16 @@
 @CATALOG: Welte-Mignon 2736
 @PRICE: 
 @TYPE:	Recut
-@FORMAT: Red Welte
+@FORMAT: red Welte
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/redwelte-rolls
 @FILEBASE: RedRoll2736-LaPlusQueLente-Debussy-Debussy
 @LDPI: 300.32 &pm; 0.19
 @WDPI: 251.48
 @NOTES:	 Recut by Musikwerkstadt Monschau.
 @PHYSICAL_NOTES: 
+@SCAN_NOTES: Notice that the label appears upside-down in the "visual" orientation in the JPEG
+version of the scan.  This is correct, since it is more important to have bass notes
+on the left (as they would be seen when looking at the roll being played on a red Welte roll).
 @SUL_UPC:
 @SCAN_DATE: 2017/11/22
 @@END: ROLL
@@ -43,7 +46,7 @@
 @CATALOG: 
 @PRICE: 
 @TYPE: Original
-@FORMAT: Red Welte
+@FORMAT: red Welte
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/redwelte-rolls
 @FILEBASE: welte-test-roll
 @LDPI: 300.32 &pm; 0.19

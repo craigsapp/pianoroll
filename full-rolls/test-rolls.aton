@@ -249,7 +249,7 @@ since there is a strange behavior in the strip count in the file.
 @CATALOG: 
 @PRICE: 
 @TYPE: Original
-@FORMAT: Red Welte
+@FORMAT: red Welte
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/redwelte-rolls
 @FILEBASE: welte-test-roll
 @LDPI: 300.32 &pm; 0.19
