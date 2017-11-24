@@ -16,6 +16,16 @@
 @PHYSICAL_NOTES: 
 @SUL_UPC:
 @SCAN_DATE: 2017/11/22
+@DUPCOUNT: 6
+@DUPLICATE:
+	<ul> 
+	<li> &bullet; 2 repeated frames at rows 50010 and 50040.
+	<li> &bullet; 3 repeated frames at rows 58380, 58410 and 58440.
+	<li> &bullet; 3 repeated frames at rows 116130, 116160, and 116190.
+	<li> &bullet; 3 repeated frames at rows 127590, 127620 and 127650.
+	<li> &bullet; 2 repeated frames at rows 159210 and 159240.
+	<li> &bullet; 5 repeated frames at rows 205380, 205410, 205440, 205470 and 205500.
+	</ul>
 @@END: ROLL
 
 @@START: ROLL
