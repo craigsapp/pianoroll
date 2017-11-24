@@ -37,6 +37,17 @@
 @SCAN_NOTES: Frame duplication error at start of scan.
 @SUL_UPC: 
 @SCAN_DATE: 2017/11/21
+@DUPCOUNT: 7
+@DUPLICATE:
+	<ul> 
+	<li> &bullet; 2 repeated frames at rows 30 and 60.
+	<li> &bullet; 2 repeated frames at rows 90 and 120.
+	<li> &bullet; 2 repeated frames at rows 150 and 180.
+	<li> &bullet; 2 repeated frames at rows 360 and 390.
+	<li> &bullet; 2 repeated frames at rows 420 and 450.
+	<li> &bullet; 2 repeated frames at rows 480 and 510.
+	<li> &bullet; 6 repeated frames at rows 720,750, 780, 810, 840, 870.
+	</ul>
 @@END: ROLL
 
 
