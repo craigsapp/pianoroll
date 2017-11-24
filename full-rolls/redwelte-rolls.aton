@@ -59,6 +59,17 @@ Note names are written in German on next to the holes for each pitch.
 @SEARCHWORKS: https://searchworks.stanford.edu/view/11467900
 @SUL_CALLNUMBER: CONDON ROLL 1367
 @SCAN_DATE: 
+@DUPCOUNT: 7
+@DUPLICATE:
+	<ul> 
+	<li> &bullet; 3 repeated frames at rows 0, 30 and 60.
+	<li> &bullet; 2 repeated frames at rows 120 and 150.
+	<li> &bullet; 2 repeated frames at rows 240 and 270.
+	<li> &bullet; 2 repeated frames at rows 360 and 390.
+	<li> &bullet; 6 repeated frames at rows 450, 480, 510, 540, 570 and 600.
+	<li> &bullet; 2 repeated frames at rows 690 and 720.
+	<li> &bullet; 2 repeated frames at rows 780 and 810.
+	</ul>
 @@END: ROLL
 
 

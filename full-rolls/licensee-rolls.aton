@@ -17,6 +17,11 @@
 @JPG_DPI: 60
 @SUL_UPC:
 @SCAN_DATE: 2017/11/16
+@DUPCOUNT: 1
+@DUPLICATE:
+	<ul> 
+	<li> &bullet; 3 repeated frames at rows 44970, 45000 and 45030.
+	</ul>
 @@END: ROLL
 
 @@START: ROLL
@@ -40,5 +45,10 @@ Has the date 9/25/84 at the end of the roll.
 @SEARCHWORKS: https://searchworks.stanford.edu/view/11347014
 @SUL_CALLNUMBER: CONDON ROLL 660
 @SCAN_DATE: 2017/11/16
+@DUPCOUNT: 1
+@DUPLICATE:
+	<ul> 
+	<li> &bullet; 4 repeated frames at rows 52050, 52080, 52110 and 52140
+	</ul>
 @@END: ROLL
 
