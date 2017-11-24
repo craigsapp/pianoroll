@@ -20,12 +20,12 @@
 @DUPCOUNT: 6
 @DUPLICATE:
 	<ul> 
-	<li> &bullet; Duplicate frames at rows 30, 60 and 90.
-	<li> &bullet; Duplicate frames at rows 150 and 180.
-	<li> &bullet; Duplicate frames at rows 210, 240 and 270.
-	<li> &bullet; Duplicate frames at rows 810, 840 and 870.
-	<li> &bullet; Duplicate frames at rows 23370 and 23400.
-	<li> &bullet; Duplicate frames at rows 61230 and 61260.
+	<li> &bullet; 3 repeated frames at rows 30, 60 and 90.
+	<li> &bullet; 2 repeated frames at rows 150 and 180.
+	<li> &bullet; 3 repeated frames at rows 210, 240 and 270.
+	<li> &bullet; 3 repeated frames at rows 810, 840 and 870.
+	<li> &bullet; 2 repeated frames at rows 23370 and 23400.
+	<li> &bullet; 2 repeated frames at rows 61230 and 61260.
 	</ul>
 @@END: ROLL
 
