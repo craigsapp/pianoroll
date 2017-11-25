@@ -13,8 +13,13 @@
 @FILEBASE: ampico-65543H-Haydn-SonataDmaj-Norfleet-1925
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
-@NOTES:	Also found at <a target="_blank" href="https://findingaids.library.unt.edu/?p=collections/findingaid&id=274&q=mary&rootcontentid=71537#.WhZ0xrQ-cUE">UNT</a>.
-Copyright 1925.
+@COPYRIGHT: 1925
+@NOTES:	
+The green line on the roll indicates the expression (dynamics) encoded on the roll.
+See the article <a target="_blank" href="https://stacks.stanford.edu/file/druid:pf614mb6934/31-03.pdf">The Great Green Line Mystery</a> by Vernon Brown in The AMICA Bulletin 29/6 (Nov./Dec. 1992).
+<p>
+
+Also found at <a target="_blank" href="https://findingaids.library.unt.edu/?p=collections/findingaid&id=274&q=mary&rootcontentid=71537#.WhZ0xrQ-cUE">UNT</a>.
 @PHYSICAL_NOTES: Contains large section in the middle of the roll that needs repair in order to scan properly.
 @SCAN_NOTES: Damaged region in middle of roll not suitable for note extraction.  This is most of the
 second movement.
