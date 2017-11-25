@@ -232,6 +232,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //////////////////////////////
 //
+// Handlebars helper "plural" --
+//
+
+Handlebars.registerHelper('plural', function(sstring, pstring, count) {
+	return new Handlebars.SafeString(parseInt(count) == 1 ? ssstring : pstring);
+});
+
+
+
+//////////////////////////////
+//
 // Handlebars helper "jpgdpi" --
 //
 
