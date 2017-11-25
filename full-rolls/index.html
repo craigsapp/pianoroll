@@ -236,7 +236,7 @@ document.addEventListener("DOMContentLoaded", function() {
 //
 
 Handlebars.registerHelper('plural', function(sstring, pstring, count) {
-	return new Handlebars.SafeString(parseInt(count) == 1 ? ssstring : pstring);
+	return new Handlebars.SafeString(parseInt(count) == 1 ? sstring : pstring);
 });
 
 
