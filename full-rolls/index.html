@@ -287,12 +287,11 @@ Handlebars.registerHelper('length', function(pixels, dpi) {
 
 	var output = ", " + length;
 	if (r > 0) {
-		var upper = pixels / (d - 12 * d * r) / 12.0;
-		var diff = upper - l;
-		diff = parseInt(diff * 100) / 100.0;
-		if (diff > 0) {
+		var error = length * r * 12 / dpi;
+		error = parseInt(error * 100) / 100.0;
+		if (error > 0) {
 			output += " &pm; ";
-			output += diff;
+			output += error;
 		}
 	}
 	output += " feet";
