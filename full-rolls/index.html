@@ -229,6 +229,34 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
+//////////////////////////////
+//
+// Handlebars helper "jpgdpi" --
+//
+
+Handlebars.registerHelper('jpgdpi', function(pixels, dpi) {
+	var percentage = parseInt(64000 / pixels * 100 + 0.5);
+	if (percentage > 33) {
+		percentage = 33;
+	}
+	var d = parseFloat(dpi);
+	if (!d) {
+		d = 300.0;
+	}
+	var newdpi = parseInt(percentage / 100.0 * d + 0.5;
+
+	var output = newdpi + "-dpi";
+	return new Handlebars.SafeString(output);
+}
+
+
+
+//////////////////////////////
+//
+// Handlebars helper "length" --
+//
+
 Handlebars.registerHelper('length', function(pixels, dpi) {
 	var p = parseInt(pixels);
 	if (!p) {

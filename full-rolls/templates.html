@@ -205,8 +205,7 @@ vim: ts=3:nowrap
 						Images
 					</td>
 					<td>
-						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.jpg">
-						{{#if this.JPG_DPI}}{{{this.JPG_DPI}}}{{else}}100{{/if}}-dpi JPEG</a>
+						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.jpg">{{{jpgdpi this.PIXEL_LENGTH this.LDPI}}} JPEG</a>
 						<br>
 						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.tiff">300-dpi uncompressed full-color TIFF</a> (original, large)
 						<br>
