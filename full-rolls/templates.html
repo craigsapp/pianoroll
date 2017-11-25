@@ -97,6 +97,28 @@ vim: ts=3:nowrap
 				</tr>
 				{{/if}}
 
+				{{#if this.PRICE}}
+				<tr>
+					<td>
+						Original Price
+					</td>
+					<td>
+						{{{this.PRICE}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.COPYRIGHT}}
+				<tr>
+					<td>
+						Copyright
+					</td>
+					<td>
+						{{{this.COPYRIGHT}}}
+					</td>
+				</tr>
+				{{/if}}
+
 				{{#if this.NOTES}}
 				<tr>
 					<td>
@@ -126,28 +148,6 @@ vim: ts=3:nowrap
 					</td>
 					<td>
 						{{{this.SCAN_NOTES}}}
-					</td>
-				</tr>
-				{{/if}}
-
-				{{#if this.PRICE}}
-				<tr>
-					<td>
-						Original Price
-					</td>
-					<td>
-						{{{this.PRICE}}}
-					</td>
-				</tr>
-				{{/if}}
-
-				{{#if this.COPYRIGHT}}
-				<tr>
-					<td>
-						Copyright
-					</td>
-					<td>
-						{{{this.COPYRIGHT}}}
 					</td>
 				</tr>
 				{{/if}}
