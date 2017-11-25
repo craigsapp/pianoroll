@@ -234,7 +234,7 @@ Handlebars.registerHelper('length', function(pixels, dpi) {
 	if (!p) {
 		return new Handlbars.SafeString("");
 	}
-	var d = parseFlaod(dpi);
+	var d = parseFloat(dpi);
 	if (!d) {
 		return new Handlbars.SafeString("");
 	}
