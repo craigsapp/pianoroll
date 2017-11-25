@@ -240,7 +240,7 @@ Handlebars.registerHelper('length', function(pixels, dpi) {
 	}
 	var r = 0;
 	var matches;
-	if (matches = dpi.match(/pm;\\s*([\\d.]+)/)) {
+	if (matches = dpi.match(/pm;\s*([\d.]+)/)) {
 console.log("r", r, "dpi", dpi, "match", matches[1]);
 		r = parseFloat(matches[1]);
 	}
