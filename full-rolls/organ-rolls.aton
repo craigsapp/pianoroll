@@ -7,6 +7,8 @@
 @PRICE: 
 @TYPE:	Recut
 @FORMAT: Duo-Art Organ 176-note
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 234090
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/organ-rolls
 @FILEBASE: duoart3480-organroll-studentprince-romberg
 @LDPI: 300.32 &pm; 0.19

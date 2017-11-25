@@ -6,6 +6,8 @@
 @PRICE: 
 @TYPE:	Original
 @FORMAT: QRS
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 49410
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/calibration-rolls
 @FILEBASE: lower-calibration-1-slow
 @LDPI: 300.25 &pm; 0.21
@@ -27,6 +29,8 @@
 @PRICE: 
 @TYPE:	Original
 @FORMAT: QRS
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 50880
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/calibration-rolls
 @FILEBASE: upper-calibration-1-slow
 @LDPI: 300.32 &pm; 0.19

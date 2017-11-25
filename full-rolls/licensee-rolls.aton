@@ -7,6 +7,8 @@
 @PRICE: $2.00
 @TYPE:	Original
 @FORMAT: Licensee
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 202260
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/licensee-rolls
 @FILEBASE: deluxe-C2733A-Debussy-CC-Doll-Snow-played-by-Debussy
 @LDPI: 300.25 &pm; 0.21
@@ -32,6 +34,8 @@
 @PRICE: 
 @TYPE:	Recut
 @FORMAT: Licensee
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 156990
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/licensee-rolls
 @FILEBASE: weltemignon2734recut-equisses-Debussy-Debussy
 @LDPI: 300.25 &pm; 0.21

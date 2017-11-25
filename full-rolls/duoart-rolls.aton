@@ -7,6 +7,8 @@
 @PRICE: 
 @TYPE:	Recut
 @FORMAT: Duo-Art
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 203940
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/duoart-rolls
 @FILEBASE: duoart047-recut-nocturne27-2-chopin-pachmann
 @LDPI: 300.25 &pm; 0.21
@@ -44,6 +46,8 @@
 @PRICE: 
 @TYPE:	Original
 @FORMAT: Duo-Art
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 230400
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/audiographic-rolls
 @FILEBASE: duoart-salesman-demonstration-roll
 @LDPI: 300.25 &pm; 0.21
@@ -80,6 +84,8 @@ End of the roll contains photographs of people associated with Duo-Art.
 @PRICE: 
 @TYPE:	Original
 @FORMAT: Duo-Art
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 122220
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
 @FILEBASE: duoart-testroll-no3
 @LDPI: 300.25 &pm; 0.21

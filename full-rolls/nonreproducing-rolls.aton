@@ -7,6 +7,8 @@
 @PRICE: $1.25
 @TYPE:	Original
 @FORMAT: Pennino
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 110730
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/pennino-rolls
 @FILEBASE: pennino58-porta-RialiInFesta-Oliva
 @LDPI: 300.25 &pm; 0.21

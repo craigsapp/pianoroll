@@ -7,6 +7,8 @@
 @PRICE: 
 @TYPE:	Original
 @FORMAT: Duo-Art
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 230400
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/audiographic-rolls
 @FILEBASE: duoart-salesman-demonstration-roll
 @LDPI: 300.25 &pm; 0.21

@@ -7,6 +7,8 @@
 @PRICE: 
 @TYPE:	Original
 @FORMAT: Metrostyle
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 45630
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/metrostyle-rolls
 @FILEBASE: metrostyleY4291-phantomsop15-3-beach
 @LDPI: 300.25 &pm; 0.21

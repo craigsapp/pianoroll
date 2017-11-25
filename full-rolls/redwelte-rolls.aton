@@ -7,6 +7,8 @@
 @PRICE: 
 @TYPE:	Recut
 @FORMAT: red Welte
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 133170
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/redwelte-rolls
 @FILEBASE: RedRoll2736-LaPlusQueLente-Debussy-Debussy
 @LDPI: 300.32 &pm; 0.19
@@ -47,6 +49,8 @@ on the left (as they would be seen when looking at the roll being played on a re
 @PRICE: 
 @TYPE: Original
 @FORMAT: red Welte
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 84780
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/redwelte-rolls
 @FILEBASE: welte-test-roll
 @LDPI: 300.32 &pm; 0.19

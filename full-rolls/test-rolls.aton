@@ -7,6 +7,8 @@
 @PRICE: 
 @TYPE:	Hand-cut
 @FORMAT: Duo-Art / Licensee
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 51990
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
 @FILEBASE: handcut-duoart-dynamics-test
 @LDPI: 300.25 &pm; 0.21
@@ -36,6 +38,8 @@
 @PRICE: 
 @TYPE:	Hand-cut
 @FORMAT: Duo-Art / Welte
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 111870
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
 @FILEBASE: 1994-handcut-duoart-dynamics-test
 @LDPI: 300.25 &pm; 0.21
@@ -68,6 +72,8 @@
 @PRICE: 
 @TYPE:	Hand-cut
 @FORMAT: Duo-Art
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 87780
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
 @FILEBASE: duoart-homemade-test-roll
 @LDPI: 300.25 &pm; 0.21
@@ -86,6 +92,8 @@
 @PRICE: 
 @TYPE:	Original
 @FORMAT: Duo-Art
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 122220
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
 @FILEBASE: duoart-testroll-no3
 @LDPI: 300.25 &pm; 0.21
@@ -115,6 +123,8 @@
 @PRICE: 2.00
 @TYPE:	Original
 @FORMAT: Ampico A
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 110880
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
 @FILEBASE: ampico61391H-inspectors-test-roll
 @LDPI: 300.25 &pm; 0.21
@@ -136,6 +146,8 @@
 @PRICE: 
 @TYPE:	Original
 @FORMAT:	Ampico B
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 61020
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
 @FILEBASE: ampico-testroll-note-compensation-only-1929-service-manual
 @LDPI: 300.25 &pm; 0.21
@@ -157,6 +169,8 @@ Ampico catalog number.
 @PRICE: 2.00
 @TYPE:	Original
 @FORMAT: Ampico B
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 192870
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
 @FILEBASE: ampico70403H-testroll-for-use-with-service-manual-1929
 @LDPI: 300.25 &pm; 0.21
@@ -175,6 +189,8 @@ Ampico catalog number.
 @PRICE: 
 @TYPE:	Original
 @FORMAT: Green
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 126870
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
 @FILEBASE: green-welte-repetition-rest-roll
 @LDPI: 300.25 &pm; 0.21
@@ -207,6 +223,8 @@ Ampico catalog number.
 @PRICE: 
 @TYPE:	Original
 @FORMAT: Licensee
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 131640
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
 @FILEBASE: weltemignon-deluxe-test-roll
 @LDPI: 300.25 &pm; 0.21
@@ -228,6 +246,8 @@ since there is a strange behavior in the strip count in the file.
 @PRICE: 
 @TYPE:	Original
 @FORMAT: Licensee
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 148950
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
 @FILEBASE: welte-mignon-official-test-roll
 @LDPI: 300.25 &pm; 0.21
@@ -250,6 +270,8 @@ since there is a strange behavior in the strip count in the file.
 @PRICE: 
 @TYPE: Original
 @FORMAT: red Welte
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 84780
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/redwelte-rolls
 @FILEBASE: welte-test-roll
 @LDPI: 300.32 &pm; 0.19

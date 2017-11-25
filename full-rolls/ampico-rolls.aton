@@ -7,6 +7,8 @@
 @PRICE: 2.00
 @TYPE:	Original
 @FORMAT: Ampico A
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 268710
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/ampico-rolls
 @FILEBASE: ampico-65543H-Haydn-SonataDmaj-Norfleet-1925
 @LDPI: 300.25 &pm; 0.21
@@ -40,6 +42,8 @@ second movement.
 @PRICE: 2.00
 @TYPE:	Original
 @FORMAT: Ampico A
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 110880
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
 @FILEBASE: ampico61391H-inspectors-test-roll
 @LDPI: 300.25 &pm; 0.21
@@ -61,6 +65,8 @@ second movement.
 @PRICE: 
 @TYPE:	Original
 @FORMAT:	Ampico B
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 61020
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
 @FILEBASE: ampico-testroll-note-compensation-only-1929-service-manual
 @LDPI: 300.25 &pm; 0.21
@@ -82,6 +88,8 @@ Ampico catalog number.
 @PRICE: 2.00
 @TYPE:	Original
 @FORMAT: Ampico B
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 192870
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
 @FILEBASE: ampico70403H-testroll-for-use-with-service-manual-1929
 @LDPI: 300.25 &pm; 0.21

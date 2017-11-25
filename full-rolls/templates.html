@@ -178,6 +178,17 @@ vim: ts=3:nowrap
 				</tr>
 				{{/if}}
 
+				{{#if this.PIXEL_LENGTH}}
+				<tr>
+					<td>
+						Roll Length
+					</td>
+					<td>
+						{{{this.PIXEL_LENGTH}}} pixels{{#if this.LDPI}}{{{length this.PIXEL_LENGTH this.LDPI}}}{{\if}}
+					</td>
+				</tr>
+				{{/if}}
+
 				{{#if this.SCAN_DATE}}
 				<tr>
 					<td>
