@@ -244,7 +244,7 @@ Handlebars.registerHelper('jpgdpi', function(pixels, dpi) {
 	if (!d) {
 		d = 300.0;
 	}
-	var newdpi = parseInt(percentage / 100.0 * d + 0.5);
+	var newdpi = parseInt(percentage / 100.0 * d + 0.5 + 0.5);
 
 	var output = newdpi + "-dpi";
 	return new Handlebars.SafeString(output);
