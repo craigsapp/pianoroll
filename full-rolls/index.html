@@ -287,7 +287,7 @@ Handlebars.registerHelper('length', function(pixels, dpi) {
 
 	var output = ", " + length;
 	if (r > 0) {
-		var error = length * r * 12 / dpi;
+		var error = length * r * 12 / d;
 		error = parseInt(error * 100) / 100.0;
 		if (error > 0) {
 			output += " &pm; ";
