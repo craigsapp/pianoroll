@@ -243,6 +243,7 @@ Handlebars.registerHelper('length', function(pixels, dpi) {
 	if (matches = dpi.search(/pm;\\s*([\\d.]+)/)) {
 		r = parseFloat(matches[1]);
 	}
+console.log("r", r, "dpi", dpi);
 
 	var l = pixels / d / 12.0;
 	var length = parseInt(l * 100.0)/100.0;
