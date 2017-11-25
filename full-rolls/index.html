@@ -246,6 +246,7 @@ Handlebars.registerHelper('length', function(pixels, dpi) {
 
 	var l = pixels / d / 12.0;
 	var length = parseInt(length * 100.0)/100.0;
+console.log("PIXELS", pixels, "DPI", d, "L", l, "LENGTH", length);
 
 	var output = ", " + length;
 	if (r > 0) {
