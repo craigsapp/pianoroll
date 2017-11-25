@@ -86,6 +86,17 @@ vim: ts=3:nowrap
 				</tr>
 				{{/if}}
 
+				{{#if this.RECUTTER}}
+				<tr>
+					<td>
+						Recutter
+					</td>
+					<td>
+						{{{this.RECUTTER}}}
+					</td>
+				</tr>
+				{{/if}}
+
 				{{#if this.NOTES}}
 				<tr>
 					<td>
@@ -104,17 +115,6 @@ vim: ts=3:nowrap
 					</td>
 					<td>
 						{{{this.PHYSICAL_NOTES}}}
-					</td>
-				</tr>
-				{{/if}}
-
-				{{#if this.RECUTTER}}
-				<tr>
-					<td>
-						Recutter
-					</td>
-					<td>
-						{{{this.RECUTTER}}}
 					</td>
 				</tr>
 				{{/if}}
