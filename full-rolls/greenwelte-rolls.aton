@@ -26,7 +26,12 @@
 	<li> &bullet; 5 repeated frames at rows 93420, 93450, 93480, 93510 and 93540.
 	<li> &bullet; 2 repeated frames at rows 281790 and 281820.
 	</ul>
-
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@DESCRIPTION: Color intensity histograms
+@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/greenwelte-rolls/weltegreen3414-Reger-op134-part2-frieda_Kwast-Hadapp-histograms.txt
+@@END:	ANALYSIS
+@@END:	ANALYSES
 @@END: ROLL
 
 

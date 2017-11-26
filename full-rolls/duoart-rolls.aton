@@ -29,6 +29,12 @@
 	<li> &bullet; 2 repeated frames at rows 23370 and 23400.
 	<li> &bullet; 2 repeated frames at rows 61230 and 61260.
 	</ul>
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@DESCRIPTION: Color intensity histograms
+@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/duoart-rolls/duoart047-recut-nocturne27-2-chopin-pachmann-histograms.txt
+@@END:	ANALYSIS
+@@END:	ANALYSES
 @@END: ROLL
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

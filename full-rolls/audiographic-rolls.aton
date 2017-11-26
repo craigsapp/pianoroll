@@ -31,6 +31,12 @@ End of the roll contains photographs of people associated with Duo-Art.
 @JPG_DPI: 60
 @SUL_UPC:
 @SCAN_DATE: 2017/11/22
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@DESCRIPTION: Color intensity histograms
+@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/audiographic-rolls/duoart-salesman-demonstration-roll-histograms.txt
+@@END:	ANALYSIS
+@@END:	ANALYSES
 @@END: ROLL
 
 @@START: ROLL
