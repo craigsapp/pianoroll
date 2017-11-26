@@ -1,45 +1,5 @@
 
-@@START: ROLL
-@TITLE: Salesmen's Demonstration Roll
-@COMPOSER:
-@PERFORMER:
-@CATALOG: 
-@PRICE: 
-@TYPE:	Original
-@FORMAT: Duo-Art
-@PIXEL_WIDTH: 4096
-@PIXEL_LENGTH: 230400
-@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/audiographic-rolls
-@FILEBASE: duoart-salesman-demonstration-roll
-@LDPI: 300.25 &pm; 0.21
-@WDPI: 301.39
-@NOTES:	Contents:
-<ul>
-<li> &bullet; A selection of <i>Anitra's Dance</i> 
-from <i>Peer Gynt Suite</i> by Grieg, played by Percy Grainger
-<li> &bullet; Schubert's <i>Litany for All Souls Day</i> played by Alfred
-Cortot and interpreted by Percy A. Scholes.
-<li> &bullet; Section from Wagner's <i>Magic Fire Music</i> played by Ignaz Friedman.
-<li> &bullet; Rachmaninoff's <i>Prelude in C sharp minor</i> played by unknown.
-<li> &bullet; Section of the first movement of Schubert's <i>Unfinished Symphony</i>
-	played by unknown.
-<li> &bullet; <i>Puck</i> by Grieg, played by De Greef.
-</ul>
-@PHYSICAL_NOTES: Probably <i>ex libris</i> with due dates "2 JAN 1972" 
-and "4 JUN 1972</i> stamped underneath the box top.
-End of the roll contains photographs of people associated with Duo-Art.
-@ANCHOR:	salesmen
-@JPG_DPI: 60
-@SUL_UPC:
-@SCAN_DATE: 2017/11/22
-@@BEGIN: ANALYSES
-@@BEGIN: ANALYSIS
-@DESCRIPTION: Color intensity histograms
-@PLOTURL: https://plot.ly/~craigsapp/18.embed
-@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/audiographic-rolls/duoart-salesman-demonstration-roll-histograms.txt
-@@END:	ANALYSIS
-@@END:	ANALYSES
-@@END: ROLL
+{{include-relative salesmen-roll.aton}}
 
 @@START: ROLL
 @TITLE: 
