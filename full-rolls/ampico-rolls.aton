@@ -32,6 +32,12 @@ second movement. Black regions are a hand guiding the loose fragments over the s
 	<li> &bullet; 2 repeated frames at rows 186900 and 186930.
 	<li> &bullet; 2 repeated frames at rows 262170 and 262200.
 	</ul>
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@DESCRIPTION: Color intensity histograms
+@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/ampico-rolls/ampico-65543H-Haydn-SonataDmaj-Norfleet-1925-histograms.txt
+@@END:	ANALYSIS
+@@END:	ANALYSES
 @@END: ROLL
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

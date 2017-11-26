@@ -257,7 +257,11 @@ vim: ts=3:nowrap
 					<td>
 						<ul>
 							{{#each this.ANALYSES}}
-								<a target="_blank" href="{{PLOTURL}}">{{DESCRIPTION}}</a>
+								{{#if PLOTURL}}
+									<a target="_blank" href="{{PLOTURL}}">{{DESCRIPTION}}</a>
+								{{else}}
+									{{DESCRIPTION}}
+								{{/if}}
 								{{#if DATAURL}}
 									(<a target="_blank" href="{{DATAURL}}">data</a>)
 								{{/if}}
