@@ -14,6 +14,7 @@
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
 @NOTES:	
+@ANCHOR: snow
 @PHYSICAL_NOTES: 
 @SCAN_NOTES: 
 @JPG_DPI: 60
@@ -24,6 +25,13 @@
 	<ul> 
 	<li> &bullet; 3 repeated frames at rows 44970, 45000 and 45030.
 	</ul>
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@PLOTURL:
+@DESCRIPTION: Color intensity histograms
+@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/licensee-rolls/deluxe-C2733A-Debussy-CC-Doll-Snow-played-by-Debussy-histograms.txt
+@@END:	ANALYSIS
+@@END:	ANALYSES
 @@END: ROLL
 
 @@START: ROLL
@@ -39,6 +47,7 @@
 @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/licensee-rolls
 @FILEBASE: weltemignon2734recut-equisses-Debussy-Debussy
 @LDPI: 300.25 &pm; 0.21
+@ANCHOR: tonnesen
 @WDPI: 301.39
 @COPYRIGHT: 1985 Custom Music Rolls, Richardson, TX, U.S.A.
 @RECUTTER: Transcribed from the original Red Welte roll by Richard Tonnesen.
@@ -55,5 +64,12 @@
 	<ul> 
 	<li> &bullet; 4 repeated frames at rows 52050, 52080, 52110 and 52140
 	</ul>
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@PLOTURL: 
+@DESCRIPTION: Color intensity histograms
+@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/licensee-rolls/weltemignon2734recut-equisses-Debussy-Debussy-histograms.txt
+@@END:	ANALYSIS
+@@END:	ANALYSES
 @@END: ROLL
 

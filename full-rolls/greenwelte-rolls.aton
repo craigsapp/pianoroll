@@ -20,6 +20,7 @@
 @SEARCHWORKS: https://searchworks.stanford.edu/view/11369681
 @SUL_CALLNUMBER: CONDON ROLL 790
 @SCAN_DATE: 2017/11/16
+@ANCHOR: green
 @DUPCOUNT: 2
 @DUPLICATE:
 	<ul> 
@@ -28,6 +29,7 @@
 	</ul>
 @@BEGIN: ANALYSES
 @@BEGIN: ANALYSIS
+@PLOTURL: https://plot.ly/~craigsapp/22.embed
 @DESCRIPTION: Color intensity histograms
 @DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/greenwelte-rolls/weltegreen3414-Reger-op134-part2-frieda_Kwast-Hadapp-histograms.txt
 @@END:	ANALYSIS

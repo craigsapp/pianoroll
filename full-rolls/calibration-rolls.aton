@@ -1,5 +1,6 @@
 
 
+
 @@START: ROLL
 @TITLE: My Coloring Book
 @CATALOG: QRS Word Roll 9914
@@ -12,6 +13,7 @@
 @FILEBASE: lower-calibration-1-slow
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
+@ANCHOR: lcalibration1
 @NOTES:	There are 13 marks along the length of the roll, numbered 0 through 12.
 	These are one foot apart, and should be 3600 pixels apart if the DPI is 300
 	(the lower camera setting target DPI).
@@ -21,7 +23,16 @@
 	near the end is when a cloud passed in front of the sun.
 @SUL_UPC:
 @SCAN_DATE: 2017/11/16
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@PLOTURL: https://plot.ly/~craigsapp/30.embed
+@DESCRIPTION: Color-channel intensity histograms
+@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/calibration-rolls/lower-calibration-1-slow-histograms.txt
+@@END:	ANALYSIS
+@@END:	ANALYSES
 @@END: ROLL
+
+
 
 @@START: ROLL
 @TITLE: My Coloring Book
@@ -35,6 +46,7 @@
 @FILEBASE: upper-calibration-1-slow
 @LDPI: 300.32 &pm; 0.19
 @WDPI: 251.48
+@ANCHOR: ucalibration1
 @NOTES: There are 13 marks along the length of the roll, numbered
 	0 through 12.  These are one foot apart, and should be 3600 pixels apart
 	if the DPI is 300 (the lower camera setting target DPI).
@@ -43,6 +55,14 @@
 	so darker.
 @SUL_UPC:
 @SCAN_DATE: 2017/11/16
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@PLOTURL: https://plot.ly/~craigsapp/28.embed
+@DESCRIPTION: Color-channel intensity histograms
+@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/calibration-rolls/upper-calibration-1-slow-histograms.txt
+@@END:	ANALYSIS
+@@END:	ANALYSES
 @@END: ROLL
+
 
 

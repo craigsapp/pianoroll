@@ -32,7 +32,7 @@
 	</ul>
 @@BEGIN: ANALYSES
 @@BEGIN: ANALYSIS
-@DESCRIPTION: Color intensity histograms
+@DESCRIPTION: Color-channel intensity histograms
 @PLOTURL: https://plot.ly/~craigsapp/16.embed
 @DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/pennino-rolls/pennino58-porta-RialiInFesta-Oliva-histograms.txt
 @@END:	ANALYSIS

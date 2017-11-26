@@ -1,3 +1,5 @@
+---
+---
 
 @@START: ROLL
 @TITLE: Nocturne in D-flat, op. 27, no. 2
@@ -32,7 +34,7 @@
 	</ul>
 @@BEGIN: ANALYSES
 @@BEGIN: ANALYSIS
-@DESCRIPTION: Color intensity histograms
+@DESCRIPTION: Color-channel intensity histograms
 @PLOTURL: https://plot.ly/~craigsapp/20.embed
 @DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/duoart-rolls/duoart047-recut-nocturne27-2-chopin-pachmann-histograms.txt
 @@END:	ANALYSIS
@@ -46,7 +48,7 @@
 
 @@@ AUDIOGRAPHIC ROLLS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-{{include-relative salesmen-roll.aton}}
+{% include_relative salesmen-roll.aton %}
 
 
 

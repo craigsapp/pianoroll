@@ -13,12 +13,20 @@
 @FILEBASE: metrostyleY4291-phantomsop15-3-beach
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
+@ANCHOR: phantoms
 @NOTES:	
 @PHYSICAL_NOTES: The roll does not contain expression holes, but does
 include a dotted line for a performer to realize dynamics, and a red line 
 to control tempo.
 @SUL_UPC:
 @SCAN_DATE: 2017/11/22
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@DESCRIPTION: Color-channel intensity histograms
+@PLOTURL: https://plot.ly/~craigsapp/26.embed
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/metrostyle-rolls/metrostyleY4291-phantomsop15-3-beach-histograms.txt
+@@END:	ANALYSIS
+@@END:	ANALYSES
 @@END: ROLL
 
 @@START: ROLL

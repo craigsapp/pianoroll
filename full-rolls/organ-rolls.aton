@@ -19,6 +19,7 @@
 @PHYSICAL_NOTES: 
 @SUL_UPC:
 @SCAN_DATE: 2017/11/22
+@ANCHOR: lambie
 @DUPCOUNT: 6
 @DUPLICATE:
 	<ul> 
@@ -29,6 +30,13 @@
 	<li> &bullet; 2 repeated frames at rows 159210 and 159240.
 	<li> &bullet; 5 repeated frames at rows 205380, 205410, 205440, 205470 and 205500.
 	</ul>
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@PLOTURL: https://plot.ly/~craigsapp/24.embed
+@DESCRIPTION: Color-channel intensity histograms
+@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/organ-rolls/duoart3480-organroll-studentprince-romberg-histograms.txt
+@@END:	ANALYSIS
+@@END:	ANALYSES
 @@END: ROLL
 
 @@START: ROLL
