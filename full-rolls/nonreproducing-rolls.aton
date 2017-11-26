@@ -34,7 +34,7 @@
 @@BEGIN: ANALYSIS
 @DESCRIPTION: Color intensity histograms
 @PLOTURL: https://plot.ly/~craigsapp/16.embed
-@DATAURL: @BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/pennino-rolls/pennino58-porta-RialiInFesta-Oliva-histograms.txt
+@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/pennino-rolls/pennino58-porta-RialiInFesta-Oliva-histograms.txt
 @@END:	ANALYSIS
 @@END:	ANALYSES
 @@END: ROLL
