@@ -249,6 +249,22 @@ vim: ts=3:nowrap
 				</tr>
 				{{/if}}
 
+				{{#if this.ANALYSES}}
+				<tr>
+					<td>
+						Analyses
+					</td>
+					<td>
+						<ul>
+							{{#each this.ANALYSES}}
+								<a href="{{URL}}">{{DESCRIPTION}}</a>
+							{{/each}}
+						</ul>
+
+					</td>
+				</tr>
+				{{/if}}
+
 			</table>
 
 		</td></tr>

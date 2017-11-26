@@ -30,6 +30,12 @@
 	<li> &bullet; 3 repeated frames at rows 480, 510 and 540.
 	<li> &bullet; 10 repeated frames at rows 77190 and 77220, 77250, 77280, 77310, 77340, 77370, 77400, 77430 and 77460.
 	</ul>
+@BEGIN: ANALYSES
+@BEGIN: ANALYSIS
+@DESCRIPTION: Color intensity histograms
+@URL: https://plot.ly/~craigsapp/16/#plot
+@END:	ANALYSIS
+@END:	ANALYSES
 @@END: ROLL
 
 @@START: ROLL
