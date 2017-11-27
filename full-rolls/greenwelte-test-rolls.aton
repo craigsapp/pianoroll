@@ -13,6 +13,7 @@
 @FILEBASE: green-welte-repetition-rest-roll
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
+@ANCHOR: green_test
 @NOTES:	
 	This roll plays each of the 88 notes of the key-board from lowest to
 	highest.  Has the number "25326" stamped at the end of the roll.
