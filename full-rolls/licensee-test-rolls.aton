@@ -1,0 +1,51 @@
+
+
+
+
+@@START: ROLL
+@TITLE: DeLuxe [Welte-Mignon] Test Roll
+@CATALOG: 
+@PRICE: 
+@TYPE:	Original
+@FORMAT: Licensee
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 131640
+@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
+@FILEBASE: weltemignon-deluxe-test-roll
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@NOTES:	 Contains a <a target="_blank" href="weltemignon-deluxe-test-roll-appendix.jpg">one-page list of the tests on the roll</a>.
+@PHYSICAL_NOTES: 
+@SCAN_NOTES: Light band on right edge of paper is due to sunlight.  Copy the image from the scanning computer again
+since there is a strange behavior in the strip count in the file.
+@SUL_BARCODE: 36105225773709
+@SEARCHWORKS: https://searchworks.stanford.edu/view/11467427
+@SUL_CALLNUMBER: CONDON ROLL 935
+@SCAN_DATE: 2017/11/21
+@@END: ROLL
+
+
+@@START: ROLL
+@TITLE: Official Test Roll for the Welte-Mignon
+@CATALOG: 
+@PRICE: 
+@TYPE:	Original
+@FORMAT: Licensee
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 148950
+@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
+@FILEBASE: welte-mignon-official-test-roll
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@NOTES:	 
+@PHYSICAL_NOTES: 
+@SCAN_NOTES: Light vertical band on right is due to sunlight (not from roll or camera).
+Problem generating color-channel histogram: re-copy from scanning computer.
+@SUL_BARCODE: 36105225773733
+@SEARCHWORKS: https://searchworks.stanford.edu/view/11467425
+@SUL_CALLNUMBER: CONDON ROLL 558
+@SCAN_DATE: 2017/11/21
+@@END: ROLL
+
+
+

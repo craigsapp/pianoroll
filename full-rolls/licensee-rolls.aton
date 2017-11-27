@@ -18,7 +18,7 @@
 @PHYSICAL_NOTES: 
 @SCAN_NOTES: 
 @JPG_DPI: 60
-@SUL_UPC:
+@SUL_BARCODE:
 @SCAN_DATE: 2017/11/16
 @DUPCOUNT: 1
 @DUPLICATE:
@@ -27,8 +27,8 @@
 	</ul>
 @@BEGIN: ANALYSES
 @@BEGIN: ANALYSIS
-@PLOTURL:
 @DESCRIPTION: Color intensity histograms
+@PLOTURL: https://plot.ly/~craigsapp/44.embed
 @DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/licensee-rolls/deluxe-C2733A-Debussy-CC-Doll-Snow-played-by-Debussy-histograms.txt
 @@END:	ANALYSIS
 @@END:	ANALYSES
@@ -66,8 +66,8 @@
 	</ul>
 @@BEGIN: ANALYSES
 @@BEGIN: ANALYSIS
-@PLOTURL: 
 @DESCRIPTION: Color intensity histograms
+@PLOTURL: https://plot.ly/~craigsapp/34.embed
 @DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/licensee-rolls/weltemignon2734recut-equisses-Debussy-Debussy-histograms.txt
 @@END:	ANALYSIS
 @@END:	ANALYSES

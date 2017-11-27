@@ -1,0 +1,50 @@
+
+
+
+@@START: ROLL
+@TITLE: Test Roll
+@COMPOSER:
+@PERFORMER:
+@CATALOG: 
+@PRICE: 
+@TYPE: Original
+@FORMAT: red Welte
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 84780
+@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/redwelte-rolls
+@FILEBASE: welte-test-roll
+@LDPI: 300.32 &pm; 0.19
+@WDPI: 251.48
+@NOTES:	
+@PHYSICAL_NOTES:  Not on red paper.  Contains lines for each hole row.
+Leader was added later (so may be a partial test roll).  The note on the
+leader says <i>Welte-Mignon modified test-roll.  This roll cannot be used to
+adjust the Mignon expression mechanism.</i>
+Note names are written in German on next to the holes for each pitch.
+@SCAN_NOTES: 
+@SUL_BARCODE: 36105225773782
+@SEARCHWORKS: https://searchworks.stanford.edu/view/11467900
+@SUL_CALLNUMBER: CONDON ROLL 1367
+@SCAN_DATE: 
+@DUPCOUNT: 7
+@DUPLICATE:
+	<ul> 
+	<li> &bullet; 3 repeated frames at rows 0, 30 and 60.
+	<li> &bullet; 2 repeated frames at rows 120 and 150.
+	<li> &bullet; 2 repeated frames at rows 240 and 270.
+	<li> &bullet; 2 repeated frames at rows 360 and 390.
+	<li> &bullet; 6 repeated frames at rows 450, 480, 510, 540, 570 and 600.
+	<li> &bullet; 2 repeated frames at rows 690 and 720.
+	<li> &bullet; 2 repeated frames at rows 780 and 810.
+	</ul>
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@DESCRIPTION: Color-channel intensity histograms
+@PLOTURL: https://plot.ly/~craigsapp/40.embed
+@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/redwelte-rolls/welte-test-roll-histograms.txt
+@@END:	ANALYSIS
+@@END:	ANALYSES
+@@END: ROLL
+
+
+

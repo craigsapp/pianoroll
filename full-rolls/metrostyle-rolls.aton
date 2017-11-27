@@ -18,7 +18,7 @@
 @PHYSICAL_NOTES: The roll does not contain expression holes, but does
 include a dotted line for a performer to realize dynamics, and a red line 
 to control tempo.
-@SUL_UPC:
+@SUL_BARCODE:
 @SCAN_DATE: 2017/11/22
 @@BEGIN: ANALYSES
 @@BEGIN: ANALYSIS
@@ -44,7 +44,7 @@ to control tempo.
 @NOTES:	
 @PHYSICAL_NOTES: 
 @SCAN_NOTES: 
-@SUL_UPC:
+@SUL_BARCODE:
 @SCAN_DATE: 
 @@END: ROLL
 

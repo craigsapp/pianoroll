@@ -21,7 +21,7 @@
 @SCAN_NOTES: Scanned in the lower camera position.  Bright vertical line on
 	right side of image is due to the sun hitting the roll. Darker region
 	near the end is when a cloud passed in front of the sun.
-@SUL_UPC:
+@SUL_BARCODE:
 @SCAN_DATE: 2017/11/16
 @@BEGIN: ANALYSES
 @@BEGIN: ANALYSIS
@@ -53,7 +53,7 @@
 @PHYSICAL_NOTES:
 @SCAN_NOTES: Scanned in the upper camera position.  Scanned in the evening,
 	so darker.
-@SUL_UPC:
+@SUL_BARCODE:
 @SCAN_DATE: 2017/11/16
 @@BEGIN: ANALYSES
 @@BEGIN: ANALYSIS

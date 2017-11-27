@@ -1,0 +1,42 @@
+
+
+
+@@START: ROLL
+@TITLE: Duo-Art Test Roll No. 3
+@CATALOG: 
+@PRICE: 
+@TYPE:	Original
+@FORMAT: Duo-Art
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 122220
+@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
+@FILEBASE: duoart-testroll-no3
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@NOTES:	Inside top of box is the text: 
+	<i>
+	TO INSURE PERFECT TRACKING OF MUSIC ROLLS.
+	See that music roll is loosely wound on spool, then hold in the 
+	hand with the slotted end down.  Let roll drop lightly two or three times
+	into the palm of the other hand, thus throwing the entire music sheet against
+	the right flange of spool.  Tighten roll in the usual manner and it is 
+	ready to play.
+	</i>
+	<p>
+	<a target="_blank" href="https://stacks.stanford.edu/file/druid:dc917qr2688/33-02.pdf">The AMICA Bulletin March/April 1996, 33/2</a>
+	Keystone ad: mentions this roll  on page 116: as being from 1927.
+@PHYSICAL_NOTES: 
+@SCAN_NOTES: Light band of color on right side of roll is due to sunlight.
+@SUL_BARCODE:
+@SCAN_DATE: 2017/11/21
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@DESCRIPTION: Color-channel intensity histograms
+@PLOTURL: https://plot.ly/~craigsapp/36.embed
+@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/duoart-testroll-no3-histograms.txt
+@@END:	ANALYSIS
+@@END:	ANALYSES
+@@END: ROLL
+
+
+

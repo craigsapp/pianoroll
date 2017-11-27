@@ -24,7 +24,7 @@ Also found at <a target="_blank" href="https://findingaids.library.unt.edu/?p=co
 <img src="occluded-expression.png">
 @SCAN_NOTES: Damaged region in middle of roll not suitable for note extraction.  This is most of the
 second movement. Black regions are a hand guiding the loose fragments over the scanning tube.
-@SUL_UPC:
+@SUL_BARCODE:
 @ANCHOR:	norfleet
 @SCAN_DATE: 2017/11/16
 @DUPCOUNT: 2
@@ -35,7 +35,7 @@ second movement. Black regions are a hand guiding the loose fragments over the s
 	</ul>
 @@BEGIN: ANALYSES
 @@BEGIN: ANALYSIS
-@DESCRIPTION: Color-cannel intensity histograms
+@DESCRIPTION: Color-channel intensity histograms
 @PLOTURL: https://plot.ly/~craigsapp/32.embed
 @DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/ampico-rolls/ampico-65543H-Haydn-SonataDmaj-Norfleet-1925-histograms.txt
 @@END:	ANALYSIS

@@ -18,14 +18,21 @@
 	"Inspector's test roll for the Model 'A'".
 @PHYSICAL_NOTES:
 @SCAN_NOTES:
-@SUL_UPC: 
+@SUL_BARCODE: 
 @SCAN_DATE: 2017/11/21
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@DESCRIPTION: Color-channel intensity histograms
+@PLOTURL: https://plot.ly/~craigsapp/46.embed
+@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/ampico61391H-inspectors-test-roll-histograms.txt
+@@END:	ANALYSIS
+@@END:	ANALYSES
 @@END: ROLL
 
 
 @@START: ROLL
 @TITLE: Ampico Test Roll: Note Compensation ONLY, 1929 Service Manual
-@CATALOG:
+@CATALOG: Ampico 70601
 @PRICE: 
 @TYPE:	Original
 @FORMAT:	Ampico B
@@ -35,15 +42,21 @@
 @FILEBASE: ampico-testroll-note-compensation-only-1929-service-manual
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
-@NOTES:	Contains <a target="_blank" href="ampico-testroll-note-compensation-only-1929-service-manual-appendix.jpg">a one-page instruction sheet</a> in box.  Box has Stanford Library sticky-note with number "70601", which is probably the
-Ampico catalog number.
+@NOTES:	Contains <a target="_blank" href="ampico-testroll-note-compensation-only-1929-service-manual-appendix.jpg">a one-page instruction sheet</a> in box.  
 	<a target="_blank" href="https://stacks.stanford.edu/file/druid:dc917qr2688/33-02.pdf">The AMICA Bulletin March/April 1996, 33/2</a>
 	Keystone ad on page 116: mentions Ampico roll #70601 as being a "Note Compensation roll for adjusting
 	the Model "B" pneumatics".
 @PHYSICAL_NOTES:
 @SCAN_NOTES:
-@SUL_UPC: 
+@SUL_BARCODE: 
 @SCAN_DATE: 2017/11/21
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@DESCRIPTION: Color-channel intensity histograms
+@PLOTURL: https://plot.ly/~craigsapp/48.embed
+@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/ampico-testroll-note-compensation-only-1929-service-manual-histograms.txt
+@@END:	ANALYSIS
+@@END:	ANALYSES
 @@END: ROLL
 
 @@START: ROLL
@@ -61,6 +74,9 @@ Ampico catalog number.
 @NOTES:	For the Ampico Model "B".
 @PHYSICAL_NOTES: 
 @SCAN_NOTES: File may be corrupted, copy from scanning computer again.
-@SUL_UPC:
+@SUL_BARCODE:
 @SCAN_DATE: 2017/11/21
 @@END: ROLL
+
+
+

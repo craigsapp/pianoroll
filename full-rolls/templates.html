@@ -169,18 +169,18 @@ vim: ts=3:nowrap
 				</tr>
 				{{/if}}
 
-				{{#if this.SUL_UPC}}
+				{{#if this.SUL_BARCODE}}
 				<tr>
 					<td>
-						SUL UPC
+						SUL Barcode
 					</td>
 					<td>
 						{{#if this.SEARCHWORKS}}
 							<a target="_blank" href="{{this.SEARCHWORKS}}.refworks_marc_txt">
-								{{{this.SUL_UPC}}}
+								{{{this.SUL_BARCODE}}}
 							</a>
 						{{else}}
-							{{{this.SUL_UPC}}}
+							{{{this.SUL_BARCODE}}}
 						{{/if}}
 					</td>
 				</tr>

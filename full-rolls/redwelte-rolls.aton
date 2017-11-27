@@ -19,66 +19,32 @@
 @SCAN_NOTES: Notice that the label appears upside-down in the "visual" orientation in the JPEG
 version of the scan.  This is correct, since it is more important to have bass notes
 on the left (as they would be seen when looking at the roll being played on a red Welte roll).
-@SUL_UPC:
+@SUL_BARCODE:
 @SCAN_DATE: 2017/11/22
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@DESCRIPTION: Color-channel intensity histograms
+@PLOTURL: https://plot.ly/~craigsapp/38.embed
+@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/redwelte-rolls/RedRoll2736-LaPlusQueLente-Debussy-Debussy-histograms.txt
+@@END:	ANALYSIS
+@@END:	ANALYSES
 @@END: ROLL
 
-@@ ALSO:
+@@ ALSO TO BE PROCESSED:
 @@ Catalog: Welte-Mignon No. 2733
 @@ Title: Children's Corner
 @@ Composer: Debussy
 @@ Performer: Debussy
-@@ UPC: 3 6105 225 785 612
+@@ BARCODE: 36105225785612
 @@ SEARCHWORKS: https://searchworks.stanford.edu/view/11064893
 @@ CALLNUMBER: CONDON ROLL 584
 @@ 144.8 feet long
 
 
-
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@ 
-@@ The following rolls are located in another list (do not edit here)
-@@ 
-
 @@@ TEST ROLLS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-@@START: ROLL
-@TITLE: Test Roll
-@COMPOSER:
-@PERFORMER:
-@CATALOG: 
-@PRICE: 
-@TYPE: Original
-@FORMAT: red Welte
-@PIXEL_WIDTH: 4096
-@PIXEL_LENGTH: 84780
-@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/redwelte-rolls
-@FILEBASE: welte-test-roll
-@LDPI: 300.32 &pm; 0.19
-@WDPI: 251.48
-@NOTES:	
-@PHYSICAL_NOTES:  Not on red paper.  Contains lines for each hole row.
-Leader was added later (so may be a partial test roll).  The note on the
-leader says <i>Welte-Mignon modified test-roll.  This roll cannot be used to
-adjust the Mignon expression mechanism.</i>
-Note names are written in German on next to the holes for each pitch.
-@SCAN_NOTES: 
-@SUL_UPC: 3 6105 225 773 782
-@SEARCHWORKS: https://searchworks.stanford.edu/view/11467900
-@SUL_CALLNUMBER: CONDON ROLL 1367
-@SCAN_DATE: 
-@DUPCOUNT: 7
-@DUPLICATE:
-	<ul> 
-	<li> &bullet; 3 repeated frames at rows 0, 30 and 60.
-	<li> &bullet; 2 repeated frames at rows 120 and 150.
-	<li> &bullet; 2 repeated frames at rows 240 and 270.
-	<li> &bullet; 2 repeated frames at rows 360 and 390.
-	<li> &bullet; 6 repeated frames at rows 450, 480, 510, 540, 570 and 600.
-	<li> &bullet; 2 repeated frames at rows 690 and 720.
-	<li> &bullet; 2 repeated frames at rows 780 and 810.
-	</ul>
-@@END: ROLL
+{% include_relative redwelte-test-rolls.aton %}
+
 
 
 
