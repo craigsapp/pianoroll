@@ -1,9 +1,8 @@
 ---
 imgloc: https://ccrma.stanford.edu/~craig/piano-roll-project/calibration
-title: Scallop parameter search
 ---
 
-<h1> Calibration parameter search to maximize scalloping </h1>
+<h1> Scallop parameter search </h1>
 
 The following images are from a set of holes at 9 feet into the Ampico 70403 1929 test roll (Ampico B).
 Mouse-over the images to see the calibration settings (aperture setting and number of difussors on bottom light).  
