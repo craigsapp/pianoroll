@@ -20,6 +20,13 @@
 @SEARCHWORKS: https://searchworks.stanford.edu/view/11467427
 @SUL_CALLNUMBER: CONDON ROLL 935
 @SCAN_DATE: 2017/11/21
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@DESCRIPTION: Color-channel intensity histograms
+@PLOTURL: 
+@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/weltemignon-deluxe-test-roll-histograms.txt
+@@END:	ANALYSIS
+@@END:	ANALYSES
 @@END: ROLL
 
 
