@@ -1,5 +1,6 @@
 ---
 imgloc: https://ccrma.stanford.edu/~craig/piano-roll-project/calibration
+title: Scallop parameter search
 ---
 
 <h1> Calibration parameter search to maximize scalloping </h1>
