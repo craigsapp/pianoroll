@@ -76,7 +76,19 @@
 @SCAN_NOTES: File may be corrupted, copy from scanning computer again.
 @SUL_BARCODE:
 @SCAN_DATE: 2017/11/21
+@DUPCOUNT: 2
+@DUPLICATE:
+	<ul> 
+	<li> &bullet; 2 repeated frames at rows 109200 and 109230.
+	<li> &bullet; 6 repeated frames at rows 118830, 118860, 118890, 118920, 118950 and 118980.
+	</ul>
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@DESCRIPTION: Color-channel intensity histograms
+@PLOTURL: 
+@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/ampico70403H-testroll-for-use-with-service-manual-1929-histograms.txt
+@@END:	ANALYSIS
+@@END:	ANALYSES
 @@END: ROLL
-
 
 
