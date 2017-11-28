@@ -1,7 +1,6 @@
 
 
 
-
 @@START: ROLL
 @TITLE: DeLuxe [Welte-Mignon] Test Roll
 @CATALOG: 
@@ -16,13 +15,13 @@
 @WDPI: 301.39
 @NOTES:	 Contains a <a target="_blank" href="weltemignon-deluxe-test-roll-appendix.jpg">one-page list of the tests on the roll</a>.
 @PHYSICAL_NOTES: 
-@SCAN_NOTES: Light band on right edge of paper is due to sunlight.  Copy the image from the scanning computer again
-since there is a strange behavior in the strip count in the file.
+@SCAN_NOTES: Light band on right edge of paper is due to sunlight.  
 @SUL_BARCODE: 36105225773709
 @SEARCHWORKS: https://searchworks.stanford.edu/view/11467427
 @SUL_CALLNUMBER: CONDON ROLL 935
 @SCAN_DATE: 2017/11/21
 @@END: ROLL
+
 
 
 @@START: ROLL

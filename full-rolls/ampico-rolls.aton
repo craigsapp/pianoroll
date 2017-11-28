@@ -1,4 +1,6 @@
 
+
+
 @@START: ROLL
 @TITLE: <a target="_blank" href="http://imslp.org/wiki/Keyboard_Sonata_in_D_major,_Hob.XVI:37_(Haydn,_Joseph)">Sonata, D Major (Complete)</a> [Hob. Hob.XVI:37]
 @COMPOSER: Haydn
@@ -43,8 +45,6 @@ second movement. Black regions are a hand guiding the loose fragments over the s
 @@END: ROLL
 
 
-
-@@@ TEST ROLLS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 {% include_relative ampico-test-rolls.aton %}
 

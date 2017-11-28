@@ -1,5 +1,5 @@
----
----
+
+
 
 @@START: ROLL
 @TITLE: Nocturne in D-flat, op. 27, no. 2
@@ -41,19 +41,13 @@
 @@END:	ANALYSES
 @@END: ROLL
 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@@ 
-@@ The following rolls are located in another list (do not edit here)
-@@ 
 
-@@@ AUDIOGRAPHIC ROLLS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 {% include_relative salesmen-roll.aton %}
 
 
 
-@@@ TEST ROLLS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
 {% include_relative duoart-test-rolls.aton %}
+
 
 

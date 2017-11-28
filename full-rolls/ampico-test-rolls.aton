@@ -1,5 +1,6 @@
 
 
+
 @@START: ROLL
 @TITLE: Inspector's Ampico Test Roll
 @CATALOG: Ampico 61391-H
@@ -28,6 +29,7 @@
 @@END:	ANALYSIS
 @@END:	ANALYSES
 @@END: ROLL
+
 
 
 @@START: ROLL
@@ -59,6 +61,8 @@
 @@END:	ANALYSES
 @@END: ROLL
 
+
+
 @@START: ROLL
 @TITLE: Ampico Test Roll for use with Service Manual 1929
 @CATALOG: Ampico 70403-H
@@ -73,7 +77,7 @@
 @WDPI: 301.39
 @NOTES:	For the Ampico Model "B".
 @PHYSICAL_NOTES: 
-@SCAN_NOTES: File may be corrupted, copy from scanning computer again.
+@SCAN_NOTES:
 @SUL_BARCODE:
 @SCAN_DATE: 2017/11/21
 @DUPCOUNT: 2
@@ -90,5 +94,6 @@
 @@END:	ANALYSIS
 @@END:	ANALYSES
 @@END: ROLL
+
 
 
