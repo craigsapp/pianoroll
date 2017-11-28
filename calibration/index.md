@@ -1,11 +1,6 @@
 ---
 imgloc: https://ccrma.stanford.edu/~craig/piano-roll-project/calibration
 ---
-<html>
-<head>
-<title> Calibration test images </title>
-</head>
-<body>
 
 <h1> Calibration parameter search to maximize scalloping </h1>
 
@@ -126,9 +121,6 @@ Scanned at 600 and 300 dpi on a flat-bed scanner (with white and black backgroun
 <img title="a6.0 b3" src="{{page.imgloc}}/aperture6-0-3b-crop-threshold.png">
 
 
-
 <span style="200px;"></span>
 
-
-</html>
 
