@@ -180,7 +180,7 @@ rather than aperture settings.
 {% include_relative hole.html urlbase=imgloc a="2.0" d="7" base="aperture2-0-7b" %}
 
 <p> One to seven diffusion sheets on the back light at aperture
-1.5, and a 250 microsecond exposure:
+2.5, and a 250 microsecond exposure:
 
 <p>
 {% include_relative hole.html urlbase=imgloc a="2.5" d="1" base="aperture2-5" %}
@@ -274,43 +274,6 @@ rather than aperture settings.
 {% include_relative hole.html urlbase=imgloc a="6.0" d="5" base="aperture6-0-5b" %}
 {% include_relative hole.html urlbase=imgloc a="6.0" d="6" base="aperture6-0-6b" %}
 {% include_relative hole.html urlbase=imgloc a="6.0" d="7" base="aperture6-0-7b" %}
-
-<p> One to seven diffusion sheets on the back light at aperture
-6.5, and a 250 microsecond exposure:
-
-<p>
-{% include_relative hole.html urlbase=imgloc a="6.5" d="1" base="aperture6-5" %}
-{% include_relative hole.html urlbase=imgloc a="6.5" d="2" base="aperture6-5-2b" %}
-{% include_relative hole.html urlbase=imgloc a="6.5" d="3" base="aperture6-5-3b" %}
-{% include_relative hole.html urlbase=imgloc a="6.5" d="4" base="aperture6-5-4b" %}
-{% include_relative hole.html urlbase=imgloc a="6.5" d="5" base="aperture6-5-5b" %}
-{% include_relative hole.html urlbase=imgloc a="6.5" d="6" base="aperture6-5-6b" %}
-{% include_relative hole.html urlbase=imgloc a="6.5" d="7" base="aperture6-5-7b" %}
-
-<p> One to seven diffusion sheets on the back light at aperture
-7.0, and a 250 microsecond exposure:
-
-<p>
-{% include_relative hole.html urlbase=imgloc a="7.0" d="1" base="aperture7-0" %}
-{% include_relative hole.html urlbase=imgloc a="7.0" d="2" base="aperture7-0-2b" %}
-{% include_relative hole.html urlbase=imgloc a="7.0" d="3" base="aperture7-0-3b" %}
-{% include_relative hole.html urlbase=imgloc a="7.0" d="4" base="aperture7-0-4b" %}
-{% include_relative hole.html urlbase=imgloc a="7.0" d="5" base="aperture7-0-5b" %}
-{% include_relative hole.html urlbase=imgloc a="7.0" d="6" base="aperture7-0-6b" %}
-{% include_relative hole.html urlbase=imgloc a="7.0" d="7" base="aperture7-0-7b" %}
-
-<p> One to seven diffusion sheets on the back light at aperture
-7.5, and a 250 microsecond exposure:
-
-<p>
-{% include_relative hole.html urlbase=imgloc a="7.5" d="1" base="aperture7-5" %}
-{% include_relative hole.html urlbase=imgloc a="7.5" d="2" base="aperture7-5-2b" %}
-{% include_relative hole.html urlbase=imgloc a="7.5" d="3" base="aperture7-5-3b" %}
-{% include_relative hole.html urlbase=imgloc a="7.5" d="4" base="aperture7-5-4b" %}
-{% include_relative hole.html urlbase=imgloc a="7.5" d="5" base="aperture7-5-5b" %}
-{% include_relative hole.html urlbase=imgloc a="7.5" d="6" base="aperture7-5-6b" %}
-{% include_relative hole.html urlbase=imgloc a="7.5" d="7" base="aperture7-5-7b" %}
-
 
 <h2> Scanning the same holes on a flat-bed scanner <h2>
 
@@ -440,6 +403,141 @@ black backgrounds):
 <img title="aperture 5.0, 7 diffusers" src="{{page.imgloc}}/aperture5-0-7b-crop-threshold.png">
 <img title="aperture 5.5, 7 diffusers" src="{{page.imgloc}}/aperture5-5-7b-crop-threshold.png">
 <img title="aperture 6.0, 7 diffusers" src="{{page.imgloc}}/aperture6-0-7b-crop-threshold.png">
+
+<h2> Thresholded images organized by diffusion value </h2>
+
+<p> One to seven diffusion sheets on the backlight at aperture 1.0, and a 250 microsecond exposure:
+
+<p>
+{% include_relative threshold.html urlbase=imgloc a="1.0" d="1" base="aperture1-0" %}
+{% include_relative threshold.html urlbase=imgloc a="1.0" d="2" base="aperture1-0-2b" %}
+{% include_relative threshold.html urlbase=imgloc a="1.0" d="3" base="aperture1-0-3b" %}
+{% include_relative threshold.html urlbase=imgloc a="1.0" d="4" base="aperture1-0-4b" %}
+{% include_relative threshold.html urlbase=imgloc a="1.0" d="5" base="aperture1-0-5b" %}
+{% include_relative threshold.html urlbase=imgloc a="1.0" d="6" base="aperture1-0-6b" %}
+{% include_relative threshold.html urlbase=imgloc a="1.0" d="7" base="aperture1-0-7b" %}
+
+
+
+<p> One to seven diffusion sheets on the backlight at aperture 1.5, and a 250 microsecond exposure:
+
+<p>
+{% include_relative threshold.html urlbase=imgloc a="1.5" d="1" base="aperture1-5" %}
+{% include_relative threshold.html urlbase=imgloc a="1.5" d="2" base="aperture1-5-2b" %}
+{% include_relative threshold.html urlbase=imgloc a="1.5" d="3" base="aperture1-5-3b" %}
+{% include_relative threshold.html urlbase=imgloc a="1.5" d="4" base="aperture1-5-4b" %}
+{% include_relative threshold.html urlbase=imgloc a="1.5" d="5" base="aperture1-5-5b" %}
+{% include_relative threshold.html urlbase=imgloc a="1.5" d="6" base="aperture1-5-6b" %}
+{% include_relative threshold.html urlbase=imgloc a="1.5" d="7" base="aperture1-5-7b" %}
+
+<p> One to seven diffusion sheets on the backlight at aperture 2.0, and a 250 microsecond exposure:
+
+<p>
+{% include_relative threshold.html urlbase=imgloc a="2.0" d="1" base="aperture2-0" %}
+{% include_relative threshold.html urlbase=imgloc a="2.0" d="2" base="aperture2-0-2b" %}
+{% include_relative threshold.html urlbase=imgloc a="2.0" d="3" base="aperture2-0-3b" %}
+{% include_relative threshold.html urlbase=imgloc a="2.0" d="4" base="aperture2-0-4b" %}
+{% include_relative threshold.html urlbase=imgloc a="2.0" d="5" base="aperture2-0-5b" %}
+{% include_relative threshold.html urlbase=imgloc a="2.0" d="6" base="aperture2-0-6b" %}
+{% include_relative threshold.html urlbase=imgloc a="2.0" d="7" base="aperture2-0-7b" %}
+
+
+
+<p> One to seven diffusion sheets on the backlight at aperture 2.5, and a 250 microsecond exposure:
+
+<p>
+{% include_relative threshold.html urlbase=imgloc a="2.5" d="1" base="aperture2-5" %}
+{% include_relative threshold.html urlbase=imgloc a="2.5" d="2" base="aperture2-5-2b" %}
+{% include_relative threshold.html urlbase=imgloc a="2.5" d="3" base="aperture2-5-3b" %}
+{% include_relative threshold.html urlbase=imgloc a="2.5" d="4" base="aperture2-5-4b" %}
+{% include_relative threshold.html urlbase=imgloc a="2.5" d="5" base="aperture2-5-5b" %}
+{% include_relative threshold.html urlbase=imgloc a="2.5" d="6" base="aperture2-5-6b" %}
+{% include_relative threshold.html urlbase=imgloc a="2.5" d="7" base="aperture2-5-7b" %}
+
+<p> One to seven diffusion sheets on the backlight at aperture 3.0, and a 250 microsecond exposure:
+
+<p>
+{% include_relative threshold.html urlbase=imgloc a="3.0" d="1" base="aperture3-0" %}
+{% include_relative threshold.html urlbase=imgloc a="3.0" d="2" base="aperture3-0-2b" %}
+{% include_relative threshold.html urlbase=imgloc a="3.0" d="3" base="aperture3-0-3b" %}
+{% include_relative threshold.html urlbase=imgloc a="3.0" d="4" base="aperture3-0-4b" %}
+{% include_relative threshold.html urlbase=imgloc a="3.0" d="5" base="aperture3-0-5b" %}
+{% include_relative threshold.html urlbase=imgloc a="3.0" d="6" base="aperture3-0-6b" %}
+{% include_relative threshold.html urlbase=imgloc a="3.0" d="7" base="aperture3-0-7b" %}
+
+
+
+<p> One to seven diffusion sheets on the backlight at aperture 3.5, and a 250 microsecond exposure:
+
+<p>
+{% include_relative threshold.html urlbase=imgloc a="3.5" d="1" base="aperture3-5" %}
+{% include_relative threshold.html urlbase=imgloc a="3.5" d="2" base="aperture3-5-2b" %}
+{% include_relative threshold.html urlbase=imgloc a="3.5" d="3" base="aperture3-5-3b" %}
+{% include_relative threshold.html urlbase=imgloc a="3.5" d="4" base="aperture3-5-4b" %}
+{% include_relative threshold.html urlbase=imgloc a="3.5" d="5" base="aperture3-5-5b" %}
+{% include_relative threshold.html urlbase=imgloc a="3.5" d="6" base="aperture3-5-6b" %}
+{% include_relative threshold.html urlbase=imgloc a="3.5" d="7" base="aperture3-5-7b" %}
+
+<p> One to seven diffusion sheets on the backlight at aperture 4.0, and a 250 microsecond exposure:
+
+<p>
+{% include_relative threshold.html urlbase=imgloc a="4.0" d="1" base="aperture4-0" %}
+{% include_relative threshold.html urlbase=imgloc a="4.0" d="2" base="aperture4-0-2b" %}
+{% include_relative threshold.html urlbase=imgloc a="4.0" d="3" base="aperture4-0-3b" %}
+{% include_relative threshold.html urlbase=imgloc a="4.0" d="4" base="aperture4-0-4b" %}
+{% include_relative threshold.html urlbase=imgloc a="4.0" d="5" base="aperture4-0-5b" %}
+{% include_relative threshold.html urlbase=imgloc a="4.0" d="6" base="aperture4-0-6b" %}
+{% include_relative threshold.html urlbase=imgloc a="4.0" d="7" base="aperture4-0-7b" %}
+
+
+
+<p> One to seven diffusion sheets on the backlight at aperture 4.5, and a 250 microsecond exposure:
+
+<p>
+{% include_relative threshold.html urlbase=imgloc a="4.5" d="1" base="aperture4-5" %}
+{% include_relative threshold.html urlbase=imgloc a="4.5" d="2" base="aperture4-5-2b" %}
+{% include_relative threshold.html urlbase=imgloc a="4.5" d="3" base="aperture4-5-3b" %}
+{% include_relative threshold.html urlbase=imgloc a="4.5" d="4" base="aperture4-5-4b" %}
+{% include_relative threshold.html urlbase=imgloc a="4.5" d="5" base="aperture4-5-5b" %}
+{% include_relative threshold.html urlbase=imgloc a="4.5" d="6" base="aperture4-5-6b" %}
+{% include_relative threshold.html urlbase=imgloc a="4.5" d="7" base="aperture4-5-7b" %}
+
+<p> One to seven diffusion sheets on the backlight at aperture 5.0, and a 250 microsecond exposure:
+
+<p>
+{% include_relative threshold.html urlbase=imgloc a="5.0" d="1" base="aperture5-0" %}
+{% include_relative threshold.html urlbase=imgloc a="5.0" d="2" base="aperture5-0-2b" %}
+{% include_relative threshold.html urlbase=imgloc a="5.0" d="3" base="aperture5-0-3b" %}
+{% include_relative threshold.html urlbase=imgloc a="5.0" d="4" base="aperture5-0-4b" %}
+{% include_relative threshold.html urlbase=imgloc a="5.0" d="5" base="aperture5-0-5b" %}
+{% include_relative threshold.html urlbase=imgloc a="5.0" d="6" base="aperture5-0-6b" %}
+{% include_relative threshold.html urlbase=imgloc a="5.0" d="7" base="aperture5-0-7b" %}
+
+
+
+<p> One to seven diffusion sheets on the backlight at aperture 5.5, and a 250 microsecond exposure:
+
+<p>
+{% include_relative threshold.html urlbase=imgloc a="5.5" d="1" base="aperture5-5" %}
+{% include_relative threshold.html urlbase=imgloc a="5.5" d="2" base="aperture5-5-2b" %}
+{% include_relative threshold.html urlbase=imgloc a="5.5" d="3" base="aperture5-5-3b" %}
+{% include_relative threshold.html urlbase=imgloc a="5.5" d="4" base="aperture5-5-4b" %}
+{% include_relative threshold.html urlbase=imgloc a="5.5" d="5" base="aperture5-5-5b" %}
+{% include_relative threshold.html urlbase=imgloc a="5.5" d="6" base="aperture5-5-6b" %}
+{% include_relative threshold.html urlbase=imgloc a="5.5" d="7" base="aperture5-5-7b" %}
+
+<p> One to seven diffusion sheets on the backlight at aperture 6.0, and a 250 microsecond exposure:
+
+<p>
+{% include_relative threshold.html urlbase=imgloc a="6.0" d="1" base="aperture6-0" %}
+{% include_relative threshold.html urlbase=imgloc a="6.0" d="2" base="aperture6-0-2b" %}
+{% include_relative threshold.html urlbase=imgloc a="6.0" d="3" base="aperture6-0-3b" %}
+{% include_relative threshold.html urlbase=imgloc a="6.0" d="4" base="aperture6-0-4b" %}
+{% include_relative threshold.html urlbase=imgloc a="6.0" d="5" base="aperture6-0-5b" %}
+{% include_relative threshold.html urlbase=imgloc a="6.0" d="6" base="aperture6-0-6b" %}
+{% include_relative threshold.html urlbase=imgloc a="6.0" d="7" base="aperture6-0-7b" %}
+
+
 
 
 <span style="200px;"></span>
