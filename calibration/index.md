@@ -138,7 +138,7 @@ drop below 100% white at aperture 3.0:
 {% include_relative hole.html urlbase=imgloc a="5.5" d="7" base="aperture5-5-7b" %}
 {% include_relative hole.html urlbase=imgloc a="6.0" d="7" base="aperture6-0-7b" %}
 
-<h2> Ordering the images by diffusion sheet count <h2>
+<h2> Ordering the images by diffusion sheet count </h2>
 
 This section show the same images as the previous section, but sorted by diffusion layers
 rather than aperture settings.
