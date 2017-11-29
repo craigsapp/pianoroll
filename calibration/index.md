@@ -275,7 +275,7 @@ rather than aperture settings.
 {% include_relative hole.html urlbase=imgloc a="6.0" d="6" base="aperture6-0-6b" %}
 {% include_relative hole.html urlbase=imgloc a="6.0" d="7" base="aperture6-0-7b" %}
 
-<h2> Scanning the same holes on a flat-bed scanner <h2>
+<h2> Scanning the same holes on a flat-bed scanner </h2>
 
 <p>
 Scanned at 600 and 300 dpi on a flat-bed scanner (with white and
