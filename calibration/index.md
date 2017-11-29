@@ -2,7 +2,7 @@
 imgloc: https://ccrma.stanford.edu/~craig/piano-roll-project/calibration
 ---
 
-<h1> Scallop parameter search </h1>
+<h1> Backlight brightness optimization </h1>
 
 The following images are from a set of holes at 9 feet into the
 Ampico 70403 1929 test roll (Ampico B).  Mouse-over the images to
