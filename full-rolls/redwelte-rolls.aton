@@ -31,6 +31,26 @@ on the left (as they would be seen when looking at the roll being played on a re
 @DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/redwelte-rolls/RedRoll2736-LaPlusQueLente-Debussy-Debussy-histograms.txt
 @@END:	ANALYSIS
 @@END:	ANALYSES
+
+@@BEGIN: SCANINFO
+@IMAGE_WIDTH:		4096px
+@IMAGE_LENGTH:		133170px
+@ROLL_WIDTH:		3249.36px
+@HARD_MARGIN_LEFT:	423px
+@HARD_MARGIN_RIGHT:	403px
+@AVG_SOFT_MARIGN_SUM:	20.64px
+@PRELEADER_ROW:		706px
+@LEADER_ROW:		2692px
+@FIRST_HOLE:		3030px
+@LAST_HOLE:		128535px
+@END_MARGIN:		4634px
+@MUSICAL_LENGTH:	125505px
+@MUSICAL_HOLES:		10890
+@AVG_HOLE_WIDTH:	22.12px
+@ANTIDUST:		71293
+@HOLE_SEPARATION:	31.483px
+@@END: SCANINFO
+
 @@END: ROLL
 
 

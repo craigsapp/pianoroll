@@ -28,6 +28,26 @@
 @DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/ampico61391H-inspectors-test-roll-histograms.txt
 @@END:	ANALYSIS
 @@END:	ANALYSES
+
+@@BEGIN: SCANINFO
+@IMAGE_WIDTH:           4096px
+@IMAGE_LENGTH:          110880px
+@ROLL_WIDTH:            3400.76px
+@HARD_MARGIN_LEFT:      281px
+@HARD_MARGIN_RIGHT:     402px
+@AVG_SOFT_MARIGN_SUM:   12.24px
+@PRELEADER_ROW:         626px
+@LEADER_ROW:            1962px
+@FIRST_HOLE:            11632px
+@LAST_HOLE:             108460px
+@END_MARGIN:            2419px
+@MUSICAL_LENGTH:        96828px
+@MUSICAL_HOLES:         5226
+@AVG_HOLE_WIDTH:        21.56px
+@ANTIDUST:              204
+@HOLE_SEPARATION:       33.508px
+@@END: SCANINFO
+
 @@END: ROLL
 
 
@@ -59,6 +79,28 @@
 @DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/ampico-testroll-note-compensation-only-1929-service-manual-histograms.txt
 @@END:	ANALYSIS
 @@END:	ANALYSES
+
+@@BEGIN: SCANINFO
+@IMAGE_WIDTH:           4096px
+@IMAGE_LENGTH:          61020px
+@ROLL_WIDTH:            3415.23px
+@HARD_MARGIN_LEFT:      235px
+@HARD_MARGIN_RIGHT:     417px
+@AVG_SOFT_MARIGN_SUM:   28.77px
+@PRELEADER_ROW:         755px
+@LEADER_ROW:            2323px
+@FIRST_HOLE:            11687px
+@LAST_HOLE:             59176px
+@END_MARGIN:            1843px
+@MUSICAL_LENGTH:        47489px
+@MUSICAL_HOLES:         394
+@AVG_HOLE_WIDTH:        23.62px
+@ANTIDUST:              492
+@HOLE_SEPARATION:       33.4873px
+@@END: SCANINFO
+
+
+
 @@END: ROLL
 
 
@@ -93,7 +135,25 @@
 @DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/ampico70403H-testroll-for-use-with-service-manual-1929-histograms.txt
 @@END:	ANALYSIS
 @@END:	ANALYSES
+
+@@BEGIN: SCANINFO
+@IMAGE_WIDTH:           4096px
+@IMAGE_LENGTH:          192870px
+@ROLL_WIDTH:            3402.84px
+@HARD_MARGIN_LEFT:      275px
+@HARD_MARGIN_RIGHT:     407px
+@AVG_SOFT_MARIGN_SUM:   11.16px
+@PRELEADER_ROW:         779px
+@LEADER_ROW:            2465px
+@FIRST_HOLE:            9853px
+@LAST_HOLE:             186732px
+@END_MARGIN:            6137px
+@MUSICAL_LENGTH:        176879px
+@MUSICAL_HOLES:         3488
+@AVG_HOLE_WIDTH:        21.71px
+@ANTIDUST:              205
+@HOLE_SEPARATION:       33.4842px
+@@END: SCANINFO
+
 @@END: ROLL
-
-
 

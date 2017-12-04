@@ -272,6 +272,167 @@ vim: ts=3:nowrap
 				</tr>
 				{{/if}}
 
+				{{#if this.SCANINFO}}
+				<tr>
+					<td colspan="2">
+						<b style="display:inline-block; padding-top:20px; font-size:105%; color:#009900"> Information extracted from roll image </b>
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCANINFO}}
+				<tr>
+					<td>
+						Annotated image
+					</td>
+					<td>
+						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}-analysis.jpg">{{{jpgdpi this.PIXEL_LENGTH this.LDPI}}} JPEG</a> (roll image with analytic markup)
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCANINFO.HOLE_SEPARATION}}
+				<tr>
+					<td>
+						Holes per inch
+					</td>
+					<td>
+						{{{holesPerInch this.SCANINFO.HOLE_SEPARATION this.WDPI}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCANINFO.AVG_HOLE_WIDTH}}
+				<tr>
+					<td>
+						Avg. punch diameter
+					</td>
+					<td>
+						{{{pixelInch this.SCANINFO.AVG_HOLE_WIDTH this.WDPI}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCANINFO.ROLL_WIDTH}}
+				<tr>
+					<td>
+						Roll width:
+					</td>
+					<td>
+						{{{pixelInch this.SCANINFO.ROLL_WIDTH this.WDPI}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCANINFO.HARD_MARGIN_LEFT}}
+				<tr>
+					<td>
+						Scan margins
+					</td>
+					<td>
+						<i>bass</i>: {{{pixelInch this.SCANINFO.HARD_MARGIN_LEFT this.WDPI}}}
+						<br/>
+						<i>treble</i>: {{{pixelInch this.SCANINFO.HARD_MARGIN_RIGHT this.WDPI}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCANINFO.AVG_SOFT_MARGIN_SUM}}
+				<tr>
+					<td>
+						Soft margins
+					</td>
+					<td>
+						Average of {{{pixelInch this.SCANINFO.AVG_SOFT_MARGIN_SUM this.WDPI}}}
+						for sum of soft margin on each side of roll.
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCANINFO.PRELEADER_ROW}}
+				<tr>
+					<td>
+						Preleader length
+					</td>
+					<td>
+						{{{pixelInch this.SCANINFO.PRELEADER_ROW this.LDPI}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCANINFO.LEADER_ROW}}
+				<tr>
+					<td>
+						Leader length
+					</td>
+					<td>
+						{{{pixelLength this.SCANINFO.FIRST_HOLE this.SCANINFO.PRELEADER_ROW this.LDPI}}}
+						<br/>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>initial portion</i>: {{{pixelLength this.SCANINFO.LEADER_ROW this.SCANINFO.PRELEADER_ROW this.LDPI}}}
+						<br/>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>trailing portion</i>: {{{pixelLength this.SCANINFO.FIRST_HOLE this.SCANINFO.LEADER_ROW this.LDPI}}}
+						<br/>
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCANINFO.MUSIC_LENGTH}}
+				<tr>
+					<td>
+						Music length
+					</td>
+					<td>
+						{{{pixelInch this.SCANINFO.LEADER_ROW this.LDPI}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCANINFO.FIRST_HOLE}}
+				<tr>
+					<td>
+						Starting margin
+					</td>
+					<td>
+						{{{pixelInch this.SCANINFO.FIRST_HOLE this.LDPI}}}
+					</td>
+				</tr>
+				{{/if}}
+
+<!-- Fix the data for this field before displaying it
+				{{#if this.SCANINFO.END_MARGIN}}
+				<tr>
+					<td>
+						Ending margin
+					</td>
+					<td>
+						{{{pixelInch this.SCANINFO.END_MARGIN this.LDPI}}}
+					</td>
+				</tr>
+				{{/if}}
+-->
+
+				{{#if this.SCANINFO.MUSICAL_HOLES}}
+				<tr>
+					<td>
+						Musical hole count
+					</td>
+					<td>
+						{{{this.SCANINFO.MUSICAL_HOLES}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCANINFO.HOLE_SEPARATION}}
+				<tr>
+					<td>
+						DPI by hole spacing
+					</td>
+					<td>
+						{{{holedpi this.SCANINFO.HOLE_SEPARATION this.WDPI}}} (estimate)
+					</td>
+				</tr>
+				{{/if}}
+
 			</table>
 
 		</td></tr>

@@ -1,2 +1,1 @@
-jekyll serve --watch --host 127.0.0.1 --port 4000 --increment
-echo "Go to http://127.0.0.1:400/index.html"
+bundle exec jekyll serve --incremental --trace --watch --port 4000

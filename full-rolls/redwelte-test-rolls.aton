@@ -45,6 +45,26 @@ Note names are written in German on next to the holes for each pitch.
 @DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/redwelte-rolls/welte-test-roll-histograms.txt
 @@END:	ANALYSIS
 @@END:	ANALYSES
+
+@@BEGIN: SCANINFO
+@IMAGE_WIDTH:		4096px
+@IMAGE_LENGTH:		84780px
+@ROLL_WIDTH:		3255.96px
+@HARD_MARGIN_LEFT:	383px
+@HARD_MARGIN_RIGHT:	441px
+@AVG_SOFT_MARIGN_SUM:	16.04px
+@PRELEADER_ROW:		762px
+@LEADER_ROW:		3698px
+@FIRST_HOLE:		10449px
+@LAST_HOLE:		83418px
+@END_MARGIN:		1361px
+@MUSICAL_LENGTH:	72969px
+@MUSICAL_HOLES:		240
+@AVG_HOLE_WIDTH:	23.81px
+@ANTIDUST:		40
+@HOLE_SEPARATION:	31.5204px
+@@END: SCANINFO
+
 @@END: ROLL
 
 

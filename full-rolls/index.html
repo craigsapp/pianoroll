@@ -7,10 +7,10 @@ vim: ts=3
 
 <h1> Complete Roll Scans</h1>
 
-<p> 
+<p>
 This page list scans of 23 complete piano rolls in full color at 300
 dpi resolution as well as several derivative image formats.
-These are initial scans from 
+These are initial scans from
 the <a target="_blank" href="https://library.stanford.edu/projects/player-piano-project/collections">Stanford Libraries' piano-roll scanner</a>.
 
 <p>
@@ -18,7 +18,7 @@ Click on roll thumbnail images to view a 100-dpi (or less for longer
 rolls) JPEG versions of the rolls, which are 10-15 MB in size and
 suitable for viewing in a web-browser. The original full-color
 uncompressed TIFFs are about 1 GB or larger, and the green color
-channel is made available in a separate compressed TIFF image (about 250 MB). 
+channel is made available in a separate compressed TIFF image (about 250 MB).
 
 Note that the green channel of the TIFF images are scanned at 300 DPI, while the
 red and blue channels are scanned at 150 DPI and then interpolated to
@@ -40,26 +40,26 @@ for most rolls except Red Welte rolls.
 
 
 <p>
-16 out of 23 rolls contain frame-duplication errors, where pieces of the images 
+16 out of 23 rolls contain frame-duplication errors, where pieces of the images
 are duplicated, over-writing frames which are missing or dropped when recording
 the images.  Consecutive frame-duplication errors are marked in the JPEG images,
 but not in the TIFF or PNG images.  The marks consist of a solid color covering
 1/4 of the problemmatic frame.  For each adjacent frame, the duplication marker
-shifts to the other side of the image.  Here is an example from the 
+shifts to the other side of the image.  Here is an example from the
 <a href="#pennino">Pennino</a> roll where there are 10 successive duplicate frames
 (representing 1 physical inch on the rolls):
 
 <p>
 <img src="10duplications.png">
 
-<p> 
+<p>
 Most commonly there will be a burst of shorter duplciation errors at the
 start of a scan, such as this example from the <a href="#pennino">same roll</a>:
 
-<p> 
+<p>
 <img src="startduplications.png">
 
-<p> 
+<p>
 Three colors are cycled through to mark the frame duplications to separate
 separate duplcation of a different frame, so the above image contains
 six separate duplication events, each two to three frames in length.
@@ -70,15 +70,15 @@ move to the rolls scanned in that format.
 
 <p>
 Go to: [
- <a href="#audiographic_rolls">AudioGraphic</a> | 
- <a href="#duoart_rolls">Duo-Art</a> | 
- <a href="#redwelte_rolls">Red</a> | 
- <a href="#greenwelte_rolls">Green</a> | 
- <a href="#licensee_rolls">Licensee</a> | 
- <a href="#ampico_rolls">Ampico</a> | 
- <a href="#organ_rolls">Organ</a> | 
- <a href="#metrostyle_rolls">Metrostyle</a> | 
- <a href="#test_rolls">Test Rolls</a> | 
+ <a href="#audiographic_rolls">AudioGraphic</a> |
+ <a href="#duoart_rolls">Duo-Art</a> |
+ <a href="#redwelte_rolls">Red</a> |
+ <a href="#greenwelte_rolls">Green</a> |
+ <a href="#licensee_rolls">Licensee</a> |
+ <a href="#ampico_rolls">Ampico</a> |
+ <a href="#organ_rolls">Organ</a> |
+ <a href="#metrostyle_rolls">Metrostyle</a> |
+ <a href="#test_rolls">Test Rolls</a> |
  <a href="#calibration_rolls">Calibration</a> |
  <a href="#nonreproducing_rolls">Other</a>
 ]
@@ -138,14 +138,14 @@ mechanisms.
 
 <a name="calibration_rolls"></a>
 <h2> Calibration Roll </h2>
-This section contains scans of a roll used to calibrate the 
+This section contains scans of a roll used to calibrate the
 horizontal and vertical DPI at the lower and upper camera setting.
 The lengthwise DPI was measured to be 300.24&pm;0.21 for the lower camera
 setting and 300.32&pm;0.19 in the upper camera setting.  The camera position
 should not affect the lengthwise DPI, and it doesn't.
 The width DPI was measured to be 301.39 pixels/inch for the lower camera
 setting and 251.48 pixels/inch for the upper camera setting.
-The calcuations for these values are on 
+The calcuations for these values are on
 <a href="https://docs.google.com/spreadsheets/d/1OOC0NXxUMBS15NsSyTAnJv_4hsJqpxm9UKJ8w52S-sc/edit#gid=0">this spreadsheet</a>.
 <div class="listing" id="calibration-rolls"></div>
 
@@ -299,8 +299,207 @@ Handlebars.registerHelper('length', function(pixels, dpi) {
 
 	return new Handlebars.SafeString(output);
 });
-						
-						
+
+
+
+//////////////////////////////
+//
+// Handlebars helper "pixelInch" --
+//
+
+Handlebars.registerHelper('pixelInch', function(pixels, dpi) {
+	var p = parseFloat(pixels);
+	if (!p) {
+		return new Handlbars.SafeString("");
+	}
+	var d = parseFloat(dpi);
+	if (!d) {
+		return new Handlbars.SafeString("");
+	}
+
+	var r = 0;
+	var matches;
+	if (matches = dpi.match(/pm;\s*([\d.]+)/)) {
+		r = parseFloat(matches[1]);
+	}
+
+	var l = p / d;
+	var inches = parseInt(l * 100.0)/100.0;
+
+	var output = p + " pixels ("
+	output += inches;
+	if (r > 0) {
+		var error = inches * r / d;
+		error = parseInt(error * 100) / 100.0;
+		if (error > 0) {
+			output += " &pm; ";
+			output += error;
+		}
+	}
+	if (error != 1) {
+		output += " inches";
+	} else {
+		output += " inch";
+	}
+	output += ")";
+
+
+	return new Handlebars.SafeString(output);
+});
+
+
+
+//////////////////////////////
+//
+// Handlebars helper "holesPerInch" --
+//
+
+Handlebars.registerHelper('holesPerInch', function(pixels, dpi) {
+	var p = parseFloat(pixels);
+	if (!p) {
+		return new Handlbars.SafeString("");
+	}
+	var d = parseFloat(dpi);
+	if (!d) {
+		return new Handlbars.SafeString("");
+	}
+
+	var count = parseInt(d / p * 2.0 + 0.5) / 2.0;
+	var output = count + " (" + p + " pixels)"
+	return new Handlebars.SafeString(output);
+});
+
+
+
+//////////////////////////////
+//
+// Handlebars helper "holedpi" --
+//
+
+Handlebars.registerHelper('holedpi', function(pixels, dpi) {
+	var p = parseFloat(pixels);
+	if (!p) {
+		return new Handlbars.SafeString("");
+	}
+	var d = parseFloat(dpi);
+	if (!d) {
+		return new Handlbars.SafeString("");
+	}
+
+	var count = parseInt(d / p * 2.0 + 0.5) / 2.0;
+
+	var newdpi = count * p;
+	newdpi = parseInt(newdpi * 100.0 + 0.5)/100.0;
+	var output = newdpi + " dpi";
+	return new Handlebars.SafeString(output);
+});
+
+
+
+//////////////////////////////
+//
+// Handlebars helper "startmargin" --
+//
+
+Handlebars.registerHelper('endleader', function(scaninfo, dpi) {
+
+	var firsthole = parseInt(scaninfo.FIRST_HOLE);
+	var leaderend = parseInt(scaninfo.LEADER_ROW);
+	var p = firsthole - leaderend;
+
+	var d = parseFloat(dpi);
+	if (!d) {
+		return new Handlbars.SafeString("");
+	}
+
+	var r = 0;
+	var matches;
+	if (matches = dpi.match(/pm;\s*([\d.]+)/)) {
+		r = parseFloat(matches[1]);
+	}
+
+	var l = p / d;
+	var inches = parseInt(l * 100.0)/100.0;
+
+	var output = p + " pixels ("
+	output += inches;
+	if (r > 0) {
+		var error = inches * r / d;
+		error = parseInt(error * 100) / 100.0;
+		if (error > 0) {
+			output += " &pm; ";
+			output += error;
+		}
+	}
+	if (error != 1) {
+		output += " inches";
+	} else {
+		output += " inch";
+	}
+	output += ")";
+
+	return new Handlebars.SafeString(output);
+});
+
+
+
+//////////////////////////////
+//
+// Handlebars helper "pixelLength" --
+//
+
+Handlebars.registerHelper('pixelLength', function(pixel1, pixel2, dpi) {
+	var p1 = parseFloat(pixel1);
+	if (!p1) {
+		return new Handlbars.SafeString("");
+	}
+	var p2 = parseFloat(pixel2);
+	if (!p2) {
+		return new Handlbars.SafeString("");
+	}
+
+	var p = p2-p1;
+	if (p < 0) {
+		p = -p;
+	}
+
+	var d = parseFloat(dpi);
+	if (!d) {
+		return new Handlbars.SafeString("");
+	}
+
+	var r = 0;
+	var matches;
+	if (matches = dpi.match(/pm;\s*([\d.]+)/)) {
+		r = parseFloat(matches[1]);
+	}
+
+	var l = p / d;
+	var inches = parseInt(l * 100.0)/100.0;
+
+	var output = p + " pixels ("
+	output += inches;
+	if (r > 0) {
+		var error = inches * r / d;
+		error = parseInt(error * 100) / 100.0;
+		if (error > 0) {
+			output += " &pm; ";
+			output += error;
+		}
+	}
+	if (error != 1) {
+		output += " inches";
+	} else {
+		output += " inch";
+	}
+	output += ")";
+
+
+	return new Handlebars.SafeString(output);
+});
+
+
+
 
 </script>
 
