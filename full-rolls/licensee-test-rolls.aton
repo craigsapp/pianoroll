@@ -9,7 +9,7 @@
 @FORMAT: Licensee
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 131640
-@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
 @FILEBASE: weltemignon-deluxe-test-roll
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
@@ -24,28 +24,9 @@
 @@BEGIN: ANALYSIS
 @DESCRIPTION: Color-channel intensity histograms
 @PLOTURL: 
-@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/weltemignon-deluxe-test-roll-histograms.txt
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/weltemignon-deluxe-test-roll-histograms.txt
 @@END:	ANALYSIS
 @@END:	ANALYSES
-
-@@BEGIN: SCANINFO
-@IMAGE_WIDTH:           4096px
-@IMAGE_LENGTH:          51990px
-@ROLL_WIDTH:            3390.16px
-@HARD_MARGIN_LEFT:      249px
-@HARD_MARGIN_RIGHT:     437px
-@AVG_SOFT_MARIGN_SUM:   19.84px
-@PRELEADER_ROW:         385px
-@LEADER_ROW:            1989px
-@FIRST_HOLE:            4312px
-@LAST_HOLE:             51317px
-@END_MARGIN:            672px
-@MUSICAL_LENGTH:        47005px
-@MUSICAL_HOLES:         112
-@AVG_HOLE_WIDTH:        38.7px
-@ANTIDUST:              246
-@HOLE_SEPARATION:       585.139px
-@@END: SCANINFO
 
 @@END: ROLL
 
@@ -59,7 +40,7 @@
 @FORMAT: Licensee
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 148950
-@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
 @FILEBASE: welte-mignon-official-test-roll
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39

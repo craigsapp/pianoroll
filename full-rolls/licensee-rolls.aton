@@ -11,7 +11,7 @@
 @FORMAT: Licensee
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 202260
-@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/licensee-rolls
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/licensee-rolls
 @FILEBASE: deluxe-C2733A-Debussy-CC-Doll-Snow-played-by-Debussy
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
@@ -31,28 +31,9 @@
 @@BEGIN: ANALYSIS
 @DESCRIPTION: Color intensity histograms
 @PLOTURL: https://plot.ly/~craigsapp/44.embed
-@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/licensee-rolls/deluxe-C2733A-Debussy-CC-Doll-Snow-played-by-Debussy-histograms.txt
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/licensee-rolls/deluxe-C2733A-Debussy-CC-Doll-Snow-played-by-Debussy-histograms.txt
 @@END:	ANALYSIS
 @@END:	ANALYSES
-
-@@BEGIN: SCANINFO
-@IMAGE_WIDTH:		4096px
-@IMAGE_LENGTH:		202260px
-@ROLL_WIDTH:		3394.61px
-@HARD_MARGIN_LEFT:	273px
-@HARD_MARGIN_RIGHT:	417px
-@AVG_SOFT_MARIGN_SUM:	11.39px
-@PRELEADER_ROW:		763px
-@LEADER_ROW:		2494px
-@FIRST_HOLE:		9273px
-@LAST_HOLE:		201837px
-@END_MARGIN:		422px
-@MUSICAL_LENGTH:	192564px
-@MUSICAL_HOLES:		11611
-@AVG_HOLE_WIDTH:	20.33px
-@ANTIDUST:		987
-@HOLE_SEPARATION:	33.4225px
-@@END: SCANINFO
 
 @@END: ROLL
 
@@ -68,7 +49,7 @@
 @FORMAT: Licensee
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 156990
-@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/licensee-rolls
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/licensee-rolls
 @FILEBASE: weltemignon2734recut-equisses-Debussy-Debussy
 @LDPI: 300.25 &pm; 0.21
 @ANCHOR: tonnesen
@@ -92,28 +73,9 @@
 @@BEGIN: ANALYSIS
 @DESCRIPTION: Color intensity histograms
 @PLOTURL: https://plot.ly/~craigsapp/34.embed
-@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/licensee-rolls/weltemignon2734recut-equisses-Debussy-Debussy-histograms.txt
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/licensee-rolls/weltemignon2734recut-equisses-Debussy-Debussy-histograms.txt
 @@END:	ANALYSIS
 @@END:	ANALYSES
-
-@@BEGIN: SCANINFO
-@IMAGE_WIDTH:		4096px
-@IMAGE_LENGTH:		156990px
-@ROLL_WIDTH:		3398.88px
-@HARD_MARGIN_LEFT:	275px
-@HARD_MARGIN_RIGHT:	409px
-@AVG_SOFT_MARIGN_SUM:	13.12px
-@PRELEADER_ROW:		771px
-@LEADER_ROW:		2243px
-@FIRST_HOLE:		7827px
-@LAST_HOLE:		156677px
-@END_MARGIN:		312px
-@MUSICAL_LENGTH:	148850px
-@MUSICAL_HOLES:		4707
-@AVG_HOLE_WIDTH:	21.22px
-@ANTIDUST:		38774
-@HOLE_SEPARATION:	33.5369px
-@@END: SCANINFO
 
 @@END: ROLL
 

@@ -11,7 +11,7 @@
 @FORMAT: Ampico A
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 268710
-@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/ampico-rolls
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/ampico-rolls
 @FILEBASE: ampico-65543H-Haydn-SonataDmaj-Norfleet-1925
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
@@ -39,7 +39,7 @@ second movement. Black regions are a hand guiding the loose fragments over the s
 @@BEGIN: ANALYSIS
 @DESCRIPTION: Color-channel intensity histograms
 @PLOTURL: https://plot.ly/~craigsapp/32.embed
-@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/ampico-rolls/ampico-65543H-Haydn-SonataDmaj-Norfleet-1925-histograms.txt
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/ampico-rolls/ampico-65543H-Haydn-SonataDmaj-Norfleet-1925-histograms.txt
 @@END:	ANALYSIS
 @@END:	ANALYSES
 @@END: ROLL

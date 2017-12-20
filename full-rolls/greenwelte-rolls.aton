@@ -11,7 +11,7 @@
 @FORMAT: green Welte
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 331560
-@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/greenwelte-rolls
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/greenwelte-rolls
 @FILEBASE: weltegreen3414-Reger-op134-part2-frieda_Kwast-Hadapp
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
@@ -33,28 +33,13 @@
 @@BEGIN: ANALYSIS
 @PLOTURL: https://plot.ly/~craigsapp/22.embed
 @DESCRIPTION: Color intensity histograms
-@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/greenwelte-rolls/weltegreen3414-Reger-op134-part2-frieda_Kwast-Hadapp-histograms.txt
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/greenwelte-rolls/weltegreen3414-Reger-op134-part2-frieda_Kwast-Hadapp-histograms.txt
 @@END:	ANALYSIS
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/greenwelte-rolls/weltegreen3414-Reger-op134-part2-frieda_Kwast-Hadapp-analysis
+@@END: AUTOMATIC
 @@END:	ANALYSES
-
-@@BEGIN: SCANINFO
-@IMAGE_WIDTH:		4096px
-@IMAGE_LENGTH:		203940px
-@ROLL_WIDTH:		3398.83px
-@HARD_MARGIN_LEFT:	253px
-@HARD_MARGIN_RIGHT:	435px
-@AVG_SOFT_MARIGN_SUM:	9.17px
-@PRELEADER_ROW:		780px
-@LEADER_ROW:		2125px
-@FIRST_HOLE:		10461px
-@LAST_HOLE:		198703px
-@END_MARGIN:		5236px
-@MUSICAL_LENGTH:	188242px
-@MUSICAL_HOLES:		16321
-@AVG_HOLE_WIDTH:	19.77px
-@ANTIDUST:		160939
-@HOLE_SEPARATION:	33.468px
-@@END: SCANINFO
 
 @@END: ROLL
 

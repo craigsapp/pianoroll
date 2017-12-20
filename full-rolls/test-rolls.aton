@@ -9,7 +9,7 @@
 @FORMAT: Duo-Art / Licensee
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 51990
-@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
 @FILEBASE: handcut-duoart-dynamics-test
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
@@ -33,7 +33,7 @@
 @@BEGIN: ANALYSIS
 @DESCRIPTION: Color-channel intensity histograms
 @PLOTURL: 
-@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/handcut-duoart-dynamics-test-histograms.txt
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/handcut-duoart-dynamics-test-histograms.txt
 @@END:	ANALYSIS
 @@END:	ANALYSES
 
@@ -49,7 +49,7 @@
 @FORMAT: Duo-Art / Welte
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 111870
-@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
 @FILEBASE: 1994-handcut-duoart-dynamics-test
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
@@ -76,7 +76,7 @@
 @@BEGIN: ANALYSIS
 @DESCRIPTION: Color-channel intensity histograms
 @PLOTURL: 
-@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/1994-handcut-duoart-dynamics-test-histograms.txt
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/1994-handcut-duoart-dynamics-test-histograms.txt
 @@END:	ANALYSIS
 @@END:	ANALYSES
 @@END: ROLL
@@ -91,7 +91,7 @@
 @FORMAT: Duo-Art
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 87780
-@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
 @FILEBASE: duoart-homemade-test-roll
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
@@ -104,7 +104,7 @@
 @@BEGIN: ANALYSIS
 @DESCRIPTION: Color-channel intensity histograms
 @PLOTURL: https://plot.ly/~craigsapp/50.embed
-@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/duoart-homemade-test-roll-histograms.txt
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/duoart-homemade-test-roll-histograms.txt
 @@END:	ANALYSIS
 @@END:	ANALYSES
 @@END: ROLL

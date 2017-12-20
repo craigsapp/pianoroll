@@ -11,7 +11,7 @@
 @FORMAT: Duo-Art
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 203940
-@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/duoart-rolls
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/duoart-rolls
 @FILEBASE: duoart047-recut-nocturne27-2-chopin-pachmann
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
@@ -36,28 +36,9 @@
 @@BEGIN: ANALYSIS
 @DESCRIPTION: Color-channel intensity histograms
 @PLOTURL: https://plot.ly/~craigsapp/20.embed
-@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/duoart-rolls/duoart047-recut-nocturne27-2-chopin-pachmann-histograms.txt
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/duoart-rolls/duoart047-recut-nocturne27-2-chopin-pachmann-histograms.txt
 @@END:	ANALYSIS
 @@END:	ANALYSES
-
-@@BEGIN: SCANINFO
-@IMAGE_WIDTH:		4096px
-@IMAGE_LENGTH:		203940px
-@ROLL_WIDTH:		3398.83px
-@HARD_MARGIN_LEFT:	253px
-@HARD_MARGIN_RIGHT:	435px
-@AVG_SOFT_MARIGN_SUM:	9.17px
-@PRELEADER_ROW:		780px
-@LEADER_ROW:		2125px
-@FIRST_HOLE:		10461px
-@LAST_HOLE:		198703px
-@END_MARGIN:		5236px
-@MUSICAL_LENGTH:	188242px
-@MUSICAL_HOLES:		16321
-@AVG_HOLE_WIDTH:	19.77px
-@ANTIDUST:		160939
-@HOLE_SEPARATION:	33.468px
-@@END: SCANINFO
 
 @@END: ROLL
 

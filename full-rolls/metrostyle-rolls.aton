@@ -11,7 +11,7 @@
 @FORMAT: <a target="_blank" href="http://wiscasset.net/artcraft/Metrostylehype.html">Metrostyle</a>
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 45630
-@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/metrostyle-rolls
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/metrostyle-rolls
 @FILEBASE: metrostyleY4291-phantomsop15-3-beach
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
@@ -23,33 +23,19 @@ to control tempo.
 @SUL_BARCODE:
 @SCAN_DATE: 2017/11/22
 @@BEGIN: ANALYSES
+
 @@BEGIN: ANALYSIS
 @DESCRIPTION: Color-channel intensity histograms
 @PLOTURL: https://plot.ly/~craigsapp/26.embed
 @DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/metrostyle-rolls/metrostyleY4291-phantomsop15-3-beach-histograms.txt
 @@END:	ANALYSIS
+
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/metrostyle-rolls/metrostyleY4291-phantomsop15-3-beach-analysis
+@@END: AUTOMATIC
+
 @@END:	ANALYSES
-
-@@BEGIN: SCANINFO
-@IMAGE_WIDTH:		4096px
-@IMAGE_LENGTH:		45630px
-@ROLL_WIDTH:		3399.6px
-@HARD_MARGIN_LEFT:	271px
-@HARD_MARGIN_RIGHT:	399px
-@AVG_SOFT_MARIGN_SUM:	26.4px
-@PRELEADER_ROW:		776px
-@LEADER_ROW:		2174px
-@FIRST_HOLE:		2893px
-@LAST_HOLE:		41165px
-@END_MARGIN:		4464px
-@MUSICAL_LENGTH:	38272px
-@MUSICAL_HOLES:		913
-@AVG_HOLE_WIDTH:	32.27px
-@ANTIDUST:		85
-@HOLE_SEPARATION:	50.3343px
-@@END: SCANINFO
-
-
 
 @@END: ROLL
 

@@ -11,20 +11,20 @@
 @FORMAT: Pennino
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 110730
-@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/pennino-rolls
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/pennino-rolls
 @FILEBASE: pennino58-porta-RialiInFesta-Oliva
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
 @COPYRIGHT: Pelliccio & Vestuto Co.
 @NOTES:	Popular Italian Word Roll. F. Pennino, Brooklyn, NY.  From Craig's collection (not Stanford Libraries).
-@PHYSICAL_NOTES: 
-@SCAN_NOTES: 
+@PHYSICAL_NOTES:
+@SCAN_NOTES:
 @SUL_BARCODE:
 @SCAN_DATE: 2017/11/22
 @ANCHOR: pennino
 @DUPCOUNT: 6
 @DUPLICATE:
-	<ul> 
+	<ul>
 	<li> &bullet; 3 repeated frames at rows 0, 30, and 90.
 	<li> &bullet; 2 repeated frames at rows 120 and 150.
 	<li> &bullet; 2 repeated frames at rows 240 and 270.
@@ -36,50 +36,42 @@
 @@BEGIN: ANALYSIS
 @DESCRIPTION: Color-channel intensity histograms
 @PLOTURL: https://plot.ly/~craigsapp/16.embed
-@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/pennino-rolls/pennino58-porta-RialiInFesta-Oliva-histograms.txt
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/pennino-rolls/pennino58-porta-RialiInFesta-Oliva-histograms.txt
 @@END:	ANALYSIS
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/pennino-rolls/pennino58-porta-RialiInFesta-Oliva-analysis
+@@END: AUTOMATIC
 @@END:	ANALYSES
-
-@@BEGIN: SCANINFO
-@IMAGE_WIDTH:		4096px
-@IMAGE_LENGTH:		110730px
-@ROLL_WIDTH:		3405.52px
-@HARD_MARGIN_LEFT:	221px
-@HARD_MARGIN_RIGHT:	451px
-@AVG_SOFT_MARIGN_SUM:	18.48px
-@PRELEADER_ROW:		764px
-@LEADER_ROW:		2501px
-@FIRST_HOLE:		6500px
-@LAST_HOLE:		108824px
-@END_MARGIN:		1905px
-@MUSICAL_LENGTH:	102324px
-@MUSICAL_HOLES:		4846
-@AVG_HOLE_WIDTH:	18.5px
-@ANTIDUST:		148
-@HOLE_SEPARATION:	33.4796px
-@@END: SCANINFO
-
 @@END: ROLL
 
-
-
 @@START: ROLL
-@TITLE: 
-@COMPOSER:
+@TITLE: Novellette, Op. 21, No. 1
+@COMPOSER: Schumann
 @PERFORMER:
-@CATALOG: 
-@PRICE: 
-@TYPE:
-@FORMAT:
-@BASEURL: 
-@FILEBASE: 
-@LDPI: 
-@WDPI: 
-@NOTES:	
-@PHYSICAL_NOTES: 
-@SCAN_NOTES: 
+@CATALOG: Chase & Baker 756-L
+@PRICE:
+@TYPE:	Original
+@FORMAT: Chase & Baker
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 106710
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/batch-20171206
+@FILEBASE: Novellette
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@COPYRIGHT:
+@NOTES: Buffalo, N.Y., U.S.A.  "225" From Craig's rolls.	
+@PHYSICAL_NOTES:
+@SCAN_NOTES:
 @SUL_BARCODE:
-@SCAN_DATE: 
+@SCAN_DATE: 2017/12/06
+@ANCHOR: novellette
+@@BEGIN: ANALYSES
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/batch-20171206/Novellette-analysis
+@@END: AUTOMATIC
+@@END:	ANALYSES
 @@END: ROLL
 
 

@@ -11,7 +11,7 @@
 @FORMAT: Duo-Art
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 230400
-@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/audiographic-rolls
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/audiographic-rolls
 @FILEBASE: duoart-salesman-demonstration-roll
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
@@ -38,28 +38,13 @@ End of the roll contains photographs of people associated with Duo-Art.
 @@BEGIN: ANALYSIS
 @DESCRIPTION: Color-channel intensity histograms
 @PLOTURL: https://plot.ly/~craigsapp/18.embed
-@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/audiographic-rolls/duoart-salesman-demonstration-roll-histograms.txt
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/audiographic-rolls/duoart-salesman-demonstration-roll-histograms.txt
 @@END:	ANALYSIS
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/audiographic-rolls/duoart-salesman-demonstration-roll-analysis
+@@END: AUTOMATIC
 @@END:	ANALYSES
-
-@@BEGIN: SCANINFO
-@IMAGE_WIDTH:           4096px
-@IMAGE_LENGTH:          230400px
-@ROLL_WIDTH:            3398.9px
-@HARD_MARGIN_LEFT:      285px
-@HARD_MARGIN_RIGHT:     393px
-@AVG_SOFT_MARIGN_SUM:   19.1px
-@PRELEADER_ROW:         697px
-@LEADER_ROW:            2171px
-@FIRST_HOLE:            12697px
-@LAST_HOLE:             226240px
-@END_MARGIN:            4159px
-@MUSICAL_LENGTH:        213543px
-@MUSICAL_HOLES:         14565
-@AVG_HOLE_WIDTH:        18.91px
-@ANTIDUST:              190
-@HOLE_SEPARATION:       33.5516px
-@@END: SCANINFO
 
 
 @@END: ROLL

@@ -9,7 +9,7 @@
 @FORMAT: green Welte
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 126870
-@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
 @FILEBASE: green-welte-repetition-rest-roll
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
@@ -37,7 +37,7 @@
 @@BEGIN: ANALYSIS
 @DESCRIPTION: Color-channel intensity histograms
 @PLOTURL: https://plot.ly/~craigsapp/42.embed
-@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/green-welte-repetition-rest-roll-histograms.txt
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/green-welte-repetition-rest-roll-histograms.txt
 @@END:	ANALYSIS
 @@END:	ANALYSES
 @@END: ROLL
