@@ -7,6 +7,29 @@ vim: ts=3:nowrap
 <script id="roll-template" type="application/x-handlebars">
 
 <table class="main">
+<style>
+
+details summary::-webkit-details-marker {
+	display:none;
+}
+
+summary {
+	margins: 0px;
+	padding: 0px;
+}
+
+.nocolon::after {
+	content: none !important;
+}
+
+.nospace {
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+
+}
+
+
+</style>
 
 	{{#each this}}
 	{{#if this.TITLE}}
@@ -16,20 +39,24 @@ vim: ts=3:nowrap
 						<a name="{{{this.ANCHOR}}}"></a>
 				{{/if}}
 
-			<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.jpg">
-				<img style="width:900px;" src="{{this.BASEURL}}/{{this.FILEBASE}}-thumbnail.jpg">
-			</a>
-			<br>
-			<table class="roll-entry">
+			<details>
+			<summary>
 
+			<table style="padding: 0 !important;  margin-bottom: 0 !important;" class="roll-entry">
 				<tr>
-					<td>
-						Title
-					</td>
-					<td>
-						<span class="title">{{{this.TITLE}}}</span>
+					<td class="nocolon nospace" colspan="2">
+						<span style="white-space:nowrap;" class="title">{{{this.TITLE}}}</span>
 					</td>
 				</tr>
+			</table>
+
+			<!-- <a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.jpg"> -->
+				<img style="width:900px;" src="{{this.BASEURL}}/{{this.FILEBASE}}-thumbnail.jpg">
+			<!-- </a> -->
+
+			</summary>
+
+			<table class="roll-entry">
 
 				{{#if this.COMPOSER}}
 				<tr>
@@ -230,10 +257,6 @@ vim: ts=3:nowrap
 						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.jpg">{{{jpgdpi this.PIXEL_LENGTH this.LDPI}}} JPEG</a> (for viewing on the web)
 						<br>
 						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.tiff">300-dpi uncompressed full-color TIFF</a> (original, large)
-						<br>
-						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}-1.tiff">300-dpi LZW compressed green-channel TIFF</a> (largish)
-						<br>
-						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.png">300-dpi thresholded PNG</a> (large image, but small file size)
 					</td>
 				</tr>
 
@@ -254,6 +277,7 @@ vim: ts=3:nowrap
 					<td>
 						Analyses
 					</td>
+
 					<td>
 						<span style="margin-bottom:20px">
 							{{#each this.ANALYSES}}
@@ -265,10 +289,11 @@ vim: ts=3:nowrap
 								{{#if DATAURL}}
 									(<a target="_blank" href="{{DATAURL}}">data</a>)
 								{{/if}}
+								<br/>
 							{{/each}}
 						</span>
-
 					</td>
+
 				</tr>
 				{{/if}}
 
@@ -436,6 +461,7 @@ vim: ts=3:nowrap
 				{{/if}}
 
 			</table>
+			<details>
 
 		</td></tr>
 	{{/if}}

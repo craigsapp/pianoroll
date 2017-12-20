@@ -11,7 +11,7 @@
 @FORMAT: green Welte
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 331560
-@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/greenwelte-rolls
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/greenwelte-rolls
 @FILEBASE: weltegreen3414-Reger-op134-part2-frieda_Kwast-Hadapp
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
@@ -33,28 +33,46 @@
 @@BEGIN: ANALYSIS
 @PLOTURL: https://plot.ly/~craigsapp/22.embed
 @DESCRIPTION: Color intensity histograms
-@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/greenwelte-rolls/weltegreen3414-Reger-op134-part2-frieda_Kwast-Hadapp-histograms.txt
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/greenwelte-rolls/weltegreen3414-Reger-op134-part2-frieda_Kwast-Hadapp-histograms.txt
 @@END:	ANALYSIS
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/greenwelte-rolls/weltegreen3414-Reger-op134-part2-frieda_Kwast-Hadapp-analysis
+@@END: AUTOMATIC
 @@END:	ANALYSES
 
-@@BEGIN: SCANINFO
-@IMAGE_WIDTH:		4096px
-@IMAGE_LENGTH:		203940px
-@ROLL_WIDTH:		3398.83px
-@HARD_MARGIN_LEFT:	253px
-@HARD_MARGIN_RIGHT:	435px
-@AVG_SOFT_MARIGN_SUM:	9.17px
-@PRELEADER_ROW:		780px
-@LEADER_ROW:		2125px
-@FIRST_HOLE:		10461px
-@LAST_HOLE:		198703px
-@END_MARGIN:		5236px
-@MUSICAL_LENGTH:	188242px
-@MUSICAL_HOLES:		16321
-@AVG_HOLE_WIDTH:	19.77px
-@ANTIDUST:		160939
-@HOLE_SEPARATION:	33.468px
-@@END: SCANINFO
+@@END: ROLL
+
+
+@@START: ROLL
+@TITLE: <a target="_blank" href="http://imslp.org/wiki/Variations_and_Fugue_on_a_Theme_of_Telemann,_Op.134_(Reger,_Max)">Variations and Fugue</a>, Op. 134, part II
+@COMPOSER: Max Reger
+@PERFORMER: <a target="_blank" href="https://de.wikipedia.org/wiki/Frieda_Hodapp">Frieda Kwast-Hadapp</a>
+@CATALOG: 3414
+@PRICE: 
+@TYPE:	Original
+@FORMAT: green Welte
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 331560
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/batch-20171206
+@FILEBASE: RegerGreenWelteWithRepairs
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@NOTES: This is a rescan of the same roll scanned on 2017/11/16.
+@PHYSICAL_NOTES: One of the tears has been fixed so that a hole it obscured can be seen.
+	Extra tears added since the initial scan on 2017/11/16 (near end).
+@SCAN_NOTES: 
+@SUL_BARCODE: 36105225788103
+@SEARCHWORKS: https://searchworks.stanford.edu/view/11369681
+@SUL_CALLNUMBER: CONDON ROLL 790
+@SCAN_DATE: 2017/12/06
+@ANCHOR: green2
+@@BEGIN: ANALYSES
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/batch-20171206/RegerGreenWelteWithRepairs-analysis
+@@END: AUTOMATIC
+@@END:	ANALYSES
 
 @@END: ROLL
 

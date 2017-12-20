@@ -11,7 +11,7 @@
 @FORMAT: Duo-Art Organ 176-note
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 234090
-@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/organ-rolls
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/organ-rolls
 @FILEBASE: duoart3480-organroll-studentprince-romberg
 @LDPI: 300.32 &pm; 0.19
 @WDPI: 251.48
@@ -36,7 +36,7 @@
 @@BEGIN: ANALYSIS
 @PLOTURL: https://plot.ly/~craigsapp/24.embed
 @DESCRIPTION: Color-channel intensity histograms
-@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/organ-rolls/duoart3480-organroll-studentprince-romberg-histograms.txt
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/organ-rolls/duoart3480-organroll-studentprince-romberg-histograms.txt
 @@END:	ANALYSIS
 @@END:	ANALYSES
 @@END: ROLL

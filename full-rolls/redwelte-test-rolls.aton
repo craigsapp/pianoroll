@@ -11,7 +11,7 @@
 @FORMAT: red Welte
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 84780
-@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/redwelte-rolls
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/redwelte-rolls
 @FILEBASE: welte-test-roll
 @LDPI: 300.32 &pm; 0.19
 @WDPI: 251.48
@@ -42,28 +42,13 @@ Note names are written in German on next to the holes for each pitch.
 @@BEGIN: ANALYSIS
 @DESCRIPTION: Color-channel intensity histograms
 @PLOTURL: https://plot.ly/~craigsapp/40.embed
-@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/redwelte-rolls/welte-test-roll-histograms.txt
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/redwelte-rolls/welte-test-roll-histograms.txt
 @@END:	ANALYSIS
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/redwelte-rolls/welte-test-roll-analysis
+@@END: AUTOMATIC
 @@END:	ANALYSES
-
-@@BEGIN: SCANINFO
-@IMAGE_WIDTH:		4096px
-@IMAGE_LENGTH:		84780px
-@ROLL_WIDTH:		3255.96px
-@HARD_MARGIN_LEFT:	383px
-@HARD_MARGIN_RIGHT:	441px
-@AVG_SOFT_MARIGN_SUM:	16.04px
-@PRELEADER_ROW:		762px
-@LEADER_ROW:		3698px
-@FIRST_HOLE:		10449px
-@LAST_HOLE:		83418px
-@END_MARGIN:		1361px
-@MUSICAL_LENGTH:	72969px
-@MUSICAL_HOLES:		240
-@AVG_HOLE_WIDTH:	23.81px
-@ANTIDUST:		40
-@HOLE_SEPARATION:	31.5204px
-@@END: SCANINFO
 
 @@END: ROLL
 

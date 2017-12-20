@@ -9,7 +9,7 @@
 @FORMAT: Duo-Art
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 122220
-@BASEURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
 @FILEBASE: duoart-testroll-no3
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
@@ -33,28 +33,13 @@
 @@BEGIN: ANALYSIS
 @DESCRIPTION: Color-channel intensity histograms
 @PLOTURL: https://plot.ly/~craigsapp/36.embed
-@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/duoart-testroll-no3-histograms.txt
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/duoart-testroll-no3-histograms.txt
 @@END:	ANALYSIS
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/duoart-testroll-no3-analysis
+@@END: AUTOMATIC
 @@END:	ANALYSES
-
-@@BEGIN: SCANINFO
-@IMAGE_WIDTH:           4096px
-@IMAGE_LENGTH:          122220px
-@ROLL_WIDTH:            3398.06px
-@HARD_MARGIN_LEFT:      261px
-@HARD_MARGIN_RIGHT:     401px
-@AVG_SOFT_MARIGN_SUM:   35.94px
-@PRELEADER_ROW:         749px
-@LEADER_ROW:            3796px
-@FIRST_HOLE:            11057px
-@LAST_HOLE:             118038px
-@END_MARGIN:            4181px
-@MUSICAL_LENGTH:        106981px
-@MUSICAL_HOLES:         5056
-@AVG_HOLE_WIDTH:        20.27px
-@ANTIDUST:              1161
-@HOLE_SEPARATION:       33.5308px
-@@END: SCANINFO
 
 @@END: ROLL
 
