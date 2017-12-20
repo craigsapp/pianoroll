@@ -8,81 +8,65 @@ vim: ts=3
 <h1> Complete Roll Scans</h1>
 
 <p>
-This page list scans of 23 complete piano rolls in full color at 300
-dpi resolution as well as several derivative image formats.
-These are initial scans from
-the <a target="_blank" href="https://library.stanford.edu/projects/player-piano-project/collections">Stanford Libraries' piano-roll scanner</a>.
+This page links to sample scans of various roll types from the Stanford
+Library piano-roll collections, mostly from the 8000-roll
+<a trget="_blank" href="https://library.stanford.edu/collections/denis-condon-collection-reproducing-pianos-and-rolls">Condon collection</a>.  
+Click on roll thumbnail images in
+the list below to view more information about each roll as well as links
+to the original scans and analyses of the scans.  Note that the
+original full-color uncompressed TIFFs are 1&ndash;6 GB.
 
 <p>
-Click on roll thumbnail images to view a 100-dpi (or less for longer
-rolls) JPEG versions of the rolls, which are 10-15 MB in size and
-suitable for viewing in a web-browser. The original full-color
-uncompressed TIFFs are about 1 GB or larger, and the green color
-channel is made available in a separate compressed TIFF image (about 250 MB).
-
-Note that the green channel of the TIFF images are scanned at 300 DPI, while the
-red and blue channels are scanned at 150 DPI and then interpolated to
-300 DPI by the camera firmware, so in theory the green channel contains
-the highest resolution image of the rolls.
-
-There is also a PNG image which is a
-2-color thresholded version of the roll, keeping the same size as the original
-image, but much smaller at less than 1 MB each..
+Rolls are grouped by format.  Click on a format in the list below to
+move to the rolls for that format.  
 
 <p>
-TIFF and PNG images should be oriented in "notes" orientation, where
-the leader is at the top of the image, and bass notes are on the
-left side of the image.  For rolls other than Red Welte rolls, this
-means that the image is reflected on a vertical axis.  JPEG images
-are in the "visual" orientation.  This places the bass notes always
-on the left, but the leader is placed at the bottom of the image
-for most rolls except Red Welte rolls.
+[
+ <a href="#audiographic_rolls">AudioGraphic</a>&nbsp;|
+ <a href="#duoart_rolls">Duo-Art</a>&nbsp;|
+ <a href="#redwelte_rolls">Red</a>&nbsp;|
+ <a href="#greenwelte_rolls">Green</a>&nbsp;|
+ <a href="#licensee_rolls">Licensee</a>&nbsp;|
+ <a href="#ampico_rolls">Ampico</a>&nbsp;|
+ <a href="#organ_rolls">Organ</a>&nbsp;|
+ <a href="#metrostyle_rolls">Metrostyle</a>&nbsp;|
+ <a href="#test_rolls">Test&nbsp;Rolls</a>&nbsp;|
+ <a href="#nonreproducing_rolls">Other</a>&nbsp;|
+ <a href="#calibration_rolls">Calibration</a>
+]
+
+<p>
+To see detailed information about a roll, click on its icon in the list.  Note that
+the "<i>Automatic analysis of scan</i>" link at the bottom of most
+roll entries gives a detailed, automatically generated
+analysis of the scan.
+
+<h3> Frame duplications </h3>
 
 
 <p>
-16 out of 23 rolls contain frame-duplication errors, where pieces of the images
-are duplicated, over-writing frames which are missing or dropped when recording
-the images.  Consecutive frame-duplication errors are marked in the JPEG images,
-but not in the TIFF or PNG images.  The marks consist of a solid color covering
+16 of the roll scans contain frame-duplication errors caused by an earlier
+version of the scanning software (and camera driver), where pieces of the images
+are duplicated and over-write frames missing or dropped when recording
+the images.  Consecutive frame-duplication errors are marked in the reduced JPEG images,
+but not in the original TIFF.  The marks consist of a solid color covering
 1/4 of the problemmatic frame.  For each adjacent frame, the duplication marker
 shifts to the other side of the image.  Here is an example from the
 <a href="#pennino">Pennino</a> roll where there are 10 successive duplicate frames
 (representing 1 physical inch on the rolls):
-
 <p>
 <img src="10duplications.png">
-
 <p>
-Most commonly there will be a burst of shorter duplciation errors at the
+Most commonly there will be a burst of shorter dupliciation errors at the
 start of a scan, such as this example from the <a href="#pennino">same roll</a>:
-
 <p>
 <img src="startduplications.png">
-
 <p>
 Three colors are cycled through to mark the frame duplications to separate
 separate duplcation of a different frame, so the above image contains
 six separate duplication events, each two to three frames in length.
-
-<p>
-Rolls are grouped by format.  Click on a format in the list below to
-move to the rolls scanned in that format.  To see detailed information 
-about a roll, click on its icon.
-
-<p>
-Go to: [
- <a href="#audiographic_rolls">AudioGraphic</a> |
- <a href="#duoart_rolls">Duo-Art</a> |
- <a href="#redwelte_rolls">Red</a> |
- <a href="#greenwelte_rolls">Green</a> |
- <a href="#licensee_rolls">Licensee</a> |
- <a href="#ampico_rolls">Ampico</a> |
- <a href="#organ_rolls">Organ</a> |
- <a href="#metrostyle_rolls">Metrostyle</a> |
- <a href="#test_rolls">Test Rolls</a> |
- <a href="#nonreproducing_rolls">Other</a> |
- <a href="#calibration_rolls">Calibration</a>
-]
+Scans from December 2017 and later do not (should not) have duplication errors
+since the scanning software will abort scanning if any are detected.
 
 
 
@@ -90,32 +74,52 @@ Go to: [
 
 <a name="audiographic_rolls"></a>
 <h2> Audiographic Rolls </h2>
-Multimedia rolls with text and pictures printed on roll.
+Multimedia rolls with text and pictures printed on the roll.
 <div class="listing" id="audiographic-rolls"></div>
 
 
 <a name="duoart_rolls"></a>
 <h2> Duo-Art Rolls </h2>
+
+
+<a target="_blank" href="https://en.wikipedia.org/wiki/Duo-Art">Duo-Art</a> rolls were produced
+by the <a>Aeolean Company</a>, which was one of the
+two dominant player-piano companies in the United States.
+
 <div class="listing" id="duoart-rolls"></div>
 
 
 <a name="redwelte_rolls"></a>
 <h2> Red Welte Rolls </h2>
-<div class="listing" id="redwelte-rolls"></div>
 
+Red Welte are red-colored rolls produced by <a target="_blank" href="https://en.wikipedia.org/wiki/Welte-Mignon">Welte & Sons</a>.  They <a target="_blank" href="https://www.google.com/patents/US287599">invented paper rolls</a> for playing organs in the 1880's.
+And were the first company to record live piano performances, starting in 1904 on 
+red rolls.
+
+<div class="listing" id="redwelte-rolls"></div>
 
 <a name="greenwelte_rolls"></a>
 <h2> Green Welte Rolls </h2>
+
+Green Welte rolls were produced in the 1920's in Germany.
+
 <div class="listing" id="greenwelte-rolls"></div>
 
 
 <a name="licensee_rolls"></a>
 <h2> Welte-Mignon Licensee Rolls </h2>
+
+Licensee rolls are mostly Welte rolls for the American market.
+
 <div class="listing" id="licensee-rolls"></div>
 
 
 <a name="ampico_rolls"></a>
 <h2> Ampico Rolls </h2>
+
+<a name="_blank" href="https://en.wikipedia.org/wiki/American_Piano_Company">Ampico</a> rolls
+were produced starting in 1913 and are the other most common American roll type.
+
 <div class="listing" id="ampico-rolls"></div>
 
 
@@ -123,6 +127,7 @@ Multimedia rolls with text and pictures printed on roll.
 <h2> Organ Rolls </h2>
 <div class="listing" id="organ-rolls"></div>
 
+Stanford Libraries has a collection of 2000 Duo-Art organ rolls.
 
 <a name="test_rolls"></a>
 <h2> Test Rolls </h2>
@@ -137,7 +142,8 @@ mechanisms.
 <a name="nonreproducing_rolls"></a>
 <h2> Non-reproducing Rolls </h2>
 
-This section lists rolls which do not contain expression (dynamics) information.
+This section lists rolls that do not contain tempo and/or dynamics information.  Typically
+expression is added by the listener for these rolls, sometime by performance marks on the rolls.
 
 <div class="listing" id="nonreproducing-rolls"></div>
 
