@@ -286,7 +286,9 @@ vim: ts=3:nowrap
 						Annotated image
 					</td>
 					<td>
-						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}-analysis.jpg">{{{jpgdpi this.PIXEL_LENGTH this.LDPI}}} JPEG</a> (roll image with analytic markup)
+						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}-analysis/{{this.FILEBASE}}-analysis.jpg">{{{jpgdpi this.PIXEL_LENGTH this.LDPI}}} JPEG</a> (roll image with analytic markup)
+						<br/>
+						<i>zoom</i>: {{{zoomAnalysis this.BASEURL this.FILEBASE this.PIXEL_LENGTH 10000}}}
 					</td>
 				</tr>
 				{{/if}}

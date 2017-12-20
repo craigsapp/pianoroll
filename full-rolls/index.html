@@ -500,6 +500,29 @@ Handlebars.registerHelper('pixelLength', function(pixel1, pixel2, dpi) {
 
 
 
+//////////////////////////////
+//
+// Handlebars helper "zoomAnalysis" --
+//
+
+Handlebars.registerHelper('zoomAnalysis', function(urlbase, filebase, length, segment) {
+	segment = parseInt(segment);
+	length = parseInt(length);
+
+	var output = "";
+	var count = parseInt(length / segment + 0.99999);
+	for (var i=0; i<count; i++) {
+		output += "<a target=\"_blank\" href=\"" + urlbase + "/" + filebase + "-analysis/analysis-";
+		output += i + ".jpg\">" + i + "</a>";
+		if (i < count - 1) {
+			output += ", ";
+		}
+	}
+
+	return new Handlebars.SafeString(output);
+});
+
+
 
 </script>
 
