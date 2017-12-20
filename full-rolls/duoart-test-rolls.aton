@@ -35,6 +35,10 @@
 @PLOTURL: https://plot.ly/~craigsapp/36.embed
 @DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/duoart-testroll-no3-histograms.txt
 @@END:	ANALYSIS
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/duoart-testroll-no3-analysis
+@@END: AUTOMATIC
 @@END:	ANALYSES
 
 @@END: ROLL
