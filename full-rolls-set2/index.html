@@ -36,6 +36,11 @@ the "<i>Automatic analysis of scan</i>" link at the bottom of most
 roll entries gives a detailed, automatically generated
 analysis of the scan.
 
+<p>
+Here is a <a target="_blank" href="https://docs.google.com/spreadsheets/d/16s-SUqWki41trQW_0UvyRTyfPO3Yz5dyzRabzM-CsG0/edit?usp=sharing">spreadsheet summary</a> of the analysis:
+
+<p>
+<iframe style="width:800px; height:600px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSisrKCScUBo5ypBz8WIPQcY17JeQMsSRGXSkeRZ3Svs6fU1upZSKJO80Lyz-crsj79enRJlt3Xdcsk/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
 
 <!-- LISTINGS FOR EACH ROLL TYPE ------------------------------------------ -->
@@ -139,6 +144,65 @@ document.addEventListener("DOMContentLoaded", function() {
 
 Handlebars.registerHelper('plural', function(sstring, pstring, count) {
 	return new Handlebars.SafeString(parseInt(count) == 1 ? sstring : pstring);
+});
+
+
+
+//////////////////////////////
+//
+// Handlebars helper "curleybold" --
+//
+
+Handlebars.registerHelper('curleybold', function(string) {
+	string = string.replace(/}/g, "</span>")
+					.replace(/{/g, "<span style='font-weight:bold'>");
+	return new Handlebars.SafeString(string);
+});
+
+
+
+//////////////////////////////
+//
+// Handlebars helper "thumbnail" --
+//
+
+Handlebars.registerHelper('thumbnail', function(data) {
+	var druid = data.DRUID;
+	var url = data.ANALYSES.AUTOMATIC.PLOTURL;
+	var output = url + "/druid-" + druid + "-thumbnail.jpg";
+	return new Handlebars.SafeString(output);
+});
+
+
+
+//////////////////////////////
+//
+// Handlebars helper "realurl" --
+//
+
+Handlebars.registerHelper('realurl', function(url, druid) {
+	var output = url + "/druid-" + druid + "-analysis";
+	return new Handlebars.SafeString(output);
+});
+
+
+
+//////////////////////////////
+//
+// Handlebars helper "onlycurley" --
+//
+
+Handlebars.registerHelper('onlycurley', function(string) {
+	if (string.match(/^\s*$/)) {
+		return new Handlebars.SafeString(string);
+	}
+	if (string.match(/none/)) {
+		return new Handlebars.SafeString("");
+	}
+	var output = string.replace(/^.*{/, "").replace(/}.*$/, "");
+	output = "<span class='font-weight:bold'>" + output + "</span>";
+	output += " &mdash;"
+	return new Handlebars.SafeString(output);
 });
 
 

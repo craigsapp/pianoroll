@@ -45,13 +45,13 @@ summary {
 			<table style="padding: 0 !important;  margin-bottom: 0 !important;" class="roll-entry">
 				<tr>
 					<td class="nocolon nospace" colspan="2">
-						<span style="white-space:nowrap;" class="title">{{{this.TITLE}}}</span>
+						<span style="white-space:nowrap;" class="title">{{{onlycurley this.CATALOG}}} {{{this.TITLE}}}</span>
 					</td>
 				</tr>
 			</table>
 
 			<!-- <a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.jpg"> -->
-				<img style="width:900px;" src="{{this.BASEURL}}/{{this.FILEBASE}}-thumbnail.jpg">
+				<img style="width:900px;" src="{{{thumbnail this}}}">
 			<!-- </a> -->
 
 			</summary>
@@ -64,7 +64,7 @@ summary {
 						Composer
 					</td>
 					<td>
-						{{{this.COMPOSER}}}
+						{{{curleybold this.COMPOSER}}}
 					</td>
 				</tr>
 				{{/if}}
@@ -75,7 +75,29 @@ summary {
 						Performer
 					</td>
 					<td>
-						{{{this.PERFORMER}}}
+						{{{curleybold this.PERFORMER}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.TEMPO}}
+				<tr>
+					<td>
+						Tempo
+					</td>
+					<td>
+						{{{this.TEMPO}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCOREPDF}}
+				<tr>
+					<td>
+						Score
+					</td>
+					<td>
+						<a target="_blank" href="{{{this.SCOREPDF}}}">As a PDF</a>
 					</td>
 				</tr>
 				{{/if}}
@@ -108,7 +130,7 @@ summary {
 						Catalog #
 					</td>
 					<td>
-						{{{this.CATALOG}}}
+						{{{curleybold this.CATALOG}}}
 					</td>
 				</tr>
 				{{/if}}
@@ -119,7 +141,7 @@ summary {
 						Recutter
 					</td>
 					<td>
-						{{{this.RECUTTER}}}
+						{{{curleybold this.RECUTTER}}}
 					</td>
 				</tr>
 				{{/if}}
@@ -185,8 +207,8 @@ summary {
 						SUL CALL #
 					</td>
 					<td>
-						{{#if this.SEARCHWORKS}}
-							<a target="_blank" href="{{this.SEARCHWORKS}}">
+						{{#if this.CATKEY}}
+							<a target="_blank" href="http://searchworks.stanford.edu/view/{{this.CATKEY}}">
 								{{{this.SUL_CALLNUMBER}}}
 							</a>
 						{{else}}
@@ -202,13 +224,24 @@ summary {
 						SUL Barcode
 					</td>
 					<td>
-						{{#if this.SEARCHWORKS}}
-							<a target="_blank" href="{{this.SEARCHWORKS}}.refworks_marc_txt">
+						{{#if this.CATKEY}}
+							<a target="_blank" href="http://searchworks.stanford.edu/view/{{this.CATKEY}}.refworks_marc_txt">
 								{{{this.SUL_BARCODE}}}
 							</a>
 						{{else}}
 							{{{this.SUL_BARCODE}}}
 						{{/if}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.DRUID}}
+				<tr>
+					<td>
+						DRUID
+					</td>
+					<td>
+						{{{this.DRUID}}}
 					</td>
 				</tr>
 				{{/if}}
@@ -282,7 +315,7 @@ summary {
 						<span style="margin-bottom:20px">
 							{{#each this.ANALYSES}}
 								{{#if PLOTURL}}
-									<a target="_blank" href="{{PLOTURL}}">{{DESCRIPTION}}</a>
+									<a target="_blank" href="{{realurl PLOTURL ../DRUID}}">{{DESCRIPTION}}</a>
 								{{else}}
 									{{DESCRIPTION}}
 								{{/if}}
