@@ -1,0 +1,45 @@
+
+
+
+@@START: ROLL
+@TITLE: Modified Test Roll for red rolls
+@IMSLP: 
+@SCOREPDF: 
+@COMPOSER: [none]
+@PERFORMER: [none]
+@CATALOG: [none]
+@YEAR: 
+@PRICE: 
+@TYPE:	original
+@FORMAT: redwelte
+@TEMPO: [none]
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 85350
+@BASEURL: 
+@FILEBASE: druid-qq869zv9158
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@RECUTTER: 
+@COPYRIGHT: 
+@NOTES:	
+@PHYSICAL_NOTES: On beige paper (not red).  Cut from a longer test.
+@SCAN_NOTES:
+@SUL_BARCODE: 36105225773782
+@CATKEY:	11467900
+@DRUID: qq869zv9158
+@SOURCEID: sul:ars0163_wm_mtr
+@SUL_CALLNUMBER: CONDON ROLL 1367
+@DIGITIZER: Megan
+@SCAN_DATE: 2017/12/15
+@ANCHOR: redrolltest
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: 
+@@END: AUTOMATIC
+@@END:	ANALYSES
+@@END: ROLL
+
+
+

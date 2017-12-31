@@ -1,0 +1,48 @@
+
+
+
+@@START: ROLL
+@TITLE: Test Roll for use with Service Manual 1929 (scan 2)
+@IMSLP: 
+@SCOREPDF: 
+@COMPOSER: [none]
+@PERFORMER: [none]
+@CATALOG: Ampico {70403}
+@YEAR: 1929
+@PRICE: 
+@TYPE:	original
+@FORMAT: ampicoB
+@TEMPO: 85
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 189240
+@BASEURL: 
+@FILEBASE: druid-pf761yp4945
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@RECUTTER: 
+@COPYRIGHT: 
+@NOTES:	Leader has the note: "<i>Before testing the Ampico Mechanism make sure that the
+	piano // action is in proper regulation. // All page notations refer to 
+	Ampico Service Manual 1929. // All tests should be made at Tempo 85.</i>"
+@PHYSICAL_NOTES:  Green canvas leader.
+@SCAN_NOTES: Same roll as scanned in druid pf761yp4945.
+@WARNING: incorrect roll
+@SUL_BARCODE: 
+@CATKEY:	
+@DRUID: pf761yp4945
+@SOURCEID: sul:ars0163_am_70403
+@SUL_CALLNUMBER: 
+@DIGITIZER: WV
+@SCAN_DATE: 2017/12/13
+@ANCHOR: test_roll_1929_copy2
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: 
+@@END: AUTOMATIC
+@@END:	ANALYSES
+@@END: ROLL
+
+
+

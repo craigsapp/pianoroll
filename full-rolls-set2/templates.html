@@ -1,0 +1,473 @@
+<!-- TEMPLATE ------------------------------------------------------------- -->
+{% comment %}
+vim: ts=3:nowrap
+{% endcomment %}
+
+{% raw %}
+<script id="roll-template" type="application/x-handlebars">
+
+<table class="main">
+<style>
+
+details summary::-webkit-details-marker {
+	display:none;
+}
+
+summary {
+	margins: 0px;
+	padding: 0px;
+}
+
+.nocolon::after {
+	content: none !important;
+}
+
+.nospace {
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+
+}
+
+
+</style>
+
+	{{#each this}}
+	{{#if this.TITLE}}
+		<tr><td>
+
+				{{#if this.ANCHOR}}
+						<a name="{{{this.ANCHOR}}}"></a>
+				{{/if}}
+
+			<details>
+			<summary>
+
+			<table style="padding: 0 !important;  margin-bottom: 0 !important;" class="roll-entry">
+				<tr>
+					<td class="nocolon nospace" colspan="2">
+						<span style="white-space:nowrap;" class="title">{{{this.TITLE}}}</span>
+					</td>
+				</tr>
+			</table>
+
+			<!-- <a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.jpg"> -->
+				<img style="width:900px;" src="{{this.BASEURL}}/{{this.FILEBASE}}-thumbnail.jpg">
+			<!-- </a> -->
+
+			</summary>
+
+			<table class="roll-entry">
+
+				{{#if this.COMPOSER}}
+				<tr>
+					<td>
+						Composer
+					</td>
+					<td>
+						{{{this.COMPOSER}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.PERFORMER}}
+				<tr>
+					<td>
+						Performer
+					</td>
+					<td>
+						{{{this.PERFORMER}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.FORMAT}}
+				<tr>
+					<td>
+						Format
+					</td>
+					<td>
+						{{{this.FORMAT}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.TYPE}}
+				<tr>
+					<td>
+						Type
+					</td>
+					<td>
+						{{{this.TYPE}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.CATALOG}}
+				<tr>
+					<td>
+						Catalog #
+					</td>
+					<td>
+						{{{this.CATALOG}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.RECUTTER}}
+				<tr>
+					<td>
+						Recutter
+					</td>
+					<td>
+						{{{this.RECUTTER}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.PRICE}}
+				<tr>
+					<td>
+						Original Price
+					</td>
+					<td>
+						{{{this.PRICE}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.COPYRIGHT}}
+				<tr>
+					<td>
+						Copyright
+					</td>
+					<td>
+						{{{this.COPYRIGHT}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.NOTES}}
+				<tr>
+					<td>
+						Comments
+					</td>
+					<td>
+						{{{this.NOTES}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.PHYSICAL_NOTES}}
+				<tr>
+					<td>
+						Physical Notes
+					</td>
+					<td>
+						{{{this.PHYSICAL_NOTES}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCAN_NOTES}}
+				<tr>
+					<td>
+						Scan Notes
+					</td>
+					<td>
+						{{{this.SCAN_NOTES}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SUL_CALLNUMBER}}
+				<tr>
+					<td>
+						SUL CALL #
+					</td>
+					<td>
+						{{#if this.SEARCHWORKS}}
+							<a target="_blank" href="{{this.SEARCHWORKS}}">
+								{{{this.SUL_CALLNUMBER}}}
+							</a>
+						{{else}}
+							{{{this.SUL_CALLNUMBER}}}
+						{{/if}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SUL_BARCODE}}
+				<tr>
+					<td>
+						SUL Barcode
+					</td>
+					<td>
+						{{#if this.SEARCHWORKS}}
+							<a target="_blank" href="{{this.SEARCHWORKS}}.refworks_marc_txt">
+								{{{this.SUL_BARCODE}}}
+							</a>
+						{{else}}
+							{{{this.SUL_BARCODE}}}
+						{{/if}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.WDPI}}
+				<tr>
+					<td>
+						DPI
+					</td>
+					<td>
+						<i>width</i>: {{{this.WDPI}}} pixels/inch <br/>
+						{{#if this.LDPI}}
+							<i>length</i>: {{{this.LDPI}}} pixels/inch
+						{{/if}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.PIXEL_LENGTH}}
+				<tr>
+					<td>
+						Roll Length
+					</td>
+					<td>
+						{{{this.PIXEL_LENGTH}}} pixels{{#if this.LDPI}}{{{length this.PIXEL_LENGTH this.LDPI}}}{{/if}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCAN_DATE}}
+				<tr>
+					<td>
+						Scan Date
+					</td>
+					<td>
+						{{{this.SCAN_DATE}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				<tr>
+					<td>
+						Images
+					</td>
+					<td>
+						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.jpg">{{{jpgdpi this.PIXEL_LENGTH this.LDPI}}} JPEG</a> (for viewing on the web)
+						<br>
+						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.tiff">300-dpi uncompressed full-color TIFF</a> (original, large)
+					</td>
+				</tr>
+
+				{{#if this.DUPCOUNT}}
+				<tr>
+					<td>
+						<span style="color:red">Duplication Errors</a>
+					</td>
+					<td>
+						{{{this.DUPCOUNT}}} frame repeat {{{plural "group" "groups" this.DUPCOUNT}}} in image:
+						{{{this.DUPLICATE}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.ANALYSES}}
+				<tr>
+					<td>
+						Analyses
+					</td>
+
+					<td>
+						<span style="margin-bottom:20px">
+							{{#each this.ANALYSES}}
+								{{#if PLOTURL}}
+									<a target="_blank" href="{{PLOTURL}}">{{DESCRIPTION}}</a>
+								{{else}}
+									{{DESCRIPTION}}
+								{{/if}}
+								{{#if DATAURL}}
+									(<a target="_blank" href="{{DATAURL}}">data</a>)
+								{{/if}}
+								<br/>
+							{{/each}}
+						</span>
+					</td>
+
+				</tr>
+				{{/if}}
+
+				{{#if this.SCANINFO}}
+				<tr>
+					<td colspan="2">
+						<b style="display:inline-block; padding-top:20px; font-size:105%; color:#009900"> Information extracted from roll image </b>
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCANINFO}}
+				<tr>
+					<td>
+						Annotated image
+					</td>
+					<td>
+						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}-analysis/{{this.FILEBASE}}-analysis.jpg">{{{jpgdpi this.PIXEL_LENGTH this.LDPI}}} JPEG</a> (roll image with analytic markup)
+						<br/>
+						<i>zoom</i>: {{{zoomAnalysis this.BASEURL this.FILEBASE this.PIXEL_LENGTH 10000}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCANINFO.HOLE_SEPARATION}}
+				<tr>
+					<td>
+						Holes per inch
+					</td>
+					<td>
+						{{{holesPerInch this.SCANINFO.HOLE_SEPARATION this.WDPI}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCANINFO.AVG_HOLE_WIDTH}}
+				<tr>
+					<td>
+						Avg. punch diameter
+					</td>
+					<td>
+						{{{pixelInch this.SCANINFO.AVG_HOLE_WIDTH this.WDPI}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCANINFO.ROLL_WIDTH}}
+				<tr>
+					<td>
+						Roll width:
+					</td>
+					<td>
+						{{{pixelInch this.SCANINFO.ROLL_WIDTH this.WDPI}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCANINFO.HARD_MARGIN_LEFT}}
+				<tr>
+					<td>
+						Scan margins
+					</td>
+					<td>
+						<i>bass</i>: {{{pixelInch this.SCANINFO.HARD_MARGIN_LEFT this.WDPI}}}
+						<br/>
+						<i>treble</i>: {{{pixelInch this.SCANINFO.HARD_MARGIN_RIGHT this.WDPI}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCANINFO.AVG_SOFT_MARGIN_SUM}}
+				<tr>
+					<td>
+						Soft margins
+					</td>
+					<td>
+						Average of {{{pixelInch this.SCANINFO.AVG_SOFT_MARGIN_SUM this.WDPI}}}
+						for sum of soft margin on each side of roll.
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCANINFO.PRELEADER_ROW}}
+				<tr>
+					<td>
+						Preleader length
+					</td>
+					<td>
+						{{{pixelInch this.SCANINFO.PRELEADER_ROW this.LDPI}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCANINFO.LEADER_ROW}}
+				<tr>
+					<td>
+						Leader length
+					</td>
+					<td>
+						{{{pixelLength this.SCANINFO.FIRST_HOLE this.SCANINFO.PRELEADER_ROW this.LDPI}}}
+						<br/>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>initial portion</i>: {{{pixelLength this.SCANINFO.LEADER_ROW this.SCANINFO.PRELEADER_ROW this.LDPI}}}
+						<br/>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>trailing portion</i>: {{{pixelLength this.SCANINFO.FIRST_HOLE this.SCANINFO.LEADER_ROW this.LDPI}}}
+						<br/>
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCANINFO.MUSIC_LENGTH}}
+				<tr>
+					<td>
+						Music length
+					</td>
+					<td>
+						{{{pixelInch this.SCANINFO.LEADER_ROW this.LDPI}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCANINFO.FIRST_HOLE}}
+				<tr>
+					<td>
+						Starting margin
+					</td>
+					<td>
+						{{{pixelInch this.SCANINFO.FIRST_HOLE this.LDPI}}}
+					</td>
+				</tr>
+				{{/if}}
+
+<!-- Fix the data for this field before displaying it
+				{{#if this.SCANINFO.END_MARGIN}}
+				<tr>
+					<td>
+						Ending margin
+					</td>
+					<td>
+						{{{pixelInch this.SCANINFO.END_MARGIN this.LDPI}}}
+					</td>
+				</tr>
+				{{/if}}
+-->
+
+				{{#if this.SCANINFO.MUSICAL_HOLES}}
+				<tr>
+					<td>
+						Musical hole count
+					</td>
+					<td>
+						{{{this.SCANINFO.MUSICAL_HOLES}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCANINFO.HOLE_SEPARATION}}
+				<tr>
+					<td>
+						DPI by hole spacing
+					</td>
+					<td>
+						{{{holedpi this.SCANINFO.HOLE_SEPARATION this.WDPI}}} (estimate)
+					</td>
+				</tr>
+				{{/if}}
+
+			</table>
+			</details>
+
+		</td></tr>
+	{{/if}}
+	{{/each}}
+</table>
+
+</script>
+{% endraw %}
+

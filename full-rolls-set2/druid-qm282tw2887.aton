@@ -1,0 +1,45 @@
+
+
+
+@@START: ROLL
+@TITLE: Ampico Test Roll, Note Compensation ONLY, 1929 Service Manual
+@IMSLP: 
+@SCOREPDF: 
+@COMPOSER: [none]
+@PERFORMER: [none]
+@CATALOG: Ampico {70601}
+@YEAR: 
+@PRICE: 
+@TYPE:	original
+@FORMAT: ampico
+@TEMPO: [none]
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 60510
+@BASEURL: 
+@FILEBASE: druid-qm282tw2887
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@RECUTTER: 
+@COPYRIGHT: Aeolian American Corporation
+@NOTES:	
+@PHYSICAL_NOTES: 
+@SCAN_NOTES:
+@SUL_BARCODE: 
+@CATKEY:	
+@DRUID: qm282tw2887
+@SOURCEID: sul:ars0163_am_70601
+@SUL_CALLNUMBER: 
+@DIGITIZER: TC
+@SCAN_DATE: 2017/12/13
+@ANCHOR: test_compensation
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: 
+@@END: AUTOMATIC
+@@END:	ANALYSES
+@@END: ROLL
+
+
+

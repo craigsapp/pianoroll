@@ -1,0 +1,48 @@
+
+
+
+@@START: ROLL
+@TITLE: Official test roll for the Welte-Mignon Licensee
+@IMSLP: 
+@SCOREPDF: 
+@COMPOSER: [none]
+@PERFORMER: [none]
+@CATALOG: [none]
+@YEAR: 
+@PRICE: 
+@TYPE:	original
+@FORMAT: licensee
+@TEMPO: 80
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 148920
+@BASEURL: 
+@FILEBASE: druid-nb834nm6635
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@RECUTTER: 
+@COPYRIGHT: 
+@NOTES:	 Note stamped in capital letters after header: <i>Before testing, take out bottom //
+	panel of piano, where Welte- // Mignon action is located, and // see that both
+	treble and bass // stop valves on top of expres- // sion pneumatics seat properly.</i>
+	AUTO PNEUMATIC // ACTION COMPANY // 51st ST. and 12th AVENUE.
+@PHYSICAL_NOTES: 
+@SCAN_NOTES:
+@SUL_BARCODE: 36105225773733
+@CATKEY:	11467425
+@DRUID: nb834nm6635
+@SOURCEID: sul:ars0163_wm_otr
+@SUL_CALLNUMBER: CONDON ROLL 558
+@DIGITIZER: DC
+@SCAN_DATE: 2017/12/13
+@ANCHOR: official_test_roll
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: 
+@@END: AUTOMATIC
+@@END:	ANALYSES
+@@END: ROLL
+
+
+

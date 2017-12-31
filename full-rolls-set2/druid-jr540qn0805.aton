@@ -1,0 +1,47 @@
+
+
+
+@@START: ROLL
+@TITLE: Duo-Art Test Roll No. 3
+@IMSLP: 
+@SCOREPDF: 
+@COMPOSER: [none]
+@PERFORMER: [none]
+@CATALOG: [none]
+@YEAR: 
+@PRICE: 
+@TYPE:	original
+@FORMAT: duoart
+@TEMPO: 70, 80, 90, 75
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 117480
+@BASEURL: 
+@FILEBASE: druid-jr540qn0805
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@RECUTTER: 
+@COPYRIGHT: 
+@NOTES:	"See New Duo-Art Service Manual No. 3 for illustrations and
+	instructions referred to in this instruction test."
+@PHYSICAL_NOTES: 
+@SCAN_NOTES: Lots of left/right shifts by scanner operator
+@WARNING: shifting
+@SUL_BARCODE: 
+@CATKEY:	
+@DRUID: jr540qn0805
+@SOURCEID: sul:ars0163_da_tr_3
+@SUL_CALLNUMBER: 
+@DIGITIZER: Astrid
+@SCAN_DATE: 2017/12/13
+@ANCHOR: testroll3
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: 
+@@END: AUTOMATIC
+@@END:	ANALYSES
+@@END: ROLL
+
+
+

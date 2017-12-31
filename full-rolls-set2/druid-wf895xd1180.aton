@@ -1,0 +1,48 @@
+
+
+
+@@START: ROLL
+@TITLE: La campanella
+@IMSLP: http://imslp.org/wiki/Grandes_%C3%A9tudes_de_Paganini,_S.141_(Liszt,_Franz)
+@SCOREPDF: http://ks.imslp.info/files/imglnks/usimg/e/e8/IMSLP29890-PMLP02569-SIBLEY1802.6641.17301.8314-39087009888654.pdf
+@COMPOSER: Franz {Liszt}
+@PERFORMER: Ferruccio {Busoni}
+@CATALOG: Welte-Mignon {444}
+@YEAR: 1905
+@PRICE: 
+@TEMPO: [none]
+@TYPE:	original
+@FORMAT: redwelte
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 171510
+@BASEURL: 
+@FILEBASE: druid-wf895xd1180
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@COPYRIGHT: 
+@RECUTTER:
+@NOTES:	Contains a spurious note in the header.
+@PHYSICAL_NOTES: "HHH. 25.10.13" written in pencil at end of roll.  
+	The roll was cut on 25 October 1913, and was recorded by
+	Busoni 11 November 1905.
+@SCAN_NOTES: Frame dropout in rubber band at start of image.
+@WARNING: frame dropouts
+@SUL_BARCODE: 36105225781470
+@CATKEY: 10763693
+@SOURCEID: sul:ars0163_cr175_r444
+@DRUID: wf895xd1180
+@SUL_CALLNUMBER: CONDON ROLL 175
+@DIGITIZER: Megan
+@SCAN_DATE: 2017/12/15
+@ANCHOR: campanella
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@URL: 
+@@END: AUTOMATIC
+@@END:	ANALYSES
+@@END: ROLL
+
+
+

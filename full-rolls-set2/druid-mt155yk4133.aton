@@ -1,0 +1,57 @@
+
+
+
+@@START: ROLL
+@TITLE: Prolog a. Bajazzo
+@IMSLP: http://imslp.org/wiki/Pagliacci_(Leoncavallo,_Ruggiero)
+@SCOREPDF: 
+@COMPOSER: Ruggiero {Leonccavallo}
+@PERFORMER: Eugine {Adam-Benard}
+@CATALOG: Welte-Mignon {106}
+@YEAR: 
+@PRICE: 
+@TYPE:	original
+@FORMAT: redwelte
+@TEMPO: [none]
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 267360
+@BASEURL: 
+@FILEBASE: druid-mt155yk4133
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@RECUTTER: 
+@COPYRIGHT: 
+@NOTES:	
+@PHYSICAL_NOTES: "Gespielt von" is papered over in leader label, and English instructions are 
+	added in a paper above the label: <i>Music-rolls must always be kept in boxes and
+	placed // in Cabinet containing basin of water during the // winter, to prevent 
+	contraction and expansion. // Not responsible for correct playing unless contdi- //
+	tions above stated adhered to.</i>  Leader is green canvas.
+	Additional stamped note at start of red paper: <i> "This music roll //
+	manufactured by M. Welte & Sons, Inc. is // sold with the distinct understanding
+	that // the purchaser by his acceptance of this // roll agrees that it is only
+	to be used on // the Welte-Mignon, manufactured by M. // Welte & Sons, Inc.  and it is
+	further agreed // that this roll is not to be used on any other // instrument, nor is
+	it to be reproduced in // any form whatsoever, in whole or in part."</i> Same stamp
+	is duplicated at start of music.
+@SCAN_NOTES: Scanned differently since needs to be mirrored about vertical axis?
+@WARNING: orientation problem
+@SUL_BARCODE: 36105225780100
+@CATKEY:	10760616
+@DRUID: mt155yk4133
+@SOURCEID: sul:ars0163_cr11_r106
+@SUL_CALLNUMBER: CONDON ROLL 11
+@DIGITIZER: DC
+@SCAN_DATE: 2017/12/15
+@ANCHOR: leoncavallo
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: 
+@@END: AUTOMATIC
+@@END:	ANALYSES
+@@END: ROLL
+
+
+
