@@ -2,11 +2,11 @@
 
 
 @@START: ROLL
-@TITLE: Red Hot Mama
+@TITLE: Red Hot Mamma (foxtrot)
 @IMSLP: 
 @SCOREPDF: 
 @COMPOSER: Gilbert {Wells}
-@PERFORMER: de la {Puente}
+@PERFORMER: Leo Henriques de la {Fuente}
 @CATALOG: Tri-Phonola {59559}
 @YEAR: 
 @PRICE: 
@@ -24,7 +24,7 @@
 @NOTES:	
 @PHYSICAL_NOTES: 
 @SCAN_NOTES: Frame dropouts in leader. Example of extreme left-right shift at about 10%.
-@WARNING: frame dropouts
+@WARNING: frame dropouts, shifting
 @SUL_BARCODE: 36105225776298
 @CATKEY:	11514098
 @DRUID: wz288rk6573
@@ -32,11 +32,11 @@
 @SUL_CALLNUMBER: CONDON ROLL 1604
 @DIGITIZER: DC
 @SCAN_DATE: 2017/12/14
-@ANCHOR: redhotmama
+@ANCHOR: redhotmamma
 @@BEGIN: ANALYSES
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
-@PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/acceptance_test-20171219/triphonola-59559-red_hot_mama-gilbert-puente
+@PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/acceptance_test-20171219/triphonola-59559-red_hot_mamma-gilbert-fuente
 @@END: AUTOMATIC
 @@END:	ANALYSES
 @@END: ROLL
