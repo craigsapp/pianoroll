@@ -34,10 +34,9 @@
 @SCAN_DATE: 2017/12/14
 @ANCHOR: tiefland
 @@BEGIN: ANALYSES
-@@BEGIN: ANALYSIS
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
-@PLOTURL: 
+@PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/acceptance_test-20171219/licensee-0416-tiefland-albert-albert
 @@END: AUTOMATIC
 @@END:	ANALYSES
 @@END: ROLL

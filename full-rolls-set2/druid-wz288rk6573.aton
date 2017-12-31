@@ -34,10 +34,9 @@
 @SCAN_DATE: 2017/12/14
 @ANCHOR: redhotmama
 @@BEGIN: ANALYSES
-@@BEGIN: ANALYSIS
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
-@PLOTURL: 
+@PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/acceptance_test-20171219/triphonola-59559-red_hot_mama-gilbert-puente
 @@END: AUTOMATIC
 @@END:	ANALYSES
 @@END: ROLL

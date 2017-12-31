@@ -33,10 +33,9 @@
 @SCAN_DATE: 2017/12/13
 @ANCHOR: test_compensation
 @@BEGIN: ANALYSES
-@@BEGIN: ANALYSIS
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
-@PLOTURL: 
+@PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/acceptance_test-20171219/ampico-70601-test_roll_1929_note_compensation
 @@END: AUTOMATIC
 @@END:	ANALYSES
 @@END: ROLL

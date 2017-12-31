@@ -33,10 +33,9 @@
 @SCAN_DATE: 2017/12/14
 @ANCHOR: contes
 @@BEGIN: ANALYSES
-@@BEGIN: ANALYSIS
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
-@PLOTURL: 
+@PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/acceptance_test-20171219/triphonola-50075-contes_bleus-chaminade-keller
 @@END: AUTOMATIC
 @@END:	ANALYSES
 @@END: ROLL

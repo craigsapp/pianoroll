@@ -60,10 +60,9 @@
 @SCAN_DATE: 2017/12/13
 @ANCHOR: nocturne_analysis
 @@BEGIN: ANALYSES
-@@BEGIN: ANALYSIS
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
-@PLOTURL: 
+@PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/acceptance_test-20171219/licensee-B6138-nocturne_analysis-chopin-four_pianists
 @@END: AUTOMATIC
 @@END:	ANALYSES
 @@END: ROLL

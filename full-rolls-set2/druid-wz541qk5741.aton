@@ -36,10 +36,9 @@
 @SCAN_DATE: 2017/12/13
 @ANCHOR: test_roll_1929_copy2
 @@BEGIN: ANALYSES
-@@BEGIN: ANALYSIS
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
-@PLOTURL: 
+@PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/acceptance_test-20171219/ampico-70403-scan2-1929_test_roll
 @@END: AUTOMATIC
 @@END:	ANALYSES
 @@END: ROLL

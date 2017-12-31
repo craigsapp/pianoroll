@@ -34,10 +34,9 @@
 @SCAN_DATE: 2017/12/14
 @ANCHOR: barberini
 @@BEGIN: ANALYSES
-@@BEGIN: ANALYSIS
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
-@PLOTURL: 
+@PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/acceptance_test-20171219/licensee-7180-barberinis_minuet-bauer-bacon
 @@END: AUTOMATIC
 @@END:	ANALYSES
 @@END: ROLL

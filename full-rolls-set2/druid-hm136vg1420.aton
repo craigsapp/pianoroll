@@ -33,10 +33,9 @@
 @SCAN_DATE: 2017/12/15
 @ANCHOR: intermezzo
 @@BEGIN: ANALYSES
-@@BEGIN: ANALYSIS
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
-@PLOTURL: 
+@PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/acceptance_test-20171219/redwelte-0386-intermezzo-op119no3-brahms-schnabel
 @@END: AUTOMATIC
 @@END:	ANALYSES
 @@END: ROLL

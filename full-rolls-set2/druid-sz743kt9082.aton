@@ -34,10 +34,9 @@
 @SCAN_DATE: 2017/12/14
 @ANCHOR: sonata42
 @@BEGIN: ANALYSES
-@@BEGIN: ANALYSIS
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
-@PLOTURL: 
+@PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/acceptance_test-20171219/triphonola-51601-sonata-op35-chopin-elvyn
 @@END: AUTOMATIC
 @@END:	ANALYSES
 @@END: ROLL

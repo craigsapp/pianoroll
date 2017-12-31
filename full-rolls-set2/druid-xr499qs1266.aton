@@ -36,10 +36,9 @@
 @SCAN_DATE: 2017/12/15
 @ANCHOR: little_waltz
 @@BEGIN: ANALYSES
-@@BEGIN: ANALYSIS
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
-@PLOTURL: 
+@PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/acceptance_test-20171219/redwelte-0371-little_waltz-carreno-carreno
 @@END: AUTOMATIC
 @@END:	ANALYSES
 @@END: ROLL

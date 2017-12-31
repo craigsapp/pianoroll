@@ -34,10 +34,9 @@
 @SCAN_DATE: 2017/12/14
 @ANCHOR: rachprelude
 @@BEGIN: ANALYSES
-@@BEGIN: ANALYSIS
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
-@PLOTURL: 
+@PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/acceptance_test-20171219/greenwelte-4118-recut-prelude-op23no5-rachmaninoff-horowitz
 @@END: AUTOMATIC
 @@END:	ANALYSES
 @@END: ROLL

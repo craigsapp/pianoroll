@@ -36,7 +36,6 @@
 @SCAN_DATE: 2017/12/15
 @ANCHOR: campanella
 @@BEGIN: ANALYSES
-@@BEGIN: ANALYSIS
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
 @URL: 

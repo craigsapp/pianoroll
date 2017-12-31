@@ -33,10 +33,9 @@
 @SCAN_DATE: 2017/12/15
 @ANCHOR: carnaval
 @@BEGIN: ANALYSES
-@@BEGIN: ANALYSIS
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
-@PLOTURL: 
+@PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/acceptance_test-20171219/redwelte-0323-carnaval-schubert-reisenauer
 @@END: AUTOMATIC
 @@END:	ANALYSES
 @@END: ROLL

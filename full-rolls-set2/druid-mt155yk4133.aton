@@ -45,10 +45,9 @@
 @SCAN_DATE: 2017/12/15
 @ANCHOR: leoncavallo
 @@BEGIN: ANALYSES
-@@BEGIN: ANALYSIS
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
-@PLOTURL: 
+@PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/acceptance_test-20171219/redwelte-0106-pajazzo-leoncavallo-adam-benard
 @@END: AUTOMATIC
 @@END:	ANALYSES
 @@END: ROLL

@@ -38,10 +38,9 @@
 @SCAN_DATE: 2017/12/14
 @ANCHOR: maestro
 @@BEGIN: ANALYSES
-@@BEGIN: ANALYSIS
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
-@PLOTURL: 
+@PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/acceptance_test-20171219/ampico-216403-foxtrots-sherry
 @@END: AUTOMATIC
 @@END:	ANALYSES
 @@END: ROLL
