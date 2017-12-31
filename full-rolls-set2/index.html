@@ -49,6 +49,7 @@ Here is a <a target="_blank" href="https://docs.google.com/spreadsheets/d/16s-SU
 <h2> Ampico Rolls </h2>
 <a name="_blank" href="https://en.wikipedia.org/wiki/American_Piano_Company">Ampico</a> rolls
 were produced starting in 1913 and are the other most common American roll type.
+Click on the roll thumbnails below to view more information about each roll.
 <div class="listing" id="ampico-rolls"></div>
 
 <a name="duoart_rolls"></a>
@@ -56,16 +57,19 @@ were produced starting in 1913 and are the other most common American roll type.
 <a target="_blank" href="https://en.wikipedia.org/wiki/Duo-Art">Duo-Art</a> rolls were produced
 by the <a>Aeolean Company</a>, which was one of the
 two dominant player-piano companies in the United States.
+Click on the roll thumbnails below to view more information about each roll.
 <div class="listing" id="duoart-rolls"></div>
 
 <a name="greenwelte_rolls"></a>
 <h2> Green Welte Rolls </h2>
 Green Welte rolls were produced in the 1920's in Germany.
+Click on the roll thumbnails below to view more information about each roll.
 <div class="listing" id="greenwelte-rolls"></div>
 
 <a name="licensee_rolls"></a>
 <h2> Welte-Mignon Licensee Rolls </h2>
 Licensee rolls are mostly Welte rolls for the American market.
+Click on the roll thumbnails below to view more information about each roll.
 <div class="listing" id="licensee-rolls"></div>
 
 <a name="redwelte_rolls"></a>
@@ -73,11 +77,14 @@ Licensee rolls are mostly Welte rolls for the American market.
 Red Welte are red-colored rolls produced by <a target="_blank" href="https://en.wikipedia.org/wiki/Welte-Mignon">Welte & Sons</a>.  They <a target="_blank" href="https://www.google.com/patents/US287599">invented paper rolls</a> for playing organs in the 1880's.
 And were the first company to record live piano performances, starting in 1904 on 
 red rolls.
+Click on the roll thumbnails below to view more information about each roll.
 <div class="listing" id="redwelte-rolls"></div>
 
 <a name="triphonola_rolls"></a>
 <h2> Tri-Phonola Rolls</h2>
-Tri-phonola rolls are a brand produced by <a target="_blank" href="http://library.stanford.edu/blogs/stanford-libraries-blog/2015/12/hupfeld-piano-rolls-stanford">Hupfeld</a>.
+Tri-phonola rolls are a brand produced by <a target="_blank" href="http://library.stanford.edu/blogs/stanford-libraries-blog/2015/12/hupfeld-piano-rolls-stanford">Hupfeld</a> 
+in Leipzig, Germany during the 1920's and early 1930's.
+Click on the roll thumbnails below to view more information about each roll.
 <div class="listing" id="triphonola-rolls"></div>
 
 
@@ -165,6 +172,18 @@ Handlebars.registerHelper('thumbnail', function(data) {
 	var url = data.ANALYSES.AUTOMATIC.PLOTURL;
 	var output = url + "/druid-" + druid + "-thumbnail.jpg";
 	return new Handlebars.SafeString(output);
+});
+
+
+
+//////////////////////////////
+//
+// Handlebars helper "imglocation" --
+//
+
+Handlebars.registerHelper('imglocation', function(data) {
+	var url = data.ANALYSES.AUTOMATIC.PLOTURL;
+	return new Handlebars.SafeString(url);
 });
 
 
