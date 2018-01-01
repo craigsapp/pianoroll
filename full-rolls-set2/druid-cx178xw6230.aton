@@ -13,7 +13,7 @@
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 127170
 @BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls
-@FILEBASE: green-welte-repetition-rest-roll
+@FILEBASE: druid-cx178xw6230
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
 @ANCHOR: green_test_11
