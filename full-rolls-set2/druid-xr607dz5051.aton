@@ -23,8 +23,10 @@
 @COPYRIGHT: 
 @NOTES:	
 @PHYSICAL_NOTES:  Strange holes before start of music.  Similar bad holes
-	within music.
+	within music.  These are hard to automatically separate from real
+	musical holes.
 @SCAN_NOTES:
+@WARNING: repair
 @SUL_BARCODE: 36105225776306
 @CATKEY:	11514099
 @DRUID: xr607dz5051
