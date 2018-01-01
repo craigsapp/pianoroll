@@ -287,9 +287,20 @@ summary {
 						Images
 					</td>
 					<td>
-						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.jpg">{{{jpgdpi this.PIXEL_LENGTH this.LDPI}}} JPEG</a> (for viewing on the web)
-						<br>
-						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.tiff">300-dpi uncompressed full-color TIFF</a> (original, large)
+						<ul style="margin-left: 0px; padding:0">
+						<li style="overflow: visible !important"> 
+						<a target="_blank" href="{{imglocation this}}/druic-{{this.DRUID}}.tiff">300-dpi uncompressed full-color TIFF</a> &mdash;
+						original scan, very large file in note-processing orientation (most rolls except red rolls will be left/right mirrored with time at top of file and bass notes on left side of image).
+						<li style="margin-top:10px; overflow: visible !important"> 
+						<a target="_blank" href="{{imglocation this}}/druid-{{this.DRUID}}-analysis/leader.jpg">leader</a> &mdash; 
+						The first 4096 pixel lines of the roll.
+						<li style="margin-top:10px; overflow: visible !important">
+						<a target="_blank" href="{{imglocation this}}/druid-{{this.DRUID}}.jpg">{{{jpgdpi this.PIXEL_LENGTH this.LDPI}}} JPEG</a> &mdash;
+						Smaller resolution than above, but easier to view on the web, in visual orientation (leader of most rells except red rolls will be at the bottom).
+						<li style="margin-top:10px; overflow: visible !important">
+						<a target="_blank" href="{{imglocation this}}/druid-{{this.DRUID}}-analysis/markup.jpg">Annotated {{{jpgdpi this.PIXEL_LENGTH this.LDPI}}} JPEG</a> &mdash; 
+						Automatically analysis of the roll structure, in visual orientation.  See the <a target="_blank" href="{{imglocation this}}/{{this.DRUID}}-analysis">automatic analysis page</a> for more detailed image markups.
+						</ul>
 					</td>
 				</tr>
 
