@@ -147,6 +147,20 @@ document.addEventListener("DOMContentLoaded", function() {
 	{% include_relative rolldata.js collection="redwelte" %}
 	{% include_relative rolldata.js collection="triphonola" %}
 
+	
+	var hash = location.hash;
+	if (hash != "") {
+		console.log("HASH IS", hash);
+		var entry = document.querySelector(hash);
+		if (entry) {
+			entry.open = true;
+			console.log("OPENING", hash);
+		} else {
+			console.log("HASH", hash, "DOES NOT EXIST");
+		}
+	}
+
+
 });
 
 

@@ -39,7 +39,11 @@ summary {
 						<a name="{{{this.ANCHOR}}}"></a>
 				{{/if}}
 
-			<details>
+			<details 
+				{{#if this.ANCHOR}}
+						id="{{{this.ANCHOR}}}"
+				{{/if}}
+			>
 			<summary>
 
 			<table style="padding: 0 !important;  margin-bottom: 0 !important;" class="roll-entry">
