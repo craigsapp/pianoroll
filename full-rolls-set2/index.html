@@ -62,11 +62,11 @@ Click on the roll thumbnails below to view more information about each roll.
 
 <a name="greenwelte_rolls"></a>
 <h2> Green Welte Rolls </h2>
-"Green Welte" rolls are usually green-hue Welte-Mignon rolls produced
-produced in the 1920's in Germany by Welte & Sons.  They have 98
-rows of holes spaced 9 per inch, and a width of 11.25 inches.  Click
-on the roll thumbnails below to view more information about each
-roll.  
+"Green roll" are usually green-hue Welte-Mignon rolls produced from
+1922 to 1932 in Freiburg, Germany by Welte & Sons.  They have 98
+rows of holes spaced 9 per inch, and a width of 11.25 inches.
+
+Click on the roll thumbnails below to view more information about each roll.  
 <div class="listing" id="greenwelte-rolls"></div>
 
 <a name="licensee_rolls"></a>
@@ -78,15 +78,18 @@ Click on the roll thumbnails below to view more information about each roll.
 <a name="redwelte_rolls"></a>
 <h2> Red Welte Rolls </h2>
 
-"Red Welte" are usually red-colored Welte-Mignon rolls produced by <a
-target="_blank" href="https://en.wikipedia.org/wiki/Welte-Mignon">Welte
+"Red rolls" are usually red-colored Welte-Mignon rolls produced by
+<a target="_blank" href="https://en.wikipedia.org/wiki/Welte-Mignon">Welte
 & Sons</a>.  They <a target="_blank"
-href="https://www.google.com/patents/US287599">invented paper rolls</a>
-for playing organs in the 1880's, and they were the first company to record
-live piano performances, starting in 1904 on these red rolls.  Red rolls
-were produced from 1905 to the early 1920's.  They have 100 rows of holes at
-8 holes per inch, with the width of the roll being 12.9 inches.
-Click on the roll thumbnails below to view more information about each roll.
+href="https://www.google.com/patents/US287599">invented paper
+rolls</a> for playing organs in the 1880's, and they were the first
+company to record live piano performances, starting in 1904 on these
+red rolls.  Red rolls were produced in Germany from 1905 to 1932,
+and in Poughkeepsie, New York from 1913 to 1920.  New York rolls
+sometimes have a cloth leader. They have 100 rows of holes at 8
+holes per inch, with the width of the roll being about 12.9 inches.
+Click on the roll thumbnails below to view more information about
+each roll.
 
 <div class="listing" id="redwelte-rolls"></div>
 <a name="triphonola_rolls"></a>
@@ -144,6 +147,20 @@ document.addEventListener("DOMContentLoaded", function() {
 	{% include_relative rolldata.js collection="redwelte" %}
 	{% include_relative rolldata.js collection="triphonola" %}
 
+	
+	var hash = location.hash;
+	if (hash != "") {
+		console.log("HASH IS", hash);
+		var entry = document.querySelector(hash);
+		if (entry) {
+			entry.open = true;
+			console.log("OPENING", hash);
+		} else {
+			console.log("HASH", hash, "DOES NOT EXIST");
+		}
+	}
+
+
 });
 
 
@@ -193,6 +210,19 @@ Handlebars.registerHelper('thumbnail', function(data) {
 
 Handlebars.registerHelper('imglocation', function(data) {
 	var url = data.ANALYSES.AUTOMATIC.PLOTURL;
+	return new Handlebars.SafeString(url);
+});
+
+
+
+//////////////////////////////
+//
+// Handlebars helper "audiosource" --
+//
+
+Handlebars.registerHelper('audiosource', function(data) {
+	var url = data.ANALYSES.AUTOMATIC.PLOTURL;
+	url += "/druid-" + data.DRUID + "-analysis/midi.mp3";
 	return new Handlebars.SafeString(url);
 });
 

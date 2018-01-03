@@ -39,7 +39,11 @@ summary {
 						<a name="{{{this.ANCHOR}}}"></a>
 				{{/if}}
 
-			<details>
+			<details 
+				{{#if this.ANCHOR}}
+						id="{{{this.ANCHOR}}}"
+				{{/if}}
+			>
 			<summary>
 
 			<table style="padding: 0 !important;  margin-bottom: 0 !important;" class="roll-entry">
@@ -301,6 +305,17 @@ summary {
 						<a target="_blank" href="{{imglocation this}}/druid-{{this.DRUID}}-analysis/markup.jpg">Annotated {{{jpgdpi this.PIXEL_LENGTH this.LDPI}}} JPEG</a> &mdash; 
 						Automatically analysis of the roll structure, in visual orientation.  See the <a target="_blank" href="{{imglocation this}}/{{this.DRUID}}-analysis">automatic analysis page</a> for more detailed image markups.
 						</ul>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						Listen
+					</td>
+					<td>
+						<audio style="width:500px;" controls>
+							<source type="audio/mpeg" src="{{{audiosource this}}}">
+						</audio>
 					</td>
 				</tr>
 
