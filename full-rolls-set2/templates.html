@@ -300,43 +300,20 @@ summary {
 						The first 4096 pixel lines of the roll.
 						<li style="margin-top:10px; overflow: visible !important">
 						<a target="_blank" href="{{imglocation this}}/druid-{{this.DRUID}}.jpg">{{{jpgdpi this.PIXEL_LENGTH this.LDPI}}} JPEG</a> &mdash;
-						Smaller resolution than above, but easier to view on the web, in visual orientation (leader of most rells except red rolls will be at the bottom).
+						Smaller resolution than above, but easier to view on the web, in visual orientation (leader of most rolls except red rolls will be at the bottom).
 						<li style="margin-top:10px; overflow: visible !important">
 						<a target="_blank" href="{{imglocation this}}/druid-{{this.DRUID}}-analysis/markup.jpg">Annotated {{{jpgdpi this.PIXEL_LENGTH this.LDPI}}} JPEG</a> &mdash; 
 						Automatically analysis of the roll structure, in visual orientation.  See the <a target="_blank" href="{{imglocation this}}/{{this.DRUID}}-analysis">automatic analysis page</a> for more detailed image markups.
+						<br/>
 						</ul>
 					</td>
 				</tr>
-
-				<tr>
-					<td>
-						Listen
-					</td>
-					<td>
-						<audio style="width:500px;" controls>
-							<source type="audio/mpeg" src="{{{audiosource this}}}">
-						</audio>
-					</td>
-				</tr>
-
-				{{#if this.DUPCOUNT}}
-				<tr>
-					<td>
-						<span style="color:red">Duplication Errors</a>
-					</td>
-					<td>
-						{{{this.DUPCOUNT}}} frame repeat {{{plural "group" "groups" this.DUPCOUNT}}} in image:
-						{{{this.DUPLICATE}}}
-					</td>
-				</tr>
-				{{/if}}
 
 				{{#if this.ANALYSES}}
 				<tr>
 					<td>
 						Analyses
 					</td>
-
 					<td>
 						<span style="margin-bottom:20px">
 							{{#each this.ANALYSES}}
@@ -352,7 +329,50 @@ summary {
 							{{/each}}
 						</span>
 					</td>
+				</tr>
+				{{/if}}
 
+				<tr>
+					<td>
+						Listen
+					</td>
+					<td>
+						<audio style="width:500px;" controls>
+							<source type="audio/mpeg" src="{{{audiosource this}}}">
+						</audio>
+						<p>
+						Direct rendering of the scan to MIDI then rendered to MP3 with timidity 
+						(notes only with no expression and pitch is estimated).
+					</td>
+				</tr>
+
+				{{#if this.YOUTUBE}}
+				<tr>
+					<td>
+						Youtube
+					</td>
+					<td>
+						Performances of the same catalog number on real player-pianos, or 
+						performances of digitial transfers of the same catalog number by various
+						people uploaded to youtube (or even the same performer playing at
+						a different time):
+						<br/>
+						<br/>
+						<p>
+						{{{youtube this.YOUTUBE}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.DUPCOUNT}}
+				<tr>
+					<td>
+						<span style="color:red">Duplication Errors</a>
+					</td>
+					<td>
+						{{{this.DUPCOUNT}}} frame repeat {{{plural "group" "groups" this.DUPCOUNT}}} in image:
+						{{{this.DUPLICATE}}}
+					</td>
 				</tr>
 				{{/if}}
 

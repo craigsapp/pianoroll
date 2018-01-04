@@ -393,6 +393,39 @@ Handlebars.registerHelper('holesPerInch', function(pixels, dpi) {
 
 //////////////////////////////
 //
+// Handlebars helper "youtube" -- also maybe filter out full-url cases (just want id).
+//
+
+Handlebars.registerHelper('youtube', function(data) {
+	var output = "";
+	if (!(data instanceof Array)) {
+		if (data.match(" ")) {
+			data = data.split(/\s+/);
+		}
+	}
+	if (data instanceof Array) {
+		for (var i=0; i<data.length; i++) {
+			if (data[i].match(/^\s*$/)) {
+				continue;
+			}
+			output += "<iframe width='420' height='315' allowfullscreen frameborder='0' \n";
+			output += "    src='https://www.youtube.com/embed/" + data[i] + "'>\n";
+			output += "</iframe>\n";
+		}
+	} else {
+		output += "<iframe width='420' height='315' allowfullscreen frameborder='0' \n";
+		output += "    src='https://www.youtube.com/embed/" + data + "'>\n";
+		output += "</iframe>\n";
+	}
+
+	return new Handlebars.SafeString(output);
+});
+
+
+
+
+//////////////////////////////
+//
 // Handlebars helper "holedpi" --
 //
 
