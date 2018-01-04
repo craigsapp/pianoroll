@@ -239,6 +239,80 @@ Handlebars.registerHelper('realurl', function(url, druid) {
 });
 
 
+//////////////////////////////
+//
+// Handlebars helper "composerperformer" --
+//
+
+Handlebars.registerHelper('composerperformer', function(data) {
+	var output = "<span style='float:right; font-weight:normal; font-size:90%;'>";
+
+	var composer = data.COMPOSER;
+	var performer = data.PERFORMER;
+
+	if (composer.match(/none/i)) { composer = ""; }
+	if (performer.match(/none/i)) { performer = ""; }
+
+	var fullcomposer = composer.replace(/[{}]/g, "");
+	var fullperformer = performer.replace(/[{}]/g, "");
+
+	var ccount = (composer.match(/{/g) || []).length;
+	var pcount = (performer.match(/{/g) || []).length;
+
+	if (ccount == 1) {
+		composer = composer.replace(/.*{/, "").replace(/}.*/, "");
+	}
+	if (pcount == 1) {
+		performer = performer.replace(/.*{/, "").replace(/}.*/, "");
+	}
+
+	performer = performer.replace(/Carreno/, "Carre&ntilde;o");
+	composer = composer.replace(/Carreno/, "Carre&ntilde;o");
+
+	performer = performer.replace(/Albert/, "d'Albert");
+	composer = composer.replace(/Albert/, "d'Albert");
+
+
+	var ctitle = fullcomposer + ", composer";
+	var ptitle = fullperformer + ", performer";
+
+	if (ccount > 1) { ctitle += "s"; }
+	if (pcount > 1) { ptitle += "s"; }
+
+	if (composer === performer) {
+		performer = "";
+		ptitle = "";
+		ctitle = fullcomposer + ", performer and composer";
+	}
+
+	if (ccount > 1) { composer = "various"; }
+	if (pcount > 1) { performer = "various"; }
+
+	if (composer.match(/^\s*$/) && performer.match(/^\s*$/)) {
+		return new Handlebars.SafeString("");
+	}
+
+	if (!composer.match(/^\s*$/)) {
+		output += "<span title=\"" + ctitle + "\">";
+		output += composer;
+		output += "</span>";
+	}
+
+	if ((!composer.match(/^\s*$/)) && (!performer.match(/^\s*$/))) {
+		output += "<span style='color:#cccccc; vertical-align: middle; position:relative; top:-2px; font-size:150%'>/</span>";
+	}
+
+	if (!performer.match(/^\s*$/)) {
+		output += "<span title=\"" + ptitle + "\">";
+		output += performer;
+		output += "</span>";
+	}
+	output += "</span>";
+
+	return new Handlebars.SafeString(output);
+});
+
+
 
 //////////////////////////////
 //
