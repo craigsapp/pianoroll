@@ -95,6 +95,13 @@ Click on the roll thumbnails below to view more information about
 each roll.
 <div class="listing" id="redwelte-rolls"></div>
 
+<a name="metrostyle_rolls"></a>
+<h2> Metrostyle Rolls </h2>
+These are non-reproducing rolls that have tempo and dynamics curves printed
+onto the rolls.
+Click on the roll thumbnails below to view more information about each roll.
+<div class="listing" id="metrostyle-rolls"></div>
+
 <a name="nonreproducing_rolls"></a>
 <h2> Non-reproducing Rolls </h2>
 This are rolls which are not recording a live pianist.
@@ -131,6 +138,10 @@ Click on the roll thumbnails below to view more information about each roll.
 	{% include_relative nonreproducing-rolls.aton %}
 </script>
 
+<script id="metrostyle-rolls-data" type="application/x-aton">
+	{% include_relative metrostyle-rolls.aton %}
+</script>
+
 <!-- SCRIPT --------------------------------------------------------------- -->
 
 <script>
@@ -146,6 +157,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	{% include_relative rolldata.js collection="licensee" %}
 	{% include_relative rolldata.js collection="redwelte" %}
 	{% include_relative rolldata.js collection="nonreproducing" %}
+	{% include_relative rolldata.js collection="metrostyle" %}
 
 	
 	var hash = location.hash;
