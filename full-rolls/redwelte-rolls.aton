@@ -1,54 +1,5 @@
 
+{% include_relative redwelte-2733-childrens_corner-debussy-debussy.aton %}
 
-
-@@START: ROLL
-@TITLE: <a target="_blank" href="http://imslp.org/wiki/La_plus_que_lente_(Debussy%2C_Claude)">La plus que lente, Valse</a>
-@COMPOSER:  Claude Debussy
-@PERFORMER: Claude Debussy
-@CATALOG: Welte-Mignon 2736
-@PRICE: 
-@TYPE:	Recut
-@FORMAT: red Welte
-@PIXEL_WIDTH: 4096
-@PIXEL_LENGTH: 133170
-@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/redwelte-rolls
-@FILEBASE: RedRoll2736-LaPlusQueLente-Debussy-Debussy
-@LDPI: 300.32 &pm; 0.19
-@WDPI: 251.48
-@RECUTTER: Musikwerkstadt Monschau
-@NOTES:	 
-@ANCHOR: monschau
-@PHYSICAL_NOTES: 
-@SCAN_NOTES: Notice that the label appears upside-down in the "visual" orientation in the JPEG
-version of the scan.  This is correct, since it is more important to have bass notes
-on the left (as they would be seen when looking at the roll being played on a red Welte roll).
-@SUL_BARCODE:
-@SCAN_DATE: 2017/11/22
-@@BEGIN: ANALYSES
-@@BEGIN: ANALYSIS
-@DESCRIPTION: Color-channel intensity histograms
-@PLOTURL: https://plot.ly/~craigsapp/38.embed
-@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/redwelte-rolls/RedRoll2736-LaPlusQueLente-Debussy-Debussy-histograms.txt
-@@END:	ANALYSIS
-@@END:	ANALYSES
-
-@@END: ROLL
-
-
-
-@@ ALSO TO BE PROCESSED:
-@@ Catalog: Welte-Mignon No. 2733
-@@ Title: Children's Corner
-@@ Composer: Debussy
-@@ Performer: Debussy
-@@ BARCODE: 36105225785612
-@@ SEARCHWORKS: https://searchworks.stanford.edu/view/11064893
-@@ CALLNUMBER: CONDON ROLL 584
-@@ 144.8 feet long
-
-
-
-{% include_relative redwelte-test-rolls.aton %}
-
-
+{% include_relative template.aton %}
 

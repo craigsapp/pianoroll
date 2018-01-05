@@ -39,19 +39,24 @@ summary {
 						<a name="{{{this.ANCHOR}}}"></a>
 				{{/if}}
 
-			<details>
+			<details 
+				{{#if this.ANCHOR}}
+						id="{{{this.ANCHOR}}}"
+				{{/if}}
+			>
 			<summary>
 
-			<table style="padding: 0 !important;  margin-bottom: 0 !important;" class="roll-entry">
+			<table style="padding: 0 !important;  margin-bottom: 0 !important; margin-left:0px;" class="roll-entry">
 				<tr>
-					<td class="nocolon nospace" colspan="2">
-						<span style="white-space:nowrap;" class="title">{{{this.TITLE}}}</span>
+					<td style="width:800px;" class="nocolon nospace" colspan="2">
+						<span style="white-space:nowrap;" class="title">{{{onlycurley this.CATALOG}}} {{{this.TITLE}}}</span>
+						{{{composerperformer this}}}
 					</td>
 				</tr>
 			</table>
 
 			<!-- <a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.jpg"> -->
-				<img style="width:900px;" src="{{this.BASEURL}}/{{this.FILEBASE}}-thumbnail.jpg">
+				<img style="width:900px;" src="{{{thumbnail this}}}">
 			<!-- </a> -->
 
 			</summary>
@@ -64,7 +69,7 @@ summary {
 						Composer
 					</td>
 					<td>
-						{{{this.COMPOSER}}}
+						{{{curleybold this.COMPOSER}}}
 					</td>
 				</tr>
 				{{/if}}
@@ -75,7 +80,29 @@ summary {
 						Performer
 					</td>
 					<td>
-						{{{this.PERFORMER}}}
+						{{{curleybold this.PERFORMER}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.TEMPO}}
+				<tr>
+					<td>
+						Tempo
+					</td>
+					<td>
+						{{{this.TEMPO}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.SCOREPDF}}
+				<tr>
+					<td>
+						Score
+					</td>
+					<td>
+						<a target="_blank" href="{{{this.SCOREPDF}}}">As a PDF</a>
 					</td>
 				</tr>
 				{{/if}}
@@ -108,7 +135,7 @@ summary {
 						Catalog #
 					</td>
 					<td>
-						{{{this.CATALOG}}}
+						{{{curleybold this.CATALOG}}}
 					</td>
 				</tr>
 				{{/if}}
@@ -119,7 +146,18 @@ summary {
 						Recutter
 					</td>
 					<td>
-						{{{this.RECUTTER}}}
+						{{{curleybold this.RECUTTER}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.YEAR}}
+				<tr>
+					<td>
+						Date
+					</td>
+					<td>
+						{{{this.YEAR}}}
 					</td>
 				</tr>
 				{{/if}}
@@ -185,8 +223,8 @@ summary {
 						SUL CALL #
 					</td>
 					<td>
-						{{#if this.SEARCHWORKS}}
-							<a target="_blank" href="{{this.SEARCHWORKS}}">
+						{{#if this.CATKEY}}
+							<a target="_blank" href="http://searchworks.stanford.edu/view/{{this.CATKEY}}">
 								{{{this.SUL_CALLNUMBER}}}
 							</a>
 						{{else}}
@@ -202,13 +240,24 @@ summary {
 						SUL Barcode
 					</td>
 					<td>
-						{{#if this.SEARCHWORKS}}
-							<a target="_blank" href="{{this.SEARCHWORKS}}.refworks_marc_txt">
+						{{#if this.CATKEY}}
+							<a target="_blank" href="http://searchworks.stanford.edu/view/{{this.CATKEY}}.refworks_marc_txt">
 								{{{this.SUL_BARCODE}}}
 							</a>
 						{{else}}
 							{{{this.SUL_BARCODE}}}
 						{{/if}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.DRUID}}
+				<tr>
+					<td>
+						DRUID
+					</td>
+					<td>
+						{{{this.DRUID}}}
 					</td>
 				</tr>
 				{{/if}}
@@ -254,35 +303,34 @@ summary {
 						Images
 					</td>
 					<td>
-						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.jpg">{{{jpgdpi this.PIXEL_LENGTH this.LDPI}}} JPEG</a> (for viewing on the web)
-						<br>
-						<a target="_blank" href="{{this.BASEURL}}/{{this.FILEBASE}}.tiff">300-dpi uncompressed full-color TIFF</a> (original, large)
+						<ul style="margin-left: 0px; padding:0">
+						<li style="overflow: visible !important"> 
+						<a target="_blank" href="{{imglocation this}}/druic-{{this.DRUID}}.tiff">300-dpi uncompressed full-color TIFF</a> &mdash;
+						original scan, very large file in note-processing orientation (most rolls except red rolls will be left/right mirrored with time at top of file and bass notes on left side of image).
+						<li style="margin-top:10px; overflow: visible !important"> 
+						<a target="_blank" href="{{imglocation this}}/{{this.FILEBASE}}-analysis/leader.jpg">leader</a> &mdash; 
+						The first 4096 pixel lines of the roll.
+						<li style="margin-top:10px; overflow: visible !important">
+						<a target="_blank" href="{{imglocation this}}/{{this.FILEBASE}}.jpg">{{{jpgdpi this.PIXEL_LENGTH this.LDPI}}} JPEG</a> &mdash;
+						Smaller resolution than above, but easier to view on the web, in visual orientation (leader of most rolls except red rolls will be at the bottom).
+						<li style="margin-top:10px; overflow: visible !important">
+						<a target="_blank" href="{{imglocation this}}/{{this.FILEBASE}}-analysis/markup.jpg">Annotated {{{jpgdpi this.PIXEL_LENGTH this.LDPI}}} JPEG</a> &mdash; 
+						Automatically analysis of the roll structure, in visual orientation.  See the <a target="_blank" href="{{imglocation this}}/{{this.DRUID}}-analysis">automatic analysis page</a> for more detailed image markups.
+						<br/>
+						</ul>
 					</td>
 				</tr>
-
-				{{#if this.DUPCOUNT}}
-				<tr>
-					<td>
-						<span style="color:red">Duplication Errors</a>
-					</td>
-					<td>
-						{{{this.DUPCOUNT}}} frame repeat {{{plural "group" "groups" this.DUPCOUNT}}} in image:
-						{{{this.DUPLICATE}}}
-					</td>
-				</tr>
-				{{/if}}
 
 				{{#if this.ANALYSES}}
 				<tr>
 					<td>
 						Analyses
 					</td>
-
 					<td>
 						<span style="margin-bottom:20px">
 							{{#each this.ANALYSES}}
 								{{#if PLOTURL}}
-									<a target="_blank" href="{{PLOTURL}}">{{DESCRIPTION}}</a>
+									<a target="_blank" href="{{realurl PLOTURL ../FILEBASE}}">{{DESCRIPTION}}</a>
 								{{else}}
 									{{DESCRIPTION}}
 								{{/if}}
@@ -293,7 +341,50 @@ summary {
 							{{/each}}
 						</span>
 					</td>
+				</tr>
+				{{/if}}
 
+				<tr>
+					<td>
+						Listen
+					</td>
+					<td>
+						<audio style="width:500px;" controls>
+							<source type="audio/mpeg" src="{{{audiosource this}}}">
+						</audio>
+						<p>
+						Direct rendering of the scan to MIDI then rendered to MP3 with timidity 
+						(notes only with no expression and pitch is estimated).
+					</td>
+				</tr>
+
+				{{#if this.YOUTUBE}}
+				<tr>
+					<td>
+						Youtube
+					</td>
+					<td>
+						Performances of the same catalog number on real player-pianos, or 
+						performances of digitial transfers of the same catalog number by various
+						people uploaded to youtube (or even the same performer playing at
+						a different time):
+						<br/>
+						<br/>
+						<p>
+						{{{youtube this.YOUTUBE}}}
+					</td>
+				</tr>
+				{{/if}}
+
+				{{#if this.DUPCOUNT}}
+				<tr>
+					<td>
+						<span style="color:red">Duplication Errors</a>
+					</td>
+					<td>
+						{{{this.DUPCOUNT}}} frame repeat {{{plural "group" "groups" this.DUPCOUNT}}} in image:
+						{{{this.DUPLICATE}}}
+					</td>
 				</tr>
 				{{/if}}
 
