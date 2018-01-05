@@ -1,0 +1,52 @@
+
+
+
+@@START: ROLL
+@TITLE: Phantoms, Op. 15, No. 3
+@IMSLP: http://imslp.org/wiki/4_Sketches,_Op.15_(Beach,_Amy_Marcy)
+@SCOREPDF: 
+@COMPOSER: <a target="_blank" href="https://en.wikipedia.org/wiki/Amy_Beach">Mrs. H.H.A. {Beach}</a>
+@PERFORMER: [none]
+@CATALOG: Metrostyle Y 4291
+@YEAR: 
+@PRICE: 
+@TYPE:	original
+@FORMAT: metrostyle
+@TEMPO:
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 45630
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/metrostyle-4291-phantoms-beach-beach
+@FILEBASE: metrostyle-4291-phantoms-beach-beach
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@RECUTTER: 
+@COPYRIGHT: 
+@NOTES: <a target="_blank" href="http://wiscasset.net/artcraft/Metrostylehype.html">Metrostyle</a>
+@PHYSICAL_NOTES: The roll does not contain expression holes, but does
+include a dotted line for a performer to realize dynamics, and a red line 
+to control tempo.
+@SCAN_NOTES:
+@YOUTUBE:
+@SUL_BARCODE: 
+@CATKEY:	
+@DRUID: 
+@SOURCEID: 
+@SUL_CALLNUMBER: 
+@DIGITIZER: CSS
+@SCAN_DATE: 2017/11/22
+@ANCHOR: phantoms
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@DESCRIPTION: Color-channel intensity histograms
+@PLOTURL: https://plot.ly/~craigsapp/26.embed
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/metrostyle-4291-phantoms-beach-beach/metrostyle-4291-phantoms-beach-beach-histograms.txt
+@@END:	ANALYSIS
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/metrostyle-4291-phantoms-beach-beach
+@@END: AUTOMATIC
+@@END:	ANALYSES
+@@END: ROLL
+
+
+
