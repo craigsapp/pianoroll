@@ -1,0 +1,55 @@
+
+
+
+@@START: ROLL
+@TITLE: Selections from Children's Corner
+@IMSLP: 
+@SCOREPDF: 
+@COMPOSER: Claude {Debussy}
+@PERFORMER: Claude {Debussy}
+@CATALOG: DeLuxe C-2733A
+@YEAR: 
+@PRICE: $2.00
+@TYPE:	original
+@FORMAT: licensee
+@TEMPO:
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 202260
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/licensee-2733-doll_snow-debussy-debussy
+@FILEBASE: licensee-2733-doll_snow-debussy-debussy
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@RECUTTER: 
+@COPYRIGHT: 
+@NOTES:	Children's Corner: (3) Serenade of the Doll & (4) The Snow is Dancing
+@PHYSICAL_NOTES: 
+@SCAN_NOTES:
+@YOUTUBE:
+@SUL_BARCODE: 
+@CATKEY:	
+@DRUID: 
+@SOURCEID: 
+@SUL_CALLNUMBER: 
+@DIGITIZER: CSS
+@SCAN_DATE: 2017/11/16
+@ANCHOR: snow
+@DUPCOUNT: 1
+@DUPLICATE:
+	<ul> 
+	<li> &bullet; 3 repeated frames at rows 44970, 45000 and 45030.
+	</ul>
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@DESCRIPTION: Color intensity histograms
+@PLOTURL: https://plot.ly/~craigsapp/44.embed
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/licensee-rolls/deluxe-C2733A-Debussy-CC-Doll-Snow-played-by-Debussy-histograms.txt
+@@END:	ANALYSIS
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/licensee-2733-doll_snow-debussy-debussy
+@@END: AUTOMATIC
+@@END:	ANALYSES
+@@END: ROLL
+
+
+
