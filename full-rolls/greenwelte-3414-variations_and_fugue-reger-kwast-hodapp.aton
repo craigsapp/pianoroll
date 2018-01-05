@@ -15,7 +15,6 @@
 @TEMPO: [75]
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 331560
-@BASEURL: 
 @BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122
 @FILEBASE: greenwelte-3414-variations_and_fugue-reger-kwast-hodapp
 @LDPI: 300.25 &pm; 0.21
@@ -48,7 +47,7 @@
 @@END:	ANALYSIS
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
-@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/greenwelte-3414-variations_and_fugue-reger-kwast-hodapp
+@PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/greenwelte-3414-variations_and_fugue-reger-kwast-hodapp
 @@END: AUTOMATIC
 @@END:	ANALYSES
 @@END: ROLL

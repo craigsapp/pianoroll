@@ -15,7 +15,6 @@
 @TEMPO:
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 12220
-@BASEURL: 
 @BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122
 @FILEBASE: duoart-testroll_no3
 @LDPI: 300.25 &pm; 0.21
@@ -49,7 +48,7 @@
 @@BEGIN: ANALYSIS
 @DESCRIPTION: Color-channel intensity histograms
 @PLOTURL: https://plot.ly/~craigsapp/36.embed
-@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/duoart-testroll-no3-histograms.txt
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/duoart-testroll_no3/duoart-testroll_no3-histograms.txt
 @@END:	ANALYSIS
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
