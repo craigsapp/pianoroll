@@ -8,7 +8,7 @@
 @SCOREPDF: 
 @COMPOSER: Cav. S. C. {Oliva}; lyrics by C. Piraino Ajello
 @PERFORMER: [none]
-@CATALOG: Pennino 58
+@CATALOG: {Pennino 58}
 @YEAR: 
 @PRICE: $1.25
 @TYPE:	original
@@ -55,6 +55,7 @@
 @PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/pennino-58-porta_riali_in_festa-oliva
 @@END: AUTOMATIC
 @@END:	ANALYSES
+@@END: ROLL
 @@END: ROLL
 
 
