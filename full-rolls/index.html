@@ -95,15 +95,7 @@ sometimes have a cloth leader. They have 100 rows of holes at 8
 holes per inch, with the width of the roll being about 12.9 inches.
 Click on the roll thumbnails below to view more information about
 each roll.
-
 <div class="listing" id="redwelte-rolls"></div>
-<a name="triphonola_rolls"></a>
-<h2> Tri-phonola Rolls </h2>
-Tri-phonola rolls are a brand produced by <a target="_blank" href="http://library.stanford.edu/blogs/stanford-libraries-blog/2015/12/hupfeld-piano-rolls-stanford">Hupfeld</a> 
-in Leipzig, Germany during the 1920's and early 1930's.
-Click on the roll thumbnails below to view more information about each roll.
-
-<div class="listing" id="triphonola-rolls"></div>
 
 
 
@@ -131,11 +123,6 @@ Click on the roll thumbnails below to view more information about each roll.
 	{% include_relative redwelte-rolls.aton %}
 </script>
 
-<script id="triphonola-rolls-data" type="application/x-aton">
-	{% include_relative triphonola-rolls.aton %}
-</script>
-
-
 <!-- SCRIPT --------------------------------------------------------------- -->
 
 <script>
@@ -150,7 +137,6 @@ document.addEventListener("DOMContentLoaded", function() {
 	{% include_relative rolldata.js collection="greenwelte" %}
 	{% include_relative rolldata.js collection="licensee" %}
 	{% include_relative rolldata.js collection="redwelte" %}
-	{% include_relative rolldata.js collection="triphonola" %}
 
 	
 	var hash = location.hash;
