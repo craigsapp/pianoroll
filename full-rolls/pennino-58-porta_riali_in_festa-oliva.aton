@@ -16,7 +16,7 @@
 @TEMPO:
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 110730
-@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/pennino-58-porta_riali_in_festa-oliva
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122
 @FILEBASE: pennino-58-porta_riali_in_festa-oliva
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
@@ -55,7 +55,6 @@
 @PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/pennino-58-porta_riali_in_festa-oliva
 @@END: AUTOMATIC
 @@END:	ANALYSES
-@@END: ROLL
 @@END: ROLL
 
 
