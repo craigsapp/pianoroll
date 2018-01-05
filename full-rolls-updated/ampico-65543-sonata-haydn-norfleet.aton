@@ -1,0 +1,65 @@
+
+
+
+
+@@START: ROLL
+@TITLE: Sonata in D major, Hob. XVI:37
+@IMSLP: http://imslp.org/wiki/Keyboard_Sonata_in_D_major,_Hob.XVI:37_(Haydn,_Joseph)
+@SCOREPDF: 
+@COMPOSER: {Haydn}
+@PERFORMER: Helen {Norfleet}
+@CATALOG: Ampico 65543-H
+@YEAR: 1925
+@PRICE: 2.00
+@TYPE:	original
+@FORMAT: ampicoA
+@TEMPO: 85
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 268710
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122
+@FILEBASE: ampico-65543-sonata-haydn-norfleet
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@RECUTTER: 
+@COPYRIGHT: 
+@NOTES:	
+The green line on the roll indicates the expression (dynamics) encoded on the roll.
+See the article <a target="_blank" href="https://stacks.stanford.edu/file/druid:pf614mb6934/31-03.pdf">The Great Green Line Mystery</a> by Vernon Brown in The AMICA Bulletin 29/6 (Nov./Dec. 1992).
+<p>
+Also found at <a target="_blank" href="https://findingaids.library.unt.edu/?p=collections/findingaid&id=274&q=mary&rootcontentid=71537#.WhZ0xrQ-cUE">UNT</a>.
+@PHYSICAL_NOTES: Contains large section in the middle of the roll that needs repair in order to scan properly.  Close to end of roll on right, there are edge tears which should be fixed to recover expression data:
+<p>
+<img src="occluded-expression.png">
+@SCAN_NOTES: Damaged region in middle of roll not suitable for note extraction.  This is most of the
+second movement. Black regions are a hand guiding the loose fragments over the scanning tube.
+@PHYSICAL_NOTES: 
+@SCAN_NOTES:
+@YOUTUBE:
+@SUL_BARCODE: 
+@CATKEY:	
+@DRUID: 
+@SOURCEID: 
+@SUL_CALLNUMBER: 
+@DIGITIZER: CSS
+@SCAN_DATE: 2017/11/16
+@ANCHOR: norfleet
+@DUPCOUNT: 2
+@DUPLICATE:
+	<ul> 
+	<li> &bullet; 2 repeated frames at rows 186900 and 186930.
+	<li> &bullet; 2 repeated frames at rows 262170 and 262200.
+	</ul>
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@DESCRIPTION: Color-channel intensity histograms
+@PLOTURL: https://plot.ly/~craigsapp/32.embed
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/ampico-rolls/ampico-65543H-Haydn-SonataDmaj-Norfleet-1925-histograms.txt
+@@END:	ANALYSIS
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/ampico-65543-sonata-haydn-norfleet
+@@END: AUTOMATIC
+@@END:	ANALYSES
+
+
+
