@@ -195,9 +195,9 @@ Handlebars.registerHelper('curleybold', function(string) {
 //
 
 Handlebars.registerHelper('thumbnail', function(data) {
-	var druid = data.DRUID;
+	var filebase = data.FILEBASE;
 	var url = data.ANALYSES.AUTOMATIC.PLOTURL;
-	var output = url + "/druid-" + druid + "-thumbnail.jpg";
+	var output = url + "/" + filebase + "-thumbnail.jpg";
 	return new Handlebars.SafeString(output);
 });
 
@@ -222,7 +222,7 @@ Handlebars.registerHelper('imglocation', function(data) {
 
 Handlebars.registerHelper('audiosource', function(data) {
 	var url = data.ANALYSES.AUTOMATIC.PLOTURL;
-	url += "/druid-" + data.DRUID + "-analysis/midi.mp3";
+	url += "/" + data.FILEBASE + "-analysis/midi.mp3";
 	return new Handlebars.SafeString(url);
 });
 
@@ -233,8 +233,8 @@ Handlebars.registerHelper('audiosource', function(data) {
 // Handlebars helper "realurl" --
 //
 
-Handlebars.registerHelper('realurl', function(url, druid) {
-	var output = url + "/druid-" + druid + "-analysis";
+Handlebars.registerHelper('realurl', function(url, filebase) {
+	var output = url + "/" + filebase + "-analysis";
 	return new Handlebars.SafeString(output);
 });
 
