@@ -1,0 +1,56 @@
+
+
+
+@@START: ROLL
+@TITLE: D'un Cahier d'Esquisses
+@IMSLP: 
+@SCOREPDF: 
+@COMPOSER: Claude {Debussy}
+@PERFORMER: Claude {Debussy}
+@CATALOG: Welte-Mignon 2734
+@YEAR: 
+@PRICE: 
+@TYPE:	recut
+@FORMAT: licensee
+@TEMPO:
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 156990
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/licensee-2734-recut-equisses-debussy-debussy
+@FILEBASE: licensee-2734-recut-equisses-debussy-debussy
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@RECUTTER: Transcribed from the original Red Welte roll by Richard {Tonnesen}.
+@COPYRIGHT: 1985 Custom Music Rolls, Richardson, TX, U.S.A.
+@NOTES: Transcription changes roll format from red roll to licensee.
+	Has the date 9/25/84 punched onto the end of the roll.
+@PHYSICAL_NOTES: 
+@SCAN_NOTES:
+@YOUTUBE:
+@SUL_BARCODE: 36105225786396
+@CATKEY: 11347014
+@DRUID: 
+@SOURCEID: 
+@SUL_CALLNUMBER: CONDON ROLL 660
+@DIGITIZER: CSS
+@SCAN_DATE: 2017/11/16
+@ANCHOR: tonnesen
+@DUPCOUNT: 1
+@DUPLICATE:
+	<ul> 
+	<li> &bullet; 4 repeated frames at rows 52050, 52080, 52110 and 52140
+	</ul>
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@DESCRIPTION: Color intensity histograms
+@PLOTURL: https://plot.ly/~craigsapp/34.embed
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/licensee-2734-recut-equisses-debussy-debussy/licensee-2734-recut-equisses-debussy-debussy-histograms.txt
+@@END:	ANALYSIS
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/licensee-2734-recut-equisses-debussy-debussy
+@@END: AUTOMATIC
+@@END:	ANALYSES
+@@END: ROLL
+
+
+
