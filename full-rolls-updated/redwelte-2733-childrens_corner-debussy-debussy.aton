@@ -16,8 +16,8 @@
 @TEMPO: [none]
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 521490
-@BASEURL: 
-@FILEBASE: redwelte-2733
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122
+@FILEBASE: redwelte-2733-childrens_corner-debussy-debussy
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
 @RECUTTER: 
@@ -37,7 +37,7 @@
 @@BEGIN: ANALYSES
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
-@PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/acceptance_test-20171219/redwelte-2733-childrens_corner-debussy-debussy
+@PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/redwelte-2733-childrens_corner-debussy-debussy
 @@END: AUTOMATIC
 @@END:	ANALYSES
 @@END: ROLL
