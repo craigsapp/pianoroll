@@ -70,7 +70,6 @@ Click on the roll thumbnails below to view more information about each roll.
 "Green roll" are usually green-hue Welte-Mignon rolls produced from
 1922 to 1932 in Freiburg, Germany by Welte & Sons.  They have 98
 rows of holes spaced 9 per inch, and a width of 11.25 inches.
-
 Click on the roll thumbnails below to view more information about each roll.  
 <div class="listing" id="greenwelte-rolls"></div>
 
@@ -82,7 +81,6 @@ Click on the roll thumbnails below to view more information about each roll.
 
 <a name="redwelte_rolls"></a>
 <h2> Red Welte Rolls </h2>
-
 "Red rolls" are usually red-colored Welte-Mignon rolls produced by
 <a target="_blank" href="https://en.wikipedia.org/wiki/Welte-Mignon">Welte
 & Sons</a>.  They <a target="_blank"
@@ -96,6 +94,12 @@ holes per inch, with the width of the roll being about 12.9 inches.
 Click on the roll thumbnails below to view more information about
 each roll.
 <div class="listing" id="redwelte-rolls"></div>
+
+<a name="nonreproducing_rolls"></a>
+<h2> Non-reproducing Rolls </h2>
+This are rolls which are not recording a live pianist.
+Click on the roll thumbnails below to view more information about each roll.
+<div class="listing" id="nonreproducing-rolls"></div>
 
 
 
@@ -123,6 +127,10 @@ each roll.
 	{% include_relative redwelte-rolls.aton %}
 </script>
 
+<script id="nonreproducing-rolls-data" type="application/x-aton">
+	{% include_relative nonrepdocuding-rolls.aton %}
+</script>
+
 <!-- SCRIPT --------------------------------------------------------------- -->
 
 <script>
@@ -137,6 +145,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	{% include_relative rolldata.js collection="greenwelte" %}
 	{% include_relative rolldata.js collection="licensee" %}
 	{% include_relative rolldata.js collection="redwelte" %}
+	{% include_relative rolldata.js collection="nonreproducing" %}
 
 	
 	var hash = location.hash;

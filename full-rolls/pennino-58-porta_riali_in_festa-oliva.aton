@@ -1,0 +1,62 @@
+
+
+
+@@START: ROLL
+@TITLE: Porta Riali In Festa
+@ALTTITLE: Festino Palermitano
+@IMSLP: 
+@SCOREPDF: 
+@COMPOSER: Cav. S. C. {Oliva}; lyrics by C. Piraino Ajello
+@PERFORMER: 
+@CATALOG: Pennino 58
+@YEAR: 
+@PRICE: $1.25
+@TYPE:	original
+@FORMAT: pennino
+@TEMPO:
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 110730
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/pennino-58-porta_riali_in_festa-oliva
+@FILEBASE: pennino-58-porta_riali_in_festa-oliva
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@RECUTTER: 
+@COPYRIGHT: Pelliccio & Vestuto Co.
+@NOTES:	Popular Italian Word Roll. F. Pennino, Brooklyn, NY.  From Craig's collection (not Stanford Libraries).
+@PHYSICAL_NOTES: 
+@SCAN_NOTES:
+@YOUTUBE:
+@SUL_BARCODE: 
+@CATKEY:	
+@DRUID: 
+@SOURCEID: 
+@SUL_CALLNUMBER: 
+@DIGITIZER: CSS
+@SCAN_DATE: 2017/11/22
+@ANCHOR: pennino
+@DUPCOUNT: 6
+@DUPLICATE:
+	<ul>
+	<li> &bullet; 3 repeated frames at rows 0, 30, and 90.
+	<li> &bullet; 2 repeated frames at rows 120 and 150.
+	<li> &bullet; 2 repeated frames at rows 240 and 270.
+	<li> &bullet; 3 repeated frames at rows 330, 360 and 390.
+	<li> &bullet; 3 repeated frames at rows 480, 510 and 540.
+	<li> &bullet; 10 repeated frames at rows 77190 and 77220, 77250, 77280, 77310, 77340, 77370, 77400, 77430 and 77460.
+	</ul>
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@DESCRIPTION: Color-channel intensity histograms
+@PLOTURL: https://plot.ly/~craigsapp/16.embed
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/pennino-58-porta_riali_in_festa-oliva/pennino-58-porta_riali_in_festa-oliva-histograms.txt
+@@END:	ANALYSIS
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/pennino-58-porta_riali_in_festa-oliva
+@@END: AUTOMATIC
+@@END:	ANALYSES
+@@END: ROLL
+@@END: ROLL
+
+
+
