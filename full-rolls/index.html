@@ -129,6 +129,11 @@ onto the rolls.
 Click on the roll thumbnails below to view more information about each roll.
 <div class="listing" id="metrostyle-rolls"></div>
 
+<a name="organ_rolls"></a>
+<h2> Organ Rolls </h2>
+Click on the roll thumbnails below to view more information about each roll.
+<div class="listing" id="organ-rolls"></div>
+
 <a name="qrs_rolls"></a>
 <h2> QRS Rolls </h2>
 Rolls from the QRS company.
@@ -175,6 +180,10 @@ Click on the roll thumbnails below to view more information about each roll.
 	{% include_relative metrostyle-rolls.aton %}
 </script>
 
+<script id="organ-rolls-data" type="application/x-aton">
+	{% include_relative organ-rolls.aton %}
+</script>
+
 <script id="qrs-rolls-data" type="application/x-aton">
 	{% include_relative qrs-rolls.aton %}
 </script>
@@ -195,6 +204,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	{% include_relative rolldata.js collection="redwelte" %}
 	{% include_relative rolldata.js collection="nonreproducing" %}
 	{% include_relative rolldata.js collection="metrostyle" %}
+	{% include_relative rolldata.js collection="organ" %}
 	{% include_relative rolldata.js collection="qrs" %}
 
 	

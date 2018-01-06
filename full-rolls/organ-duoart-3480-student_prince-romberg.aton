@@ -1,0 +1,62 @@
+
+
+
+@@START: ROLL
+@TITLE: Student Prince
+@IMSLP: 
+@SCOREPDF: 
+@COMPOSER: {ROMBERG}
+@PERFORMER: 
+@CATALOG: Duo-Art {3480}
+@YEAR: 
+@PRICE: 
+@TYPE:	recut
+@FORMAT: organ176
+@TEMPO:
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 234090
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/organ-duoart-3480-student_prince-romberg
+@FILEBASE: organ-duoart-3480-student_prince-romberg
+@LDPI: 300.32 &pm; 0.19
+@WDPI: 251.48
+@RECUTTER: Perforated by Carl {Lambie}, Made by Kegg Pipe Organ Builders, Uniontown, Ohio.
+@COPYRIGHT: 
+@NOTES:	Organ roll, 176-notes.
+For Aeolian Pipe Organ.  
+<a target="_blank" href="https://www.mmdigest.com/Gallery/MMMedia/aeo176nList.html">List of Aeolian 176-note Duo-Art Residence Organ Rolls</a>.
+@PHYSICAL_NOTES: 
+@SCAN_NOTES:
+@YOUTUBE:
+@SUL_BARCODE: 
+@CATKEY:	
+@DRUID: 
+@SOURCEID: 
+@SUL_CALLNUMBER: 
+@DIGITIZER: CSS
+@SCAN_DATE: 2017/11/22
+@ANCHOR: lambie
+@DUPCOUNT: 6
+@DUPLICATE:
+	<ul> 
+	<li> &bullet; 2 repeated frames at rows 50010 and 50040.
+	<li> &bullet; 3 repeated frames at rows 58380, 58410 and 58440.
+	<li> &bullet; 3 repeated frames at rows 116130, 116160, and 116190.
+	<li> &bullet; 3 repeated frames at rows 127590, 127620 and 127650.
+	<li> &bullet; 2 repeated frames at rows 159210 and 159240.
+	<li> &bullet; 5 repeated frames at rows 205380, 205410, 205440, 205470 and 205500.
+	</ul>
+@@BEGIN: ANALYSES
+@@BEGIN: ANALYSIS
+@PLOTURL: https://plot.ly/~craigsapp/24.embed
+@DESCRIPTION: Color-channel intensity histograms
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/organ-duoart-3480-student_prince-romberg/organ-duoart-3480-student_prince-romberg-histograms.txt
+@@END:	ANALYSIS
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/organ-duoart-3480-student_prince-romberg
+@@END: AUTOMATIC
+@@END:	ANALYSES
+@@END: ROLL
+
+
+
