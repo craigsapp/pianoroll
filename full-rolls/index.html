@@ -49,6 +49,32 @@ Here is a <a target="_blank" href="https://docs.google.com/spreadsheets/d/16s-SU
 <iframe style="width:800px; height:300px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSisrKCScUBo5ypBz8WIPQcY17JeQMsSRGXSkeRZ3Svs6fU1upZSKJO80Lyz-crsj79enRJlt3Xdcsk/pubhtml?gid=2082168260&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
 
+<h3> Frame duplications </h3>
+
+<p>
+16 of the roll scans contain frame-duplication errors caused by an earlier
+version of the scanning software (and camera driver), where pieces of the images
+are duplicated and over-write frames missing or dropped when recording
+the images.  Consecutive frame-duplication errors are marked in the reduced JPEG images,
+but not in the original TIFF.  The marks consist of a solid color covering
+1/4 of the problemmatic frame.  For each adjacent frame, the duplication marker
+shifts to the other side of the image.  Here is an example from the
+<a href="#pennino">Pennino</a> roll where there are 10 successive duplicate frames
+(representing 1 physical inch on the rolls):
+<p>
+<img src="10duplications.png">
+<p>
+Most commonly there will be a burst of shorter dupliciation errors at the
+start of a scan, such as this example from the <a href="#pennino">same roll</a>:
+<p>
+<img src="startduplications.png">
+<p>
+Three colors are cycled through to mark the frame duplications to separate
+separate duplcation of a different frame, so the above image contains
+six separate duplication events, each two to three frames in length.
+Scans from December 2017 and later do not (should not) have duplication errors
+since the scanning software will abort scanning if any are detected.
+
 <!-- LISTINGS FOR EACH ROLL TYPE ------------------------------------------ -->
 
 <a name="ampico_rolls"></a>
