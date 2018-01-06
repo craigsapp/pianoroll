@@ -30,6 +30,7 @@ move to the rolls for that format.
  <a href="#ampico_rolls">Ampico</a>&nbsp;|
  <a href="#organ_rolls">Organ</a>&nbsp;|
  <a href="#metrostyle_rolls">Metrostyle</a>&nbsp;|
+ <a href="#qrs_rolls">QRS</a>&nbsp;|
  <a href="#test_rolls">Test&nbsp;Rolls</a>&nbsp;|
  <a href="#nonreproducing_rolls">Other</a>&nbsp;|
  <a href="#calibration_rolls">Calibration</a>
@@ -102,6 +103,12 @@ onto the rolls.
 Click on the roll thumbnails below to view more information about each roll.
 <div class="listing" id="metrostyle-rolls"></div>
 
+<a name="qrs_rolls"></a>
+<h2> QRS Rolls </h2>
+Rolls from the QRS company.
+Click on the roll thumbnails below to view more information about each roll.
+<div class="listing" id="qrs-rolls"></div>
+
 <a name="nonreproducing_rolls"></a>
 <h2> Non-reproducing Rolls </h2>
 This are rolls which are not recording a live pianist.
@@ -142,6 +149,10 @@ Click on the roll thumbnails below to view more information about each roll.
 	{% include_relative metrostyle-rolls.aton %}
 </script>
 
+<script id="qrs-rolls-data" type="application/x-aton">
+	{% include_relative qrs-rolls.aton %}
+</script>
+
 <!-- SCRIPT --------------------------------------------------------------- -->
 
 <script>
@@ -158,6 +169,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	{% include_relative rolldata.js collection="redwelte" %}
 	{% include_relative rolldata.js collection="nonreproducing" %}
 	{% include_relative rolldata.js collection="metrostyle" %}
+	{% include_relative rolldata.js collection="qrs" %}
 
 	
 	var hash = location.hash;
