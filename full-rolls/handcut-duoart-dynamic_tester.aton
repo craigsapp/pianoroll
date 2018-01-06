@@ -1,0 +1,46 @@
+
+
+
+@@START: ROLL
+@TITLE: Duo-Art Dynamic Tester
+@IMSLP: 
+@SCOREPDF: 
+@COMPOSER: [none]
+@PERFORMER: [none]
+@CATALOG: [none]
+@YEAR: 16 November 1994
+@PRICE: 
+@TYPE:	handcut
+@FORMAT: duoart
+@TEMPO: [none]
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 111870
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/handcut-duoart-dynamic_tester
+@FILEBASE: handcut-duoart-dynamic_tester
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@RECUTTER: 
+@COPYRIGHT: 
+@NOTES:	Handmade roll by Denis Condon for checking Duo-Art expression on player piano.
+	Also as the note in red marker "a fiew Welte tests too // 21.4.98"
+	Welte test is taped to end of duo-art test.
+@PHYSICAL_NOTES: 
+@SCAN_NOTES: related to druid hq911yh4385.
+@SUL_BARCODE: 
+@CATKEY:	
+@DRUID: 
+@SOURCEID: sul:ars0163_da_dt_1994
+@SUL_CALLNUMBER: 
+@DIGITIZER: CSS
+@SCAN_DATE: 2017/11/22
+@ANCHOR: duoarttester1994
+@@BEGIN: ANALYSES
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/handcut-duoart-dynamic_tester
+@@END: AUTOMATIC
+@@END:	ANALYSES
+@@END: ROLL
+
+
+
