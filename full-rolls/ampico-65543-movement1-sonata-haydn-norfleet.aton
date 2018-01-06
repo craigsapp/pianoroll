@@ -37,11 +37,6 @@ repairs near the start of the second movmenet.
 @SCAN_DATE: 2017/12/06
 @ANCHOR: norfleet2
 @@BEGIN: ANALYSES
-@@BEGIN: ANALYSIS
-@DESCRIPTION: Color-channel intensity histograms
-@PLOTURL: https://plot.ly/~craigsapp/32.embed
-@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/ampico-65543-movement1-sonata-haydn-norfleet/ampico-65543-movement1-sonata-haydn-norfleet-histograms.txt
-@@END:	ANALYSIS
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
 @PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/ampico-65543-movement1-sonata-haydn-norfleet
