@@ -1,0 +1,44 @@
+
+
+
+@@START: ROLL
+@TITLE: Inspector's Ampico Test Roll
+@IMSLP: 
+@SCOREPDF: 
+@COMPOSER: [none]
+@PERFORMER: [none]
+@CATALOG: Ampico {61391}H
+@YEAR: 1923
+@PRICE: 
+@TYPE:	original
+@FORMAT: ampicoA
+@TEMPO: 70
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 110880
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/ampico-61391-inspectors_test_roll
+@FILEBASE: ampico-61391-inspectors_test_roll
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@RECUTTER: 
+@COPYRIGHT: 
+@NOTES:	
+@PHYSICAL_NOTES: 
+@SCAN_NOTES:
+@SUL_BARCODE: 
+@CATKEY:	
+@DRUID: 
+@SOURCEID: sul:ars0163_am_61391h
+@SUL_CALLNUMBER: 
+@DIGITIZER: CSS
+@SCAN_DATE: 2017/11/22
+@ANCHOR: ampico_test_roll2
+@@BEGIN: ANALYSES
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/ampico-61391-inspectors_test_roll
+@@END: AUTOMATIC
+@@END:	ANALYSES
+@@END: ROLL
+
+
+
