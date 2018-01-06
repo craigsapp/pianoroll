@@ -1,0 +1,44 @@
+
+
+
+@@START: ROLL
+@TITLE: Modified Test Roll for red rolls
+@IMSLP: 
+@SCOREPDF: 
+@COMPOSER: [none]
+@PERFORMER: [none]
+@CATALOG: [none]
+@YEAR: 
+@PRICE: 
+@TYPE:	original
+@FORMAT: redwelte
+@TEMPO: [none]
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 84780
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/redwelte-test_roll
+@FILEBASE: redwelte-test_roll
+@LDPI: 300.32 &pm; 0.19
+@WDPI: 251.48
+@RECUTTER: 
+@COPYRIGHT: 
+@NOTES:	
+@PHYSICAL_NOTES: On beige paper (not red).  Cut from a longer test.
+@SCAN_NOTES:
+@SUL_BARCODE: 36105225773782
+@CATKEY:	11467900
+@DRUID: 
+@SOURCEID: sul:ars0163_wm_mtr
+@SUL_CALLNUMBER: CONDON ROLL 1367
+@DIGITIZER: CSS
+@SCAN_DATE: 2017/11/22
+@ANCHOR: redrolltest2
+@@BEGIN: ANALYSES
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/redwelte-test_roll
+@@END: AUTOMATIC
+@@END:	ANALYSES
+@@END: ROLL
+
+
+
