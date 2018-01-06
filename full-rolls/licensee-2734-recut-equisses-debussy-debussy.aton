@@ -3,8 +3,8 @@
 
 @@START: ROLL
 @TITLE: D'un Cahier d'Esquisses
-@IMSLP: 
-@SCOREPDF: 
+@IMSLP: http://imslp.org/wiki/D'un_cahier_d'esquisses_(Debussy%2C_Claude)
+@SCOREPDF: http://ks.imslp.net/files/imglnks/usimg/7/76/IMSLP239969-SIBLEY1802.22700.52e7-39087012762300score.pdf
 @COMPOSER: Claude {Debussy}
 @PERFORMER: Claude {Debussy}
 @CATALOG: Welte-Mignon {2734}
@@ -12,7 +12,7 @@
 @PRICE: 
 @TYPE:	recut
 @FORMAT: licensee
-@TEMPO:
+@TEMPO: 80
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 156990
 @BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/licensee-2734-recut-equisses-debussy-debussy
