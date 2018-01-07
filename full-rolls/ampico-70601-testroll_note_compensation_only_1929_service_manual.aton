@@ -1,0 +1,54 @@
+
+
+
+@@START: ROLL
+@TITLE: Ampico Test Roll: Note Compensation ONLY, 1929 Service Manual
+@IMSLP: 
+@SCOREPDF: 
+@COMPOSER: [none]
+@PERFORMER: [none]
+@CATALOG: Ampico 70601
+@YEAR: 
+@PRICE: 
+@TYPE:	original
+@FORMAT: ampicoB
+@TEMPO:
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 61020
+@BASEURL: 
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/ampico-70601-testroll_note_compensation_only_1929_service_manual
+@FILEBASE: ampico-70601-testroll_note_compensation_only_1929_service_manual
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@RECUTTER: 
+@COPYRIGHT: 
+@NOTES: Contains <a target="_blank" href="ampico-testroll-note-compensation-only-1929-service-manual-appendix.jpg">a one-page instruction sheet</a> in box.
+        <a target="_blank" href="https://stacks.stanford.edu/file/druid:dc917qr2688/33-02.pdf">The AMICA Bulletin March/April 1996, 33/2</a>
+        Keystone ad on page 116: mentions Ampico roll #70601 as being a "Note Compensation roll for adjusting
+        the Model "B" pneumatics".
+@PHYSICAL_NOTES: 
+@SCAN_NOTES:
+@YOUTUBE:
+@SUL_BARCODE: 
+@CATKEY:	
+@DRUID: 
+@SOURCEID: 
+@SUL_CALLNUMBER: 
+@DIGITIZER: CSS
+@SCAN_DATE: 2017/11/21
+@ANCHOR: 
+@@BEGIN: ANALYSES
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/ampico-70601-testroll_note_compensation_only_1929_service_manual
+@@END: AUTOMATIC
+@@BEGIN: ANALYSIS
+@DESCRIPTION: Color-channel intensity histograms
+@PLOTURL: https://plot.ly/~craigsapp/48.embed
+@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/ampico-testroll-note-compensation-only-1929-service-manual-histograms.txt
+@@END:  ANALYSIS
+@@END:  ANALYSES
+@@END: ROLL
+
+
+
