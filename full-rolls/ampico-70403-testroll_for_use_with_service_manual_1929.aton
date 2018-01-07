@@ -44,7 +44,6 @@
 @DESCRIPTION: Automatic analysis of scan
 @PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/ampico-70403-testroll_for_use_with_service_manual_1929
 @@END: AUTOMATIC
-@@END: ROLL
 @@BEGIN: ANALYSIS
 @DESCRIPTION: Color-channel intensity histograms
 @PLOTURL:
