@@ -1,0 +1,62 @@
+
+
+
+@@START: ROLL
+@TITLE: Repitition [sic] Test Roll (Welte)
+@IMSLP: 
+@SCOREPDF: 
+@COMPOSER: [none]
+@PERFORMER: [none]
+@CATALOG: [none]
+@YEAR: 
+@PRICE: 
+@TYPE:	original
+@FORMAT: greenwelte
+@TEMPO: [none]
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 126870
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/greenwelte-repetition_test_roll
+@FILEBASE: greenwelte-repetition_test_roll
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@RECUTTER: 
+@COPYRIGHT: 
+@NOTES:	
+	This roll plays each of the 88 notes of the key-board from lowest to
+	highest.  Has the number "25326" stamped at the end of the roll.
+	Leader has the following text, dated 1-7-1967 (probably  by Denis Condon):
+	<i>This is test number eleven from a Welte-Mignon 98er test roll.  
+	It is the second half (and the last part) of the original roll.  
+	It may be used as a repitition [sic] test for all player-pianos
+	taking rolls 11-1/4" wide at a scale of nine ports to the inch 
+	according to the Buffalo Convention of 1911.  The re-roll port at
+	the end will operate Welte 98ers and Aeolian players.</i>
+@PHYSICAL_NOTES: Left flange rim is 25% missing. Notice the numerous
+	tears on both edges of the roll.  In this case they are not
+	a problem since they do not cover or remove any note holes.
+@SCAN_NOTES: The aberration at the end of the roll is due to not
+	stopping the scanning while re-winding the roll.
+@YOUTUBE:
+@SUL_BARCODE: 36105225773725
+@CATKEY: 11467429
+@DRUID: 
+@SOURCEID:	sul:ars0163_wm_11
+@SUL_CALLNUMBER: CONDON ROLL 1092
+@DIGITIZER: CSS
+@SCAN_DATE: 2017/11/21
+@ANCHOR: greentest
+@@BEGIN: ANALYSES
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/greenwelte-repetition_test_roll
+@@END: AUTOMATIC
+@@BEGIN: ANALYSIS
+@DESCRIPTION: Color-channel intensity histograms
+@PLOTURL: https://plot.ly/~craigsapp/42.embed
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/greenwelte-repetition_test_roll/greenwelte-repetition_test_roll-histograms.txt
+@@END:	ANALYSIS
+@@END:	ANALYSES
+@@END: ROLL
+
+
+
