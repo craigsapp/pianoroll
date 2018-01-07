@@ -23,6 +23,11 @@
 @COPYRIGHT: 
 @NOTES:	
 @PHYSICAL_NOTES: On beige paper (not red).  Cut from a longer test.
+Not on red paper.  Contains lines for each hole row.
+Leader was added later (so may be a partial test roll).  The note on the
+leader says <i>Welte-Mignon modified test-roll.  This roll cannot be used to
+adjust the Mignon expression mechanism.</i>
+Note names are written in German on next to the holes for each pitch.
 @SCAN_NOTES:
 @SUL_BARCODE: 36105225773782
 @CATKEY:	11467900
@@ -32,6 +37,17 @@
 @DIGITIZER: CSS
 @SCAN_DATE: 2017/11/22
 @ANCHOR: redrolltest2
+@DUPCOUNT: 7
+@DUPLICATE:
+        <ul>
+        <li> &bullet; 3 repeated frames at rows 0, 30 and 60.
+        <li> &bullet; 2 repeated frames at rows 120 and 150.
+        <li> &bullet; 2 repeated frames at rows 240 and 270.
+        <li> &bullet; 2 repeated frames at rows 360 and 390.
+        <li> &bullet; 6 repeated frames at rows 450, 480, 510, 540, 570 and 600.
+        <li> &bullet; 2 repeated frames at rows 690 and 720.
+        <li> &bullet; 2 repeated frames at rows 780 and 810.
+        </ul>
 @@BEGIN: ANALYSES
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
