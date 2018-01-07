@@ -146,6 +146,19 @@ This are rolls which are not recording a live pianist.
 Click on the roll thumbnails below to view more information about each roll.
 <div class="listing" id="nonreproducing-rolls"></div>
 
+<a name="calibration_rolls"></a>
+<h2> Calibration Roll </h2>
+This section contains scans of a roll used to calibrate the
+horizontal and vertical DPI at the lower and upper camera setting.
+The lengthwise DPI was measured to be 300.24&pm;0.21 for the lower camera
+setting and 300.32&pm;0.19 in the upper camera setting.  The camera position
+should not affect the lengthwise DPI, and it doesn't.
+The width DPI was measured to be 301.39 pixels/inch for the lower camera
+setting and 251.48 pixels/inch for the upper camera setting.
+The calcuations for these values are on
+<a href="https://docs.google.com/spreadsheets/d/1OOC0NXxUMBS15NsSyTAnJv_4hsJqpxm9UKJ8w52S-sc/edit#gid=0">this spreadsheet</a>.
+<div class="listing" id="calibration-rolls"></div>
+
 
 
 <!-- ATON DATA ------------------------------------------------------------ -->
@@ -188,6 +201,10 @@ Click on the roll thumbnails below to view more information about each roll.
 	{% include_relative qrs-rolls.aton %}
 </script>
 
+<script id="calibration-rolls-data" type="application/x-aton">
+	{% include_relative calibration-rolls.aton %}
+</script>
+
 <!-- SCRIPT --------------------------------------------------------------- -->
 
 <script>
@@ -206,6 +223,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	{% include_relative rolldata.js collection="metrostyle" %}
 	{% include_relative rolldata.js collection="organ" %}
 	{% include_relative rolldata.js collection="qrs" %}
+	{% include_relative rolldata.js collection="calibration" %}
 
 	
 	var hash = location.hash;
