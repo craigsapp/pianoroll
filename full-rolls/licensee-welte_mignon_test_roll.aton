@@ -1,0 +1,50 @@
+
+
+
+@@START: ROLL
+@TITLE: Welte-Mignon [DeLuxe] Test Roll
+@IMSLP: 
+@SCOREPDF: 
+@COMPOSER: 
+@PERFORMER: 
+@CATALOG: [none]
+@YEAR: 
+@PRICE: 
+@TYPE:	original
+@FORMAT: licensee
+@TEMPO: [none]
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 131640
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-201721122/licensee-welte_mignon_test_roll
+@FILEBASE: licensee-welte_mignon_test_roll
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@RECUTTER: 
+@COPYRIGHT: 
+@NOTES:  Contains a <a target="_blank" href="weltemignon-deluxe-test-roll-appendix.jpg">one-page list of the tests on the roll</a>.
+@PHYSICAL_NOTES: 
+@SCAN_NOTES: Light band on right edge of paper is due to sunlight.
+@YOUTUBE:
+@SUL_BARCODE: 36105225773709
+@CATKEY: 11467427
+@DRUID: 
+@SOURCEID: 
+@SUL_CALLNUMBER: CONDON ROLL 935
+@DIGITIZER: CSS
+@SCAN_DATE: 2017/11/21
+@ANCHOR: deluxetest
+@@BEGIN: ANALYSES
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-201721122/licensee-welte_mignon_test_roll
+@@END: AUTOMATIC
+@@BEGIN: ANALYSIS
+@DESCRIPTION: Color-channel intensity histograms
+@PLOTURL:
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/full-scans/test-rolls/weltemignon-deluxe-test-roll-histograms.txt
+@@END:  ANALYSIS
+@@END:  ANALYSES
+@@END: ROLL
+
+
+

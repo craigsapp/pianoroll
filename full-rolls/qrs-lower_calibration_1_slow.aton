@@ -1,0 +1,52 @@
+
+
+
+@@START: ROLL
+@TITLE: My Coloring Book
+@IMSLP: 
+@SCOREPDF: 
+@COMPOSER: 
+@PERFORMER: 
+@CATALOG: QRS Word Roll 9914
+@YEAR: 
+@PRICE: 
+@TYPE:	original
+@FORMAT: qrs
+@TEMPO:
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 49410
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/qrs-lower_calibration_1_slow
+@FILEBASE: qrs-lower_calibration_1_slow
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@RECUTTER: 
+@COPYRIGHT: 
+@NOTES: There are 13 marks along the length of the roll, numbered 0 through 12.
+        These are one foot apart, and should be 3600 pixels apart if the DPI is 300
+        (the lower camera setting target DPI).
+@PHYSICAL_NOTES: 
+@SCAN_NOTES: Scanned in the lower camera position.  Bright vertical line on
+        right side of image is due to the sun hitting the roll. Darker region
+        near the end is when a cloud passed in front of the sun.
+@YOUTUBE:
+@SUL_BARCODE: 
+@CATKEY:	
+@DRUID: 
+@SOURCEID: 
+@SUL_CALLNUMBER: 
+@DIGITIZER: CSS
+@SCAN_DATE: 2017/11/16
+@ANCHOR: lcalibration1
+@@BEGIN: ANALYSES
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/qrs-lower_calibration_1_slow
+@@END: AUTOMATIC
+@@BEGIN: ANALYSIS
+@PLOTURL: https://plot.ly/~craigsapp/30.embed
+@DESCRIPTION: Color-channel intensity histograms
+@DATAURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/qrs-lower_calibration_1_slow/qrs-lower_calibration_1_slow-histograms.txt
+@@END:  ANALYSIS
+@@END:  ANALYSES
+@@END: ROLL
+
