@@ -4,4 +4,5 @@
 {% include_relative duoart-testroll_no3.aton %}
 {% include_relative handcut-duoart-dynamic_tester.aton %}
 {% include_relative handcut-duoart-test_roll.aton %}
+{% include_relative duoart-dynamic_tests_1987.aton %}
 

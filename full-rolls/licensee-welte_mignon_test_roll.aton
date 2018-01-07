@@ -15,7 +15,7 @@
 @TEMPO: [none]
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 131640
-@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-201721122/licensee-welte_mignon_test_roll
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/licensee-welte_mignon_test_roll
 @FILEBASE: licensee-welte_mignon_test_roll
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
@@ -36,7 +36,7 @@
 @@BEGIN: ANALYSES
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
-@PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-201721122/licensee-welte_mignon_test_roll
+@PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/licensee-welte_mignon_test_roll
 @@END: AUTOMATIC
 @@BEGIN: ANALYSIS
 @DESCRIPTION: Color-channel intensity histograms

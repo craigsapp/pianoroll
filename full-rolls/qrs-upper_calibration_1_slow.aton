@@ -12,7 +12,7 @@
 @PRICE: 
 @TYPE:	original
 @FORMAT: qrs
-@TEMPO:
+@TEMPO: 70
 @PIXEL_WIDTH: 4096
 @PIXEL_LENGTH: 50880
 @BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/qrs-upper_calibration_1_slow
