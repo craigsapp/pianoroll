@@ -3,4 +3,5 @@
 {% include_relative ampico-65543-movement1-sonata-haydn-norfleet.aton %}
 {% include_relative ampico-61391-inspectors_test_roll.aton %}
 {% include_relative ampico-70601-testroll_note_compensation_only_1929_service_manual.aton %}
+{% include_relative ampico-70403-testroll_for_use_with_service_manual_1929.aton %}
 

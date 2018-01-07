@@ -1,0 +1,57 @@
+
+
+
+@@START: ROLL
+@TITLE: Ampico Test Roll for use with Service Manual 1929
+@IMSLP: 
+@SCOREPDF: 
+@COMPOSER: 
+@PERFORMER: 
+@CATALOG: Ampico 70403-H
+@YEAR: 
+@PRICE: 2.00
+@TYPE:	original
+@FORMAT: ampicoB
+@TEMPO:
+@PIXEL_WIDTH: 4096
+@PIXEL_LENGTH: 192870
+@BASEURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/ampico-70403-testroll_for_use_with_service_manual_1929
+@FILEBASE: ampico-70403-testroll_for_use_with_service_manual_1929
+@LDPI: 300.25 &pm; 0.21
+@WDPI: 301.39
+@RECUTTER: 
+@COPYRIGHT: 
+@NOTES: For the Ampico Model "B".
+@PHYSICAL_NOTES: 
+@SCAN_NOTES:
+@YOUTUBE:
+@SUL_BARCODE: 
+@CATKEY:	
+@DRUID: 
+@SOURCEID: 
+@SUL_CALLNUMBER: 
+@DIGITIZER: CSS
+@SCAN_DATE: 2017/11/21
+@ANCHOR: 70403H
+@DUPCOUNT: 2
+@DUPLICATE:
+        <ul>
+        <li> &bullet; 2 repeated frames at rows 109200 and 109230.
+        <li> &bullet; 6 repeated frames at rows 118830, 118860, 118890, 118920, 118950 and 118980.
+        </ul>
+@@BEGIN: ANALYSES
+@@BEGIN: AUTOMATIC
+@DESCRIPTION: Automatic analysis of scan
+@PLOTURL: https://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/ampico-70403-testroll_for_use_with_service_manual_1929
+@@END: AUTOMATIC
+@@END: ROLL
+@@BEGIN: ANALYSIS
+@DESCRIPTION: Color-channel intensity histograms
+@PLOTURL:
+@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/ampico-70403-testroll_for_use_with_service_manual_1929/ampico-70403-testroll_for_use_with_service_manual_1929-histograms.txt
+@@END:  ANALYSIS
+@@END:  ANALYSES
+@@END: ROLL
+
+
+
