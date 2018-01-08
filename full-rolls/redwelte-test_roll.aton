@@ -53,6 +53,11 @@ Note names are written in German on next to the holes for each pitch.
 @DESCRIPTION: Automatic analysis of scan
 @PLOTURL: http://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/redwelte-test_roll
 @@END: AUTOMATIC
+@@BEGIN: ANALYSIS
+@DESCRIPTION: Color-channel intensity histograms
+@PLOTURL: https://plot.ly/~craigsapp/40.embed
+@DATAURL: http://ccrma.stanford.edu/~craig/piano-roll-project/pre_test-20171122/redwelte-test_roll/redwelte-test_roll-histograms.txt
+@@END:  ANALYSIS
 @@END:	ANALYSES
 @@END: ROLL
 
