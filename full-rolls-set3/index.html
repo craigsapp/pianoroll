@@ -113,7 +113,7 @@ Handlebars.registerHelper('curleybold', function(string) {
 Handlebars.registerHelper('thumbnail', function(data) {
 	var druid = data.DRUID;
 	var url = data.ANALYSES.AUTOMATIC.PLOTURL;
-	var output = url + "/druid-" + druid + "-thumbnail.jpg";
+	var output = url + "/" + druid + "-thumbnail.jpg";
 	return new Handlebars.SafeString(output);
 });
 
@@ -138,7 +138,7 @@ Handlebars.registerHelper('imglocation', function(data) {
 
 Handlebars.registerHelper('audiosource', function(data) {
 	var url = data.ANALYSES.AUTOMATIC.PLOTURL;
-	url += "/druid-" + data.DRUID + "-analysis/midi.mp3";
+	url += "/" + data.DRUID + "-analysis/midi.mp3";
 	return new Handlebars.SafeString(url);
 });
 
@@ -150,7 +150,7 @@ Handlebars.registerHelper('audiosource', function(data) {
 //
 
 Handlebars.registerHelper('realurl', function(url, druid) {
-	var output = url + "/druid-" + druid + "-analysis";
+	var output = url + "/" + druid + "-analysis";
 	return new Handlebars.SafeString(output);
 });
 
