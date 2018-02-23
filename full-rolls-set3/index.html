@@ -175,6 +175,9 @@ Handlebars.registerHelper('composerperformer', function(data) {
 	var ccount = (composer.match(/{/g) || []).length;
 	var pcount = (performer.match(/{/g) || []).length;
 
+	composer = composer.replace(/,.*/, "");
+	performer = performer.replace(/,.*/, "");
+
 	if (ccount == 1) {
 		composer = composer.replace(/.*{/, "").replace(/}.*/, "");
 	}
