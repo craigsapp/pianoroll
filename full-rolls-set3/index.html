@@ -146,6 +146,19 @@ Handlebars.registerHelper('audiosource', function(data) {
 
 //////////////////////////////
 //
+// Handlebars helper "midisource" --
+//
+
+Handlebars.registerHelper('midisource', function(data) {
+	var url = data.ANALYSES.AUTOMATIC.PLOTURL;
+	url += "/" + data.DRUID + "-analysis/midi.mid";
+	return new Handlebars.SafeString(url);
+});
+
+
+
+//////////////////////////////
+//
 // Handlebars helper "realurl" --
 //
 
