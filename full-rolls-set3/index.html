@@ -159,6 +159,25 @@ Handlebars.registerHelper('midisource', function(data) {
 
 //////////////////////////////
 //
+// Handlebars helper "fixtitle" --
+//
+
+Handlebars.registerHelper('fixtitle', function(text) {
+	text = text.replace(/\s*\.\s*$/, "")
+	           .replace(/\s*\:\s*$/, "")
+	           .replace(/-dur\b/gi, " major")
+	           .replace(/-moll\b/gi, " minor")
+	           .replace(/\s+flat\b/g, "&#9837;")
+	           .replace(/\s+sharp\b/g, "&#9839;")
+	           ;
+
+	return new Handlebars.SafeString(text);
+});
+
+
+
+//////////////////////////////
+//
 // Handlebars helper "realurl" --
 //
 
