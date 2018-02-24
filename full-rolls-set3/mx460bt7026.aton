@@ -33,6 +33,7 @@
 @DIGITIZER:  Megan
 @SCAN_DATE:  2/15/2018
 @ANCHOR:  mx460bt7026
+@WARNING: duplication, dust, ffc, color, threshold
 @@BEGIN: ANALYSES
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan

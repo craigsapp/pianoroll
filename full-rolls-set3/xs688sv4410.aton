@@ -33,6 +33,7 @@
 @DIGITIZER:  Megan
 @SCAN_DATE:  2/14/2018
 @ANCHOR:  xs688sv4410
+@WARNING: duplication, [shift ok], ffc, color, threshold
 @@BEGIN: ANALYSES
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan

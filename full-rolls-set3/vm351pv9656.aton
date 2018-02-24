@@ -33,6 +33,7 @@
 @DIGITIZER:  Megan
 @SCAN_DATE:  2/16/2018
 @ANCHOR:  vm351pv9656
+@WARNING: ffc, color, threshold
 @@BEGIN: ANALYSES
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan

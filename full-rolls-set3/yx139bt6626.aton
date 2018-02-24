@@ -33,6 +33,7 @@
 @DIGITIZER:  Megan
 @SCAN_DATE:  2/15/2018
 @ANCHOR:  yx139bt6626
+@WARNING: ffc, color, threshold
 @@BEGIN: ANALYSES
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan

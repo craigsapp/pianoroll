@@ -5,7 +5,7 @@
 @TITLE:  Scherzo e-Moll
 @IMSLP: 
 @SCOREPDF: 
-@COMPOSER:  Mendelssohn-Bartholdy, Felix
+@COMPOSER:  {Mendelssohn}-Bartholdy, Felix
 @PERFORMER:  Scharwenka, Xaver
 @CATALOG:  Welte-Mignon 232
 @YEAR:  1905 March 7
@@ -33,6 +33,7 @@
 @DIGITIZER:  Megan
 @SCAN_DATE:  2/14/2018
 @ANCHOR:  mz508vq7890
+@WARNING: ffc, color, threshold
 @@BEGIN: ANALYSES
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan

@@ -5,7 +5,7 @@
 @TITLE:  Lied ohne Worte, op. 62, [no. 4], no. 28
 @IMSLP: 
 @SCOREPDF: 
-@COMPOSER:  Mendelssohn-Bartholdy, Felix
+@COMPOSER:  {Mendelssohn}-Bartholdy, Felix
 @PERFORMER:  M&#xF6;hle, Hermann
 @CATALOG:  Welte-Mignon 231
 @YEAR:  
@@ -33,6 +33,7 @@
 @DIGITIZER:  Megan
 @SCAN_DATE:  2/14/2018
 @ANCHOR:  ym420hv4366
+@WARNING: duplication, ffc, color, threshold
 @@BEGIN: ANALYSES
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan

@@ -5,7 +5,7 @@
 @TITLE:  Lied ohne Worte.
 @IMSLP: 
 @SCOREPDF: 
-@COMPOSER:  Mendelssohn-Bartholdy, Felix
+@COMPOSER:  {Mendelssohn}-Bartholdy, Felix
 @PERFORMER:  Adam-Benard, Eugenie
 @CATALOG:  Welte-Mignon 216
 @YEAR:  
@@ -33,6 +33,7 @@
 @DIGITIZER:  Megan
 @SCAN_DATE:  2/15/2018
 @ANCHOR:  xn796bh4368
+@WARNING: duplication, ffc, color, threshold
 @@BEGIN: ANALYSES
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan

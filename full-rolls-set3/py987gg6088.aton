@@ -5,9 +5,9 @@
 @TITLE:  Faust prelude
 @IMSLP: 
 @SCOREPDF: 
-@COMPOSER:  
-@PERFORMER:  
-@CATALOG:  
+@COMPOSER:  Charles {Gounoud}
+@PERFORMER:  E. {Adam-Bernard}
+@CATALOG:  Welte-Mignon 57
 @YEAR:  
 @PRICE: 
 @TYPE:	 original
@@ -15,7 +15,7 @@
 @TEMPO: 
 @PIXEL_WIDTH:  4096
 @PIXEL_LENGTH:  216480
-@BASEURL:  
+@BASEURL:  https://ccrma.stanford.edu/~craig/piano-roll-project/redwelte-20180216/py987gg6088
 @FILEBASE:  py987gg6088
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
@@ -33,6 +33,7 @@
 @DIGITIZER:  Megan
 @SCAN_DATE:  2/15/2018
 @ANCHOR:  py987gg6088
+@WARNING: duplication, ffc, color, threshold
 @@BEGIN: ANALYSES
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan

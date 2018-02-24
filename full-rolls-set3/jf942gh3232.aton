@@ -33,6 +33,7 @@
 @DIGITIZER:  DC
 @SCAN_DATE:  02/15/2018
 @ANCHOR:  jf942gh3232
+@WARNING: duplication, ffc, color, threshold
 @@BEGIN: ANALYSES
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
