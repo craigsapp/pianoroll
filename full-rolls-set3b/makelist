@@ -1,0 +1,23 @@
+#!/usr/bin/perl
+
+use strict;
+
+my @list = glob "*.aton";
+
+my %mapping;
+
+foreach my $file (@list) {
+	my $line = `grep "^\@CATALOG:" $file`;
+	$line =~ /(\d+)/;
+	my $number = $1;
+	$mapping{$number} = $file;
+}
+
+my @keys = sort { $a <=> $b } keys %mapping;
+
+foreach my $key (@keys) {
+	print "{% include_relative $mapping{$key} %}\n";
+}
+
+
+
