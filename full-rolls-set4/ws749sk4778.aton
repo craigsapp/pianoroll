@@ -15,7 +15,7 @@
 @TEMPO: 98.4251968504
 @PIXEL_WIDTH:  4096
 @PIXEL_LENGTH:  
-@BASEURL:  https://ccrma.stanford.edu/~craig/piano-roll-project/redwelte-20180216/ws749sk4778
+@BASEURL:  https://ccrma.stanford.edu/~craig/piano-roll-project/20180601/ws749sk4778
 @FILEBASE:  ws749sk4778
 @LDPI: 300.25 &pm; 0.21
 @WDPI: 301.39
@@ -36,7 +36,7 @@
 @@BEGIN: ANALYSES
 @@BEGIN: AUTOMATIC
 @DESCRIPTION: Automatic analysis of scan
-@PLOTURL:  https://ccrma.stanford.edu/~craig/piano-roll-project/redwelte-20180216/ws749sk4778
+@PLOTURL:  https://ccrma.stanford.edu/~craig/piano-roll-project/20180601/ws749sk4778
 @@END: AUTOMATIC
 @@END:	ANALYSES
 @@END: ROLL
