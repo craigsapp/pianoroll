@@ -58,6 +58,7 @@ function displayEntries(entries, counter) {
 	output += '<table class="pr-table">';
 	output += '<tr>';
 	output += '<th style="cursor:pointer;" onclick="sortByCallnum();">call#</th>';
+	output += '<th style="cursor:pointer;" onclick="sortByDruid();">scan</th>';
 	output += '<th style="cursor:pointer;" onclick="sortByLabel();">catalog</th>';
 	output += '<th style="cursor:pointer;" onclick="sortByTitle();">title</th>';
 	output += '<th></th>';
@@ -77,11 +78,26 @@ function displayEntries(entries, counter) {
 		output += '<tr>';
 
 		output += '<td>' + '<a href="https://searchworks.stanford.edu/view/';
-		output += entries[i].SEARCHWORKS	+ '" target="_new">';
+		output += entries[i].CATKEY	+ '" target="_blank">';
 		output += entries[i].CALLNUM;
 		output += '</a>';
 		output += '</td>';
 
+		// SCAN
+		output += '<td>'
+		if (entries[i].SCAN_ONLINE.match(/true/)) {
+			output += '<a href="https://purl.stanford.edu/';
+			output += entries[i].DRUID;
+			output += '" target="_blank">';
+			output += entries[i].DRUID;
+			output += '</a>';
+		} else {
+			output += entries[i].DRUID;
+		}
+		output += '</td>'
+	
+
+		// Catalog
 		output += '<td>' + labelcontent		+ '</td>';
 
 		output += '<td>' + entries[i].TITLE		+ '</td>';
@@ -90,7 +106,7 @@ function displayEntries(entries, counter) {
 		if (entries[i].YOUTUBE) {
 			output += '<span class="youtube"><a href="https://www.youtube.com/watch?v=';
 			output += entries[i].YOUTUBE;
-			output += '" target="_new"><img style="min-width:20px;" src="/images/youtube-thumbnail.png"></a></span>';
+			output += '" target="_blank"><img style="min-width:20px;" src="/images/youtube-thumbnail.png"></a></span>';
 		}
 		output += '</td>';
 
@@ -634,6 +650,19 @@ function sortByCallnum() {
 
 //////////////////////////////
 //
+// sortByDruid --
+//
+
+function sortByDruid() {
+	ENTRIES.sort(druidCompare);
+	var counter = ++SEARCHNUM;
+	displayEntries(ENTRIES, counter);
+}
+
+
+
+//////////////////////////////
+//
 // callnumCompare --
 //
 
@@ -645,6 +674,32 @@ function callnumCompare(a, b) {
 	} else if (a > b) {
 		return +1;
 	} else {
+		return 0;
+	}
+}
+
+
+
+//////////////////////////////
+//
+// druidCompare --
+//
+
+function druidCompare(a, b) {
+	var adruid = a.DRUID;
+	var bdruid = b.DRUID;
+	var ascan = a.SCAN_ONLINE;
+	var bscan = b.SCAN_ONLINE;
+	if (ascan > bscan) {
+		return -1;
+	} else if (ascan < bscan) {
+		return +1;
+	} else {
+		if (adruid > bdruid) {
+			return -1;
+		} else if (adruid < bdruid) {
+			return +1;
+		}
 		return 0;
 	}
 }
