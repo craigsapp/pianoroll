@@ -1,0 +1,59 @@
+#!/usr/bin/perl
+#
+# Description: Add Druid numbers to Catkey entries.
+# To do:       Need to allow re-running the program with 
+#              new mappings.
+# vim: ts=3
+
+use strict;
+
+my $druidfile = $ARGV[0];
+my $atonfile  = $ARGV[1];
+
+die "Usage: $0 druidmap index.aton" if $druidfile =~ /^\s*$/;
+die "Usage: $0 druidmap index.aton" if $atonfile =~ /^\s*$/;
+
+my %druid = getDruid($druidfile);
+
+my $line;
+open (AFILE, $atonfile) or die "Cannot read $atonfile\n";
+
+while ($line = <AFILE>) {
+	if ($line =~ /^\@DRUID:\s*([^\s]*)\s*$/) {
+		my $isscan = $druid{$1};
+		print "$line";
+		if ($isscan) {
+			print "\@SCAN_ONLINE:\ttrue\n";
+		} else {
+			print "\@SCAN_ONLINE:\tfalse\n";
+		}
+	} else {
+		print $line;
+	}
+}
+
+
+###########################################################################
+
+
+##############################
+##
+## getDruid --
+##
+
+sub getDruid {
+	my ($file) = @_;
+	open (FILE, $file) or die "Cannot read $file\n";
+	my $line;
+	my %output;
+	while ($line = <FILE>) {
+		chomp $line;
+		if ($line =~ /^\s*$/) {
+			next;
+		}
+		$output{$line} = 1;
+	}
+	close FILE;
+	return %output;
+}
+

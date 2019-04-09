@@ -1,0 +1,59 @@
+#!/usr/bin/perl
+#
+# Description: Add Druid numbers to Catkey entries.
+# To do:       Need to allow re-running the program with 
+#              new mappings.
+# vim: ts=3
+
+use strict;
+
+my $druidfile = $ARGV[0];
+my $atonfile  = $ARGV[1];
+
+die "Usage: $0 druidmap index.aton" if $druidfile =~ /^\s*$/;
+die "Usage: $0 druidmap index.aton" if $atonfile =~ /^\s*$/;
+
+my %catkey2druid = getCatkey2Druid($druidfile);
+
+my $line;
+open (AFILE, $atonfile) or die "Cannot read $atonfile\n";
+
+while ($line = <AFILE>) {
+	if ($line =~ /^\@SEARCHWORKS:\s*(\d+)\s*$/) {
+		my $druid = $catkey2druid{$1};
+		$line =~ s/SEARCHWORKS/CATKEY/;
+		print "$line";
+		print "\@DRUID:\t\t$druid\n";
+	} else {
+		print $line;
+	}
+}
+
+
+###########################################################################
+
+
+##############################
+##
+## getCatkey2Druid --
+##
+
+sub getCatkey2Druid {
+	my ($file) = @_;
+	open (FILE, $file) or die "Cannot read $file\n";
+	my $line;
+	my %output;
+	while ($line = <FILE>) {
+		chomp $line;
+		my @data = split(/\t/, $line);
+		my $catkey = $data[0];
+		my $druid = $data[1];
+		if ($output{$catkey}) {
+			print STDERR "Error: $catkey already used for $output{$catkey}, so cannot use for $druid\n";
+		}
+		$output{$catkey} = $druid;
+	}
+	close FILE;
+	return %output;
+}
+
