@@ -51,7 +51,7 @@ while ($line = <>) {
 print <<"EOT";
 \@\@BEGIN:	CONDON
 \@CALLNUM:	$cn
-\@SEARCHWORKS:	$sw
+\@CATKEY:	$sw
 \@LABEL:		$label
 \@CATALOG:	$catalog
 EOT

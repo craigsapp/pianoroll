@@ -39,6 +39,7 @@ sub getSearchworksXML {
 	my $filename = "condon$n.xml";
 	my $first = substr($n, 0, 1);
 	my $fullname = "marcxml/${first}000/$filename";
+	print "FULLNAME $fullname\n";
 	if (!-r $fullname) {
 		print "Getting $fullname\n";
 		`wget $data[1].marcxml -O - | xmllint --format - > $fullname\n`;

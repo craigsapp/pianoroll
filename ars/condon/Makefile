@@ -24,9 +24,18 @@ condon:
 marcxml:
 	bin/getmarcxml condon.list
 
+# make list from files (not download and then make):
+list:
+	bin/makecondonlist > condon.list
+
 aton:
 	bin/marcxml2aton condon.list > condon.aton
 
+<<<<<<< HEAD
 
+=======
+druid:
+	bin/adddruid2 druid-mapping.txt condon.aton > z && mv z condon.aton
+>>>>>>> 89b57cde3a26c7a776f5c5155aa1343b02130c10
 
 
